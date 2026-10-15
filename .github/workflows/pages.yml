@@ -7,6 +7,8 @@ on:
       - '.github/workflows/pages.yml'
       - 'scripts/build-pages.py'
       - 'scripts/render-benchmark-report.py'
+      - 'scripts/verify-report-timings.py'
+      - 'assets/**'
       - 'scripts/benchmark-report-template.html'
       - 'agentic-search-only/**'
       - 'reports/random20-seed20261015/**'

@@ -17,7 +17,7 @@ ARTIFACTS = (
     'recovery.json', 'questions.jsonl', 'reconciliation.json', 'execution.json',
     'execution-history.jsonl', 'embedding-requests.jsonl', 'preflight-requests.jsonl',
     'preflight-embeddings.jsonl', 'models.json', 'preflight-models.json',
-    'memory-events.json', 'retrieval.json', 'html-validation.json',
+    'memory-events.json', 'retrieval.json', 'html-validation.json', 'presentation-timing-audit.json',
 )
 
 
@@ -104,6 +104,7 @@ def main(output):
             raise ValueError(f'Unexpected result path: {relative}')
         shutil.copyfile(RUN / relative, output / relative)
     stage_agentic(output)
+    shutil.copytree(Path('assets'), output / 'assets')
     (output / '.nojekyll').touch()
     for page in (output / 'index.html', output / 'agentic-search-only/index.html'):
         parser = Links()

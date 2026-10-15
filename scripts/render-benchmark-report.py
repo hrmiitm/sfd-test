@@ -90,6 +90,9 @@ def build(root):
             peak_tree_gib=max((int(r.get('memory.peak',0)) for r in resources),default=0)/1024**3))
     (root/'report-data.json').write_text(json.dumps(data,indent=2))
     template=Path(__file__).with_name('benchmark-report-template.html').read_text()
+    shared=Path(__file__).resolve().parents[1]/'assets'
+    template=template.replace('__DATA_SOURCE_CSS__',(shared/'data-source.css').read_text())
+    template=template.replace('__DATA_SOURCE_JS__',(shared/'data-source.js').read_text())
     encoded=json.dumps(data).replace('<','\\u003c').replace('&','\\u0026').replace('\u2028','\\u2028').replace('\u2029','\\u2029')
     (root/'report.html').write_text(template.replace('__REPORT_DATA__',encoded))
     print(root/'report.html')

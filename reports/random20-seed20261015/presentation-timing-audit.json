@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "source_run": "reports/random20-seed20261015",
+  "checked_cases": 320,
+  "groups": [
+    {
+      "model": "google/gemini-3.8-flash",
+      "backend": "lancedb",
+      "method": "bm25",
+      "scored_cases": 20,
+      "mean_answer_seconds": 8.516314306200048,
+      "mean_retrieval_seconds": 0.01933659629989961
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "backend": "lancedb",
+      "method": "vector",
+      "scored_cases": 20,
+      "mean_answer_seconds": 7.367952985200145,
+      "mean_retrieval_seconds": 0.02209555005006223
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "backend": "lancedb",
+      "method": "hybrid",
+      "scored_cases": 20,
+      "mean_answer_seconds": 10.311845652200054,
+      "mean_retrieval_seconds": 0.03563654764993771
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "backend": "lancedb",
+      "method": "agentic",
+      "scored_cases": 20,
+      "mean_answer_seconds": 27.033250321050083,
+      "mean_retrieval_seconds": 18.38452256985024
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "backend": "qdrant",
+      "method": "bm25",
+      "scored_cases": 20,
+      "mean_answer_seconds": 8.230327031099979,
+      "mean_retrieval_seconds": 0.007952243850013474
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "backend": "qdrant",
+      "method": "vector",
+      "scored_cases": 20,
+      "mean_answer_seconds": 5.810627831200145,
+      "mean_retrieval_seconds": 0.055463029450129396
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "backend": "qdrant",
+      "method": "hybrid",
+      "scored_cases": 20,
+      "mean_answer_seconds": 7.030186159099958,
+      "mean_retrieval_seconds": 0.03435491230020489
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "backend": "qdrant",
+      "method": "agentic",
+      "scored_cases": 20,
+      "mean_answer_seconds": 35.36996802374988,
+      "mean_retrieval_seconds": 23.454901457300092
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "backend": "lancedb",
+      "method": "bm25",
+      "scored_cases": 20,
+      "mean_answer_seconds": 4.102670281450128,
+      "mean_retrieval_seconds": 0.01933659629989961
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "backend": "lancedb",
+      "method": "vector",
+      "scored_cases": 20,
+      "mean_answer_seconds": 6.166311452000082,
+      "mean_retrieval_seconds": 0.02209555005006223
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "backend": "lancedb",
+      "method": "hybrid",
+      "scored_cases": 20,
+      "mean_answer_seconds": 4.261235679399943,
+      "mean_retrieval_seconds": 0.03563654764993771
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "backend": "lancedb",
+      "method": "agentic",
+      "scored_cases": 20,
+      "mean_answer_seconds": 17.05526517119988,
+      "mean_retrieval_seconds": 18.242840221600044
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "backend": "qdrant",
+      "method": "bm25",
+      "scored_cases": 20,
+      "mean_answer_seconds": 5.738852074900114,
+      "mean_retrieval_seconds": 0.007952243850013474
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "backend": "qdrant",
+      "method": "vector",
+      "scored_cases": 20,
+      "mean_answer_seconds": 5.7358261237499395,
+      "mean_retrieval_seconds": 0.055463029450129396
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "backend": "qdrant",
+      "method": "hybrid",
+      "scored_cases": 20,
+      "mean_answer_seconds": 5.947256503049994,
+      "mean_retrieval_seconds": 0.03435491230020489
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "backend": "qdrant",
+      "method": "agentic",
+      "scored_cases": 20,
+      "mean_answer_seconds": 5.671115662700004,
+      "mean_retrieval_seconds": 8.683418138049955
+    }
+  ],
+  "definitions": {
+    "answer": "Recorded answer.seconds; for agentic cases, sum of model-call durations.",
+    "retrieval": "Recorded retrieval.seconds; cached search latency for BM25/Vector/Hybrid, cumulative tool duration for Agentic Search.",
+    "exclusions": "Judge duration and embedding-preparation time are excluded from these stage timings.",
+    "shared_cache": "Non-agentic retrieval was precomputed once per question/database/method and shared by both answer models."
+  }
+}

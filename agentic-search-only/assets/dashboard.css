@@ -28,3 +28,5 @@
 .benchmark-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}.benchmark-tabs a{padding:7px 12px;border:1px solid #c8d1e0;border-radius:7px;background:#fff;text-decoration:none;font-size:12px;font-weight:650}.benchmark-tabs a[aria-current=page]{background:var(--blue);color:#fff;border-color:var(--blue)}
 
 #difficulty-summary{padding:14px 18px;margin-top:14px}#difficulty-summary .difficulty-breakdown{border-top:0;margin-top:0;padding-top:0}
+
+.overview-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}.comparison-subtitle{font-size:12px;font-weight:400;color:var(--muted);margin-left:8px}.technique-notes{margin:7px 0 11px;padding-left:17px}.technique-notes li{font-size:11px;line-height:1.6}.technique-notes strong{font-weight:600}@media(max-width:650px){.comparison-subtitle{display:block;margin:4px 0 0}}
