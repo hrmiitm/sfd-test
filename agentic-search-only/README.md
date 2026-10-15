@@ -274,3 +274,16 @@ Open `http://localhost:8000/`. The build expands the committed compressed report
 in `published/`; no source corpus or model access is needed. The original run,
 smoke outputs and generated `analysis/` directory remain local and ignored.
 See [`published/README.md`](published/README.md) for archive contents and rebuilds.
+
+### Verify the local source counts
+
+Run `scripts/inspect-corpus.py` with this project's Python environment under the
+same resource limits as the launcher. It reads only identifier/count columns and
+Parquet footer metadata in `../data/parsed`. DuckDB SQL and PyArrow streaming
+counts must agree for each file and the combined corpus. The JSON and browser
+payload are saved in `published/corpus-verification.{json,js}`.
+
+`file_stem` is a filing accession ID, `accession` is a company CIK, and a Parquet
+file is a physical container. A distinct filing ID is not necessarily a distinct
+content version: repeated IDs and multiple stored MD5 variants occur. The page
+labels the count as document **IDs** and includes per-file verification details.

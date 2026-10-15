@@ -1,0 +1,90 @@
+{
+  "checked_utc": "2026-10-15T10:27:27.978606+00:00",
+  "source_scope": "data/parsed only; no external SFD corpus or pipeline outputs",
+  "file_count": 6,
+  "bytes": 6914044276,
+  "rows": 638067,
+  "unique_document_ids": 431952,
+  "unique_company_ids": 109092,
+  "unique_stored_hashes": 433620,
+  "rows_with_positive_char_count": 638067,
+  "extra_rows_beyond_unique_document_ids": 206115,
+  "independent_counts_match": true,
+  "files": [
+    {
+      "filename": "sfd-v1-2025-01.parquet",
+      "bytes": 873335854,
+      "rows": 90711,
+      "unique_document_ids": 62485,
+      "unique_company_ids": 32799,
+      "unique_stored_hashes": 62732,
+      "rows_with_positive_char_count": 90711,
+      "markdown_nulls_from_footer": 0,
+      "independent_counts_match": true
+    },
+    {
+      "filename": "sfd-v1-2025-02.parquet",
+      "bytes": 1297350559,
+      "rows": 128993,
+      "unique_document_ids": 87480,
+      "unique_company_ids": 41280,
+      "unique_stored_hashes": 87737,
+      "rows_with_positive_char_count": 128993,
+      "markdown_nulls_from_footer": 0,
+      "independent_counts_match": true
+    },
+    {
+      "filename": "sfd-v1-2025-03.parquet",
+      "bytes": 1413672152,
+      "rows": 118933,
+      "unique_document_ids": 80188,
+      "unique_company_ids": 36916,
+      "unique_stored_hashes": 80503,
+      "rows_with_positive_char_count": 118933,
+      "markdown_nulls_from_footer": 0,
+      "independent_counts_match": true
+    },
+    {
+      "filename": "sfd-v1-2025-04.parquet",
+      "bytes": 1422787798,
+      "rows": 109085,
+      "unique_document_ids": 73841,
+      "unique_company_ids": 34860,
+      "unique_stored_hashes": 74183,
+      "rows_with_positive_char_count": 109085,
+      "markdown_nulls_from_footer": 0,
+      "independent_counts_match": true
+    },
+    {
+      "filename": "sfd-v1-2025-05.parquet",
+      "bytes": 1408854150,
+      "rows": 126665,
+      "unique_document_ids": 88257,
+      "unique_company_ids": 41485,
+      "unique_stored_hashes": 88572,
+      "rows_with_positive_char_count": 126665,
+      "markdown_nulls_from_footer": 0,
+      "independent_counts_match": true
+    },
+    {
+      "filename": "sfd-v1-2025-06.parquet",
+      "bytes": 498043763,
+      "rows": 63680,
+      "unique_document_ids": 39701,
+      "unique_company_ids": 23943,
+      "unique_stored_hashes": 39893,
+      "rows_with_positive_char_count": 63680,
+      "markdown_nulls_from_footer": 0,
+      "independent_counts_match": true
+    }
+  ],
+  "sql": "SELECT count(*) AS rows, count(DISTINCT file_stem) AS unique_document_ids,\n        count(DISTINCT accession) AS unique_company_ids, count(DISTINCT md5) AS unique_stored_hashes,\n        count(*) FILTER (WHERE char_count > 0) AS rows_with_positive_char_count\n        FROM read_parquet(?)",
+  "definitions": {
+    "unique_document_ids": "COUNT(DISTINCT file_stem); unique filing accession IDs, not physical files or guaranteed distinct content.",
+    "unique_company_ids": "COUNT(DISTINCT accession); company CIK identifiers.",
+    "unique_stored_hashes": "COUNT(DISTINCT md5); stored hashes, not recomputed checksums.",
+    "rows": "All stored records, including repeated IDs.",
+    "physical_files": "Only .parquet containers recursively under the selected source directory."
+  },
+  "resource_notes": "One DuckDB thread, 256 MB query memory limit; PyArrow batches of 1,024 metadata-only rows. Markdown is not decoded."
+}

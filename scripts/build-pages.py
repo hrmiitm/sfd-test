@@ -31,6 +31,9 @@ def stage_agentic(output):
     (target / 'index.html').write_text(html)
     shutil.copytree(project / 'assets', target / 'assets')
     shutil.copytree(project / 'docs', target / 'docs')
+    (target / 'published').mkdir()
+    for name in ('corpus-verification.json', 'corpus-verification.js'):
+        shutil.copyfile(project / 'published' / name, target / 'published' / name)
     bundle = project / 'published/all100-report.tar.gz'
     manifest = json.loads((bundle.parent / 'manifest.json').read_text())
     with bundle.open('rb') as stream:
@@ -52,6 +55,12 @@ def stage_agentic(output):
             with archive.extractfile(member) as source, destination.open('wb') as dest:
                 shutil.copyfileobj(source, dest)
     dashboard = json.loads((analysis / 'dashboard.json').read_text())
+    verified = json.loads((target / 'published/corpus-verification.json').read_text())
+    dataset = dashboard['metadata']['dataset']
+    if (not verified['independent_counts_match'] or
+            (verified['rows'], verified['unique_document_ids'], verified['file_count'], verified['bytes']) !=
+            (dataset['rows'], dataset['unique_filing_ids'], dataset['files'], dataset['compressed_bytes'])):
+        raise ValueError('Verified local source counts differ from the recorded benchmark snapshot')
     if len(dashboard['cases']) != 400 or len(dashboard['questions']) != 100:
         raise ValueError('Agentic report must contain 100 questions and 400 planned cases')
     for case in dashboard['cases']:
