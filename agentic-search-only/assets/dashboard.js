@@ -51,7 +51,7 @@ class DataTable{
   const previous=el('button','Previous');previous.type='button';previous.disabled=this.page===0;previous.onclick=()=>{this.page--;this.render();};
   const next=el('button','Next');next.type='button';next.disabled=this.page>=pages-1;next.onclick=()=>{this.page++;this.render();};controls.append(label,previous,el('span',`${this.page+1} / ${pages}`),next);this.footer.append(count,controls);
  }
- export(){const columns=this.columns.filter(c=>this.visible.has(c.id));const escape=value=>{let s=String(value??'');if(/^[=+\-@]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"';};const text=[columns.map(c=>escape(c.label)).join(','),...this.filtered().map(r=>columns.map(c=>escape(c.get(r))).join(','))].join('\n');const url=URL.createObjectURL(new Blob([text],{type:'text/csv;charset=utf-8'}));const link=el('a');link.href=url;link.download=this.name+'-filtered.csv';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+ export(){const columns=this.columns.filter(c=>this.visible.has(c.id));const escape=value=>{let s=String(value??'');if(/^[=+\-@]/.test(s))s="'"+s;return '"'+s.replaceAll('"','""')+'"';};const text=[columns.map(c=>escape(c.label)).join(','),...this.filtered().map(r=>columns.map(c=>escape((c.exportGet||c.get)(r))).join(','))].join('\n');const url=URL.createObjectURL(new Blob([text],{type:'text/csv;charset=utf-8'}));const link=el('a');link.href=url;link.download=this.name+'-filtered.csv';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 }
 
 const failed=D.audit.failed_cases;
@@ -66,12 +66,18 @@ for(const [label,value,note] of metrics){const card=el('div',null,'metric');card
 $('generated').textContent='Derived export: '+new Date(D.metadata.generated_utc).toLocaleString()+'. Original runtime: '+num(D.audit.resource.wall_seconds/60,1)+' min. Peak process-tree memory: '+num(D.audit.resource.peak_memory_mib)+' MiB; OOM kills: '+(D.audit.resource.memory_events.oom_kill||0)+'.';
 
 const modelColumns=[
- column('model','Model',{render:(v,r)=>{const n=el('div',friendly(v)+' · '+strategy(r.method),'cell-model');n.title=toolDescription(r.method)+' Model: '+v+(r.provider?' · '+r.provider:'');n.tabIndex=0;return n;}}),
+ column('model','Model (Agentic Search)',{render:(v,r)=>{const n=el('div',friendly(v)+' · '+(r.method==='sql'?'SQL':r.method==='sql_streaming'?'SQL + streaming':'Both strategies'),'cell-model');n.title=toolDescription(r.method)+' Model: '+v+(r.provider?' · '+r.provider:'');n.tabIndex=0;return n;}}),
  column('mean_correctness','Avg score overall /100',{numeric:true,render:v=>scoreNode(v),sortDefault:-1}),
- column('known_cost_usd','Total cost (USD)',{numeric:true,render:moneyCell}),
+ column('known_cost_usd','Cost USD: total / avg per request',{numeric:true,
+  description:'Known answer + judge cost. Average per benchmark request (one question for one model and strategy), including failed cases; not per HTTP call.',
+  exportGet:r=>`${Number(r.known_cost_usd).toFixed(2)} / ${Number(r.mean_known_cost_usd).toFixed(6)}`,
+  render:(v,r)=>{const n=el('span',v==null?'—':`$${Number(v).toFixed(2)} / ${usd(r.mean_known_cost_usd)}`);n.title=`Known cost; average over ${r.expected} benchmark requests (question cases). ${r.unknown_cost_attempts||0} attempts have unknown billing.`;return n;}}),
  column('mean_wall_seconds','Avg time / question (s)',{numeric:true,digits:1}),
  column('method','Strategy',{render:v=>strategyNode(v),visible:false}),column('scored','Scored / planned',{get:r=>r.scored,render:(v,r)=>`${v} / ${r.expected}`,numeric:true}),
- column('tool_requested','Tool requests',{numeric:true,render:v=>num(v)}),
+ column('tool_requested','Tool calls: total / avg per request',{numeric:true,
+  description:'All requested tool calls, including errors, cached calls and budget rejections. Average per benchmark request (question case).',
+  exportGet:r=>`${r.tool_requested} / ${Number(r.mean_tools).toFixed(2)}`,
+  render:(v,r)=>{const n=el('span',`${num(v)} / ${num(r.mean_tools,2)}`);n.title=`${num(v)} tool requests across ${r.expected} question cases; ${num(r.mean_tools,2)} per benchmark request.`;return n;}}),
  column('mean_citation_support','Citation support /100',{numeric:true,digits:2,visible:false}),
  column('coverage_adjusted_correctness','Missing = 0',{numeric:true,digits:2,visible:false}),
  column('mean_known_cost_usd','Known USD / case',{numeric:true,render:moneyCell,visible:false}),
@@ -96,7 +102,7 @@ function difficultyRows(split){
   return result;
  });
 }
-const difficultyColumns=[modelColumns[0],column('method','Strategy',{render:v=>strategyNode(v),visible:false})];
+const difficultyColumns=[{...modelColumns[0],label:'Model'},column('method','Strategy',{render:v=>strategyNode(v),visible:false})];
 for(const level of difficulties) difficultyColumns.push(column(level,level.replaceAll('_',' '),{numeric:true,render:(value,row)=>{
  const cell=el('div');cell.append(scoreNode(value));cell.title=`${row[level+'_scored']} / ${row[level+'_expected']} scored`;cell.setAttribute('aria-label',`${num(value,1)} out of 100; ${cell.title}`);return cell;
 }}));
