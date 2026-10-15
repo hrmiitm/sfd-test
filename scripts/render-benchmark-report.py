@@ -93,6 +93,9 @@ def build(root):
     shared=Path(__file__).resolve().parents[1]/'assets'
     template=template.replace('__DATA_SOURCE_CSS__',(shared/'data-source.css').read_text())
     template=template.replace('__DATA_SOURCE_JS__',(shared/'data-source.js').read_text())
+    corpus_path=root/'corpus-verification.json'
+    corpus=json.loads(corpus_path.read_text()) if corpus_path.exists() else None
+    template=template.replace('__INDEXED_CORPUS_DATA__',json.dumps(corpus).replace('<','\\u003c'))
     encoded=json.dumps(data).replace('<','\\u003c').replace('&','\\u0026').replace('\u2028','\\u2028').replace('\u2029','\\u2029')
     (root/'report.html').write_text(template.replace('__REPORT_DATA__',encoded))
     print(root/'report.html')

@@ -17,7 +17,7 @@ ARTIFACTS = (
     'recovery.json', 'questions.jsonl', 'reconciliation.json', 'execution.json',
     'execution-history.jsonl', 'embedding-requests.jsonl', 'preflight-requests.jsonl',
     'preflight-embeddings.jsonl', 'models.json', 'preflight-models.json',
-    'memory-events.json', 'retrieval.json', 'html-validation.json', 'presentation-timing-audit.json',
+    'memory-events.json', 'retrieval.json', 'html-validation.json', 'presentation-timing-audit.json', 'corpus-verification.json',
 )
 
 
@@ -32,7 +32,7 @@ def stage_agentic(output):
     shutil.copytree(project / 'assets', target / 'assets')
     shutil.copytree(project / 'docs', target / 'docs')
     (target / 'published').mkdir()
-    for name in ('corpus-verification.json', 'corpus-verification.js'):
+    for name in ('corpus-verification.json', 'corpus-verification.js', 'corpus-text-verification.json'):
         shutil.copyfile(project / 'published' / name, target / 'published' / name)
     bundle = project / 'published/all100-report.tar.gz'
     manifest = json.loads((bundle.parent / 'manifest.json').read_text())
@@ -57,6 +57,11 @@ def stage_agentic(output):
     dashboard = json.loads((analysis / 'dashboard.json').read_text())
     verified = json.loads((target / 'published/corpus-verification.json').read_text())
     dataset = dashboard['metadata']['dataset']
+    text_counts = json.loads((target / 'published/corpus-text-verification.json').read_text())
+    if (not text_counts['regex_total_matches_footer_rows'] or
+            (text_counts['total_rows'], text_counts['unique_metadata_document_ids'], text_counts['unique_valid_header_accessions']) !=
+            (dataset['rows'], dataset['unique_filing_ids'], dataset['unique_filing_ids'])):
+        raise ValueError('Text-header counts differ from the recorded source-corpus counts')
     if (not verified['independent_counts_match'] or
             (verified['rows'], verified['unique_document_ids'], verified['file_count'], verified['bytes']) !=
             (dataset['rows'], dataset['unique_filing_ids'], dataset['files'], dataset['compressed_bytes'])):
@@ -91,6 +96,10 @@ def main(output):
     spec.loader.exec_module(renderer)
     renderer.build(RUN)
     data = json.loads((RUN / 'report-data.json').read_text())
+    indexed = json.loads((RUN / 'corpus-verification.json').read_text())
+    if (not indexed['independent_sql_and_arrow_match'] or
+            indexed['chunks_per_database'] != data['preflight']['expected_chunks']):
+        raise ValueError('Indexed corpus verification differs from the recorded database snapshot')
     if len(data['cells']) != 16 or any(c['completed'] != 20 or c['errors'] for c in data['cells']):
         raise ValueError('Refusing to publish incomplete benchmark results')
     shutil.copyfile(RUN / 'report.html', output / 'index.html')

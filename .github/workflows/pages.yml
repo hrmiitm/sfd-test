@@ -8,6 +8,7 @@ on:
       - 'scripts/build-pages.py'
       - 'scripts/render-benchmark-report.py'
       - 'scripts/verify-report-timings.py'
+      - 'scripts/verify-benchmark-corpora.py'
       - 'assets/**'
       - 'scripts/benchmark-report-template.html'
       - 'agentic-search-only/**'

@@ -466,3 +466,28 @@ The deployed Pages site includes this benchmark as its second tab. The Pages
 build expands its compressed, audited report exports; the corpus, original raw
 runs and smoke outputs are excluded. Build both tabs with
 `python3 scripts/build-pages.py --output _site`.
+
+### Recount the two benchmark corpora
+
+`scripts/verify-benchmark-corpora.py` verifies the recorded 20-question index using
+DuckDB and PyArrow, and scans the first 5,000 characters of every row in the six
+source files using the supplied filing-type regex. Large Markdown pages require a
+prefix-only decoder; regular PyArrow text scans can exceed 2 GiB even with a small
+batch size. Each row group runs in an isolated worker under the shared cap:
+
+```bash
+systemd-run --user --scope --quiet \
+  -p MemoryMax=2G -p MemorySwapMax=0 -p CPUQuota=100% \
+  -p TasksMax=128 -p OOMPolicy=kill \
+  uv run --no-project --with fastparquet==2026.9.0 \
+  --with pyarrow==26.0.0 --with duckdb==1.5.6 \
+  python scripts/verify-benchmark-corpora.py \
+  --output /tmp/sfd-corpora-full-verification.json
+```
+
+Successful row groups are cached in `/tmp/sfd-corpus-rowgroup-counts` by filename,
+size and modification time, so the same command can resume. It reads source files
+and does not change any benchmark answers, scores or request records. Document
+IDs, stored records, physical Parquet containers and retrieval chunks are reported
+as different units. The regex counts every row, including unmatched `UNKNOWN`
+rows; its per-form counts include duplicate IDs.

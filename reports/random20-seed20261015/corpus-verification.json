@@ -1,0 +1,33 @@
+{
+  "scope": "Recorded 20-question run: sample-1000 plus its recorded benchmark-additions extension.",
+  "unique_document_ids": 1045,
+  "source_records": 1052,
+  "chunks_per_database": 48053,
+  "unique_chunk_ids": 48053,
+  "chunks_per_database_match_recorded_preflight": true,
+  "independent_sql_and_arrow_match": true,
+  "parts": [
+    {
+      "workspace": "/home/kit/Documents/sfd-2025/data/pipeline/sample-1000",
+      "filings": 1000,
+      "chunks": 43105
+    },
+    {
+      "workspace": "/home/kit/Documents/sfd-2025/data/pipeline/benchmark-additions/run",
+      "filings": 52,
+      "chunks": 4948
+    }
+  ],
+  "sql": "SELECT count(*) chunks, count(DISTINCT id) chunk_ids, count(DISTINCT accession) document_ids, count(DISTINCT (source_file,source_row)) source_records FROM read_parquet(?)",
+  "source_parquet_access": {
+    "files": 6,
+    "compressed_bytes": 6914044276,
+    "note": "Agentic Search could additionally use these original source Parquet files; BM25/Vector/Hybrid searched the index."
+  },
+  "definitions": {
+    "document_ids": "DISTINCT accession in indexed chunks; parsed filing accession, not company CIK.",
+    "source_records": "DISTINCT (source_file,source_row), so repeated document IDs may occur.",
+    "chunks": "Retrieval passages stored in each database, not documents."
+  },
+  "checked_utc": "2026-10-15T11:15:27.787217+00:00"
+}
