@@ -447,3 +447,22 @@ the full corpus is never copied into the Pages artifact.
 
 See [GitHub's custom Pages workflow guide](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
 for repository setup. A remote repository must be configured before pushing.
+
+## Standalone Parquet-agent benchmark
+
+The independent benchmark, code, scripts, models configuration, questions, tests
+and raw reports are in [`agentic-search-only/`](agentic-search-only/README.md).
+The shared corpus remains in `data/parsed/`.
+
+Run all 100 questions from this directory:
+
+```bash
+agentic-search-only/scripts/parquet-benchmark.sh --count 100 --output reports-whole-data/all100
+```
+
+Results are stored in `agentic-search-only/reports-whole-data/all100/`.
+
+The deployed Pages site includes this benchmark as its second tab. The Pages
+build expands its compressed, audited report exports; the corpus, original raw
+runs and smoke outputs are excluded. Build both tabs with
+`python3 scripts/build-pages.py --output _site`.

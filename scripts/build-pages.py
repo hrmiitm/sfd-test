@@ -6,6 +6,8 @@ import importlib.util
 import json
 from pathlib import Path
 import shutil
+import hashlib
+import tarfile
 from urllib.parse import unquote, urlsplit
 
 RUN = Path('reports/random20-seed20261015')
@@ -17,6 +19,46 @@ ARTIFACTS = (
     'preflight-embeddings.jsonl', 'models.json', 'preflight-models.json',
     'memory-events.json', 'retrieval.json', 'html-validation.json',
 )
+
+
+def stage_agentic(output):
+    project = Path('agentic-search-only')
+    target = output / project
+    target.mkdir()
+    html = (project / 'index.html').read_text().replace(
+        '<script defer src="assets/dashboard.js">',
+        '<script>window.BENCHMARK_PUBLISHED=true;</script><script defer src="assets/dashboard.js">')
+    (target / 'index.html').write_text(html)
+    shutil.copytree(project / 'assets', target / 'assets')
+    shutil.copytree(project / 'docs', target / 'docs')
+    bundle = project / 'published/all100-report.tar.gz'
+    manifest = json.loads((bundle.parent / 'manifest.json').read_text())
+    with bundle.open('rb') as stream:
+        if hashlib.file_digest(stream, 'sha256').hexdigest() != manifest['sha256']:
+            raise ValueError('Agentic report archive checksum mismatch')
+    analysis = target / 'analysis/all100'
+    analysis.mkdir(parents=True)
+    with tarfile.open(bundle, 'r:gz') as archive:
+        members = archive.getmembers()
+        if len(members) != manifest['files'] or sum(m.size for m in members) != manifest['expanded_bytes']:
+            raise ValueError('Agentic report archive inventory mismatch')
+        for member in members:
+            relative = Path(member.name)
+            if (not member.isfile() or relative.is_absolute() or '..' in relative.parts
+                    or len(relative.parts) > 2 or relative.suffix not in {'.json', '.js', '.csv', '.md'}):
+                raise ValueError(f'Unexpected report archive member: {member.name}')
+            destination = analysis / relative
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            with archive.extractfile(member) as source, destination.open('wb') as dest:
+                shutil.copyfileobj(source, dest)
+    dashboard = json.loads((analysis / 'dashboard.json').read_text())
+    if len(dashboard['cases']) != 400 or len(dashboard['questions']) != 100:
+        raise ValueError('Agentic report must contain 100 questions and 400 planned cases')
+    for case in dashboard['cases']:
+        for key in ('detail_json', 'detail_js'):
+            path = Path(case[key])
+            if len(path.parts) != 2 or path.parts[0] != 'details' or not (analysis / path).is_file():
+                raise ValueError(f'Missing agentic case export: {path}')
 
 
 class Links(HTMLParser):
@@ -52,17 +94,19 @@ def main(output):
         if len(relative.parts) != 2 or relative.parts[0] != 'results' or relative.suffix != '.json':
             raise ValueError(f'Unexpected result path: {relative}')
         shutil.copyfile(RUN / relative, output / relative)
+    stage_agentic(output)
     (output / '.nojekyll').touch()
-    parser = Links()
-    parser.feed((output / 'index.html').read_text())
-    for href in parser.hrefs:
-        url = urlsplit(href)
-        if url.scheme or url.netloc or not url.path:
-            continue
-        target = output / unquote(url.path)
-        if not target.is_file():
-            raise ValueError(f'Broken report link: {href}')
-    print(f'Pages ready: {output}/index.html; 16 comparisons, 320 results; all local links checked')
+    for page in (output / 'index.html', output / 'agentic-search-only/index.html'):
+        parser = Links()
+        parser.feed(page.read_text())
+        for href in parser.hrefs:
+            url = urlsplit(href)
+            if url.scheme or url.netloc or not url.path:
+                continue
+            target = page.parent / unquote(url.path)
+            if not target.is_file():
+                raise ValueError(f'Broken report link in {page}: {href}')
+    print(f'Pages ready: {output}/index.html; two benchmark tabs, 720 cases; all local links checked')
 
 
 if __name__ == '__main__':

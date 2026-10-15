@@ -1,0 +1,26 @@
+[project]
+name = "agentic-search-only"
+version = "0.1.0"
+description = "Provider-pinned, audited agentic retrieval directly over Parquet"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5.6",
+    "httpx>=0.28.1",
+    "pyarrow>=26.0.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+agentic-search-only = "agentic_search_only.parquet_agent:main"
+agentic-case-audit = "agentic_search_only.case_audit:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest>=9.1.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

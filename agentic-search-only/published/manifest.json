@@ -1,0 +1,14 @@
+{
+  "files": 811,
+  "expanded_bytes": 250795000,
+  "archive_bytes": 37985256,
+  "sha256": "7e7d94b6e3e4e995397d08e19fd52b6f83c616302cb31f47c83a510cf442f8fb",
+  "source": "analysis/all100",
+  "excludes": [
+    "source corpus",
+    "original runs",
+    "smoke runs",
+    "screenshots",
+    "QA downloads"
+  ]
+}

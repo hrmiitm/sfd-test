@@ -8,6 +8,7 @@ on:
       - 'scripts/build-pages.py'
       - 'scripts/render-benchmark-report.py'
       - 'scripts/benchmark-report-template.html'
+      - 'agentic-search-only/**'
       - 'reports/random20-seed20261015/**'
   workflow_dispatch:
 

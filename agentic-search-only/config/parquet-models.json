@@ -1,0 +1,7 @@
+{
+  "answers": [
+    {"model": "google/gemini-3.8-flash", "provider": "google-ai-studio", "reasoning_effort": "low", "temperature": 0},
+    {"model": "openai/gpt-6-luna", "provider": "openai", "reasoning_effort": "low", "temperature": 0}
+  ],
+  "judge": {"model": "anthropic/claude-haiku-5.5", "provider": "anthropic", "reasoning_effort": "low", "temperature": 0}
+}

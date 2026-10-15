@@ -1,0 +1,17 @@
+/.env*
+!/.env.example
+/.venv/
+/.pytest_cache/
+__pycache__/
+*.pyc
+/data/
+/reports-whole-data/**/.lock
+/reports-whole-data/**/checkpoints/
+/reports-whole-data/**/tool-cache/
+/reports-whole-data/**/*.png
+/analysis/**/*.png
+/analysis/**/qa-downloads/
+
+# Keep original runs and generated exports local; publish the compressed report only.
+/reports-whole-data/
+/analysis/
