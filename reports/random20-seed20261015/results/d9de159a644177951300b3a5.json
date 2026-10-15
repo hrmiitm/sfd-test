@@ -1,0 +1,117 @@
+{
+  "question_id": "Q004",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.08831251099945803,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Amazon.com, Inc. had **10,597,729,352 shares of common stock outstanding** as of January 29, 2025. No calculation is needed; this is the count stated on the Form 10-K cover page.\n\n**Source:** Accession **0001018724-25-000004**, Filing Summary (cover page), chunk **0**.",
+    "message": {
+      "role": "assistant",
+      "content": "Amazon.com, Inc. had **10,597,729,352 shares of common stock outstanding** as of January 29, 2025. No calculation is needed; this is the count stated on the Form 10-K cover page.\n\n**Source:** Accession **0001018724-25-000004**, Filing Summary (cover page), chunk **0**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:07.788528+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d9de159a644177951300b3a5:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041845-4dJkNPZbSdKY4eqO2jnu",
+    "usage": {
+      "prompt_tokens": 10232,
+      "completion_tokens": 80,
+      "total_tokens": 10312,
+      "cost": 0.00014259,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 10229,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00014259,
+        "upstream_inference_prompt_cost": 0.00010259,
+        "upstream_inference_completions_cost": 4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.0132776419995935,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate's figure, 10,597,729,352 shares outstanding as of January 29, 2025, matches the reference and the gold evidence exactly. The cited accession 0001018724-25-000004 and the cover-page location (Filing Summary, chunk 0) match the retrieved excerpt, which contains the exact cover-page line 'Number of shares of common stock outstanding as of January 29, 2025 | 10597729352'. The other retrieved excerpts are unrelated, and the answer does not rely on them.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate's figure, 10,597,729,352 shares outstanding as of January 29, 2025, matches the reference and the gold evidence exactly. The cited accession 0001018724-25-000004 and the cover-page location (Filing Summary, chunk 0) match the retrieved excerpt, which contains the exact cover-page line 'Number of shares of common stock outstanding as of January 29, 2025 | 10597729352'. The other retrieved excerpts are unrelated, and the answer does not rely on them.\"}",
+      "refusal": null,
+      "reasoning": "The candidate's figure of 10,597,729,352 shares matches the reference and gold evidence, citing the Filing Summary section of accession 0001018724-25-000004, chunk 0, which contains the cover page with shares outstanding. This confirms the answer is supported.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The candidate's figure of 10,597,729,352 shares matches the reference and gold evidence, citing the Filing Summary section of accession 0001018724-25-000004, chunk 0, which contains the cover page with shares outstanding. This confirms the answer is supported.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS+AkKEAgSGAI4AUIIdGhpbmtpbmcSDMmRh+PfLvJu3NPHuBoMnXvx5pjijUZxHuYHIjD7ubng2yhIBcX7PJgJMa0xijkMu8zC6uhdDKjcBucXqG4ptk6i0cIxHcLhT7H4kGQqlQnPGrBuTLYuskRfwV0wyg4pokDChvoheJhqL3f6ktWP+SsxyY9lPhMpSMSLIOsFxgpHZAZkXPUmF4PksAPJNWnKQPZ+30iPWmWy5P3s/IF3UhYmrLUM3JmFZKIbZR/u7hyAkxDfLDLXseomjURx7av0+Zz49i2DJw+603TVeGZanxIbo4LVtXZIMtUUcyGXT30lPQlLF6zVltwthdUW3a7+rLNZpzVEkjtAMZOLI28dC+huXEf4q7X99kSBwV3dOfBLEt7oDDjEEy2m88iV9nJI9wBPTkbTRnkyGVD2kCZVOhEufOAH9mzrqp8hrhhRIQVvpsb0JFuri3jU5vbozmxj0Ry7+ZyrpI2DYQDHYcAXRR8+h3f15Mlyn2LXSfmcjJbH6XRdi0KPInuAG54iUthPKdh6lcaYvf7w9bn/3/PfiyRiQYCgPeDv1UOCYdXuyxq1yulYjAIG+lDjHbOTrcBldhBKh627fpvzjnMx2pd5N1W//sBNUATkKfaO7o9Tn/8tSVrWUYXFfyeCCuwQmFVW0Pl8eMrGJ0gq0wzU86/GV0GB7tL3GKzFm39yp8pPB50fMqzTpH8gv46Rsw2Qvj0NP+DxlN/Hef2S3Jl3TDFk0YTLs4/Gq1wD1RieH4zbEsF+8WvMNUEzPjO+bUqULxKdV79YlOfj3xgmIfWgpostKyC3nZwP8zY6RlSxzInWYK7oG1iDMXtQ4Dn6DKo8PTRqsam652nhWG310+wfDh92tb0cRUyccFGOYNqpc3mYndnMfLu0OW+9dscb2o+00BvtawuU5CBot4kZFSuxT5xArWGT/duej4i+/Ev+UErrvmVE7FdKVgFU19KpjzNc5jQo3ef5CTqm6dSLNYAbPwfwwPeGehrJ5QFfwoBAdjrJ8aQic3erxMOBRoOHgNls55lsGWvDbzVMmU6cZmQsnwEZHEsIoedGUlZKAJqQcZp7AbKP9C5h75eiVOoe/NzGeL5BhTcegafllkcIuPH9vKs1li2NSOMWZsJqVZzWccwuzC46Rx5w9ysIohVpXZ7jvuY04rzHm5i58ipf0LXrnMfD6M3eUmBAD8QA2EcJGE4XIhOrCf+RNoP7yXMmK7nK2FLnqa0owZ2OXFHocRlEC76AEALNhBSTtTalDw4fcNqZB305NcKoyEvhEVZAh77FGN+ZByM43R5LjnWaKL4OaHaIesbyhGJvnIGhx1NONHqCMzbXaE5R0Z28YRJWi5hMpR3BM2rysHuPMVYx/2TiEqAQnVqY66g3N5M7OmWh5DjfaKsboyyBnul3sN1SdZa+rwQN8pefWorYMvhc4/a9ZyaVHJrtaBw2Fh0GYBVJOiABgTVAjgZwco8GNmYLwYHU8qVuBshMJ6JGPPBmAHw78b9PwaB24fBpu1njRL47XLugFhAHUjGZfKYoH0sauTQ0ZBRrZhRBELG/vNTeTnFBFjl0f3LRokG1DoHahqnUVDaF+M1MzUs5RJ7unyuLydHl45w22FR6KBdlsx4DQAK3OG/884N+VLzTEXS4mC1TmPJFu42UfENSEWSF4Mc7CtwIshqSBtyc1KYYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:53.483893+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d9de159a644177951300b3a5:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042069-hmpKPTEL4YCxGB0b1w1a",
+    "usage": {
+      "prompt_tokens": 16983,
+      "completion_tokens": 448,
+      "total_tokens": 17431,
+      "cost": 0.0019223,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019223,
+        "upstream_inference_prompt_cost": 0.0016983,
+        "upstream_inference_completions_cost": 0.000224
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 253,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.507833982000193,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "The candidate's figure, 10,597,729,352 shares outstanding as of January 29, 2025, matches the reference and the gold evidence exactly. The cited accession 0001018724-25-000004 and the cover-page location (Filing Summary, chunk 0) match the retrieved excerpt, which contains the exact cover-page line 'Number of shares of common stock outstanding as of January 29, 2025 | 10597729352'. The other retrieved excerpts are unrelated, and the answer does not rely on them."
+  },
+  "status": "ok"
+}

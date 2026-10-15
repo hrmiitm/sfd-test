@@ -1,0 +1,751 @@
+{
+  "question_id": "Q062",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 3.583437557999787,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to Utz Brands, Inc.\u2019s Consolidated Statements of Operations and Comprehensive Income (Loss) in its Form 10-K for the fiscal year ended December 29, 2024:\n\n### **1. Financial Data**\n* **Gross profit:** $494,777 thousand (or $494.8 million)\n* **Net sales:** $1,409,281 thousand (or $1,409.3 million)\n\n---\n\n### **2. Calculation**\n$$\\text{Gross profit margin percentage} = \\frac{\\text{Gross profit}}{\\text{Net sales}} = \\frac{\\$494,777}{\\$1,409,281} \\approx 35.1085\\%$$\n\n* Expressed to two decimal places: **35.11%** (or **35.1%** as reported in Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations).\n\n---\n\n### **Source Citation**\n* **Filing:** Utz Brands, Inc. Form 10-K for the fiscal year ended December 29, 2024 (Accession: `0001739566-25-000053`)\n  * Item 8, *Consolidated Statements of Operations and Comprehensive Income (Loss)*\n  * Item 7, *Management's Discussion and Analysis of Financial Condition and Results of Operations \u2013 Results of Operations* (Chunk ID: `14e6d7a8-d96c-5bc1-a7d5-febc26908e92`)",
+    "usage": {
+      "prompt_tokens": 43445,
+      "completion_tokens": 603,
+      "total_tokens": 44048,
+      "cost": 0.029559075
+    },
+    "seconds": 22.130483636999088,
+    "tool_seconds": 3.583437557999787,
+    "tool_calls": 3,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_33415",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Utz Brands gross profit net sales December 29 2024\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a18eTnr+NWt10BUXtG1ERh+jAdHabVSun0hMStmBCJE87WOCBRhGAC+MiQLbaXnkH/8sNO/WVy7nE9CiCc+PQ8jHU1Z6obCx+lDL9kHri/jIbMSu",
+              "format": "google-gemini-v1",
+              "id": "call_33415",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_33415",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Utz Brands gross profit net sales December 29 2024\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:25:49.452886+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "267d470130912f6b7eafa88e:agent:0",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792041947-lwVwx0XJuHNxf56FPUCf",
+        "usage": {
+          "prompt_tokens": 916,
+          "completion_tokens": 31,
+          "total_tokens": 947,
+          "cost": 0.00080325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00080325,
+            "upstream_inference_prompt_cost": 0.000687,
+            "upstream_inference_completions_cost": 0.00011625
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 1.714933082999778,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_48222",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"file_stem\":\"0001739566-25-000053\",\"start\":200000,\"needle\":\"Consolidated Statements of Operations\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a185nhZEIJKL7YaWBDAqYNJbk3XBYrSVWtxlL1Ov5UeTMGBpLk4mLuvKw6Y+kOuv118EMM4O63OiqWlDIlU/IOOU5Wz67DUImbukS/ESPkMA78IQ",
+              "format": "google-gemini-v1",
+              "id": "call_48222",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_48222",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"file_stem\":\"0001739566-25-000053\",\"start\":200000,\"needle\":\"Consolidated Statements of Operations\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:29:20.669522+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "267d470130912f6b7eafa88e:agent:1",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042158-KAO3okFpUFmeD3vjGleo",
+        "usage": {
+          "prompt_tokens": 9810,
+          "completion_tokens": 100,
+          "total_tokens": 9910,
+          "cost": 0.0077325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0077325,
+            "upstream_inference_prompt_cost": 0.0073575,
+            "upstream_inference_completions_cost": 0.000375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.998626397999942,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_52821",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"needle\":\"CONSOLIDATED STATEMENTS OF OPERATIONS\",\"file_stem\":\"0001739566-25-000053\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"start\":254000}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1+pMiem4nT7HdQMTVtXb0d489rbWYmKzqEIk78zcuTAnRAk9xkcY/s+6HGbP1Z8MPRrXIYu29F7zVKUTSgt/snkG7xEIYYE2f1R4IfptAK+gqcK",
+              "format": "google-gemini-v1",
+              "id": "call_52821",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_52821",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"needle\":\"CONSOLIDATED STATEMENTS OF OPERATIONS\",\"file_stem\":\"0001739566-25-000053\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"start\":254000}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:31:24.542296+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "267d470130912f6b7eafa88e:agent:2",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042282-nk8bs3E1Q8d5AocXtG3c",
+        "usage": {
+          "prompt_tokens": 13602,
+          "completion_tokens": 102,
+          "total_tokens": 13704,
+          "cost": 0.005298075,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 7831,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005298075,
+            "upstream_inference_prompt_cost": 0.004915575,
+            "upstream_inference_completions_cost": 0.0003825
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 12.605679667999539,
+        "attempts": 1
+      },
+      {
+        "text": "According to Utz Brands, Inc.\u2019s Consolidated Statements of Operations and Comprehensive Income (Loss) in its Form 10-K for the fiscal year ended December 29, 2024:\n\n### **1. Financial Data**\n* **Gross profit:** $494,777 thousand (or $494.8 million)\n* **Net sales:** $1,409,281 thousand (or $1,409.3 million)\n\n---\n\n### **2. Calculation**\n$$\\text{Gross profit margin percentage} = \\frac{\\text{Gross profit}}{\\text{Net sales}} = \\frac{\\$494,777}{\\$1,409,281} \\approx 35.1085\\%$$\n\n* Expressed to two decimal places: **35.11%** (or **35.1%** as reported in Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations).\n\n---\n\n### **Source Citation**\n* **Filing:** Utz Brands, Inc. Form 10-K for the fiscal year ended December 29, 2024 (Accession: `0001739566-25-000053`)\n  * Item 8, *Consolidated Statements of Operations and Comprehensive Income (Loss)*\n  * Item 7, *Management's Discussion and Analysis of Financial Condition and Results of Operations \u2013 Results of Operations* (Chunk ID: `14e6d7a8-d96c-5bc1-a7d5-febc26908e92`)",
+        "message": {
+          "role": "assistant",
+          "content": "According to Utz Brands, Inc.\u2019s Consolidated Statements of Operations and Comprehensive Income (Loss) in its Form 10-K for the fiscal year ended December 29, 2024:\n\n### **1. Financial Data**\n* **Gross profit:** $494,777 thousand (or $494.8 million)\n* **Net sales:** $1,409,281 thousand (or $1,409.3 million)\n\n---\n\n### **2. Calculation**\n$$\\text{Gross profit margin percentage} = \\frac{\\text{Gross profit}}{\\text{Net sales}} = \\frac{\\$494,777}{\\$1,409,281} \\approx 35.1085\\%$$\n\n* Expressed to two decimal places: **35.11%** (or **35.1%** as reported in Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations).\n\n---\n\n### **Source Citation**\n* **Filing:** Utz Brands, Inc. Form 10-K for the fiscal year ended December 29, 2024 (Accession: `0001739566-25-000053`)\n  * Item 8, *Consolidated Statements of Operations and Comprehensive Income (Loss)*\n  * Item 7, *Management's Discussion and Analysis of Financial Condition and Results of Operations \u2013 Results of Operations* (Chunk ID: `14e6d7a8-d96c-5bc1-a7d5-febc26908e92`)",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a19mMRRrmXZaoavb2LdL671rZ6fZjfY6wid6Lj6mSi97rAPzakICGqj4d+NMWIZpVPS8DvyayqmmGzhkkfFHOIGemvGjoujOx7T/5vEOnPM5+BiB",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:35:26.074250+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "267d470130912f6b7eafa88e:agent:3",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042522-7D99mHGggQWnCyInbQaI",
+        "usage": {
+          "prompt_tokens": 19117,
+          "completion_tokens": 370,
+          "total_tokens": 19487,
+          "cost": 0.01572525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01572525,
+            "upstream_inference_prompt_cost": 0.01433775,
+            "upstream_inference_completions_cost": 0.0013875
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 4.811244487999829,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_33415",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Utz Brands gross profit net sales December 29 2024\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0001739566-25-000053",
+              "cik": "0001739566",
+              "company": "Utz Brands, Inc.",
+              "form_type": "10-K",
+              "filed_date": "20250220",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 60846,
+              "source_md5": "f48385a7b14848b80d8e7e164d660577",
+              "content_sha256": "3d5223dfe2cb813d95d09f53141bf5dcc11cde32aa878e4fb82afbf87bacc18b",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "14e6d7a8-d96c-5bc1-a7d5-febc26908e92",
+              "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+              "section_index": 10,
+              "chunk_index": 2,
+              "char_start": 202279,
+              "char_end": 209969,
+              "text": "| | | |\n|:---|:---|:---|\n| *(in millions)* | **For the Fiscal Year Ended December 29, 2024** | **For the Fiscal Year Ended December 31, 2023** |\n| **Net sales** | $1409281 | $1438237 |\n| **Cost of goods sold** | 914504 | 981751 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Gross profit | 494777 | 456486 |\n| **Selling, distribution and administrative expenses** |  |  |\n| &nbsp;&nbsp;&nbsp;Selling and distribution | 306151 | 273923 |\n| &nbsp;&nbsp;&nbsp;Administrative | 129642 | 159196 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total selling, distribution, and administrative expenses | 435793 | 433119 |\n| **(Loss) gain on sale of assets, net** | (78) | (7350) |\n| Income from operations | 58906 | 16017 |\n| **Other (expense) income** |  |  |\n| &nbsp;&nbsp;Gain on sale of business | 44015 |  |\n| &nbsp;&nbsp;&nbsp;Interest expense | (44862) | (60590) |\n| &nbsp;&nbsp;Loss on debt extinguishment | (1273) |  |\n| &nbsp;&nbsp;&nbsp;Other income | 2457 | 3066 |\n| &nbsp;&nbsp;Gain on remeasurement of warrant liability | 10224 | 2232 |\n| Other expense, net | 10561 | (55292) |\n| Income (loss) before income taxes | 69467 | (39275) |\n| **Income tax expense** | 38730 | 757 |\n| Net income (loss) | 30737 | (40032) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net (income) loss attributable to noncontrolling interest | (14763) | 15095 |\n| Net income (loss) attributable to controlling interest | $15974 | $(24937) |\n\n---\n\n\n\n------\n\n***Fiscal Year Ended December 29, 2024 versus Fiscal Year Ended December 31, 2023***\n\n*Net sales*\n\nNet sales were $1,409.3 million for the fiscal year ended December 29, 2024 and $1,438.2 million for the fiscal year ended December 31, 2023. Net sales for the fiscal year ended December 29, 2024 decreased $28.9 million or 2.0% from fiscal year 2023. The Good Health and R.W. Garcia Sale contributed 3.3% to the year-over-year decrease. The remaining change, totaling a 1.3% increase in net sales, was related to favorable volume/mix of 1.5% as further discussed below, offset by 0.2% attributable to lower net price realization as a result of the promotional environment and a decrease of 0.1% related to IO conversions. IO discounts increased from $179.3 million for the fiscal year ended December 31, 2023 to $183.6 million for the fiscal year ended December 29, 2024.\n\nSales are evaluated based on classification as Branded Salty Snacks or Non-Branded & Non-Salty Snacks. For the fiscal year ended December 29, 2024, excluding prior year sales related to the Good Health and R.W. Garcia Sale and certain IO conversions, Branded Salty Snacks and Non-Branded & Non-Salty Snacks totaled 87% and 13% of our net sales, respectively. For the fiscal year ended December 29, 2024, excluding prior year sales related to the Good Health and R.W. Garcia Sale and certain IO conversions, Branded Salty Snacks and Non-Branded & Non-Salty Snacks net sales increased by 3.7% and decreased by 12.3%, respectively.\n\n*Cost of goods sold and Gross profit*\n\nGross profit was $494.8 million for the fiscal year ended December 29, 2024 and $456.5 million for the fiscal year ended December 31, 2023. Our gross profit margin was 35.1% for the fiscal year ended December 29, 2024 versus 31.7% for the fiscal year ended December 31, 2023. The increase in gross profit and gross profit margin was primarily driven by benefits from increased productivity including plant network optimization activities, favorable sales volume/mix and ingredient cost deflation which more than offset supply chain cost inflation, investments to support the Company's productivity initiatives and slightly lower pricing. Additionally, IO discounts increased to $183.6 million for the fiscal year ended December 29, 2024, from $179.3 million for the fiscal year ended December 31, 2023.\n\n*Selling, distribution and administrative expenses*\n\nSelling, distribution and administrative expenses were $435.8 million for the fiscal year ended December 29, 2024 and $433.1 million for the fiscal year ended December 31, 2023, an increase of $2.7 million or 0.6%. The increase in selling, distribution, and administrative expense was primarily attributable to increased marketing spend on our Branded Salty Snacks as well as investments in digital and social consumer marketing, higher delivery costs due to outsourcing our private fleet operation, and investments in selling capabilities to support distribution growth in Expansion geographies partially offset by $12.6 million related to the impairment of fixed assets, primarily related to the closure of the manufacturing operation at the Birmingham, Alabama facility during the fiscal year ended December 31, 2023 as discussed in *Note 4. Property, Plant and Equipment, Net* to our Audited Financial Statements. The Company also recognized a liability and related expense of $4.7 million related to a contract termination with a co-manufacturer, which is recorded in the administrative line in the Consolidated Statement of Operations and Comprehensive Income (Loss) during the fiscal year ended December 31, 2023. This agreement was a continuation of the Company's response to shifting production from a manufacturing facility that was damaged by a natural disaster in 2021. This decrease was partially offset by an increased marketing spend, higher distribution costs, and investments in selling capabilities to support distribution growth in Expansion geographies.\n\n*(Loss) Gain on sale of assets*\n\nLoss on sale of assets was $0.1 million for the fiscal year ended December 29, 2024 and $7.4 million for the fiscal year ended December 31, 2023. The loss during the fiscal year ended December 31, 2023 was primarily related to the sale of the Company's manufacturing facility in Bluffton, Indiana which generated a loss of $13.4 million, partially offset by gain on sale of land for $4.0 million and the sale of IO routes and other fixed assets.\n\n------\n\n*Other income (expense), net*\n\nOther income (expense), net was $10.6 million for the fiscal year ended December 29, 2024 and $(55.3) million for the fiscal year ended December 31, 2023. The increase in other income of $65.8 million for the fiscal year ended December 29, 2024 compared to the fiscal year ended December 31, 2023 was primarily due to the gain on sale of business of $44.0 million relating to the Good Health and R.W. Garcia Sale which occurred on February 5, 2024. See *Note 2. Divestitures* to our Audited Financial Statements, for further discussion. Interest expense also decreased by $15.7 million, primarily related to the $141.0 million payment on our Term Loan B and the $17.7 million payment on our Real Estate Term Loan during the fiscal year ended December 29, 2024. There was also an increase in the loss on the remeasurement of the warrant liability of $8.0 million and a loss on debt extinguishment of $1.3 million recognized during the fiscal year ended December 29, 2024. See *Note 8. Long-Term Debt* to our Audited Financial Statements, for further discussion.\n\n*Income taxes*\n\nIncome taxes expense was $38.7 million for the fiscal year ended December 29, 2024 and $0.8 million for the fiscal year ended December 31, 2023. The increase in income tax expense for the fiscal year ended December 29, 2024 compared to the fiscal year ended December 31, 2023 is primarily attributable to the Good Health and R.W. Garcia Sale, which occurred on February 5, 2024. See *Note 2. Divestitures* to our Audited Financial Statements, for further discussion. The income tax expense increase is also driven by the increase in valuation allowance, which partially offsets a deferred tax asset, which resulted in a $7.6 million income tax expense. See *Note 14. Income Taxes*, for further discussion.\n\n**Non-GAAP Financial Measures**",
+              "token_count": 1911,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001739566-25-000053",
+              "cik": "0001739566",
+              "company": "Utz Brands, Inc.",
+              "form_type": "10-K",
+              "filed_date": "20250220",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 60846,
+              "source_md5": "f48385a7b14848b80d8e7e164d660577",
+              "content_sha256": "3d5223dfe2cb813d95d09f53141bf5dcc11cde32aa878e4fb82afbf87bacc18b",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "a2b58141-fa1f-5833-8cf1-e2ff954e012d",
+              "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+              "section_index": 10,
+              "chunk_index": 1,
+              "char_start": 193450,
+              "char_end": 202275,
+              "text": "*Acquisitions and Dispositions*\n\nDuring fiscal year 2022, the Company focused on increasing manufacturing and streamlining distribution. In April 2022, the Company purchased a brand new, recently completed snack food manufacturing facility in Kings Mountain, North Carolina from Evans Food Group Ltd. d/b/a Benestar Brands and related affiliates. The Company paid the full cash purchase price of $38.4 million at the closing and concurrently with the facility purchase, the Company sold 2.1 million shares of the Company's Class A Common Stock for $28.0 million, to affiliates of Benestar in a private placement pursuant to Section 4(a)(2) of the Securities Act of 1933.\n\nDuring fiscal years 2024, 2023 and 2022, the Company bought out and terminated the contracts of multiple distributors who had previously been providing services to the Company. These transactions were accounted for as asset purchases and contract terminations, respectively, and resulted in expense of $2.1 million, $1.5 million and $23.0 million for the fiscal years ended December 29, 2024, December 31, 2023 and January 1, 2023, respectively.\n\n------\n\nOn February 5, 2024, the Company sold certain assets and brands to affiliates of Our Home\u2122, an operating company of Better-for-You brands (\"Our Home\"). Under the agreement, affiliates of Our Home purchased the Good Health and R.W. Garcia brands, the Lincolnton, NC and Lititz, PA manufacturing facilities and certain related assets, and assumed the Company's Las Vegas, NV facility lease and manufacturing operations (the \"Good Health and R.W. Garcia Sale\"), for $167.5 million, subject to customary adjustments. See *Note 2. Divestitures* to our Audited Financial Statements.\n\nOn April 22, 2024, the Company sold to Our Home its Berlin, PA and Fitchburg, MA manufacturing facilities and certain related assets, including certain inventory (the \"Manufacturing Facilities Sale\"). The total consideration for the transactions was $18.5 million, subject to customary adjustments.\n\nThe Company and Our Home are operating under transition services agreements related to each of the Good Health and R.W. Garcia Sale and the Manufacturing Facilities Sale, which are scheduled to expire during the first half of 2025. In addition, the parties will operate under reciprocal co-manufacturing agreements pursuant to which Our Home will co-manufacture certain of the Company's products and the Company will co-manufacture certain Good Health products. Certain Good Health products will continue to be distributed and sold on the Company's DSD network for Our Home, pursuant to a distribution agreement. The Company received approximately $18.7 million in advance from Our Home for certain terms under these agreements, which the Company will recognize through income from operations over the terms of the transition services and co-manufacturing agreements.\n\n*Product Innovation*\n\nInvestments in new product innovation support three focus areas that are rooted in the consumer and tied to our portfolio and brand strategy: Expanding Positive Choices, Delivering Craveable Flavor, and Capturing Occasions. Within Expanding Positive Choices, 2024's focus was on the Boulder Canyon, a brand offering solutions for consumers seeking great tasting BFY snacks via BFY oils such as avocado oil and olive oil. Innovation contributed to the brand's 32.7% growth in the natural channel in 2024 with the launching of new flavors that capitalized on the hot & spicy trend and by entrance into the cheese snack subcategory. Within Delivering Craveable Flavor, in 2024, we addressed consumer desire for flavor exploration with innovation across brands and snacking subcategories via our seasoned pretzels and new potato chip flavor offerings in both our Utz and Zapp's brands. Within Capturing Occasions, in 2024, we introduced a portfolio of variety/multipacks across our Power Four Brands and our Targeted Brands.\n\n*Supply and Commodity Trends*\n\nWe regularly monitor worldwide supply and commodity costs so that we can cost-effectively secure ingredients, packaging and fuel required for production. A number of external factors such as weather, which may be impacted in unanticipated ways due to climate change, commodity market conditions, inflationary conditions and the effects of governmental, agricultural or other programs, may affect the cost and availability of raw materials and agricultural materials used in our products. We address commodity costs primarily through the use of buying-forward, which locks in pricing for key materials between three and 18 months in advance. Other methods include hedging, net pricing adjustments to cover longer term cost inflation, and manufacturing and overhead cost control. Our hedging techniques, such as forward contracts, limit the impact of fluctuations in the cost of our principal raw materials; however, we may not be able to fully hedge against commodity cost changes, where there is a limited ability to hedge, and our hedging strategies may not protect us from increases in specific raw material costs. We experienced an increase in pricing in certain commodity trends that continued to rise throughout fiscal year 2022 and have since stabilized during fiscal years 2023 and 2024. Commodity cost increases in commodity trends may adversely impact our net income. Although we have experienced some ingredient cost deflation, we continue to experience rising costs related to fuel and freight rates as well as rising labor costs which have negatively impacted profitability. Transportation costs have been on the rise since early in 2021 and may continue to rise which may also adversely impact net income. The Company looks to offset rising costs through increasing manufacturing and distribution efficiencies as well as through price increases to our customers, although it is unclear whether historic customer sales levels will be maintained at these higher prices (See *\"Key Developments and Trends - Long-Term Demographics, Consumer Trends, and Demand\"*). Due to competitive market conditions, planned trade or promotional incentives, or other factors, our pricing actions may also lag supply and commodity cost changes.\n\nWhile the costs of our principal raw materials fluctuate, we believe there will continue to be an adequate supply of the raw materials we use and that they will generally remain available from numerous sources. Market factors including supply and demand may result in higher costs of sourcing those materials.\n\n------\n\n*Independent Operator Conversions*\n\nOur DSD distribution is executed via Company-owned routes operated by RSP, and third-party routes managed by IOs. We have used the IO and RSP models for more than a decade. In fiscal year 2017, we embarked on a multi-year strategy to convert all company-owned RSP routes to the IO model. As of December 29, 2024, substantially all of our DSD routes are managed by IOs. The conversion process involves selling distribution rights to a defined route to an IO. As we convert routes, there is a decrease in the selling, distribution and administrative costs that we previously incurred on RSPs and a corresponding increase in discounts paid to IOs to cover their costs to distribute our product. The net impact is a reduction in selling expenses and a decrease in net sales and gross profit. Conversions also impact our consolidated balance sheet, resulting in cash proceeds to us as a result of selling the route to an IO, or by creating notes receivable related to the sale of the routes. While we expect to have a small number of routes under the ownership of the Company as we acquire and re-sell routes as part of our normal operations, as of December 29, 2024, substantially all of our DSD routes are managed by IOs.\n\n------\n\n**Results of Operations**\n\n**Overview**\n\nThe following tables present selected financial data for the fiscal year ended December 29, 2024 and fiscal year ended December 31, 2023.\n\nWe have prepared our discussion of the results of operations by comparing the results for the fiscal year ended December 29, 2024 to the results of operations for the fiscal year ended December 31, 2023. Refer to *<u>[Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations](https://www.sec.gov/ix?doc=/Archives/edgar/data/1739566/000173956624000054/utz-20231231.htm)</u>*<u>[, in our Annual Report on Form 10-K for the fiscal year ended](https://www.sec.gov/ix?doc=/Archives/edgar/data/1739566/000173956624000054/utz-20231231.htm)[December 31, 2023](https://www.sec.gov/ix?doc=/Archives/edgar/data/1739566/000173956624000054/utz-20231231.htm)</u>, for discussion of the results of operations for the fiscal year ended December 31, 2023, compared to the fiscal year ended January 1, 2023, which is incorporated by reference herein.\n\n---",
+              "token_count": 1819,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001739566-25-000053",
+              "cik": "0001739566",
+              "company": "Utz Brands, Inc.",
+              "form_type": "10-K",
+              "filed_date": "20250220",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 60846,
+              "source_md5": "f48385a7b14848b80d8e7e164d660577",
+              "content_sha256": "3d5223dfe2cb813d95d09f53141bf5dcc11cde32aa878e4fb82afbf87bacc18b",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "270a5941-1350-58f5-b439-9dbb54119c1e",
+              "section": "Item 1. Business",
+              "section_index": 1,
+              "chunk_index": 0,
+              "char_start": 22977,
+              "char_end": 32694,
+              "text": "**Item 1. Business**\n\n*Unless the context otherwise requires, all references in this Annual Report on Form 10-K to the \"Company,\" \"we,\" \"us\" or \"our\" refer to Utz Brands, Inc. and its consolidated subsidiaries. Our core geographies consist of Alabama, Connecticut, Delaware, Louisiana, Maine, Maryland, Massachusetts, Mississippi, New Hampshire, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Rhode Island, South Carolina, Virginia, Vermont, West Virginia, and Washington (our \"Core Geographies\"), with the rest of the U.S. representing our Expansion geographies (our \"Expansion Geographies\").*\n\n**Overview**\n\nWe are a leading United States manufacturer of branded salty snacks. We produce a broad offering of salty snacks, including potato chips, tortilla chips, pretzels, cheese snacks, pork skins, pub/party mixes, and other snacks. Our iconic portfolio of authentic, craft, and \"better-for-you\" (\"BFY\") brands, which includes *Utz, Zapp's, On The Border, Golden Flake,* and *Boulder Canyon*, among others, enjoys strong household penetration in the United States, where our products can be found in approximately half of U.S. households as of December 29, 2024. We are the second-largest producer of branded salty snacks in our Core Geographies as of December 29, 2024, based on retail sales, and we have historically expanded our geographic/distribution reach and product portfolio organically and through acquisitions. We were founded in 1921 in Hanover, Pennsylvania, and benefit from more than 100 years of brand awareness and heritage in the salty snack industry.\n\nAs of December 29, 2024, we operate eight primary manufacturing facilities with a broad range of capabilities, and our products are distributed nationally to grocery, mass, club, convenience, drug, e-commerce and other retailers through direct shipments, distributors, and approximately 2,500 DSD routes.\n\nOur business benefits from multiple opportunities to deliver attractive long-term profitable growth. Our value creation strategies are focused on driving productivity to enhance margins, reinvesting in marketing and innovation to accelerate revenue growth and continuing to make strategic acquisitions. We believe we are well-positioned for long-term growth in the salty snack industry as we (a) gained a significant amount of new buyers over the past several years, (b) have significant opportunity in our Expansion Geographies and under-penetrated channels, (c) continue to execute productivity efforts that we believe will help to fuel incremental marketing and innovation to accelerate growth in sales relative to our peers, (d) continue to make infrastructure improvements to enable us to continue to scale to greater heights, and (e) continue to make strategic acquisitions that deliver strong synergies and that enhance our competitive positioning. We believe each of these growth avenues represents a sizeable opportunity to expand our net sales. In addition, we further anticipate expanding our margins over the long term through supply chain productivity, revenue management, a higher-margin product mix, and higher margins on incremental sales as we leverage our scalable existing platform.\n\n**Recent Acquisitions and Dispositions**\n\nThe Company has focused on increasing manufacturing and streamlining distribution. In April 2022, the Company purchased a brand new, recently completed snack food manufacturing facility in Kings Mountain, North Carolina from Evans Food Group Ltd. d/b/a Benestar Brands and related affiliates. The Company paid the full cash purchase price of $38.4 million at the closing and concurrently with the facility purchase, the Company sold 2.1 million shares of the Company's Class A Common Stock for $28.0 million, to affiliates of Benestar in a private placement pursuant to Section 4(a)(2) of the Securities Act of 1933, as amended (the \"Securities Act\"). During fiscal years 2022, 2023 and 2024, the Company bought out and terminated the contracts of multiple distributors who had previously been providing services to the Company. These transactions were accounted for as asset purchases and contract terminations, respectively, and resulted in expense of $23.0 million, $1.5 million and $2.1 million for the fiscal years ended January 1, 2023, December 31, 2023 and December 29, 2024, respectively.\n\n------\n\nOn February 5, 2024, the Company sold certain assets and brands to affiliates of Our Home\u2122, an operating company of BFY brands (\"Our Home\"). Under the agreement, affiliates of Our Home purchased the Good Health and R.W. Garcia brands, the Lincolnton, NC and Lititz, PA manufacturing facilities and certain related assets, and assumed the Company's Las Vegas, NV facility lease and manufacturing operations (the \"Good Health and R.W. Garcia Sale\"), for $167.5 million, subject to customary adjustments.\n\nOn April 22, 2024, the Company sold to Our Home its Berlin, PA and Fitchburg, MA manufacturing facilities and certain related assets, including certain inventory (the \"Manufacturing Facilities Sale\"). The total consideration for the Manufacturing Facilities Sale was $18.5 million, subject to customary adjustments.\n\nThe Company and Our Home are operating under transition services agreements related to each of the Good Health and R,W. Garcia Sale and the Manufacturing Facility Sale, which are scheduled to expire during the first half of 2025. In addition, the parties will operate under reciprocal co-manufacturing agreements pursuant to which Our Home will co-manufacture certain of the Company's products and the Company will co-manufacture certain Good Health products. Certain Good Health products will continue to be distributed and sold on the Company's DSD network for Our Home pursuant to a distribution agreement. The Company received approximately $18.7 million in advance from Our Home for certain terms under these agreements, which the Company will recognize through income from operations over the terms of the transition services and co-manufacturing agreements. See *Note 2. Divestitures*, to our audited consolidated financial statements included under Part II, *Item 8* of this Annual Report on Form 10-K (our \"Audited Financial Statements\"), for further discussion.\n\nDuring the fiscal year ended December 29, 2024, the Company paid $9.2 million to purchase an indefinite life intangible right for use of a third-party brand name. This intangible is classified as an indefinite life trade name. See *Note 5. Goodwill and Intangible Assets, Net* to our Audited Financial Statements.\n\n**Growth Strategy**\n\nWe have a long-term growth strategy focusing on various initiatives. Our portfolio strategy is focused on accelerating investments in marketing and innovation to drive top-line growth and achieve share gains in the Salty Snack category. We plan to further penetrate our Expansion Geographies and untapped channels and customers by further expanding our Branded Salty Snacks in Expansion Geographies, as well as maintaining our share in our Core Geographies. We plan to transform our supply chain into a more cost-efficient and flexible system. As part of our long-term growth strategy, we intend to enhance our DSD system of IOs to further improve execution and generate higher returns and strengthen other organizational capabilities while driving out costs. Additionally, we intend to improve our balance sheet flexibility by accelerating cash generation and maintaining a disciplined capital allocation approach, which will reduce leverage while opportunistically pursuing strategic acquisitions and dispositions.\n\n**Brands**\n\nOur business is managed and reported in one operating segment due to the similar nature of all of the products that the Company sells, the functional alignment of the Company's organizational structure, and the reports that are regularly reviewed by the chief operating decision maker (the \"CODM\") for the purpose of assessing performance and allocating resources. However, we strategically manage our portfolio of brands by segregating our sole operating segment into Branded Salty Snacks and Non-Branded & Non-Salty Snacks. Branded Salty Snacks, in aggregate, enjoy a combination of higher growth and margins, greater potential for value-added innovation, and enhanced responsiveness to consumer marketing as compared to Non-Branded & Non-Salty Snacks. As a result, we focus our investment spending and brand-building activities on Branded Salty Snacks while managing Non-Branded & Non-Salty Snacks for cash flow generation to support investment in Branded Salty Snacks and fund other corporate priorities. We periodically assess the designation of brands within these segregations and reclassify brands based on their alignment with the criteria above.\n\n*Branded Salty Snacks*\n\nOur Branded Salty Snacks are comprised of our Power Four Brands, consisting of our flagship *Utz\u00ae* brand, *On The Border\u00ae, Zapp's*\u00ae, and *Boulder Canyon\u00ae,* along with our Other Brands, including *Golden Flake*\u00ae, *TORTIYAHS!*\u00ae, *Hawaiian*\u00ae, *Bachman*\u00ae, *Tim's Cascade\u00ae*, Dirty Potato Chips\u00ae, *TGI Fridays*\u00ae, and *Vitner's*\u00ae.\n\nOur flagship *Utz* brand generated retail sales in excess of $850 million in 2024, representing an approximate 7.1% compound annual growth rate (\"CAGR\") (during 2020 through 2024) and making it one of the 10 largest salty snack brands in the United States by retail sales as of December 29, 2024. Recognized for its iconic logo featuring the \"Little Utz Girl\" since the 1920s, the *Utz* brand currently uses the slogan \"Family Crafted Flavor Since 1921\". We sell a variety of salty snacks under the *Utz* brand, including potato chips, pretzels, cheese snacks, pub/party mixes, and seasonal favorites.\n\n------",
+              "token_count": 1997,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001437749-25-002365",
+              "cik": "0001084869",
+              "company": "1 800 FLOWERS COM INC",
+              "form_type": "10-Q",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 778,
+              "source_md5": "984a9d846e8a798493f26af7aab2cd8b",
+              "content_sha256": "82f88b7adce8ad752aa4bfb48556843a6245f9b1088b593ed8b3bef3e8e6b713",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "40e11d9f-a298-5c74-8c05-5693347df237",
+              "section": "ITEM 2. MANAGEMENT**'**S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 2,
+              "chunk_index": 18,
+              "char_start": 106461,
+              "char_end": 108827,
+              "text": "**Gourmet Foods & Gift Baskets segment** - Gross profit decreased by 3.3% and 4.5% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, due to the decrease in revenue noted above, partially offset by a slightly improved gross profit percentage. Gross profit percentage increased 30 basis points and 50 basis points during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year. The increased gross profit percentage was attributable to lower delivery and shipping costs and labor efficiencies, which was partially offset by a higher cost of merchandise and incremental costs associated with the implementation of a new order management system for our Harry & David Brand.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 28\n\n------\n\n[**Table of Contents**](#toc)\n\n***Marketing and sales expense***\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n|  | **Three Months Ended** | **Three Months Ended** | **Three Months Ended** | **Six Months Ended** | **Six Months Ended** | **Six Months Ended** |\n|  | **December 29,** | **December 31,** | **%** | **December 29,** | **December 31,** | **%** |\n|  | **2024** | **2023** | **Change** | **2024** | **2023** | **Change** |\n|  | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* |\n| Marketing and sales | $187003 | $188557 | -0.8% | $269100 | $271075 | -0.7% |\n| Percentage of net revenues | 24.1% | 22.9% |  | 26.4% | 24.8% |  |\n\n---\n\n\n\nMarketing and sales expense consists primarily of advertising and promotional expenditures, catalog costs, online portal and search costs, retail store and fulfillment operations (other than costs included in cost of revenues) and customer service center expenses, as well as the operating expenses of the Company's departments engaged in marketing, selling and merchandising activities.\n\nMarketing and sales expense decreased 0.8% and 0.7% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, mainly related to decreased labor costs, which was partially offset by increased advertising costs due to a competitive environment.\n\n***Technology and development expense***\n\n---",
+              "token_count": 581,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001437749-25-002365",
+              "cik": "0001084869",
+              "company": "1 800 FLOWERS COM INC",
+              "form_type": "10-Q",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 778,
+              "source_md5": "984a9d846e8a798493f26af7aab2cd8b",
+              "content_sha256": "82f88b7adce8ad752aa4bfb48556843a6245f9b1088b593ed8b3bef3e8e6b713",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "3807d4a1-e520-5d73-902d-b0feb9d3d8cc",
+              "section": "ITEM 2. MANAGEMENT**'**S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 2,
+              "chunk_index": 16,
+              "char_start": 101697,
+              "char_end": 103771,
+              "text": "Net revenues decreased 16.2% and 18.2% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year. The net revenue decline was primarily due to lower service revenues, which were attributable to a decline in order volume processed through the network.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 27\n\n------\n\n[**Table of Contents**](#toc)\n\n**Gourmet Foods & Gift Baskets** - this segment includes the operations of Harry & David, Wolferman's, Cheryl's Cookies, The Popcorn Factory, 1-800-Baskets/DesignPac, Shari's Berries, Vital Choice, and since July 1, 2024, Scharffen Berger. Revenue is derived from the sale of gourmet fruits, cookies, baked gifts, premium chocolates and confections, gourmet popcorn, gift baskets, dipped berries, prime steaks, chops, and fish, through the Company's e-commerce sales channels (telephonic and online sales) and company-owned and operated retail stores under the Harry & David and Cheryl's Cookies brand names, as well as wholesale operations.\n\nNet revenues within this segmentdecreased4.0% and 5.6% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, as a result of lower e-commerce revenues, which were impacted by lower demand, partially offset by increased wholesale volume as big box retailers increased orders in the current year. In addition, the implementation of a new order management system for our Harry & David brand negatively impacted sales in the current period by approximately $20 million.\n\nDuring the three and six months ended December 29, 2024, Gourmet Foods & Gift Baskets orders through its e-commerce sales channel (online and telephonic sales) decreased 7.0% and 8.0%, respectively, compared to the same periods of the prior year. In addition, the average order value decreased 1.5% and 1.2%, respectively, as a result of product mix trending towards lower price point items and the higher promotions due to the competitive market.\n\n***Gross profit***\n\n---",
+              "token_count": 472,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 2.5467262570000457
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_48222",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"file_stem\":\"0001739566-25-000053\",\"start\":200000,\"needle\":\"Consolidated Statements of Operations\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\"}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0001739566-25-000053:242589:254589",
+          "accession": "0001739566-25-000053",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+          "char_start": 242589,
+          "char_end": 254589,
+          "text": "ve for potential future bad debt was $3.3 million as of December 29, 2024 and $2.9 million as of December 31, 2023.\n\n**Item 8. Financial Statements and Supplementary Data**\n\n---\n\n\n\n| | |\n|:---|:---|\n| **Index to the Financial Statements** | Page |\n| <u>[Report of Independent Registered Public Accounting Firm](#i6991040198d845a9a76de1c9896b2fc3_58)(Grant Thornton LLP, Philadelphia, PA[, PCAOB ID Number](#i6991040198d845a9a76de1c9896b2fc3_58)248[)](#i6991040198d845a9a76de1c9896b2fc3_58)</u> | <u>[54](#i6991040198d845a9a76de1c9896b2fc3_58)</u> |\n| <u>[Report of Independent Registered Public Accounting Firm on Internal Control Over Financial Reporting (Grant Thornton LLP, Philadelphia, PA, PCAOB ID Number 248)](#i6991040198d845a9a76de1c9896b2fc3_61)</u> | <u>[55](#i6991040198d845a9a76de1c9896b2fc3_61)</u> |\n| <u>[Consolidated Balance Sheets as of December 29, 2024 and December 31, 2023](#i6991040198d845a9a76de1c9896b2fc3_64)</u> | <u>[56](#i6991040198d845a9a76de1c9896b2fc3_64)</u> |\n| <u>[Consolidated Statements of Operations And Comprehensive Income (Loss) for the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023](#i6991040198d845a9a76de1c9896b2fc3_67)</u> | <u>[57](#i6991040198d845a9a76de1c9896b2fc3_67)</u> |\n| <u>[Consolidated Statements of Equity for the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023](#i6991040198d845a9a76de1c9896b2fc3_70)</u> | <u>[58](#i6991040198d845a9a76de1c9896b2fc3_70)</u> |\n| <u>[Consolidated Statements of Cash Flows for the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023](#i6991040198d845a9a76de1c9896b2fc3_73)</u> | <u>[60](#i6991040198d845a9a76de1c9896b2fc3_73)</u> |\n| <u>[Notes to Consolidated Financial Statements](#i6991040198d845a9a76de1c9896b2fc3_76)</u> | <u>[61](#i6991040198d845a9a76de1c9896b2fc3_76)</u> |\n\n---\n\n\n\n------\n\n**REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTANTS**<br>\n\nBoard of Directors and Stockholders\n\nUtz Brands, Inc.\n\n**Opinion on the financial statements** \n\nWe have audited the accompanying consolidated balance sheets of Utz Brands, Inc. (a Delaware corporation) and subsidiaries (the \"Company\") as of December 29, 2024 and December 31, 2023, the related consolidated statements of operations and comprehensive income (loss), equity (deficit), and cash flows for each of the three years in the period ended December 29, 2024 and the related notes (collectively referred to as the \"consolidated financial statements\"). In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company as of December 29, 2024 and December 31, 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 29, 2024, in conformity with accounting principles generally accepted in the United States of America.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (\"PCAOB\"), the Company's internal control over financial reporting as of December 29, 2024, based on criteria established in the 2013 Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (\"COSO\"), and our report dated February 20, 2025 expressed an unqualified opinion.\n\n**Change in accounting principle**\n\nAs discussed in Note 1 to the consolidated financial statements, the Company has adopted new accounting guidance in 2024 related to the disclosure of segment information in accordance with ASU 2023-07, Segment Reporting (Topic 280). The adoption was retrospectively applied to 2023 and 2022.\n\n**Basis for opinion** \n\nThese consolidated financial statements are the responsibility of the Company's management. Our responsibility is to express an opinion on the Company's consolidated financial statements based on our audits. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audits in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. We believe that our audits provide a reasonable basis for our opinion.\n\n**Critical audit matters**\n\nCritical audit matters are matters arising from the current period audit of the consolidated financial statements that were communicated or required to be communicated to the audit committee and that: (1) relate to accounts or disclosures that are material to the consolidated financial statements and (2) involved our especially challenging, subjective, or complex judgments. We determined that there are no critical audit matters.\n\n/s/ GRANT THORNTON LLP\n\nWe have served as the Company's auditor since 2011.\n\nPhiladelphia, Pennsylvania\n\nFebruary 20, 2025\n\n------\n\n**REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTANTS**<br>\n\nBoard of Directors and Stockholders\n\nUtz Brands, Inc.\n\n**Opinion on internal control over financial reporting**\n\nWe have audited the internal control over financial reporting of Utz Brands, Inc. (a Delaware corporation) and subsidiaries (the \"Company\") as of December 29, 2024, based on criteria established in the 2013 Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (\"COSO\"). In our opinion, the Company maintained, in all material respects, effective internal control over financial reporting as of December 29, 2024, based on criteria established in the 2013 Internal Control\u2014Integrated Framework issued by COSO.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (\"PCAOB\"), the consolidated financial statements of the Company as of and for the period ended December 29, 2024, and our report dated February 20, 2025 expressed an unqualified opinion on those financial statements.\n\n**Basis for opinion**\n\nThe Company's management is responsible for maintaining effective internal control over financial reporting and for its assessment of the effectiveness of internal control over financial reporting, included in the accompanying Management's Report on Internal Control over Financial Reporting. Our responsibility is to express an opinion on the Company's internal control over financial reporting based on our audit. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audit in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether effective internal control over financial reporting was maintained in all material respects. Our audit included obtaining an understanding of internal control over financial reporting, assessing the risk that a material weakness exists, testing and evaluating the design and operating effectiveness of internal control based on the assessed risk, and performing such other procedures as we considered necessary in the circumstances. We believe that our audit provides a reasonable basis for our opinion.\n\n**Definition and limitations of internal control over financial reporting**\n\nA company's internal control over financial reporting is a process designed to provide reasonable assurance regarding the reliability of financial reporting and the preparation of financial statements for external purposes in accordance with generally accepted accounting principles. A company's internal control over financial reporting includes those policies and procedures that (1) pertain to the maintenance of records that, in reasonable detail, accurately and fairly reflect the transactions and dispositions of the assets of the company; (2) provide reasonable assurance that transactions are recorded as necessary to permit preparation of financial statements in accordance with generally accepted accounting principles, and that receipts and expenditures of the company are being made only in accordance with authorizations of management and directors of the company; and (3) provide reasonable assurance regarding prevention or timely detection of unauthorized acquisition, use, or disposition of the company's assets that could have a material effect on the financial statements.\n\nBecause of its inherent limitations, internal control over financial reporting may not prevent or detect misstatements. Also, projections of any evaluation of effectiveness to future periods are subject to the risk that controls may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate.\n\n/s/ GRANT THORNTON LLP\n\nPhiladelphia, Pennsylvania\n\nFebruary 20, 2025\n\n------\n\n**Utz Brands, Inc.**\n\n**CONSOLIDATED BALANCE SHEETS**\n\n**December 29, 2024 and December 31, 2023**\n\n**(In thousands, except share information)**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **As of<br>December 29, 2024** | **As of<br>December 31, 2023** |\n| **ASSETS** | | |\n| **Current Assets** | | |\n| &nbsp;&nbsp;&nbsp;Cash and cash equivalents | $56138 | $52023 |\n| &nbsp;&nbsp;Accounts receivable, less allowance of $3,267 and $2,933, respectively | 119867 | 135130 |\n| &nbsp;&nbsp;&nbsp;Inventories | 101362 | 104666 |\n| &nbsp;&nbsp;&nbsp;Prepaid expenses and other assets | 35269 | 30997 |\n| &nbsp;&nbsp;&nbsp;Current portion of notes receivable | 4622 | 5237 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total current assets | 317258 | 328053 |\n| **Non-current Assets** |  |  |\n| &nbsp;&nbsp;&nbsp;Assets held for sale |  | 7559 |\n| &nbsp;&nbsp;&nbsp;Property, plant and equipment, net | 345210 | 318881 |\n| &nbsp;&nbsp;&nbsp;Goodwill | 870695 | 915295 |\n| &nbsp;&nbsp;&nbsp;Intangible assets, net | 996510 | 1063413 |\n| &nbsp;&nbsp;&nbsp;Non-current portion of notes receivable | 9192 | 12413 |\n| &nbsp;&nbsp;&nbsp;Other assets | 189547 | 101122 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total non-current assets | 2411154 | 2418683 |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Total assets** | $**2728412** | $**2746736** |\n| **LIABILITIES AND EQUITY** |  |  |\n| **Current Liabilities** |  |  |\n| &nbsp;&nbsp;&nbsp;Current portion of term debt | $16097 | $21086 |\n| &nbsp;&nbsp;&nbsp;Current portion of other notes payable | 6917 | 7649 |\n| &nbsp;&nbsp;&nbsp;Accounts payable | 150927 | 124361 |\n| &nbsp;&nbsp;&nbsp;Accrued expenses and other | 78281 | 77590 |\n| &nbsp;&nbsp;&nbsp;Current portion of warrant liability | 33048 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total current liabilities | 285270 | 230686 |\n| Non-current portion of term debt | 752484 | 878511 |\n| Non-current portion of other notes payable | 14985 | 19174 |\n| Non-current accrued expenses and other | 164185 | 76720 |\n| Non-current warrant liability |  | 43272 |\n| Deferred tax liability | 123744 | 114690 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total non-current liabilities | 1055398 | 1132367 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total liabilities | 1340668 | 1363053 |\n| **Commitments and contingencies** |  |  |\n| **Equity** |  |  |\n| &nbsp;&nbsp;&nbsp;Members' equity |  |  |\n| S",
+          "total_chars": 592650,
+          "next_start": 254589,
+          "resources": {
+            "peak_rss_mib": 504.14453125,
+            "cpu_seconds": 0.386888,
+            "wall_seconds": 0.35916983900006016,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 0.6592701159997887
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_52821",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"needle\":\"CONSOLIDATED STATEMENTS OF OPERATIONS\",\"file_stem\":\"0001739566-25-000053\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"start\":254000}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0001739566-25-000053:254613:266613",
+          "accession": "0001739566-25-000053",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+          "char_start": 254613,
+          "char_end": 266613,
+          "text": "Stock, $0.0001 par value; 1,000,000,000 shares authorized; 83,537,542 and 81,187,977 shares issued and outstanding as of December 29, 2024 and December 31, 2023, respectively. | 8 | 8 |\n| Shares of Class V Common Stock, $0.0001 par value; 61,249,000 shares authorized; 57,349,000 and 59,349,000 shares issued and outstanding as of December 29, 2024 and December 31, 2023, respectively. | 6 | 6 |\n| &nbsp;&nbsp;&nbsp;Additional paid-in capital | 988510 | 944573 |\n| &nbsp;&nbsp;&nbsp;Accumulated deficit | (304663) | (298049) |\n| &nbsp;&nbsp;&nbsp;Accumulated other comprehensive income | 18590 | 22958 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total stockholders' equity | 702451 | 669496 |\n| &nbsp;&nbsp;&nbsp;Noncontrolling interest | 685293 | 714187 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total equity | 1387744 | 1383683 |\n| **Total liabilities and equity** | $**2728412** | $**2746736** |\n\n---\n\n\n\n*The accompanying notes are an integral part of these consolidated financial statements.*\n\n------\n\n**Utz Brands, Inc.**\n\n**CONSOLIDATED STATEMENTS OF OPERATIONS AND COMPREHENSIVE INCOME (LOSS)**\n\n**For the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023**\n\n**(In thousands, except share information)**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| (in thousands) | **For the Fiscal Year Ended December 29, 2024** | **For the Fiscal Year Ended December 31, 2023** | **For the Fiscal Year Ended January 1, 2023** |\n| **Net sales** | $1409281 | $1438237 | $1408401 |\n| **Cost of goods sold** | 914504 | 981751 | 959344 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Gross profit | 494777 | 456486 | 449057 |\n| **Selling, distribution and administrative expenses** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Selling and distribution | 306151 | 273923 | 294061 |\n| &nbsp;&nbsp;&nbsp;Administrative | 129642 | 159196 | 150343 |\n| Total selling, distribution, and administrative expenses | 435793 | 433119 | 444404 |\n| **(Loss) gain on sale of assets, net** | (78) | (7350) | 691 |\n| Income from operations | 58906 | 16017 | 5344 |\n| **Other income (expense)** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Gain on sale of business | 44015 |  |  |\n| &nbsp;&nbsp;&nbsp;Interest expense | (44862) | (60590) | (44424) |\n| &nbsp;&nbsp;&nbsp;Loss on debt extinguishment | (1273) |  |  |\n| &nbsp;&nbsp;&nbsp;Other income | 2457 | 3066 | 400 |\n| &nbsp;&nbsp;Gain on remeasurement of warrant liability | 10224 | 2232 | 720 |\n| Other income (expense), net | 10561 | (55292) | (43304) |\n| Income (loss) before income taxes | 69467 | (39275) | (37960) |\n| **Income tax expense (benefit)** | 38730 | 757 | (23919) |\n| Net income (loss) | 30737 | (40032) | (14041) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net (income) loss attributable to noncontrolling interest | (14763) | 15095 | 13649 |\n| Net income (loss) attributable to controlling interest | $15974 | $(24937) | $(392) |\n| **Earnings (loss) per share of Class A Common Stock:** <br>***(in dollars)*** |  |  |  |\n| &nbsp;&nbsp;Basic | $0.19 | $(0.31) | $\u2014 |\n| &nbsp;&nbsp;Diluted | $0.19 | $(0.31) | $\u2014 |\n| **Weighted-average shares of Class A Common Stock outstanding:** |  |  |  |\n| &nbsp;&nbsp;Basic | 82102876 | 81081458 | 80093094 |\n| &nbsp;&nbsp;Diluted | 85433980 | 81081458 | 80093094 |\n| **Net income (loss)** | $30737 | $(40032) | $(14041) |\n| **Other comprehensive (loss) gain:** |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Change in fair value of interest rate swap | (7478) | (13543) | 47279 |\n| **Comprehensive income (loss)** | 23259 | (53575) | 33238 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net comprehensive (income) loss attributable to noncontrolling interest | (11653) | 20819 | (6568) |\n| Net comprehensive income (loss) attributable to controlling interest | $11606 | $(32756) | $26670 |\n\n---\n\n\n\n*The accompanying notes are an integral part of these consolidated financial statements.*\n\n------\n\n**Utz Brands, Inc.**\n\n**CONSOLIDATED STATEMENTS OF EQUITY (DEFICIT)**\n\n**For the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023**\n\n**(In thousands, except share information)**\n\n---\n\n\n\n| | | | | | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|\n| | Class A Common Stock | Class A Common Stock | Class V Common Stock | Class V Common Stock | Additional Paid-in Capital | Accumulated (Deficit) | Accumulated Other Comprehensive Income | Total Stockholders' Equity | Non-controlling Interest | Total Equity |\n| | Shares | Amount | Shares | Amount | Additional Paid-in Capital | Accumulated (Deficit) | Accumulated Other Comprehensive Income | Total Stockholders' Equity | Non-controlling Interest | Total Equity |\n| **Balance at January 2, 2022** | **77644645** | $**8** | **59349000** | $**6** | $**912574** | $**(236598)** | $**3715** | $**679705** | $**754968** | $**1434673** |\n| Payments of tax withholding requirements for employee stock awards |  |  |  |  | (6217) |  |  | (6217) |  | (6217) |\n| Share-based compensation | 1132316 |  |  |  | 10632 |  |  | 10632 |  | 10632 |\n| Issuance of common stock in connection with private placement sale | 2105373 |  |  |  | 28000 |  |  | 28000 |  | 28000 |\n| Tax impact arising from capital transactions |  |  |  |  | (18070) |  |  | (18070) |  | (18070) |\n| Net loss |  |  |  |  |  | (392) |  | (392) | (13649) | (14041) |\n| Other comprehensive income |  |  |  |  |  |  | 27062 | 27062 | 20217 | 47279 |\n| Cash dividends declared ($0.219 per<br>share of Class A Common Stock) |  |  |  |  |  | (17574) |  | (17574) |  | (17574) |\n| Distribution to noncontrolling interest |  |  |  |  |  |  |  |  | (12998) | (12998) |\n| **Balance at January 1, 2023** | **80882334** | $**8** | **59349000** | $**6** | $**926919** | $**(254564)** | $**30777** | $**703146** | $**748538** | $**1451684** |\n| Payments of tax withholding requirements for employee stock awards |  |  |  |  | (589) |  |  | (589) |  | (589) |\n| Share-based compensation | 305643 |  |  |  | 17069 |  |  | 17069 |  | 17069 |\n| Tax impact arising from capital transactions |  |  |  |  | 1174 |  |  | 1174 |  | 1174 |\n| Net loss |  |  |  |  |  | (24937) |  | (24937) | (15095) | (40032) |\n| Other comprehensive loss |  |  |  |  |  |  | (7819) | (7819) | (5724) | (13543) |\n| Cash dividends declared ($0.228 per<br>share of Class A Common Stock) |  |  |  |  |  | (18548) |  | (18548) |  | (18548) |\n| Distribution to noncontrolling interest |  |  |  |  |  |  |  |  | (13532) | (13532) |\n| **Balance at December 31, 2023** | **81187977** | $**8** | **59349000** | $**6** | $**944573** | $**(298049)** | $**22958** | $**669496** | $**714187** | $**1383683** |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | | | | | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|\n| | Class A Common Stock | Class A Common Stock | Class V Common Stock | Class V Common Stock | Additional Paid-in Capital | Accumulated (Deficit) | Accumulated Other Comprehensive Income | Total Stockholders' Equity | Non-controlling Interest | Total Equity |\n| | Shares | Amount | Shares | Amount | Additional Paid-in Capital | Accumulated (Deficit) | Accumulated Other Comprehensive Income | Total Stockholders' Equity | Non-controlling Interest | Total Equity |\n| **Balance at December 31, 2023** | **81187977** | $**8** | **59349000** | $**6** | $**944573** | $**(298049)** | $**22958** | $**669496** | $**714187** | $**1383683** |\n| Payments of tax withholding requirements for employee stock awards |  |  |  |  | (1397) |  |  | (1397) |  | (1397) |\n| Share-based compensation | 349565 |  |  |  | 18295 |  |  | 18295 |  | 18295 |\n| Class V to Class A Exchange | 2000000 |  | (2000000) |  | 24095 |  |  | 24095 | (24095) |  |\n| Deferred tax impact from divestiture |  |  |  |  | 2944 |  |  | 2944 | 2146 | 5090 |\n| Special excess cash dividend |  |  |  |  |  | (2619) |  | (2619) |  | (2619) |\n| Net income |  |  |  |  |  | 15974 |  | 15974 | 14763 | 30737 |\n| Other comprehensive loss |  |  |  |  |  |  | (4368) | (4368) | (3110) | (7478) |\n| Cash dividends declared |  |  |  |  |  | (19969) |  | (19969) |  | (19969) |\n| Distribution to noncontrolling interest |  |  |  |  |  |  |  |  | (13944) | (13944) |\n| Tax distribution |  |  |  |  |  |  |  |  | (4654) | (4654) |\n| **Balance at December 29, 2024** | **83537542** | $**8** | **57349000** | $**6** | $**988510** | $**(304663)** | $**18590** | $**702451** | $**685293** | $**1387744** |\n\n---\n\n\n\n*The accompanying notes are an integral part of these consolidated financial statements.*\n\n------\n\n**Utz Brands, Inc.**\n\n**CONSOLIDATED STATEMENTS OF CASH FLOWS**\n\n**For the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023**\n\n**(In thousands)**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **For the Fiscal Year Ended December 29, 2024** | **For the Fiscal Year Ended December 31, 2023** | **For the Fiscal Year Ended January 1, 2023** |\n| **Cash flows from operating activities** | | | |\n| &nbsp;&nbsp;&nbsp;Net income (loss) | $30737 | $(40032) | $(14041) |\n| &nbsp;&nbsp;&nbsp;Adjustments to reconcile net income (loss) to net cash provided by operating activities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impairment and other charges |  | 12575 | 4678 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depreciation and amortization | 70940 | 79488 | 86801 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gain on sale of business | (44015) |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gain on remeasurement of warrant liability | (10224) | (2232) | (720) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loss (gain) on sale of assets | 78 | 7350 | (691) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Share-based compensation | 18295 | 17069 | 10632 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loss on debt extinguishment | 1273 |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deferred income taxes | 14145 | (8938) | (29359) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amortization of deferred financing costs | 3154 | 1556 | 1933 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Changes in assets and liabilities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accounts receivable, net | 6782 | 1855 | (5597) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inventories | (4628) | 12652 | (38490) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prepaid expenses and other assets | (103459) | (14433) | (18379) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accounts payable and accrued expenses and other | 123088 | 9730 | 51426 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net cash provided by operating activities | 106166 | 76640 | 48193 |\n| **Cash flows from investing activities** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Acquisitions, net of cash acquired |  |  | (75) |\n| &nbsp;&nbsp;&nbsp;Purchases of property and equipment | (98639) | (55724) | (87965) |\n| &nbsp;&nbsp;&nbsp;Purchases of intangibles | (9220) |  |  |\n| &nbsp;&nbsp;&nbsp;Proceeds from sale of property and equipment | 26640 | 9539 | 4333 |\n| &nbsp;&nbsp;&nbsp;Proceeds from sale of business | 167500 |  |  |\n| &nbsp;&nbsp;&nbsp;Proceeds from sale of routes | 26658 | 28665 | 23399 |\n| &nbsp;&nbsp;&nbsp;Proceeds from the sale of IO notes | 4912 | 5405 | 5017 |\n| &nbsp;&nbsp;&nbsp;Proceeds from insurance claims for capital investments |  | 1700 | 3935 |\n| &nbsp;&nbsp;&nbsp;Notes receivable, net | (42890) | (38077) | (24711) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net cash provided by (used in) investing activities | 74961 | (48492) | (76067) |\n| **Cash flows from financing activities** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Borrowings on line of credit | 114500 | 71000 | 79000 |\n| &nbsp;&nbsp;&nbsp;Repayments on line of credit | (114699) | (70632) | (115000) |\n| &nbsp;&nbsp;&nbsp;Borrowings on term debt and notes payable | 39112 | 13113 | 124592 |\n| &nbsp;&nbsp;&nbsp;Repayments on term debt and notes payable | (173742) | (29211) | (21037) |\n| &nbsp;&nbsp;&nbsp;Payment of debt issuance cost | (733) | (656) | (3660) |\n| &nbsp;&nbsp;&nbsp;Payments of tax withholding requirements for employee stock awards | (1397) | (589) | (6217) |\n| &nbsp;&nbsp;&nbsp;Proceeds from issuance of shares |  |  | 28000 |\n| &nbsp;&n",
+          "total_chars": 592650,
+          "next_start": 266613,
+          "resources": {
+            "peak_rss_mib": 505.76953125,
+            "cpu_seconds": 0.345033,
+            "wall_seconds": 0.3215763970001717,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 0.3774411849999524
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0001739566-25-000053",
+        "cik": "0001739566",
+        "company": "Utz Brands, Inc.",
+        "form_type": "10-K",
+        "filed_date": "20250220",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 60846,
+        "source_md5": "f48385a7b14848b80d8e7e164d660577",
+        "content_sha256": "3d5223dfe2cb813d95d09f53141bf5dcc11cde32aa878e4fb82afbf87bacc18b",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "14e6d7a8-d96c-5bc1-a7d5-febc26908e92",
+        "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "section_index": 10,
+        "chunk_index": 2,
+        "char_start": 202279,
+        "char_end": 209969,
+        "text": "| | | |\n|:---|:---|:---|\n| *(in millions)* | **For the Fiscal Year Ended December 29, 2024** | **For the Fiscal Year Ended December 31, 2023** |\n| **Net sales** | $1409281 | $1438237 |\n| **Cost of goods sold** | 914504 | 981751 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Gross profit | 494777 | 456486 |\n| **Selling, distribution and administrative expenses** |  |  |\n| &nbsp;&nbsp;&nbsp;Selling and distribution | 306151 | 273923 |\n| &nbsp;&nbsp;&nbsp;Administrative | 129642 | 159196 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total selling, distribution, and administrative expenses | 435793 | 433119 |\n| **(Loss) gain on sale of assets, net** | (78) | (7350) |\n| Income from operations | 58906 | 16017 |\n| **Other (expense) income** |  |  |\n| &nbsp;&nbsp;Gain on sale of business | 44015 |  |\n| &nbsp;&nbsp;&nbsp;Interest expense | (44862) | (60590) |\n| &nbsp;&nbsp;Loss on debt extinguishment | (1273) |  |\n| &nbsp;&nbsp;&nbsp;Other income | 2457 | 3066 |\n| &nbsp;&nbsp;Gain on remeasurement of warrant liability | 10224 | 2232 |\n| Other expense, net | 10561 | (55292) |\n| Income (loss) before income taxes | 69467 | (39275) |\n| **Income tax expense** | 38730 | 757 |\n| Net income (loss) | 30737 | (40032) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net (income) loss attributable to noncontrolling interest | (14763) | 15095 |\n| Net income (loss) attributable to controlling interest | $15974 | $(24937) |\n\n---\n\n\n\n------\n\n***Fiscal Year Ended December 29, 2024 versus Fiscal Year Ended December 31, 2023***\n\n*Net sales*\n\nNet sales were $1,409.3 million for the fiscal year ended December 29, 2024 and $1,438.2 million for the fiscal year ended December 31, 2023. Net sales for the fiscal year ended December 29, 2024 decreased $28.9 million or 2.0% from fiscal year 2023. The Good Health and R.W. Garcia Sale contributed 3.3% to the year-over-year decrease. The remaining change, totaling a 1.3% increase in net sales, was related to favorable volume/mix of 1.5% as further discussed below, offset by 0.2% attributable to lower net price realization as a result of the promotional environment and a decrease of 0.1% related to IO conversions. IO discounts increased from $179.3 million for the fiscal year ended December 31, 2023 to $183.6 million for the fiscal year ended December 29, 2024.\n\nSales are evaluated based on classification as Branded Salty Snacks or Non-Branded & Non-Salty Snacks. For the fiscal year ended December 29, 2024, excluding prior year sales related to the Good Health and R.W. Garcia Sale and certain IO conversions, Branded Salty Snacks and Non-Branded & Non-Salty Snacks totaled 87% and 13% of our net sales, respectively. For the fiscal year ended December 29, 2024, excluding prior year sales related to the Good Health and R.W. Garcia Sale and certain IO conversions, Branded Salty Snacks and Non-Branded & Non-Salty Snacks net sales increased by 3.7% and decreased by 12.3%, respectively.\n\n*Cost of goods sold and Gross profit*\n\nGross profit was $494.8 million for the fiscal year ended December 29, 2024 and $456.5 million for the fiscal year ended December 31, 2023. Our gross profit margin was 35.1% for the fiscal year ended December 29, 2024 versus 31.7% for the fiscal year ended December 31, 2023. The increase in gross profit and gross profit margin was primarily driven by benefits from increased productivity including plant network optimization activities, favorable sales volume/mix and ingredient cost deflation which more than offset supply chain cost inflation, investments to support the Company's productivity initiatives and slightly lower pricing. Additionally, IO discounts increased to $183.6 million for the fiscal year ended December 29, 2024, from $179.3 million for the fiscal year ended December 31, 2023.\n\n*Selling, distribution and administrative expenses*\n\nSelling, distribution and administrative expenses were $435.8 million for the fiscal year ended December 29, 2024 and $433.1 million for the fiscal year ended December 31, 2023, an increase of $2.7 million or 0.6%. The increase in selling, distribution, and administrative expense was primarily attributable to increased marketing spend on our Branded Salty Snacks as well as investments in digital and social consumer marketing, higher delivery costs due to outsourcing our private fleet operation, and investments in selling capabilities to support distribution growth in Expansion geographies partially offset by $12.6 million related to the impairment of fixed assets, primarily related to the closure of the manufacturing operation at the Birmingham, Alabama facility during the fiscal year ended December 31, 2023 as discussed in *Note 4. Property, Plant and Equipment, Net* to our Audited Financial Statements. The Company also recognized a liability and related expense of $4.7 million related to a contract termination with a co-manufacturer, which is recorded in the administrative line in the Consolidated Statement of Operations and Comprehensive Income (Loss) during the fiscal year ended December 31, 2023. This agreement was a continuation of the Company's response to shifting production from a manufacturing facility that was damaged by a natural disaster in 2021. This decrease was partially offset by an increased marketing spend, higher distribution costs, and investments in selling capabilities to support distribution growth in Expansion geographies.\n\n*(Loss) Gain on sale of assets*\n\nLoss on sale of assets was $0.1 million for the fiscal year ended December 29, 2024 and $7.4 million for the fiscal year ended December 31, 2023. The loss during the fiscal year ended December 31, 2023 was primarily related to the sale of the Company's manufacturing facility in Bluffton, Indiana which generated a loss of $13.4 million, partially offset by gain on sale of land for $4.0 million and the sale of IO routes and other fixed assets.\n\n------\n\n*Other income (expense), net*\n\nOther income (expense), net was $10.6 million for the fiscal year ended December 29, 2024 and $(55.3) million for the fiscal year ended December 31, 2023. The increase in other income of $65.8 million for the fiscal year ended December 29, 2024 compared to the fiscal year ended December 31, 2023 was primarily due to the gain on sale of business of $44.0 million relating to the Good Health and R.W. Garcia Sale which occurred on February 5, 2024. See *Note 2. Divestitures* to our Audited Financial Statements, for further discussion. Interest expense also decreased by $15.7 million, primarily related to the $141.0 million payment on our Term Loan B and the $17.7 million payment on our Real Estate Term Loan during the fiscal year ended December 29, 2024. There was also an increase in the loss on the remeasurement of the warrant liability of $8.0 million and a loss on debt extinguishment of $1.3 million recognized during the fiscal year ended December 29, 2024. See *Note 8. Long-Term Debt* to our Audited Financial Statements, for further discussion.\n\n*Income taxes*\n\nIncome taxes expense was $38.7 million for the fiscal year ended December 29, 2024 and $0.8 million for the fiscal year ended December 31, 2023. The increase in income tax expense for the fiscal year ended December 29, 2024 compared to the fiscal year ended December 31, 2023 is primarily attributable to the Good Health and R.W. Garcia Sale, which occurred on February 5, 2024. See *Note 2. Divestitures* to our Audited Financial Statements, for further discussion. The income tax expense increase is also driven by the increase in valuation allowance, which partially offsets a deferred tax asset, which resulted in a $7.6 million income tax expense. See *Note 14. Income Taxes*, for further discussion.\n\n**Non-GAAP Financial Measures**",
+        "token_count": 1911,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001739566-25-000053",
+        "cik": "0001739566",
+        "company": "Utz Brands, Inc.",
+        "form_type": "10-K",
+        "filed_date": "20250220",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 60846,
+        "source_md5": "f48385a7b14848b80d8e7e164d660577",
+        "content_sha256": "3d5223dfe2cb813d95d09f53141bf5dcc11cde32aa878e4fb82afbf87bacc18b",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "a2b58141-fa1f-5833-8cf1-e2ff954e012d",
+        "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "section_index": 10,
+        "chunk_index": 1,
+        "char_start": 193450,
+        "char_end": 202275,
+        "text": "*Acquisitions and Dispositions*\n\nDuring fiscal year 2022, the Company focused on increasing manufacturing and streamlining distribution. In April 2022, the Company purchased a brand new, recently completed snack food manufacturing facility in Kings Mountain, North Carolina from Evans Food Group Ltd. d/b/a Benestar Brands and related affiliates. The Company paid the full cash purchase price of $38.4 million at the closing and concurrently with the facility purchase, the Company sold 2.1 million shares of the Company's Class A Common Stock for $28.0 million, to affiliates of Benestar in a private placement pursuant to Section 4(a)(2) of the Securities Act of 1933.\n\nDuring fiscal years 2024, 2023 and 2022, the Company bought out and terminated the contracts of multiple distributors who had previously been providing services to the Company. These transactions were accounted for as asset purchases and contract terminations, respectively, and resulted in expense of $2.1 million, $1.5 million and $23.0 million for the fiscal years ended December 29, 2024, December 31, 2023 and January 1, 2023, respectively.\n\n------\n\nOn February 5, 2024, the Company sold certain assets and brands to affiliates of Our Home\u2122, an operating company of Better-for-You brands (\"Our Home\"). Under the agreement, affiliates of Our Home purchased the Good Health and R.W. Garcia brands, the Lincolnton, NC and Lititz, PA manufacturing facilities and certain related assets, and assumed the Company's Las Vegas, NV facility lease and manufacturing operations (the \"Good Health and R.W. Garcia Sale\"), for $167.5 million, subject to customary adjustments. See *Note 2. Divestitures* to our Audited Financial Statements.\n\nOn April 22, 2024, the Company sold to Our Home its Berlin, PA and Fitchburg, MA manufacturing facilities and certain related assets, including certain inventory (the \"Manufacturing Facilities Sale\"). The total consideration for the transactions was $18.5 million, subject to customary adjustments.\n\nThe Company and Our Home are operating under transition services agreements related to each of the Good Health and R.W. Garcia Sale and the Manufacturing Facilities Sale, which are scheduled to expire during the first half of 2025. In addition, the parties will operate under reciprocal co-manufacturing agreements pursuant to which Our Home will co-manufacture certain of the Company's products and the Company will co-manufacture certain Good Health products. Certain Good Health products will continue to be distributed and sold on the Company's DSD network for Our Home, pursuant to a distribution agreement. The Company received approximately $18.7 million in advance from Our Home for certain terms under these agreements, which the Company will recognize through income from operations over the terms of the transition services and co-manufacturing agreements.\n\n*Product Innovation*\n\nInvestments in new product innovation support three focus areas that are rooted in the consumer and tied to our portfolio and brand strategy: Expanding Positive Choices, Delivering Craveable Flavor, and Capturing Occasions. Within Expanding Positive Choices, 2024's focus was on the Boulder Canyon, a brand offering solutions for consumers seeking great tasting BFY snacks via BFY oils such as avocado oil and olive oil. Innovation contributed to the brand's 32.7% growth in the natural channel in 2024 with the launching of new flavors that capitalized on the hot & spicy trend and by entrance into the cheese snack subcategory. Within Delivering Craveable Flavor, in 2024, we addressed consumer desire for flavor exploration with innovation across brands and snacking subcategories via our seasoned pretzels and new potato chip flavor offerings in both our Utz and Zapp's brands. Within Capturing Occasions, in 2024, we introduced a portfolio of variety/multipacks across our Power Four Brands and our Targeted Brands.\n\n*Supply and Commodity Trends*\n\nWe regularly monitor worldwide supply and commodity costs so that we can cost-effectively secure ingredients, packaging and fuel required for production. A number of external factors such as weather, which may be impacted in unanticipated ways due to climate change, commodity market conditions, inflationary conditions and the effects of governmental, agricultural or other programs, may affect the cost and availability of raw materials and agricultural materials used in our products. We address commodity costs primarily through the use of buying-forward, which locks in pricing for key materials between three and 18 months in advance. Other methods include hedging, net pricing adjustments to cover longer term cost inflation, and manufacturing and overhead cost control. Our hedging techniques, such as forward contracts, limit the impact of fluctuations in the cost of our principal raw materials; however, we may not be able to fully hedge against commodity cost changes, where there is a limited ability to hedge, and our hedging strategies may not protect us from increases in specific raw material costs. We experienced an increase in pricing in certain commodity trends that continued to rise throughout fiscal year 2022 and have since stabilized during fiscal years 2023 and 2024. Commodity cost increases in commodity trends may adversely impact our net income. Although we have experienced some ingredient cost deflation, we continue to experience rising costs related to fuel and freight rates as well as rising labor costs which have negatively impacted profitability. Transportation costs have been on the rise since early in 2021 and may continue to rise which may also adversely impact net income. The Company looks to offset rising costs through increasing manufacturing and distribution efficiencies as well as through price increases to our customers, although it is unclear whether historic customer sales levels will be maintained at these higher prices (See *\"Key Developments and Trends - Long-Term Demographics, Consumer Trends, and Demand\"*). Due to competitive market conditions, planned trade or promotional incentives, or other factors, our pricing actions may also lag supply and commodity cost changes.\n\nWhile the costs of our principal raw materials fluctuate, we believe there will continue to be an adequate supply of the raw materials we use and that they will generally remain available from numerous sources. Market factors including supply and demand may result in higher costs of sourcing those materials.\n\n------\n\n*Independent Operator Conversions*\n\nOur DSD distribution is executed via Company-owned routes operated by RSP, and third-party routes managed by IOs. We have used the IO and RSP models for more than a decade. In fiscal year 2017, we embarked on a multi-year strategy to convert all company-owned RSP routes to the IO model. As of December 29, 2024, substantially all of our DSD routes are managed by IOs. The conversion process involves selling distribution rights to a defined route to an IO. As we convert routes, there is a decrease in the selling, distribution and administrative costs that we previously incurred on RSPs and a corresponding increase in discounts paid to IOs to cover their costs to distribute our product. The net impact is a reduction in selling expenses and a decrease in net sales and gross profit. Conversions also impact our consolidated balance sheet, resulting in cash proceeds to us as a result of selling the route to an IO, or by creating notes receivable related to the sale of the routes. While we expect to have a small number of routes under the ownership of the Company as we acquire and re-sell routes as part of our normal operations, as of December 29, 2024, substantially all of our DSD routes are managed by IOs.\n\n------\n\n**Results of Operations**\n\n**Overview**\n\nThe following tables present selected financial data for the fiscal year ended December 29, 2024 and fiscal year ended December 31, 2023.\n\nWe have prepared our discussion of the results of operations by comparing the results for the fiscal year ended December 29, 2024 to the results of operations for the fiscal year ended December 31, 2023. Refer to *<u>[Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations](https://www.sec.gov/ix?doc=/Archives/edgar/data/1739566/000173956624000054/utz-20231231.htm)</u>*<u>[, in our Annual Report on Form 10-K for the fiscal year ended](https://www.sec.gov/ix?doc=/Archives/edgar/data/1739566/000173956624000054/utz-20231231.htm)[December 31, 2023](https://www.sec.gov/ix?doc=/Archives/edgar/data/1739566/000173956624000054/utz-20231231.htm)</u>, for discussion of the results of operations for the fiscal year ended December 31, 2023, compared to the fiscal year ended January 1, 2023, which is incorporated by reference herein.\n\n---",
+        "token_count": 1819,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001739566-25-000053",
+        "cik": "0001739566",
+        "company": "Utz Brands, Inc.",
+        "form_type": "10-K",
+        "filed_date": "20250220",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 60846,
+        "source_md5": "f48385a7b14848b80d8e7e164d660577",
+        "content_sha256": "3d5223dfe2cb813d95d09f53141bf5dcc11cde32aa878e4fb82afbf87bacc18b",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "270a5941-1350-58f5-b439-9dbb54119c1e",
+        "section": "Item 1. Business",
+        "section_index": 1,
+        "chunk_index": 0,
+        "char_start": 22977,
+        "char_end": 32694,
+        "text": "**Item 1. Business**\n\n*Unless the context otherwise requires, all references in this Annual Report on Form 10-K to the \"Company,\" \"we,\" \"us\" or \"our\" refer to Utz Brands, Inc. and its consolidated subsidiaries. Our core geographies consist of Alabama, Connecticut, Delaware, Louisiana, Maine, Maryland, Massachusetts, Mississippi, New Hampshire, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Rhode Island, South Carolina, Virginia, Vermont, West Virginia, and Washington (our \"Core Geographies\"), with the rest of the U.S. representing our Expansion geographies (our \"Expansion Geographies\").*\n\n**Overview**\n\nWe are a leading United States manufacturer of branded salty snacks. We produce a broad offering of salty snacks, including potato chips, tortilla chips, pretzels, cheese snacks, pork skins, pub/party mixes, and other snacks. Our iconic portfolio of authentic, craft, and \"better-for-you\" (\"BFY\") brands, which includes *Utz, Zapp's, On The Border, Golden Flake,* and *Boulder Canyon*, among others, enjoys strong household penetration in the United States, where our products can be found in approximately half of U.S. households as of December 29, 2024. We are the second-largest producer of branded salty snacks in our Core Geographies as of December 29, 2024, based on retail sales, and we have historically expanded our geographic/distribution reach and product portfolio organically and through acquisitions. We were founded in 1921 in Hanover, Pennsylvania, and benefit from more than 100 years of brand awareness and heritage in the salty snack industry.\n\nAs of December 29, 2024, we operate eight primary manufacturing facilities with a broad range of capabilities, and our products are distributed nationally to grocery, mass, club, convenience, drug, e-commerce and other retailers through direct shipments, distributors, and approximately 2,500 DSD routes.\n\nOur business benefits from multiple opportunities to deliver attractive long-term profitable growth. Our value creation strategies are focused on driving productivity to enhance margins, reinvesting in marketing and innovation to accelerate revenue growth and continuing to make strategic acquisitions. We believe we are well-positioned for long-term growth in the salty snack industry as we (a) gained a significant amount of new buyers over the past several years, (b) have significant opportunity in our Expansion Geographies and under-penetrated channels, (c) continue to execute productivity efforts that we believe will help to fuel incremental marketing and innovation to accelerate growth in sales relative to our peers, (d) continue to make infrastructure improvements to enable us to continue to scale to greater heights, and (e) continue to make strategic acquisitions that deliver strong synergies and that enhance our competitive positioning. We believe each of these growth avenues represents a sizeable opportunity to expand our net sales. In addition, we further anticipate expanding our margins over the long term through supply chain productivity, revenue management, a higher-margin product mix, and higher margins on incremental sales as we leverage our scalable existing platform.\n\n**Recent Acquisitions and Dispositions**\n\nThe Company has focused on increasing manufacturing and streamlining distribution. In April 2022, the Company purchased a brand new, recently completed snack food manufacturing facility in Kings Mountain, North Carolina from Evans Food Group Ltd. d/b/a Benestar Brands and related affiliates. The Company paid the full cash purchase price of $38.4 million at the closing and concurrently with the facility purchase, the Company sold 2.1 million shares of the Company's Class A Common Stock for $28.0 million, to affiliates of Benestar in a private placement pursuant to Section 4(a)(2) of the Securities Act of 1933, as amended (the \"Securities Act\"). During fiscal years 2022, 2023 and 2024, the Company bought out and terminated the contracts of multiple distributors who had previously been providing services to the Company. These transactions were accounted for as asset purchases and contract terminations, respectively, and resulted in expense of $23.0 million, $1.5 million and $2.1 million for the fiscal years ended January 1, 2023, December 31, 2023 and December 29, 2024, respectively.\n\n------\n\nOn February 5, 2024, the Company sold certain assets and brands to affiliates of Our Home\u2122, an operating company of BFY brands (\"Our Home\"). Under the agreement, affiliates of Our Home purchased the Good Health and R.W. Garcia brands, the Lincolnton, NC and Lititz, PA manufacturing facilities and certain related assets, and assumed the Company's Las Vegas, NV facility lease and manufacturing operations (the \"Good Health and R.W. Garcia Sale\"), for $167.5 million, subject to customary adjustments.\n\nOn April 22, 2024, the Company sold to Our Home its Berlin, PA and Fitchburg, MA manufacturing facilities and certain related assets, including certain inventory (the \"Manufacturing Facilities Sale\"). The total consideration for the Manufacturing Facilities Sale was $18.5 million, subject to customary adjustments.\n\nThe Company and Our Home are operating under transition services agreements related to each of the Good Health and R,W. Garcia Sale and the Manufacturing Facility Sale, which are scheduled to expire during the first half of 2025. In addition, the parties will operate under reciprocal co-manufacturing agreements pursuant to which Our Home will co-manufacture certain of the Company's products and the Company will co-manufacture certain Good Health products. Certain Good Health products will continue to be distributed and sold on the Company's DSD network for Our Home pursuant to a distribution agreement. The Company received approximately $18.7 million in advance from Our Home for certain terms under these agreements, which the Company will recognize through income from operations over the terms of the transition services and co-manufacturing agreements. See *Note 2. Divestitures*, to our audited consolidated financial statements included under Part II, *Item 8* of this Annual Report on Form 10-K (our \"Audited Financial Statements\"), for further discussion.\n\nDuring the fiscal year ended December 29, 2024, the Company paid $9.2 million to purchase an indefinite life intangible right for use of a third-party brand name. This intangible is classified as an indefinite life trade name. See *Note 5. Goodwill and Intangible Assets, Net* to our Audited Financial Statements.\n\n**Growth Strategy**\n\nWe have a long-term growth strategy focusing on various initiatives. Our portfolio strategy is focused on accelerating investments in marketing and innovation to drive top-line growth and achieve share gains in the Salty Snack category. We plan to further penetrate our Expansion Geographies and untapped channels and customers by further expanding our Branded Salty Snacks in Expansion Geographies, as well as maintaining our share in our Core Geographies. We plan to transform our supply chain into a more cost-efficient and flexible system. As part of our long-term growth strategy, we intend to enhance our DSD system of IOs to further improve execution and generate higher returns and strengthen other organizational capabilities while driving out costs. Additionally, we intend to improve our balance sheet flexibility by accelerating cash generation and maintaining a disciplined capital allocation approach, which will reduce leverage while opportunistically pursuing strategic acquisitions and dispositions.\n\n**Brands**\n\nOur business is managed and reported in one operating segment due to the similar nature of all of the products that the Company sells, the functional alignment of the Company's organizational structure, and the reports that are regularly reviewed by the chief operating decision maker (the \"CODM\") for the purpose of assessing performance and allocating resources. However, we strategically manage our portfolio of brands by segregating our sole operating segment into Branded Salty Snacks and Non-Branded & Non-Salty Snacks. Branded Salty Snacks, in aggregate, enjoy a combination of higher growth and margins, greater potential for value-added innovation, and enhanced responsiveness to consumer marketing as compared to Non-Branded & Non-Salty Snacks. As a result, we focus our investment spending and brand-building activities on Branded Salty Snacks while managing Non-Branded & Non-Salty Snacks for cash flow generation to support investment in Branded Salty Snacks and fund other corporate priorities. We periodically assess the designation of brands within these segregations and reclassify brands based on their alignment with the criteria above.\n\n*Branded Salty Snacks*\n\nOur Branded Salty Snacks are comprised of our Power Four Brands, consisting of our flagship *Utz\u00ae* brand, *On The Border\u00ae, Zapp's*\u00ae, and *Boulder Canyon\u00ae,* along with our Other Brands, including *Golden Flake*\u00ae, *TORTIYAHS!*\u00ae, *Hawaiian*\u00ae, *Bachman*\u00ae, *Tim's Cascade\u00ae*, Dirty Potato Chips\u00ae, *TGI Fridays*\u00ae, and *Vitner's*\u00ae.\n\nOur flagship *Utz* brand generated retail sales in excess of $850 million in 2024, representing an approximate 7.1% compound annual growth rate (\"CAGR\") (during 2020 through 2024) and making it one of the 10 largest salty snack brands in the United States by retail sales as of December 29, 2024. Recognized for its iconic logo featuring the \"Little Utz Girl\" since the 1920s, the *Utz* brand currently uses the slogan \"Family Crafted Flavor Since 1921\". We sell a variety of salty snacks under the *Utz* brand, including potato chips, pretzels, cheese snacks, pub/party mixes, and seasonal favorites.\n\n------",
+        "token_count": 1997,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001437749-25-002365",
+        "cik": "0001084869",
+        "company": "1 800 FLOWERS COM INC",
+        "form_type": "10-Q",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 778,
+        "source_md5": "984a9d846e8a798493f26af7aab2cd8b",
+        "content_sha256": "82f88b7adce8ad752aa4bfb48556843a6245f9b1088b593ed8b3bef3e8e6b713",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "40e11d9f-a298-5c74-8c05-5693347df237",
+        "section": "ITEM 2. MANAGEMENT**'**S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 2,
+        "chunk_index": 18,
+        "char_start": 106461,
+        "char_end": 108827,
+        "text": "**Gourmet Foods & Gift Baskets segment** - Gross profit decreased by 3.3% and 4.5% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, due to the decrease in revenue noted above, partially offset by a slightly improved gross profit percentage. Gross profit percentage increased 30 basis points and 50 basis points during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year. The increased gross profit percentage was attributable to lower delivery and shipping costs and labor efficiencies, which was partially offset by a higher cost of merchandise and incremental costs associated with the implementation of a new order management system for our Harry & David Brand.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 28\n\n------\n\n[**Table of Contents**](#toc)\n\n***Marketing and sales expense***\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n|  | **Three Months Ended** | **Three Months Ended** | **Three Months Ended** | **Six Months Ended** | **Six Months Ended** | **Six Months Ended** |\n|  | **December 29,** | **December 31,** | **%** | **December 29,** | **December 31,** | **%** |\n|  | **2024** | **2023** | **Change** | **2024** | **2023** | **Change** |\n|  | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* |\n| Marketing and sales | $187003 | $188557 | -0.8% | $269100 | $271075 | -0.7% |\n| Percentage of net revenues | 24.1% | 22.9% |  | 26.4% | 24.8% |  |\n\n---\n\n\n\nMarketing and sales expense consists primarily of advertising and promotional expenditures, catalog costs, online portal and search costs, retail store and fulfillment operations (other than costs included in cost of revenues) and customer service center expenses, as well as the operating expenses of the Company's departments engaged in marketing, selling and merchandising activities.\n\nMarketing and sales expense decreased 0.8% and 0.7% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, mainly related to decreased labor costs, which was partially offset by increased advertising costs due to a competitive environment.\n\n***Technology and development expense***\n\n---",
+        "token_count": 581,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001437749-25-002365",
+        "cik": "0001084869",
+        "company": "1 800 FLOWERS COM INC",
+        "form_type": "10-Q",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 778,
+        "source_md5": "984a9d846e8a798493f26af7aab2cd8b",
+        "content_sha256": "82f88b7adce8ad752aa4bfb48556843a6245f9b1088b593ed8b3bef3e8e6b713",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "3807d4a1-e520-5d73-902d-b0feb9d3d8cc",
+        "section": "ITEM 2. MANAGEMENT**'**S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 2,
+        "chunk_index": 16,
+        "char_start": 101697,
+        "char_end": 103771,
+        "text": "Net revenues decreased 16.2% and 18.2% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year. The net revenue decline was primarily due to lower service revenues, which were attributable to a decline in order volume processed through the network.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 27\n\n------\n\n[**Table of Contents**](#toc)\n\n**Gourmet Foods & Gift Baskets** - this segment includes the operations of Harry & David, Wolferman's, Cheryl's Cookies, The Popcorn Factory, 1-800-Baskets/DesignPac, Shari's Berries, Vital Choice, and since July 1, 2024, Scharffen Berger. Revenue is derived from the sale of gourmet fruits, cookies, baked gifts, premium chocolates and confections, gourmet popcorn, gift baskets, dipped berries, prime steaks, chops, and fish, through the Company's e-commerce sales channels (telephonic and online sales) and company-owned and operated retail stores under the Harry & David and Cheryl's Cookies brand names, as well as wholesale operations.\n\nNet revenues within this segmentdecreased4.0% and 5.6% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, as a result of lower e-commerce revenues, which were impacted by lower demand, partially offset by increased wholesale volume as big box retailers increased orders in the current year. In addition, the implementation of a new order management system for our Harry & David brand negatively impacted sales in the current period by approximately $20 million.\n\nDuring the three and six months ended December 29, 2024, Gourmet Foods & Gift Baskets orders through its e-commerce sales channel (online and telephonic sales) decreased 7.0% and 8.0%, respectively, compared to the same periods of the prior year. In addition, the average order value decreased 1.5% and 1.2%, respectively, as a result of product mix trending towards lower price point items and the higher promotions due to the competitive market.\n\n***Gross profit***\n\n---",
+        "token_count": 472,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "found": true,
+        "id": "0001739566-25-000053:242589:254589",
+        "accession": "0001739566-25-000053",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+        "char_start": 242589,
+        "char_end": 254589,
+        "text": "ve for potential future bad debt was $3.3 million as of December 29, 2024 and $2.9 million as of December 31, 2023.\n\n**Item 8. Financial Statements and Supplementary Data**\n\n---\n\n\n\n| | |\n|:---|:---|\n| **Index to the Financial Statements** | Page |\n| <u>[Report of Independent Registered Public Accounting Firm](#i6991040198d845a9a76de1c9896b2fc3_58)(Grant Thornton LLP, Philadelphia, PA[, PCAOB ID Number](#i6991040198d845a9a76de1c9896b2fc3_58)248[)](#i6991040198d845a9a76de1c9896b2fc3_58)</u> | <u>[54](#i6991040198d845a9a76de1c9896b2fc3_58)</u> |\n| <u>[Report of Independent Registered Public Accounting Firm on Internal Control Over Financial Reporting (Grant Thornton LLP, Philadelphia, PA, PCAOB ID Number 248)](#i6991040198d845a9a76de1c9896b2fc3_61)</u> | <u>[55](#i6991040198d845a9a76de1c9896b2fc3_61)</u> |\n| <u>[Consolidated Balance Sheets as of December 29, 2024 and December 31, 2023](#i6991040198d845a9a76de1c9896b2fc3_64)</u> | <u>[56](#i6991040198d845a9a76de1c9896b2fc3_64)</u> |\n| <u>[Consolidated Statements of Operations And Comprehensive Income (Loss) for the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023](#i6991040198d845a9a76de1c9896b2fc3_67)</u> | <u>[57](#i6991040198d845a9a76de1c9896b2fc3_67)</u> |\n| <u>[Consolidated Statements of Equity for the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023](#i6991040198d845a9a76de1c9896b2fc3_70)</u> | <u>[58](#i6991040198d845a9a76de1c9896b2fc3_70)</u> |\n| <u>[Consolidated Statements of Cash Flows for the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023](#i6991040198d845a9a76de1c9896b2fc3_73)</u> | <u>[60](#i6991040198d845a9a76de1c9896b2fc3_73)</u> |\n| <u>[Notes to Consolidated Financial Statements](#i6991040198d845a9a76de1c9896b2fc3_76)</u> | <u>[61](#i6991040198d845a9a76de1c9896b2fc3_76)</u> |\n\n---\n\n\n\n------\n\n**REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTANTS**<br>\n\nBoard of Directors and Stockholders\n\nUtz Brands, Inc.\n\n**Opinion on the financial statements** \n\nWe have audited the accompanying consolidated balance sheets of Utz Brands, Inc. (a Delaware corporation) and subsidiaries (the \"Company\") as of December 29, 2024 and December 31, 2023, the related consolidated statements of operations and comprehensive income (loss), equity (deficit), and cash flows for each of the three years in the period ended December 29, 2024 and the related notes (collectively referred to as the \"consolidated financial statements\"). In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company as of December 29, 2024 and December 31, 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 29, 2024, in conformity with accounting principles generally accepted in the United States of America.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (\"PCAOB\"), the Company's internal control over financial reporting as of December 29, 2024, based on criteria established in the 2013 Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (\"COSO\"), and our report dated February 20, 2025 expressed an unqualified opinion.\n\n**Change in accounting principle**\n\nAs discussed in Note 1 to the consolidated financial statements, the Company has adopted new accounting guidance in 2024 related to the disclosure of segment information in accordance with ASU 2023-07, Segment Reporting (Topic 280). The adoption was retrospectively applied to 2023 and 2022.\n\n**Basis for opinion** \n\nThese consolidated financial statements are the responsibility of the Company's management. Our responsibility is to express an opinion on the Company's consolidated financial statements based on our audits. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audits in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. We believe that our audits provide a reasonable basis for our opinion.\n\n**Critical audit matters**\n\nCritical audit matters are matters arising from the current period audit of the consolidated financial statements that were communicated or required to be communicated to the audit committee and that: (1) relate to accounts or disclosures that are material to the consolidated financial statements and (2) involved our especially challenging, subjective, or complex judgments. We determined that there are no critical audit matters.\n\n/s/ GRANT THORNTON LLP\n\nWe have served as the Company's auditor since 2011.\n\nPhiladelphia, Pennsylvania\n\nFebruary 20, 2025\n\n------\n\n**REPORT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTANTS**<br>\n\nBoard of Directors and Stockholders\n\nUtz Brands, Inc.\n\n**Opinion on internal control over financial reporting**\n\nWe have audited the internal control over financial reporting of Utz Brands, Inc. (a Delaware corporation) and subsidiaries (the \"Company\") as of December 29, 2024, based on criteria established in the 2013 Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (\"COSO\"). In our opinion, the Company maintained, in all material respects, effective internal control over financial reporting as of December 29, 2024, based on criteria established in the 2013 Internal Control\u2014Integrated Framework issued by COSO.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (\"PCAOB\"), the consolidated financial statements of the Company as of and for the period ended December 29, 2024, and our report dated February 20, 2025 expressed an unqualified opinion on those financial statements.\n\n**Basis for opinion**\n\nThe Company's management is responsible for maintaining effective internal control over financial reporting and for its assessment of the effectiveness of internal control over financial reporting, included in the accompanying Management's Report on Internal Control over Financial Reporting. Our responsibility is to express an opinion on the Company's internal control over financial reporting based on our audit. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audit in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether effective internal control over financial reporting was maintained in all material respects. Our audit included obtaining an understanding of internal control over financial reporting, assessing the risk that a material weakness exists, testing and evaluating the design and operating effectiveness of internal control based on the assessed risk, and performing such other procedures as we considered necessary in the circumstances. We believe that our audit provides a reasonable basis for our opinion.\n\n**Definition and limitations of internal control over financial reporting**\n\nA company's internal control over financial reporting is a process designed to provide reasonable assurance regarding the reliability of financial reporting and the preparation of financial statements for external purposes in accordance with generally accepted accounting principles. A company's internal control over financial reporting includes those policies and procedures that (1) pertain to the maintenance of records that, in reasonable detail, accurately and fairly reflect the transactions and dispositions of the assets of the company; (2) provide reasonable assurance that transactions are recorded as necessary to permit preparation of financial statements in accordance with generally accepted accounting principles, and that receipts and expenditures of the company are being made only in accordance with authorizations of management and directors of the company; and (3) provide reasonable assurance regarding prevention or timely detection of unauthorized acquisition, use, or disposition of the company's assets that could have a material effect on the financial statements.\n\nBecause of its inherent limitations, internal control over financial reporting may not prevent or detect misstatements. Also, projections of any evaluation of effectiveness to future periods are subject to the risk that controls may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate.\n\n/s/ GRANT THORNTON LLP\n\nPhiladelphia, Pennsylvania\n\nFebruary 20, 2025\n\n------\n\n**Utz Brands, Inc.**\n\n**CONSOLIDATED BALANCE SHEETS**\n\n**December 29, 2024 and December 31, 2023**\n\n**(In thousands, except share information)**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **As of<br>December 29, 2024** | **As of<br>December 31, 2023** |\n| **ASSETS** | | |\n| **Current Assets** | | |\n| &nbsp;&nbsp;&nbsp;Cash and cash equivalents | $56138 | $52023 |\n| &nbsp;&nbsp;Accounts receivable, less allowance of $3,267 and $2,933, respectively | 119867 | 135130 |\n| &nbsp;&nbsp;&nbsp;Inventories | 101362 | 104666 |\n| &nbsp;&nbsp;&nbsp;Prepaid expenses and other assets | 35269 | 30997 |\n| &nbsp;&nbsp;&nbsp;Current portion of notes receivable | 4622 | 5237 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total current assets | 317258 | 328053 |\n| **Non-current Assets** |  |  |\n| &nbsp;&nbsp;&nbsp;Assets held for sale |  | 7559 |\n| &nbsp;&nbsp;&nbsp;Property, plant and equipment, net | 345210 | 318881 |\n| &nbsp;&nbsp;&nbsp;Goodwill | 870695 | 915295 |\n| &nbsp;&nbsp;&nbsp;Intangible assets, net | 996510 | 1063413 |\n| &nbsp;&nbsp;&nbsp;Non-current portion of notes receivable | 9192 | 12413 |\n| &nbsp;&nbsp;&nbsp;Other assets | 189547 | 101122 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total non-current assets | 2411154 | 2418683 |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Total assets** | $**2728412** | $**2746736** |\n| **LIABILITIES AND EQUITY** |  |  |\n| **Current Liabilities** |  |  |\n| &nbsp;&nbsp;&nbsp;Current portion of term debt | $16097 | $21086 |\n| &nbsp;&nbsp;&nbsp;Current portion of other notes payable | 6917 | 7649 |\n| &nbsp;&nbsp;&nbsp;Accounts payable | 150927 | 124361 |\n| &nbsp;&nbsp;&nbsp;Accrued expenses and other | 78281 | 77590 |\n| &nbsp;&nbsp;&nbsp;Current portion of warrant liability | 33048 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total current liabilities | 285270 | 230686 |\n| Non-current portion of term debt | 752484 | 878511 |\n| Non-current portion of other notes payable | 14985 | 19174 |\n| Non-current accrued expenses and other | 164185 | 76720 |\n| Non-current warrant liability |  | 43272 |\n| Deferred tax liability | 123744 | 114690 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total non-current liabilities | 1055398 | 1132367 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total liabilities | 1340668 | 1363053 |\n| **Commitments and contingencies** |  |  |\n| **Equity** |  |  |\n| &nbsp;&nbsp;&nbsp;Members' equity |  |  |\n| S",
+        "total_chars": 592650,
+        "next_start": 254589,
+        "resources": {
+          "peak_rss_mib": 504.14453125,
+          "cpu_seconds": 0.386888,
+          "wall_seconds": 0.35916983900006016,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      },
+      {
+        "found": true,
+        "id": "0001739566-25-000053:254613:266613",
+        "accession": "0001739566-25-000053",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+        "char_start": 254613,
+        "char_end": 266613,
+        "text": "Stock, $0.0001 par value; 1,000,000,000 shares authorized; 83,537,542 and 81,187,977 shares issued and outstanding as of December 29, 2024 and December 31, 2023, respectively. | 8 | 8 |\n| Shares of Class V Common Stock, $0.0001 par value; 61,249,000 shares authorized; 57,349,000 and 59,349,000 shares issued and outstanding as of December 29, 2024 and December 31, 2023, respectively. | 6 | 6 |\n| &nbsp;&nbsp;&nbsp;Additional paid-in capital | 988510 | 944573 |\n| &nbsp;&nbsp;&nbsp;Accumulated deficit | (304663) | (298049) |\n| &nbsp;&nbsp;&nbsp;Accumulated other comprehensive income | 18590 | 22958 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total stockholders' equity | 702451 | 669496 |\n| &nbsp;&nbsp;&nbsp;Noncontrolling interest | 685293 | 714187 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total equity | 1387744 | 1383683 |\n| **Total liabilities and equity** | $**2728412** | $**2746736** |\n\n---\n\n\n\n*The accompanying notes are an integral part of these consolidated financial statements.*\n\n------\n\n**Utz Brands, Inc.**\n\n**CONSOLIDATED STATEMENTS OF OPERATIONS AND COMPREHENSIVE INCOME (LOSS)**\n\n**For the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023**\n\n**(In thousands, except share information)**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| (in thousands) | **For the Fiscal Year Ended December 29, 2024** | **For the Fiscal Year Ended December 31, 2023** | **For the Fiscal Year Ended January 1, 2023** |\n| **Net sales** | $1409281 | $1438237 | $1408401 |\n| **Cost of goods sold** | 914504 | 981751 | 959344 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Gross profit | 494777 | 456486 | 449057 |\n| **Selling, distribution and administrative expenses** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Selling and distribution | 306151 | 273923 | 294061 |\n| &nbsp;&nbsp;&nbsp;Administrative | 129642 | 159196 | 150343 |\n| Total selling, distribution, and administrative expenses | 435793 | 433119 | 444404 |\n| **(Loss) gain on sale of assets, net** | (78) | (7350) | 691 |\n| Income from operations | 58906 | 16017 | 5344 |\n| **Other income (expense)** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Gain on sale of business | 44015 |  |  |\n| &nbsp;&nbsp;&nbsp;Interest expense | (44862) | (60590) | (44424) |\n| &nbsp;&nbsp;&nbsp;Loss on debt extinguishment | (1273) |  |  |\n| &nbsp;&nbsp;&nbsp;Other income | 2457 | 3066 | 400 |\n| &nbsp;&nbsp;Gain on remeasurement of warrant liability | 10224 | 2232 | 720 |\n| Other income (expense), net | 10561 | (55292) | (43304) |\n| Income (loss) before income taxes | 69467 | (39275) | (37960) |\n| **Income tax expense (benefit)** | 38730 | 757 | (23919) |\n| Net income (loss) | 30737 | (40032) | (14041) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net (income) loss attributable to noncontrolling interest | (14763) | 15095 | 13649 |\n| Net income (loss) attributable to controlling interest | $15974 | $(24937) | $(392) |\n| **Earnings (loss) per share of Class A Common Stock:** <br>***(in dollars)*** |  |  |  |\n| &nbsp;&nbsp;Basic | $0.19 | $(0.31) | $\u2014 |\n| &nbsp;&nbsp;Diluted | $0.19 | $(0.31) | $\u2014 |\n| **Weighted-average shares of Class A Common Stock outstanding:** |  |  |  |\n| &nbsp;&nbsp;Basic | 82102876 | 81081458 | 80093094 |\n| &nbsp;&nbsp;Diluted | 85433980 | 81081458 | 80093094 |\n| **Net income (loss)** | $30737 | $(40032) | $(14041) |\n| **Other comprehensive (loss) gain:** |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Change in fair value of interest rate swap | (7478) | (13543) | 47279 |\n| **Comprehensive income (loss)** | 23259 | (53575) | 33238 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net comprehensive (income) loss attributable to noncontrolling interest | (11653) | 20819 | (6568) |\n| Net comprehensive income (loss) attributable to controlling interest | $11606 | $(32756) | $26670 |\n\n---\n\n\n\n*The accompanying notes are an integral part of these consolidated financial statements.*\n\n------\n\n**Utz Brands, Inc.**\n\n**CONSOLIDATED STATEMENTS OF EQUITY (DEFICIT)**\n\n**For the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023**\n\n**(In thousands, except share information)**\n\n---\n\n\n\n| | | | | | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|\n| | Class A Common Stock | Class A Common Stock | Class V Common Stock | Class V Common Stock | Additional Paid-in Capital | Accumulated (Deficit) | Accumulated Other Comprehensive Income | Total Stockholders' Equity | Non-controlling Interest | Total Equity |\n| | Shares | Amount | Shares | Amount | Additional Paid-in Capital | Accumulated (Deficit) | Accumulated Other Comprehensive Income | Total Stockholders' Equity | Non-controlling Interest | Total Equity |\n| **Balance at January 2, 2022** | **77644645** | $**8** | **59349000** | $**6** | $**912574** | $**(236598)** | $**3715** | $**679705** | $**754968** | $**1434673** |\n| Payments of tax withholding requirements for employee stock awards |  |  |  |  | (6217) |  |  | (6217) |  | (6217) |\n| Share-based compensation | 1132316 |  |  |  | 10632 |  |  | 10632 |  | 10632 |\n| Issuance of common stock in connection with private placement sale | 2105373 |  |  |  | 28000 |  |  | 28000 |  | 28000 |\n| Tax impact arising from capital transactions |  |  |  |  | (18070) |  |  | (18070) |  | (18070) |\n| Net loss |  |  |  |  |  | (392) |  | (392) | (13649) | (14041) |\n| Other comprehensive income |  |  |  |  |  |  | 27062 | 27062 | 20217 | 47279 |\n| Cash dividends declared ($0.219 per<br>share of Class A Common Stock) |  |  |  |  |  | (17574) |  | (17574) |  | (17574) |\n| Distribution to noncontrolling interest |  |  |  |  |  |  |  |  | (12998) | (12998) |\n| **Balance at January 1, 2023** | **80882334** | $**8** | **59349000** | $**6** | $**926919** | $**(254564)** | $**30777** | $**703146** | $**748538** | $**1451684** |\n| Payments of tax withholding requirements for employee stock awards |  |  |  |  | (589) |  |  | (589) |  | (589) |\n| Share-based compensation | 305643 |  |  |  | 17069 |  |  | 17069 |  | 17069 |\n| Tax impact arising from capital transactions |  |  |  |  | 1174 |  |  | 1174 |  | 1174 |\n| Net loss |  |  |  |  |  | (24937) |  | (24937) | (15095) | (40032) |\n| Other comprehensive loss |  |  |  |  |  |  | (7819) | (7819) | (5724) | (13543) |\n| Cash dividends declared ($0.228 per<br>share of Class A Common Stock) |  |  |  |  |  | (18548) |  | (18548) |  | (18548) |\n| Distribution to noncontrolling interest |  |  |  |  |  |  |  |  | (13532) | (13532) |\n| **Balance at December 31, 2023** | **81187977** | $**8** | **59349000** | $**6** | $**944573** | $**(298049)** | $**22958** | $**669496** | $**714187** | $**1383683** |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | | | | | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|\n| | Class A Common Stock | Class A Common Stock | Class V Common Stock | Class V Common Stock | Additional Paid-in Capital | Accumulated (Deficit) | Accumulated Other Comprehensive Income | Total Stockholders' Equity | Non-controlling Interest | Total Equity |\n| | Shares | Amount | Shares | Amount | Additional Paid-in Capital | Accumulated (Deficit) | Accumulated Other Comprehensive Income | Total Stockholders' Equity | Non-controlling Interest | Total Equity |\n| **Balance at December 31, 2023** | **81187977** | $**8** | **59349000** | $**6** | $**944573** | $**(298049)** | $**22958** | $**669496** | $**714187** | $**1383683** |\n| Payments of tax withholding requirements for employee stock awards |  |  |  |  | (1397) |  |  | (1397) |  | (1397) |\n| Share-based compensation | 349565 |  |  |  | 18295 |  |  | 18295 |  | 18295 |\n| Class V to Class A Exchange | 2000000 |  | (2000000) |  | 24095 |  |  | 24095 | (24095) |  |\n| Deferred tax impact from divestiture |  |  |  |  | 2944 |  |  | 2944 | 2146 | 5090 |\n| Special excess cash dividend |  |  |  |  |  | (2619) |  | (2619) |  | (2619) |\n| Net income |  |  |  |  |  | 15974 |  | 15974 | 14763 | 30737 |\n| Other comprehensive loss |  |  |  |  |  |  | (4368) | (4368) | (3110) | (7478) |\n| Cash dividends declared |  |  |  |  |  | (19969) |  | (19969) |  | (19969) |\n| Distribution to noncontrolling interest |  |  |  |  |  |  |  |  | (13944) | (13944) |\n| Tax distribution |  |  |  |  |  |  |  |  | (4654) | (4654) |\n| **Balance at December 29, 2024** | **83537542** | $**8** | **57349000** | $**6** | $**988510** | $**(304663)** | $**18590** | $**702451** | $**685293** | $**1387744** |\n\n---\n\n\n\n*The accompanying notes are an integral part of these consolidated financial statements.*\n\n------\n\n**Utz Brands, Inc.**\n\n**CONSOLIDATED STATEMENTS OF CASH FLOWS**\n\n**For the fiscal years ended December 29, 2024, December 31, 2023, and January 1, 2023**\n\n**(In thousands)**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **For the Fiscal Year Ended December 29, 2024** | **For the Fiscal Year Ended December 31, 2023** | **For the Fiscal Year Ended January 1, 2023** |\n| **Cash flows from operating activities** | | | |\n| &nbsp;&nbsp;&nbsp;Net income (loss) | $30737 | $(40032) | $(14041) |\n| &nbsp;&nbsp;&nbsp;Adjustments to reconcile net income (loss) to net cash provided by operating activities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impairment and other charges |  | 12575 | 4678 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depreciation and amortization | 70940 | 79488 | 86801 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gain on sale of business | (44015) |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gain on remeasurement of warrant liability | (10224) | (2232) | (720) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loss (gain) on sale of assets | 78 | 7350 | (691) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Share-based compensation | 18295 | 17069 | 10632 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loss on debt extinguishment | 1273 |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deferred income taxes | 14145 | (8938) | (29359) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amortization of deferred financing costs | 3154 | 1556 | 1933 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Changes in assets and liabilities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accounts receivable, net | 6782 | 1855 | (5597) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inventories | (4628) | 12652 | (38490) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prepaid expenses and other assets | (103459) | (14433) | (18379) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Accounts payable and accrued expenses and other | 123088 | 9730 | 51426 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net cash provided by operating activities | 106166 | 76640 | 48193 |\n| **Cash flows from investing activities** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Acquisitions, net of cash acquired |  |  | (75) |\n| &nbsp;&nbsp;&nbsp;Purchases of property and equipment | (98639) | (55724) | (87965) |\n| &nbsp;&nbsp;&nbsp;Purchases of intangibles | (9220) |  |  |\n| &nbsp;&nbsp;&nbsp;Proceeds from sale of property and equipment | 26640 | 9539 | 4333 |\n| &nbsp;&nbsp;&nbsp;Proceeds from sale of business | 167500 |  |  |\n| &nbsp;&nbsp;&nbsp;Proceeds from sale of routes | 26658 | 28665 | 23399 |\n| &nbsp;&nbsp;&nbsp;Proceeds from the sale of IO notes | 4912 | 5405 | 5017 |\n| &nbsp;&nbsp;&nbsp;Proceeds from insurance claims for capital investments |  | 1700 | 3935 |\n| &nbsp;&nbsp;&nbsp;Notes receivable, net | (42890) | (38077) | (24711) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net cash provided by (used in) investing activities | 74961 | (48492) | (76067) |\n| **Cash flows from financing activities** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Borrowings on line of credit | 114500 | 71000 | 79000 |\n| &nbsp;&nbsp;&nbsp;Repayments on line of credit | (114699) | (70632) | (115000) |\n| &nbsp;&nbsp;&nbsp;Borrowings on term debt and notes payable | 39112 | 13113 | 124592 |\n| &nbsp;&nbsp;&nbsp;Repayments on term debt and notes payable | (173742) | (29211) | (21037) |\n| &nbsp;&nbsp;&nbsp;Payment of debt issuance cost | (733) | (656) | (3660) |\n| &nbsp;&nbsp;&nbsp;Payments of tax withholding requirements for employee stock awards | (1397) | (589) | (6217) |\n| &nbsp;&nbsp;&nbsp;Proceeds from issuance of shares |  |  | 28000 |\n| &nbsp;&n",
+        "total_chars": 592650,
+        "next_start": 266613,
+        "resources": {
+          "peak_rss_mib": 505.76953125,
+          "cpu_seconds": 0.345033,
+          "wall_seconds": 0.3215763970001717,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      }
+    ],
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash"
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 92, \"rationale\": \"Recomputing 494,777 / 1,409,281 gives about 35.108%, which rounds to 35.11%, matching the reference. The candidate's figures for gross profit and net sales match the Consolidated Statements of Operations in the retrieved text. Its statement that Item 7 reports 35.1% is also accurate. The Item 7 chunk ID cited is among the retrieved excerpts. The Item 8 citation is supported by the retrieved Item 8 text, though it gives no chunk ID. The candidate's wording is slightly more verbose than the reference but not incorrect.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 92, \"rationale\": \"Recomputing 494,777 / 1,409,281 gives about 35.108%, which rounds to 35.11%, matching the reference. The candidate's figures for gross profit and net sales match the Consolidated Statements of Operations in the retrieved text. Its statement that Item 7 reports 35.1% is also accurate. The Item 7 chunk ID cited is among the retrieved excerpts. The Item 8 citation is supported by the retrieved Item 8 text, though it gives no chunk ID. The candidate's wording is slightly more verbose than the reference but not incorrect.\"}",
+      "refusal": null,
+      "reasoning": "I'm dividing 494,777 by 1,409,281 to get the percentage, working through the long division carefully to land around 35.1%.\n\n510848 \u2192 35.11%, which matches the filing's stated figure, so the candidate's number and citation both check out. The Item 7 chunk ID is properly traceable in the retrieved excerpts, and the Item 8 data, while lacking an explicit chunk ID, still falls within the retrieved text range, so it holds up fine. Overall I'd rate correctness around 97 and citation support around 92.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm dividing 494,777 by 1,409,281 to get the percentage, working through the long division carefully to land around 35.1%.\n\n510848 \u2192 35.11%, which matches the filing's stated figure, so the candidate's number and citation both check out. The Item 7 chunk ID is properly traceable in the retrieved excerpts, and the Item 8 data, while lacking an explicit chunk ID, still falls within the retrieved text range, so it holds up fine. Overall I'd rate correctness around 97 and citation support around 92.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSzgsKEAgSGAI4AUIIdGhpbmtpbmcSDFCQGrnAj2d5GCcH+RoMUjzeWJQ1lpvpXV0gIjAWfQTSDO2rXoFpCoqs70fVsIDruPJ7xA6U6VNCnOI1x+kdih57nZnPBC2xnTzUiO8q6wq47K6YiHonaiKJl7ksa4KjlaSxpxymG0hVYZml2KxLHbW0LERs0hGOx+kJi72YaW6ObSz2Hi08xVmYazcpNcFZRKBAsLhJUN4Gtw6NoXLo6ZAP32p5lk2bxIt0fQW27zN8YIk2L8Xv+mUJvYcO63VzvQtzQinb1ZoQ4HfVJasxmX9W955x3W3v5v2gZCr3smoxV0kIpeiw43P9RYHt4lSFpyWvdBx7mq+kmOZGSeGqdQoLsJaRQCwm3fjR2EBoPTaB+bMGQ/rLvsAsgJoypo7NzWHPVvLmCfzohqNOB4b5M+0uUB2ocZwNJ6wBYK3tE+AJVv4iQXb9MFhA6D92LDlF6mqnQdV1dHU/t7IIP1hOt7Cd+TBHapmxMVPS4M3i/Ec7+QeDaGI6r0VV5pkFOIkOk72YHGHV8RbdDk0xAHPbepxaUQMGLLevGbjE0YAvDDNEkYfpcPLDqrVsKUYIEXxAECamSgI7SSfsLDw4X6QO2fkx3JghLpWlb9nh1jKYcaEppA3dBN/AyHNSDY24pyVbSUFWjc3Zoxj/aaU2RnJnzaefjGfWT9L4f/QlTSvZzKhu7EpqZmLJHhgZ/bT5KtpL5sb/2kJYj9Vy6i5QPn4QRXnbeBquD/hoIPoX0oS3RAuCi0UgOkIY4JSknPuTMc1Yaf92wIkWpcq0W3CjNDjMTIUkVnYhHVkBz714n31hglSbpZ9EhX1oMPHbFL3XKq0edDV2pTpI98qTF2RGIRlyv9yviVeLYw0SqiGHJpRLeNUPGpz/O6hvCmW7V9gsgtl8iBsMBtjTP59BkIlj5Tkc5LQNNbbVXYTiQgspAUKOsTW8hmW/FCfiOvF0cnVTv1dFRuSEtwcw0IILQCilOUL8sYAl0hptqIgPjdnuUAMOTDUih+nU8Qqu8SzuMZwvrvb645xEGgNSjkJajAt4uiqfgt5iO2Qp6WIHLHHme1bM0El8idgydmgu2vtUTKWXBp0Lw79z/fzFKfajPbtu/RsepZJWaiutBn9PcDZUYnHOSsID+dKIfA7kn4BGfDD/Aghi2Nk9Y/ksSzc1RW9kp9jD/pfVVscHF+U3rDOL3dEMeO2v74/a+cQiu4IIGEdOg7EIWhu/d0+hogDCmELEKWopZ/BVraSFGH1pKcbUd3wNUrexmUv+5yDBuoCXDb3e9VB1l2pFlwQzOxEKThl64RMl1OAFj7hgXjfzMZWxlrY/oBNUR+T1sQZuPUxStTtE+y1EogJo0YUMgl7FARqnA1849ZwmCe+gSASUJ6ivPXWr2Y0iUp2E4egp07M7sev6YFKEBTid77IrSoi2qDnf/LxLFXw30lUVAn7XVbItyu/VMq6PBQCr+2O5+ajxZAFvOrYeIf4k/oU1r0Way4wMEAeeF4pCGiKWCzVqDF5W/Ez6vK9zRdwZQ7N/BzbQj7p6eGZz/hO3esm/y1wSU1BHJSOatyI5lFDUXFrGSRVZ9Y6wwt4G0xMrjZBO3nIv+KwjqeuC0N83OQN1CJuRLIJLX+XgIJn2mdvWAh/4Mhk3fHERjFf7dOLJ+69L0UyDF+1eP6dXwO24NjLZ8vBmHa180FfruImSyvSGmphd9sOnqc781uC36+shj8m7b+ctBTXAYxniJGRd85Ct4PmjBlc6MkOuPq9/HVOgO1QCKk/qyMHV/q6Vz2YlqXhD15vBBAjXIKmqeoxsq7U4WSCcpr+Dhxiil0tbLc0vsdwGE5PXYzmtSnTkTkgMyZ6V2wNZ/msnGY3ajE8Bpke28Y0JV1SGaQYUcfl7vFSPs16cd5w2vKbGk+47ia/8nA8xXgwHUeLMbpBJjfyQ6NM8n4yGhv2wR8vGMTwbKL6RVv5BgAvfGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:35:41.715553+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "267d470130912f6b7eafa88e:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042536-KCzVB0g16kZqXVrTS7qq",
+    "usage": {
+      "prompt_tokens": 51152,
+      "completion_tokens": 613,
+      "total_tokens": 51765,
+      "cost": 0.0054217,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0054217,
+        "upstream_inference_prompt_cost": 0.0051152,
+        "upstream_inference_completions_cost": 0.0003065
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 395,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.545394144000056,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 92,
+    "rationale": "Recomputing 494,777 / 1,409,281 gives about 35.108%, which rounds to 35.11%, matching the reference. The candidate's figures for gross profit and net sales match the Consolidated Statements of Operations in the retrieved text. Its statement that Item 7 reports 35.1% is also accurate. The Item 7 chunk ID cited is among the retrieved excerpts. The Item 8 citation is supported by the retrieved Item 8 text, though it gives no chunk ID. The candidate's wording is slightly more verbose than the reference but not incorrect."
+  },
+  "status": "ok"
+}

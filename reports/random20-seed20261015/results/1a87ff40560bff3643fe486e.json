@@ -1,0 +1,117 @@
+{
+  "question_id": "Q089",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.032826465000653116,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Operating income margin = Income from operations \u00f7 Net sales \u00d7 100\n\n= $58.906 million \u00f7 $1,409.281 million \u00d7 100  \n= **4.18%** (approximately **4.2%**).\n\nBoth figures are for the fiscal year ended December 29, 2024. **Source:** accession 0001739566-25-000053, Item 7, chunk 2.",
+    "message": {
+      "role": "assistant",
+      "content": "Operating income margin = Income from operations \u00f7 Net sales \u00d7 100\n\n= $58.906 million \u00f7 $1,409.281 million \u00d7 100  \n= **4.18%** (approximately **4.2%**).\n\nBoth figures are for the fiscal year ended December 29, 2024. **Source:** accession 0001739566-25-000053, Item 7, chunk 2.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:31.362702+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "1a87ff40560bff3643fe486e:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042049-fHymNOwBxIYviAUiu8TG",
+    "usage": {
+      "prompt_tokens": 16883,
+      "completion_tokens": 93,
+      "total_tokens": 16976,
+      "cost": 0.0021568,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 16880,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0021568,
+        "upstream_inference_prompt_cost": 0.0021103,
+        "upstream_inference_completions_cost": 4.65e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.4551160350001737,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 98, \"citation_support\": 92, \"rationale\": \"The candidate's 4.18% matches the reference. 58,906 / 1,409,281 = 4.1795%, which rounds to 4.18%. The units are handled correctly: $58.906M and $1,409.281M, and both figures are for the fiscal year ended December 29, 2024. The approximate 4.2% is a harmless rounding note. The cited accession 0001739566-25-000053 matches the retrieved excerpts. The 'Item 7, chunk 2' pointer is supported, since the retrieved Item 7 chunk_index 2 contains the same Consolidated Statements of Operations table with Net sales of 1,409,281 and Income from operations of 58,906. The gold evidence cites Item 8, which also appears in the retrieved excerpts, so the citation is not penalized.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 98, \"citation_support\": 92, \"rationale\": \"The candidate's 4.18% matches the reference. 58,906 / 1,409,281 = 4.1795%, which rounds to 4.18%. The units are handled correctly: $58.906M and $1,409.281M, and both figures are for the fiscal year ended December 29, 2024. The approximate 4.2% is a harmless rounding note. The cited accession 0001739566-25-000053 matches the retrieved excerpts. The 'Item 7, chunk 2' pointer is supported, since the retrieved Item 7 chunk_index 2 contains the same Consolidated Statements of Operations table with Net sales of 1,409,281 and Income from operations of 58,906. The gold evidence cites Item 8, which also appears in the retrieved excerpts, so the citation is not penalized.\"}",
+      "refusal": null,
+      "reasoning": "Checking the math: 58906/1409281 comes out to 4.18%, matching the candidate's 4.2% figure with correct units and source values. The citation to Item 7 chunk 2 also checks out since that's where the table appears.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking the math: 58906/1409281 comes out to 4.18%, matching the candidate's 4.2% figure with correct units and source values. The citation to Item 7 chunk 2 also checks out since that's where the table appears.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSugkKEAgSGAI4AUIIdGhpbmtpbmcSDJJ7RszYRia/KHYmrRoMYSMnrqTozRmXGV+TIjBBpNiFI+VmUV8tzT27hpdSlOzFjHW+6wZ8BfGFHCHTW7wIyE7nbyPizP1pqejka1gq1wgCnILJ7gh67VL71/soe36vPxyA6CoJ33aKzVwOlEQB/fxAu7tOGkbIXIXHyI4iP0EzUVOIdzcNEPyLyXU3Tshm9O2D4j6xNoevrlbSOaVo7MwSOkCCGi9BoR0bET8qL2HcoKHm+Znt/qvo4EQE9Q+JoiPAio+f1uuyUmLZuvMudIf88ITwhs4Wo1p7ZrBk+8ucwmKihvrGG1yzf+DCTMWY/lZllTe5r9T4qkFtH3G5s+Q3LD2xwwUWcvjHuwykwd/QoEVjlhyL8uyU1pDwSSfzG6ild1XMU3LtT/L3JeZyUN0cs2ZCXMJhGH2AFthjq5OEWybZrYV2aMzXzikwyNb7iJrlcuYQBUCA8OTcU/F7Bb4y/riS8RwoyDYA55Ce3UFTrg7rFTTEZTXXSpzJPeAZYRS2gJymd7/C/wHHWTd1LPgKwXSccTwJ7EIzhQEy5GSZc/QbMl4SjmX+WYvvYOhfJ7Zgn0k3ievzbmMh3vCf5LmKopJmHbjubSpHFNYIfkHokAozHSJqSL9b1vgo12ByuN7wCqBzQ2MDNRXMmP9SkBuUK4bSABSclf0ykIsxC8jsEaF9fXTah8qloolhj91J3ll0bfR16kYw6311Vlj/I2/xVvj+94P3VSIn87YE8iOVDbqBdMBoc/YkJAQDGGa6jUak2Nl7Fz/wd3O+U3awB8LpmHIGOPdBn4wvnYvkThef0u1TyOVOroSeiQYaUd0oueGF0W3nmt5AqoQLDJ9/0gHwMgivqIPd2BlatDpfyFKVhZk+yMyca6Pmnpgw8wSra0nib9LWHOCkc9zFa+lpP+8ikq8bUFQSvKDwOliLWwozkTdL/Ttcrr0455E0aug6HkkCw+ZWQE5GCPfRqPHeg0fwbqPytSbOvnN7REstfQaI+xnyKIhCuUAMA5p9GH+4C99uENjHgpMC60kZjqdLdcmcnhnk5jNRzVLW3IcYhHAU03jFBPuLmS2k1XRgfbWNaoErbMKgxmS4DbCTBW4KwJM85N6jzSMrgvgpLU8KCifPuMrltDE7q4AOZo4pmLfhwutRg4x/sM1DDWGrSqSyXD/mPeRsgtJ3bUJg738vuDsCVvr4nAPlwBYM9ouE6VBko2C/pO4Nuj1FBcc3bBFE/KQHGLFGJ7Uf5olamOrfN38EpDcuBQa/VxkDiWwypRttIgTvSx16lb4d4UtbjKhT13jtCBf4n1d2mV/HbVXUbMrHv3D8X0/z8HDYQ1TZzm7qKtSGyapXFkacAx6QV89Kv2Aab31VZuTA2nhKtxGeeeSDXYNwwTyCsUhSjIr0wEDxu++aVaf3QFgdJ3NHY0lcytYRVrC9EfZPvz7BiljsAXjIMVgxoOvxDsWZxPrZ/4M922RPUTQn0f9hEodURFmbCcVTYktGDZB7HamGA0efu/GYQRdJa1OwEeW4W3Hu8WsSdTzH+GHX6k/S5mUHbLXNp062yEw46KC04HvISd0LSYrzJY8jiGHuGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:44.491710+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "1a87ff40560bff3643fe486e:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042240-JeYotLYs7hP42qgOFmlr",
+    "usage": {
+      "prompt_tokens": 26532,
+      "completion_tokens": 557,
+      "total_tokens": 27089,
+      "cost": 0.0029317,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029317,
+        "upstream_inference_prompt_cost": 0.0026532,
+        "upstream_inference_completions_cost": 0.0002785
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 270,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.9158069249997425,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 92,
+    "rationale": "The candidate's 4.18% matches the reference. 58,906 / 1,409,281 = 4.1795%, which rounds to 4.18%. The units are handled correctly: $58.906M and $1,409.281M, and both figures are for the fiscal year ended December 29, 2024. The approximate 4.2% is a harmless rounding note. The cited accession 0001739566-25-000053 matches the retrieved excerpts. The 'Item 7, chunk 2' pointer is supported, since the retrieved Item 7 chunk_index 2 contains the same Consolidated Statements of Operations table with Net sales of 1,409,281 and Income from operations of 58,906. The gold evidence cites Item 8, which also appears in the retrieved excerpts, so the citation is not penalized."
+  },
+  "status": "ok"
+}

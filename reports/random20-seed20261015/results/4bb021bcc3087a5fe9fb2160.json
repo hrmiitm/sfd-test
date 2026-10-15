@@ -1,0 +1,117 @@
+{
+  "question_id": "Q030",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/bm25",
+  "retrieval": {
+    "seconds": 0.014769391999834625,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "For fiscal year 2024, ConocoPhillips reported:\n\n- **Purchased commodities:** $20,012 million\n- **Production and operating expenses:** $8,751 million\n\nCalculation from the filing\u2019s stated units: $20,012 million = **$20.012 billion**; $8,751 million = **$8.751 billion**.\n\nSource: Accession **0001163165-25-000012**, *Item 8. Financial Statements and Supplementary Data*, chunk **81c28230-2c41-5216-8fbd-1cb48dbb71dc**.",
+    "message": {
+      "role": "assistant",
+      "content": "For fiscal year 2024, ConocoPhillips reported:\n\n- **Purchased commodities:** $20,012 million\n- **Production and operating expenses:** $8,751 million\n\nCalculation from the filing\u2019s stated units: $20,012 million = **$20.012 billion**; $8,751 million = **$8.751 billion**.\n\nSource: Accession **0001163165-25-000012**, *Item 8. Financial Statements and Supplementary Data*, chunk **81c28230-2c41-5216-8fbd-1cb48dbb71dc**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:23.764244+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "4bb021bcc3087a5fe9fb2160:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041921-DL5QhPm9nD0kslyYFmrL",
+    "usage": {
+      "prompt_tokens": 15574,
+      "completion_tokens": 131,
+      "total_tokens": 15705,
+      "cost": 0.002012175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 15571,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002012175,
+        "upstream_inference_prompt_cost": 0.001946675,
+        "upstream_inference_completions_cost": 6.55e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.49886489400069,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 93, \"rationale\": \"The candidate gives Purchased commodities of $20,012 million and Production and operating expenses of $8,751 million, matching the reference and the gold quote. The unit conversions to $20.012 billion and $8.751 billion are arithmetically correct. The cited accession 0001163165-25-000012 and the Item 8 section match the gold evidence. Chunk 81c28230-2c41-5216-8fbd-1cb48dbb71dc appears in the retrieved excerpts and contains the Consolidated Income Statement with these exact values, so the citation is supported. The small deduction reflects that the answer does not explicitly flag that the figures are for ConocoPhillips' 2024 consolidated income statement, and the section label is slightly generalized.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 93, \"rationale\": \"The candidate gives Purchased commodities of $20,012 million and Production and operating expenses of $8,751 million, matching the reference and the gold quote. The unit conversions to $20.012 billion and $8.751 billion are arithmetically correct. The cited accession 0001163165-25-000012 and the Item 8 section match the gold evidence. Chunk 81c28230-2c41-5216-8fbd-1cb48dbb71dc appears in the retrieved excerpts and contains the Consolidated Income Statement with these exact values, so the citation is supported. The small deduction reflects that the answer does not explicitly flag that the figures are for ConocoPhillips' 2024 consolidated income statement, and the section label is slightly generalized.\"}",
+      "refusal": null,
+      "reasoning": "The candidate's figures of $20,012M and $8,751M match the reference values, and the citation points to the correct accession and section in Item 8. The chunk ID appears among the retrieved excerpts and does contain the relevant income statement table, so support looks strong.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The candidate's figures of $20,012M and $8,751M match the reference values, and the citation points to the correct accession and section in Item 8. The chunk ID appears among the retrieved excerpts and does contain the relevant income statement table, so support looks strong.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSnwkKEAgSGAI4AUIIdGhpbmtpbmcSDNitW9XYmY0UWZ2bZhoMj4RCho1bZb9WT6EuIjCJOz3p3j8HyI2MfS7i9nqtq0kLCOV4V2FJ+5X/vozbXe4ql5Vd6etMIvAcMfxzyDIqvAi+/BFM8XxrESh0vcsBk714Ap/2T0P8Kvc9Lew9jSwwkzTjYtwbVJ3ZgD48HYeNyPoI5I2CFAvDfyToPOJ60hvdmSs4s327/DR0A77CsE5XloVGQpuG/HA/KRlvjy21V3O29KUtpcgYNinAIZRcZdt+WBpNZkaAY69ad/IPbXOcOrB91ibuPeFg9gUQSaJB37wDfttsuX4Rc+rP1cNEX3iJ45dUqR3fcisocnG8UZLxsVeP1v6E/YUnz8uwk5+ImP8qC8D4S4Ulepc4Y7hjo2WVHbz0KOsp1SWi/dx4m9S0vT7ya6nbFPuhCA4b7FwzbwIukmRAYk4ydnt4kKyIoW4f7YCrOynU0l8njfWDaHApiQGFn20aaGsr0Kp+w9BfzlGNGA50dP8i0jWMx1z6hfbedtNXN+gnBX3FKuyur/8w9oVyBfhAf+u4MMsxvP5dpz2cXUCh4t+xv0jSnzxQn2JiDIxm8GFYfFaWOfJa/GnkJ+wpHjB+fCUA3vta27k6yHkOhhyZLAKHgH608mikHR/UJuq5BfXXrCmWU3AGpXJd3QPYtfQEmgp7FBG9DBvdIzo4NYO8JlVOMBQ6pPFYrSt3MLZVW1F8eKESHIWR80wuGq3wClCZ+qdVWR7kJ3gew6fPAr6TFhPTFlaYc9sGiPEFF39uiaP75rIBJgq5gE7MtSgIlwrNOAOddm7HC3xzA5gQeAw7G8cVqlQKYYGrMRnTJnQ/3fU/bRWRB4YoWsdIKbVMou0GRKfO6Jg4mNoHPVmYSo914Zg6ifAmP746DvrW1Kf1DmiYsy66IBXN65mZYZ5Fv8t/1ogF6YKvbH3i3+SjSWLdtPEGnGw1TuP5zVLf/gIN/T4kNaLClUHyk4imDveOd058h3b4BtsjAmgrF1fgmAu/uP88ZirMmWJGWkfLGzUcS14Tc4vURqR9ZwdIJq+pTUoVAQYk09O8pFz3kQtIcU+EJRntD5+BIozy8gW+qJSW91crWCfujnI2759UNGSIOimBD//1c9HEWkJ4rsFi1humvgoVUibsYz7O0LW2mrSNwV3zfaJm43riRibXPgkuecMtU5h6nI44zM0XbHy1aw3TVoRl55PptqU3BCPnxQJrhV2JX7UE1/oJbyofD8s0oCXA+w0mLEbhexqvt6E+wprKG4KawAS8oexuZabfQ+lwZy7NH01/iOHB1TfERr1KzgpuOJz5k6iFsao59Z/1T/2BaL0qtxq+aYu9sw12vKLgOYOyJgZyMfxXQR2IkQFs7l8xNkMHIGg3jQSn9rS9BlMj795CAhgSBPjtkVzF7jZYYBnBFRZ6KgoknMbTIp4aaXXeg815Ey1d0z6GlLXXMS7jCL1SKH+QUvNve8yDWNuwzoBC26NE8nNN4xQhMNb9DGMc/CcTtDFjn2pM3LcISffOaEadUTvjlPtbJx+dQDZ7FoQ+Eix8OiegGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:46.114937+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "4bb021bcc3087a5fe9fb2160:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042121-HePXth1ucWttg1Au14rC",
+    "usage": {
+      "prompt_tokens": 24233,
+      "completion_tokens": 479,
+      "total_tokens": 24712,
+      "cost": 0.0026628,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0026628,
+        "upstream_inference_prompt_cost": 0.0024233,
+        "upstream_inference_completions_cost": 0.0002395
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 209,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.547186963999593,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 93,
+    "rationale": "The candidate gives Purchased commodities of $20,012 million and Production and operating expenses of $8,751 million, matching the reference and the gold quote. The unit conversions to $20.012 billion and $8.751 billion are arithmetically correct. The cited accession 0001163165-25-000012 and the Item 8 section match the gold evidence. Chunk 81c28230-2c41-5216-8fbd-1cb48dbb71dc appears in the retrieved excerpts and contains the Consolidated Income Statement with these exact values, so the citation is supported. The small deduction reflects that the answer does not explicitly flag that the figures are for ConocoPhillips' 2024 consolidated income statement, and the section label is slightly generalized."
+  },
+  "status": "ok"
+}

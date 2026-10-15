@@ -1,0 +1,472 @@
+{
+  "question_id": "Q051",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/agentic",
+  "retrieval": {
+    "seconds": 0.01391472200066346,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Adobe\u2019s fiscal 2024 gross profit margin was **89.0%**.\n\nFrom its Consolidated Statements of Income, total revenue was **$21,505 million** and gross profit was **$19,147 million**. Calculation: $19,147 \u00f7 $21,505 \u00d7 100 = **89.0%** (rounded to one decimal place).\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, \u201cConsolidated Statements of Income\u201d chunk **b8fa3362-a910-51b7-aebe-a44fa81085a4**.",
+    "usage": {
+      "prompt_tokens": 9977,
+      "completion_tokens": 175,
+      "total_tokens": 10152,
+      "cost": 0.001314625
+    },
+    "seconds": 3.375218278999455,
+    "tool_seconds": 0.01391472200066346,
+    "tool_calls": 1,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_Y7dlQnfbTlALbAibait5XzKn",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Adobe Inc fiscal year 2024 Consolidated Statements of Income total revenue cost of revenue gross profit 2024 10-K\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_Y7dlQnfbTlALbAibait5XzKn",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Adobe Inc fiscal year 2024 Consolidated Statements of Income total revenue cost of revenue gross profit 2024 10-K\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:25:30.862811+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "c12afe1ec43cb4e05cc2077d:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041928-sYmD9JSJuDdB7vGy3u77",
+        "usage": {
+          "prompt_tokens": 797,
+          "completion_tokens": 42,
+          "total_tokens": 839,
+          "cost": 0.0001007,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0001007,
+            "upstream_inference_prompt_cost": 7.97e-05,
+            "upstream_inference_completions_cost": 2.1e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 0.5298766349997095,
+        "attempts": 1
+      },
+      {
+        "text": "Adobe\u2019s fiscal 2024 gross profit margin was **89.0%**.\n\nFrom its Consolidated Statements of Income, total revenue was **$21,505 million** and gross profit was **$19,147 million**. Calculation: $19,147 \u00f7 $21,505 \u00d7 100 = **89.0%** (rounded to one decimal place).\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, \u201cConsolidated Statements of Income\u201d chunk **b8fa3362-a910-51b7-aebe-a44fa81085a4**.",
+        "message": {
+          "role": "assistant",
+          "content": "Adobe\u2019s fiscal 2024 gross profit margin was **89.0%**.\n\nFrom its Consolidated Statements of Income, total revenue was **$21,505 million** and gross profit was **$19,147 million**. Calculation: $19,147 \u00f7 $21,505 \u00d7 100 = **89.0%** (rounded to one decimal place).\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, \u201cConsolidated Statements of Income\u201d chunk **b8fa3362-a910-51b7-aebe-a44fa81085a4**.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:28:58.400086+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "c12afe1ec43cb4e05cc2077d:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042136-BHgYQxLlim8JJkciL7NJ",
+        "usage": {
+          "prompt_tokens": 9180,
+          "completion_tokens": 133,
+          "total_tokens": 9313,
+          "cost": 0.001213925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 9177,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001213925,
+            "upstream_inference_prompt_cost": 0.001147425,
+            "upstream_inference_completions_cost": 6.65e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.8453416439997454,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_Y7dlQnfbTlALbAibait5XzKn",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Adobe Inc fiscal year 2024 Consolidated Statements of Income total revenue cost of revenue gross profit 2024 10-K\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "b8fa3362-a910-51b7-aebe-a44fa81085a4",
+              "section": "ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA",
+              "section_index": 12,
+              "chunk_index": 6,
+              "char_start": 291763,
+              "char_end": 300663,
+              "text": "Gains and losses related to changes in the fair value of foreign exchange forward contracts which hedge certain balance sheet positions are recorded each period as a component of other income (expense), net in our Consolidated Statements of Income. Foreign exchange forward contracts and option contracts hedging forecasted foreign currency revenue and expenses and Treasury lock agreements are designated as cash flow hedges with gains and losses recorded net of tax as a component of accumulated other comprehensive income (loss) in our Consolidated Balance Sheets until the forecasted transaction occurs. When the forecasted transaction affects earnings, we reclassify the related gain or loss on the foreign currency revenue, foreign currency expense or Treasury lock cash flow hedge to revenue, operating expense or interest expense, as applicable.\n\n*Concentration of Risk*\n\nFinancial instruments that potentially subject us to concentrations of credit risk are short-term fixed-income investments, structured repurchase transactions, foreign currency and interest rate hedge contracts and trade receivables.\n\nOur investment portfolio consists of investment-grade securities diversified among security types, industries and issuers. Our cash and investments are held and primarily managed by recognized financial institutions that follow our investment policy. Our policy limits the amount of credit exposure to any one security issue or issuer and we believe no significant concentration of credit risk exists with respect to these investments.\n\nWe enter into master netting arrangements to mitigate credit risk in derivative transactions by permitting net settlement of transactions with the same counterparty. We also enter into collateral security agreements with certain of our counterparties to exchange cash collateral when the net fair value of certain derivative instruments fluctuates from contractually established thresholds.\n\nCredit risk in receivables is limited to OEMs, dealers and distributors of hardware and software products to the retail market, customers to whom we license software directly and our SaaS offerings. A credit review is completed for our new distributors, dealers and OEMs. We also perform ongoing credit evaluations of our customers' financial condition and require letters of credit or other guarantees, whenever deemed necessary. The credit limit given to the customer is based on our risk assessment of their ability to pay, country risk and other factors and is not contingent on the resale of the product or on the collection of payments from their customers. Certain contracts with advertising agencies contain sequential liability provisions, under which the agency is not required to pay until payment is received from the agency's customers. In these circumstances, we evaluate the credit-worthiness of the agency's customers in addition to the agency itself. If we license our software or provide SaaS services to a customer where we have a reason to believe the customer's ability and intention to pay is not probable, the arrangement is not considered to be a revenue contract. Accordingly, we will not recognize any consideration received as revenue until termination or substantive completion of the services.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\n**Recent Accounting Pronouncements Not Yet Effective**\n\nIn November 2023, the Financial Accounting Standards Board (the \"FASB\") issued Accounting Standards Update (\"ASU\") No. 2023-07, Segment Reporting, which expands annual and interim disclosure requirements for reportable segments, primarily through enhanced disclosures about significant segment expenses. The updated standard is effective for our annual periods beginning in fiscal 2025 and interim periods beginning in the first quarter of fiscal 2026. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn December 2023, the FASB issued ASU No. 2023-09, Income Taxes, which prescribes standardized categories and disaggregation of information in the reconciliation of provision for income taxes, requires disclosure of disaggregated income taxes paid, and modifies other income tax-related disclosure requirements. The updated standard is effective for us beginning with our fiscal year 2026 annual reporting period. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn November 2024, the FASB issued ASU No. 2024-03, Income Statement\u2014Reporting Comprehensive Income\u2014Expense Disaggregation Disclosures, which requires additional disclosure of certain costs and expenses within the notes to the financial statements. The updated standard is effective for our annual periods beginning in fiscal 2028 and interim periods beginning in the first quarter of fiscal 2029. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nThere have been no other recent accounting pronouncements, changes in accounting pronouncements or recently adopted accounting guidance during fiscal 2024 that are of significance or potential significance to us.\n\n**NOTE 2. REVENUE**\n\n*Segment Information*\n\nWe report segment information based on the \"management\" approach. The management approach designates the internal reporting used by management for making decisions and assessing performance as the source of our reportable segments.\n\nOur Chief Executive Officer, the chief operating decision maker, reviews revenue and gross margin information for each of our reportable segments, but does not review operating expenses on a segment by segment basis. In addition, with the exception of goodwill, we do not identify or allocate our assets by the reportable segments.\n\nOur business is organized into the following reportable segments:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Media*\u2014Our Digital Media segment provides products and services that enable individuals, teams, businesses, and enterprises to create, publish and promote their content anywhere and accelerate their productivity by transforming how they view, share, engage with and collaborate on documents and creative content. Our customers include creative professionals, including photographers, video editors, graphic and experience designers and game developers; communicators, including content creators, students, marketers and knowledge workers; and consumers.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Experience*\u2014Our Digital Experience segment provides an integrated platform and set of products, services and solutions that enable businesses to create, manage, execute, measure, monetize and optimize customer experiences that span from analytics to commerce. Our customers include marketers, advertisers, agencies, publishers, merchandisers, merchants, web analysts, data scientists, developers and executives across the C-suite.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Publishing and Advertising*\u2014Our Publishing and Advertising segment contains legacy products and services that address diverse market opportunities, including eLearning solutions, technical document publishing, web conferencing, document and forms platform, web app development, high-end printing and our Adobe Advertising offerings.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\nOur segment revenue and results for fiscal 2024, 2023 and 2022 were as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **Digital <br>Media** | **Digital <br>Experience** | **Publishing and <br>Advertising** | **Total** |\n| **Fiscal 2024** |  |  |  |  |\n| Revenue | $15864 | $5366 | $275 | $21505 |\n| Cost of revenue | 680 | 1589 | 89 | 2358 |\n| Gross profit | $15184 | $3777 | $186 | $19147 |\n| Gross profit as a percentage of revenue | 96% | 70% | 68% | 89% |\n| **Fiscal 2023** |  |  |  |  |\n| Revenue | $14216 | $4893 | $300 | $19409 |\n| Cost of revenue | 665 | 1603 | 86 | 2354 |\n| Gross profit | $13551 | $3290 | $214 | $17055 |\n| Gross profit as a percentage of revenue | 95% | 67% | 71% | 88% |\n| **Fiscal 2022** |  |  |  |  |\n| Revenue | $12842 | $4422 | $342 | $17606 |\n| Cost of revenue | 561 | 1502 | 102 | 2165 |\n| Gross profit | $12281 | $2920 | $240 | $15441 |\n| Gross profit as a percentage of revenue | 96% | 66% | 70% | 88% |\n\n---\n\n\n\nWe generally categorize revenue by geographic area based on where the customer manages their utilization of our offerings. Revenue by geographic area for fiscal 2024, 2023 and 2022 were as follows:\n\n---",
+              "token_count": 1844,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001045810-25-000023",
+              "cik": "0001045810",
+              "company": "NVIDIA CORP",
+              "form_type": "10-K",
+              "filed_date": "20250226",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 59611,
+              "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+              "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2d4cee94-0f7b-599b-aa19-f5ffe2997e11",
+              "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+              "section_index": 10,
+              "chunk_index": 3,
+              "char_start": 228847,
+              "char_end": 237114,
+              "text": "Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location. Revenue from sales to customers outside of the United States accounted for 53% and 56% of total revenue for fiscal years 2025 and 2024, respectively.\n\n**Gross Profit and Gross Margin**\n\nGross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.\n\nGross margins increased to 75.0% in fiscal year 2025 from 72.7% in fiscal year 2024. The year over year increase was primarily driven by a higher mix of Data Center revenue.\n\nProvisions for inventory and excess inventory purchase obligations totaled $3.7 billion and $2.2 billion for fiscal years 2025 and 2024, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $689 million and $540 million for fiscal years 2025 and 2024, respectively. The net effect on our gross margin was an unfavorable impact of 2.3% and 2.7% in fiscal years 2025 and 2024, respectively.\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Research and development expenses | $12914 | $8675 | $4239 | 49% |\n| *% of net revenue* | *9.9 %* | *14.2 %* |  |  |\n| Sales, general and administrative expenses | 3491 | 2654 | 837 | 32% |\n| *% of net revenue* | *2.7 %* | *4.4 %* |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | $16405 | $11329 | $5076 | 45% |\n| &nbsp;&nbsp;&nbsp;&nbsp;*% of net revenue* | *12.6 %* | *18.6 %* |  |  |\n\n---\n\n\n\nThe increases in research and development expenses for fiscal year 2025 were driven by a 32% increase in compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases, a 100% increase in compute and infrastructure, and a 234% increase in engineering development costs for new product introductions.\n\nThe increases in sales, general and administrative expenses for fiscal year 2025 were primarily driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Other Income (Expense), Net**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Interest income | $1786 | $866 | $920 |\n| Interest expense | (247) | (257) | 10 |\n| Other, net | 1034 | 237 | 797 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | $2573 | $846 | $1727 |\n\n---\n\n\n\nThe increase in interest income was primarily due to growth in cash, cash equivalents, and marketable securities.\n\nInterest expense is comprised of coupon interest and debt discount amortization related to our notes.\n\nOther, net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. The change in Other, net, compared to fiscal year 2024, was primarily driven by an increase in fair value of our non-marketable equity securities and publicly-held equity securities. Refer to Note 8 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information regarding our non-marketable equity securities.\n\n**Income Taxes**\n\nIncome tax expense was $11.1 billion and $4.1 billion for fiscal years 2025 and 2024, respectively. Income tax as a percentage of income before income tax was an expense of 13.3% and 12.0% for fiscal years 2025 and 2024, respectively.\n\nThe effective tax rate increased primarily due to higher pre-tax income and a prior year discrete benefit due to an audit resolution.\n\nOur effective tax rates for fiscal years 2025 and 2024 were lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, stock-based compensation, the U.S. federal research tax credit, and income earned in jurisdictions that are subject to taxes at rates lower than the U.S. federal statutory tax rate. Our effective tax rate for fiscal year 2024 was additionally benefited by the audit resolution.\n\nGiven our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could vary based on our assessment of all available information.\n\nRefer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.\n\n**Liquidity and Capital Resources**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Cash and cash equivalents | $8589 | $7280 |\n| Marketable securities | 34621 | 18704 |\n| Cash, cash equivalents, and marketable securities | $43210 | $25984 |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Net cash provided by operating activities | $64089 | $28090 |\n| Net cash used in investing activities | $(20421) | $(10566) |\n| Net cash used in financing activities | $(42359) | $(13633) |\n\n---\n\n\n\nOur investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain maturity limits on our portfolio.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\nCash provided by operating activities increased in fiscal year 2025 compared to fiscal year 2024, due to growth in revenue.\n\nCash used in investing activities increased in fiscal year 2025 compared to fiscal year 2024, primarily driven by net purchases of marketable securities, and purchase of land, property and equipment.\n\nCash used in financing activities increased in fiscal year 2025 compared to fiscal year 2024, mainly due to higher share repurchases and higher tax payments related to RSUs.\n\n**Liquidity**\n\nOur primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of January 26, 2025, we had $43.2 billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.\n\nOur marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly rated financial institutions. These marketable securities are primarily denominated in U.S. dollars. Refer to Note 7 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+              "token_count": 1944,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "8b7160c4-9fa0-583d-ad4b-873bc7dca43f",
+              "section": "ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA",
+              "section_index": 12,
+              "chunk_index": 1,
+              "char_start": 255732,
+              "char_end": 259786,
+              "text": "| | | | |\n|:---|:---|:---|:---|\n| | **Years Ended** | **Years Ended** | **Years Ended** |\n| | **November 29,<br>2024** | **December 1,<br>2023** | **December 2,<br>2022** |\n| Revenue: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Subscription | $20521 | $18284 | $16388 |\n| &nbsp;&nbsp;&nbsp;Product | 386 | 460 | 532 |\n| &nbsp;&nbsp;&nbsp;Services and other | 598 | 665 | 686 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total revenue | 21505 | 19409 | 17606 |\n| <br>Cost of revenue: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Subscription | 1799 | 1822 | 1646 |\n| &nbsp;&nbsp;&nbsp;Product | 25 | 29 | 35 |\n| &nbsp;&nbsp;&nbsp;Services and other | 534 | 503 | 484 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total cost of revenue | 2358 | 2354 | 2165 |\n| <br>Gross profit | 19147 | 17055 | 15441 |\n| <br>Operating expenses: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Research and development | 3944 | 3473 | 2987 |\n| &nbsp;&nbsp;&nbsp;Sales and marketing | 5764 | 5351 | 4968 |\n| &nbsp;&nbsp;&nbsp;General and administrative | 1529 | 1413 | 1219 |\n| &nbsp;&nbsp;Acquisition termination fee | 1000 |  |  |\n| &nbsp;&nbsp;&nbsp;Amortization of intangibles | 169 | 168 | 169 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | 12406 | 10405 | 9343 |\n| <br>Operating income | 6741 | 6650 | 6098 |\n| <br>Non-operating income (expense): |  |  |  |\n| &nbsp;&nbsp;&nbsp;Interest expense | (169) | (113) | (112) |\n| &nbsp;&nbsp;&nbsp;Investment gains (losses), net | 48 | 16 | (19) |\n| &nbsp;&nbsp;&nbsp;Other income (expense), net | 311 | 246 | 41 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total non-operating income (expense), net | 190 | 149 | (90) |\n| Income before income taxes | 6931 | 6799 | 6008 |\n| Provision for income taxes | 1371 | 1371 | 1252 |\n| Net income | $5560 | $5428 | $4756 |\n| Basic net income per share | $12.43 | $11.87 | $10.13 |\n| Shares used to compute basic net income per share | 447 | 457 | 470 |\n| Diluted net income per share | $12.36 | $11.82 | $10.10 |\n| Shares used to compute diluted net income per share | 450 | 459 | 471 |\n\n---\n\n\n\n*See accompanying Notes to Consolidated Financial Statements.*\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME**\n\n**(In millions)**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Years Ended** | **Years Ended** | **Years Ended** |\n| | **November 29,<br>2024** | **December 1,<br>2023** | **December 2,<br>2022** |\n| | **Increase/(Decrease)** | **Increase/(Decrease)** | **Increase/(Decrease)** |\n| Net income | $5560 | $5428 | $4756 |\n| Other comprehensive income (loss), net of taxes: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Available-for-sale securities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unrealized gains / losses on available-for-sale securities | 11 | 24 | (39) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reclassification adjustment for recognized gains / losses on available-for-sale securities |  | 5 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net increase (decrease) from available-for-sale securities | 11 | 29 | (39) |\n| &nbsp;&nbsp;&nbsp;Derivatives designated as hedging instruments: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unrealized gains / losses on derivative instruments | 89 | (12) | 139 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reclassification adjustment for realized gains / losses on derivative instruments | 17 | (31) | (151) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net increase (decrease) from derivatives designated as hedging instruments | 106 | (43) | (12) |\n| &nbsp;&nbsp;&nbsp;Foreign currency translation adjustments | (33) | 22 | (105) |\n| Other comprehensive income (loss), net of taxes | 84 | 8 | (156) |\n| Total comprehensive income, net of taxes | $5644 | $5436 | $4600 |\n\n---\n\n\n\n*See accompanying Notes to Consolidated Financial Statements.*\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY** \n\n**(In millions)**\n\n---",
+              "token_count": 1365,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001193125-25-015775",
+              "cik": "0000853816",
+              "company": "LANDSTAR SYSTEM INC",
+              "form_type": "8-K",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 897,
+              "source_md5": "f8dbf3b8731fa0d65dea0ce893c4dd99",
+              "content_sha256": "b380868fa82f1bca7cac66ecc70f6a5b15b3ec743b8a558080ea3797c15f32de",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "620ddb36-547f-52ec-bbed-bf387f3ce616",
+              "section": "Exhibit 99.2",
+              "section_index": 18,
+              "chunk_index": 6,
+              "char_start": 44583,
+              "char_end": 46630,
+              "text": "Reconciliation of Gross Profit to Variable Contribution Dollars in Thousands Fiscal Years Ended Fiscal Quarters Ended Dec 28, Dec 30, Dec 28, Dec 30, 2024 2023 2024 2023 Revenue $4,819,245 $5,303,322 $1,209,330 $1,204,445 Costs of revenue: Purchased transportation 3 ,745,241 4 ,068,262 945,857 927,028 Commissions to agents 392,751 462,668 96,950 99,271 Variable costs of revenue 4 ,137,992 4,530,930 1 ,042,807 1,026,299 Trailing equipment depreciation 27,950 31,319 7,186 7,079 Information technology costs (1) 22,744 25,486 4,629 5,695 Insurance-related costs (2) 115,764 116,069 30,642 27,585 Other operating costs 58,781 54,191 14,643 13,193 Other costs of revenue 225,239 227,065 57,100 53,552 Total costs of revenue 4,363,231 4,757,995 1,099,907 1 ,079,851 Gross profit $456,014 $5 45,327 $109,423 $1 24,594 Gross profit margin 9.5% 10.3% 9.0% 10.3% Plus: other costs of revenue 225,239 227,065 57,100 53,552 Variable contribution $681,253 $7 72,392 $1 66,523 $178,146 Variable contribution margin 14.1% 14.6% 13.8% 14.8% (1) Includes costs of revenue incurred related to internally developed software including ASC 350-40 amortization, implementation costs, hosting costs and other support costs utilized to support the Company's independent commission sales agents, third party capacity providers, and customers, included as a portion of depreciation and amortization and of selling, general and administrative in the Company's Consolidated Statements of Income. (2) Primarily includes (i) insurance premiums paid for commercial auto liability, general liability, cargo and other lines of coverage related to the transportation of freight; (ii) the related cost of claims incurred under those programs; and (iii) brokerage commissions and other fees incurred relating to the administration of insurance programs available to BCO Independent Contractors that are reinsured by the Company, which are included in selling, general and administrative in the Company's Consolidated Statements of Income. 22\n\n------\n\n![](g919104ex99_2p23g1.jpg)",
+              "token_count": 580,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "065ae57a-28b6-5fda-a0e3-57c1a980d702",
+              "section": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)",
+              "section_index": 219,
+              "chunk_index": 0,
+              "char_start": 863024,
+              "char_end": 865257,
+              "text": "# NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)\n\nOur segment revenue and results for fiscal 2024, 2023 and 2022 were as follows:\n\n| (dollars in millions) | Digital Media | Digital Experience | Publishing and Advertising | Total |\n| --- | --- | --- | --- | --- |\n| Fiscal 2024 |  |  |  |  |\n| Revenue | $15,864 | $5,366 | $275 | $21,505 |\n| Cost of revenue | 680 | 1,589 | 89 | 2,358 |\n| Gross profit | $15,184 | $3,777 | $186 | $19,147 |\n| Gross profit as a percentage of revenue | 96% | 70% | 68% | 89% |\n| Fiscal 2023 |  |  |  |  |\n| Revenue | $14,216 | $4,893 | $300 | $19,409 |\n| Cost of revenue | 665 | 1,603 | 86 | 2,354 |\n| Gross profit | $13,551 | $3,290 | $214 | $17,055 |\n| Gross profit as a percentage of revenue | 95% | 67% | 71% | 88% |\n| Fiscal 2022 |  |  |  |  |\n| Revenue | $12,842 | $4,422 | $342 | $17,606 |\n| Cost of revenue | 561 | 1,502 | 102 | 2,165 |\n| Gross profit | $12,281 | $2,920 | $240 | $15,441 |\n| Gross profit as a percentage of revenue | 96% | 66% | 70% | 88% |\n\nWe generally categorize revenue by geographic area based on where the customer manages their utilization of our offerings. Revenue by geographic area for fiscal 2024, 2023 and 2022 were as follows:\n\n| (in millions) | 2024 | 2023 | 2022 |\n| --- | --- | --- | --- |\n| Americas: |  |  |  |\n| United States | $11,499 | $10,460 | $9,217 |\n| Other | 1,392 | 1,194 | 1,034 |\n| Total Americas | 12,891 | 11,654 | 10,251 |\n| EMEA | 5,554 | 4,881 | 4,593 |\n| APAC | 3,060 | 2,874 | 2,762 |\n| Revenue | $21,505 | $19,409 | $17,606 |\n\nRevenue by major offerings in our Digital Media reportable segment for fiscal 2024, 2023 and 2022 were as follows:\n\n| (in millions) | 2024 | 2023 | 2022 |\n| --- | --- | --- | --- |\n| Creative Cloud | $12,682 | $11,517 | $10,459 |\n| Document Cloud | 3,182 | 2,699 | 2,383 |\n| Total Digital Media revenue | $15,864 | $14,216 | $12,842 |\n\nSubscription revenue by segment for fiscal 2024, 2023 and 2022 were as follows:\n\n| (in millions) | 2024 | 2023 | 2022 |\n| --- | --- | --- | --- |\n| Digital Media | $15,547 | $13,838 | $12,385 |\n| Digital Experience | 4,864 | 4,331 | 3,880 |\n| Publishing and Advertising | 110 | 115 | 123 |\n| Total subscription revenue | $20,521 | $18,284 | $16,388 |\n\nTable of Contents",
+              "token_count": 804,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.01391472200066346
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "b8fa3362-a910-51b7-aebe-a44fa81085a4",
+        "section": "ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA",
+        "section_index": 12,
+        "chunk_index": 6,
+        "char_start": 291763,
+        "char_end": 300663,
+        "text": "Gains and losses related to changes in the fair value of foreign exchange forward contracts which hedge certain balance sheet positions are recorded each period as a component of other income (expense), net in our Consolidated Statements of Income. Foreign exchange forward contracts and option contracts hedging forecasted foreign currency revenue and expenses and Treasury lock agreements are designated as cash flow hedges with gains and losses recorded net of tax as a component of accumulated other comprehensive income (loss) in our Consolidated Balance Sheets until the forecasted transaction occurs. When the forecasted transaction affects earnings, we reclassify the related gain or loss on the foreign currency revenue, foreign currency expense or Treasury lock cash flow hedge to revenue, operating expense or interest expense, as applicable.\n\n*Concentration of Risk*\n\nFinancial instruments that potentially subject us to concentrations of credit risk are short-term fixed-income investments, structured repurchase transactions, foreign currency and interest rate hedge contracts and trade receivables.\n\nOur investment portfolio consists of investment-grade securities diversified among security types, industries and issuers. Our cash and investments are held and primarily managed by recognized financial institutions that follow our investment policy. Our policy limits the amount of credit exposure to any one security issue or issuer and we believe no significant concentration of credit risk exists with respect to these investments.\n\nWe enter into master netting arrangements to mitigate credit risk in derivative transactions by permitting net settlement of transactions with the same counterparty. We also enter into collateral security agreements with certain of our counterparties to exchange cash collateral when the net fair value of certain derivative instruments fluctuates from contractually established thresholds.\n\nCredit risk in receivables is limited to OEMs, dealers and distributors of hardware and software products to the retail market, customers to whom we license software directly and our SaaS offerings. A credit review is completed for our new distributors, dealers and OEMs. We also perform ongoing credit evaluations of our customers' financial condition and require letters of credit or other guarantees, whenever deemed necessary. The credit limit given to the customer is based on our risk assessment of their ability to pay, country risk and other factors and is not contingent on the resale of the product or on the collection of payments from their customers. Certain contracts with advertising agencies contain sequential liability provisions, under which the agency is not required to pay until payment is received from the agency's customers. In these circumstances, we evaluate the credit-worthiness of the agency's customers in addition to the agency itself. If we license our software or provide SaaS services to a customer where we have a reason to believe the customer's ability and intention to pay is not probable, the arrangement is not considered to be a revenue contract. Accordingly, we will not recognize any consideration received as revenue until termination or substantive completion of the services.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\n**Recent Accounting Pronouncements Not Yet Effective**\n\nIn November 2023, the Financial Accounting Standards Board (the \"FASB\") issued Accounting Standards Update (\"ASU\") No. 2023-07, Segment Reporting, which expands annual and interim disclosure requirements for reportable segments, primarily through enhanced disclosures about significant segment expenses. The updated standard is effective for our annual periods beginning in fiscal 2025 and interim periods beginning in the first quarter of fiscal 2026. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn December 2023, the FASB issued ASU No. 2023-09, Income Taxes, which prescribes standardized categories and disaggregation of information in the reconciliation of provision for income taxes, requires disclosure of disaggregated income taxes paid, and modifies other income tax-related disclosure requirements. The updated standard is effective for us beginning with our fiscal year 2026 annual reporting period. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn November 2024, the FASB issued ASU No. 2024-03, Income Statement\u2014Reporting Comprehensive Income\u2014Expense Disaggregation Disclosures, which requires additional disclosure of certain costs and expenses within the notes to the financial statements. The updated standard is effective for our annual periods beginning in fiscal 2028 and interim periods beginning in the first quarter of fiscal 2029. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nThere have been no other recent accounting pronouncements, changes in accounting pronouncements or recently adopted accounting guidance during fiscal 2024 that are of significance or potential significance to us.\n\n**NOTE 2. REVENUE**\n\n*Segment Information*\n\nWe report segment information based on the \"management\" approach. The management approach designates the internal reporting used by management for making decisions and assessing performance as the source of our reportable segments.\n\nOur Chief Executive Officer, the chief operating decision maker, reviews revenue and gross margin information for each of our reportable segments, but does not review operating expenses on a segment by segment basis. In addition, with the exception of goodwill, we do not identify or allocate our assets by the reportable segments.\n\nOur business is organized into the following reportable segments:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Media*\u2014Our Digital Media segment provides products and services that enable individuals, teams, businesses, and enterprises to create, publish and promote their content anywhere and accelerate their productivity by transforming how they view, share, engage with and collaborate on documents and creative content. Our customers include creative professionals, including photographers, video editors, graphic and experience designers and game developers; communicators, including content creators, students, marketers and knowledge workers; and consumers.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Experience*\u2014Our Digital Experience segment provides an integrated platform and set of products, services and solutions that enable businesses to create, manage, execute, measure, monetize and optimize customer experiences that span from analytics to commerce. Our customers include marketers, advertisers, agencies, publishers, merchandisers, merchants, web analysts, data scientists, developers and executives across the C-suite.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Publishing and Advertising*\u2014Our Publishing and Advertising segment contains legacy products and services that address diverse market opportunities, including eLearning solutions, technical document publishing, web conferencing, document and forms platform, web app development, high-end printing and our Adobe Advertising offerings.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\nOur segment revenue and results for fiscal 2024, 2023 and 2022 were as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **Digital <br>Media** | **Digital <br>Experience** | **Publishing and <br>Advertising** | **Total** |\n| **Fiscal 2024** |  |  |  |  |\n| Revenue | $15864 | $5366 | $275 | $21505 |\n| Cost of revenue | 680 | 1589 | 89 | 2358 |\n| Gross profit | $15184 | $3777 | $186 | $19147 |\n| Gross profit as a percentage of revenue | 96% | 70% | 68% | 89% |\n| **Fiscal 2023** |  |  |  |  |\n| Revenue | $14216 | $4893 | $300 | $19409 |\n| Cost of revenue | 665 | 1603 | 86 | 2354 |\n| Gross profit | $13551 | $3290 | $214 | $17055 |\n| Gross profit as a percentage of revenue | 95% | 67% | 71% | 88% |\n| **Fiscal 2022** |  |  |  |  |\n| Revenue | $12842 | $4422 | $342 | $17606 |\n| Cost of revenue | 561 | 1502 | 102 | 2165 |\n| Gross profit | $12281 | $2920 | $240 | $15441 |\n| Gross profit as a percentage of revenue | 96% | 66% | 70% | 88% |\n\n---\n\n\n\nWe generally categorize revenue by geographic area based on where the customer manages their utilization of our offerings. Revenue by geographic area for fiscal 2024, 2023 and 2022 were as follows:\n\n---",
+        "token_count": 1844,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001045810-25-000023",
+        "cik": "0001045810",
+        "company": "NVIDIA CORP",
+        "form_type": "10-K",
+        "filed_date": "20250226",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 59611,
+        "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+        "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2d4cee94-0f7b-599b-aa19-f5ffe2997e11",
+        "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "section_index": 10,
+        "chunk_index": 3,
+        "char_start": 228847,
+        "char_end": 237114,
+        "text": "Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location. Revenue from sales to customers outside of the United States accounted for 53% and 56% of total revenue for fiscal years 2025 and 2024, respectively.\n\n**Gross Profit and Gross Margin**\n\nGross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.\n\nGross margins increased to 75.0% in fiscal year 2025 from 72.7% in fiscal year 2024. The year over year increase was primarily driven by a higher mix of Data Center revenue.\n\nProvisions for inventory and excess inventory purchase obligations totaled $3.7 billion and $2.2 billion for fiscal years 2025 and 2024, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $689 million and $540 million for fiscal years 2025 and 2024, respectively. The net effect on our gross margin was an unfavorable impact of 2.3% and 2.7% in fiscal years 2025 and 2024, respectively.\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Research and development expenses | $12914 | $8675 | $4239 | 49% |\n| *% of net revenue* | *9.9 %* | *14.2 %* |  |  |\n| Sales, general and administrative expenses | 3491 | 2654 | 837 | 32% |\n| *% of net revenue* | *2.7 %* | *4.4 %* |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | $16405 | $11329 | $5076 | 45% |\n| &nbsp;&nbsp;&nbsp;&nbsp;*% of net revenue* | *12.6 %* | *18.6 %* |  |  |\n\n---\n\n\n\nThe increases in research and development expenses for fiscal year 2025 were driven by a 32% increase in compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases, a 100% increase in compute and infrastructure, and a 234% increase in engineering development costs for new product introductions.\n\nThe increases in sales, general and administrative expenses for fiscal year 2025 were primarily driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Other Income (Expense), Net**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Interest income | $1786 | $866 | $920 |\n| Interest expense | (247) | (257) | 10 |\n| Other, net | 1034 | 237 | 797 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | $2573 | $846 | $1727 |\n\n---\n\n\n\nThe increase in interest income was primarily due to growth in cash, cash equivalents, and marketable securities.\n\nInterest expense is comprised of coupon interest and debt discount amortization related to our notes.\n\nOther, net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. The change in Other, net, compared to fiscal year 2024, was primarily driven by an increase in fair value of our non-marketable equity securities and publicly-held equity securities. Refer to Note 8 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information regarding our non-marketable equity securities.\n\n**Income Taxes**\n\nIncome tax expense was $11.1 billion and $4.1 billion for fiscal years 2025 and 2024, respectively. Income tax as a percentage of income before income tax was an expense of 13.3% and 12.0% for fiscal years 2025 and 2024, respectively.\n\nThe effective tax rate increased primarily due to higher pre-tax income and a prior year discrete benefit due to an audit resolution.\n\nOur effective tax rates for fiscal years 2025 and 2024 were lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, stock-based compensation, the U.S. federal research tax credit, and income earned in jurisdictions that are subject to taxes at rates lower than the U.S. federal statutory tax rate. Our effective tax rate for fiscal year 2024 was additionally benefited by the audit resolution.\n\nGiven our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could vary based on our assessment of all available information.\n\nRefer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.\n\n**Liquidity and Capital Resources**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Cash and cash equivalents | $8589 | $7280 |\n| Marketable securities | 34621 | 18704 |\n| Cash, cash equivalents, and marketable securities | $43210 | $25984 |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Net cash provided by operating activities | $64089 | $28090 |\n| Net cash used in investing activities | $(20421) | $(10566) |\n| Net cash used in financing activities | $(42359) | $(13633) |\n\n---\n\n\n\nOur investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain maturity limits on our portfolio.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\nCash provided by operating activities increased in fiscal year 2025 compared to fiscal year 2024, due to growth in revenue.\n\nCash used in investing activities increased in fiscal year 2025 compared to fiscal year 2024, primarily driven by net purchases of marketable securities, and purchase of land, property and equipment.\n\nCash used in financing activities increased in fiscal year 2025 compared to fiscal year 2024, mainly due to higher share repurchases and higher tax payments related to RSUs.\n\n**Liquidity**\n\nOur primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of January 26, 2025, we had $43.2 billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.\n\nOur marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly rated financial institutions. These marketable securities are primarily denominated in U.S. dollars. Refer to Note 7 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+        "token_count": 1944,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "8b7160c4-9fa0-583d-ad4b-873bc7dca43f",
+        "section": "ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA",
+        "section_index": 12,
+        "chunk_index": 1,
+        "char_start": 255732,
+        "char_end": 259786,
+        "text": "| | | | |\n|:---|:---|:---|:---|\n| | **Years Ended** | **Years Ended** | **Years Ended** |\n| | **November 29,<br>2024** | **December 1,<br>2023** | **December 2,<br>2022** |\n| Revenue: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Subscription | $20521 | $18284 | $16388 |\n| &nbsp;&nbsp;&nbsp;Product | 386 | 460 | 532 |\n| &nbsp;&nbsp;&nbsp;Services and other | 598 | 665 | 686 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total revenue | 21505 | 19409 | 17606 |\n| <br>Cost of revenue: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Subscription | 1799 | 1822 | 1646 |\n| &nbsp;&nbsp;&nbsp;Product | 25 | 29 | 35 |\n| &nbsp;&nbsp;&nbsp;Services and other | 534 | 503 | 484 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total cost of revenue | 2358 | 2354 | 2165 |\n| <br>Gross profit | 19147 | 17055 | 15441 |\n| <br>Operating expenses: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Research and development | 3944 | 3473 | 2987 |\n| &nbsp;&nbsp;&nbsp;Sales and marketing | 5764 | 5351 | 4968 |\n| &nbsp;&nbsp;&nbsp;General and administrative | 1529 | 1413 | 1219 |\n| &nbsp;&nbsp;Acquisition termination fee | 1000 |  |  |\n| &nbsp;&nbsp;&nbsp;Amortization of intangibles | 169 | 168 | 169 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | 12406 | 10405 | 9343 |\n| <br>Operating income | 6741 | 6650 | 6098 |\n| <br>Non-operating income (expense): |  |  |  |\n| &nbsp;&nbsp;&nbsp;Interest expense | (169) | (113) | (112) |\n| &nbsp;&nbsp;&nbsp;Investment gains (losses), net | 48 | 16 | (19) |\n| &nbsp;&nbsp;&nbsp;Other income (expense), net | 311 | 246 | 41 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total non-operating income (expense), net | 190 | 149 | (90) |\n| Income before income taxes | 6931 | 6799 | 6008 |\n| Provision for income taxes | 1371 | 1371 | 1252 |\n| Net income | $5560 | $5428 | $4756 |\n| Basic net income per share | $12.43 | $11.87 | $10.13 |\n| Shares used to compute basic net income per share | 447 | 457 | 470 |\n| Diluted net income per share | $12.36 | $11.82 | $10.10 |\n| Shares used to compute diluted net income per share | 450 | 459 | 471 |\n\n---\n\n\n\n*See accompanying Notes to Consolidated Financial Statements.*\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME**\n\n**(In millions)**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Years Ended** | **Years Ended** | **Years Ended** |\n| | **November 29,<br>2024** | **December 1,<br>2023** | **December 2,<br>2022** |\n| | **Increase/(Decrease)** | **Increase/(Decrease)** | **Increase/(Decrease)** |\n| Net income | $5560 | $5428 | $4756 |\n| Other comprehensive income (loss), net of taxes: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Available-for-sale securities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unrealized gains / losses on available-for-sale securities | 11 | 24 | (39) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reclassification adjustment for recognized gains / losses on available-for-sale securities |  | 5 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net increase (decrease) from available-for-sale securities | 11 | 29 | (39) |\n| &nbsp;&nbsp;&nbsp;Derivatives designated as hedging instruments: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unrealized gains / losses on derivative instruments | 89 | (12) | 139 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reclassification adjustment for realized gains / losses on derivative instruments | 17 | (31) | (151) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net increase (decrease) from derivatives designated as hedging instruments | 106 | (43) | (12) |\n| &nbsp;&nbsp;&nbsp;Foreign currency translation adjustments | (33) | 22 | (105) |\n| Other comprehensive income (loss), net of taxes | 84 | 8 | (156) |\n| Total comprehensive income, net of taxes | $5644 | $5436 | $4600 |\n\n---\n\n\n\n*See accompanying Notes to Consolidated Financial Statements.*\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY** \n\n**(In millions)**\n\n---",
+        "token_count": 1365,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001193125-25-015775",
+        "cik": "0000853816",
+        "company": "LANDSTAR SYSTEM INC",
+        "form_type": "8-K",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 897,
+        "source_md5": "f8dbf3b8731fa0d65dea0ce893c4dd99",
+        "content_sha256": "b380868fa82f1bca7cac66ecc70f6a5b15b3ec743b8a558080ea3797c15f32de",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "620ddb36-547f-52ec-bbed-bf387f3ce616",
+        "section": "Exhibit 99.2",
+        "section_index": 18,
+        "chunk_index": 6,
+        "char_start": 44583,
+        "char_end": 46630,
+        "text": "Reconciliation of Gross Profit to Variable Contribution Dollars in Thousands Fiscal Years Ended Fiscal Quarters Ended Dec 28, Dec 30, Dec 28, Dec 30, 2024 2023 2024 2023 Revenue $4,819,245 $5,303,322 $1,209,330 $1,204,445 Costs of revenue: Purchased transportation 3 ,745,241 4 ,068,262 945,857 927,028 Commissions to agents 392,751 462,668 96,950 99,271 Variable costs of revenue 4 ,137,992 4,530,930 1 ,042,807 1,026,299 Trailing equipment depreciation 27,950 31,319 7,186 7,079 Information technology costs (1) 22,744 25,486 4,629 5,695 Insurance-related costs (2) 115,764 116,069 30,642 27,585 Other operating costs 58,781 54,191 14,643 13,193 Other costs of revenue 225,239 227,065 57,100 53,552 Total costs of revenue 4,363,231 4,757,995 1,099,907 1 ,079,851 Gross profit $456,014 $5 45,327 $109,423 $1 24,594 Gross profit margin 9.5% 10.3% 9.0% 10.3% Plus: other costs of revenue 225,239 227,065 57,100 53,552 Variable contribution $681,253 $7 72,392 $1 66,523 $178,146 Variable contribution margin 14.1% 14.6% 13.8% 14.8% (1) Includes costs of revenue incurred related to internally developed software including ASC 350-40 amortization, implementation costs, hosting costs and other support costs utilized to support the Company's independent commission sales agents, third party capacity providers, and customers, included as a portion of depreciation and amortization and of selling, general and administrative in the Company's Consolidated Statements of Income. (2) Primarily includes (i) insurance premiums paid for commercial auto liability, general liability, cargo and other lines of coverage related to the transportation of freight; (ii) the related cost of claims incurred under those programs; and (iii) brokerage commissions and other fees incurred relating to the administration of insurance programs available to BCO Independent Contractors that are reinsured by the Company, which are included in selling, general and administrative in the Company's Consolidated Statements of Income. 22\n\n------\n\n![](g919104ex99_2p23g1.jpg)",
+        "token_count": 580,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "065ae57a-28b6-5fda-a0e3-57c1a980d702",
+        "section": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)",
+        "section_index": 219,
+        "chunk_index": 0,
+        "char_start": 863024,
+        "char_end": 865257,
+        "text": "# NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)\n\nOur segment revenue and results for fiscal 2024, 2023 and 2022 were as follows:\n\n| (dollars in millions) | Digital Media | Digital Experience | Publishing and Advertising | Total |\n| --- | --- | --- | --- | --- |\n| Fiscal 2024 |  |  |  |  |\n| Revenue | $15,864 | $5,366 | $275 | $21,505 |\n| Cost of revenue | 680 | 1,589 | 89 | 2,358 |\n| Gross profit | $15,184 | $3,777 | $186 | $19,147 |\n| Gross profit as a percentage of revenue | 96% | 70% | 68% | 89% |\n| Fiscal 2023 |  |  |  |  |\n| Revenue | $14,216 | $4,893 | $300 | $19,409 |\n| Cost of revenue | 665 | 1,603 | 86 | 2,354 |\n| Gross profit | $13,551 | $3,290 | $214 | $17,055 |\n| Gross profit as a percentage of revenue | 95% | 67% | 71% | 88% |\n| Fiscal 2022 |  |  |  |  |\n| Revenue | $12,842 | $4,422 | $342 | $17,606 |\n| Cost of revenue | 561 | 1,502 | 102 | 2,165 |\n| Gross profit | $12,281 | $2,920 | $240 | $15,441 |\n| Gross profit as a percentage of revenue | 96% | 66% | 70% | 88% |\n\nWe generally categorize revenue by geographic area based on where the customer manages their utilization of our offerings. Revenue by geographic area for fiscal 2024, 2023 and 2022 were as follows:\n\n| (in millions) | 2024 | 2023 | 2022 |\n| --- | --- | --- | --- |\n| Americas: |  |  |  |\n| United States | $11,499 | $10,460 | $9,217 |\n| Other | 1,392 | 1,194 | 1,034 |\n| Total Americas | 12,891 | 11,654 | 10,251 |\n| EMEA | 5,554 | 4,881 | 4,593 |\n| APAC | 3,060 | 2,874 | 2,762 |\n| Revenue | $21,505 | $19,409 | $17,606 |\n\nRevenue by major offerings in our Digital Media reportable segment for fiscal 2024, 2023 and 2022 were as follows:\n\n| (in millions) | 2024 | 2023 | 2022 |\n| --- | --- | --- | --- |\n| Creative Cloud | $12,682 | $11,517 | $10,459 |\n| Document Cloud | 3,182 | 2,699 | 2,383 |\n| Total Digital Media revenue | $15,864 | $14,216 | $12,842 |\n\nSubscription revenue by segment for fiscal 2024, 2023 and 2022 were as follows:\n\n| (in millions) | 2024 | 2023 | 2022 |\n| --- | --- | --- | --- |\n| Digital Media | $15,547 | $13,838 | $12,385 |\n| Digital Experience | 4,864 | 4,331 | 3,880 |\n| Publishing and Advertising | 110 | 115 | 123 |\n| Total subscription revenue | $20,521 | $18,284 | $16,388 |\n\nTable of Contents",
+        "token_count": 804,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 92, \"citation_support\": 45, \"rationale\": \"The candidate's calculation is correct: $19,147 / $21,505 = 89.035%, which rounds to 89.0% at one decimal place. The reference gives 89.04%, a two-decimal rounding of the same value, so the difference is only precision, not substance. Both inputs ($19,147M gross profit and $21,505M revenue) match the retrieved Consolidated Statements of Income data. Citation support is partial: the accession number 0000796343-25-000004 is correct and the figures appear in the retrieved excerpts. However, the chunk ID the candidate gives (b8fa3362...) is the 'Gains and losses / Concentration of Risk' chunk, which does not contain the income statement. The income statement figures are in chunk 8b7160c4..., and the segment table is in 065ae57a.... The candidate therefore mislabels its source chunk.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 92, \"citation_support\": 45, \"rationale\": \"The candidate's calculation is correct: $19,147 / $21,505 = 89.035%, which rounds to 89.0% at one decimal place. The reference gives 89.04%, a two-decimal rounding of the same value, so the difference is only precision, not substance. Both inputs ($19,147M gross profit and $21,505M revenue) match the retrieved Consolidated Statements of Income data. Citation support is partial: the accession number 0000796343-25-000004 is correct and the figures appear in the retrieved excerpts. However, the chunk ID the candidate gives (b8fa3362...) is the 'Gains and losses / Concentration of Risk' chunk, which does not contain the income statement. The income statement figures are in chunk 8b7160c4..., and the segment table is in 065ae57a.... The candidate therefore mislabels its source chunk.\"}",
+      "refusal": null,
+      "reasoning": "Computing 19147/21505 gives roughly 89.04%, while the candidate rounded to 89.0% at one decimal place \u2014 both are essentially correct, just differing in precision.\n\nLooking at the citation though, the candidate labels chunk b8fa3362 as the Consolidated Statements of Income, but that chunk actually contains the gains/losses section, not the income statement data \u2014 the real income statement figures are in chunk 8b7160c4 and the segment table is in 065ae57a. So the citation is mismatched even though the accession number is correct, which drags down citation support to around 45 while correctness stays high around 90.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Computing 19147/21505 gives roughly 89.04%, while the candidate rounded to 89.0% at one decimal place \u2014 both are essentially correct, just differing in precision.\n\nLooking at the citation though, the candidate labels chunk b8fa3362 as the Consolidated Statements of Income, but that chunk actually contains the gains/losses section, not the income statement data \u2014 the real income statement figures are in chunk 8b7160c4 and the segment table is in 065ae57a. So the citation is mismatched even though the accession number is correct, which drags down citation support to around 45 while correctness stays high around 90.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS1Q0KEAgSGAI4AUIIdGhpbmtpbmcSDLBwdKxFOjXTbpQQFhoMSg1Wd3J+6VYbTa4pIjCEJOoShM9UsIiJOBwC6us0gDv8yYI+dt/pUpcTt5317uEx0kzKtRKT7rhJR+7oiY0q8gybp/VpnaZnWHdM1srLig6RRQb53fYA8KHAIyIhTzU1CoylYXYsl2h+UCwiCQRAGPciB7wHFlTNMSvQkCBBbyDRqmeipyXDj+W6g3415/Sq9yNSs5JpX3kFsQeIhC9LmojEFmkd0ZlX3rhc7x0v4LYMhg0YvyM9q+SWB9KmqYJ8rq3srx4SOcZO3oCitZFfu/WwUYMM+2AAhY4fkKlLnRVctqadodNLk9L1mSseloS5Gj+cgDTbvQfm6ZuHQJZ99YSncsu222PNq+eSSPGjY0SJyL5lLPvM0fTNOGXEeQqBxAJb2mQbmYde6FEwqNyWg3p5FwyyijXwlwZXGMpZ/BwC7CwmoujfnC6T2LN+ydhAy7MvZCgBZWRSosoJpersuUQtrX6/lgQAfw8ch09XukGmBng14KqrXeyqMN3K8dSokJOEN7hZDdNgpKzQYn2bQH6NjFEh35eqrL5k6BBJBb0DR0KkZg3fWgD3l6yBPmS0A3A1BW3Qc0o8ZKafHGVXuBZfY05CuovkWqxJphbgOmzM5CIQX9H/zvHyYsYIenzwa+0z9TPda5lKdJ/ZPpk//FTAbGncI27beYB8ctOzeGPHsExYOfamR7MzelpWOLAGELDfi+ak+9HHQbVQ4PJ4PZPJrb4OzpsB8kcCgkwTEzjE+cJ79iCBHGkGawtH5QKaNxvmvs5kATWrn/ZafzrMjpLdQerxfBkTSD51py5yct5cDwcgbZXIeMhlYNjw0u1sCdOGVs6igaTnq9A/dm4h2GJAMiam7D1gpYGGoLJOkVzBtQ54vAP/uJ5WoWXh3mFkommT2mv/q9PlN7PRf0CXFBVaROXolItyD0N8TIG0glS+GW5wKI6idzWHpbJxePDVv7flIeRLKT9XTguJriFSMF1cDtZ2e/Q/pI0HpWKPiLXhia5BAZEq1YybK5ugbGtgYMmy7eNrQlbeOFdF7HXjAXSNftPjqWv74bW7OzLz9MJdybb7nw4rm6qqXap0++Sfsmxo+PJVp9luWX0O4qu68pwy6N3GdZWOfPNRXHDuG9b8frSbRppALcKdFo9vEgIp+73iWqa4WMW6ifHMg12KJcQWEA+J3yfa3KlG9+oVFVxBo46Hniy4TPag2fAAzA/2IQxpZhSMDuAz5lBW3v2tXi57lcB9MTkjW17kM5JVtGvbD201ROOaN5+q9H1rORwKUC+9+mb/dWlUFZbDbP0MHgKlS5+MkLALRdBU/+UYS0t1q7Cs2+GYP4v5y8HF21mRWZUD+X6yI09iX2uKP19yEHCUuvmSL5dIDcErTHo0UP7PqOzp+XjTCd8Eqp0vb54YCMAyjMGcTEcyS+IIMbW1CvXaFI5C/9ZGyjTlVtOnYAj7Pdngm7GncJf30CFscA+USBZCP/MK4WPNoy9oUyqpd1ladggwsjb+H9HKfPajb87REHcnDcAyCxD5WLOmKY1nxafXWJmwaWMdc6nKUrSIf6QqiGO1gVsGCZVbQpvbd4aiSITR9xN44nxOtUwC/IS+xGuvOHHZbWRNwtCtfdaXKHIntBnfnQvR8abswaEqKM3IKgj3GQBjtFYalRL/DIDewNj57RgmHITSJy+Zc4J8794syKf7NI8zC6PCwMQQlEsF+kwZ+TNu1zkZvSycSYODz5DJ0aQbRWBZLK3q2HFz3he3j/inWaVgYRfQTh3thUi7rtvX+C4cHgEcNqpmHAGuPqYuA7kPoB2+5/uxybpHYN9rMgJC2/85aU50MvBMujBstENQjeqB+lMsPRYFU7OyIy/3IxuEOtk7gTjVU8ncemA5SvHH6IXpY1em7iuaBHimVnl70EEM0Bv/kQlUZvGkQTwCjUdJBJOIk6twih2aos1sjQpRhGSBR2zsMuc+KyPeBbIyuIuoACE1VAQSytKSIzPvHNtoBkNIjs43GXEWGqNGG34W7ksWxInCiBsHQygYFkt8rIe7YrORYmMLuflP3SrNOSRzOQy296p1C4HL88Wa0m2GOTxSVu5pkV/FpMjzYXRR7JnaxTKE/tG3SVkDlZhZEdi4CVCeXcXiqiooweo3P4AI90SuzQPr3Lfzbp2o9Q3hPlWXpGhmcBwmZUdJn6SDO+5OZwBwJgBybxpl1C/mjxN1Ocpo++IoCfXAbsgZ98Xskyn1gAsaqagA8h8zmyc1ZCgaoy9plrol5IuokwaeQ5UDKrEXuhf2RLA2zgFP5LQYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:31:11.932274+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "c12afe1ec43cb4e05cc2077d:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042266-8jsrnFpBg0j1njWi5MUf",
+    "usage": {
+      "prompt_tokens": 26155,
+      "completion_tokens": 793,
+      "total_tokens": 26948,
+      "cost": 0.003012,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003012,
+        "upstream_inference_prompt_cost": 0.0026155,
+        "upstream_inference_completions_cost": 0.0003965
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 485,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 7.064170390000072,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 92,
+    "citation_support": 45,
+    "rationale": "The candidate's calculation is correct: $19,147 / $21,505 = 89.035%, which rounds to 89.0% at one decimal place. The reference gives 89.04%, a two-decimal rounding of the same value, so the difference is only precision, not substance. Both inputs ($19,147M gross profit and $21,505M revenue) match the retrieved Consolidated Statements of Income data. Citation support is partial: the accession number 0000796343-25-000004 is correct and the figures appear in the retrieved excerpts. However, the chunk ID the candidate gives (b8fa3362...) is the 'Gains and losses / Concentration of Risk' chunk, which does not contain the income statement. The income statement figures are in chunk 8b7160c4..., and the segment table is in 065ae57a.... The candidate therefore mislabels its source chunk."
+  },
+  "status": "ok"
+}

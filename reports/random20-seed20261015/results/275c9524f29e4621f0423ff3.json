@@ -1,0 +1,132 @@
+{
+  "question_id": "Q028",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/vector",
+  "retrieval": {
+    "seconds": 0.018782285999805026,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "For fiscal year 2024, Citigroup Inc. reported the following **(in millions of dollars)**:\n\n- **Net interest income:** $54,095  \n- **Non-interest revenue:** $27,044  \n- **Revenues, net of interest expense:** $81,139  \n\nCalculation: **$81,139 \u2212 $54,095 = $27,044** in non-interest revenue.\n\nThe net interest income figure is the reported amount, not the $54,189 million taxable-equivalent amount. Sources: 2024 10-K, \u201cInterest Income and Expense,\u201d chunk 107; \u201cSegment Revenues and Income (Loss),\u201d chunk 8, accession **0000831001-25-000067**.",
+    "message": {
+      "role": "assistant",
+      "content": "For fiscal year 2024, Citigroup Inc. reported the following **(in millions of dollars)**:\n\n- **Net interest income:** $54,095  \n- **Non-interest revenue:** $27,044  \n- **Revenues, net of interest expense:** $81,139  \n\nCalculation: **$81,139 \u2212 $54,095 = $27,044** in non-interest revenue.\n\nThe net interest income figure is the reported amount, not the $54,189 million taxable-equivalent amount. Sources: 2024 10-K, \u201cInterest Income and Expense,\u201d chunk 107; \u201cSegment Revenues and Income (Loss),\u201d chunk 8, accession **0000831001-25-000067**.",
+      "refusal": null,
+      "reasoning": "**Consolidating financial values**\n\nI need to clarify the consolidated values. The net interest is 54,095 (GAAP), while the taxable equivalent is 54,189. For non-interest revenue, I\u2019ll take the total net revenue of 81,139 and subtract the net interest income of 54,095, giving me 27,044. I should report the exact non-interest revenue as stated and make sure to cite the evidence to support these numbers accurately. I'll clarify the totals to ensure everything aligns correctly.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.summary",
+          "summary": "**Consolidating financial values**\n\nI need to clarify the consolidated values. The net interest is 54,095 (GAAP), while the taxable equivalent is 54,189. For non-interest revenue, I\u2019ll take the total net revenue of 81,139 and subtract the net interest income of 54,095, giving me 27,044. I should report the exact non-interest revenue as stated and make sure to cite the evidence to support these numbers accurately. I'll clarify the totals to ensure everything aligns correctly.",
+          "format": "openai-responses-v1",
+          "index": 0
+        },
+        {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq0GO7ooFqFhsRL3Y4e8PJtPXI0UqobnkxgkIN_J-BnBYeywy6FgUm9AOOfioosOe4RY2-cFYmnHGhhxbZ-1qr4JFINdDmEVhRMAdzRVeE_7DDynY8O1XamHSW97yUbCCQlYsPGr2mbPlNTokoO-i-7XMyv4Y1qCYNPo9rMv3tlOymhG4ZWFERdkGxZC4EvoIdnlsBIyhkZ7R3K2j2QV1H6g6rNkaZNcYYjXYnIHV0awBx3mtPHkPo8a83t4FoS23JPDaY3AyBL9YMttId-S007gEqFb7IVRcWdaJl4EEJ3SJzlZmfnV5ZL0dRZqJYksOFsqEnRdq7nwmSlkB2AGUrAU7pzy3FDxns-6SHk7KPNDxFmYCrw7iky7RKrpiwc0Xkl_bk_LqLWb14PhQvLIrxNDnBubxC-cUIFVK08o1dXSf0rlH0c_G25Y4OkxIybCPcmbNWwqPW8aE_YQ5yy8cMAEsaEHY23aaEp_Ianicf39TuLZ7xRpo5vy5GOjzgsv7Ha7aCvLzWHXxD59cBtFoF0giDjZYhVn0mmplALXQb4qhtonLsoeLPQG6gposOzEdm_uS4nWkc2pjbL2fZEe3RXPoaU3Ir_4tppVg9m7qINsY3-jaajD9uhIw_YivG3T2TNR4Qw4Uh7O8eSbL_FkAaRzxE_IJU5_mzPIaQBHYTCFkck4cL-Emil18ovviHjZJtO0QWtLo2IVFrB5x8lrVrcNgFLmj0tVxSIIEYoIbOWDpxaeT64Ox4VR8HLBM_WPfcnJf1mHlMrcIPsy-9sGsrZgd6VW0DxcLW0rAbKRS1R0kMSwsKR2S9ZQa-WBaBGfWjIkuydPpsil8dZVnCOBsQLO-fx-sKXwGsO_EBBb5oLyzfHSR-FbWOZZDJuXKxRb6wtsHsc-nAs0yO-_8WdEs9nY46I0HQ-gInw6sSRT-_gwkEaz1z3VD75KWIw6F5VPFwYNVgavr4eTMPm22O3EqPfm7HzALE2X7y41DCp4OU0IiWuNujukaxeJm360TE0ZO_7xxvgAs2JvhMZ0XAIXr7BhUAUOoYf7luqJqmu2g9qwJkZVycOhmDpUobpj7TQCPG3Rqg3KqdxHWZDxE4d88-X3MgzE9MAOwNJhlH8K7t1HrcDPBPbExmIacITY0QchbeyK1EM7kJxGXXjDoibwV9jzewOM7uYiO5tvGZuYLQmplZNSlqfYy1Hkr4qgLDRNUQBQbT9R0zt90nQd9i1HB5HwEaKl7bXU5wqO4IKG--dgfXvFTDChX8nA9ba4sdfdaMvVqazIEJgkl9Amt4EmTCTyVDma1xQa_jxstu1N0Qeg2cfkt8VUhd0stiuxWOnK1LCI3tZRu5c5BNsxllZGCbdNBYGev9JuqmYbENcRz-R8enlz7tYxE7SP8gef78MCiRZTM-YhzJLDPzqJcl4QJJiOT9pDGayVD55l_lzOHXvnHhR5fnXyMidiCe_IRzNaJUcQ456fluhxBaDHcSqkku3duwzyx_TriTEASdm3Y6WBWjxI5yNzqGWeyrLAfUhyrYIHK4Eef-BPnTbsiBK-SxoAIw-ewuzUmubnDuhuPf-mA1iJXAGxgS9gf7sHmhMGCHKbKY8Yx-oKGhxSaYfuka_g9wJzM_taegcLhcm7lqbPxoD6hCqD-ri0t0yMLRmN3pZfu8y40-mslAweZ_2sfYXjb2i8IHuR-BRETKZ47pUKSNp9S5vVRhcQKJHer6qS9cQrNPLAQ3SZJjetSF5Guh0KfLCm_ldLdMyUTCylShNqyj3Ry5nfsAJL-BMsf8_XQoi2i5TCMTkDzSyjt_sEYQgIyCEWzTGqpnB13ZIHoVX9T0GyQ-vYlNO6anoQyf0vpi6nPR-29zX8QuV3BeYe3RDrXHfC6HqxCi7VR0xcdzVcNEBDhK77IkzTFbhJthiPeSkp8ic6r0HnkexG4z7ucZOwVuDSEpYYorNWZX_uC9z9bdkPJDzwW3NuoHFpm2EopegDp4EGWCWVL_l70iHZpQuvKcSitPoRpjs7OrEQJe17a4YBehJdK4nljilprbsGHlLaDghL9EoldSy_ciGkiXvnplAAroIky-cv03JjtAMljQXpHZuIfBMFQ3RQQ3XE3_uB1M18QwTEw7z5zzGULU02gafETsM_Zkz5BoerciC91WlgIn7P6Tu36sUDckB04oVXzFzvISUXt3Lk3nTtCGeJKO035PuqF13NFraU0c14YLORJXSOONM9TnA7XSQHxGbW32OF1z9rOb4tXmBsw1qQqApLL6y_ckzVvUiZGJdwPhukl7mX5-G24kkMHG2o9r6CGDW4VXxwVFHc5j5D_XHjr9QpbqTRcVvipC998GgKaAmKlwFbLfIxynFLfNvTvlPzyNOKLZ4P9GrgzjyflQXFzcqw==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+          "format": "openai-responses-v1",
+          "id": "rs_07142bf352967007016ad063b9c50087d1b4f806e4a3da677a",
+          "index": 1
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:16.396406+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "275c9524f29e4621f0423ff3:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041912-R9lDh5ZvdoyCcchiTPC0",
+    "usage": {
+      "prompt_tokens": 17072,
+      "completion_tokens": 223,
+      "total_tokens": 17295,
+      "cost": 0.002245425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 17069,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002245425,
+        "upstream_inference_prompt_cost": 0.002133925,
+        "upstream_inference_completions_cost": 0.0001115
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 67,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.056785183000102,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 88, \"rationale\": \"The candidate's figures match the reference: Net interest income $54,095M, Revenues net of interest expense $81,139M, and Non-interest revenue $27,044M. The stated arithmetic is correct ($81,139 \u2212 $54,095 = $27,044), and the distinction from the $54,189M taxable-equivalent figure is accurate and supported by the retrieved text. Citations are real and match retrieved excerpts: chunk 107 contains the $54,095M net interest income line, and chunk 8 contains the $81,139M total revenue. Deduction for citation support: the $27,044M non-interest revenue figure does not appear directly in any retrieved excerpt. It is derived arithmetically, and the candidate says so, but the sources cited do not state it. The gold-evidence table quote is not quoted verbatim, though the same revenue figure appears in the retrieved segment table.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 88, \"rationale\": \"The candidate's figures match the reference: Net interest income $54,095M, Revenues net of interest expense $81,139M, and Non-interest revenue $27,044M. The stated arithmetic is correct ($81,139 \u2212 $54,095 = $27,044), and the distinction from the $54,189M taxable-equivalent figure is accurate and supported by the retrieved text. Citations are real and match retrieved excerpts: chunk 107 contains the $54,095M net interest income line, and chunk 8 contains the $81,139M total revenue. Deduction for citation support: the $27,044M non-interest revenue figure does not appear directly in any retrieved excerpt. It is derived arithmetically, and the candidate says so, but the sources cited do not state it. The gold-evidence table quote is not quoted verbatim, though the same revenue figure appears in the retrieved segment table.\"}",
+      "refusal": null,
+      "reasoning": "I'm verifying the numbers: NII of $54,095M plus non-interest revenue of $27,044M sums correctly to revenues of $81,139M, so the candidate's figures check out. I'm now tracing the citations back to their source chunks to confirm each is properly supported.\n\nCorrectness looks very strong since the candidate's totals align with the reference figures, so I'd put that around 95. For citation support, the chunks cited do contain the relevant tables and totals, though the non-interest revenue figure is derived rather than stated outright, which is a minor gap \u2014 I'd rate support around 88.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm verifying the numbers: NII of $54,095M plus non-interest revenue of $27,044M sums correctly to revenues of $81,139M, so the candidate's figures check out. I'm now tracing the citations back to their source chunks to confirm each is properly supported.\n\nCorrectness looks very strong since the candidate's totals align with the reference figures, so I'd put that around 95. For citation support, the chunks cited do contain the relevant tables and totals, though the non-interest revenue figure is derived rather than stated outright, which is a minor gap \u2014 I'd rate support around 88.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:39.765862+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "275c9524f29e4621f0423ff3:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042113-ThNcvnBmM7F2uxxsXL9q",
+    "usage": {
+      "prompt_tokens": 26131,
+      "completion_tokens": 803,
+      "total_tokens": 26934,
+      "cost": 0.0030146,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0030146,
+        "upstream_inference_prompt_cost": 0.0026131,
+        "upstream_inference_completions_cost": 0.0004015
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 490,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.967054016000475,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 88,
+    "rationale": "The candidate's figures match the reference: Net interest income $54,095M, Revenues net of interest expense $81,139M, and Non-interest revenue $27,044M. The stated arithmetic is correct ($81,139 \u2212 $54,095 = $27,044), and the distinction from the $54,189M taxable-equivalent figure is accurate and supported by the retrieved text. Citations are real and match retrieved excerpts: chunk 107 contains the $54,095M net interest income line, and chunk 8 contains the $81,139M total revenue. Deduction for citation support: the $27,044M non-interest revenue figure does not appear directly in any retrieved excerpt. It is derived arithmetically, and the candidate says so, but the sources cited do not state it. The gold-evidence table quote is not quoted verbatim, though the same revenue figure appears in the retrieved segment table."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,108 @@
+{
+  "question_id": "Q002",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.012819331000173406,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "As of January 28, 2025, Alphabet had:\n\n- **Class A:** 5,833 million shares\n- **Class B:** 860 million shares\n- **Class C:** 5,497 million shares\n\nThese amounts are stated in millions. **Source:** accession 0001652044-25-000014, *Filing Summary* (cover page), chunk `efeb3fc9-e011-5db2-acff-afb499f7d4d4`.",
+    "message": {
+      "role": "assistant",
+      "content": "As of January 28, 2025, Alphabet had:\n\n- **Class A:** 5,833 million shares\n- **Class B:** 860 million shares\n- **Class C:** 5,497 million shares\n\nThese amounts are stated in millions. **Source:** accession 0001652044-25-000014, *Filing Summary* (cover page), chunk `efeb3fc9-e011-5db2-acff-afb499f7d4d4`.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:02.001531+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "62f3a29752633eaea5678957:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041839-tKAGwwtRo1Pn4mXC9FHp",
+    "usage": {
+      "prompt_tokens": 11546,
+      "completion_tokens": 107,
+      "total_tokens": 11653,
+      "cost": 0.001496675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 11543,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001496675,
+        "upstream_inference_prompt_cost": 0.001443175,
+        "upstream_inference_completions_cost": 5.35e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.216219187000206,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 100, \"rationale\": \"The candidate's figures (Class A 5,833 million; Class B 860 million; Class C 5,497 million as of January 28, 2025) exactly match the reference and the gold quote in the cover-page excerpt of accession 0001652044-25-000014. Units (millions) are correctly stated. The cited accession matches the retrieved Filing Summary excerpt, which contains the exact cover-page sentence. The chunk ID cited corresponds to the retrieved Filing Summary chunk. The answer is fully supported by retrieved evidence.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 100, \"rationale\": \"The candidate's figures (Class A 5,833 million; Class B 860 million; Class C 5,497 million as of January 28, 2025) exactly match the reference and the gold quote in the cover-page excerpt of accession 0001652044-25-000014. Units (millions) are correctly stated. The cited accession matches the retrieved Filing Summary excerpt, which contains the exact cover-page sentence. The chunk ID cited corresponds to the retrieved Filing Summary chunk. The answer is fully supported by retrieved evidence.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:44.500053+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "62f3a29752633eaea5678957:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042062-HFSGzKoyO0X3WNK7yerW",
+    "usage": {
+      "prompt_tokens": 18095,
+      "completion_tokens": 204,
+      "total_tokens": 18299,
+      "cost": 0.0019115,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019115,
+        "upstream_inference_prompt_cost": 0.0018095,
+        "upstream_inference_completions_cost": 0.000102
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.7179720640006053,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 100,
+    "rationale": "The candidate's figures (Class A 5,833 million; Class B 860 million; Class C 5,497 million as of January 28, 2025) exactly match the reference and the gold quote in the cover-page excerpt of accession 0001652044-25-000014. Units (millions) are correctly stated. The cited accession matches the retrieved Filing Summary excerpt, which contains the exact cover-page sentence. The chunk ID cited corresponds to the retrieved Filing Summary chunk. The answer is fully supported by retrieved evidence."
+  },
+  "status": "ok"
+}

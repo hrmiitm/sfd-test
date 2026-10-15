@@ -1,0 +1,463 @@
+{
+  "question_id": "Q025",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/agentic",
+  "retrieval": {
+    "seconds": 0.015718683000159217,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Adobe reported **fiscal 2024 Digital Media revenue of $15.864 billion** (about **$15.86 billion**), up **12% year over year** from **$14.216 billion** in fiscal 2023. The filing\u2019s segment table reports the 12% growth rate; calculated from the rounded table values, the increase was \\((15{,}864-14{,}216)/14{,}216 \\times 100 \\approx 11.6\\%\\), which rounds to 12%.\n\nSource: Adobe 10-K, accession **0000796343-25-000004**, chunk **839ad4e2-d434-562b-b699-c27185c0972b**.",
+    "usage": {
+      "prompt_tokens": 10003,
+      "completion_tokens": 196,
+      "total_tokens": 10199,
+      "cost": 0.001328175
+    },
+    "seconds": 4.699188024999785,
+    "tool_seconds": 0.015718683000159217,
+    "tool_calls": 1,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_R4sJXJIHMKjctC7SxaMao2YT",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Adobe Inc fiscal 2024 annual report Digital Media segment revenue 2024 2023 year over year growth\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_R4sJXJIHMKjctC7SxaMao2YT",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Adobe Inc fiscal 2024 annual report Digital Media segment revenue 2024 2023 year over year growth\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:24:56.738675+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "f4a858a817adf5e6e3e58bbd:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041895-0Z6StLHE5zXvcNfwEjym",
+        "usage": {
+          "prompt_tokens": 805,
+          "completion_tokens": 39,
+          "total_tokens": 844,
+          "cost": 0.0001,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0001,
+            "upstream_inference_prompt_cost": 8.05e-05,
+            "upstream_inference_completions_cost": 1.95e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 1.6200472609998542,
+        "attempts": 1
+      },
+      {
+        "text": "Adobe reported **fiscal 2024 Digital Media revenue of $15.864 billion** (about **$15.86 billion**), up **12% year over year** from **$14.216 billion** in fiscal 2023. The filing\u2019s segment table reports the 12% growth rate; calculated from the rounded table values, the increase was \\((15{,}864-14{,}216)/14{,}216 \\times 100 \\approx 11.6\\%\\), which rounds to 12%.\n\nSource: Adobe 10-K, accession **0000796343-25-000004**, chunk **839ad4e2-d434-562b-b699-c27185c0972b**.",
+        "message": {
+          "role": "assistant",
+          "content": "Adobe reported **fiscal 2024 Digital Media revenue of $15.864 billion** (about **$15.86 billion**), up **12% year over year** from **$14.216 billion** in fiscal 2023. The filing\u2019s segment table reports the 12% growth rate; calculated from the rounded table values, the increase was \\((15{,}864-14{,}216)/14{,}216 \\times 100 \\approx 11.6\\%\\), which rounds to 12%.\n\nSource: Adobe 10-K, accession **0000796343-25-000004**, chunk **839ad4e2-d434-562b-b699-c27185c0972b**.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:28:17.031601+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "f4a858a817adf5e6e3e58bbd:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042094-bBWLoTTYHPw8VLJzqUJ7",
+        "usage": {
+          "prompt_tokens": 9198,
+          "completion_tokens": 157,
+          "total_tokens": 9355,
+          "cost": 0.001228175,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 9195,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001228175,
+            "upstream_inference_prompt_cost": 0.001149675,
+            "upstream_inference_completions_cost": 7.85e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.0791407639999306,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_R4sJXJIHMKjctC7SxaMao2YT",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Adobe Inc fiscal 2024 annual report Digital Media segment revenue 2024 2023 year over year growth\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "7d86a2db-1f47-5f84-a624-96a6969230d0",
+              "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 10,
+              "chunk_index": 1,
+              "char_start": 201296,
+              "char_end": 209376,
+              "text": "Annualized Recurring Revenue (\"ARR\") is currently the key performance metric our management uses to assess the health and trajectory of our overall Digital Media segment. ARR should be viewed independently of revenue, deferred revenue and remaining performance obligations as ARR is a performance metric and is not intended to be combined with any of these items. We adjust our reported ARR on an annual basis to reflect any exchange rate changes. Our reported ARR results in the current fiscal year are based on currency rates set at the beginning of the year and held constant throughout the year for measurement purposes. We calculate ARR as follows:\n\n---\n\n\n\n| | |\n|:---|:---|\n| Creative ARR | Annual Value of Creative Cloud Subscriptions and Services<br>+ <br>Annual Creative ETLA Contract Value |\n| Document Cloud ARR | Annual Value of Document Cloud Subscriptions and Services <br>+<br>Annual Document Cloud ETLA Contract Value |\n| Digital Media ARR | Creative ARR<br>+ <br>Document Cloud ARR |\n\n---\n\n\n\nCreative ARR exiting fiscal 2024 was $13.85 billion, up from $12.49 billion at the end of fiscal 2023. Document Cloud ARR exiting fiscal 2024 was $3.48 billion, up from $2.84 billion at the end of fiscal 2023. Total Digital Media ARR grew to $17.33 billion at the end of fiscal 2024, up from $15.33 billion at the end of fiscal 2023. Revaluing our ending ARR for fiscal 2024 using currency rates determined at the beginning of fiscal 2025, our Digital Media ARR at the end of fiscal 2024 would be $17.22 billion or approximately $117 million lower than the ARR reported above.\n\nOur success in driving growth in ARR has positively affected our revenue growth. Creative revenue in fiscal 2024 was $12.68 billion, up from $11.52 billion in fiscal 2023, representing 10% year-over-year growth. Document Cloud revenue in fiscal 2024 was $3.18 billion, up from $2.70 billion in fiscal 2023, representing 18% year-over-year growth. Total Digital Media segment revenue grew to $15.86 billion in fiscal 2024, up from $14.22 billion in fiscal 2023, representing 12% year-over-year growth.\n\n*Digital Experience*\n\nWe are a market leader in the fast-growing category addressed by our Digital Experience segment. The Adobe Experience Cloud apps and services are designed to manage customer journeys, enable personalized experiences at scale and deliver intelligence for businesses of any size in any industry. Our differentiation and competitive advantage are strengthened by our ability to use the Adobe Experience Platform to integrate our comprehensive set of solutions and our ability to embed AI into our product portfolio, such as with our new Adobe Experience Platform AI Assistant, a generative AI-powered conversational interface designed to help customers automate workflows and generate new audiences and journeys.\n\nAdobe Experience Cloud delivers solutions for our customers across the following strategic growth pillars:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Data insights and audiences*. Our products deliver actionable data to our customers in real time to enable highly tailored and adaptive experiences across platforms through Adobe Analytics, Adobe Customer Journey Analytics, Adobe Product Analytics, Adobe Mix Modeler, and Adobe Real-time Customer Data Platform.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Customer journeys*. Our products help businesses manage, test, target and personalize customer journeys delivered as campaigns across B2B and B2C use cases, including through Adobe Marketo Engage, Adobe Campaign, Adobe Target and Adobe Journey Optimizer.\n\nIn addition to chief marketing officers, chief revenue officers and digital marketers, users of our Digital Experience solutions include advertisers, campaign managers, publishers, data analysts, content managers, social marketers, marketing executives and information management and technology executives. These customers often are involved in workflows that integrate other Adobe products, such as our Digital Media offerings. By combining the creativity of our Digital Media business\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\nwith the science of our Digital Experience business, such as with our Adobe GenStudio solution, we help our customers to more efficiently and effectively make, manage, measure and monetize their content across every channel with an end-to-end workflow and feedback loop.\n\nWe utilize a direct sales force to market and license our Digital Experience solutions, as well as an extensive ecosystem of partners, including marketing agencies, systems integrators and independent software vendors that help license and deploy our solutions to their customers. We have made significant investments to broaden the scale and size of all of these routes to market, and our recent financial results reflect the success of these investments and our experience-led growth strategy.\n\nDigital Experience revenue was $5.37 billion in fiscal 2024, up from $4.89 billion in fiscal 2023, representing 10% year-over-year growth. Subscription revenue grew to $4.86 billion in fiscal 2024, up from $4.33 billion in fiscal 2023, representing 12% year-over-year growth.\n\n*Macroeconomic Conditions*\n\nAs a corporation with an extensive global footprint, we are subject to risks and exposures from the evolving macroeconomic environment, including the effects of increased global inflationary pressures and interest rates, fluctuations in foreign currency exchange rates, potential economic slowdowns or recessions and geopolitical pressures, including the unknown impacts of current and future trade regulations. We continuously monitor the direct and indirect impacts of these circumstances on our business and financial results.\n\nWhile our revenue and earnings are relatively predictable as a result of our subscription-based business model, the broader implications of these macroeconomic events on our business, results of operations and overall financial position, particularly in the long term, remain uncertain. *[See the section titled \"Risk Factors\" in Part I, Item 1A of this report for further discussion of the possible impact of these macroeconomic issues on our business.](#i74cf9d38730645a2be94739e148c270a_49)*\n\n*Financial Performance Summary for Fiscal 2024*\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Total Digital Media ARR of approximately $17.33 billion as of November 29, 2024 increased by $2.00 billion, or 13%, from $15.33 billion as of December 1, 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Creative revenue of $12.68 billion during fiscal 2024 increased by $1.17 billion, or 10%, from $11.52 billion in fiscal 2023. Document Cloud revenue of $3.18 billion during fiscal 2024 increased by $483 million, or 18%, from $2.70 billion in fiscal 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Digital Experience revenue of $5.37 billion during fiscal 2024 increased by $473 million, or 10%, from $4.89 billion in fiscal 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Cost of revenue of $2.36 billion during fiscal 2024 remained relatively flat compared to fiscal 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Net income of $5.56 billion during fiscal 2024 increased by $132 million, or 2%, from $5.43 billion in fiscal 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Cash flows from operations of $8.06 billion during fiscal 2024 increased by $754 million, or 10%, from $7.30 billion in fiscal 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Remaining performance obligations of $19.96 billion as of November 29, 2024 increased by $2.75 billion, or 16%, from $17.22 billion as of December 1, 2023.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**Revenue**\n\n---",
+              "token_count": 1797,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "b52db0a2-1d0b-53bc-9889-5dd847e0b67c",
+              "section": "Digital Media",
+              "section_index": 130,
+              "chunk_index": 0,
+              "char_start": 767915,
+              "char_end": 774355,
+              "text": "## Digital Media\n\nIn our Digital Media segment, we are a market leader with Creative Cloud, our subscription-based offering which provides desktop tools, mobile applications (\"apps\") and cloud-based services for designing, creating and publishing rich content and immersive 3D experiences. Creative Cloud offers Adobe Acrobat Pro, our comprehensive PDF solution, integral to creative workflows and used by creators worldwide as part of our Creative Cloud All Apps subscription and on a standalone basis. In addition, Adobe Express is our web and mobile app designed to enable a broad spectrum of users, including novice content creators, communicators and creative professionals, to create, edit and customize content quickly and easily with content-first, task-based solutions. Creative Cloud also includes Adobe Firefly, a group of creative generative AI models designed to generate high quality images and text effects. Adobe Firefly-powered generative AI features are also available across Creative Cloud apps including Adobe Photoshop and Adobe Express. Creative Cloud delivers value with deep, cross-product integration, frequent product updates and feature enhancements, cloud-enabled services including storage and syncing of files across users' devices, machine learning and artificial intelligence, access to marketplace, social and community-based features with our Adobe Stock and Behance services, app creation capabilities, tools which assist with enterprise deployments and team collaboration, and affordable pricing for cost-sensitive customers.\n\nWe offer Creative Cloud for individuals, students, teams and enterprises. We expect Creative Cloud will drive sustained long-term revenue growth through a continued expansion of our customer base by attracting new users with new features and products like Adobe Express and Adobe Firefly that make creative tools accessible to first-time creators and communicators, and delivering new features and technologies to existing customers with our latest releases such as generative AI capabilities. We have also built out a marketplace for Creative Cloud subscribers to enable the delivery and purchase of stock content in our Adobe Stock service. Overall, our strategy with Creative Cloud is designed to enable us to increase our revenue with existing users, continue to attract new customers, and grow our recurring and predictable revenue stream that is recognized ratably.\n\nWe continue to implement strategies that are designed to accelerate awareness, consideration and purchase of subscriptions to our Creative Cloud offerings. These strategies include increasing the value Creative Cloud users receive, such as offering new and enhanced desktop, web and mobile apps, as well as targeted promotions and offers that attract past customers and potential users to experience and ultimately subscribe to Creative Cloud. Because of the shift towards Creative Cloud subscriptions and Enterprise Term License Agreements (\"ETLAs\"), revenue from perpetual licensing of our Creative products has been immaterial to our business.\n\nWe are also a market leader with our Document Cloud offerings built around our Adobe Acrobat family of products, with a set of integrated mobile apps and cloud-based document services which enable users to create, collaborate, review, approve, sign and track documents regardless of platform or application source type. Document Cloud, which enhances the way people manage critical documents at home, in the office and across devices, includes subscriptions to Adobe Acrobat Pro and Standard, Adobe Acrobat Sign and Adobe Scan. Certain Adobe Acrobat products are also offered as perpetual licenses which are immaterial to our business. In April 2024, we introduced Acrobat AI Assistant, a generative AI-powered product designed to deliver insights and enhance productivity through interactive document experiences, which is available as an add-on subscription to our Adobe Acrobat Pro and Standard and Adobe Acrobat Reader products.\n\nAs part of our Creative Cloud and Document Cloud strategies, we utilize a data-driven operating model (\"DDOM\") and our Adobe Experience Cloud solutions to raise awareness of our products, drive new customer acquisition, engagement and retention, and optimize customer journeys, which continue to contribute strong product-led growth in the business.\n\n39\n\nTable of Contents\n\nAnnualized Recurring Revenue (\"ARR\") is currently the key performance metric our management uses to assess the health and trajectory of our overall Digital Media segment. ARR should be viewed independently of revenue, deferred revenue and remaining performance obligations as ARR is a performance metric and is not intended to be combined with any of these items. We adjust our reported ARR on an annual basis to reflect any exchange rate changes. Our reported ARR results in the current fiscal year are based on currency rates set at the beginning of the year and held constant throughout the year for measurement purposes. We calculate ARR as follows:\n\n| Creative ARR | Annual Value of Creative Cloud Subscriptions and Services + Annual Creative ETLA Contract Value |\n| --- | --- |\n| Document Cloud ARR | Annual Value of Document Cloud Subscriptions and Services + Annual Document Cloud ETLA Contract Value |\n| Digital Media ARR | Creative ARR + Document Cloud ARR |\n\nCreative ARR exiting fiscal 2024 was $13.85 billion, up from $12.49 billion at the end of fiscal 2023. Document Cloud ARR exiting fiscal 2024 was $3.48 billion, up from $2.84 billion at the end of fiscal 2023. Total Digital Media ARR grew to $17.33 billion at the end of fiscal 2024, up from $15.33 billion at the end of fiscal 2023. Revaluing our ending ARR for fiscal 2024 using currency rates determined at the beginning of fiscal 2025, our Digital Media ARR at the end of fiscal 2024 would be $17.22 billion or approximately $117 million lower than the ARR reported above.\n\nOur success in driving growth in ARR has positively affected our revenue growth. Creative revenue in fiscal 2024 was $12.68 billion, up from $11.52 billion in fiscal 2023, representing 10% year-over-year growth. Document Cloud revenue in fiscal 2024 was $3.18 billion, up from $2.70 billion in fiscal 2023, representing 18% year-over-year growth. Total Digital Media segment revenue grew to $15.86 billion in fiscal 2024, up from $14.22 billion in fiscal 2023, representing 12% year-over-year growth.",
+              "token_count": 1203,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "839ad4e2-d434-562b-b699-c27185c0972b",
+              "section": "Segments",
+              "section_index": 138,
+              "chunk_index": 0,
+              "char_start": 783215,
+              "char_end": 787554,
+              "text": "# Segments\n\nIn fiscal 2024, we categorized our products into the following reportable segments:\n\n- Digital Media-Our Digital Media segment provides products and services that enable individuals, teams, businesses, and enterprises to create, publish and promote their content anywhere and accelerate their productivity by transforming how they view, share, engage with and collaborate on documents and creative content. Our customers include creative professionals, including photographers, video editors, graphic and experience designers and game developers; communicators, including content creators, students, marketers and knowledge workers; and consumers.\n- Digital Experience-Our Digital Experience segment provides an integrated platform and set of products, services and solutions that enable businesses to create, manage, execute, measure, monetize and optimize customer\n\nTable of Contents\n\nexperiences that span from analytics to commerce. Our customers include marketers, advertisers, agencies, publishers, merchandisers, merchants, web analysts, data scientists, developers and executives across the C-suite.\n\n- Publishing and Advertising-Our Publishing and Advertising segment contains legacy products and services that address diverse market opportunities, including eLearning solutions, technical document publishing, web conferencing, document and forms platform, web app development, high-end printing and our Adobe Advertising offerings.\n\nSegment Information\n\n| (dollars in millions) | 2024 | 2023 | 2022 | % Change 2024-2023 |\n| --- | --- | --- | --- | --- |\n| Digital Media | $15,864 | $14,216 | $12,842 | 12% |\n| Percentage of total revenue | 74% | 73% | 73% |  |\n| Digital Experience | 5,366 | 4,893 | 4,422 | 10% |\n| Percentage of total revenue | 25% | 25% | 25% |  |\n| Publishing and Advertising | 275 | 300 | 342 | (8)% |\n| Percentage of total revenue | 1% | 2% | 2% |  |\n| Total revenue | $21,505 | $19,409 | $17,606 | 11% |\n\nDigital Media\n\nRevenue by major offerings in our Digital Media reportable segment for fiscal 2024, 2023 and 2022 were as follows:\n\n| (dollars in millions) | 2024 | 2023 | 2022 | % Change 2024-2023 |\n| --- | --- | --- | --- | --- |\n| Creative Cloud | $12,682 | $11,517 | $10,459 | 10% |\n| Document Cloud | 3,182 | 2,699 | 2,383 | 18% |\n| Total Digital Media revenue | $15,864 | $14,216 | $12,842 | 12% |\n\nRevenue from Digital Media increased $1.65 billion during fiscal 2024 as compared to fiscal 2023, driven by increases in revenue associated with our Creative and Document Cloud subscription offerings due to continued demand amid an increasingly digital environment, strong engagement across customer segments and migrating our customers to higher valued subscription offerings with increased revenue per subscription.\n\nDigital Experience\n\nRevenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings.\n\nGeographical Information\n\n| (dollars in millions) | 2024 | 2023 | 2022 | % Change 2024-2023 |\n| --- | --- | --- | --- | --- |\n| Americas | $12,891 | $11,654 | $10,251 | 11% |\n| Percentage of total revenue | 60% | 60% | 58% |  |\n| EMEA | 5,554 | 4,881 | 4,593 | 14% |\n| Percentage of total revenue | 26% | 25% | 26% |  |\n| APAC | 3,060 | 2,874 | 2,762 | 6% |\n| Percentage of total revenue | 14% | 15% | 16% |  |\n| Total revenue | $21,505 | $19,409 | $17,606 | 11% |\n\nOverall revenue during fiscal 2024 increased in all geographic regions as compared to fiscal 2023. Within each geographic region, the fluctuations in revenue by reportable segment were attributable to the factors noted in the segment information above.\n\nTable of Contents\n\nIncluded in the overall change in revenue for fiscal 2024 as compared to fiscal 2023 were impacts associated with foreign currency and our foreign currency hedging program. During fiscal 2024, the U.S. Dollar primarily strengthened against APAC foreign currencies and weakened against EMEA foreign currencies as compared to fiscal 2023, which resulted in a net decrease in revenue in U.S. Dollar equivalents of approximately $45 million. During fiscal 2024, we had net hedging losses from our cash flow hedging program of $20 million.\n\nSee Note 2 of our Notes to Consolidated Financial Statements for additional details of revenue by geography.",
+              "token_count": 1050,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "e7171163-cbd5-54b6-9b54-45898662af4d",
+              "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 10,
+              "chunk_index": 2,
+              "char_start": 209380,
+              "char_end": 217191,
+              "text": "| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Subscription | $20521 | $18284 | $16388 | 12% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 95% | 94% | 93% |  |\n| Product | 386 | 460 | 532 | (16)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 2% | 2% | 3% |  |\n| Services and other | 598 | 665 | 686 | (10)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 3% | 4% | 4% |  |\n| Total revenue | $21505 | $19409 | $17606 | 11% |\n\n---\n\n\n\n*Subscription*\n\nOur subscription revenue is comprised primarily of fees we charge for our subscription and hosted service offerings, and related support, including Creative Cloud and certain of our Adobe Experience Cloud and Document Cloud services. We primarily recognize subscription revenue ratably over the term of agreements with our customers, beginning with commencement of service. Subscription revenue related to certain offerings, where fees are based on a number of transactions and invoicing is aligned to the pattern of performance, customer benefit and consumption, are recognized on a usage basis.\n\nWe have the following reportable segments: Digital Media, Digital Experience, and Publishing and Advertising. Subscription revenue by reportable segment for fiscal 2024, 2023 and 2022 is as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Digital Media | $15547 | $13838 | $12385 | 12% |\n| Digital Experience | 4864 | 4331 | 3880 | 12% |\n| Publishing and Advertising | 110 | 115 | 123 | (4)% |\n| &nbsp;&nbsp;&nbsp;Total subscription revenue | $20521 | $18284 | $16388 | 12% |\n\n---\n\n\n\n*Product*\n\nOur product revenue is comprised primarily of fees related to licenses for on-premise software purchased on a perpetual basis, for a fixed period of time, or based on usage for certain of our original equipment manufacturer and royalty agreements. We primarily recognize product revenue at the point in time the software is available to the customer, provided all other revenue recognition criteria are met.\n\n*Services and Other*\n\nOur services and other revenue is comprised primarily of fees related to consulting, training, maintenance and support for certain on-premise licenses that are recognized at a point in time and our advertising offerings. We typically sell our consulting contracts on a time-and-materials or fixed-fee basis. These revenues are recognized as the services are performed for time-and-materials contracts and on a relative performance basis for fixed-fee contracts. Training revenues are recognized as the services are performed. Our maintenance and support offerings, which entitle customers, partners and developers to receive desktop product upgrades and enhancements or technical support, depending on the offering, are generally recognized ratably over the term of the arrangement. Transaction-based advertising revenue is recognized on a usage basis as we satisfy the performance obligations to our customers.\n\n*Segments* \n\nIn fiscal 2024, we categorized our products into the following reportable segments:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Media*\u2014Our Digital Media segment provides products and services that enable individuals, teams, businesses, and enterprises to create, publish and promote their content anywhere and accelerate their productivity by transforming how they view, share, engage with and collaborate on documents and creative content. Our customers include creative professionals, including photographers, video editors, graphic and experience designers and game developers; communicators, including content creators, students, marketers and knowledge workers; and consumers.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Experience*\u2014Our Digital Experience segment provides an integrated platform and set of products, services and solutions that enable businesses to create, manage, execute, measure, monetize and optimize customer\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\nexperiences that span from analytics to commerce. Our customers include marketers, advertisers, agencies, publishers, merchandisers, merchants, web analysts, data scientists, developers and executives across the C-suite.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Publishing and Advertising*\u2014Our Publishing and Advertising segment contains legacy products and services that address diverse market opportunities, including eLearning solutions, technical document publishing, web conferencing, document and forms platform, web app development, high-end printing and our Adobe Advertising offerings.\n\n*Segment Information*\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Digital Media | $15864 | $14216 | $12842 | 12% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 74% | 73% | 73% |  |\n| Digital Experience | 5366 | 4893 | 4422 | 10% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 25% | 25% | 25% |  |\n| Publishing and Advertising | 275 | 300 | 342 | (8)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 1% | 2% | 2% |  |\n| Total revenue | $21505 | $19409 | $17606 | 11% |\n\n---\n\n\n\n*Digital Media*\n\nRevenue by major offerings in our Digital Media reportable segment for fiscal 2024, 2023 and 2022 were as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Creative Cloud | $12682 | $11517 | $10459 | 10% |\n| Document Cloud | 3182 | 2699 | 2383 | 18% |\n| &nbsp;&nbsp;&nbsp;Total Digital Media revenue | $15864 | $14216 | $12842 | 12% |\n\n---\n\n\n\nRevenue from Digital Media increased $1.65 billion during fiscal 2024 as compared to fiscal 2023, driven by increases in revenue associated with our Creative and Document Cloud subscription offerings due to continued demand amid an increasingly digital environment, strong engagement across customer segments and migrating our customers to higher valued subscription offerings with increased revenue per subscription.\n\n*Digital Experience*\n\nRevenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings.\n\n*Geographical Information*\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Americas | $12891 | $11654 | $10251 | 11% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 60% | 60% | 58% |  |\n| EMEA | 5554 | 4881 | 4593 | 14% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 26% | 25% | 26% |  |\n| APAC | 3060 | 2874 | 2762 | 6% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 14% | 15% | 16% |  |\n| Total revenue | $21505 | $19409 | $17606 | 11% |\n\n---\n\n\n\nOverall revenue during fiscal 2024 increased in all geographic regions as compared to fiscal 2023. Within each geographic region, the fluctuations in revenue by reportable segment were attributable to the factors noted in the segment information above.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\nIncluded in the overall change in revenue for fiscal 2024 as compared to fiscal 2023 were impacts associated with foreign currency and our foreign currency hedging program. During fiscal 2024, the U.S. Dollar primarily strengthened against APAC foreign currencies and weakened against EMEA foreign currencies as compared to fiscal 2023, which resulted in a net decrease in revenue in U.S. Dollar equivalents of approximately $45 million. During fiscal 2024, we had net hedging losses from our cash flow hedging program of $20 million.",
+              "token_count": 1968,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "c1bafcdb-8ba5-59fa-966f-5f95771ff855",
+              "section": "Digital Experience",
+              "section_index": 131,
+              "chunk_index": 0,
+              "char_start": 774357,
+              "char_end": 777890,
+              "text": "## Digital Experience\n\nWe are a market leader in the fast-growing category addressed by our Digital Experience segment. The Adobe Experience Cloud apps and services are designed to manage customer journeys, enable personalized experiences at scale and deliver intelligence for businesses of any size in any industry. Our differentiation and competitive advantage are strengthened by our ability to use the Adobe Experience Platform to integrate our comprehensive set of solutions and our ability to embed AI into our product portfolio, such as with our new Adobe Experience Platform AI Assistant, a generative AI-powered conversational interface designed to help customers automate workflows and generate new audiences and journeys.\n\nAdobe Experience Cloud delivers solutions for our customers across the following strategic growth pillars:\n\n- Data insights and audiences. Our products deliver actionable data to our customers in real time to enable highly tailored and adaptive experiences across platforms through Adobe Analytics, Adobe Customer Journey Analytics, Adobe Product Analytics, Adobe Mix Modeler, and Adobe Real-time Customer Data Platform.\n- Content, commerce and workflows. Our products help our customers manage, deliver, personalize, and optimize content delivery through Adobe Experience Manager; build multi-channel commerce experiences for B2B and B2C customers with Adobe Commerce; strategically plan, manage, collaborate and execute on workflows for marketing campaigns and other projects at speed and scale with our enterprise work management App, Adobe Workfront; and leverage self-serve capabilities to deliver on-brand content powered by generative AI in Adobe GenStudio for Performance Marketing.\n- Customer journeys. Our products help businesses manage, test, target and personalize customer journeys delivered as campaigns across B2B and B2C use cases, including through Adobe Marketo Engage, Adobe Campaign, Adobe Target and Adobe Journey Optimizer.\n\nIn addition to chief marketing officers, chief revenue officers and digital marketers, users of our Digital Experience solutions include advertisers, campaign managers, publishers, data analysts, content managers, social marketers, marketing executives and information management and technology executives. These customers often are involved in workflows that integrate other Adobe products, such as our Digital Media offerings. By combining the creativity of our Digital Media business\n\nTable of Contents\n\nwith the science of our Digital Experience business, such as with our Adobe GenStudio solution, we help our customers to more efficiently and effectively make, manage, measure and monetize their content across every channel with an end-to-end workflow and feedback loop.\n\nWe utilize a direct sales force to market and license our Digital Experience solutions, as well as an extensive ecosystem of partners, including marketing agencies, systems integrators and independent software vendors that help license and deploy our solutions to their customers. We have made significant investments to broaden the scale and size of all of these routes to market, and our recent financial results reflect the success of these investments and our experience-led growth strategy.\n\nDigital Experience revenue was $5.37 billion in fiscal 2024, up from $4.89 billion in fiscal 2023, representing 10% year-over-year growth. Subscription revenue grew to $4.86 billion in fiscal 2024, up from $4.33 billion in fiscal 2023, representing 12% year-over-year growth.",
+              "token_count": 622,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.015718683000159217
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "7d86a2db-1f47-5f84-a624-96a6969230d0",
+        "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 10,
+        "chunk_index": 1,
+        "char_start": 201296,
+        "char_end": 209376,
+        "text": "Annualized Recurring Revenue (\"ARR\") is currently the key performance metric our management uses to assess the health and trajectory of our overall Digital Media segment. ARR should be viewed independently of revenue, deferred revenue and remaining performance obligations as ARR is a performance metric and is not intended to be combined with any of these items. We adjust our reported ARR on an annual basis to reflect any exchange rate changes. Our reported ARR results in the current fiscal year are based on currency rates set at the beginning of the year and held constant throughout the year for measurement purposes. We calculate ARR as follows:\n\n---\n\n\n\n| | |\n|:---|:---|\n| Creative ARR | Annual Value of Creative Cloud Subscriptions and Services<br>+ <br>Annual Creative ETLA Contract Value |\n| Document Cloud ARR | Annual Value of Document Cloud Subscriptions and Services <br>+<br>Annual Document Cloud ETLA Contract Value |\n| Digital Media ARR | Creative ARR<br>+ <br>Document Cloud ARR |\n\n---\n\n\n\nCreative ARR exiting fiscal 2024 was $13.85 billion, up from $12.49 billion at the end of fiscal 2023. Document Cloud ARR exiting fiscal 2024 was $3.48 billion, up from $2.84 billion at the end of fiscal 2023. Total Digital Media ARR grew to $17.33 billion at the end of fiscal 2024, up from $15.33 billion at the end of fiscal 2023. Revaluing our ending ARR for fiscal 2024 using currency rates determined at the beginning of fiscal 2025, our Digital Media ARR at the end of fiscal 2024 would be $17.22 billion or approximately $117 million lower than the ARR reported above.\n\nOur success in driving growth in ARR has positively affected our revenue growth. Creative revenue in fiscal 2024 was $12.68 billion, up from $11.52 billion in fiscal 2023, representing 10% year-over-year growth. Document Cloud revenue in fiscal 2024 was $3.18 billion, up from $2.70 billion in fiscal 2023, representing 18% year-over-year growth. Total Digital Media segment revenue grew to $15.86 billion in fiscal 2024, up from $14.22 billion in fiscal 2023, representing 12% year-over-year growth.\n\n*Digital Experience*\n\nWe are a market leader in the fast-growing category addressed by our Digital Experience segment. The Adobe Experience Cloud apps and services are designed to manage customer journeys, enable personalized experiences at scale and deliver intelligence for businesses of any size in any industry. Our differentiation and competitive advantage are strengthened by our ability to use the Adobe Experience Platform to integrate our comprehensive set of solutions and our ability to embed AI into our product portfolio, such as with our new Adobe Experience Platform AI Assistant, a generative AI-powered conversational interface designed to help customers automate workflows and generate new audiences and journeys.\n\nAdobe Experience Cloud delivers solutions for our customers across the following strategic growth pillars:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Data insights and audiences*. Our products deliver actionable data to our customers in real time to enable highly tailored and adaptive experiences across platforms through Adobe Analytics, Adobe Customer Journey Analytics, Adobe Product Analytics, Adobe Mix Modeler, and Adobe Real-time Customer Data Platform.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Customer journeys*. Our products help businesses manage, test, target and personalize customer journeys delivered as campaigns across B2B and B2C use cases, including through Adobe Marketo Engage, Adobe Campaign, Adobe Target and Adobe Journey Optimizer.\n\nIn addition to chief marketing officers, chief revenue officers and digital marketers, users of our Digital Experience solutions include advertisers, campaign managers, publishers, data analysts, content managers, social marketers, marketing executives and information management and technology executives. These customers often are involved in workflows that integrate other Adobe products, such as our Digital Media offerings. By combining the creativity of our Digital Media business\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\nwith the science of our Digital Experience business, such as with our Adobe GenStudio solution, we help our customers to more efficiently and effectively make, manage, measure and monetize their content across every channel with an end-to-end workflow and feedback loop.\n\nWe utilize a direct sales force to market and license our Digital Experience solutions, as well as an extensive ecosystem of partners, including marketing agencies, systems integrators and independent software vendors that help license and deploy our solutions to their customers. We have made significant investments to broaden the scale and size of all of these routes to market, and our recent financial results reflect the success of these investments and our experience-led growth strategy.\n\nDigital Experience revenue was $5.37 billion in fiscal 2024, up from $4.89 billion in fiscal 2023, representing 10% year-over-year growth. Subscription revenue grew to $4.86 billion in fiscal 2024, up from $4.33 billion in fiscal 2023, representing 12% year-over-year growth.\n\n*Macroeconomic Conditions*\n\nAs a corporation with an extensive global footprint, we are subject to risks and exposures from the evolving macroeconomic environment, including the effects of increased global inflationary pressures and interest rates, fluctuations in foreign currency exchange rates, potential economic slowdowns or recessions and geopolitical pressures, including the unknown impacts of current and future trade regulations. We continuously monitor the direct and indirect impacts of these circumstances on our business and financial results.\n\nWhile our revenue and earnings are relatively predictable as a result of our subscription-based business model, the broader implications of these macroeconomic events on our business, results of operations and overall financial position, particularly in the long term, remain uncertain. *[See the section titled \"Risk Factors\" in Part I, Item 1A of this report for further discussion of the possible impact of these macroeconomic issues on our business.](#i74cf9d38730645a2be94739e148c270a_49)*\n\n*Financial Performance Summary for Fiscal 2024*\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Total Digital Media ARR of approximately $17.33 billion as of November 29, 2024 increased by $2.00 billion, or 13%, from $15.33 billion as of December 1, 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Creative revenue of $12.68 billion during fiscal 2024 increased by $1.17 billion, or 10%, from $11.52 billion in fiscal 2023. Document Cloud revenue of $3.18 billion during fiscal 2024 increased by $483 million, or 18%, from $2.70 billion in fiscal 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Digital Experience revenue of $5.37 billion during fiscal 2024 increased by $473 million, or 10%, from $4.89 billion in fiscal 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Cost of revenue of $2.36 billion during fiscal 2024 remained relatively flat compared to fiscal 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Operating expenses of $12.41 billion during fiscal 2024 increased by $2.00 billion, or 19%, from $10.41 billion in fiscal 2023 primarily due to the $1 billion Figma termination fee incurred in fiscal 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Net income of $5.56 billion during fiscal 2024 increased by $132 million, or 2%, from $5.43 billion in fiscal 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Cash flows from operations of $8.06 billion during fiscal 2024 increased by $754 million, or 10%, from $7.30 billion in fiscal 2023.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Remaining performance obligations of $19.96 billion as of November 29, 2024 increased by $2.75 billion, or 16%, from $17.22 billion as of December 1, 2023.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**Revenue**\n\n---",
+        "token_count": 1797,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "b52db0a2-1d0b-53bc-9889-5dd847e0b67c",
+        "section": "Digital Media",
+        "section_index": 130,
+        "chunk_index": 0,
+        "char_start": 767915,
+        "char_end": 774355,
+        "text": "## Digital Media\n\nIn our Digital Media segment, we are a market leader with Creative Cloud, our subscription-based offering which provides desktop tools, mobile applications (\"apps\") and cloud-based services for designing, creating and publishing rich content and immersive 3D experiences. Creative Cloud offers Adobe Acrobat Pro, our comprehensive PDF solution, integral to creative workflows and used by creators worldwide as part of our Creative Cloud All Apps subscription and on a standalone basis. In addition, Adobe Express is our web and mobile app designed to enable a broad spectrum of users, including novice content creators, communicators and creative professionals, to create, edit and customize content quickly and easily with content-first, task-based solutions. Creative Cloud also includes Adobe Firefly, a group of creative generative AI models designed to generate high quality images and text effects. Adobe Firefly-powered generative AI features are also available across Creative Cloud apps including Adobe Photoshop and Adobe Express. Creative Cloud delivers value with deep, cross-product integration, frequent product updates and feature enhancements, cloud-enabled services including storage and syncing of files across users' devices, machine learning and artificial intelligence, access to marketplace, social and community-based features with our Adobe Stock and Behance services, app creation capabilities, tools which assist with enterprise deployments and team collaboration, and affordable pricing for cost-sensitive customers.\n\nWe offer Creative Cloud for individuals, students, teams and enterprises. We expect Creative Cloud will drive sustained long-term revenue growth through a continued expansion of our customer base by attracting new users with new features and products like Adobe Express and Adobe Firefly that make creative tools accessible to first-time creators and communicators, and delivering new features and technologies to existing customers with our latest releases such as generative AI capabilities. We have also built out a marketplace for Creative Cloud subscribers to enable the delivery and purchase of stock content in our Adobe Stock service. Overall, our strategy with Creative Cloud is designed to enable us to increase our revenue with existing users, continue to attract new customers, and grow our recurring and predictable revenue stream that is recognized ratably.\n\nWe continue to implement strategies that are designed to accelerate awareness, consideration and purchase of subscriptions to our Creative Cloud offerings. These strategies include increasing the value Creative Cloud users receive, such as offering new and enhanced desktop, web and mobile apps, as well as targeted promotions and offers that attract past customers and potential users to experience and ultimately subscribe to Creative Cloud. Because of the shift towards Creative Cloud subscriptions and Enterprise Term License Agreements (\"ETLAs\"), revenue from perpetual licensing of our Creative products has been immaterial to our business.\n\nWe are also a market leader with our Document Cloud offerings built around our Adobe Acrobat family of products, with a set of integrated mobile apps and cloud-based document services which enable users to create, collaborate, review, approve, sign and track documents regardless of platform or application source type. Document Cloud, which enhances the way people manage critical documents at home, in the office and across devices, includes subscriptions to Adobe Acrobat Pro and Standard, Adobe Acrobat Sign and Adobe Scan. Certain Adobe Acrobat products are also offered as perpetual licenses which are immaterial to our business. In April 2024, we introduced Acrobat AI Assistant, a generative AI-powered product designed to deliver insights and enhance productivity through interactive document experiences, which is available as an add-on subscription to our Adobe Acrobat Pro and Standard and Adobe Acrobat Reader products.\n\nAs part of our Creative Cloud and Document Cloud strategies, we utilize a data-driven operating model (\"DDOM\") and our Adobe Experience Cloud solutions to raise awareness of our products, drive new customer acquisition, engagement and retention, and optimize customer journeys, which continue to contribute strong product-led growth in the business.\n\n39\n\nTable of Contents\n\nAnnualized Recurring Revenue (\"ARR\") is currently the key performance metric our management uses to assess the health and trajectory of our overall Digital Media segment. ARR should be viewed independently of revenue, deferred revenue and remaining performance obligations as ARR is a performance metric and is not intended to be combined with any of these items. We adjust our reported ARR on an annual basis to reflect any exchange rate changes. Our reported ARR results in the current fiscal year are based on currency rates set at the beginning of the year and held constant throughout the year for measurement purposes. We calculate ARR as follows:\n\n| Creative ARR | Annual Value of Creative Cloud Subscriptions and Services + Annual Creative ETLA Contract Value |\n| --- | --- |\n| Document Cloud ARR | Annual Value of Document Cloud Subscriptions and Services + Annual Document Cloud ETLA Contract Value |\n| Digital Media ARR | Creative ARR + Document Cloud ARR |\n\nCreative ARR exiting fiscal 2024 was $13.85 billion, up from $12.49 billion at the end of fiscal 2023. Document Cloud ARR exiting fiscal 2024 was $3.48 billion, up from $2.84 billion at the end of fiscal 2023. Total Digital Media ARR grew to $17.33 billion at the end of fiscal 2024, up from $15.33 billion at the end of fiscal 2023. Revaluing our ending ARR for fiscal 2024 using currency rates determined at the beginning of fiscal 2025, our Digital Media ARR at the end of fiscal 2024 would be $17.22 billion or approximately $117 million lower than the ARR reported above.\n\nOur success in driving growth in ARR has positively affected our revenue growth. Creative revenue in fiscal 2024 was $12.68 billion, up from $11.52 billion in fiscal 2023, representing 10% year-over-year growth. Document Cloud revenue in fiscal 2024 was $3.18 billion, up from $2.70 billion in fiscal 2023, representing 18% year-over-year growth. Total Digital Media segment revenue grew to $15.86 billion in fiscal 2024, up from $14.22 billion in fiscal 2023, representing 12% year-over-year growth.",
+        "token_count": 1203,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "839ad4e2-d434-562b-b699-c27185c0972b",
+        "section": "Segments",
+        "section_index": 138,
+        "chunk_index": 0,
+        "char_start": 783215,
+        "char_end": 787554,
+        "text": "# Segments\n\nIn fiscal 2024, we categorized our products into the following reportable segments:\n\n- Digital Media-Our Digital Media segment provides products and services that enable individuals, teams, businesses, and enterprises to create, publish and promote their content anywhere and accelerate their productivity by transforming how they view, share, engage with and collaborate on documents and creative content. Our customers include creative professionals, including photographers, video editors, graphic and experience designers and game developers; communicators, including content creators, students, marketers and knowledge workers; and consumers.\n- Digital Experience-Our Digital Experience segment provides an integrated platform and set of products, services and solutions that enable businesses to create, manage, execute, measure, monetize and optimize customer\n\nTable of Contents\n\nexperiences that span from analytics to commerce. Our customers include marketers, advertisers, agencies, publishers, merchandisers, merchants, web analysts, data scientists, developers and executives across the C-suite.\n\n- Publishing and Advertising-Our Publishing and Advertising segment contains legacy products and services that address diverse market opportunities, including eLearning solutions, technical document publishing, web conferencing, document and forms platform, web app development, high-end printing and our Adobe Advertising offerings.\n\nSegment Information\n\n| (dollars in millions) | 2024 | 2023 | 2022 | % Change 2024-2023 |\n| --- | --- | --- | --- | --- |\n| Digital Media | $15,864 | $14,216 | $12,842 | 12% |\n| Percentage of total revenue | 74% | 73% | 73% |  |\n| Digital Experience | 5,366 | 4,893 | 4,422 | 10% |\n| Percentage of total revenue | 25% | 25% | 25% |  |\n| Publishing and Advertising | 275 | 300 | 342 | (8)% |\n| Percentage of total revenue | 1% | 2% | 2% |  |\n| Total revenue | $21,505 | $19,409 | $17,606 | 11% |\n\nDigital Media\n\nRevenue by major offerings in our Digital Media reportable segment for fiscal 2024, 2023 and 2022 were as follows:\n\n| (dollars in millions) | 2024 | 2023 | 2022 | % Change 2024-2023 |\n| --- | --- | --- | --- | --- |\n| Creative Cloud | $12,682 | $11,517 | $10,459 | 10% |\n| Document Cloud | 3,182 | 2,699 | 2,383 | 18% |\n| Total Digital Media revenue | $15,864 | $14,216 | $12,842 | 12% |\n\nRevenue from Digital Media increased $1.65 billion during fiscal 2024 as compared to fiscal 2023, driven by increases in revenue associated with our Creative and Document Cloud subscription offerings due to continued demand amid an increasingly digital environment, strong engagement across customer segments and migrating our customers to higher valued subscription offerings with increased revenue per subscription.\n\nDigital Experience\n\nRevenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings.\n\nGeographical Information\n\n| (dollars in millions) | 2024 | 2023 | 2022 | % Change 2024-2023 |\n| --- | --- | --- | --- | --- |\n| Americas | $12,891 | $11,654 | $10,251 | 11% |\n| Percentage of total revenue | 60% | 60% | 58% |  |\n| EMEA | 5,554 | 4,881 | 4,593 | 14% |\n| Percentage of total revenue | 26% | 25% | 26% |  |\n| APAC | 3,060 | 2,874 | 2,762 | 6% |\n| Percentage of total revenue | 14% | 15% | 16% |  |\n| Total revenue | $21,505 | $19,409 | $17,606 | 11% |\n\nOverall revenue during fiscal 2024 increased in all geographic regions as compared to fiscal 2023. Within each geographic region, the fluctuations in revenue by reportable segment were attributable to the factors noted in the segment information above.\n\nTable of Contents\n\nIncluded in the overall change in revenue for fiscal 2024 as compared to fiscal 2023 were impacts associated with foreign currency and our foreign currency hedging program. During fiscal 2024, the U.S. Dollar primarily strengthened against APAC foreign currencies and weakened against EMEA foreign currencies as compared to fiscal 2023, which resulted in a net decrease in revenue in U.S. Dollar equivalents of approximately $45 million. During fiscal 2024, we had net hedging losses from our cash flow hedging program of $20 million.\n\nSee Note 2 of our Notes to Consolidated Financial Statements for additional details of revenue by geography.",
+        "token_count": 1050,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "e7171163-cbd5-54b6-9b54-45898662af4d",
+        "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 10,
+        "chunk_index": 2,
+        "char_start": 209380,
+        "char_end": 217191,
+        "text": "| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Subscription | $20521 | $18284 | $16388 | 12% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 95% | 94% | 93% |  |\n| Product | 386 | 460 | 532 | (16)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 2% | 2% | 3% |  |\n| Services and other | 598 | 665 | 686 | (10)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 3% | 4% | 4% |  |\n| Total revenue | $21505 | $19409 | $17606 | 11% |\n\n---\n\n\n\n*Subscription*\n\nOur subscription revenue is comprised primarily of fees we charge for our subscription and hosted service offerings, and related support, including Creative Cloud and certain of our Adobe Experience Cloud and Document Cloud services. We primarily recognize subscription revenue ratably over the term of agreements with our customers, beginning with commencement of service. Subscription revenue related to certain offerings, where fees are based on a number of transactions and invoicing is aligned to the pattern of performance, customer benefit and consumption, are recognized on a usage basis.\n\nWe have the following reportable segments: Digital Media, Digital Experience, and Publishing and Advertising. Subscription revenue by reportable segment for fiscal 2024, 2023 and 2022 is as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Digital Media | $15547 | $13838 | $12385 | 12% |\n| Digital Experience | 4864 | 4331 | 3880 | 12% |\n| Publishing and Advertising | 110 | 115 | 123 | (4)% |\n| &nbsp;&nbsp;&nbsp;Total subscription revenue | $20521 | $18284 | $16388 | 12% |\n\n---\n\n\n\n*Product*\n\nOur product revenue is comprised primarily of fees related to licenses for on-premise software purchased on a perpetual basis, for a fixed period of time, or based on usage for certain of our original equipment manufacturer and royalty agreements. We primarily recognize product revenue at the point in time the software is available to the customer, provided all other revenue recognition criteria are met.\n\n*Services and Other*\n\nOur services and other revenue is comprised primarily of fees related to consulting, training, maintenance and support for certain on-premise licenses that are recognized at a point in time and our advertising offerings. We typically sell our consulting contracts on a time-and-materials or fixed-fee basis. These revenues are recognized as the services are performed for time-and-materials contracts and on a relative performance basis for fixed-fee contracts. Training revenues are recognized as the services are performed. Our maintenance and support offerings, which entitle customers, partners and developers to receive desktop product upgrades and enhancements or technical support, depending on the offering, are generally recognized ratably over the term of the arrangement. Transaction-based advertising revenue is recognized on a usage basis as we satisfy the performance obligations to our customers.\n\n*Segments* \n\nIn fiscal 2024, we categorized our products into the following reportable segments:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Media*\u2014Our Digital Media segment provides products and services that enable individuals, teams, businesses, and enterprises to create, publish and promote their content anywhere and accelerate their productivity by transforming how they view, share, engage with and collaborate on documents and creative content. Our customers include creative professionals, including photographers, video editors, graphic and experience designers and game developers; communicators, including content creators, students, marketers and knowledge workers; and consumers.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Experience*\u2014Our Digital Experience segment provides an integrated platform and set of products, services and solutions that enable businesses to create, manage, execute, measure, monetize and optimize customer\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\nexperiences that span from analytics to commerce. Our customers include marketers, advertisers, agencies, publishers, merchandisers, merchants, web analysts, data scientists, developers and executives across the C-suite.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Publishing and Advertising*\u2014Our Publishing and Advertising segment contains legacy products and services that address diverse market opportunities, including eLearning solutions, technical document publishing, web conferencing, document and forms platform, web app development, high-end printing and our Adobe Advertising offerings.\n\n*Segment Information*\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Digital Media | $15864 | $14216 | $12842 | 12% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 74% | 73% | 73% |  |\n| Digital Experience | 5366 | 4893 | 4422 | 10% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 25% | 25% | 25% |  |\n| Publishing and Advertising | 275 | 300 | 342 | (8)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 1% | 2% | 2% |  |\n| Total revenue | $21505 | $19409 | $17606 | 11% |\n\n---\n\n\n\n*Digital Media*\n\nRevenue by major offerings in our Digital Media reportable segment for fiscal 2024, 2023 and 2022 were as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Creative Cloud | $12682 | $11517 | $10459 | 10% |\n| Document Cloud | 3182 | 2699 | 2383 | 18% |\n| &nbsp;&nbsp;&nbsp;Total Digital Media revenue | $15864 | $14216 | $12842 | 12% |\n\n---\n\n\n\nRevenue from Digital Media increased $1.65 billion during fiscal 2024 as compared to fiscal 2023, driven by increases in revenue associated with our Creative and Document Cloud subscription offerings due to continued demand amid an increasingly digital environment, strong engagement across customer segments and migrating our customers to higher valued subscription offerings with increased revenue per subscription.\n\n*Digital Experience*\n\nRevenue from Digital Experience increased $473 million during fiscal 2024 as compared to fiscal 2023 driven by subscription revenue growth across our offerings.\n\n*Geographical Information*\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Americas | $12891 | $11654 | $10251 | 11% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 60% | 60% | 58% |  |\n| EMEA | 5554 | 4881 | 4593 | 14% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 26% | 25% | 26% |  |\n| APAC | 3060 | 2874 | 2762 | 6% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 14% | 15% | 16% |  |\n| Total revenue | $21505 | $19409 | $17606 | 11% |\n\n---\n\n\n\nOverall revenue during fiscal 2024 increased in all geographic regions as compared to fiscal 2023. Within each geographic region, the fluctuations in revenue by reportable segment were attributable to the factors noted in the segment information above.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\nIncluded in the overall change in revenue for fiscal 2024 as compared to fiscal 2023 were impacts associated with foreign currency and our foreign currency hedging program. During fiscal 2024, the U.S. Dollar primarily strengthened against APAC foreign currencies and weakened against EMEA foreign currencies as compared to fiscal 2023, which resulted in a net decrease in revenue in U.S. Dollar equivalents of approximately $45 million. During fiscal 2024, we had net hedging losses from our cash flow hedging program of $20 million.",
+        "token_count": 1968,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "c1bafcdb-8ba5-59fa-966f-5f95771ff855",
+        "section": "Digital Experience",
+        "section_index": 131,
+        "chunk_index": 0,
+        "char_start": 774357,
+        "char_end": 777890,
+        "text": "## Digital Experience\n\nWe are a market leader in the fast-growing category addressed by our Digital Experience segment. The Adobe Experience Cloud apps and services are designed to manage customer journeys, enable personalized experiences at scale and deliver intelligence for businesses of any size in any industry. Our differentiation and competitive advantage are strengthened by our ability to use the Adobe Experience Platform to integrate our comprehensive set of solutions and our ability to embed AI into our product portfolio, such as with our new Adobe Experience Platform AI Assistant, a generative AI-powered conversational interface designed to help customers automate workflows and generate new audiences and journeys.\n\nAdobe Experience Cloud delivers solutions for our customers across the following strategic growth pillars:\n\n- Data insights and audiences. Our products deliver actionable data to our customers in real time to enable highly tailored and adaptive experiences across platforms through Adobe Analytics, Adobe Customer Journey Analytics, Adobe Product Analytics, Adobe Mix Modeler, and Adobe Real-time Customer Data Platform.\n- Content, commerce and workflows. Our products help our customers manage, deliver, personalize, and optimize content delivery through Adobe Experience Manager; build multi-channel commerce experiences for B2B and B2C customers with Adobe Commerce; strategically plan, manage, collaborate and execute on workflows for marketing campaigns and other projects at speed and scale with our enterprise work management App, Adobe Workfront; and leverage self-serve capabilities to deliver on-brand content powered by generative AI in Adobe GenStudio for Performance Marketing.\n- Customer journeys. Our products help businesses manage, test, target and personalize customer journeys delivered as campaigns across B2B and B2C use cases, including through Adobe Marketo Engage, Adobe Campaign, Adobe Target and Adobe Journey Optimizer.\n\nIn addition to chief marketing officers, chief revenue officers and digital marketers, users of our Digital Experience solutions include advertisers, campaign managers, publishers, data analysts, content managers, social marketers, marketing executives and information management and technology executives. These customers often are involved in workflows that integrate other Adobe products, such as our Digital Media offerings. By combining the creativity of our Digital Media business\n\nTable of Contents\n\nwith the science of our Digital Experience business, such as with our Adobe GenStudio solution, we help our customers to more efficiently and effectively make, manage, measure and monetize their content across every channel with an end-to-end workflow and feedback loop.\n\nWe utilize a direct sales force to market and license our Digital Experience solutions, as well as an extensive ecosystem of partners, including marketing agencies, systems integrators and independent software vendors that help license and deploy our solutions to their customers. We have made significant investments to broaden the scale and size of all of these routes to market, and our recent financial results reflect the success of these investments and our experience-led growth strategy.\n\nDigital Experience revenue was $5.37 billion in fiscal 2024, up from $4.89 billion in fiscal 2023, representing 10% year-over-year growth. Subscription revenue grew to $4.86 billion in fiscal 2024, up from $4.33 billion in fiscal 2023, representing 12% year-over-year growth.",
+        "token_count": 622,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "```json\n{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate gives fiscal 2024 Digital Media revenue of $15.86 billion, up 12% from fiscal 2023, matching the reference. The more precise figures ($15,864M and $14,216M) match the segment table in the retrieved excerpts. The 11.6% recomputed growth from rounded table values is arithmetically correct ((15,864-14,216)/14,216 \u2248 11.59%), and the candidate correctly notes the filing reports 12%. Minor deduction: the candidate's own recalculation introduces a slight tension with the reported 12% that is explained but could confuse. The cited accession and chunk are present in the retrieved excerpts (chunk 839ad4e2 is the Segments chunk containing the table), so citation support is strong, though the quoted sentence itself appears in a different chunk (7d86a2db/b52db0a2).\"}\n```",
+    "message": {
+      "role": "assistant",
+      "content": "```json\n{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate gives fiscal 2024 Digital Media revenue of $15.86 billion, up 12% from fiscal 2023, matching the reference. The more precise figures ($15,864M and $14,216M) match the segment table in the retrieved excerpts. The 11.6% recomputed growth from rounded table values is arithmetically correct ((15,864-14,216)/14,216 \u2248 11.59%), and the candidate correctly notes the filing reports 12%. Minor deduction: the candidate's own recalculation introduces a slight tension with the reported 12% that is explained but could confuse. The cited accession and chunk are present in the retrieved excerpts (chunk 839ad4e2 is the Segments chunk containing the table), so citation support is strong, though the quoted sentence itself appears in a different chunk (7d86a2db/b52db0a2).\"}\n```",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:57.340173+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "f4a858a817adf5e6e3e58bbd:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042254-yzxt8btEBWH6sawpGX5c",
+    "usage": {
+      "prompt_tokens": 27820,
+      "completion_tokens": 317,
+      "total_tokens": 28137,
+      "cost": 0.0029405,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029405,
+        "upstream_inference_prompt_cost": 0.002782,
+        "upstream_inference_completions_cost": 0.0001585
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.435177919000125,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 95,
+    "rationale": "The candidate gives fiscal 2024 Digital Media revenue of $15.86 billion, up 12% from fiscal 2023, matching the reference. The more precise figures ($15,864M and $14,216M) match the segment table in the retrieved excerpts. The 11.6% recomputed growth from rounded table values is arithmetically correct ((15,864-14,216)/14,216 \u2248 11.59%), and the candidate correctly notes the filing reports 12%. Minor deduction: the candidate's own recalculation introduces a slight tension with the reported 12% that is explained but could confuse. The cited accession and chunk are present in the retrieved excerpts (chunk 839ad4e2 is the Segments chunk containing the table), so citation support is strong, though the quoted sentence itself appears in a different chunk (7d86a2db/b52db0a2)."
+  },
+  "status": "ok"
+}

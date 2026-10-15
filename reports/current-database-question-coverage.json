@@ -1,0 +1,1239 @@
+{
+  "questions": 100,
+  "unique_question_ids": 100,
+  "required_accessions": [
+    "0000050863-25-000009",
+    "0000077476-25-000008",
+    "0000078003-25-000017",
+    "0000094845-25-000005",
+    "0000106640-25-000011",
+    "0000320187-25-000004",
+    "0000796343-25-000004",
+    "0000804328-25-000011",
+    "0000829224-25-000006",
+    "0000831001-25-000067",
+    "0000886982-25-000005",
+    "0000950170-25-010491",
+    "0000950170-25-011901",
+    "0000950170-25-029407",
+    "0001018724-25-000004",
+    "0001043277-25-000012",
+    "0001045810-25-000023",
+    "0001104659-25-001594",
+    "0001109357-25-000043",
+    "0001163165-25-000012",
+    "0001166691-25-000011",
+    "0001289419-25-000041",
+    "0001510295-25-000012",
+    "0001558370-25-001322",
+    "0001597033-25-000027",
+    "0001652044-25-000014",
+    "0001739566-25-000053"
+  ],
+  "databases": {
+    "lancedb:sfd_355dfd240a653fec": {
+      "path": "data/pipeline/sample-1000/lancedb",
+      "chunks": 43105,
+      "source_documents": 1000,
+      "unique_accessions": 993,
+      "forms": {
+        "D/A": 24,
+        "CFPORTAL/A": 1,
+        "8-K": 59,
+        "144": 56,
+        "3": 29,
+        "D": 41,
+        "4": 375,
+        "40-17G": 1,
+        "10-K/A": 2,
+        "6-K": 11,
+        "497K": 12,
+        "S-8 POS": 11,
+        "497": 10,
+        "FWP": 33,
+        "1-U": 4,
+        "NPORT-P": 31,
+        "13F-HR": 34,
+        "N-CSR": 5,
+        "424B2": 52,
+        "CERT": 2,
+        "10-Q": 4,
+        "25": 1,
+        "SCHEDULE 13G": 5,
+        "SCHEDULE 13D/A": 8,
+        "SCHEDULE 13G/A": 12,
+        "EFFECT": 12,
+        "10-D": 6,
+        "DEFA14A": 3,
+        "40-APP/A": 5,
+        "ARS": 1,
+        "POS AM": 10,
+        "DEL AM": 1,
+        "10-K": 3,
+        "N-PX": 1,
+        "25-NSE": 2,
+        "S-1": 3,
+        "497VPI": 7,
+        "485BXT": 3,
+        "UPLOAD": 4,
+        "485BPOS": 10,
+        "SCHEDULE 13D": 5,
+        "ABS-15G": 7,
+        "1-A": 1,
+        "DEF 14A": 2,
+        "ABS-EE": 5,
+        "13F-NT": 5,
+        "425": 3,
+        "8-K/A": 1,
+        "S-1/A": 1,
+        "PREM14A": 1,
+        "DEFM14A": 1,
+        "424B3": 5,
+        "497J": 8,
+        "1-A/A": 2,
+        "N-CEN": 2,
+        "SC 13E3": 1,
+        "SC TO-I/A": 4,
+        "N-MFP3": 4,
+        "N-CSRS": 3,
+        "POSASR": 2,
+        "424H": 1,
+        "485APOS": 1,
+        "C-U": 2,
+        "NPORT-P/A": 2,
+        "15-12G": 4,
+        "S-4/A": 1,
+        "POS EX": 1,
+        "13F-HR/A": 2,
+        "4/A": 4,
+        "424B5": 1,
+        "PRE 14A": 1,
+        "24F-2NT": 3,
+        "X-17A-5": 1,
+        "DRS/A": 1,
+        "5": 1,
+        "C": 1,
+        "S-6/A": 1,
+        "QUALIF": 1,
+        "N-2/A": 1,
+        "S-6": 1,
+        "CORRESP": 5,
+        "NT 10-Q": 1,
+        "8-A12B": 2,
+        "MA-A": 1,
+        "ABS-EE/A": 1,
+        "20-F": 1,
+        "S-8": 1
+      },
+      "benchmark_accessions_present": [],
+      "question_checks": [
+        {
+          "id": "Q001",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q002",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q003",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001018724-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q004",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001018724-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q005",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q006",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q007",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000050863-25-000009"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q008",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000050863-25-000009"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q009",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000796343-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q010",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000796343-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q011",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000094845-25-000005"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q012",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001166691-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q013",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000831001-25-000067"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q014",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000886982-25-000005"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q015",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001163165-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q016",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001510295-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q017",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000106640-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q018",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001289419-25-000041"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q019",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001043277-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q020",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000829224-25-000006"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q021",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q022",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001018724-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q023",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q024",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000050863-25-000009"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q025",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000796343-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q026",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000094845-25-000005"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q027",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001166691-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q028",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000831001-25-000067"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q029",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000886982-25-000005"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q030",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001163165-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q031",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001510295-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q032",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000106640-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q033",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001289419-25-000041"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q034",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001109357-25-000043"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q035",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001043277-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q036",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001739566-25-000053"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q037",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001597033-25-000027"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q038",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000950170-25-010491"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q039",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000320187-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q040",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000804328-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q041",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q042",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q043",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001018724-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q044",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001018724-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q045",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001018724-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q046",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q047",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q048",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q049",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q050",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000050863-25-000009"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q051",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000796343-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q052",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000796343-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q053",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000796343-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q054",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000094845-25-000005"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q055",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001166691-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q056",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001163165-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q057",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001510295-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q058",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000106640-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q059",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001289419-25-000041"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q060",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001109357-25-000043"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q061",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001043277-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q062",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001739566-25-000053"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q063",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001597033-25-000027"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q064",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000950170-25-010491"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q065",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000804328-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q066",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001045810-25-000023",
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q067",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001018724-25-000004",
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q068",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000050863-25-000009",
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q069",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001018724-25-000004",
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q070",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000831001-25-000067",
+            "0000886982-25-000005"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q071",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001163165-25-000012",
+            "0001510295-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q072",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000796343-25-000004",
+            "0001289419-25-000041"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q073",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000106640-25-000011",
+            "0001166691-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q074",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000796343-25-000004",
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q075",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001043277-25-000012",
+            "0001109357-25-000043"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q076",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000950170-25-011901",
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q077",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000950170-25-010491"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q078",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000804328-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q079",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001104659-25-001594"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q080",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000077476-25-000008"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q081",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000078003-25-000017"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q082",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000829224-25-000006"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q083",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000796343-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q084",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000050863-25-000009"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q085",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001166691-25-000011"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q086",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000831001-25-000067"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q087",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001558370-25-001322"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q088",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000950170-25-029407"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q089",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001739566-25-000053"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q090",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001597033-25-000027"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q091",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q092",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 2
+        },
+        {
+          "id": "Q093",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000050863-25-000009"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q094",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001043277-25-000012"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q095",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q096",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001045810-25-000023"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q097",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001652044-25-000014"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q098",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0001018724-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q099",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000050863-25-000009"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        },
+        {
+          "id": "Q100",
+          "required_sources_present": [],
+          "missing_sources": [
+            "0000796343-25-000004"
+          ],
+          "all_sources_present": false,
+          "exact_quotes_in_single_chunk": 0,
+          "evidence_quotes": 1
+        }
+      ]
+    },
+    "qdrant:sfd_355dfd240a653fec": {
+      "chunks": 43105,
+      "source_documents": 1000,
+      "unique_accessions": 993,
+      "forms": {
+        "424B2": 52,
+        "N-MFP3": 4,
+        "10-K": 3,
+        "424B3": 5,
+        "ABS-EE": 5,
+        "8-K": 59,
+        "485BPOS": 10,
+        "FWP": 33,
+        "SCHEDULE 13G": 5,
+        "ABS-15G": 7,
+        "13F-HR/A": 2,
+        "D": 41,
+        "424H": 1,
+        "25-NSE": 2,
+        "S-1/A": 1,
+        "4": 375,
+        "13F-HR": 34,
+        "SCHEDULE 13D": 5,
+        "N-2/A": 1,
+        "S-1": 3,
+        "10-D": 6,
+        "DEFM14A": 1,
+        "424B5": 1,
+        "1-A": 1,
+        "1-A/A": 2,
+        "N-PX": 1,
+        "20-F": 1,
+        "SCHEDULE 13G/A": 12,
+        "40-APP/A": 5,
+        "CORRESP": 5,
+        "NPORT-P": 31,
+        "N-CSR": 5,
+        "D/A": 24,
+        "S-4/A": 1,
+        "497": 10,
+        "144": 56,
+        "PREM14A": 1,
+        "497K": 12,
+        "3": 29,
+        "ARS": 1,
+        "C": 1,
+        "DRS/A": 1,
+        "SCHEDULE 13D/A": 8,
+        "10-Q": 4,
+        "POS EX": 1,
+        "6-K": 11,
+        "15-12G": 4,
+        "ABS-EE/A": 1,
+        "POS AM": 10,
+        "EFFECT": 12,
+        "NPORT-P/A": 2,
+        "10-K/A": 2,
+        "N-CEN": 2,
+        "DEF 14A": 2,
+        "DEFA14A": 3,
+        "4/A": 4,
+        "485BXT": 3,
+        "DEL AM": 1,
+        "X-17A-5": 1,
+        "497J": 8,
+        "PRE 14A": 1,
+        "485APOS": 1,
+        "8-K/A": 1,
+        "425": 3,
+        "N-CSRS": 3,
+        "QUALIF": 1,
+        "24F-2NT": 3,
+        "40-17G": 1,
+        "S-8": 1,
+        "497VPI": 7,
+        "S-6/A": 1,
+        "8-A12B": 2,
+        "SC 13E3": 1,
+        "S-8 POS": 11,
+        "CFPORTAL/A": 1,
+        "POSASR": 2,
+        "1-U": 4,
+        "13F-NT": 5,
+        "5": 1,
+        "MA-A": 1,
+        "UPLOAD": 4,
+        "C-U": 2,
+        "S-6": 1,
+        "SC TO-I/A": 4,
+        "CERT": 2,
+        "25": 1,
+        "NT 10-Q": 1
+      },
+      "benchmark_accessions_present": []
+    }
+  }
+}

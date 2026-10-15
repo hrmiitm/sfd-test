@@ -1,0 +1,117 @@
+{
+  "question_id": "Q004",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.04127643199990416,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "As disclosed on the cover page of Amazon.com, Inc.'s Form 10-K for the fiscal year ended December 31, 2024, the number of shares of common stock outstanding as of January 29, 2025 was:\n\n* **10,597,729,352 shares**\n\n*(Source: Accession `0001018724-25-000004`, Section: `Filing Summary`, Chunk ID: `f05c5750-f394-518a-9e8a-8b41aa7ac89e`)*",
+    "message": {
+      "role": "assistant",
+      "content": "As disclosed on the cover page of Amazon.com, Inc.'s Form 10-K for the fiscal year ended December 31, 2024, the number of shares of common stock outstanding as of January 29, 2025 was:\n\n* **10,597,729,352 shares**\n\n*(Source: Accession `0001018724-25-000004`, Section: `Filing Summary`, Chunk ID: `f05c5750-f394-518a-9e8a-8b41aa7ac89e`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a19NYnU4aYwIZcODY2lXX/G4JXpzl52P7rAvv2AnuQqUwM7KiW60v7CeVZFS/Gipdtkf8Yd4kkcslkCpH0S8Xw95/zsdFCALQfeEbPOnsKB5hXSr",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:03.693564+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "a2f4eb37be670d6af2b463eb:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041841-spyT6BC33VOzyK7bqrCB",
+    "usage": {
+      "prompt_tokens": 13416,
+      "completion_tokens": 152,
+      "total_tokens": 13568,
+      "cost": 0.010632,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010632,
+        "upstream_inference_prompt_cost": 0.010062,
+        "upstream_inference_completions_cost": 0.00057
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.479441301999941,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 62, \"rationale\": \"The candidate's numeric answer, 10,597,729,352 shares as of January 29, 2025, matches the reference and the gold cover-page quote exactly. The figure is correct and the units are right. The citation is partially supported: accession 0001018724-25-000004 and the cover-page content appear in the retrieved Filing Summary excerpt, which contains the cover-page table with that number. However, the candidate labels the section as 'Filing Summary' with chunk ID f05c5750..., which matches that retrieved chunk, so the citation is real. The deduction reflects that the cited section label is a generic header rather than the specific 'Cover Page' section, and the excerpt is the retrieved chunk rather than a dedicated cover-page section, so support is good but not perfect.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 62, \"rationale\": \"The candidate's numeric answer, 10,597,729,352 shares as of January 29, 2025, matches the reference and the gold cover-page quote exactly. The figure is correct and the units are right. The citation is partially supported: accession 0001018724-25-000004 and the cover-page content appear in the retrieved Filing Summary excerpt, which contains the cover-page table with that number. However, the candidate labels the section as 'Filing Summary' with chunk ID f05c5750..., which matches that retrieved chunk, so the citation is real. The deduction reflects that the cited section label is a generic header rather than the specific 'Cover Page' section, and the excerpt is the retrieved chunk rather than a dedicated cover-page section, so support is good but not perfect.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:46.191847+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "a2f4eb37be670d6af2b463eb:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042063-skqkWAPEBbsVNOQMT3jT",
+    "usage": {
+      "prompt_tokens": 18598,
+      "completion_tokens": 276,
+      "total_tokens": 18874,
+      "cost": 0.0019978,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019978,
+        "upstream_inference_prompt_cost": 0.0018598,
+        "upstream_inference_completions_cost": 0.000138
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.3522804690001067,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 62,
+    "rationale": "The candidate's numeric answer, 10,597,729,352 shares as of January 29, 2025, matches the reference and the gold cover-page quote exactly. The figure is correct and the units are right. The citation is partially supported: accession 0001018724-25-000004 and the cover-page content appear in the retrieved Filing Summary excerpt, which contains the cover-page table with that number. However, the candidate labels the section as 'Filing Summary' with chunk ID f05c5750..., which matches that retrieved chunk, so the citation is real. The deduction reflects that the cited section label is a generic header rather than the specific 'Cover Page' section, and the excerpt is the retrieved chunk rather than a dedicated cover-page section, so support is good but not perfect."
+  },
+  "status": "ok"
+}

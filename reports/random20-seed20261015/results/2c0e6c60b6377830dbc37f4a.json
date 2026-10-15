@@ -1,0 +1,108 @@
+{
+  "question_id": "Q079",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/bm25",
+  "retrieval": {
+    "seconds": 0.009224458000062441,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "The two tranches were:\n\n- **5.875% senior notes due November 7, 2029:** $1.25 billion principal.\n- **6.500% senior notes due February 7, 2035:** $1.25 billion principal.\n\n**Combined principal:** $1.25 billion + $1.25 billion = **$2.50 billion**.\n\n*Source: accession 0001104659-25-001594, \u201cItem 8.01. Other Events,\u201d chunk 0 (ID 774b96ac-63fc-5a4d-b3bd-fa2381fe6581).*",
+    "message": {
+      "role": "assistant",
+      "content": "The two tranches were:\n\n- **5.875% senior notes due November 7, 2029:** $1.25 billion principal.\n- **6.500% senior notes due February 7, 2035:** $1.25 billion principal.\n\n**Combined principal:** $1.25 billion + $1.25 billion = **$2.50 billion**.\n\n*Source: accession 0001104659-25-001594, \u201cItem 8.01. Other Events,\u201d chunk 0 (ID 774b96ac-63fc-5a4d-b3bd-fa2381fe6581).*",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:38.209219+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "2c0e6c60b6377830dbc37f4a:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041994-b0E4Y5Iaqp7ryJQhJZw3",
+    "usage": {
+      "prompt_tokens": 15042,
+      "completion_tokens": 135,
+      "total_tokens": 15177,
+      "cost": 0.001947675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 15039,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001947675,
+        "upstream_inference_prompt_cost": 0.001880175,
+        "upstream_inference_completions_cost": 6.75e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.006128398000328,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 95, \"citation_support\": 96, \"rationale\": \"The candidate correctly identifies both tranches: 5.875% notes due November 7, 2029 at $1.25 billion and 6.500% notes due February 7, 2035 at $1.25 billion, with combined principal of $2.50 billion, matching the reference. The cited accession and Item 8.01 section match the retrieved 8-K excerpt, which directly supports all figures. Minor deduction only because the answer omits the issue date (January 7, 2025) and the exact dollar figures in full form, though these are not required by the question.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 95, \"citation_support\": 96, \"rationale\": \"The candidate correctly identifies both tranches: 5.875% notes due November 7, 2029 at $1.25 billion and 6.500% notes due February 7, 2035 at $1.25 billion, with combined principal of $2.50 billion, matching the reference. The cited accession and Item 8.01 section match the retrieved 8-K excerpt, which directly supports all figures. Minor deduction only because the answer omits the issue date (January 7, 2025) and the exact dollar figures in full form, though these are not required by the question.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:05.779170+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "2c0e6c60b6377830dbc37f4a:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042203-PrZKvwnvBVo0fOwE4y2c",
+    "usage": {
+      "prompt_tokens": 23185,
+      "completion_tokens": 198,
+      "total_tokens": 23383,
+      "cost": 0.0024175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0024175,
+        "upstream_inference_prompt_cost": 0.0023185,
+        "upstream_inference_completions_cost": 9.9e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.3570688250001695,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 95,
+    "citation_support": 96,
+    "rationale": "The candidate correctly identifies both tranches: 5.875% notes due November 7, 2029 at $1.25 billion and 6.500% notes due February 7, 2035 at $1.25 billion, with combined principal of $2.50 billion, matching the reference. The cited accession and Item 8.01 section match the retrieved 8-K excerpt, which directly supports all figures. Minor deduction only because the answer omits the issue date (January 7, 2025) and the exact dollar figures in full form, though these are not required by the question."
+  },
+  "status": "ok"
+}

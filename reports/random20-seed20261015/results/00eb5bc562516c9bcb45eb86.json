@@ -1,0 +1,108 @@
+{
+  "question_id": "Q008",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.05265449099988473,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Intel\u2019s independent registered public accounting firm is **Ernst & Young LLP**. It has served as Intel\u2019s auditor since **1968**. [Accession 0000050863-25-000009, Filing Summary, chunk 35]",
+    "message": {
+      "role": "assistant",
+      "content": "Intel\u2019s independent registered public accounting firm is **Ernst & Young LLP**. It has served as Intel\u2019s auditor since **1968**. [Accession 0000050863-25-000009, Filing Summary, chunk 35]",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:50.592519+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "00eb5bc562516c9bcb45eb86:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041889-isj13GeTwKu9nXbJrycQ",
+    "usage": {
+      "prompt_tokens": 11564,
+      "completion_tokens": 54,
+      "total_tokens": 11618,
+      "cost": 0.00014291,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 11561,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00014291,
+        "upstream_inference_prompt_cost": 0.00011591,
+        "upstream_inference_completions_cost": 2.7e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.180623247000767,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year service began, matching the reference and gold evidence ('We have served as the Company's auditor since 1968.'). The retrieved Filing Summary chunk 35 contains this exact sentence, so the citation is supported. Minor deduction: the citation is given as a 'Filing Summary, chunk 35' label rather than the Item 8 section name, and the answer omits the bolded formatting is irrelevant. Otherwise fully correct.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year service began, matching the reference and gold evidence ('We have served as the Company's auditor since 1968.'). The retrieved Filing Summary chunk 35 contains this exact sentence, so the citation is supported. Minor deduction: the citation is given as a 'Filing Summary, chunk 35' label rather than the Item 8 section name, and the answer omits the bolded formatting is irrelevant. Otherwise fully correct.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:08.634693+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "00eb5bc562516c9bcb45eb86:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042086-vnkyjqln8dKM9tjHsXVa",
+    "usage": {
+      "prompt_tokens": 19038,
+      "completion_tokens": 203,
+      "total_tokens": 19241,
+      "cost": 0.0020053,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0020053,
+        "upstream_inference_prompt_cost": 0.0019038,
+        "upstream_inference_completions_cost": 0.0001015
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.7668866610001714,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year service began, matching the reference and gold evidence ('We have served as the Company's auditor since 1968.'). The retrieved Filing Summary chunk 35 contains this exact sentence, so the citation is supported. Minor deduction: the citation is given as a 'Filing Summary, chunk 35' label rather than the Item 8 section name, and the answer omits the bolded formatting is irrelevant. Otherwise fully correct."
+  },
+  "status": "ok"
+}

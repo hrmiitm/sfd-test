@@ -1,0 +1,126 @@
+{
+  "question_id": "Q051",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/bm25",
+  "retrieval": {
+    "seconds": 0.006296839000242471,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Based on the provided excerpts, the **Consolidated Statements of Income** for Adobe Inc. are not included in the supplied text. \n\nHowever, from Note 2 (*Revenue - Segment Information*) in Adobe Inc.'s Notes to Consolidated Financial Statements:\n\n### **Fiscal Year 2024 Figures:**\n* **Total Revenue:** $21,505 million\n* **Total Cost of revenue:** $2,358 million\n* **Total Gross profit:** $19,147 million\n\n### **Calculation:**\n$$\\text{Gross Profit Margin Percentage} = \\frac{\\text{Gross Profit}}{\\text{Revenue}} = \\frac{\\$19,147}{\\$21,505} \\approx 89.035\\% \\text{ (or } 89\\% \\text{ as reported)}$$\n\n* **Reported Gross Profit Margin:** **89%**\n\n*(Source: Adobe Inc., Form 10-K filed January 13, 2025, accession number `0000796343-25-000004`, Section: \"ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA\", Chunk ID: `b8fa3362-a910-51b7-aebe-a44fa81085a4`)*",
+    "message": {
+      "role": "assistant",
+      "content": "Based on the provided excerpts, the **Consolidated Statements of Income** for Adobe Inc. are not included in the supplied text. \n\nHowever, from Note 2 (*Revenue - Segment Information*) in Adobe Inc.'s Notes to Consolidated Financial Statements:\n\n### **Fiscal Year 2024 Figures:**\n* **Total Revenue:** $21,505 million\n* **Total Cost of revenue:** $2,358 million\n* **Total Gross profit:** $19,147 million\n\n### **Calculation:**\n$$\\text{Gross Profit Margin Percentage} = \\frac{\\text{Gross Profit}}{\\text{Revenue}} = \\frac{\\$19,147}{\\$21,505} \\approx 89.035\\% \\text{ (or } 89\\% \\text{ as reported)}$$\n\n* **Reported Gross Profit Margin:** **89%**\n\n*(Source: Adobe Inc., Form 10-K filed January 13, 2025, accession number `0000796343-25-000004`, Section: \"ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA\", Chunk ID: `b8fa3362-a910-51b7-aebe-a44fa81085a4`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1+hUm64BiMbLs+gYjKp264n3GaFuEV/rQ2PsS0ZwW3zbqjbzfJ1cS3txqZHn5qkz38lYv9xLh6CmU1njJifYGWYUVsERF9ZLdWgWcDmuij0/iV/",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:29.171243+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "f415014b5ed10bf165341dcf:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041925-2Y9do6gz8pGXUd5I6s7j",
+    "usage": {
+      "prompt_tokens": 14579,
+      "completion_tokens": 296,
+      "total_tokens": 14875,
+      "cost": 0.01204425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01204425,
+        "upstream_inference_prompt_cost": 0.01093425,
+        "upstream_inference_completions_cost": 0.00111
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.991526498999519,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 82, \"citation_support\": 88, \"rationale\": \"The candidate computes 19,147 / 21,505 \u2248 89.035%, which matches the reference's 89.04% to the precision shown, and it correctly uses the revenue and gross profit figures. It also reports the company's rounded 89%. It loses some credit for not stating the two-decimal figure the reference gives. Its statement that the Consolidated Statements of Income were not in the excerpts is accurate, and it sources the figures from Note 2's segment table, which is in the retrieved chunk. The accession number and Item 8 section are correct. The cited chunk does not contain the Statements of Income line itself, so the citation supports the inputs but not the exact gold-evidence line, which is why the support score is not higher.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 82, \"citation_support\": 88, \"rationale\": \"The candidate computes 19,147 / 21,505 \u2248 89.035%, which matches the reference's 89.04% to the precision shown, and it correctly uses the revenue and gross profit figures. It also reports the company's rounded 89%. It loses some credit for not stating the two-decimal figure the reference gives. Its statement that the Consolidated Statements of Income were not in the excerpts is accurate, and it sources the figures from Note 2's segment table, which is in the retrieved chunk. The accession number and Item 8 section are correct. The cited chunk does not contain the Statements of Income line itself, so the citation supports the inputs but not the exact gold-evidence line, which is why the support score is not higher.\"}",
+      "refusal": null,
+      "reasoning": "Checking: 19147/21505 = 0.89035, so 89.04% rounded to two decimals, matching the 89% reported. The candidate's answer is essentially correct, just lacking that extra decimal precision.\n\nThe citation points to the correct chunk, accession, and section (Note 2), and honestly notes the income statement isn't in the excerpts. Citation support looks solid \u2014 I'd rate correctness around 80 and citation support around 85.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking: 19147/21505 = 0.89035, so 89.04% rounded to two decimals, matching the 89% reported. The candidate's answer is essentially correct, just lacking that extra decimal precision.\n\nThe citation points to the correct chunk, accession, and section (Note 2), and honestly notes the income statement isn't in the excerpts. Citation support looks solid \u2014 I'd rate correctness around 80 and citation support around 85.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:56.353543+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "f415014b5ed10bf165341dcf:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042130-eq49Pv5x8AqSZ8n8uf0H",
+    "usage": {
+      "prompt_tokens": 20938,
+      "completion_tokens": 610,
+      "total_tokens": 21548,
+      "cost": 0.0023988,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0023988,
+        "upstream_inference_prompt_cost": 0.0020938,
+        "upstream_inference_completions_cost": 0.000305
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 351,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.958314995999899,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 82,
+    "citation_support": 88,
+    "rationale": "The candidate computes 19,147 / 21,505 \u2248 89.035%, which matches the reference's 89.04% to the precision shown, and it correctly uses the revenue and gross profit figures. It also reports the company's rounded 89%. It loses some credit for not stating the two-decimal figure the reference gives. Its statement that the Consolidated Statements of Income were not in the excerpts is accurate, and it sources the figures from Note 2's segment table, which is in the retrieved chunk. The accession number and Item 8 section are correct. The cited chunk does not contain the Statements of Income line itself, so the citation supports the inputs but not the exact gold-evidence line, which is why the support score is not higher."
+  },
+  "status": "ok"
+}

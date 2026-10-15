@@ -1,0 +1,126 @@
+{
+  "question_id": "Q084",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.025700459999825398,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Based on Intel Corporation's 2024 Form 10-K, the details regarding the decline in Intel Foundry's external revenue are as follows:\n\n### 1. Percentage Decline\n* **Directly reported decline:** Intel Foundry external revenue decreased **60%** from 2023 to 2024 (Accession: 0000050863-25-000009, Section: *MD&A - Overview - A Year in Review*, Chunk ID: `d3c83be6-139e-5d68-8f94-47134294ebb5` and *Consolidated Results of Operations*, Chunk ID: `e165c6f6-d3cc-50f7-ba46-2514cc990b6e`).\n* **Dollar values and calculated percentage:**\n  * **2023 External Revenue:** $953 million\n  * **2024 External Revenue:** $385 million\n  * **Decrease:** $568 million (down from $953 million)\n  * **Calculation:** \n    $$\\frac{385 - 953}{953} = \\frac{-568}{953} \\approx -59.60\\%$$ \n    (Rounds to **60%**)\n  *(Accession: 0000050863-25-000009, Section: *MD&A - Intel Foundry Financial Performance*, Chunk ID: `00cec489-cca7-51ce-a50a-2814f0bd9f87` and *Note 3: Operating Segments*, Chunk ID: `50bd9940-dd58-5593-8ec7-c57ac3dea915`)*\n\n---\n\n### 2. Factors Causing the Decline\nAccording to the filing, the decrease was driven primarily by:\n* **Lower traditional packaging services**\n* **Lower equipment sales**\n\n*(Accession: 0000050863-25-000009, Section: *MD&A - Intel Foundry Financial Performance - 2024 vs. 2023*, Chunk ID: `00cec489-cca7-51ce-a50a-2814f0bd9f87`; and *A Year in Review*, Chunk ID: `d3c83be6-139e-5d68-8f94-47134294ebb5`)*",
+    "message": {
+      "role": "assistant",
+      "content": "Based on Intel Corporation's 2024 Form 10-K, the details regarding the decline in Intel Foundry's external revenue are as follows:\n\n### 1. Percentage Decline\n* **Directly reported decline:** Intel Foundry external revenue decreased **60%** from 2023 to 2024 (Accession: 0000050863-25-000009, Section: *MD&A - Overview - A Year in Review*, Chunk ID: `d3c83be6-139e-5d68-8f94-47134294ebb5` and *Consolidated Results of Operations*, Chunk ID: `e165c6f6-d3cc-50f7-ba46-2514cc990b6e`).\n* **Dollar values and calculated percentage:**\n  * **2023 External Revenue:** $953 million\n  * **2024 External Revenue:** $385 million\n  * **Decrease:** $568 million (down from $953 million)\n  * **Calculation:** \n    $$\\frac{385 - 953}{953} = \\frac{-568}{953} \\approx -59.60\\%$$ \n    (Rounds to **60%**)\n  *(Accession: 0000050863-25-000009, Section: *MD&A - Intel Foundry Financial Performance*, Chunk ID: `00cec489-cca7-51ce-a50a-2814f0bd9f87` and *Note 3: Operating Segments*, Chunk ID: `50bd9940-dd58-5593-8ec7-c57ac3dea915`)*\n\n---\n\n### 2. Factors Causing the Decline\nAccording to the filing, the decrease was driven primarily by:\n* **Lower traditional packaging services**\n* **Lower equipment sales**\n\n*(Accession: 0000050863-25-000009, Section: *MD&A - Intel Foundry Financial Performance - 2024 vs. 2023*, Chunk ID: `00cec489-cca7-51ce-a50a-2814f0bd9f87`; and *A Year in Review*, Chunk ID: `d3c83be6-139e-5d68-8f94-47134294ebb5`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "EmkKZwFpFH0TjwAGX6TwCyu42aeR8KZEoM11vhcyvO4qjdq4eOBht0lp4CLQwlZpuxRfKwKQmQ/Hv8COiBUBXRuTJnAi1G6MYETvBBntrxIzkFry9Os3E6w9LGPH8meTjcJgAuM230k6SAI=",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:21.736543+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "02c602a1dce0662f2d814d33:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792042006-SDPkk1Ml7IZpXp9suNyF",
+    "usage": {
+      "prompt_tokens": 20385,
+      "completion_tokens": 609,
+      "total_tokens": 20994,
+      "cost": 0.0175725,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0175725,
+        "upstream_inference_prompt_cost": 0.01528875,
+        "upstream_inference_completions_cost": 0.00228375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 37.4708415490004,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 92, \"rationale\": \"The candidate matches the reference: Intel Foundry external revenue fell 60% from 2023, driven by lower traditional packaging services and lower equipment sales. Its supporting figures are also correct and supported by the excerpts: $953M (2023) and $385M (2024), a $568M decrease, and a computed change of about -59.6%, which rounds to 60%. The cited chunk IDs (d3c83be6, e165c6f6, 00cec489, 50bd9940) all appear in the retrieved excerpts and contain the cited content. Minor deductions: the section labels are somewhat generic relative to the excerpt headers, and the answer adds detail beyond the reference, though that detail is accurate.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 92, \"rationale\": \"The candidate matches the reference: Intel Foundry external revenue fell 60% from 2023, driven by lower traditional packaging services and lower equipment sales. Its supporting figures are also correct and supported by the excerpts: $953M (2023) and $385M (2024), a $568M decrease, and a computed change of about -59.6%, which rounds to 60%. The cited chunk IDs (d3c83be6, e165c6f6, 00cec489, 50bd9940) all appear in the retrieved excerpts and contain the cited content. Minor deductions: the section labels are somewhat generic relative to the excerpt headers, and the answer adds detail beyond the reference, though that detail is accurate.\"}",
+      "refusal": null,
+      "reasoning": "The reference states a 60% decrease driven by lower packaging services and equipment sales, and the candidate's computed figure of 59.60% matches this along with the correct factors. I'm checking that the candidate's cited chunk IDs actually correspond to the relevant excerpts, verifying each one against the source material.\n\nThe dollar figures ($953M, $385M) and the calculation itself all check out, so correctness lands around 95%. The main nitpick is the candidate labeling everything under \"Filing Summary\" when some content is really from \"Note 3,\" but since the chunk content still supports the claims, citation support is solid at roughly 90%.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The reference states a 60% decrease driven by lower packaging services and equipment sales, and the candidate's computed figure of 59.60% matches this along with the correct factors. I'm checking that the candidate's cited chunk IDs actually correspond to the relevant excerpts, verifying each one against the source material.\n\nThe dollar figures ($953M, $385M) and the calculation itself all check out, so correctness lands around 95%. The main nitpick is the candidate labeling everything under \"Filing Summary\" when some content is really from \"Note 3,\" but since the chunk content still supports the claims, citation support is solid at roughly 90%.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS4gwKEAgSGAI4AUIIdGhpbmtpbmcSDKs5xehWI1Ja6pEznRoMB+Tzr5P7HuOKDl04IjADu+Ag8m25xEcf+pMQ7VkZF9hQNnVZpk4ACSo6WaiAu8LAXPr5nAns7JkFD9hPAIsq/wsVliu0RtFN1K6XSekyLCEyc2xxrMPGs1rGWtHmBjIDWSN4vIzSFOhJT2Q1na31aZsfBKtAmWFxfuK2eSw+M0XiPF+GVX0aBvSLSIJuetBoAOeF11Gdaz8wLeXMoZQ0Ko5HwDOHHDRTWiHZnckU4s5XPKrEzzEmnAwEm5a1jY3Z4AZtQSVk91YMLGNjxUCiHFh63ONFgUzVMbeZTabZjl1rAkTP3+Rm6CRl6ALtZBria2bSPc0BLO8DOVFUr5IUEpnuq1L8tyTZyvfQvzUqdYWQ1Cc7V7ixLroukO60a+3Lm4ogH5/oJiLVZeyr6x/cvWtGcg0o19bk0X/PnP2ZKPmZk+N0R8W3V9KygOMuiG3nRpww6gTFNXm3ZF2Gmt+cqPYNPPkLJUipwdlmR9fcaE+Nj2zNpfrtXKmqZg0RovuyhM9lfgruKV4gQ5Al3lFw0wVlOzj+0ueHyjGsLqW/Ulr/nofayfRn23l4NGMy6femeHrHM6oB51YqHWcGBNVAe9+ymoCFDKIeRFseOgy4AxNpnXwssqeUWbWPM/uOATlp/hIc/ILmXu5Kq9oercQNDdbsATb2G6sLm4NymGtYaLKBd4FYzmkpB+YzgLfLQuNl5ilMZSnwetV+98Jt4FGqC6ZvSax8eQmOv+MHJW2S+FfThMFxT4VRZzXsHQZb+mUYntCDYmY7H9n2MoG/Tvwjt6D7VwIUCtYv5V/XD1BIP/EG0nENAK9dQR+xKoXuUZXLTy6fyx3mVKV3Yz1Rxi1IDqyS2WGBgUSv4qIlCvCIfF1zz531bHj3gvOFRlSno/c5jD4oCtCLrdik2wGtNlUO5DFckntpVrwQhkfvpjBHblM8cqBprrXFeOroatCiNW0mC9HseUF11mxBMx6fcEmHMm/RqfFtl/CUzTx8QM68zesk3oyGipYk7CmHcufXRBgzpWnx89Y57kpCLYQofQ9YjvRPxjllQf6V6kGrOeV1sHwQXWx+dRxkv7uYPCeQRxCr9K441rPU0GDveO48LGlB3X1jnVD3MtRoU5OGaQ4FAunGJ2LL/AYiVBgxRwKST3E2weoP+NbhRw9SKXaewN1LAN4zp1DucovT6OHWVcY+RWWihcmPNlzQnN3OLtzskddbWV+H2NOslNPybIlyWYpKKolo+1PSxQZCfdBhDUYvz4EI8088Cv7U7sBS21uArNkk/DrvPP241NTPB5lJ4ThMQL9HjWLjWq8cVbKh5Cn7b5LXO83Ev/vYgC5f7ERCeyz8azeYomEa+PWAjUWbx6uBqiBTRgjXt7hFMFCXeJAxetcaY/6AQ2eNnECsBUhGEA1cFLHPVKxJB2Q5SK+IWiQ7jycKtVnCxEnI4HTmnL03GU1Ymn4A5A0zxgYzBvCEdFNqP9CQoly1SIBwuX0jo6dZxEpY7WS8hkIHyACFkebgI35Hol08FPbnF1FJW2IiFnGrdtOye1tJ+at1Fq/oaPUT6Q7pZOuOEUxaI+RaK6Z1Szd+nHMYeesU3OObL6o4JIvM5OcOyAqKu6LQhH16ICNwpCEigZCo8G3Y21qXZE1x6sijguM2K9xmJi0rpwnh3VyCFrD7jP/UwCwxu8re0UnSRnobp1Z/KFEl3fXsq2NwYzClkTG5xCm/HeFxQ1xm7K5XmZiYFu7/aI5uZSN2AolZky09r/3K2rqPusHUBOmEefa/h71Qk6ddESgZNplKVZj0WT/tRpePTfcsESxb5UHE1IAMeFLGzyKb2FOLsbD/J4gPAHyX+ODVTxn98TKD4gOmgvZjpJZYCoq0H5E9G1iy3tnTHwsJ9KGVooUo4ZCNB7cNkNlbFhhpZjMyeq3yX9AKZkRZSWPSQuvCKhdFSft6jZOokd1VKMEALIgFVLl1N7QRc9aZd9g/l89TzewfoxXDEHUufn9ngFD11GsdwKyCbAuIM8M0x9gg2ZaJKDgej6Nt4ciUw70I+SEjaCq987XuWQJIW8v02wM2sLaTtTvgz8BUbW9bBbjXNefG+R7WpkntwleWQFof43pTvV202dT4/MuswVdkVwxOhWt4Av5PaxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:37.659946+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "02c602a1dce0662f2d814d33:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042232-ML2VvbpQ393wjmhYthLf",
+    "usage": {
+      "prompt_tokens": 29513,
+      "completion_tokens": 651,
+      "total_tokens": 30164,
+      "cost": 0.0032768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032768,
+        "upstream_inference_prompt_cost": 0.0029513,
+        "upstream_inference_completions_cost": 0.0003255
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 395,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 7.850602450000224,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 92,
+    "rationale": "The candidate matches the reference: Intel Foundry external revenue fell 60% from 2023, driven by lower traditional packaging services and lower equipment sales. Its supporting figures are also correct and supported by the excerpts: $953M (2023) and $385M (2024), a $568M decrease, and a computed change of about -59.6%, which rounds to 60%. The cited chunk IDs (d3c83be6, e165c6f6, 00cec489, 50bd9940) all appear in the retrieved excerpts and contain the cited content. Minor deductions: the section labels are somewhat generic relative to the excerpt headers, and the answer adds detail beyond the reference, though that detail is accurate."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,491 @@
+{
+  "question_id": "Q051",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 0.022093253000093682,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to Adobe Inc.'s **Consolidated Statements of Income** in its Form 10-K for the fiscal year ended November 29, 2024 (Accession: `0000796343-25-000004`, Chunk ID: `c8e23789-3e5b-5998-a527-7bb13e5d5a92` / `8b7160c4-9fa0-583d-ad4b-873bc7dca43f`):\n\n### **Financial Data for Fiscal Year 2024** (in millions):\n- **Total revenue:** $\\$21,505$\n- **Total cost of revenue:** $\\$2,358$\n- **Gross profit:** $\\$19,147$\n\n---\n\n### **Calculation:**\n$$\\text{Gross Profit Margin} = \\frac{\\text{Gross Profit}}{\\text{Total Revenue}} = \\frac{\\$19,147}{\\$21,505} \\approx 0.890351 \\text{ or } 89.04\\%$$\n\n*(Rounded to the nearest whole percentage as reported in Note 2, Segment Information, this is **89%**).*",
+    "usage": {
+      "prompt_tokens": 10187,
+      "completion_tokens": 325,
+      "total_tokens": 10512,
+      "cost": 0.008859
+    },
+    "seconds": 5.619604494000669,
+    "tool_seconds": 0.022093253000093682,
+    "tool_calls": 1,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_25240",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Adobe Consolidated Statements of Income gross profit 2024 revenue\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a19l4FapXYz7NQeWmDpAIKeuRwlinYdwe82EJ0AxA6/gPAJWNQb76SJQlSIpo+t3Sxd40qIDfhBDcoP8u4grLHXv9bqKZVAHFRn/BufR7kBFZUws",
+              "format": "google-gemini-v1",
+              "id": "call_25240",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_25240",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Adobe Consolidated Statements of Income gross profit 2024 revenue\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:25:26.056741+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "27169985ee0e735a08e043e9:agent:0",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792041924-x1f81JJUzwmoNgwYpkgO",
+        "usage": {
+          "prompt_tokens": 905,
+          "completion_tokens": 28,
+          "total_tokens": 933,
+          "cost": 0.00078375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00078375,
+            "upstream_inference_prompt_cost": 0.00067875,
+            "upstream_inference_completions_cost": 0.000105
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.2616233050002847,
+        "attempts": 1
+      },
+      {
+        "text": "According to Adobe Inc.'s **Consolidated Statements of Income** in its Form 10-K for the fiscal year ended November 29, 2024 (Accession: `0000796343-25-000004`, Chunk ID: `c8e23789-3e5b-5998-a527-7bb13e5d5a92` / `8b7160c4-9fa0-583d-ad4b-873bc7dca43f`):\n\n### **Financial Data for Fiscal Year 2024** (in millions):\n- **Total revenue:** $\\$21,505$\n- **Total cost of revenue:** $\\$2,358$\n- **Gross profit:** $\\$19,147$\n\n---\n\n### **Calculation:**\n$$\\text{Gross Profit Margin} = \\frac{\\text{Gross Profit}}{\\text{Total Revenue}} = \\frac{\\$19,147}{\\$21,505} \\approx 0.890351 \\text{ or } 89.04\\%$$\n\n*(Rounded to the nearest whole percentage as reported in Note 2, Segment Information, this is **89%**).*",
+        "message": {
+          "role": "assistant",
+          "content": "According to Adobe Inc.'s **Consolidated Statements of Income** in its Form 10-K for the fiscal year ended November 29, 2024 (Accession: `0000796343-25-000004`, Chunk ID: `c8e23789-3e5b-5998-a527-7bb13e5d5a92` / `8b7160c4-9fa0-583d-ad4b-873bc7dca43f`):\n\n### **Financial Data for Fiscal Year 2024** (in millions):\n- **Total revenue:** $\\$21,505$\n- **Total cost of revenue:** $\\$2,358$\n- **Gross profit:** $\\$19,147$\n\n---\n\n### **Calculation:**\n$$\\text{Gross Profit Margin} = \\frac{\\text{Gross Profit}}{\\text{Total Revenue}} = \\frac{\\$19,147}{\\$21,505} \\approx 0.890351 \\text{ or } 89.04\\%$$\n\n*(Rounded to the nearest whole percentage as reported in Note 2, Segment Information, this is **89%**).*",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a19XN3vxmDaftTJl8HN5nSru+xjufk9cDMH3kf0bUOZ4jCESrL1/M7ciF8ViweOXFRxxrfRJpmSkc9VJb7QgqSIoM7H5++EZs22C1P/gioz+Wi4P",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:28:49.391545+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "27169985ee0e735a08e043e9:agent:1",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042126-SnvatfZ6lS7DKoKpXCJu",
+        "usage": {
+          "prompt_tokens": 9282,
+          "completion_tokens": 297,
+          "total_tokens": 9579,
+          "cost": 0.00807525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00807525,
+            "upstream_inference_prompt_cost": 0.0069615,
+            "upstream_inference_completions_cost": 0.00111375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.357981189000384,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_25240",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Adobe Consolidated Statements of Income gross profit 2024 revenue\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "b8fa3362-a910-51b7-aebe-a44fa81085a4",
+              "section": "ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA",
+              "section_index": 12,
+              "chunk_index": 6,
+              "char_start": 291763,
+              "char_end": 300663,
+              "text": "Gains and losses related to changes in the fair value of foreign exchange forward contracts which hedge certain balance sheet positions are recorded each period as a component of other income (expense), net in our Consolidated Statements of Income. Foreign exchange forward contracts and option contracts hedging forecasted foreign currency revenue and expenses and Treasury lock agreements are designated as cash flow hedges with gains and losses recorded net of tax as a component of accumulated other comprehensive income (loss) in our Consolidated Balance Sheets until the forecasted transaction occurs. When the forecasted transaction affects earnings, we reclassify the related gain or loss on the foreign currency revenue, foreign currency expense or Treasury lock cash flow hedge to revenue, operating expense or interest expense, as applicable.\n\n*Concentration of Risk*\n\nFinancial instruments that potentially subject us to concentrations of credit risk are short-term fixed-income investments, structured repurchase transactions, foreign currency and interest rate hedge contracts and trade receivables.\n\nOur investment portfolio consists of investment-grade securities diversified among security types, industries and issuers. Our cash and investments are held and primarily managed by recognized financial institutions that follow our investment policy. Our policy limits the amount of credit exposure to any one security issue or issuer and we believe no significant concentration of credit risk exists with respect to these investments.\n\nWe enter into master netting arrangements to mitigate credit risk in derivative transactions by permitting net settlement of transactions with the same counterparty. We also enter into collateral security agreements with certain of our counterparties to exchange cash collateral when the net fair value of certain derivative instruments fluctuates from contractually established thresholds.\n\nCredit risk in receivables is limited to OEMs, dealers and distributors of hardware and software products to the retail market, customers to whom we license software directly and our SaaS offerings. A credit review is completed for our new distributors, dealers and OEMs. We also perform ongoing credit evaluations of our customers' financial condition and require letters of credit or other guarantees, whenever deemed necessary. The credit limit given to the customer is based on our risk assessment of their ability to pay, country risk and other factors and is not contingent on the resale of the product or on the collection of payments from their customers. Certain contracts with advertising agencies contain sequential liability provisions, under which the agency is not required to pay until payment is received from the agency's customers. In these circumstances, we evaluate the credit-worthiness of the agency's customers in addition to the agency itself. If we license our software or provide SaaS services to a customer where we have a reason to believe the customer's ability and intention to pay is not probable, the arrangement is not considered to be a revenue contract. Accordingly, we will not recognize any consideration received as revenue until termination or substantive completion of the services.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\n**Recent Accounting Pronouncements Not Yet Effective**\n\nIn November 2023, the Financial Accounting Standards Board (the \"FASB\") issued Accounting Standards Update (\"ASU\") No. 2023-07, Segment Reporting, which expands annual and interim disclosure requirements for reportable segments, primarily through enhanced disclosures about significant segment expenses. The updated standard is effective for our annual periods beginning in fiscal 2025 and interim periods beginning in the first quarter of fiscal 2026. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn December 2023, the FASB issued ASU No. 2023-09, Income Taxes, which prescribes standardized categories and disaggregation of information in the reconciliation of provision for income taxes, requires disclosure of disaggregated income taxes paid, and modifies other income tax-related disclosure requirements. The updated standard is effective for us beginning with our fiscal year 2026 annual reporting period. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn November 2024, the FASB issued ASU No. 2024-03, Income Statement\u2014Reporting Comprehensive Income\u2014Expense Disaggregation Disclosures, which requires additional disclosure of certain costs and expenses within the notes to the financial statements. The updated standard is effective for our annual periods beginning in fiscal 2028 and interim periods beginning in the first quarter of fiscal 2029. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nThere have been no other recent accounting pronouncements, changes in accounting pronouncements or recently adopted accounting guidance during fiscal 2024 that are of significance or potential significance to us.\n\n**NOTE 2. REVENUE**\n\n*Segment Information*\n\nWe report segment information based on the \"management\" approach. The management approach designates the internal reporting used by management for making decisions and assessing performance as the source of our reportable segments.\n\nOur Chief Executive Officer, the chief operating decision maker, reviews revenue and gross margin information for each of our reportable segments, but does not review operating expenses on a segment by segment basis. In addition, with the exception of goodwill, we do not identify or allocate our assets by the reportable segments.\n\nOur business is organized into the following reportable segments:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Media*\u2014Our Digital Media segment provides products and services that enable individuals, teams, businesses, and enterprises to create, publish and promote their content anywhere and accelerate their productivity by transforming how they view, share, engage with and collaborate on documents and creative content. Our customers include creative professionals, including photographers, video editors, graphic and experience designers and game developers; communicators, including content creators, students, marketers and knowledge workers; and consumers.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Experience*\u2014Our Digital Experience segment provides an integrated platform and set of products, services and solutions that enable businesses to create, manage, execute, measure, monetize and optimize customer experiences that span from analytics to commerce. Our customers include marketers, advertisers, agencies, publishers, merchandisers, merchants, web analysts, data scientists, developers and executives across the C-suite.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Publishing and Advertising*\u2014Our Publishing and Advertising segment contains legacy products and services that address diverse market opportunities, including eLearning solutions, technical document publishing, web conferencing, document and forms platform, web app development, high-end printing and our Adobe Advertising offerings.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\nOur segment revenue and results for fiscal 2024, 2023 and 2022 were as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **Digital <br>Media** | **Digital <br>Experience** | **Publishing and <br>Advertising** | **Total** |\n| **Fiscal 2024** |  |  |  |  |\n| Revenue | $15864 | $5366 | $275 | $21505 |\n| Cost of revenue | 680 | 1589 | 89 | 2358 |\n| Gross profit | $15184 | $3777 | $186 | $19147 |\n| Gross profit as a percentage of revenue | 96% | 70% | 68% | 89% |\n| **Fiscal 2023** |  |  |  |  |\n| Revenue | $14216 | $4893 | $300 | $19409 |\n| Cost of revenue | 665 | 1603 | 86 | 2354 |\n| Gross profit | $13551 | $3290 | $214 | $17055 |\n| Gross profit as a percentage of revenue | 95% | 67% | 71% | 88% |\n| **Fiscal 2022** |  |  |  |  |\n| Revenue | $12842 | $4422 | $342 | $17606 |\n| Cost of revenue | 561 | 1502 | 102 | 2165 |\n| Gross profit | $12281 | $2920 | $240 | $15441 |\n| Gross profit as a percentage of revenue | 96% | 66% | 70% | 88% |\n\n---\n\n\n\nWe generally categorize revenue by geographic area based on where the customer manages their utilization of our offerings. Revenue by geographic area for fiscal 2024, 2023 and 2022 were as follows:\n\n---",
+              "token_count": 1844,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "8b7160c4-9fa0-583d-ad4b-873bc7dca43f",
+              "section": "ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA",
+              "section_index": 12,
+              "chunk_index": 1,
+              "char_start": 255732,
+              "char_end": 259786,
+              "text": "| | | | |\n|:---|:---|:---|:---|\n| | **Years Ended** | **Years Ended** | **Years Ended** |\n| | **November 29,<br>2024** | **December 1,<br>2023** | **December 2,<br>2022** |\n| Revenue: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Subscription | $20521 | $18284 | $16388 |\n| &nbsp;&nbsp;&nbsp;Product | 386 | 460 | 532 |\n| &nbsp;&nbsp;&nbsp;Services and other | 598 | 665 | 686 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total revenue | 21505 | 19409 | 17606 |\n| <br>Cost of revenue: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Subscription | 1799 | 1822 | 1646 |\n| &nbsp;&nbsp;&nbsp;Product | 25 | 29 | 35 |\n| &nbsp;&nbsp;&nbsp;Services and other | 534 | 503 | 484 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total cost of revenue | 2358 | 2354 | 2165 |\n| <br>Gross profit | 19147 | 17055 | 15441 |\n| <br>Operating expenses: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Research and development | 3944 | 3473 | 2987 |\n| &nbsp;&nbsp;&nbsp;Sales and marketing | 5764 | 5351 | 4968 |\n| &nbsp;&nbsp;&nbsp;General and administrative | 1529 | 1413 | 1219 |\n| &nbsp;&nbsp;Acquisition termination fee | 1000 |  |  |\n| &nbsp;&nbsp;&nbsp;Amortization of intangibles | 169 | 168 | 169 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | 12406 | 10405 | 9343 |\n| <br>Operating income | 6741 | 6650 | 6098 |\n| <br>Non-operating income (expense): |  |  |  |\n| &nbsp;&nbsp;&nbsp;Interest expense | (169) | (113) | (112) |\n| &nbsp;&nbsp;&nbsp;Investment gains (losses), net | 48 | 16 | (19) |\n| &nbsp;&nbsp;&nbsp;Other income (expense), net | 311 | 246 | 41 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total non-operating income (expense), net | 190 | 149 | (90) |\n| Income before income taxes | 6931 | 6799 | 6008 |\n| Provision for income taxes | 1371 | 1371 | 1252 |\n| Net income | $5560 | $5428 | $4756 |\n| Basic net income per share | $12.43 | $11.87 | $10.13 |\n| Shares used to compute basic net income per share | 447 | 457 | 470 |\n| Diluted net income per share | $12.36 | $11.82 | $10.10 |\n| Shares used to compute diluted net income per share | 450 | 459 | 471 |\n\n---\n\n\n\n*See accompanying Notes to Consolidated Financial Statements.*\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME**\n\n**(In millions)**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Years Ended** | **Years Ended** | **Years Ended** |\n| | **November 29,<br>2024** | **December 1,<br>2023** | **December 2,<br>2022** |\n| | **Increase/(Decrease)** | **Increase/(Decrease)** | **Increase/(Decrease)** |\n| Net income | $5560 | $5428 | $4756 |\n| Other comprehensive income (loss), net of taxes: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Available-for-sale securities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unrealized gains / losses on available-for-sale securities | 11 | 24 | (39) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reclassification adjustment for recognized gains / losses on available-for-sale securities |  | 5 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net increase (decrease) from available-for-sale securities | 11 | 29 | (39) |\n| &nbsp;&nbsp;&nbsp;Derivatives designated as hedging instruments: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unrealized gains / losses on derivative instruments | 89 | (12) | 139 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reclassification adjustment for realized gains / losses on derivative instruments | 17 | (31) | (151) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net increase (decrease) from derivatives designated as hedging instruments | 106 | (43) | (12) |\n| &nbsp;&nbsp;&nbsp;Foreign currency translation adjustments | (33) | 22 | (105) |\n| Other comprehensive income (loss), net of taxes | 84 | 8 | (156) |\n| Total comprehensive income, net of taxes | $5644 | $5436 | $4600 |\n\n---\n\n\n\n*See accompanying Notes to Consolidated Financial Statements.*\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY** \n\n**(In millions)**\n\n---",
+              "token_count": 1365,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "104b12c6-20f6-50b2-b497-3a08db47bb41",
+              "section": "SUMMARY HISTORICAL FINANCIAL INFORMATION OF SCAGE INTERNATIONAL",
+              "section_index": 72,
+              "chunk_index": 0,
+              "char_start": 358430,
+              "char_end": 360971,
+              "text": "#### SUMMARY HISTORICAL FINANCIAL INFORMATION OF SCAGE INTERNATIONAL\nThe following selected consolidated statements of operations and comprehensive loss data and selected consolidated statements of cash flows data for the fiscal years ended June 30, 2024 and 2023, and the selected consolidated balance sheets data as of June 30, 2024 and 2023 have been derived from the audited consolidated financial statements of Scage International included elsewhere in this proxy statement/prospectus. The consolidated financial statements of Scage International are prepared and presented in accordance with U.S. GAAP. Scage International's historical results are not necessarily indicative of results expected for future periods. The financial data set forth below should be read in conjunction with and is qualified by reference to \"Management's Discussion and Analysis of Financial Condition and Results of Operations of Scage International\" and the consolidated financial statements and notes thereto included elsewhere in this proxy statement/prospectus.\n\nThe following table presents Scage International's summary of consolidated statements of operations and comprehensive loss for the fiscal years ended June 30, 2024 and 2023.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n|  | **For the Year Ended <br>June 30,** | **For the Year Ended <br>June 30,** |\n|  | **2024** | **2023** |\n|  Revenues \u2013 third parties | $6111141  | $421680 |\n|  Revenues \u2013 a related party | \u2014  | 16290 |\n|  **Total revenues** | **6111141**  | **437970** |\n|  **Cost of revenues** | **(5574685)** | **(795286)** |\n|  **Gross (loss)/profit** | **536456**  | **(357316)** |\n|  **Operating expenses:** |  |  |\n| &nbsp;&nbsp;&nbsp; Selling and marketing expenses | (648301) | (1138183) |\n| &nbsp;&nbsp;&nbsp; Research and development expenses | (1698494) | (2297474) |\n| &nbsp;&nbsp;&nbsp; General and administrative expenses | (3863434) | (2926280) |\n| &nbsp;&nbsp;&nbsp; Impairment of long-lived assets | (200841) |  |\n|  **Total operating expenses** | **(6411070)** | **(6361937)** |\n|  **Loss from operations** | **(5874614)** | **(6719253**) |\n| &nbsp;&nbsp;&nbsp; Interest expense, net | (369847) | (151492) |\n| &nbsp;&nbsp;&nbsp; Investment income from short-term investments | \u2014  |  |\n| &nbsp;&nbsp;&nbsp; Other income, net | 263685  | 252536 |\n|  **Total other (loss)/income, net** | **(106162)** | **101044** |\n|  **Loss before income taxes** | **(5980776)** | **(6618209)** |\n| &nbsp;&nbsp;&nbsp; Income tax benefit | \u2014  |  |\n|  **Net loss** | **(5980776)** | **(6618209)** |\n",
+              "token_count": 679,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001665160-25-000017",
+              "cik": "0002002943",
+              "company": "Mother Road Brewing Co",
+              "form_type": "C",
+              "filed_date": "20250108",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 622,
+              "source_md5": "1913053f245f6ccabcd165e6ea81f3f5",
+              "content_sha256": "7bc5bfca54c6446c8e551acf91ba9c7f72c149e7416d859bc50cbdb3b97b642e",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "de99b4bb-8aa3-575f-85d0-5a610dff98b9",
+              "section": "Consolidated Statement of Operations",
+              "section_index": 87,
+              "chunk_index": 0,
+              "char_start": 88399,
+              "char_end": 88922,
+              "text": "## Consolidated Statement of Operations\n\nYear Ended December 31, 2023\n\n| Revenues | $9,939,896 |\n| --- | --- |\n| Cost of revenues | 5,683,099 |\n| Gross profit | 4,256,797 |\n| General and administrative expenses | 5,220,974 |\n|  | (964,177) |\n| Other operating: |  |\n| Rental income | 36,626 |\n| Gain on sale of assets | 25,115 |\n| Loss from operations | (902,436) |\n| Other income (expense): |  |\n| Interest expense | (340,930) |\n|  | (340,930) |\n| Net loss | $(1,243,366) |\n\nSee notes to consolidated financial statements.",
+              "token_count": 164,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "c8e23789-3e5b-5998-a527-7bb13e5d5a92",
+              "section": "CONSOLIDATED STATEMENTS OF INCOME",
+              "section_index": 177,
+              "chunk_index": 0,
+              "char_start": 822248,
+              "char_end": 827449,
+              "text": "# CONSOLIDATED STATEMENTS OF INCOME\n\n(In millions, except per share data)\n\n|  | Years Ended |  |  |\n| --- | --- | --- | --- |\n|  | November 29, 2024 | December 1, 2023 | December 2, 2022 |\n| Revenue: |  |  |  |\n| Subscription | $20,521 | $18,284 | $16,388 |\n| Product | 386 | 460 | 532 |\n| Services and other | 598 | 665 | 686 |\n| Total revenue | 21,505 | 19,409 | 17,606 |\n| Cost of revenue: |  |  |  |\n| Subscription | 1,799 | 1,822 | 1,646 |\n| Product | 25 | 29 | 35 |\n| Services and other | 534 | 503 | 484 |\n| Total cost of revenue | 2,358 | 2,354 | 2,165 |\n| Gross profit | 19,147 | 17,055 | 15,441 |\n| Operating expenses: |  |  |  |\n| Research and development | 3,944 | 3,473 | 2,987 |\n| Sales and marketing | 5,764 | 5,351 | 4,968 |\n| General and administrative | 1,529 | 1,413 | 1,219 |\n| Acquisition termination fee | 1,000 | - | - |\n| Amortization of intangibles | 169 | 168 | 169 |\n| Total operating expenses | 12,406 | 10,405 | 9,343 |\n| Operating income | 6,741 | 6,650 | 6,098 |\n| Non-operating income (expense): |  |  |  |\n| Interest expense | (169) | (113) | (112) |\n| Investment gains (losses), net | 48 | 16 | (19) |\n| Other income (expense), net | 311 | 246 | 41 |\n| Total non-operating income (expense), net | 190 | 149 | (90) |\n| Income before income taxes | 6,931 | 6,799 | 6,008 |\n| Provision for income taxes | 1,371 | 1,371 | 1,252 |\n| Net income | $5,560 | $5,428 | $4,756 |\n| Basic net income per share | $12.43 | $11.87 | $10.13 |\n| Shares used to compute basic net income per share | 447 | 457 | 470 |\n| Diluted net income per share | $12.36 | $11.82 | $10.10 |\n| Shares used to compute diluted net income per share | 450 | 459 | 471 |\n\nSee accompanying Notes to Consolidated Financial Statements.\n\nTable of Contents\n\nADOBE INC.\n\nCONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME\n\n(In millions)\n\n|  | Years Ended |  |  |\n| --- | --- | --- | --- |\n|  | November 29, 2024 | December 1, 2023 | December 2, 2022 |\n|  | Increase/(Decrease) |  |  |\n| Net income | $5,560 | $5,428 | $4,756 |\n| Other comprehensive income (loss), net of taxes: |  |  |  |\n| Available-for-sale securities: |  |  |  |\n| Unrealized gains / losses on available-for-sale securities | 11 | 24 | (39) |\n| Reclassification adjustment for recognized gains / losses on available-for-sale securities | - | 5 | - |\n| Net increase (decrease) from available-for-sale securities | 11 | 29 | (39) |\n| Derivatives designated as hedging instruments: |  |  |  |\n| Unrealized gains / losses on derivative instruments | 89 | (12) | 139 |\n| Reclassification adjustment for realized gains / losses on derivative instruments | 17 | (31) | (151) |\n| Net increase (decrease) from derivatives designated as hedging instruments | 106 | (43) | (12) |\n| Foreign currency translation adjustments | (33) | 22 | (105) |\n| Other comprehensive income (loss), net of taxes | 84 | 8 | (156) |\n| Total comprehensive income, net of taxes | $5,644 | $5,436 | $4,600 |\n\nSee accompanying Notes to Consolidated Financial Statements.\n\n56\n\nTable of Contents\n\nADOBE INC.\n\nCONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY\n\n(In millions)\n\n|  | Common Stock |  | Additional Paid-In Capital | Retained Earnings | Accumulated Other Comprehensive Income (Loss) | Treasury Stock |  | Total |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | Shares | Amount |  |  |  | Shares | Amount |  |\n| Balances at December 3, 2021 | 601 | $ - | $8,428 | $23,905 | $(137) | (126) | $(17,399) | $14,797 |\n| Net income | - | - | - | 4,756 | - | - | - | 4,756 |\n| Other comprehensive income (loss), net of taxes | - | - | - | - | (156) | - | - | (156) |\n| Re-issuance of treasury stock under stock compensation plans | - | - | - | (342) | - | 3 | 102 | (240) |\n| Repurchases of common stock | - | - | - | - | - | (16) | (6,550) | (6,550) |\n| Stock-based compensation | - | - | 1,440 | - | - | - | - | 1,440 |\n| Value of shares in deferred compensation plan | - | - | - | - | - | - | 4 | 4 |\n| Balances at December 2, 2022 | 601 | $ - | $9,868 | $28,319 | $(293) | (139) | $(23,843) | $14,051 |\n| Net income | - | - | - | 5,428 | - | - | - | 5,428 |\n| Other comprehensive income (loss), net of taxes | - | - | - | - | 8 | - | - | 8 |\n| Re-issuance of treasury stock under stock compensation plans | - | - | - | (401) | - | 5 | 126 | (275) |\n| Repurchases of common stock | - | - | - | - | - | (12) | (4,414) | (4,414) |\n| Stock-based compensation | - | - | 1,718 | - | - | - | - | 1,718 |\n| Value of shares in deferred compensation plan | - | - | - | - | - | - | 2 | 2 |\n| Balances at December 1, 2023 | 601 | $ - | $11,586 | $33,346 | $(285) | (146) | $(28,129) | $16,518 |\n| Net income | - | - | - | 5,560 | - | - | - | 5,560 |\n| Other comprehensive income (loss), net of taxes | - | - | - | - | 84 | - | - | 84 |\n| Re-issuance of treasury stock under stock compensation plans | - | - | - | (436) | - | 4 | 120 | (316) |\n| Repurchases of common stock | - | - | - | - | - | (18) | (9,574) | (9,574) |\n| Stock-based compensation | - | - | 1,833 | - | - | - | - | 1,833 |\n| Balances at November 29, 2024 | 601 | $ - | $13,419 | $38,470 | $(201) | (160) | $(37,583) | $14,105 |\n\nSee accompanying Notes to Consolidated Financial Statements.\n\nTable of Contents",
+              "token_count": 1788,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.022093253000093682
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "b8fa3362-a910-51b7-aebe-a44fa81085a4",
+        "section": "ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA",
+        "section_index": 12,
+        "chunk_index": 6,
+        "char_start": 291763,
+        "char_end": 300663,
+        "text": "Gains and losses related to changes in the fair value of foreign exchange forward contracts which hedge certain balance sheet positions are recorded each period as a component of other income (expense), net in our Consolidated Statements of Income. Foreign exchange forward contracts and option contracts hedging forecasted foreign currency revenue and expenses and Treasury lock agreements are designated as cash flow hedges with gains and losses recorded net of tax as a component of accumulated other comprehensive income (loss) in our Consolidated Balance Sheets until the forecasted transaction occurs. When the forecasted transaction affects earnings, we reclassify the related gain or loss on the foreign currency revenue, foreign currency expense or Treasury lock cash flow hedge to revenue, operating expense or interest expense, as applicable.\n\n*Concentration of Risk*\n\nFinancial instruments that potentially subject us to concentrations of credit risk are short-term fixed-income investments, structured repurchase transactions, foreign currency and interest rate hedge contracts and trade receivables.\n\nOur investment portfolio consists of investment-grade securities diversified among security types, industries and issuers. Our cash and investments are held and primarily managed by recognized financial institutions that follow our investment policy. Our policy limits the amount of credit exposure to any one security issue or issuer and we believe no significant concentration of credit risk exists with respect to these investments.\n\nWe enter into master netting arrangements to mitigate credit risk in derivative transactions by permitting net settlement of transactions with the same counterparty. We also enter into collateral security agreements with certain of our counterparties to exchange cash collateral when the net fair value of certain derivative instruments fluctuates from contractually established thresholds.\n\nCredit risk in receivables is limited to OEMs, dealers and distributors of hardware and software products to the retail market, customers to whom we license software directly and our SaaS offerings. A credit review is completed for our new distributors, dealers and OEMs. We also perform ongoing credit evaluations of our customers' financial condition and require letters of credit or other guarantees, whenever deemed necessary. The credit limit given to the customer is based on our risk assessment of their ability to pay, country risk and other factors and is not contingent on the resale of the product or on the collection of payments from their customers. Certain contracts with advertising agencies contain sequential liability provisions, under which the agency is not required to pay until payment is received from the agency's customers. In these circumstances, we evaluate the credit-worthiness of the agency's customers in addition to the agency itself. If we license our software or provide SaaS services to a customer where we have a reason to believe the customer's ability and intention to pay is not probable, the arrangement is not considered to be a revenue contract. Accordingly, we will not recognize any consideration received as revenue until termination or substantive completion of the services.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\n**Recent Accounting Pronouncements Not Yet Effective**\n\nIn November 2023, the Financial Accounting Standards Board (the \"FASB\") issued Accounting Standards Update (\"ASU\") No. 2023-07, Segment Reporting, which expands annual and interim disclosure requirements for reportable segments, primarily through enhanced disclosures about significant segment expenses. The updated standard is effective for our annual periods beginning in fiscal 2025 and interim periods beginning in the first quarter of fiscal 2026. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn December 2023, the FASB issued ASU No. 2023-09, Income Taxes, which prescribes standardized categories and disaggregation of information in the reconciliation of provision for income taxes, requires disclosure of disaggregated income taxes paid, and modifies other income tax-related disclosure requirements. The updated standard is effective for us beginning with our fiscal year 2026 annual reporting period. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn November 2024, the FASB issued ASU No. 2024-03, Income Statement\u2014Reporting Comprehensive Income\u2014Expense Disaggregation Disclosures, which requires additional disclosure of certain costs and expenses within the notes to the financial statements. The updated standard is effective for our annual periods beginning in fiscal 2028 and interim periods beginning in the first quarter of fiscal 2029. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nThere have been no other recent accounting pronouncements, changes in accounting pronouncements or recently adopted accounting guidance during fiscal 2024 that are of significance or potential significance to us.\n\n**NOTE 2. REVENUE**\n\n*Segment Information*\n\nWe report segment information based on the \"management\" approach. The management approach designates the internal reporting used by management for making decisions and assessing performance as the source of our reportable segments.\n\nOur Chief Executive Officer, the chief operating decision maker, reviews revenue and gross margin information for each of our reportable segments, but does not review operating expenses on a segment by segment basis. In addition, with the exception of goodwill, we do not identify or allocate our assets by the reportable segments.\n\nOur business is organized into the following reportable segments:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Media*\u2014Our Digital Media segment provides products and services that enable individuals, teams, businesses, and enterprises to create, publish and promote their content anywhere and accelerate their productivity by transforming how they view, share, engage with and collaborate on documents and creative content. Our customers include creative professionals, including photographers, video editors, graphic and experience designers and game developers; communicators, including content creators, students, marketers and knowledge workers; and consumers.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Experience*\u2014Our Digital Experience segment provides an integrated platform and set of products, services and solutions that enable businesses to create, manage, execute, measure, monetize and optimize customer experiences that span from analytics to commerce. Our customers include marketers, advertisers, agencies, publishers, merchandisers, merchants, web analysts, data scientists, developers and executives across the C-suite.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Publishing and Advertising*\u2014Our Publishing and Advertising segment contains legacy products and services that address diverse market opportunities, including eLearning solutions, technical document publishing, web conferencing, document and forms platform, web app development, high-end printing and our Adobe Advertising offerings.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\nOur segment revenue and results for fiscal 2024, 2023 and 2022 were as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **Digital <br>Media** | **Digital <br>Experience** | **Publishing and <br>Advertising** | **Total** |\n| **Fiscal 2024** |  |  |  |  |\n| Revenue | $15864 | $5366 | $275 | $21505 |\n| Cost of revenue | 680 | 1589 | 89 | 2358 |\n| Gross profit | $15184 | $3777 | $186 | $19147 |\n| Gross profit as a percentage of revenue | 96% | 70% | 68% | 89% |\n| **Fiscal 2023** |  |  |  |  |\n| Revenue | $14216 | $4893 | $300 | $19409 |\n| Cost of revenue | 665 | 1603 | 86 | 2354 |\n| Gross profit | $13551 | $3290 | $214 | $17055 |\n| Gross profit as a percentage of revenue | 95% | 67% | 71% | 88% |\n| **Fiscal 2022** |  |  |  |  |\n| Revenue | $12842 | $4422 | $342 | $17606 |\n| Cost of revenue | 561 | 1502 | 102 | 2165 |\n| Gross profit | $12281 | $2920 | $240 | $15441 |\n| Gross profit as a percentage of revenue | 96% | 66% | 70% | 88% |\n\n---\n\n\n\nWe generally categorize revenue by geographic area based on where the customer manages their utilization of our offerings. Revenue by geographic area for fiscal 2024, 2023 and 2022 were as follows:\n\n---",
+        "token_count": 1844,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "8b7160c4-9fa0-583d-ad4b-873bc7dca43f",
+        "section": "ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA",
+        "section_index": 12,
+        "chunk_index": 1,
+        "char_start": 255732,
+        "char_end": 259786,
+        "text": "| | | | |\n|:---|:---|:---|:---|\n| | **Years Ended** | **Years Ended** | **Years Ended** |\n| | **November 29,<br>2024** | **December 1,<br>2023** | **December 2,<br>2022** |\n| Revenue: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Subscription | $20521 | $18284 | $16388 |\n| &nbsp;&nbsp;&nbsp;Product | 386 | 460 | 532 |\n| &nbsp;&nbsp;&nbsp;Services and other | 598 | 665 | 686 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total revenue | 21505 | 19409 | 17606 |\n| <br>Cost of revenue: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Subscription | 1799 | 1822 | 1646 |\n| &nbsp;&nbsp;&nbsp;Product | 25 | 29 | 35 |\n| &nbsp;&nbsp;&nbsp;Services and other | 534 | 503 | 484 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total cost of revenue | 2358 | 2354 | 2165 |\n| <br>Gross profit | 19147 | 17055 | 15441 |\n| <br>Operating expenses: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Research and development | 3944 | 3473 | 2987 |\n| &nbsp;&nbsp;&nbsp;Sales and marketing | 5764 | 5351 | 4968 |\n| &nbsp;&nbsp;&nbsp;General and administrative | 1529 | 1413 | 1219 |\n| &nbsp;&nbsp;Acquisition termination fee | 1000 |  |  |\n| &nbsp;&nbsp;&nbsp;Amortization of intangibles | 169 | 168 | 169 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | 12406 | 10405 | 9343 |\n| <br>Operating income | 6741 | 6650 | 6098 |\n| <br>Non-operating income (expense): |  |  |  |\n| &nbsp;&nbsp;&nbsp;Interest expense | (169) | (113) | (112) |\n| &nbsp;&nbsp;&nbsp;Investment gains (losses), net | 48 | 16 | (19) |\n| &nbsp;&nbsp;&nbsp;Other income (expense), net | 311 | 246 | 41 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total non-operating income (expense), net | 190 | 149 | (90) |\n| Income before income taxes | 6931 | 6799 | 6008 |\n| Provision for income taxes | 1371 | 1371 | 1252 |\n| Net income | $5560 | $5428 | $4756 |\n| Basic net income per share | $12.43 | $11.87 | $10.13 |\n| Shares used to compute basic net income per share | 447 | 457 | 470 |\n| Diluted net income per share | $12.36 | $11.82 | $10.10 |\n| Shares used to compute diluted net income per share | 450 | 459 | 471 |\n\n---\n\n\n\n*See accompanying Notes to Consolidated Financial Statements.*\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME**\n\n**(In millions)**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Years Ended** | **Years Ended** | **Years Ended** |\n| | **November 29,<br>2024** | **December 1,<br>2023** | **December 2,<br>2022** |\n| | **Increase/(Decrease)** | **Increase/(Decrease)** | **Increase/(Decrease)** |\n| Net income | $5560 | $5428 | $4756 |\n| Other comprehensive income (loss), net of taxes: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Available-for-sale securities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unrealized gains / losses on available-for-sale securities | 11 | 24 | (39) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reclassification adjustment for recognized gains / losses on available-for-sale securities |  | 5 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net increase (decrease) from available-for-sale securities | 11 | 29 | (39) |\n| &nbsp;&nbsp;&nbsp;Derivatives designated as hedging instruments: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unrealized gains / losses on derivative instruments | 89 | (12) | 139 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reclassification adjustment for realized gains / losses on derivative instruments | 17 | (31) | (151) |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Net increase (decrease) from derivatives designated as hedging instruments | 106 | (43) | (12) |\n| &nbsp;&nbsp;&nbsp;Foreign currency translation adjustments | (33) | 22 | (105) |\n| Other comprehensive income (loss), net of taxes | 84 | 8 | (156) |\n| Total comprehensive income, net of taxes | $5644 | $5436 | $4600 |\n\n---\n\n\n\n*See accompanying Notes to Consolidated Financial Statements.*\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**CONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY** \n\n**(In millions)**\n\n---",
+        "token_count": 1365,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "104b12c6-20f6-50b2-b497-3a08db47bb41",
+        "section": "SUMMARY HISTORICAL FINANCIAL INFORMATION OF SCAGE INTERNATIONAL",
+        "section_index": 72,
+        "chunk_index": 0,
+        "char_start": 358430,
+        "char_end": 360971,
+        "text": "#### SUMMARY HISTORICAL FINANCIAL INFORMATION OF SCAGE INTERNATIONAL\nThe following selected consolidated statements of operations and comprehensive loss data and selected consolidated statements of cash flows data for the fiscal years ended June 30, 2024 and 2023, and the selected consolidated balance sheets data as of June 30, 2024 and 2023 have been derived from the audited consolidated financial statements of Scage International included elsewhere in this proxy statement/prospectus. The consolidated financial statements of Scage International are prepared and presented in accordance with U.S. GAAP. Scage International's historical results are not necessarily indicative of results expected for future periods. The financial data set forth below should be read in conjunction with and is qualified by reference to \"Management's Discussion and Analysis of Financial Condition and Results of Operations of Scage International\" and the consolidated financial statements and notes thereto included elsewhere in this proxy statement/prospectus.\n\nThe following table presents Scage International's summary of consolidated statements of operations and comprehensive loss for the fiscal years ended June 30, 2024 and 2023.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n|  | **For the Year Ended <br>June 30,** | **For the Year Ended <br>June 30,** |\n|  | **2024** | **2023** |\n|  Revenues \u2013 third parties | $6111141  | $421680 |\n|  Revenues \u2013 a related party | \u2014  | 16290 |\n|  **Total revenues** | **6111141**  | **437970** |\n|  **Cost of revenues** | **(5574685)** | **(795286)** |\n|  **Gross (loss)/profit** | **536456**  | **(357316)** |\n|  **Operating expenses:** |  |  |\n| &nbsp;&nbsp;&nbsp; Selling and marketing expenses | (648301) | (1138183) |\n| &nbsp;&nbsp;&nbsp; Research and development expenses | (1698494) | (2297474) |\n| &nbsp;&nbsp;&nbsp; General and administrative expenses | (3863434) | (2926280) |\n| &nbsp;&nbsp;&nbsp; Impairment of long-lived assets | (200841) |  |\n|  **Total operating expenses** | **(6411070)** | **(6361937)** |\n|  **Loss from operations** | **(5874614)** | **(6719253**) |\n| &nbsp;&nbsp;&nbsp; Interest expense, net | (369847) | (151492) |\n| &nbsp;&nbsp;&nbsp; Investment income from short-term investments | \u2014  |  |\n| &nbsp;&nbsp;&nbsp; Other income, net | 263685  | 252536 |\n|  **Total other (loss)/income, net** | **(106162)** | **101044** |\n|  **Loss before income taxes** | **(5980776)** | **(6618209)** |\n| &nbsp;&nbsp;&nbsp; Income tax benefit | \u2014  |  |\n|  **Net loss** | **(5980776)** | **(6618209)** |\n",
+        "token_count": 679,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001665160-25-000017",
+        "cik": "0002002943",
+        "company": "Mother Road Brewing Co",
+        "form_type": "C",
+        "filed_date": "20250108",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 622,
+        "source_md5": "1913053f245f6ccabcd165e6ea81f3f5",
+        "content_sha256": "7bc5bfca54c6446c8e551acf91ba9c7f72c149e7416d859bc50cbdb3b97b642e",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "de99b4bb-8aa3-575f-85d0-5a610dff98b9",
+        "section": "Consolidated Statement of Operations",
+        "section_index": 87,
+        "chunk_index": 0,
+        "char_start": 88399,
+        "char_end": 88922,
+        "text": "## Consolidated Statement of Operations\n\nYear Ended December 31, 2023\n\n| Revenues | $9,939,896 |\n| --- | --- |\n| Cost of revenues | 5,683,099 |\n| Gross profit | 4,256,797 |\n| General and administrative expenses | 5,220,974 |\n|  | (964,177) |\n| Other operating: |  |\n| Rental income | 36,626 |\n| Gain on sale of assets | 25,115 |\n| Loss from operations | (902,436) |\n| Other income (expense): |  |\n| Interest expense | (340,930) |\n|  | (340,930) |\n| Net loss | $(1,243,366) |\n\nSee notes to consolidated financial statements.",
+        "token_count": 164,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "c8e23789-3e5b-5998-a527-7bb13e5d5a92",
+        "section": "CONSOLIDATED STATEMENTS OF INCOME",
+        "section_index": 177,
+        "chunk_index": 0,
+        "char_start": 822248,
+        "char_end": 827449,
+        "text": "# CONSOLIDATED STATEMENTS OF INCOME\n\n(In millions, except per share data)\n\n|  | Years Ended |  |  |\n| --- | --- | --- | --- |\n|  | November 29, 2024 | December 1, 2023 | December 2, 2022 |\n| Revenue: |  |  |  |\n| Subscription | $20,521 | $18,284 | $16,388 |\n| Product | 386 | 460 | 532 |\n| Services and other | 598 | 665 | 686 |\n| Total revenue | 21,505 | 19,409 | 17,606 |\n| Cost of revenue: |  |  |  |\n| Subscription | 1,799 | 1,822 | 1,646 |\n| Product | 25 | 29 | 35 |\n| Services and other | 534 | 503 | 484 |\n| Total cost of revenue | 2,358 | 2,354 | 2,165 |\n| Gross profit | 19,147 | 17,055 | 15,441 |\n| Operating expenses: |  |  |  |\n| Research and development | 3,944 | 3,473 | 2,987 |\n| Sales and marketing | 5,764 | 5,351 | 4,968 |\n| General and administrative | 1,529 | 1,413 | 1,219 |\n| Acquisition termination fee | 1,000 | - | - |\n| Amortization of intangibles | 169 | 168 | 169 |\n| Total operating expenses | 12,406 | 10,405 | 9,343 |\n| Operating income | 6,741 | 6,650 | 6,098 |\n| Non-operating income (expense): |  |  |  |\n| Interest expense | (169) | (113) | (112) |\n| Investment gains (losses), net | 48 | 16 | (19) |\n| Other income (expense), net | 311 | 246 | 41 |\n| Total non-operating income (expense), net | 190 | 149 | (90) |\n| Income before income taxes | 6,931 | 6,799 | 6,008 |\n| Provision for income taxes | 1,371 | 1,371 | 1,252 |\n| Net income | $5,560 | $5,428 | $4,756 |\n| Basic net income per share | $12.43 | $11.87 | $10.13 |\n| Shares used to compute basic net income per share | 447 | 457 | 470 |\n| Diluted net income per share | $12.36 | $11.82 | $10.10 |\n| Shares used to compute diluted net income per share | 450 | 459 | 471 |\n\nSee accompanying Notes to Consolidated Financial Statements.\n\nTable of Contents\n\nADOBE INC.\n\nCONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME\n\n(In millions)\n\n|  | Years Ended |  |  |\n| --- | --- | --- | --- |\n|  | November 29, 2024 | December 1, 2023 | December 2, 2022 |\n|  | Increase/(Decrease) |  |  |\n| Net income | $5,560 | $5,428 | $4,756 |\n| Other comprehensive income (loss), net of taxes: |  |  |  |\n| Available-for-sale securities: |  |  |  |\n| Unrealized gains / losses on available-for-sale securities | 11 | 24 | (39) |\n| Reclassification adjustment for recognized gains / losses on available-for-sale securities | - | 5 | - |\n| Net increase (decrease) from available-for-sale securities | 11 | 29 | (39) |\n| Derivatives designated as hedging instruments: |  |  |  |\n| Unrealized gains / losses on derivative instruments | 89 | (12) | 139 |\n| Reclassification adjustment for realized gains / losses on derivative instruments | 17 | (31) | (151) |\n| Net increase (decrease) from derivatives designated as hedging instruments | 106 | (43) | (12) |\n| Foreign currency translation adjustments | (33) | 22 | (105) |\n| Other comprehensive income (loss), net of taxes | 84 | 8 | (156) |\n| Total comprehensive income, net of taxes | $5,644 | $5,436 | $4,600 |\n\nSee accompanying Notes to Consolidated Financial Statements.\n\n56\n\nTable of Contents\n\nADOBE INC.\n\nCONSOLIDATED STATEMENTS OF STOCKHOLDERS' EQUITY\n\n(In millions)\n\n|  | Common Stock |  | Additional Paid-In Capital | Retained Earnings | Accumulated Other Comprehensive Income (Loss) | Treasury Stock |  | Total |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | Shares | Amount |  |  |  | Shares | Amount |  |\n| Balances at December 3, 2021 | 601 | $ - | $8,428 | $23,905 | $(137) | (126) | $(17,399) | $14,797 |\n| Net income | - | - | - | 4,756 | - | - | - | 4,756 |\n| Other comprehensive income (loss), net of taxes | - | - | - | - | (156) | - | - | (156) |\n| Re-issuance of treasury stock under stock compensation plans | - | - | - | (342) | - | 3 | 102 | (240) |\n| Repurchases of common stock | - | - | - | - | - | (16) | (6,550) | (6,550) |\n| Stock-based compensation | - | - | 1,440 | - | - | - | - | 1,440 |\n| Value of shares in deferred compensation plan | - | - | - | - | - | - | 4 | 4 |\n| Balances at December 2, 2022 | 601 | $ - | $9,868 | $28,319 | $(293) | (139) | $(23,843) | $14,051 |\n| Net income | - | - | - | 5,428 | - | - | - | 5,428 |\n| Other comprehensive income (loss), net of taxes | - | - | - | - | 8 | - | - | 8 |\n| Re-issuance of treasury stock under stock compensation plans | - | - | - | (401) | - | 5 | 126 | (275) |\n| Repurchases of common stock | - | - | - | - | - | (12) | (4,414) | (4,414) |\n| Stock-based compensation | - | - | 1,718 | - | - | - | - | 1,718 |\n| Value of shares in deferred compensation plan | - | - | - | - | - | - | 2 | 2 |\n| Balances at December 1, 2023 | 601 | $ - | $11,586 | $33,346 | $(285) | (146) | $(28,129) | $16,518 |\n| Net income | - | - | - | 5,560 | - | - | - | 5,560 |\n| Other comprehensive income (loss), net of taxes | - | - | - | - | 84 | - | - | 84 |\n| Re-issuance of treasury stock under stock compensation plans | - | - | - | (436) | - | 4 | 120 | (316) |\n| Repurchases of common stock | - | - | - | - | - | (18) | (9,574) | (9,574) |\n| Stock-based compensation | - | - | 1,833 | - | - | - | - | 1,833 |\n| Balances at November 29, 2024 | 601 | $ - | $13,419 | $38,470 | $(201) | (160) | $(37,583) | $14,105 |\n\nSee accompanying Notes to Consolidated Financial Statements.\n\nTable of Contents",
+        "token_count": 1788,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash"
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's core answer matches the reference: 19,147 / 21,505 = 0.890351, or 89.04%. Its inputs (revenue $21,505M, cost of revenue $2,358M, gross profit $19,147M) match the Consolidated Statements of Income excerpt. The fiscal year end (November 29, 2024) and accession 0000796343-25-000004 are correct. The claim that Note 2 reports the rounded 89% is supported by the segment table in the retrieved excerpts. The cited chunk IDs appear in the retrieved results. Minor deduction: the answer leads with a rounded 89% alongside 89.04%, which is harmless but slightly less precise in emphasis.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's core answer matches the reference: 19,147 / 21,505 = 0.890351, or 89.04%. Its inputs (revenue $21,505M, cost of revenue $2,358M, gross profit $19,147M) match the Consolidated Statements of Income excerpt. The fiscal year end (November 29, 2024) and accession 0000796343-25-000004 are correct. The claim that Note 2 reports the rounded 89% is supported by the segment table in the retrieved excerpts. The cited chunk IDs appear in the retrieved results. Minor deduction: the answer leads with a rounded 89% alongside 89.04%, which is harmless but slightly less precise in emphasis.\"}",
+      "refusal": null,
+      "reasoning": "I verify 19147/21505 computes to 89.04%, matching the reference and the candidate's figure, and confirm the segment table's rounded 89% also checks out.\n\nThe cited chunk IDs and accession number both appear in retrieved excerpts, and the fiscal year-end date and Note 2 claim are supported\u2014correctness lands around 97, with citation support around 95 given the quoted figures match the excerpts.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I verify 19147/21505 computes to 89.04%, matching the reference and the candidate's figure, and confirm the segment table's rounded 89% also checks out.\n\nThe cited chunk IDs and accession number both appear in retrieved excerpts, and the fiscal year-end date and Note 2 claim are supported\u2014correctness lands around 97, with citation support around 95 given the quoted figures match the excerpts.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSsQoKEAgSGAI4AUIIdGhpbmtpbmcSDIA1YdP//cpzz0KDbxoMyyLh0yydF+m6yOnEIjDSD1LhfiDY/r7vHMgP0kXsHRSMh158AHfWUBABWF+z3ifIJ5M6fiA5dbz0Yghh+3wqzglE4fEQMpGM19faCQUYTd4+zor46GMfAGkI0G77L9Io5z6egy8QywJeUbRvYDY674FwpMjPajNn9e9Jzb/rYkBXAUhN7nEz1aPzjzSqEEWY2chBD0twR1ie5JSlwH+lLqm2wSCyeb484i5qeHpnfggPo42aTtpqeM9b69nbdU5UwYkzBrmQLBuTrNnqtEg5WNlrCGD6kLBEwzo8jhYiJCoHnYNwo4KtOnduNJGywJSIfXayqvKhk50u5GilJYSKW9LDt64YKNEGpgdZdUVNUBs/5kikHg65iY/oLo2sHEaFZ+UEolKxaOhmgFDmoOwf2pXkM9I031B/ATyScBUgbLxRNNoCQx3rWFhEoNk8xNKPnjwcVtjlZZtqM2bSdfpk3GqS0DLA/t/1mIGXD3dVS87J5FG/GlDb8FaBGvmahv4U+5DmaXylQCXg4m1Ap6oqkxnU/2RuWAEX3A19t4QwUnZjUiCFwlAtFshJcjgCHP88B1fPq8QPWrKEevlukgbcxHYsNPXR5c5pYqULLza2Z9cLoVirPKMBEpYVuGryX6q69ZGEdr+2v6bs5JB85lO9mCe84D0uoP9mGZ+4+fEfSBIMlWmn8w6SGdvxFdMi4Rv222q0uUkiSPr247VpPY/yMhjgaguxqOH3xmS6UNRwKylry5ZZQ4bH9HCinYpAAqpS84/TEi5G7b9CpuP04ex4aDnhtPbTllely7juNvkcg5kFSSoaEwS2H66VE8Sy+Sm0eQGGgd+PttqCNk7dQItl49/D+VxPs968x8Gax3cZSMLliPkTE4zF3k6w4QcdU1bkREX1kmPtNZhimwKDQbRlTi2yH7/IHSXGgJ28EJ9W0n4422/nWy1eJoLqXSOzIwcynsXiR91mjAfQSOBClvKgXWF5+32hGjz72UnJCh+Rqtf9AeOnuVXf88ABb8aaC/3ewRcBIVJvincL/c38b68CajOrfpFBmr5dgloUD59C1aX4F5nqdS4n2WB63kGFI1puWGlNAEagvszxFwKcEZtbetBoNOycBUC82pRhbZza/DNc1RNKROWomMBfRmLHHEM0HJJEXjn6PBftA/kiBX5UCUNiSo3PiiS4xtVYYUhoniSJGGdLsU8aI3TtWux7aGZz/kw2mAm0rzwiU8LuL6tIqMd/UZad3ssKcTYVviqyfTLlL9GQxmDvMsIrxfKQZM/JSQdLnh9aavNpInLsXfqnQTxYQZqOQDSCV+Uamgki3OXVtH1cSJVNsQF+vALV0VgPMYNIgisrkTSwDqFAUwa6w6gaJAWJesV2+Y4rMYyUQsF+2oRZDUCy8Uyc3cl3reySPQEqKynYYLYemXuox1nLjd33lHjw/7FOt5W4g/7a8Fu3quODYxNfRjkXstP8q4DZtGxDRpXN+S3PusKjrYT1atoEr0utnFpSZoVxmSOyDASGU0t+B8ljE8lkYyCFYxHNf7Ebdi29Q6Q+JKXgMJWiF9T9/pzbvVj9wLEUSYzO6rqEEXBjB5tjwoBnZ4tqurOVPM0DMyBscTb4tpGVwAGeKUQoyF2mNZCe1GS0kKZLjRdJBmGRdScPZlX1y9R0nDV/wYgvCfAjhG6fGOE6Nlb+HETTsIsEkErwc0s6bFeWhmv/Fpf6W8FK4/qw8kkk3yMYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:31:09.467067+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "27169985ee0e735a08e043e9:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042265-8AUNy5GySk8SGIWinkqW",
+    "usage": {
+      "prompt_tokens": 23668,
+      "completion_tokens": 576,
+      "total_tokens": 24244,
+      "cost": 0.0026548,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0026548,
+        "upstream_inference_prompt_cost": 0.0023668,
+        "upstream_inference_completions_cost": 0.000288
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 318,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 7.768975345999934,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 95,
+    "rationale": "The candidate's core answer matches the reference: 19,147 / 21,505 = 0.890351, or 89.04%. Its inputs (revenue $21,505M, cost of revenue $2,358M, gross profit $19,147M) match the Consolidated Statements of Income excerpt. The fiscal year end (November 29, 2024) and accession 0000796343-25-000004 are correct. The claim that Note 2 reports the rounded 89% is supported by the segment table in the retrieved excerpts. The cited chunk IDs appear in the retrieved results. Minor deduction: the answer leads with a rounded 89% alongside 89.04%, which is harmless but slightly less precise in emphasis."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,117 @@
+{
+  "question_id": "Q062",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.04510740500063548,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Gross profit margin = Gross profit \u00f7 Net sales \u00d7 100  \n= $494.777 million \u00f7 $1,409.281 million \u00d7 100  \n= **35.1%** (rounded to one decimal place).\n\nThe filing also reports a 35.1% margin. *(Accession 0001739566-25-000053, Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations, chunk 2.)*",
+    "message": {
+      "role": "assistant",
+      "content": "Gross profit margin = Gross profit \u00f7 Net sales \u00d7 100  \n= $494.777 million \u00f7 $1,409.281 million \u00d7 100  \n= **35.1%** (rounded to one decimal place).\n\nThe filing also reports a 35.1% margin. *(Accession 0001739566-25-000053, Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations, chunk 2.)*",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:54.514435+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "136476e47290f6e88bdc54e3:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041952-VCJpYUCtzpbUNHBXjW3T",
+    "usage": {
+      "prompt_tokens": 10732,
+      "completion_tokens": 99,
+      "total_tokens": 10831,
+      "cost": 0.001390925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10729,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001390925,
+        "upstream_inference_prompt_cost": 0.001341425,
+        "upstream_inference_completions_cost": 4.95e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.431252184999721,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 88, \"citation_support\": 92, \"rationale\": \"The candidate's arithmetic is correct: 494,777 / 1,409,281 = 35.11%, which rounds to 35.1% at one decimal. The filing's own MD&A also states 35.1%. The answer loses some credit for giving only one decimal place when the reference gives 35.11%. The cited accession matches the gold filing. The retrieved excerpt for Item 7, chunk 2 contains the gross profit table (494777) and the 35.1% statement, so the section and chunk citation is supported. The gold evidence points to Item 8, which the candidate did not cite, but the figures it used do appear in the retrieved Item 7 text.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 88, \"citation_support\": 92, \"rationale\": \"The candidate's arithmetic is correct: 494,777 / 1,409,281 = 35.11%, which rounds to 35.1% at one decimal. The filing's own MD&A also states 35.1%. The answer loses some credit for giving only one decimal place when the reference gives 35.11%. The cited accession matches the gold filing. The retrieved excerpt for Item 7, chunk 2 contains the gross profit table (494777) and the 35.1% statement, so the section and chunk citation is supported. The gold evidence points to Item 8, which the candidate did not cite, but the figures it used do appear in the retrieved Item 7 text.\"}",
+      "refusal": null,
+      "reasoning": "Computing 494777/1409281 gives roughly 35.11%, so the candidate's rounded answer of 35.1% is essentially correct, just slightly less precise than the filing's figure.\n\nThe citation checks out too \u2014 chunk 2 of Item 7 does contain both the table with 494777 and the 35.1% statement, so the candidate's reference is well-supported by the retrieved excerpt. I'd rate this response around 85-90 for correctness and support.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Computing 494777/1409281 gives roughly 35.11%, so the candidate's rounded answer of 35.1% is essentially correct, just slightly less precise than the filing's figure.\n\nThe citation checks out too \u2014 chunk 2 of Item 7 does contain both the table with 494777 and the 35.1% statement, so the candidate's reference is well-supported by the retrieved excerpt. I'd rate this response around 85-90 for correctness and support.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:25.957653+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "136476e47290f6e88bdc54e3:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042161-2x3Tl1E01O6ooQQFp2ml",
+    "usage": {
+      "prompt_tokens": 16513,
+      "completion_tokens": 615,
+      "total_tokens": 17128,
+      "cost": 0.0019588,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019588,
+        "upstream_inference_prompt_cost": 0.0016513,
+        "upstream_inference_completions_cost": 0.0003075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 378,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.694434805999663,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 88,
+    "citation_support": 92,
+    "rationale": "The candidate's arithmetic is correct: 494,777 / 1,409,281 = 35.11%, which rounds to 35.1% at one decimal. The filing's own MD&A also states 35.1%. The answer loses some credit for giving only one decimal place when the reference gives 35.11%. The cited accession matches the gold filing. The retrieved excerpt for Item 7, chunk 2 contains the gross profit table (494777) and the 35.1% statement, so the section and chunk citation is supported. The gold evidence points to Item 8, which the candidate did not cite, but the figures it used do appear in the retrieved Item 7 text."
+  },
+  "status": "ok"
+}

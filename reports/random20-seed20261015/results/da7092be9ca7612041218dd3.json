@@ -1,0 +1,117 @@
+{
+  "question_id": "Q057",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.1538299060002828,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Working capital = total current assets \u2212 total current liabilities  \n= **$24,447 million \u2212 $20,827 million = $3,620 million** (or **$3.620 billion**) as of December 31, 2024.\n\nSource: Marathon Petroleum Corporation, accession **0001510295-25-000012**, Item 8, \u201cFinancial Statements and Supplementary Data,\u201d chunk **4**.",
+    "message": {
+      "role": "assistant",
+      "content": "Working capital = total current assets \u2212 total current liabilities  \n= **$24,447 million \u2212 $20,827 million = $3,620 million** (or **$3.620 billion**) as of December 31, 2024.\n\nSource: Marathon Petroleum Corporation, accession **0001510295-25-000012**, Item 8, \u201cFinancial Statements and Supplementary Data,\u201d chunk **4**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:48.758782+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "da7092be9ca7612041218dd3:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041946-56qVgdcpFfSMzI7L3vik",
+    "usage": {
+      "prompt_tokens": 17261,
+      "completion_tokens": 89,
+      "total_tokens": 17350,
+      "cost": 0.00220205,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 17258,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00220205,
+        "upstream_inference_prompt_cost": 0.00215755,
+        "upstream_inference_completions_cost": 4.45e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.0128533959996275,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate's arithmetic is correct: $24,447M minus $20,827M equals $3,620M, matching the reference in both millions and billions, with the correct date and line items. The cited accession 0001510295-25-000012 and the Item 8 section match the retrieved Marathon Petroleum balance sheet excerpt, which contains both totals. Chunk 4 is also the chunk that holds those figures. The candidate did not quote the exact gold line, but the figures it relies on are directly visible in the retrieved text, so the citation is well supported.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate's arithmetic is correct: $24,447M minus $20,827M equals $3,620M, matching the reference in both millions and billions, with the correct date and line items. The cited accession 0001510295-25-000012 and the Item 8 section match the retrieved Marathon Petroleum balance sheet excerpt, which contains both totals. Chunk 4 is also the chunk that holds those figures. The candidate did not quote the exact gold line, but the figures it relies on are directly visible in the retrieved text, so the citation is well supported.\"}",
+      "refusal": null,
+      "reasoning": "24447 minus 20827 checks out to 3,620, matching the candidate's figure exactly. The citation also lines up correctly \u2014 the accession number, section \"Item 8,\" and chunk reference all match the retrieved excerpt, and the section name matches \"Item 8. Financial Statements and Supplementary Data\" verbatim.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "24447 minus 20827 checks out to 3,620, matching the candidate's figure exactly. The citation also lines up correctly \u2014 the accession number, section \"Item 8,\" and chunk reference all match the retrieved excerpt, and the section name matches \"Item 8. Financial Statements and Supplementary Data\" verbatim.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSnAkKEAgSGAI4AUIIdGhpbmtpbmcSDMvAuAUgcTzo8i/K9xoM+dbsqCSWcr1CqP2OIjAzu79k4ZPtt44i2jVP7ZkcuiW0lk0FZoe3X524cOdL97upEFgSghS/+kS6lWoZvsAquQgGjsyRTJn+dp8wPmlUcdtCz8P507S58whtZZe5V/I2PCu6JYwe8ZrS8bVCyl3BEJYtx8CKYU/3wpgB3zguhJhTYNhz32OuqEMq6qasW9XuGF9aPKR+3gvJ+RUyLUyjAQdMxb3q2Ruc3Y8CHavcMX6l3fsjY/93d2Snz5TXkrPKzDTVt1+/DT1hbjsu0CJ6TvJb1VpvWrHp/bQ5gfWoRo6gtYd+/mN44oA7ukqndxvvE9QsndHT9aWkm+4sJm8xGVfJogstU9VxltInQRJGOC8LweRJ/ez8XSVAvAFOSx1q2G92SGxabXz7oXcL7J7bR6vwqzajPJDLVHFDyv6Lh7bDzWbl1fmPhEC8WBYJKXNL+/qLjhDhmGZQxH0CrFagqbf56DHxlAr3nviIF5YizJzVVExf+Q5qaevt75P/6ZrbOfnvV1sJJKgQw++KRCfW/w7cidyx83wRt94sM4jDWg+ccPZ839bzowOYSnTbQ2Jj1v2Bl7KYOKe4bjVPtsmodABDfyndcs6qCYbkNJUIxYmL+ojT8cCU6drmunJiyuJjwqmuVN2b+CZwo0j7mbWXke5AdyDUIaTGZf2CAwCsbENswqLLHJORQCc9MLOc0EuS3nqWx5YKXwlARjskmijOVX1annFZ0Q26oIzLqnlK3TvyeIzbixGlfgH4+Kr7OVGV07m3cNpwX9xfwyX33PFnJJUPko31G0ClBpkMa/bFKPLPhqp2csyqLjtj95LiLLZh1f/l5ajk2MbSVBF696adzSkSA8s4QWTS0ZqKTpexi41gEMz5U6RmUU7aLjVCPFqEBUOCHxIx+kMUawo8xcxgvCOox4XdHrPm+P5ArrstacMW6NQRedP+aACOoTi8Lt33vDKScWqDY0+lfiuC5txKJOt5MgW2bPIKRLKfIOq3N4c4h1m3Vk2wWnLISWiKUGpLnKS9Jeu+X2F6RXrTIuByFNrSTkfAWenZze/a9rIz4pr+msHI0DkbbV90lH2KH4kv/HcIcc2/99Nff7eNaXgl/08Yp+pcdurYfapekVRJhClyZ2cIXYhRYRIFBKupoYS4C1bkYMTf7EKblAE21dpKddyYE0gNBlr/VmLXmZwPkDDGHVqiXDMkp7Ntt1PZkBkVUYbGJ7wBKVwlHbuGlKUWVIBqQ/GfvpwzC5MqINl4c5v1oDQBXTIa2Jdo1M+7fchKYvMqFY/ufXCr44HMgiP3qCcP8JUuMClyBnT9cU9LVpdE6/p27x83GOPtznZ+tbJ5kiWXfssEQYoCyMvpJ76bIzO9tHuWaBepycDCtD7fB6JDzzvWhZqz8SkX4kNK2v2jXjr6fTtcFls41TPrbKlYV1knOdR0iq8tPysUuXBSp8fK/zfsjbAOaucSfEQ4JdLv4qXrPhTZ95ZR42abqjGJK8XO6e4DGJGzjq82IFpEkhCgdVHoEHLZTQqdGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:17.959685+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "da7092be9ca7612041218dd3:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042154-qemzbIwcJ3mHjXOSrG42",
+    "usage": {
+      "prompt_tokens": 26804,
+      "completion_tokens": 424,
+      "total_tokens": 27228,
+      "cost": 0.0028924,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028924,
+        "upstream_inference_prompt_cost": 0.0026804,
+        "upstream_inference_completions_cost": 0.000212
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 220,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.260248865999529,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "The candidate's arithmetic is correct: $24,447M minus $20,827M equals $3,620M, matching the reference in both millions and billions, with the correct date and line items. The cited accession 0001510295-25-000012 and the Item 8 section match the retrieved Marathon Petroleum balance sheet excerpt, which contains both totals. Chunk 4 is also the chunk that holds those figures. The candidate did not quote the exact gold line, but the figures it relies on are directly visible in the retrieved text, so the citation is well supported."
+  },
+  "status": "ok"
+}

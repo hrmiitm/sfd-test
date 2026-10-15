@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-10-15T05:40:26.206439+00:00",
+  "stores": {
+    "lancedb": {
+      "version": 36,
+      "count": 48053
+    },
+    "qdrant": {
+      "count": 48053
+    }
+  },
+  "qdrant_status": "green",
+  "same_as_preflight": true
+}

@@ -1,0 +1,108 @@
+{
+  "question_id": "Q088",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.027298789999804285,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Total gross expenses were **$770,000** from July 23 through December 31, 2024. The statement reports gross expenses of **$770 thousand** (calculation: $770 \u00d7 1,000 = $770,000); the sponsor\u2019s fee waiver reduced net expenses to zero but did not change gross expenses. **[Accession 0000950170-25-029407, Item 16, Form 10-K Summary, chunk 4]**",
+    "message": {
+      "role": "assistant",
+      "content": "Total gross expenses were **$770,000** from July 23 through December 31, 2024. The statement reports gross expenses of **$770 thousand** (calculation: $770 \u00d7 1,000 = $770,000); the sponsor\u2019s fee waiver reduced net expenses to zero but did not change gross expenses. **[Accession 0000950170-25-029407, Item 16, Form 10-K Summary, chunk 4]**",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:24.399054+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "b82e0ba01fe196941e85c63c:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042042-HqthgpeseS8AmF4D4KH6",
+    "usage": {
+      "prompt_tokens": 17447,
+      "completion_tokens": 102,
+      "total_tokens": 17549,
+      "cost": 0.0022318,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 17444,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0022318,
+        "upstream_inference_prompt_cost": 0.0021808,
+        "upstream_inference_completions_cost": 5.1e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.593038315999365,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 40, \"rationale\": \"The candidate correctly reports gross expenses of $770 thousand (i.e., $770,000) for July 23 to December 31, 2024, matching the reference and the Statement of Operations; the sponsor fee waiver offsetting to zero net expenses is also accurate. Minor issue: the candidate cites 'Item 16, chunk 4' under accession 0000950170-25-029407, which is a real accession and the statement of operations appears in that chunk, so the citation is broadly supported, though the gold evidence section label is Item 8 and the citation label is somewhat imprecise. The candidate's citation labeling is partially supported by retrieved excerpts.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 40, \"rationale\": \"The candidate correctly reports gross expenses of $770 thousand (i.e., $770,000) for July 23 to December 31, 2024, matching the reference and the Statement of Operations; the sponsor fee waiver offsetting to zero net expenses is also accurate. Minor issue: the candidate cites 'Item 16, chunk 4' under accession 0000950170-25-029407, which is a real accession and the statement of operations appears in that chunk, so the citation is broadly supported, though the gold evidence section label is Item 8 and the citation label is somewhat imprecise. The candidate's citation labeling is partially supported by retrieved excerpts.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:36.060509+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "b82e0ba01fe196941e85c63c:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042234-sf7Pf1ufpPQm0dmTQsg6",
+    "usage": {
+      "prompt_tokens": 27581,
+      "completion_tokens": 240,
+      "total_tokens": 27821,
+      "cost": 0.0028781,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028781,
+        "upstream_inference_prompt_cost": 0.0027581,
+        "upstream_inference_completions_cost": 0.00012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.805312861000857,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 40,
+    "rationale": "The candidate correctly reports gross expenses of $770 thousand (i.e., $770,000) for July 23 to December 31, 2024, matching the reference and the Statement of Operations; the sponsor fee waiver offsetting to zero net expenses is also accurate. Minor issue: the candidate cites 'Item 16, chunk 4' under accession 0000950170-25-029407, which is a real accession and the statement of operations appears in that chunk, so the citation is broadly supported, though the gold evidence section label is Item 8 and the citation label is somewhat imprecise. The candidate's citation labeling is partially supported by retrieved excerpts."
+  },
+  "status": "ok"
+}

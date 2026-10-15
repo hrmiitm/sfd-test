@@ -1,0 +1,117 @@
+{
+  "question_id": "Q057",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.03405785599989031,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Working capital = total current assets \u2212 total current liabilities  \n= **$24,447 million \u2212 $20,827 million = $3,620 million** (as of December 31, 2024).\n\nSource: Marathon Petroleum Corporation 2024 Form 10-K, accession **0001510295-25-000012**, Item 8, chunk **4**.",
+    "message": {
+      "role": "assistant",
+      "content": "Working capital = total current assets \u2212 total current liabilities  \n= **$24,447 million \u2212 $20,827 million = $3,620 million** (as of December 31, 2024).\n\nSource: Marathon Petroleum Corporation 2024 Form 10-K, accession **0001510295-25-000012**, Item 8, chunk **4**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:47.734831+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "a8e3b3a52d3dbad45585b6f1:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041945-zpGF914tCABnVXxPu64e",
+    "usage": {
+      "prompt_tokens": 15992,
+      "completion_tokens": 80,
+      "total_tokens": 16072,
+      "cost": 0.002038925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 15989,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002038925,
+        "upstream_inference_prompt_cost": 0.001998925,
+        "upstream_inference_completions_cost": 4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.5455479989996093,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's arithmetic is correct: $24,447M minus $20,827M equals $3,620M, matching the reference. Units and the December 31, 2024 date are right. The cited accession 0001510295-25-000012 and chunk 4 match the retrieved Marathon Petroleum balance sheet excerpt, which shows Total current assets 24447 and Total current liabilities 20827. The only minor gap is that the candidate names the section loosely; the excerpt's section heading is 'Item 8. Financial Statements and Supplementary Data'.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's arithmetic is correct: $24,447M minus $20,827M equals $3,620M, matching the reference. Units and the December 31, 2024 date are right. The cited accession 0001510295-25-000012 and chunk 4 match the retrieved Marathon Petroleum balance sheet excerpt, which shows Total current assets 24447 and Total current liabilities 20827. The only minor gap is that the candidate names the section loosely; the excerpt's section heading is 'Item 8. Financial Statements and Supplementary Data'.\"}",
+      "refusal": null,
+      "reasoning": "I verify the subtraction checks out at 3620, and the citation points to the correct chunk 4 in Item 8, though the section title differs slightly from the gold version's \"Consolidated Balance Sheets\" phrasing. Overall correctness and citation support both look strong, close to full marks.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I verify the subtraction checks out at 3620, and the citation points to the correct chunk 4 in Item 8, though the section title differs slightly from the gold version's \"Consolidated Balance Sheets\" phrasing. Overall correctness and citation support both look strong, close to full marks.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSzAgKEAgSGAI4AUIIdGhpbmtpbmcSDHUFWW83JCt9m5uS7BoMaYQGWvnV7BVdgTn2IjD5TG4rHdk4XzfxpDVz4y32PwowbTbKDLBBBlUQKShhK3dde2FV7gwjn+pbNuub4IYq6QefC1EehNo5Rcl6ofmrSGH3i/Z+kZtMCW8jo5f1lSfY2YfJngzoo3tZasfIyFM1nPu3UvXOW135s+2kFjxEg9LE3au6VQ9O2iCQxECnbJsI/2Ywr036xofUakc6EHDgwXqq1FYqxL1G0PDzy5i5b673P7xq6OQ3HF7tFqou8YQGyRVGIyftsahQ9/R/qIZVLloDqfHzkqZTLiQtKd0/qwnXOmjLqAQymceoYVrg2KcT+pnML1gP4gtuz5aZ30D82zNLR4maKtGlkeU+mP1SlU3Czs9vjn6ucJLh+NDwWUBeH/TeqesTcwHN1jYC3FtP2rqX/N2Ormjn461I9f2rIURx+xx9zQN7ydIq5tvKYXkmAK0vtzSMMLWklw/+IBjmN4DdKKBi7jbk9u1QbUSasLUd+NiBWXcLCOxxCiGRRrSbFr7w5ex2kShOGKdq8Vc4nQI/gHc0Xit2YvsLb/MdSnmH7HtFPQHPiHCiDfnoza4IfMVOLbwAhHPekVKE5Cec9YjkoYLp0arZqdPAcQNs0/oZdIcsmSM3a1lGWAZUFkWHwaYjPin0pKjEioDqv+8F1dq2huuMeWy6Zq4KxjMMbzFmDz4yEcruxtoZ75bctiTyTs6MG8Ui2PUz9zpb9i0WZ9oqybBAbsVBRLpSJVuuUqzyVUZgrBJo3i+NEJy6Q7fYJTqIz0p1Z52cIm6ORYo8glie8nRS9++gfIMxEUCdwzLjFERkbJffjKSsK+d5KBp70fqXIHBmqywY4C24k++kpxoTmTZRAxXzFAwHkD3SttEX6aE73UJ6XzzaH1ONUxhwyrQgeBllhVZHRupmdzBiMOhKMkzA0cQ/7ZhtLvAMs8W2A4IsO8Pn9h4sayI8xsMEDBLcp/R9e9qPp1N5AuK1XgzFULIgmLxg16hzZxFKI8O4wN4YRBnWzxXmNOgCKdiqcPxNvQzo7C/7XUNRMPJp4EMNkcUiFp2h/+q4eQk9SZ9QoXCEQEJUHuAPep7SuZUsT4uxv8ceD9W2bG7Yqj0afJzyICqaTCtNfMFxhsCASFoRni7iiMXHpy1XgXboQEJe87BrCoO3CB9rUReqzNXRoIBt5cDGnSz+OOzQmKVgBdB5EyJO7XYAFM5DterLCaZobGdl551jkygkYRw+objZSUROb4SgOT7ijzyFYj2z7s9LZ6LqK6KyDWSi6LuMILIvsmlMi1uLydpNDuLZXjfhsj6RuV5vfL1ktCWN1VHIZH/0o4TBdGhElfDJGhpCl9q3PAFbopr+taKYholew9jpLZXB7eGtPP7KLyKIgBCuye6KdgBYKmCubO5iawgs+Zs7hDU26xGIn4+U8xgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:17.668327+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "a8e3b3a52d3dbad45585b6f1:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042152-bINvB9dgX5WJS0jGSzPL",
+    "usage": {
+      "prompt_tokens": 24693,
+      "completion_tokens": 408,
+      "total_tokens": 25101,
+      "cost": 0.0026733,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0026733,
+        "upstream_inference_prompt_cost": 0.0024693,
+        "upstream_inference_completions_cost": 0.000204
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 201,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.453729182999268,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 96,
+    "rationale": "The candidate's arithmetic is correct: $24,447M minus $20,827M equals $3,620M, matching the reference. Units and the December 31, 2024 date are right. The cited accession 0001510295-25-000012 and chunk 4 match the retrieved Marathon Petroleum balance sheet excerpt, which shows Total current assets 24447 and Total current liabilities 20827. The only minor gap is that the candidate names the section loosely; the excerpt's section heading is 'Item 8. Financial Statements and Supplementary Data'."
+  },
+  "status": "ok"
+}

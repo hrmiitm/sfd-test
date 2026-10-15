@@ -1,0 +1,126 @@
+{
+  "question_id": "Q084",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/bm25",
+  "retrieval": {
+    "seconds": 0.014015905999258393,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "### Percentage Decline in Intel Foundry External Revenue\n\nAccording to Intel Corporation's 2024 Form 10-K:\n\n* **Stated Percentage:** Intel Foundry external revenue **decreased 60%** from 2023 to 2024.\n* **Underlying Values and Calculation:**\n  * **2023 External Revenue:** $953 million\n  * **2024 External Revenue:** $385 million\n  * **Decline:** $\\$385\\text{ million} - \\$953\\text{ million} = -\\$568\\text{ million}$ (a decrease of $568 million)\n  * **Percentage Change:** \n    $$\\frac{-\\$568\\text{ million}}{\\$953\\text{ million}} \\approx -59.60\\% \\quad (\\text{rounds to } -60\\%)$$\n\n---\n\n### Factors Causing the Decline\n\nThe filing states that the decrease was driven primarily by:\n1. **Lower traditional packaging services**\n2. **Lower equipment sales**\n\n---\n\n### Sources\n* **0000050863-25-000009**, Filing Summary:\n  * **Chunk ID `d3c83be6-139e-5d68-8f94-47134294ebb5`** (*Overview - A Year in Review*):\n    > *\"Intel Foundry external revenue decreased 60% from 2023 due to lower traditional packaging services and lower equipment sales.\"*\n  * **Chunk ID `00cec489-cca7-51ce-a50a-2814f0bd9f87`** (*Intel Foundry Financial Performance - Operating Segment Revenue Summary*):\n    > *\"External revenue was $385 million, down $568 million from 2023, driven primarily by lower traditional packaging services and lower equipment sales.\"*\n  * **Chunk ID `50bd9940-dd58-5593-8ec7-c57ac3dea915`** (*Note 3: Operating Segments*):\n    > *\"Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024, $953 million in 2023, and $474 million in 2022.\"*",
+    "message": {
+      "role": "assistant",
+      "content": "### Percentage Decline in Intel Foundry External Revenue\n\nAccording to Intel Corporation's 2024 Form 10-K:\n\n* **Stated Percentage:** Intel Foundry external revenue **decreased 60%** from 2023 to 2024.\n* **Underlying Values and Calculation:**\n  * **2023 External Revenue:** $953 million\n  * **2024 External Revenue:** $385 million\n  * **Decline:** $\\$385\\text{ million} - \\$953\\text{ million} = -\\$568\\text{ million}$ (a decrease of $568 million)\n  * **Percentage Change:** \n    $$\\frac{-\\$568\\text{ million}}{\\$953\\text{ million}} \\approx -59.60\\% \\quad (\\text{rounds to } -60\\%)$$\n\n---\n\n### Factors Causing the Decline\n\nThe filing states that the decrease was driven primarily by:\n1. **Lower traditional packaging services**\n2. **Lower equipment sales**\n\n---\n\n### Sources\n* **0000050863-25-000009**, Filing Summary:\n  * **Chunk ID `d3c83be6-139e-5d68-8f94-47134294ebb5`** (*Overview - A Year in Review*):\n    > *\"Intel Foundry external revenue decreased 60% from 2023 due to lower traditional packaging services and lower equipment sales.\"*\n  * **Chunk ID `00cec489-cca7-51ce-a50a-2814f0bd9f87`** (*Intel Foundry Financial Performance - Operating Segment Revenue Summary*):\n    > *\"External revenue was $385 million, down $568 million from 2023, driven primarily by lower traditional packaging services and lower equipment sales.\"*\n  * **Chunk ID `50bd9940-dd58-5593-8ec7-c57ac3dea915`** (*Note 3: Operating Segments*):\n    > *\"Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024, $953 million in 2023, and $474 million in 2022.\"*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1+cp7laWLhTmBt3QGdhr1QAj+rck5teq2QBesaBS4GfnkaANlihY0H7YH9g9od0RVny54jsNc9pRamFYYfl9wmE78zitfEPM3zHZdLG1sswh5Yc",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:51.837051+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "4c36a0c2c020318c8e2ed399:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792042006-P1OwdWRaFj2N3DFWLCN6",
+    "usage": {
+      "prompt_tokens": 21081,
+      "completion_tokens": 552,
+      "total_tokens": 21633,
+      "cost": 0.01788075,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01788075,
+        "upstream_inference_prompt_cost": 0.01581075,
+        "upstream_inference_completions_cost": 0.00207
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 7.577621112000088,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 96, \"rationale\": \"The candidate matches the reference: a 60% decline in Intel Foundry external revenue, driven by lower traditional packaging services and lower equipment sales. Its supporting figures are also correct and traceable to the retrieved excerpts: $385M (2024) vs. $953M (2023), a $568M decline, and -568/953 \u2248 -59.6%, which rounds to -60%. The cited chunk IDs match the retrieved excerpts, and the quoted text is accurate. The only minor issue is that the answer adds derived detail beyond the reference, which does not conflict with the filing.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 96, \"rationale\": \"The candidate matches the reference: a 60% decline in Intel Foundry external revenue, driven by lower traditional packaging services and lower equipment sales. Its supporting figures are also correct and traceable to the retrieved excerpts: $385M (2024) vs. $953M (2023), a $568M decline, and -568/953 \u2248 -59.6%, which rounds to -60%. The cited chunk IDs match the retrieved excerpts, and the quoted text is accurate. The only minor issue is that the answer adds derived detail beyond the reference, which does not conflict with the filing.\"}",
+      "refusal": null,
+      "reasoning": "I'm verifying the math: $385M vs $953M is a $568M decline, which computes to -59.6%, rounding correctly to the stated 60% decrease. The drivers and citation chunk IDs also check out against the retrieved excerpts.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm verifying the math: $385M vs $953M is a $568M decline, which computes to -59.6%, rounding correctly to the stated 60% decrease. The drivers and citation chunk IDs also check out against the retrieved excerpts.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQShwsKEAgSGAI4AUIIdGhpbmtpbmcSDD0lKusxumPYlaP/cRoMy/HFHRpOPWOBQideIjDrxgtdrvunhccpWfDkZVk98BRQS2wyNRTaschHyf+xFRcuYquosos6/rAST6+bL3cqpAoMxWoFHoMwezgnU2zMSGSXc0Rbksg/aepVzcBDKA3QpQwWWgVxZeyGSfedjOh/UhruYQxDHZm0yzTsimnPQTgIDtyoDXtGsWy+TwV6ypxuz/ky0f6BvZpsX0IGfjc8lU+nbwHnCYn7WsonEgG9kAjxXFPnMQBM3p3NDbhYwUeuj0fhd28tPFqKITFCkhpfwUcY0fhgehmIDe17RNuOK89eR4Mag/BcvVQNeXzW3c0H4Fr/E8DL5hFCM17GyHk9Pv53ZhmIfqaVAruzXeue7PKe0n9QOTTpUmKgVzpmhG/CdZ98ASc02+DkFsFZwyhhwv4oDmfWg6Qi4JFjcRdQ5RjVow7VYpch5cFYRCTGpn4EZuVi/CP+YHkKhf+0T4R/pp8KFFnh46NeF7BdVxjBV7y+ejHpLz0EgFhhDBgBmq2FR+Iinqgyzun80Pf0V9YV+KxMBUS5hkfxuo4m55vjr+bHesO8N0s2xIw1bL8709l3JHS/Mgs0vwFcWMCUwygyORam0i/uX+RpC2wzg1xlOLa/cJMOM2Wwp+Dqw1E70/QQ60M7bnp5sjMfK3Mp65VxVRM57QC4zee9/9YUiaoYfYDDvwJQ+7NeCq7OtuP5ss+rJKBxFmZN2mV5VcXH1vH8RubJSp/U9qCqMBtjqRo1QEQZIP9pytvITGWqfeYSN4/wegNkAQnzkdMwaqnAkoW7OokyM04+Pfl5tPwSs6mPH1lSyYjkDfUzdiOy4Qje7kH3ea0JOXhoTmqIgwZcU7nuh8Ezs9PHPl+8MKe0+FSO6ae+iEMuocd3W2VGfP5TE0txvrYC8JRyHbtuR3V9XPKCs+55DqBurWyF/M8Iyvnj4c9cfIsi7pW7pjiRoYFrEqanzidxbNjCZTgrvOpkyHMyuros5ujcRt65sOANjB3QHi1R//eHbOK/bm4l+pwkh+4+yXUrWYs5zOea+wsniFYHTKp0gm6q7z/igWShVJIg/rWGNvuHk9mNd68V9C8taZ6e9zCmI6hnhoTiLOnKsvQlcMI+pHhLpFXb93IfDepD9vtWcyqFF/qBkFtYcF6WOkEv5CncqpFxiUWSsYeQIM2Y6q+lHQ8gvMELDF9Aceb0BumN+k+8Mcf9wzvejw+B5VBQENKO0hy/+rECfGemqbCS6oVRu3VC38fvgZZjpXAb5D9l4EP2+KFTnsg8bQXd+/77sbjdYjpuaEQvU8RrStNem3gDAZKjRuekKeMihCwBo6TnSf65pU5HLFrHwqbVbOyeNyka+xS6XjM/29lv1wM0pURmKklrOVHU6XGSHBevnLo8LnAJaLuAbWVvKhkAdERD+ChYpk85PuIoKIrP0lLqq77X7BOsRoJW9Fe09ZU0ihhw0+KGS7up0enc3GxUshJLGFefh2CwDlbdgmscOZHXdZsVyLkqx7OCBLwf/tzjKgbpqJVIfHVUoCcpgdP8v22cr+rqwq3iQgSLYASvJ0HIx3qc82t3SdTIl9bSjziD8kWJXlUXm5R5+9l6G2JyeRz7KwFXurqcktUXTmwo3ym2/LesiViFTbhUAJivM3T808BPNPjPRExQk3O4KkwcySb3024YHkuSgZ0ujvRMVZJm+agAxvkWmkWWzPBe6GlLDWrkYG3hFZ0tu9+nkwaZ7Z7KK1RTPUFk4y1F/QGvPFxQy96U2nR0kSAqnKlxpPA+l8rzKpbj/2OKjcp/kq6s6CTxeIGexBOGa2piHlZecFe3DfcOl2cgnEDJFInsg9ajtqhF7bH31RgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:22.296562+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "4c36a0c2c020318c8e2ed399:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042218-ZXiiQw77Qowd3GwH69xv",
+    "usage": {
+      "prompt_tokens": 29672,
+      "completion_tokens": 543,
+      "total_tokens": 30215,
+      "cost": 0.0032387,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032387,
+        "upstream_inference_prompt_cost": 0.0029672,
+        "upstream_inference_completions_cost": 0.0002715
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 325,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.607635649000258,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 96,
+    "rationale": "The candidate matches the reference: a 60% decline in Intel Foundry external revenue, driven by lower traditional packaging services and lower equipment sales. Its supporting figures are also correct and traceable to the retrieved excerpts: $385M (2024) vs. $953M (2023), a $568M decline, and -568/953 \u2248 -59.6%, which rounds to -60%. The cited chunk IDs match the retrieved excerpts, and the quoted text is accurate. The only minor issue is that the answer adds derived detail beyond the reference, which does not conflict with the filing."
+  },
+  "status": "ok"
+}

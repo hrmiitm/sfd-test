@@ -1,0 +1,117 @@
+{
+  "question_id": "Q026",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.048686582000300405,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Levi Strauss & Co.\u2019s fiscal 2024 SG&A expenses were **$3,246.2 million**, equal to **51.1% of net revenues**. The filing reports net revenues of $6,355.3 million; the ratio is $3,246.2 million \u00f7 $6,355.3 million \u00d7 100 \u2248 **51.1%**.\n\n*Source: Accession 0000094845-25-000005, Filing Summary, chunk 29.*",
+    "message": {
+      "role": "assistant",
+      "content": "Levi Strauss & Co.\u2019s fiscal 2024 SG&A expenses were **$3,246.2 million**, equal to **51.1% of net revenues**. The filing reports net revenues of $6,355.3 million; the ratio is $3,246.2 million \u00f7 $6,355.3 million \u00d7 100 \u2248 **51.1%**.\n\n*Source: Accession 0000094845-25-000005, Filing Summary, chunk 29.*",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:11.338439+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "0b8aebed39c66f5e9ae8ccf7:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041907-DQE0BfFuapTWJWy2yq5M",
+    "usage": {
+      "prompt_tokens": 17628,
+      "completion_tokens": 108,
+      "total_tokens": 17736,
+      "cost": 0.00023055,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 17625,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00023055,
+        "upstream_inference_prompt_cost": 0.00017655,
+        "upstream_inference_completions_cost": 5.4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.860332706999543,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 92, \"citation_support\": 95, \"rationale\": \"The candidate gives the correct fiscal 2024 SG&A figure ($3,246.2 million) and the correct 51.1% of net revenues. Its check against net revenues of $6,355.3 million is arithmetically right (3,246.2 / 6,355.3 \u2248 51.08%). It omits the prior-year comparison ($3,051.9 million in 2023, up 6.4%), which the reference includes, so it is a minor omission. The cited chunk 29 contains the SG&A table with the $3,246.2 million and 51.1% figures and the $6,355.3 million net revenues line, so the citation is supported.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 92, \"citation_support\": 95, \"rationale\": \"The candidate gives the correct fiscal 2024 SG&A figure ($3,246.2 million) and the correct 51.1% of net revenues. Its check against net revenues of $6,355.3 million is arithmetically right (3,246.2 / 6,355.3 \u2248 51.08%). It omits the prior-year comparison ($3,051.9 million in 2023, up 6.4%), which the reference includes, so it is a minor omission. The cited chunk 29 contains the SG&A table with the $3,246.2 million and 51.1% figures and the $6,355.3 million net revenues line, so the citation is supported.\"}",
+      "refusal": null,
+      "reasoning": "I'm verifying the SG&A figure matches the reference\u2014$3,246.2M at 51.1% of net revenues checks out against the $6,355.3M total, though the candidate omits the prior-year comparison. Now I'm confirming whether the cited chunk actually contains the SG&A table.\n\nThe chunk does include the figures cited, so both correctness (~90) and citation support (~95) look solid overall.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm verifying the SG&A figure matches the reference\u2014$3,246.2M at 51.1% of net revenues checks out against the $6,355.3M total, though the candidate omits the prior-year comparison. Now I'm confirming whether the cited chunk actually contains the SG&A table.\n\nThe chunk does include the figures cited, so both correctness (~90) and citation support (~95) look solid overall.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:33.007921+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "0b8aebed39c66f5e9ae8ccf7:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042107-FsKDTHzVzgK43AsJ9nek",
+    "usage": {
+      "prompt_tokens": 27416,
+      "completion_tokens": 793,
+      "total_tokens": 28209,
+      "cost": 0.0031381,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0031381,
+        "upstream_inference_prompt_cost": 0.0027416,
+        "upstream_inference_completions_cost": 0.0003965
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 562,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.7207357909992425,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 92,
+    "citation_support": 95,
+    "rationale": "The candidate gives the correct fiscal 2024 SG&A figure ($3,246.2 million) and the correct 51.1% of net revenues. Its check against net revenues of $6,355.3 million is arithmetically right (3,246.2 / 6,355.3 \u2248 51.08%). It omits the prior-year comparison ($3,051.9 million in 2023, up 6.4%), which the reference includes, so it is a minor omission. The cited chunk 29 contains the SG&A table with the $3,246.2 million and 51.1% figures and the $6,355.3 million net revenues line, so the citation is supported."
+  },
+  "status": "ok"
+}

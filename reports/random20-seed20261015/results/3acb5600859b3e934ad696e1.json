@@ -1,0 +1,126 @@
+{
+  "question_id": "Q028",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/bm25",
+  "retrieval": {
+    "seconds": 0.006671760999779508,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "According to the Consolidated Statement of Income in Citigroup Inc.'s Form 10-K for the fiscal year ended December 31, 2024, the reported figures are:\n\n* **Net interest income:** $54,095 million (or ~$54.1 billion)\n* **Non-interest revenue (Total non-interest revenues):** $27,044 million (or ~$27.0 billion)\n* **Revenues net of interest expense (Total revenues, net of interest expense):** $81,139 million (or ~$81.1 billion)\n\n*(Source: Citigroup Inc. 2024 Form 10-K, Filing Summary, chunk ID: `efe0d2ed-b1ce-51fa-8514-80597e1dab5c`)*",
+    "message": {
+      "role": "assistant",
+      "content": "According to the Consolidated Statement of Income in Citigroup Inc.'s Form 10-K for the fiscal year ended December 31, 2024, the reported figures are:\n\n* **Net interest income:** $54,095 million (or ~$54.1 billion)\n* **Non-interest revenue (Total non-interest revenues):** $27,044 million (or ~$27.0 billion)\n* **Revenues net of interest expense (Total revenues, net of interest expense):** $81,139 million (or ~$81.1 billion)\n\n*(Source: Citigroup Inc. 2024 Form 10-K, Filing Summary, chunk ID: `efe0d2ed-b1ce-51fa-8514-80597e1dab5c`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1/Fnu7NjSgzTwHfTuoCVLitEJXqeIrns5HYHTqkzbUtm5grIjpDAyNGSMppb4T42IrDvXLmSVr9+WgV78c/w+s1kUMDBstwW27HfhtpJP0t0G++",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:12.638621+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "3acb5600859b3e934ad696e1:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041909-uphJ7UbCYmFJ4uOVZl1a",
+    "usage": {
+      "prompt_tokens": 17839,
+      "completion_tokens": 190,
+      "total_tokens": 18029,
+      "cost": 0.01409175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01409175,
+        "upstream_inference_prompt_cost": 0.01337925,
+        "upstream_inference_completions_cost": 0.0007125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.644034810999983,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 98, \"citation_support\": 96, \"rationale\": \"All three figures match the reference and the filing: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. Units (millions) and fiscal year 2024 are correct. The candidate's cited chunk ID efe0d2ed-b1ce-51fa-8514-80597e1dab5c appears in the retrieved excerpts with the same accession (0000831001-25-000067), and that chunk's Consolidated Statement of Income table contains all three values. Minor deduction only because the candidate's source label is slightly generic and the gold evidence points to a different section (Executive Summary table), though the figures are equally supported.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 98, \"citation_support\": 96, \"rationale\": \"All three figures match the reference and the filing: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. Units (millions) and fiscal year 2024 are correct. The candidate's cited chunk ID efe0d2ed-b1ce-51fa-8514-80597e1dab5c appears in the retrieved excerpts with the same accession (0000831001-25-000067), and that chunk's Consolidated Statement of Income table contains all three values. Minor deduction only because the candidate's source label is slightly generic and the gold evidence points to a different section (Executive Summary table), though the figures are equally supported.\"}",
+      "refusal": null,
+      "reasoning": "The NII, non-interest revenue, and total revenue figures all match the reference values, and the citation correctly points to the chunk with the Consolidated Statement of Income table. The accession number and source label are correct, giving this high citation support with only a minor wording issue to check.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The NII, non-interest revenue, and total revenue figures all match the reference values, and the citation correctly points to the chunk with the Consolidated Statement of Income table. The accession number and source label are correct, giving this high citation support with only a minor wording issue to check.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSmgoKEAgSGAI4AUIIdGhpbmtpbmcSDBeblztEzweZx446mRoMFmcVEBGxj6OJyY4mIjDw2OnGVpEhwV80r2U7SSW6aWAdvp+IX3MaZzYr8yrO7qVbyABH+uz1SPlGF7a8/NEqtwm5TbwbEHLPKtH9r2mWuivw7en7fV516z/HxXqZWBBI0XK0RpXbERCfkCkPEuQ/FEaxkBpl4qNNLQgBHNvZKnv+/UGnXhc5cv/cWBsMfC0Ug5HlhmmIZD9Yu4sXGdrVBTEejbYnWbBi7uhAt3gakDFYWlpsUQ5SCs9tN7c5SggycwqHFUW81sYqfAss+JU13BP/lWJvNVHoOBiNo3wHSN6imDnWvUPKzF/+H8OetBJWHWsw9E5WoiTbkr6ENQf8nbNsUusi3/j42caD4ts14/cfUEGcb1SOVABRAOeXfD2XG8z8xmRqGlQSNs9G2d1wJtWUxSoN/sAOQPaI9eANbctLCO95acJM1a889jB6kvotrAaAhPzd7TnuUpGMFV53sxxNamL2kRIFoYIeaBpIJdFypxcI74GykaHBx560rY7vlZRs2NduqD72OWA4yYkxdHJjWiZLaV7MksVitpATZfwf53b9HoER+7IMciDW9YdyikYEbttEA4QKQs8CXdbBqiB72VmAHRMBIX61ORpCz5r3brvzCoYmiGBJ9en395MmfA5o+2GP1B4WoV57GjzcW49u0OblQLdt3QSqeff/UcKgNeKq3LMNuUO9yeH/DCsLCklSoLb0lvXPIUR4ukvy3Dvyx4OA7wXoH7P07zsSktbDmDLnQ5cdpspin3me6x/u0chJ7Al2krU/tja2vt8pUNYGT24Qr7iPX3BZV28DNftalmcCiKYt0DOUwRzxdteglvysYyHPYD9TKO8o4FCK+47XjuTzxvauXRR1e8kpmISe3MQAPkFBxG5JWEl677rAX5/ugi1GuewySIpW+/SGHvIySZL+yhaAC8pG1WpfiRUEfU3WK7AVBbp33FHyihSaYTsZah5DHClmWJ3jr20GO3g/ZmxnCL/1W+pT52J+OEldDkAHorkDxuxQkMUMcWm6IR7PUtCUvmsK/na7FeSKIJfTB5rdQGmogDg43H9/F+TNtpaQjF5gPtrTJ19hc2j0WXDHxbfuBKCJZA7fSyzz8lbCTIB426o8RbnOuIoYvosp3NZau8j0qqJKN2RXgHf06HyQ7KoX3u5bmVf95BdithoICa5fgeOpSOGTHwYLKSWoabVwVLVFpTW3sbm8N3ATM3nNIPQDBEpmkctQ/ygK87eH7AjDFHHNQ9blfFzwZAG2U0SgXqjJNj4eFMDDORp6p2NHTXBLbFoDFwIejvqscyHZl9MjZe6IeLmLEzLbDsIHE7CJPkpH1ECZDv6f/Dv7TVw2sYKENMEGhcGHkZq+jYJMaKcj1SDDc8usZe8ltOqK5WbXprUjWGxvOGC4G6C+aN2oOdpeID6ow3fRU18eyLRF1HrDFqFN+MaMfHxJcxuiqwWNDWVWJZPsdqISzqG1epsJ8XneVbMwNwgJgcJTRu+5VYD4wawGpCCX6MYLGU9D2zoE4Lh3nN4f6iShx8g4+7aYrHqPOm3+Viihmg8JuRVSjSDOm96k9uysbVZpCYmL8s/HCZamFb5T6JziyQv+H2rzvTtJxIiM272x4q8D0VEAyErVEEuFktBOYQuLGd9VfwmeHVd9yiHqBx5Xg8jdzsKX0JBv2h3lT1CLlYL0rq4iIdPq+t8WGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:33.013269+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "3acb5600859b3e934ad696e1:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042108-kTsQglpA2N3m1GsDIiVZ",
+    "usage": {
+      "prompt_tokens": 23719,
+      "completion_tokens": 505,
+      "total_tokens": 24224,
+      "cost": 0.0026244,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0026244,
+        "upstream_inference_prompt_cost": 0.0023719,
+        "upstream_inference_completions_cost": 0.0002525
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 257,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.775556931999745,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 96,
+    "rationale": "All three figures match the reference and the filing: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. Units (millions) and fiscal year 2024 are correct. The candidate's cited chunk ID efe0d2ed-b1ce-51fa-8514-80597e1dab5c appears in the retrieved excerpts with the same accession (0000831001-25-000067), and that chunk's Consolidated Statement of Income table contains all three values. Minor deduction only because the candidate's source label is slightly generic and the gold evidence points to a different section (Executive Summary table), though the figures are equally supported."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,463 @@
+{
+  "question_id": "Q028",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/agentic",
+  "retrieval": {
+    "seconds": 9.23196053799984,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "For fiscal year 2024, Citigroup reported the following **(in millions of dollars)**:\n\n- **Net interest income:** $54,095\n- **Non-interest revenue:** $27,044\n- **Revenues, net of interest expense:** $81,139\n\nCheck: $54,095 + $27,044 = $81,139.\n\nSource: Citigroup Inc. 2024 Form 10-K, accession **0000831001-25-000067**, chunk **efe0d2ed-b1ce-51fa-8514-80597e1dab5c**.",
+    "usage": {
+      "prompt_tokens": 12032,
+      "completion_tokens": 177,
+      "total_tokens": 12209,
+      "cost": 0.0015723999999999998
+    },
+    "seconds": 3.6957084799996665,
+    "tool_seconds": 9.23196053799984,
+    "tool_calls": 1,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_lI27MLafXHhLzJxJGpXqQge9",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Citigroup Inc fiscal year 2024 net interest income non-interest revenue revenues net of interest expense total revenue 2024 10-K consolidated income statement\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_lI27MLafXHhLzJxJGpXqQge9",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Citigroup Inc fiscal year 2024 net interest income non-interest revenue revenues net of interest expense total revenue 2024 10-K consolidated income statement\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:25:15.175962+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "1c7bfb89963797b25f4a0d84:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041912-m93t0K1fUCDCyxClf3EH",
+        "usage": {
+          "prompt_tokens": 801,
+          "completion_tokens": 47,
+          "total_tokens": 848,
+          "cost": 0.0001036,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0001036,
+            "upstream_inference_prompt_cost": 8.01e-05,
+            "upstream_inference_completions_cost": 2.35e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 1.0285892450001484,
+        "attempts": 1
+      },
+      {
+        "text": "For fiscal year 2024, Citigroup reported the following **(in millions of dollars)**:\n\n- **Net interest income:** $54,095\n- **Non-interest revenue:** $27,044\n- **Revenues, net of interest expense:** $81,139\n\nCheck: $54,095 + $27,044 = $81,139.\n\nSource: Citigroup Inc. 2024 Form 10-K, accession **0000831001-25-000067**, chunk **efe0d2ed-b1ce-51fa-8514-80597e1dab5c**.",
+        "message": {
+          "role": "assistant",
+          "content": "For fiscal year 2024, Citigroup reported the following **(in millions of dollars)**:\n\n- **Net interest income:** $54,095\n- **Non-interest revenue:** $27,044\n- **Revenues, net of interest expense:** $81,139\n\nCheck: $54,095 + $27,044 = $81,139.\n\nSource: Citigroup Inc. 2024 Form 10-K, accession **0000831001-25-000067**, chunk **efe0d2ed-b1ce-51fa-8514-80597e1dab5c**.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:28:46.939428+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "1c7bfb89963797b25f4a0d84:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042125-hTpQm2MqUyIqsie6OQzf",
+        "usage": {
+          "prompt_tokens": 11231,
+          "completion_tokens": 130,
+          "total_tokens": 11361,
+          "cost": 0.0014688,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 11228,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0014688,
+            "upstream_inference_prompt_cost": 0.0014038,
+            "upstream_inference_completions_cost": 6.5e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.667119234999518,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_lI27MLafXHhLzJxJGpXqQge9",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Citigroup Inc fiscal year 2024 net interest income non-interest revenue revenues net of interest expense total revenue 2024 10-K consolidated income statement\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000831001-25-000067",
+              "cik": "0000831001",
+              "company": "CITIGROUP INC",
+              "form_type": "10-K",
+              "filed_date": "20250221",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 89702,
+              "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+              "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "efe0d2ed-b1ce-51fa-8514-80597e1dab5c",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 88,
+              "char_start": 646307,
+              "char_end": 652216,
+              "text": "| | | | |\n|:---|:---|:---|:---|\n| | **Years ended December 31,** | **Years ended December 31,** | **Years ended December 31,** |\n| *In millions of dollars, except per share amounts* | **2024** | 2023 | 2022 |\n| **Revenues** |  |  |  |\n| Interest income | $**143713** | $133258 | $74408 |\n| Interest expense | **89618** | 78358 | 25740 |\n| **Net interest income** | $**54095** | $54900 | $48668 |\n| Commissions and fees | $**10653** | $8905 | $9175 |\n| Principal transactions | **11653** | 10948 | 14159 |\n| Administration and other fiduciary fees | **4134** | 3781 | 3784 |\n| Realized gains on sales of investments, net | **328** | 188 | 67 |\n| Impairment losses on investments: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Impairment losses on investments | **(431)** | (323) | (499) |\n| &nbsp;&nbsp;&nbsp;&nbsp;(Provision) releases for credit losses on AFS debt securities<sup>(1)</sup> | **1** | (4) | 5 |\n| Net impairment losses recognized in earnings | $**(430)** | $(327) | $(494) |\n| Other revenue | $**706** | $67 | $(21) |\n| **Total non-interest revenues** | $**27044** | $23562 | $26670 |\n| **Total revenues, net of interest expense** | $**81139** | $78462 | $75338 |\n| **Provisions for credit losses and for benefits and claims** |  |  |  |\n| Provision for credit losses on loans | $**9726** | $7786 | $4745 |\n| Provision (release) for credit losses on HTM debt securities | **50** | (24) | 33 |\n| Provision for credit losses on other assets | **362** | 1762 | 76 |\n| Policyholder benefits and claims | **90** | 87 | 94 |\n| Provision (release) for credit losses on unfunded lending commitments | **(119)** | (425) | 291 |\n| **Total provisions for credit losses and for benefits and claims**<sup>(1)</sup> | $**10109** | $9186 | $5239 |\n| **Operating expenses** |  |  |  |\n| Compensation and benefits | $**28542** | $29232 | $26655 |\n| Technology/communication | **9035** | 9106 | 8587 |\n| Transactional and tax charges | **3574** | 3218 | 2848 |\n| Premises and equipment | **2438** | 2508 | 2320 |\n| Professional services | **2016** | 2078 | 2481 |\n| Advertising and marketing | **1113** | 1393 | 1556 |\n| Restructuring | **259** | 781 |  |\n| Other operating | **7007** | 8050 | 6845 |\n| **Total operating expenses** | $**53984** | $56366 | $51292 |\n| **Income from continuing operations before income taxes** | $**17046** | $12910 | $18807 |\n| Provision for income taxes | **4211** | 3528 | 3642 |\n| **Income from continuing operations** | $**12835** | $9382 | $15165 |\n| **Discontinued operations** |  |  |  |\n| Income (loss) from discontinued operations | $**(2)** | $(1) | $(272) |\n| Benefit for income taxes | **\u2014** |  | (41) |\n| **Income (loss) from discontinued operations, net of taxes** | $**(2)** | $(1) | $(231) |\n| **Net income before attribution to noncontrolling interests** | $**12833** | $9381 | $14934 |\n| Noncontrolling interests | **151** | 153 | 89 |\n| **Citigroup's net income** | $**12682** | $9228 | $14845 |\n| **Basic earnings per share**<sup>(2)</sup> |  |  |  |\n| Income from continuing operations | $**6.03** | $4.07 | $7.16 |\n| Income from discontinued operations, net of taxes | **\u2014** |  | (0.12) |\n| **Net income** | $**6.03** | $4.07 | $7.04 |\n| **Weighted-average common shares outstanding** *(in millions)* | **1901.4** | 1930.1 | 1946.7 |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Diluted earnings per share**<sup>(2)</sup> | | | |\n| Income from continuing operations | $**5.95** | $4.04 | $7.11 |\n| Income (loss) from discontinued operations, net of taxes | **\u2014** |  | (0.12) |\n| **Net income** | $**5.94** | $4.04 | $7.00 |\n| **Adjusted weighted-average diluted common shares outstanding** <br>*(in millions)* | **1940.1** | 1955.8 | 1964.3 |\n\n---\n\n\n\n(1)&nbsp;&nbsp;&nbsp;&nbsp;In accordance with ASC 326, which requires the provision for credit losses on AFS debt securities to be included in revenue. The Total provisions for credit losses and for benefits and claims excludes the provision for credit losses on AFS debt securities, which is disclosed separately above.\n\n(2)&nbsp;&nbsp;&nbsp;&nbsp;Due to rounding, earnings per share on continuing operations and discontinued operations may not sum to earnings per share on net income.\n\nThe Notes to the Consolidated Financial Statements are an integral part of these Consolidated Financial Statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME** | *Citigroup Inc. and Subsidiaries* |\n\n---\n\n\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Years ended December 31,** | **Years ended December 31,** | **Years ended December 31,** |\n| *In millions of dollars* | **2024** | 2023 | 2022 |\n| **Citigroup's net income** | $**12682** | $9228 | $14845 |\n| **Net changes, net of taxes in Citigroup's other comprehensive income (loss)** |  |  |  |\n| Unrealized gains and losses on AFS debt securities | $**907** | $2254 | $(5384) |\n| Debt valuation adjustment (DVA) | **(412)** | (1551) | 2029 |\n| Cash flow hedges | **1186** | 1116 | (2623) |\n| Benefit plans liability adjustment | **423** | (295) | 97 |\n| Currency translation adjustments (CTA), net of hedges | **(5162)** | 752 | (2471) |\n| Excluded component of fair value hedges | **(12)** | (48) | 55 |\n| Long-duration insurance contracts | **18** | 7 |  |\n| **Citigroup's total other comprehensive income (loss)** | $**(3052)** | $2235 | $(8297) |\n| **Citigroup's total comprehensive income** | $**9630** | $11463 | $6548 |\n| Add: Other comprehensive income (loss) attributable to noncontrolling interests | $**(61)** | $84 | $(58) |\n| Add: Net income (loss) attributable to noncontrolling interests | **151** | 153 | 89 |\n| **Total comprehensive income** | $**9720** | $11700 | $6579 |\n\n---\n\n\n\nThe Notes to the Consolidated Financial Statements are an integral part of these Consolidated Financial Statements.\n\n------\n\n---\n\n\n\n| | |\n|:---|:---|\n| **CONSOLIDATED BALANCE SHEET** | *Citigroup Inc. and Subsidiaries* |\n\n---\n\n\n\n---",
+              "token_count": 1825,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001045810-25-000023",
+              "cik": "0001045810",
+              "company": "NVIDIA CORP",
+              "form_type": "10-K",
+              "filed_date": "20250226",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 59611,
+              "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+              "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2d4cee94-0f7b-599b-aa19-f5ffe2997e11",
+              "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+              "section_index": 10,
+              "chunk_index": 3,
+              "char_start": 228847,
+              "char_end": 237114,
+              "text": "Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location. Revenue from sales to customers outside of the United States accounted for 53% and 56% of total revenue for fiscal years 2025 and 2024, respectively.\n\n**Gross Profit and Gross Margin**\n\nGross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.\n\nGross margins increased to 75.0% in fiscal year 2025 from 72.7% in fiscal year 2024. The year over year increase was primarily driven by a higher mix of Data Center revenue.\n\nProvisions for inventory and excess inventory purchase obligations totaled $3.7 billion and $2.2 billion for fiscal years 2025 and 2024, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $689 million and $540 million for fiscal years 2025 and 2024, respectively. The net effect on our gross margin was an unfavorable impact of 2.3% and 2.7% in fiscal years 2025 and 2024, respectively.\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Research and development expenses | $12914 | $8675 | $4239 | 49% |\n| *% of net revenue* | *9.9 %* | *14.2 %* |  |  |\n| Sales, general and administrative expenses | 3491 | 2654 | 837 | 32% |\n| *% of net revenue* | *2.7 %* | *4.4 %* |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | $16405 | $11329 | $5076 | 45% |\n| &nbsp;&nbsp;&nbsp;&nbsp;*% of net revenue* | *12.6 %* | *18.6 %* |  |  |\n\n---\n\n\n\nThe increases in research and development expenses for fiscal year 2025 were driven by a 32% increase in compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases, a 100% increase in compute and infrastructure, and a 234% increase in engineering development costs for new product introductions.\n\nThe increases in sales, general and administrative expenses for fiscal year 2025 were primarily driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Other Income (Expense), Net**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Interest income | $1786 | $866 | $920 |\n| Interest expense | (247) | (257) | 10 |\n| Other, net | 1034 | 237 | 797 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | $2573 | $846 | $1727 |\n\n---\n\n\n\nThe increase in interest income was primarily due to growth in cash, cash equivalents, and marketable securities.\n\nInterest expense is comprised of coupon interest and debt discount amortization related to our notes.\n\nOther, net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. The change in Other, net, compared to fiscal year 2024, was primarily driven by an increase in fair value of our non-marketable equity securities and publicly-held equity securities. Refer to Note 8 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information regarding our non-marketable equity securities.\n\n**Income Taxes**\n\nIncome tax expense was $11.1 billion and $4.1 billion for fiscal years 2025 and 2024, respectively. Income tax as a percentage of income before income tax was an expense of 13.3% and 12.0% for fiscal years 2025 and 2024, respectively.\n\nThe effective tax rate increased primarily due to higher pre-tax income and a prior year discrete benefit due to an audit resolution.\n\nOur effective tax rates for fiscal years 2025 and 2024 were lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, stock-based compensation, the U.S. federal research tax credit, and income earned in jurisdictions that are subject to taxes at rates lower than the U.S. federal statutory tax rate. Our effective tax rate for fiscal year 2024 was additionally benefited by the audit resolution.\n\nGiven our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could vary based on our assessment of all available information.\n\nRefer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.\n\n**Liquidity and Capital Resources**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Cash and cash equivalents | $8589 | $7280 |\n| Marketable securities | 34621 | 18704 |\n| Cash, cash equivalents, and marketable securities | $43210 | $25984 |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Net cash provided by operating activities | $64089 | $28090 |\n| Net cash used in investing activities | $(20421) | $(10566) |\n| Net cash used in financing activities | $(42359) | $(13633) |\n\n---\n\n\n\nOur investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain maturity limits on our portfolio.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\nCash provided by operating activities increased in fiscal year 2025 compared to fiscal year 2024, due to growth in revenue.\n\nCash used in investing activities increased in fiscal year 2025 compared to fiscal year 2024, primarily driven by net purchases of marketable securities, and purchase of land, property and equipment.\n\nCash used in financing activities increased in fiscal year 2025 compared to fiscal year 2024, mainly due to higher share repurchases and higher tax payments related to RSUs.\n\n**Liquidity**\n\nOur primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of January 26, 2025, we had $43.2 billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.\n\nOur marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly rated financial institutions. These marketable securities are primarily denominated in U.S. dollars. Refer to Note 7 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+              "token_count": 1944,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001652044-25-000014",
+              "cik": "0001652044",
+              "company": "Alphabet Inc.",
+              "form_type": "10-K",
+              "filed_date": "20250205",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 15674,
+              "source_md5": "8429d7c7e5e5edbff1ad966c20e78d68",
+              "content_sha256": "c35081ab5ae0f83b5ebd00aa095df9baf079a755e733a472d9f42550d6a5c30b",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "30015125-eaf9-5508-a05d-27e97a4df5f2",
+              "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 10,
+              "chunk_index": 2,
+              "char_start": 168077,
+              "char_end": 176079,
+              "text": "TAC as a percentage of revenues generated from ads placed on Google Network properties are significantly higher than TAC as a percentage of revenues generated from ads placed on Google Search & other properties, because most of the advertiser revenues from ads served on Google Network properties are paid as TAC to our Google Network partners.\n\n***Operating Expenses***\n\n33. ------\n\n---\n\n\n\n| | |\n|:---|:---|\n| <u>[**Table of Contents**](#iceb58926ff9849d5be7614e3b0f8e836_7)</u> | **Alphabet Inc.** |\n\n---\n\n\n\nOperating expenses are generally incurred during our normal course of business, which we categorize as either R&D, sales and marketing, or general and administrative.\n\nThe main components of our R&D expenses are:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 depreciation;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 employee compensation expenses for engineering and technical employees responsible for R&D related to our existing and new products and services; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 third-party services fees primarily relating to consulting and outsourced services in support of our engineering and product development efforts.\n\nThe main components of our sales and marketing expenses are:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 employee compensation expenses for employees engaged in sales and marketing, sales support, and certain customer service functions; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 spend relating to our advertising and promotional activities in support of our products and services.\n\nThe main components of our general and administrative expenses are:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 employee compensation expenses for employees in finance, human resources, information technology, legal, and other administrative support functions;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 expenses relating to legal and other matters, including certain fines and settlements; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 third-party services fees, including audit, consulting, outside legal, and other outsourced administrative services.\n\n***Other Income (Expense), Net***\n\nOI&E, net primarily consists of interest income (expense), the effect of foreign currency exchange gains (losses), net gains (losses) and impairment on our marketable and non-marketable securities, performance fees, and income (loss) and impairment from our equity method investments.\n\nFor additional information, including how we account for our investments and factors that can drive fluctuations in the value of our investments, see Note 1 and Note 3 of the Notes to Consolidated Financial Statements included in Item 8 as well as Item 7A Quantitative and Qualitative Disclosures About Market Risk of this Annual Report on Form 10-K.\n\n***Provision for Income Taxes*** \n\nProvision for income taxes represents the estimated amount of federal, state, and foreign income taxes incurred in the U.S. and the many jurisdictions in which we operate. The provision includes the effect of reserve provisions and changes to reserves that are considered appropriate as well as the related net interest and penalties.\n\nFor additional information, including a reconciliation of the U.S. federal statutory rate to our effective tax rate, see Note 14 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\n34. ------\n\n---\n\n\n\n| | |\n|:---|:---|\n| <u>[**Table of Contents**](#iceb58926ff9849d5be7614e3b0f8e836_7)</u> | **Alphabet Inc.** |\n\n---\n\n\n\n**Executive Overview**\n\nThe following table summarizes our consolidated financial results (in millions, except for per share information and percentages):\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended December 31,** | **Year Ended December 31,** | | |\n| | **2023** | **2024** |<br>**$ Change** |<br>**% Change** |\n| Consolidated revenues | $307394 | $350018 | $42624 | 14% |\n| Change in consolidated constant currency revenues<sup>(1)</sup> |  |  |  | 15% |\n| Cost of revenues | $133332 | $146306 | $12974 | 10% |\n| Operating expenses | $89769 | $91322 | $1553 | 2% |\n| Operating income | $84293 | $112390 | $28097 | 33% |\n| Operating margin | 27% | 32% |  | 5% |\n| Other income (expense), net | $1424 | $7425 | $6001 | 421% |\n| Net income | $73795 | $100118 | $26323 | 36% |\n| Diluted EPS<sup>(2)</sup> | $5.80 | $8.04 | $2.24 | 39% |\n\n---\n\n\n\n<sup>(1)</sup> &nbsp;&nbsp;&nbsp;&nbsp;See \"Use of Non-GAAP Constant Currency Information\" below for details relating to our use of constant currency information.\n\n<sup>(2)&nbsp;&nbsp;&nbsp;&nbsp;</sup>For additional information on the calculation of diluted EPS, see Note 12 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Revenues were $350.0 billion, an increase of 14% year over year, primarily driven by an increase in Google Services revenues of $32.4 billion, or 12%, and an increase in Google Cloud revenues of $10.1 billion, or 31%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Total constant currency revenues, which exclude the effect of hedging, increased 15% year over year.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Cost of revenues was $146.3 billion, an increase of 10% year over year, primarily driven by increases in content acquisition costs, TAC, and depreciation expense.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u2022** Operating expenses were $91.3 billion, an increase of 2% year over year, primarily driven by increases in depreciation expense, employee compensation expenses, and third-party services fees. These increases were partially offset by reductions in charges related to legal and other matters and charges related to our office space optimization efforts. The overall increase in employee compensation expenses was partially offset by a reduction in employee severance and related charges.\n\n***Other Information:***\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Dividend payments to stockholders of Class A, Class B, and Class C shares, which were first paid in June 2024, were $3.5 billion, $519 million, and $3.3 billion, respectively, totaling $7.4 billion for the year ended December 31, 2024. For additional information, see Note 11 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u2022** Repurchases of Class A and Class C shares were $11.9 billion and $50.2 billion, respectively, totaling $62.0 billion for the year ended December 31, 2024. For additional information, see Note 11 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Employee severance and related charges for the year ended December 31, 2024 were $1.0 billion, a decrease of $1.1 billion as compared to the year ended December 31, 2023. Office space charges, including accelerated rent and accelerated depreciation, for the year ended December 31, 2024 were $796 million, a decrease of $1.3 billion as compared to the year ended December 31, 2023. Substantially all of these charges were included in Alphabet-level activities.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Operating cash flow was $125.3 billion for the year ended December 31, 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u2022** Capital expenditures, which primarily reflected investments in technical infrastructure, were $52.5 billion for the year ended December 31, 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 As of December 31, 2024, we had 183,323 employees.\n\n35. ------\n\n---\n\n\n\n| | |\n|:---|:---|\n| <u>[**Table of Contents**](#iceb58926ff9849d5be7614e3b0f8e836_7)</u> | **Alphabet Inc.** |\n\n---\n\n\n\n**Financial Results**\n\n***Revenues***\n\nThe following table presents revenues by type (in millions):\n\n---",
+              "token_count": 1979,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000831001-25-000067",
+              "cik": "0000831001",
+              "company": "CITIGROUP INC",
+              "form_type": "10-K",
+              "filed_date": "20250221",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 89702,
+              "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+              "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "32b983ac-1834-54c2-860a-48db30f3a514",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 191,
+              "char_start": 1348937,
+              "char_end": 1354788,
+              "text": "| | | | | |\n|:---|:---|:---|:---|:---|\n| | **December 31, 2024** | **December 31, 2024** | December 31, 2023 | December 31, 2023 |\n| *In millions of dollars* | **Citigroup parent company** | **CGMHI** | Citigroup parent company | CGMHI |\n| Cash and deposits with banks | $**4014** | $**19464** | $3011 | $23756 |\n| Securities borrowed and purchased under resale agreements | **\u2014** | **215995** |  | 283174 |\n| Trading account assets | **203** | **294396** | 461 | 273379 |\n| Advances to subsidiaries | **150790** | **\u2014** | 150845 |  |\n| Investments in subsidiary bank holding company | **179253** | **\u2014** | 172125 |  |\n| Investments in non-bank subsidiaries | **46549** | **\u2014** | 46870 |  |\n| Other assets | **14642** | **158080** | 14202 | 167609 |\n| **Total assets** | $**395451** | $**687935** | $387514 | $747918 |\n| Securities loaned and sold under agreements to repurchase | $**\u2014** | $**268178** | $\u2014 | $309862 |\n| Trading account liabilities | **69** | **89146** | 300 | 111233 |\n| Short-term borrowings | **\u2014** | **29410** |  | 20481 |\n| Long-term debt | **164024** | **184516** | 162309 | 184083 |\n| Advances from subsidiaries | **19974** | **\u2014** | 16724 |  |\n| Other liabilities | **2786** | **80486** | 2728 | 85079 |\n| Stockholders' equity | **208598** | **36199** | 205453 | 37180 |\n| **Total liabilities and equity** | $**395451** | $**687935** | $387514 | $747918 |\n\n---\n\n\n\n------\n\n**32. CONDENSED PARENT COMPANY FINANCIAL STATEMENTS**\n\nThe following are the Condensed Statements of Income and Comprehensive Income for the years ended December 31, 2024, 2023 and 2022, Condensed Balance Sheet as of December 31, 2024 and 2023 and Condensed Statement of Cash Flows for the years ended December 31, 2024, 2023 and 2022 for Citigroup Inc., the parent holding company.\n\n**Condensed Statements of Income and Comprehensive Income&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year ended December 31,** | **Year ended December 31,** | **Year ended December 31,** |\n| *In millions of dollars* | **2024** | 2023 | 2022 |\n| **Revenues** |  |  |  |\n| Dividends from subsidiaries | $**5549** | $16811 | $8992 |\n| Interest revenue\u2014intercompany | $**7523** | $6955 | $4628 |\n| Interest expense | **6680** | 6339 | 5250 |\n| Interest expense\u2014intercompany | **1518** | 1460 | 715 |\n| **Net interest income** | $**(675)** | $(844) | $(1337) |\n| Commissions and fees | $**\u2014** | $\u2014 | $\u2014 |\n| Commissions and fees\u2014intercompany | **(57)** | (31) | (1) |\n| Principal transactions | **691** | (928) | 5147 |\n| Principal transactions\u2014intercompany | **(2590)** | (771) | (5686) |\n| Other revenue | **147** | (23) | 210 |\n| Other revenue\u2014intercompany | **(175)** | (135) | (220) |\n| **Total non-interest revenues** | $**(1984)** | $(1888) | $(550) |\n| **Total revenues, net of interest expense** | $**2890** | $14079 | $7105 |\n| **Operating expenses** |  |  |  |\n| Compensation and benefits | $**14** | $9 | $9 |\n| Compensation and benefits\u2014intercompany | **23** | 18 | 12 |\n| Other operating | **207** | 160 | 85 |\n| Other operating\u2014intercompany | **30** | 15 | 15 |\n| **Total operating expenses** | $**274** | $202 | $121 |\n| Equity in undistributed income of subsidiaries | $**9300** | $(5572) | $6173 |\n| **Income from continuing operations before income taxes** | $**11916** | $8305 | $13157 |\n| Provision (benefit) for income taxes | **(766)** | (923) | (1688) |\n| **Net income** | $**12682** | $9228 | $14845 |\n| **Comprehensive income** |  |  |  |\n| Add: Other comprehensive income (loss) | **(3052)** | 2235 | (8297) |\n| **Total Citigroup comprehensive income** | $**9630** | $11463 | $6548 |\n\n---\n\n\n\n------\n\n**Condensed Balance Sheet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **December 31,** | **December 31,** |\n| *In millions of dollars* | **2024** | 2023 |\n| **Assets** |  |  |\n| Cash and due from banks | $**\u2014** | $\u2014 |\n| Cash and due from banks\u2014intercompany | **14** | 11 |\n| Deposits with banks\u2014intercompany | **4000** | 3000 |\n| Trading account assets | **(164)** | 113 |\n| Trading account assets\u2014intercompany | **367** | 348 |\n| Investments, net of allowance | **1** | 1 |\n| Advances to subsidiaries | $**150790** | $150845 |\n| Investments in subsidiary bank holding company | **179253** | 172125 |\n| Investments in non-bank subsidiaries | **46549** | 46870 |\n| Other assets, net of allowance<sup>(1)</sup> | **10255** | 10031 |\n| Other assets\u2014intercompany | **4386** | 4170 |\n| **Total assets** | $**395451** | $387514 |\n| **Liabilities and equity** |  |  |\n| Trading account liabilities | $**(159)** | $34 |\n| Trading account liabilities\u2014intercompany | **228** | 266 |\n| Long-term debt | **164024** | 162309 |\n| Advances from subsidiary bank holding company | **10948** | 8677 |\n| Advances from non-bank subsidiaries | **9026** | 8047 |\n| Other liabilities | **2719** | 2560 |\n| Other liabilities\u2014intercompany | **67** | 168 |\n| Stockholders' equity | **208598** | 205453 |\n| **Total liabilities and equity** | $**395451** | $387514 |\n\n---\n\n\n\n(1)Citigroup parent company at December 31, 2024 and 2023 included $75.4 billion and $56.9 billion, respectively, of placements to Citibank and its branches, of which $71.6 billion and $33.8 billion, respectively, had a remaining term of less than 30 days.\n\n------\n\n**Condensed Statement of Cash Flows&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---",
+              "token_count": 1852,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001041803-25-000007",
+              "cik": "0001041803",
+              "company": "PRICESMART INC",
+              "form_type": "10-Q",
+              "filed_date": "20250108",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 169,
+              "source_md5": "ff4b62f23f83f69ea0e25d28ec1dac4c",
+              "content_sha256": "b7d44a8c9004593b0c89cede833e0a4de22f0693676ff2263b37aacf9f196111",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "ece59158-2a6d-5a79-bb00-a91bbeb61ac1",
+              "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 2,
+              "chunk_index": 21,
+              "char_start": 162180,
+              "char_end": 165160,
+              "text": "Total revenue margin is derived from Total revenues, which includes our Net merchandise sales, Membership income, Export sales, and Other revenue and income less our Cost of goods sold for net merchandise sales, Export sales, and Non-merchandise revenues. We express our Total revenue margin as a percentage of Total revenues.\n\nTotal revenue margin decreased 10 basis points (0.1%) for the three months ended November 30, 2024, primarily due to lower total gross margin percentage of 20 basis points (0.2%) and partially offset by increases in membership income and other income when compared to the same period of the prior year.\n\nSelling, general, and administrative expenses consist of warehouse club and other operations, general and administrative expenses, pre-opening expenses, and loss on disposal of assets. In total, selling, general and administrative expenses increased $14.8 million compared to the prior year, and increased as a percentage of total revenue by 30 basis points (0.3%) to 12.8% of total revenue for the first quarter of fiscal year 2025 compared to 12.5% of total revenues for the first quarter of fiscal year 2024. The increase was primarily due to investments in technology contributing 30 basis points (0.3%) when compared to the same period of the prior year.\n\nWarehouse club and other operations expenses remained unchanged at 9.4% of total revenues for the first quarter of fiscal year 2025 compared to the first quarter of fiscal year 2024.\n\nGeneral and administrative expenses increased to 3.4% of total revenues for the first quarter of fiscal year 2025 compared to 3.1% of total revenues for the first quarter of fiscal year 2024 primarily due to investments in technology necessary to support future growth of the business.\n\nOperating income in the first quarter of fiscal year 2025 increased to $58.3 million (4.6% of total revenue) compared to $58.2 million (5.0% of total revenue) for the same period last year. This reflects the decrease in total revenue margin of 10 basis points (0.1%), along with a 30 basis points (0.3%) decrease due to the deleveraging of selling, general and administrative expenses over the comparable prior year period.\n\n------\n\n**<u>[**Table of Contents**](#i410c5ea86c5542ecbf793a9c9048ac21_7)</u>**\n\n**Interest Income**\n\nInterest income represents the earnings generated from interest-bearing assets held by PriceSmart, Inc. and our wholly owned foreign subsidiaries. These assets include investments in fixed income securities and deposits held with financial institutions. The interest income is derived from the interest payments received on these assets, which serve to enhance our overall financial returns.\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Three Months Ended** | **Three Months Ended** | **Three Months Ended** |\n| | **November 30,<br>2024** | **November 30,<br>2024** | **November 30,<br>2023** |\n| | **Amount** | **Change** | **Amount** |\n| Interest income | $2220 | $(646) | $2866 |\n\n---",
+              "token_count": 678,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 9.23196053799984
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000831001-25-000067",
+        "cik": "0000831001",
+        "company": "CITIGROUP INC",
+        "form_type": "10-K",
+        "filed_date": "20250221",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 89702,
+        "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+        "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "efe0d2ed-b1ce-51fa-8514-80597e1dab5c",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 88,
+        "char_start": 646307,
+        "char_end": 652216,
+        "text": "| | | | |\n|:---|:---|:---|:---|\n| | **Years ended December 31,** | **Years ended December 31,** | **Years ended December 31,** |\n| *In millions of dollars, except per share amounts* | **2024** | 2023 | 2022 |\n| **Revenues** |  |  |  |\n| Interest income | $**143713** | $133258 | $74408 |\n| Interest expense | **89618** | 78358 | 25740 |\n| **Net interest income** | $**54095** | $54900 | $48668 |\n| Commissions and fees | $**10653** | $8905 | $9175 |\n| Principal transactions | **11653** | 10948 | 14159 |\n| Administration and other fiduciary fees | **4134** | 3781 | 3784 |\n| Realized gains on sales of investments, net | **328** | 188 | 67 |\n| Impairment losses on investments: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Impairment losses on investments | **(431)** | (323) | (499) |\n| &nbsp;&nbsp;&nbsp;&nbsp;(Provision) releases for credit losses on AFS debt securities<sup>(1)</sup> | **1** | (4) | 5 |\n| Net impairment losses recognized in earnings | $**(430)** | $(327) | $(494) |\n| Other revenue | $**706** | $67 | $(21) |\n| **Total non-interest revenues** | $**27044** | $23562 | $26670 |\n| **Total revenues, net of interest expense** | $**81139** | $78462 | $75338 |\n| **Provisions for credit losses and for benefits and claims** |  |  |  |\n| Provision for credit losses on loans | $**9726** | $7786 | $4745 |\n| Provision (release) for credit losses on HTM debt securities | **50** | (24) | 33 |\n| Provision for credit losses on other assets | **362** | 1762 | 76 |\n| Policyholder benefits and claims | **90** | 87 | 94 |\n| Provision (release) for credit losses on unfunded lending commitments | **(119)** | (425) | 291 |\n| **Total provisions for credit losses and for benefits and claims**<sup>(1)</sup> | $**10109** | $9186 | $5239 |\n| **Operating expenses** |  |  |  |\n| Compensation and benefits | $**28542** | $29232 | $26655 |\n| Technology/communication | **9035** | 9106 | 8587 |\n| Transactional and tax charges | **3574** | 3218 | 2848 |\n| Premises and equipment | **2438** | 2508 | 2320 |\n| Professional services | **2016** | 2078 | 2481 |\n| Advertising and marketing | **1113** | 1393 | 1556 |\n| Restructuring | **259** | 781 |  |\n| Other operating | **7007** | 8050 | 6845 |\n| **Total operating expenses** | $**53984** | $56366 | $51292 |\n| **Income from continuing operations before income taxes** | $**17046** | $12910 | $18807 |\n| Provision for income taxes | **4211** | 3528 | 3642 |\n| **Income from continuing operations** | $**12835** | $9382 | $15165 |\n| **Discontinued operations** |  |  |  |\n| Income (loss) from discontinued operations | $**(2)** | $(1) | $(272) |\n| Benefit for income taxes | **\u2014** |  | (41) |\n| **Income (loss) from discontinued operations, net of taxes** | $**(2)** | $(1) | $(231) |\n| **Net income before attribution to noncontrolling interests** | $**12833** | $9381 | $14934 |\n| Noncontrolling interests | **151** | 153 | 89 |\n| **Citigroup's net income** | $**12682** | $9228 | $14845 |\n| **Basic earnings per share**<sup>(2)</sup> |  |  |  |\n| Income from continuing operations | $**6.03** | $4.07 | $7.16 |\n| Income from discontinued operations, net of taxes | **\u2014** |  | (0.12) |\n| **Net income** | $**6.03** | $4.07 | $7.04 |\n| **Weighted-average common shares outstanding** *(in millions)* | **1901.4** | 1930.1 | 1946.7 |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Diluted earnings per share**<sup>(2)</sup> | | | |\n| Income from continuing operations | $**5.95** | $4.04 | $7.11 |\n| Income (loss) from discontinued operations, net of taxes | **\u2014** |  | (0.12) |\n| **Net income** | $**5.94** | $4.04 | $7.00 |\n| **Adjusted weighted-average diluted common shares outstanding** <br>*(in millions)* | **1940.1** | 1955.8 | 1964.3 |\n\n---\n\n\n\n(1)&nbsp;&nbsp;&nbsp;&nbsp;In accordance with ASC 326, which requires the provision for credit losses on AFS debt securities to be included in revenue. The Total provisions for credit losses and for benefits and claims excludes the provision for credit losses on AFS debt securities, which is disclosed separately above.\n\n(2)&nbsp;&nbsp;&nbsp;&nbsp;Due to rounding, earnings per share on continuing operations and discontinued operations may not sum to earnings per share on net income.\n\nThe Notes to the Consolidated Financial Statements are an integral part of these Consolidated Financial Statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME** | *Citigroup Inc. and Subsidiaries* |\n\n---\n\n\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Years ended December 31,** | **Years ended December 31,** | **Years ended December 31,** |\n| *In millions of dollars* | **2024** | 2023 | 2022 |\n| **Citigroup's net income** | $**12682** | $9228 | $14845 |\n| **Net changes, net of taxes in Citigroup's other comprehensive income (loss)** |  |  |  |\n| Unrealized gains and losses on AFS debt securities | $**907** | $2254 | $(5384) |\n| Debt valuation adjustment (DVA) | **(412)** | (1551) | 2029 |\n| Cash flow hedges | **1186** | 1116 | (2623) |\n| Benefit plans liability adjustment | **423** | (295) | 97 |\n| Currency translation adjustments (CTA), net of hedges | **(5162)** | 752 | (2471) |\n| Excluded component of fair value hedges | **(12)** | (48) | 55 |\n| Long-duration insurance contracts | **18** | 7 |  |\n| **Citigroup's total other comprehensive income (loss)** | $**(3052)** | $2235 | $(8297) |\n| **Citigroup's total comprehensive income** | $**9630** | $11463 | $6548 |\n| Add: Other comprehensive income (loss) attributable to noncontrolling interests | $**(61)** | $84 | $(58) |\n| Add: Net income (loss) attributable to noncontrolling interests | **151** | 153 | 89 |\n| **Total comprehensive income** | $**9720** | $11700 | $6579 |\n\n---\n\n\n\nThe Notes to the Consolidated Financial Statements are an integral part of these Consolidated Financial Statements.\n\n------\n\n---\n\n\n\n| | |\n|:---|:---|\n| **CONSOLIDATED BALANCE SHEET** | *Citigroup Inc. and Subsidiaries* |\n\n---\n\n\n\n---",
+        "token_count": 1825,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001045810-25-000023",
+        "cik": "0001045810",
+        "company": "NVIDIA CORP",
+        "form_type": "10-K",
+        "filed_date": "20250226",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 59611,
+        "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+        "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2d4cee94-0f7b-599b-aa19-f5ffe2997e11",
+        "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "section_index": 10,
+        "chunk_index": 3,
+        "char_start": 228847,
+        "char_end": 237114,
+        "text": "Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location. Revenue from sales to customers outside of the United States accounted for 53% and 56% of total revenue for fiscal years 2025 and 2024, respectively.\n\n**Gross Profit and Gross Margin**\n\nGross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.\n\nGross margins increased to 75.0% in fiscal year 2025 from 72.7% in fiscal year 2024. The year over year increase was primarily driven by a higher mix of Data Center revenue.\n\nProvisions for inventory and excess inventory purchase obligations totaled $3.7 billion and $2.2 billion for fiscal years 2025 and 2024, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $689 million and $540 million for fiscal years 2025 and 2024, respectively. The net effect on our gross margin was an unfavorable impact of 2.3% and 2.7% in fiscal years 2025 and 2024, respectively.\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Research and development expenses | $12914 | $8675 | $4239 | 49% |\n| *% of net revenue* | *9.9 %* | *14.2 %* |  |  |\n| Sales, general and administrative expenses | 3491 | 2654 | 837 | 32% |\n| *% of net revenue* | *2.7 %* | *4.4 %* |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | $16405 | $11329 | $5076 | 45% |\n| &nbsp;&nbsp;&nbsp;&nbsp;*% of net revenue* | *12.6 %* | *18.6 %* |  |  |\n\n---\n\n\n\nThe increases in research and development expenses for fiscal year 2025 were driven by a 32% increase in compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases, a 100% increase in compute and infrastructure, and a 234% increase in engineering development costs for new product introductions.\n\nThe increases in sales, general and administrative expenses for fiscal year 2025 were primarily driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Other Income (Expense), Net**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Interest income | $1786 | $866 | $920 |\n| Interest expense | (247) | (257) | 10 |\n| Other, net | 1034 | 237 | 797 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | $2573 | $846 | $1727 |\n\n---\n\n\n\nThe increase in interest income was primarily due to growth in cash, cash equivalents, and marketable securities.\n\nInterest expense is comprised of coupon interest and debt discount amortization related to our notes.\n\nOther, net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. The change in Other, net, compared to fiscal year 2024, was primarily driven by an increase in fair value of our non-marketable equity securities and publicly-held equity securities. Refer to Note 8 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information regarding our non-marketable equity securities.\n\n**Income Taxes**\n\nIncome tax expense was $11.1 billion and $4.1 billion for fiscal years 2025 and 2024, respectively. Income tax as a percentage of income before income tax was an expense of 13.3% and 12.0% for fiscal years 2025 and 2024, respectively.\n\nThe effective tax rate increased primarily due to higher pre-tax income and a prior year discrete benefit due to an audit resolution.\n\nOur effective tax rates for fiscal years 2025 and 2024 were lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, stock-based compensation, the U.S. federal research tax credit, and income earned in jurisdictions that are subject to taxes at rates lower than the U.S. federal statutory tax rate. Our effective tax rate for fiscal year 2024 was additionally benefited by the audit resolution.\n\nGiven our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could vary based on our assessment of all available information.\n\nRefer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.\n\n**Liquidity and Capital Resources**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Cash and cash equivalents | $8589 | $7280 |\n| Marketable securities | 34621 | 18704 |\n| Cash, cash equivalents, and marketable securities | $43210 | $25984 |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Net cash provided by operating activities | $64089 | $28090 |\n| Net cash used in investing activities | $(20421) | $(10566) |\n| Net cash used in financing activities | $(42359) | $(13633) |\n\n---\n\n\n\nOur investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain maturity limits on our portfolio.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\nCash provided by operating activities increased in fiscal year 2025 compared to fiscal year 2024, due to growth in revenue.\n\nCash used in investing activities increased in fiscal year 2025 compared to fiscal year 2024, primarily driven by net purchases of marketable securities, and purchase of land, property and equipment.\n\nCash used in financing activities increased in fiscal year 2025 compared to fiscal year 2024, mainly due to higher share repurchases and higher tax payments related to RSUs.\n\n**Liquidity**\n\nOur primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of January 26, 2025, we had $43.2 billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.\n\nOur marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly rated financial institutions. These marketable securities are primarily denominated in U.S. dollars. Refer to Note 7 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+        "token_count": 1944,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001652044-25-000014",
+        "cik": "0001652044",
+        "company": "Alphabet Inc.",
+        "form_type": "10-K",
+        "filed_date": "20250205",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 15674,
+        "source_md5": "8429d7c7e5e5edbff1ad966c20e78d68",
+        "content_sha256": "c35081ab5ae0f83b5ebd00aa095df9baf079a755e733a472d9f42550d6a5c30b",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "30015125-eaf9-5508-a05d-27e97a4df5f2",
+        "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 10,
+        "chunk_index": 2,
+        "char_start": 168077,
+        "char_end": 176079,
+        "text": "TAC as a percentage of revenues generated from ads placed on Google Network properties are significantly higher than TAC as a percentage of revenues generated from ads placed on Google Search & other properties, because most of the advertiser revenues from ads served on Google Network properties are paid as TAC to our Google Network partners.\n\n***Operating Expenses***\n\n33. ------\n\n---\n\n\n\n| | |\n|:---|:---|\n| <u>[**Table of Contents**](#iceb58926ff9849d5be7614e3b0f8e836_7)</u> | **Alphabet Inc.** |\n\n---\n\n\n\nOperating expenses are generally incurred during our normal course of business, which we categorize as either R&D, sales and marketing, or general and administrative.\n\nThe main components of our R&D expenses are:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 depreciation;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 employee compensation expenses for engineering and technical employees responsible for R&D related to our existing and new products and services; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 third-party services fees primarily relating to consulting and outsourced services in support of our engineering and product development efforts.\n\nThe main components of our sales and marketing expenses are:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 employee compensation expenses for employees engaged in sales and marketing, sales support, and certain customer service functions; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 spend relating to our advertising and promotional activities in support of our products and services.\n\nThe main components of our general and administrative expenses are:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 employee compensation expenses for employees in finance, human resources, information technology, legal, and other administrative support functions;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 expenses relating to legal and other matters, including certain fines and settlements; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 third-party services fees, including audit, consulting, outside legal, and other outsourced administrative services.\n\n***Other Income (Expense), Net***\n\nOI&E, net primarily consists of interest income (expense), the effect of foreign currency exchange gains (losses), net gains (losses) and impairment on our marketable and non-marketable securities, performance fees, and income (loss) and impairment from our equity method investments.\n\nFor additional information, including how we account for our investments and factors that can drive fluctuations in the value of our investments, see Note 1 and Note 3 of the Notes to Consolidated Financial Statements included in Item 8 as well as Item 7A Quantitative and Qualitative Disclosures About Market Risk of this Annual Report on Form 10-K.\n\n***Provision for Income Taxes*** \n\nProvision for income taxes represents the estimated amount of federal, state, and foreign income taxes incurred in the U.S. and the many jurisdictions in which we operate. The provision includes the effect of reserve provisions and changes to reserves that are considered appropriate as well as the related net interest and penalties.\n\nFor additional information, including a reconciliation of the U.S. federal statutory rate to our effective tax rate, see Note 14 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\n34. ------\n\n---\n\n\n\n| | |\n|:---|:---|\n| <u>[**Table of Contents**](#iceb58926ff9849d5be7614e3b0f8e836_7)</u> | **Alphabet Inc.** |\n\n---\n\n\n\n**Executive Overview**\n\nThe following table summarizes our consolidated financial results (in millions, except for per share information and percentages):\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended December 31,** | **Year Ended December 31,** | | |\n| | **2023** | **2024** |<br>**$ Change** |<br>**% Change** |\n| Consolidated revenues | $307394 | $350018 | $42624 | 14% |\n| Change in consolidated constant currency revenues<sup>(1)</sup> |  |  |  | 15% |\n| Cost of revenues | $133332 | $146306 | $12974 | 10% |\n| Operating expenses | $89769 | $91322 | $1553 | 2% |\n| Operating income | $84293 | $112390 | $28097 | 33% |\n| Operating margin | 27% | 32% |  | 5% |\n| Other income (expense), net | $1424 | $7425 | $6001 | 421% |\n| Net income | $73795 | $100118 | $26323 | 36% |\n| Diluted EPS<sup>(2)</sup> | $5.80 | $8.04 | $2.24 | 39% |\n\n---\n\n\n\n<sup>(1)</sup> &nbsp;&nbsp;&nbsp;&nbsp;See \"Use of Non-GAAP Constant Currency Information\" below for details relating to our use of constant currency information.\n\n<sup>(2)&nbsp;&nbsp;&nbsp;&nbsp;</sup>For additional information on the calculation of diluted EPS, see Note 12 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Revenues were $350.0 billion, an increase of 14% year over year, primarily driven by an increase in Google Services revenues of $32.4 billion, or 12%, and an increase in Google Cloud revenues of $10.1 billion, or 31%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Total constant currency revenues, which exclude the effect of hedging, increased 15% year over year.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Cost of revenues was $146.3 billion, an increase of 10% year over year, primarily driven by increases in content acquisition costs, TAC, and depreciation expense.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u2022** Operating expenses were $91.3 billion, an increase of 2% year over year, primarily driven by increases in depreciation expense, employee compensation expenses, and third-party services fees. These increases were partially offset by reductions in charges related to legal and other matters and charges related to our office space optimization efforts. The overall increase in employee compensation expenses was partially offset by a reduction in employee severance and related charges.\n\n***Other Information:***\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Dividend payments to stockholders of Class A, Class B, and Class C shares, which were first paid in June 2024, were $3.5 billion, $519 million, and $3.3 billion, respectively, totaling $7.4 billion for the year ended December 31, 2024. For additional information, see Note 11 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u2022** Repurchases of Class A and Class C shares were $11.9 billion and $50.2 billion, respectively, totaling $62.0 billion for the year ended December 31, 2024. For additional information, see Note 11 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Employee severance and related charges for the year ended December 31, 2024 were $1.0 billion, a decrease of $1.1 billion as compared to the year ended December 31, 2023. Office space charges, including accelerated rent and accelerated depreciation, for the year ended December 31, 2024 were $796 million, a decrease of $1.3 billion as compared to the year ended December 31, 2023. Substantially all of these charges were included in Alphabet-level activities.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Operating cash flow was $125.3 billion for the year ended December 31, 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u2022** Capital expenditures, which primarily reflected investments in technical infrastructure, were $52.5 billion for the year ended December 31, 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 As of December 31, 2024, we had 183,323 employees.\n\n35. ------\n\n---\n\n\n\n| | |\n|:---|:---|\n| <u>[**Table of Contents**](#iceb58926ff9849d5be7614e3b0f8e836_7)</u> | **Alphabet Inc.** |\n\n---\n\n\n\n**Financial Results**\n\n***Revenues***\n\nThe following table presents revenues by type (in millions):\n\n---",
+        "token_count": 1979,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000831001-25-000067",
+        "cik": "0000831001",
+        "company": "CITIGROUP INC",
+        "form_type": "10-K",
+        "filed_date": "20250221",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 89702,
+        "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+        "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "32b983ac-1834-54c2-860a-48db30f3a514",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 191,
+        "char_start": 1348937,
+        "char_end": 1354788,
+        "text": "| | | | | |\n|:---|:---|:---|:---|:---|\n| | **December 31, 2024** | **December 31, 2024** | December 31, 2023 | December 31, 2023 |\n| *In millions of dollars* | **Citigroup parent company** | **CGMHI** | Citigroup parent company | CGMHI |\n| Cash and deposits with banks | $**4014** | $**19464** | $3011 | $23756 |\n| Securities borrowed and purchased under resale agreements | **\u2014** | **215995** |  | 283174 |\n| Trading account assets | **203** | **294396** | 461 | 273379 |\n| Advances to subsidiaries | **150790** | **\u2014** | 150845 |  |\n| Investments in subsidiary bank holding company | **179253** | **\u2014** | 172125 |  |\n| Investments in non-bank subsidiaries | **46549** | **\u2014** | 46870 |  |\n| Other assets | **14642** | **158080** | 14202 | 167609 |\n| **Total assets** | $**395451** | $**687935** | $387514 | $747918 |\n| Securities loaned and sold under agreements to repurchase | $**\u2014** | $**268178** | $\u2014 | $309862 |\n| Trading account liabilities | **69** | **89146** | 300 | 111233 |\n| Short-term borrowings | **\u2014** | **29410** |  | 20481 |\n| Long-term debt | **164024** | **184516** | 162309 | 184083 |\n| Advances from subsidiaries | **19974** | **\u2014** | 16724 |  |\n| Other liabilities | **2786** | **80486** | 2728 | 85079 |\n| Stockholders' equity | **208598** | **36199** | 205453 | 37180 |\n| **Total liabilities and equity** | $**395451** | $**687935** | $387514 | $747918 |\n\n---\n\n\n\n------\n\n**32. CONDENSED PARENT COMPANY FINANCIAL STATEMENTS**\n\nThe following are the Condensed Statements of Income and Comprehensive Income for the years ended December 31, 2024, 2023 and 2022, Condensed Balance Sheet as of December 31, 2024 and 2023 and Condensed Statement of Cash Flows for the years ended December 31, 2024, 2023 and 2022 for Citigroup Inc., the parent holding company.\n\n**Condensed Statements of Income and Comprehensive Income&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year ended December 31,** | **Year ended December 31,** | **Year ended December 31,** |\n| *In millions of dollars* | **2024** | 2023 | 2022 |\n| **Revenues** |  |  |  |\n| Dividends from subsidiaries | $**5549** | $16811 | $8992 |\n| Interest revenue\u2014intercompany | $**7523** | $6955 | $4628 |\n| Interest expense | **6680** | 6339 | 5250 |\n| Interest expense\u2014intercompany | **1518** | 1460 | 715 |\n| **Net interest income** | $**(675)** | $(844) | $(1337) |\n| Commissions and fees | $**\u2014** | $\u2014 | $\u2014 |\n| Commissions and fees\u2014intercompany | **(57)** | (31) | (1) |\n| Principal transactions | **691** | (928) | 5147 |\n| Principal transactions\u2014intercompany | **(2590)** | (771) | (5686) |\n| Other revenue | **147** | (23) | 210 |\n| Other revenue\u2014intercompany | **(175)** | (135) | (220) |\n| **Total non-interest revenues** | $**(1984)** | $(1888) | $(550) |\n| **Total revenues, net of interest expense** | $**2890** | $14079 | $7105 |\n| **Operating expenses** |  |  |  |\n| Compensation and benefits | $**14** | $9 | $9 |\n| Compensation and benefits\u2014intercompany | **23** | 18 | 12 |\n| Other operating | **207** | 160 | 85 |\n| Other operating\u2014intercompany | **30** | 15 | 15 |\n| **Total operating expenses** | $**274** | $202 | $121 |\n| Equity in undistributed income of subsidiaries | $**9300** | $(5572) | $6173 |\n| **Income from continuing operations before income taxes** | $**11916** | $8305 | $13157 |\n| Provision (benefit) for income taxes | **(766)** | (923) | (1688) |\n| **Net income** | $**12682** | $9228 | $14845 |\n| **Comprehensive income** |  |  |  |\n| Add: Other comprehensive income (loss) | **(3052)** | 2235 | (8297) |\n| **Total Citigroup comprehensive income** | $**9630** | $11463 | $6548 |\n\n---\n\n\n\n------\n\n**Condensed Balance Sheet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **December 31,** | **December 31,** |\n| *In millions of dollars* | **2024** | 2023 |\n| **Assets** |  |  |\n| Cash and due from banks | $**\u2014** | $\u2014 |\n| Cash and due from banks\u2014intercompany | **14** | 11 |\n| Deposits with banks\u2014intercompany | **4000** | 3000 |\n| Trading account assets | **(164)** | 113 |\n| Trading account assets\u2014intercompany | **367** | 348 |\n| Investments, net of allowance | **1** | 1 |\n| Advances to subsidiaries | $**150790** | $150845 |\n| Investments in subsidiary bank holding company | **179253** | 172125 |\n| Investments in non-bank subsidiaries | **46549** | 46870 |\n| Other assets, net of allowance<sup>(1)</sup> | **10255** | 10031 |\n| Other assets\u2014intercompany | **4386** | 4170 |\n| **Total assets** | $**395451** | $387514 |\n| **Liabilities and equity** |  |  |\n| Trading account liabilities | $**(159)** | $34 |\n| Trading account liabilities\u2014intercompany | **228** | 266 |\n| Long-term debt | **164024** | 162309 |\n| Advances from subsidiary bank holding company | **10948** | 8677 |\n| Advances from non-bank subsidiaries | **9026** | 8047 |\n| Other liabilities | **2719** | 2560 |\n| Other liabilities\u2014intercompany | **67** | 168 |\n| Stockholders' equity | **208598** | 205453 |\n| **Total liabilities and equity** | $**395451** | $387514 |\n\n---\n\n\n\n(1)Citigroup parent company at December 31, 2024 and 2023 included $75.4 billion and $56.9 billion, respectively, of placements to Citibank and its branches, of which $71.6 billion and $33.8 billion, respectively, had a remaining term of less than 30 days.\n\n------\n\n**Condensed Statement of Cash Flows&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---",
+        "token_count": 1852,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001041803-25-000007",
+        "cik": "0001041803",
+        "company": "PRICESMART INC",
+        "form_type": "10-Q",
+        "filed_date": "20250108",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 169,
+        "source_md5": "ff4b62f23f83f69ea0e25d28ec1dac4c",
+        "content_sha256": "b7d44a8c9004593b0c89cede833e0a4de22f0693676ff2263b37aacf9f196111",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "ece59158-2a6d-5a79-bb00-a91bbeb61ac1",
+        "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 2,
+        "chunk_index": 21,
+        "char_start": 162180,
+        "char_end": 165160,
+        "text": "Total revenue margin is derived from Total revenues, which includes our Net merchandise sales, Membership income, Export sales, and Other revenue and income less our Cost of goods sold for net merchandise sales, Export sales, and Non-merchandise revenues. We express our Total revenue margin as a percentage of Total revenues.\n\nTotal revenue margin decreased 10 basis points (0.1%) for the three months ended November 30, 2024, primarily due to lower total gross margin percentage of 20 basis points (0.2%) and partially offset by increases in membership income and other income when compared to the same period of the prior year.\n\nSelling, general, and administrative expenses consist of warehouse club and other operations, general and administrative expenses, pre-opening expenses, and loss on disposal of assets. In total, selling, general and administrative expenses increased $14.8 million compared to the prior year, and increased as a percentage of total revenue by 30 basis points (0.3%) to 12.8% of total revenue for the first quarter of fiscal year 2025 compared to 12.5% of total revenues for the first quarter of fiscal year 2024. The increase was primarily due to investments in technology contributing 30 basis points (0.3%) when compared to the same period of the prior year.\n\nWarehouse club and other operations expenses remained unchanged at 9.4% of total revenues for the first quarter of fiscal year 2025 compared to the first quarter of fiscal year 2024.\n\nGeneral and administrative expenses increased to 3.4% of total revenues for the first quarter of fiscal year 2025 compared to 3.1% of total revenues for the first quarter of fiscal year 2024 primarily due to investments in technology necessary to support future growth of the business.\n\nOperating income in the first quarter of fiscal year 2025 increased to $58.3 million (4.6% of total revenue) compared to $58.2 million (5.0% of total revenue) for the same period last year. This reflects the decrease in total revenue margin of 10 basis points (0.1%), along with a 30 basis points (0.3%) decrease due to the deleveraging of selling, general and administrative expenses over the comparable prior year period.\n\n------\n\n**<u>[**Table of Contents**](#i410c5ea86c5542ecbf793a9c9048ac21_7)</u>**\n\n**Interest Income**\n\nInterest income represents the earnings generated from interest-bearing assets held by PriceSmart, Inc. and our wholly owned foreign subsidiaries. These assets include investments in fixed income securities and deposits held with financial institutions. The interest income is derived from the interest payments received on these assets, which serve to enhance our overall financial returns.\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Three Months Ended** | **Three Months Ended** | **Three Months Ended** |\n| | **November 30,<br>2024** | **November 30,<br>2024** | **November 30,<br>2023** |\n| | **Amount** | **Change** | **Amount** |\n| Interest income | $2220 | $(646) | $2866 |\n\n---",
+        "token_count": 678,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 93, \"rationale\": \"The candidate's figures match the reference and the retrieved 10-K income statement excerpt: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. The arithmetic check (54,095 + 27,044 = 81,139) is correct. The cited accession 0000831001-25-000067 and chunk ID efe0d2ed-... match the retrieved Citigroup filing excerpt, which contains these exact line items. Minor deduction: the candidate cites the Filing Summary consolidated statement rather than the gold evidence section (Executive Summary Table), though the figures are supported by the retrieved chunk. The gold evidence quote only shows the 81139 total, so the other two figures are supported by the retrieved excerpt rather than the gold quote.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 93, \"rationale\": \"The candidate's figures match the reference and the retrieved 10-K income statement excerpt: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. The arithmetic check (54,095 + 27,044 = 81,139) is correct. The cited accession 0000831001-25-000067 and chunk ID efe0d2ed-... match the retrieved Citigroup filing excerpt, which contains these exact line items. Minor deduction: the candidate cites the Filing Summary consolidated statement rather than the gold evidence section (Executive Summary Table), though the figures are supported by the retrieved chunk. The gold evidence quote only shows the 81139 total, so the other two figures are supported by the retrieved excerpt rather than the gold quote.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:31:04.861284+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "1c7bfb89963797b25f4a0d84:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042262-GUoIvA7JrNGXdqLTtV1B",
+    "usage": {
+      "prompt_tokens": 32065,
+      "completion_tokens": 295,
+      "total_tokens": 32360,
+      "cost": 0.003354,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003354,
+        "upstream_inference_prompt_cost": 0.0032065,
+        "upstream_inference_completions_cost": 0.0001475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.534357660999376,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 93,
+    "rationale": "The candidate's figures match the reference and the retrieved 10-K income statement excerpt: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. The arithmetic check (54,095 + 27,044 = 81,139) is correct. The cited accession 0000831001-25-000067 and chunk ID efe0d2ed-... match the retrieved Citigroup filing excerpt, which contains these exact line items. Minor deduction: the candidate cites the Filing Summary consolidated statement rather than the gold evidence section (Executive Summary Table), though the figures are supported by the retrieved chunk. The gold evidence quote only shows the 81139 total, so the other two figures are supported by the retrieved excerpt rather than the gold quote."
+  },
+  "status": "ok"
+}

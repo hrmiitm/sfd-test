@@ -1,0 +1,583 @@
+{
+  "question_id": "Q004",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 1.3419458980006311,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Amazon.com, Inc. reported **10,597,729,352 shares of common stock outstanding** as of January 29, 2025. The cover-page table lists the count directly; no calculation is needed.\n\n**Source:** Amazon.com, Inc. Form 10-K, accession **0001018724-25-000004**, original filing Markdown, source path `/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet`, character offsets **4826\u201316826**.",
+    "usage": {
+      "prompt_tokens": 16179,
+      "completion_tokens": 229,
+      "total_tokens": 16408,
+      "cost": 0.0014621999999999999
+    },
+    "seconds": 7.66490414799955,
+    "tool_seconds": 1.3419458980006311,
+    "tool_calls": 2,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_FWcqkId2Z9P0aewQdtMa5tpO",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Amazon.com, Inc. 2024 Form 10-K cover page shares common stock outstanding January 29, 2025\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_FWcqkId2Z9P0aewQdtMa5tpO",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Amazon.com, Inc. 2024 Form 10-K cover page shares common stock outstanding January 29, 2025\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:24:05.144095+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "896d09fea17be20cdbc8d2a6:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041843-fKIrSkLpUqrLPjSuq94j",
+        "usage": {
+          "prompt_tokens": 807,
+          "completion_tokens": 42,
+          "total_tokens": 849,
+          "cost": 0.0001017,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0001017,
+            "upstream_inference_prompt_cost": 8.07e-05,
+            "upstream_inference_completions_cost": 2.1e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 1.4490832419996877,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_08GDoHQUOkUNWF7shgWPQukb",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"file_stem\":\"0001018724-25-000004\",\"start\":0,\"needle\":\"January 29, 2025\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_08GDoHQUOkUNWF7shgWPQukb",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"file_stem\":\"0001018724-25-000004\",\"start\":0,\"needle\":\"January 29, 2025\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:27:46.710598+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "896d09fea17be20cdbc8d2a6:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042065-9pzX9agTUAxhklS4J0kA",
+        "usage": {
+          "prompt_tokens": 5693,
+          "completion_tokens": 73,
+          "total_tokens": 5766,
+          "cost": 0.00074805,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 5690,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00074805,
+            "upstream_inference_prompt_cost": 0.00071155,
+            "upstream_inference_completions_cost": 3.65e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.212201976999495,
+        "attempts": 1
+      },
+      {
+        "text": "Amazon.com, Inc. reported **10,597,729,352 shares of common stock outstanding** as of January 29, 2025. The cover-page table lists the count directly; no calculation is needed.\n\n**Source:** Amazon.com, Inc. Form 10-K, accession **0001018724-25-000004**, original filing Markdown, source path `/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet`, character offsets **4826\u201316826**.",
+        "message": {
+          "role": "assistant",
+          "content": "Amazon.com, Inc. reported **10,597,729,352 shares of common stock outstanding** as of January 29, 2025. The cover-page table lists the count directly; no calculation is needed.\n\n**Source:** Amazon.com, Inc. Form 10-K, accession **0001018724-25-000004**, original filing Markdown, source path `/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet`, character offsets **4826\u201316826**.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:30:53.294900+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "896d09fea17be20cdbc8d2a6:agent:2",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042250-x2xoAQgny0W76bzOc9La",
+        "usage": {
+          "prompt_tokens": 9679,
+          "completion_tokens": 114,
+          "total_tokens": 9793,
+          "cost": 0.00061245,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 5690,
+            "cache_write_tokens": 3986,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00061245,
+            "upstream_inference_prompt_cost": 0.00055545,
+            "upstream_inference_completions_cost": 5.7e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 4.003618929000368,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_FWcqkId2Z9P0aewQdtMa5tpO",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Amazon.com, Inc. 2024 Form 10-K cover page shares common stock outstanding January 29, 2025\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000000000-25-000990",
+              "cik": "0001903595",
+              "company": "Brag House Holdings, Inc.",
+              "form_type": "UPLOAD",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 268,
+              "source_md5": "568f1f334bb06be8d2b2b754e98c0f70",
+              "content_sha256": "65ba18ffcb2b25b99143aa5368fcfeb56e1ef76c74007ba5a9f776980cb8fc0e",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2f46aec8-9496-5609-bdc0-c98f0f82adfe",
+              "section": "Attached PDF Documents",
+              "section_index": 3,
+              "chunk_index": 0,
+              "char_start": 9470,
+              "char_end": 11792,
+              "text": "### Attached PDF Documents\n\n\n**Attachment 1:** `filename1`\n\nUNITED STATES\nSECURITIES AND EXCHANGE COMMISSION\nWASHINGTON, D.C. 20549\n\nDIVISION OF CORPORATION FINANCE\n\nJanuary 29, 2025\n\nLavell Juan Malloy II\nChief Executive Officer\nBrag House Holdings, Inc.\n45 Park Street\nMontclair, NJ 07042\n\nRe: Brag House Holdings, Inc.\nAmendment No. 4 to Registration Statement on Form S-1\nFiled January 13, 2025\nFile No. 333-280282\n\nDear Lavell Juan Malloy II:\n\nWe have reviewed your amended registration statement and have the following comment(s).\n\nPlease respond to this letter by amending your registration statement and providing the requested information. If you do not believe a comment applies to your facts and circumstances or do not believe an amendment is appropriate, please tell us why in your response.\n\nAfter reviewing any amendment to your registration statement and the information you provide in response to this letter, we may have additional comments.\n\n**Amendment No. 4 to Registration Statement on Form S-1 filed January 13, 2025**\n\n**Risk Factors**\n**Risks Relating to Our Business, page 14**\n\n1. Please add a risk factor to address your outstanding debt obligations, as we note that in addition to the original issue discount convertible promissory notes, a number of bridge loans and other short-term loans were entered into by the company between June and December 2024. Highlight the terms of these loans, such as the 100% interest fee and \"additional 100% fee in shares of the Company's Common Stock\" discussed in connection with the bridge loans at page F-44. State your total indebtedness and how much of such amount may be converted into shares of common stock and at what conversion price(s). Provide a cross-reference to this risk factor where you discuss your financial condition at page 9 of the prospectus summary.\n\nJanuary 29, 2025\n\nPage 2\n\nUse of Proceeds, page 42\n\n2. We note your disclosure beginning at page F-46 that certain short-term loan amounts incurred in November and December 2024 will potentially be repaid from \"the proceeds of the IPO.\" If any material part of the proceeds from this offering are to be used to discharge indebtedness, clarify as much and disclose the interest rate and maturity of such indebtedness. Refer to Item 504 of Regulation S-K and the instructions thereto.",
+              "token_count": 517,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001104659-25-007860",
+              "cik": "0001383951",
+              "company": "Nomura America Finance, LLC",
+              "form_type": "424B2",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 317,
+              "source_md5": "d00c37ebda304b62397e71c9344dbd16",
+              "content_sha256": "9f544056bb884c3e6d831f3d8bee37bb32d18da6334059fe3f7e123942133a32",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "06597cb7-a6cf-596d-a9db-55738ed49910",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 19,
+              "char_start": 53159,
+              "char_end": 56347,
+              "text": "The historical values of the common stock of Apple Inc. should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Apple Inc. on any observation date, including the final valuation date.\n\n**Description of Microsoft Corporation**\n\nMicrosoft Corporation develops, manufactures, licenses, sells, and supports software products. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 001-37845, or its CIK Code: 0000789019. Its common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"MSFT.\"\n\n**Historical performance of the common stock of Microsoft Corporation**\n\nThe following graph sets forth the historical performance of the common stock of Microsoft Corporation based on the daily historical closing values from January 1, 2020 through January 29, 2025. We obtained the closing values below from Bloomberg. We have not undertaken any independent review of, or made any due diligence inquiry with respect to, the information obtained from Bloomberg.\n\n![](tm254667d10_424b2img003.jpg)\n\nThe historical values of the common stock of Microsoft Corporation should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Microsoft Corporation on any observation date, including the final valuation date.\n\n**Description of Amazon.com, Inc.**\n\nAmazon.com, Inc. is an online retailer. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 000-22513, or its CIK Code: 0001018724. Its common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"AMZN.\"\n\n**Historical performance of the common stock of Amazon.com, Inc.**\n\nThe following graph sets forth the historical performance of the common stock of Amazon.com, Inc. based on the daily historical closing values from January 1, 2020 through January 29, 2025. We obtained the closing values below from Bloomberg L.P. (\"Bloomberg\"). We have not undertaken any independent review of, or made any due diligence inquiry with respect to, the information obtained from Bloomberg.\n\n![](tm254667d10_424b2img004.jpg)\n\nThe historical values of the common stock of Amazon.com, Inc. should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Amazon.com, Inc. on any observation date, including the final valuation date.\n\n**Description of Alphabet Inc.**\n\nAlphabet Inc. operates as a holding company. The company, through its subsidiaries, provides web-based search, advertisements, maps, software applications, mobile operating systems, consumer content, enterprise solutions, commerce, and hardware products. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 001-37580, or its CIK Code: 0001652044. Its Class A common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"GOOGL.\"\n\n**Historical performance of the Class A common stock of Alphabet Inc.**",
+              "token_count": 663,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000000000-25-000990",
+              "cik": "0001903595",
+              "company": "Brag House Holdings, Inc.",
+              "form_type": "UPLOAD",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 268,
+              "source_md5": "568f1f334bb06be8d2b2b754e98c0f70",
+              "content_sha256": "65ba18ffcb2b25b99143aa5368fcfeb56e1ef76c74007ba5a9f776980cb8fc0e",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "28672934-d614-5389-8027-53182aa8ee86",
+              "section": "Text-Extract",
+              "section_index": 1,
+              "chunk_index": 0,
+              "char_start": 960,
+              "char_end": 3859,
+              "text": "## Text-Extract\n\n\n\n```\n\n                                                            January 29, 2025\n\nLavell Juan Malloy II\nChief Executive Officer\nBrag House Holdings, Inc.\n45 Park Street\nMontclair, NJ 07042\n\n        Re: Brag House Holdings, Inc.\n            Amendment No. 4 to Registration Statement on Form S-1\n            Filed January 13, 2025\n            File No. 333-280282\nDear Lavell Juan Malloy II:\n\n     We have reviewed your amended registration statement and have the\nfollowing\ncomment(s).\n\n        Please respond to this letter by amending your registration statement\nand providing\nthe requested information. If you do not believe a comment applies to your\nfacts and\ncircumstances or do not believe an amendment is appropriate, please tell us why\nin your\nresponse.\n\n       After reviewing any amendment to your registration statement and the\ninformation\nyou provide in response to this letter, we may have additional comments.\n\nAmendment No. 4 to Registration Statement on Form S-1 filed January 13, 2025\nRisk Factors\nRisks Relating to Our Business, page 14\n\n1.     Please add a risk factor to address your outstanding debt obligations,\nas we note that\n       in addition to the original issue discount convertible promissory notes,\na number\n       of bridge loans and other short-term loans were entered into by the\ncompany between\n       June and December 2024. Highlight the terms of these loans, such as the\n100%\n       interest fee and \"additional 100% fee in shares of the Company's Common\nStock\"\n       discussed in connection with the bridge loans at page F-44. State your\ntotal\n       indebtedness and how much of such amount may be converted into shares of\ncommon\n       stock and at what conversion price(s). Provide a cross-reference to this\nrisk factor\n       where you discuss your financial condition at page 9 of the prospectus\nsummary.\n January 29, 2025\nPage 2\nUse of Proceeds, page 42\n\n2.     We note your disclosure beginning at page F-46 that certain short-term\nloan\n       amounts incurred in November and December 2024 will potentially be\nrepaid from\n       \"the proceeds of the IPO.\" If any material part of the proceeds from\nthis offering are to\n       be used to discharge indebtedness, clarify as much and disclose the\ninterest rate and\n       maturity of such indebtedness. Refer to Item 504 of Regulation S-K and\nthe\n       instructions thereto.\nBusiness, page 55\n\n3.     Please revise throughout your business and industry disclosure to\nprovide\n       updated performance metrics and other information, given passage of\ntime. For\n       example, we note that your disclosure about the e-sports industry relies\non several\n       sources from 2021 and 2022, and the most recent disclosure of metrics\nidentified as\n       key performance indicators (e.g., video views, impressions, etc.)\nappears to be as of\n       December 31, 2023.\nOur B2B Strategy, page 58",
+              "token_count": 652,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001018724-25-000004",
+              "cik": "0001018724",
+              "company": "AMAZON COM INC",
+              "form_type": "10-K",
+              "filed_date": "20250207",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 36047,
+              "source_md5": "c34a6f79641a9f3f97c6eabbfa5f9426",
+              "content_sha256": "971a71b21a061f649b274e65944062a372ee19a23871d7cf916f136655e36081",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "d4456cc8-0d66-5ad2-bbfd-df94d75641dc",
+              "section": "Exhibit 23.1",
+              "section_index": 3,
+              "chunk_index": 0,
+              "char_start": 334006,
+              "char_end": 336911,
+              "text": "## Exhibit 23.1\n\n\n\n**Exhibit 23.1** \n\n**Consent of Independent Registered Public Accounting Firm** \n\nWe consent to the incorporation by reference in the following Registration Statements:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-4 No. 333-55943), as amended, pertaining to the acquisition shelf-registration of Amazon.com, Inc. common stock,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-28763), as amended, pertaining to the Amazon.com, Inc. 1997 Stock Incentive Plan (formerly the \"1997 Stock Option Plan\") and the Amended and Restated 1994 Stock Option Plan of Amazon.com, Inc.,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-74419) pertaining to the Amazon.com, Inc. 1999 Nonofficer Employee Stock Option Plan,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 POS No. 333-160831) pertaining to the Zappos.com, Inc. 2009 Stock Plan,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(e)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-169470) pertaining to the Amazon.com, Inc. 1997 Stock Incentive Plan,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(f)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-173054), pertaining to the Quidsi, Inc. (fka1800Diapers, Inc.) 2006 Stock Option/Stock Issuance Plan,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(g)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-181073) pertaining to the Kiva Systems, Inc. 2003 Stock Plan, as amended,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(h)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-199572) pertaining to the Twitch Interactive, Inc. Amended and Restated 2007 Stock Plan,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-207591) pertaining to the Elemental Technologies, Inc. 2006 Stock Incentive Plan, as amended and restated,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(j)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-249847) pertaining to the Amazon.com, Inc. 1997 Stock Incentive Plan (as Amended and Restated), and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(k)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-3 No. 333-269547) pertaining to the shelf registration of Amazon.com, Inc. securities.\n\nof our reports dated February 6, 2025, with respect to the consolidated financial statements of Amazon.com, Inc. and the effectiveness of internal control over financial reporting of Amazon.com, Inc. included in this Annual Report (Form 10-K) of Amazon.com, Inc. for the year ended December 31, 2024.\n\n\n/s/ Ernst & Young LLP\n\nSeattle, Washington\n\nFebruary 6, 2025",
+              "token_count": 828,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001104659-25-007860",
+              "cik": "0001383951",
+              "company": "Nomura America Finance, LLC",
+              "form_type": "424B2",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 317,
+              "source_md5": "d00c37ebda304b62397e71c9344dbd16",
+              "content_sha256": "9f544056bb884c3e6d831f3d8bee37bb32d18da6334059fe3f7e123942133a32",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "797eb916-eb43-5859-aa9f-b079b8eeb66c",
+              "section": "Attached PDF Documents",
+              "section_index": 1,
+              "chunk_index": 0,
+              "char_start": 66652,
+              "char_end": 69829,
+              "text": "### Attached PDF Documents\n\n\n**Attachment 1:** `tm254667-10_424b2.pdf`\n\nThe information in this preliminary pricing supplement is not complete and may be changed. This preliminary pricing supplement is not an offer to sell nor does it seek an offer to buy these securities in any jurisdiction where the offer or sale is not permitted.\n\nFiled Pursuant to Rule 424(b)(2)\nRegistration Statement Nos. 333-273353\n333-273353-01\n\nSUBJECT TO COMPLETION. DATED January 31, 2025\n\nPRICING SUPPLEMENT TO THE PROSPECTUS DATED JULY 20, 2023 AND THE PRODUCT PROSPECTUS\nSUPPLEMENT DATED FEBRUARY 29, 2024\n\nNOMURA\n\nUS$\nNomura America Finance, LLC\nSenior Global Medium-Term Notes, Series A\nFully and Unconditionally Guaranteed by Nomura Holdings, Inc.\n\nAutocallable Contingent Coupon Barrier Notes Linked to the Least Performing of the Equity Securities of Apple Inc., Microsoft Corporation, Amazon.com, Inc. and Alphabet Inc. due February 17, 2028\n\n- Nomura America Finance, LLC is offering the autocallable contingent coupon barrier notes linked to the least performing of the common stock of Apple Inc., the common stock of Microsoft Corporation, the common stock of Amazon.com, Inc. and the Class A common stock of Alphabet Inc. (each, a \"reference asset\" and together, the \"reference assets\") due February 17, 2028 (the \"notes\") described below. The notes are unsecured securities. All payments on the notes are subject to our credit risk and that of the guarantor of the notes, Nomura Holdings, Inc.\n- Quarterly contingent coupon payments at a rate of at least 2.625% (equivalent to at least 10.50% per annum) (to be determined on the trade date), payable if the closing value of each reference asset on the applicable coupon observation date is greater than or equal to 60% of its initial value.\n- Callable quarterly at the principal amount plus the applicable contingent coupon on any call observation date on or after August 13, 2025 if the closing value of each reference asset is at or above its call barrier level.\n- If the notes are not called and the least performing reference asset declines by more than 40%, there is full exposure to declines in the least performing reference asset, and you will lose all or a portion of your principal amount at maturity. The reference asset with the lowest reference asset performance is the \"least performing reference asset.\"\n- Approximately a three year maturity, if not called.\n- The notes will not be listed on any securities exchange.\n- The notes are not ordinary debt securities, and you should carefully consider whether the notes are suited to your particular circumstances.\n\nInvesting in the notes involves significant risks, including our and Nomura's credit risk. You should carefully consider the risk factors under \"Additional Risk Factors Specific to Your Notes\" beginning on page PS-6 of this pricing supplement, under \"Risk Factors\" beginning on page 6 in the accompanying prospectus, under \"Additional Risk Factors Specific to the Notes\" beginning on page PS-18 of the accompanying product prospectus supplement, and any risk factors incorporated by reference into the accompanying prospectus before you invest in the notes.",
+              "token_count": 688,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.022360072000083164
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_08GDoHQUOkUNWF7shgWPQukb",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"file_stem\":\"0001018724-25-000004\",\"start\":0,\"needle\":\"January 29, 2025\"}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0001018724-25-000004:4826:16826",
+          "accession": "0001018724-25-000004",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+          "char_start": 4826,
+          "char_end": 16826,
+          "text": "Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report. \u2612\n\nIf securities are registered pursuant to Section 12(b) of the Exchange Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. \u2610\n\nIndicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant's executive officers during the relevant recovery period pursuant to \u00a7240.10D-1(b). \u2610\n\nIndicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2610&nbsp;&nbsp;&nbsp;&nbsp;No \u2612\n\n---\n\n\n\n| | |\n|:---|:---|\n| Aggregate market value of voting stock held by non-affiliates of the registrant as of June 30, 2024 | $1815014489485 |\n| Number of shares of common stock outstanding as of January 29, 2025 | 10597729352 |\n\n---\n\n\n\n____________________________________\n\n**DOCUMENTS INCORPORATED BY REFERENCE**\n\nThe information required by Part III of this Report, to the extent not set forth herein, is incorporated herein by reference from the registrant's definitive proxy statement relating to the Annual Meeting of Shareholders to be held in 2025, which definitive proxy statement shall be filed with the Securities and Exchange Commission within 120 days after the end of the fiscal year to which this Report relates.\n\n\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**AMAZON.COM, INC.**\n\n**FORM 10-K**\n\n**For the Fiscal Year Ended December 31, 2024** \n\n**INDEX**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | | **Page** |\n| **PART I** | **PART I** | |\n| Item 1. | <u>[Business](#i8a64c58a8ced4ccaa47e02e81fab0039_13)</u> | <u>[3](#i8a64c58a8ced4ccaa47e02e81fab0039_13)</u> |\n| Item 1A. | <u>[Risk Factors](#i8a64c58a8ced4ccaa47e02e81fab0039_16)</u> | <u>[6](#i8a64c58a8ced4ccaa47e02e81fab0039_16)</u> |\n| Item 1B. | <u>[Unresolved Staff Comments](#i8a64c58a8ced4ccaa47e02e81fab0039_19)</u> | <u>[16](#i8a64c58a8ced4ccaa47e02e81fab0039_19)</u> |\n| Item 1C. | <u>[Cybersecurity](#i8a64c58a8ced4ccaa47e02e81fab0039_22)</u> | <u>[17](#i8a64c58a8ced4ccaa47e02e81fab0039_22)</u> |\n| Item 2. | <u>[Properties](#i8a64c58a8ced4ccaa47e02e81fab0039_25)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_25)</u> |\n| Item 3. | <u>[Legal Proceedings](#i8a64c58a8ced4ccaa47e02e81fab0039_28)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_28)</u> |\n| Item 4. | <u>[Mine Safety Disclosures](#i8a64c58a8ced4ccaa47e02e81fab0039_31)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_31)</u> |\n| **PART II** | **PART II** |  |\n| Item 5. | <u>[Market for the Registrant's Common Stock, Related Shareholder Matters, and Issuer Purchases of Equity Securities](#i8a64c58a8ced4ccaa47e02e81fab0039_37)</u> | <u>[19](#i8a64c58a8ced4ccaa47e02e81fab0039_37)</u> |\n| Item 6. | <u>[Reserved](#i8a64c58a8ced4ccaa47e02e81fab0039_43)</u> | <u>[19](#i8a64c58a8ced4ccaa47e02e81fab0039_43)</u> |\n| Item 7. | <u>[Management's Discussion and Analysis of Financial Condition and Results of Operations](#i8a64c58a8ced4ccaa47e02e81fab0039_49)</u> | <u>[20](#i8a64c58a8ced4ccaa47e02e81fab0039_49)</u> |\n| Item 7A. | <u>[Quantitative and Qualitative Disclosures About Market Risk](#i8a64c58a8ced4ccaa47e02e81fab0039_100)</u> | <u>[31](#i8a64c58a8ced4ccaa47e02e81fab0039_100)</u> |\n| Item 8. | <u>[Financial Statements and Supplementary Data](#i8a64c58a8ced4ccaa47e02e81fab0039_112)</u> | <u>[33](#i8a64c58a8ced4ccaa47e02e81fab0039_112)</u> |\n| Item 9. | <u>[Changes in and Disagreements with Accountants on Accounting and Financial Disclosure](#i8a64c58a8ced4ccaa47e02e81fab0039_349)</u> | <u>[70](#i8a64c58a8ced4ccaa47e02e81fab0039_349)</u> |\n| Item 9A. | <u>[Controls and Procedures](#i8a64c58a8ced4ccaa47e02e81fab0039_352)</u> | <u>[70](#i8a64c58a8ced4ccaa47e02e81fab0039_352)</u> |\n| Item 9B. | <u>[Other Information](#i8a64c58a8ced4ccaa47e02e81fab0039_358)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_358)</u> |\n| Item 9C. | <u>[Disclosure Regarding Foreign Jurisdictions that Prevent Inspections](#i8a64c58a8ced4ccaa47e02e81fab0039_364)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_364)</u> |\n| **PART III** | **PART III** |  |\n| Item 10. | <u>[Directors, Executive Officers, and Corporate Governance](#i8a64c58a8ced4ccaa47e02e81fab0039_370)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_370)</u> |\n| Item 11. | <u>[Executive Compensation](#i8a64c58a8ced4ccaa47e02e81fab0039_373)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_373)</u> |\n| Item 12. | <u>[Security Ownership of Certain Beneficial Owners and Management and Related Shareholder Matters](#i8a64c58a8ced4ccaa47e02e81fab0039_376)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_376)</u> |\n| Item 13. | <u>[Certain Relationships and Related Transactions, and Director Independence](#i8a64c58a8ced4ccaa47e02e81fab0039_379)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_379)</u> |\n| Item 14. | <u>[Principal Accountant Fees and Services](#i8a64c58a8ced4ccaa47e02e81fab0039_382)</u> | <u>[73](#i8a64c58a8ced4ccaa47e02e81fab0039_382)</u> |\n| **PART IV** | **PART IV** |  |\n| Item 15. | <u>[Exhibits, Financial Statement Schedules](#i8a64c58a8ced4ccaa47e02e81fab0039_388)</u> | <u>[74](#i8a64c58a8ced4ccaa47e02e81fab0039_388)</u> |\n| Item 16. | <u>[Form 10-K Summary](#i8a64c58a8ced4ccaa47e02e81fab0039_391)</u> | <u>[76](#i8a64c58a8ced4ccaa47e02e81fab0039_391)</u> |\n| <u>[Signatures](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> | <u>[Signatures](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> | <u>[77](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**AMAZON.COM, INC.**\n\n**PART I**\n\n---\n\n\n\n| | |\n|:---|:---|\n| **Item 1.** | ***Business*** |\n\n---\n\n\n\n*This Annual Report on Form 10-K and the documents incorporated herein by reference contain forward-looking statements based on expectations, estimates, and projections as of the date of this filing. Actual results and outcomes may differ materially from those expressed in forward-looking statements. See Item 1A of Part I \u2014 \"Risk Factors.\" As used herein, \"Amazon.com,\" \"we,\" \"our,\" and similar terms include Amazon.com, Inc. and its subsidiaries, unless the context indicates otherwise.*\n\n**General**\n\nWe seek to be Earth's most customer-centric company. We are guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. In each of our segments, we serve our primary customer sets, consisting of consumers, sellers, developers, enterprises, content creators, advertisers, and employees.\n\nWe have organized our operations into three segments: North America, International, and Amazon Web Services (\"AWS\"). These segments reflect the way the Company evaluates its business performance and manages its operations. Information on our net sales is contained in Item 8 of Part II, \"Financial Statements and Supplementary Data \u2014 Note 10 \u2014 Segment Information.\"\n\n**Consumers**\n\nWe serve consumers through our online and physical stores and focus on selection, price, and convenience. We design our stores to enable hundreds of millions of unique products to be sold by us and by third parties across dozens of product categories. Customers access our offerings through our websites, mobile apps, Alexa, devices, streaming, and physically visiting our stores. We also manufacture and sell electronic devices, including Kindle, Fire tablet, Fire TV, Echo, Ring, Blink, and eero, and we develop and produce media content. We seek to offer our customers low prices, fast and free delivery, easy-to-use functionality, and timely customer service. In addition, we offer subscription services such as Amazon Prime, a membership program that includes fast, free shipping on tens of millions of items, access to award-winning movies and series, live sports, and other benefits.\n\nWe fulfill customer orders in a number of ways, including through: North America and International fulfillment networks that we operate; co-sourced and outsourced arrangements in certain countries; digital delivery; and through our physical stores. We operate customer service centers globally, which are supplemented by co-sourced arrangements. See Item 2 of Part I, \"Properties.\"\n\n**Sellers**\n\nWe offer programs that enable sellers to grow their businesses, sell their products in our stores, and fulfill orders using our services. We are not the seller of record in these transactions. We earn fixed fees, a percentage of sales, per-unit activity fees, interest, or some combination thereof, for our seller programs.\n\n**Developers and Enterprises**\n\nWe serve developers and enterprises of all sizes, including start-ups, government agencies, and academic institutions, through AWS, which offers a broad set of on-demand technology services, including compute, storage, database, analytics, and machine learning, and other services.\n\n**Content Creators**\n\nWe offer programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content.\n\n**Advertisers**\n\nWe provide advertising services to sellers, vendors, publishers, authors, and others, through programs such as sponsored ads, display, and video advertising.\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**Competition**\n\nOur businesses encompass a large variety of product types, service offerings, and delivery channels. The worldwide marketplace in which we compete is evolving rapidly and intensely competitive, and we face a broad array of competitors from many different industry sectors around the world. Our current and potential competitors include: (1) physical, e-commerce, and omnichannel retailers, publishers, vendors, distributors, manufacturers, and producers of the products we offer and sell to consumers and businesses; (2) publishers, producers, and distributors of physical, digital, and interactive media of all types and all distribution channels; (3) web search engines, comparison shopping websites, social networks, web portals, virtual assistants, and other online and app-based means of discovering, using, or acquiring goods and services, either directly or in collaboration with other retailers; (4) companies that provide e-commerce services, including website development and hosting, omnichannel sales, inventory and supply chain management, advertising, fulfillment, customer service, and payment processing; (5) companies that provide fulfillment and logistics services for themselves or for third parties, whether online or offline; (6) companies that provide information technology services or products, including on-premises or cloud-based infrastructure, tools and services relating to artificial intelligence, and other services; (7) companies that design, manufacture, market, or sell consumer electronics, communications, and other electronic devices and services; (8) companies that sell grocery products online and in physical stores; (9) companies that provide advertising services, whether in digital or other formats; and (10) providers of virtual or in-person healthcare services. We believe that the principal competitive factors in our retail businesses include selection, price, and convenience, including fast and reliable fulfillment. Additional competitive factors for our seller and enterprise services include the quality, speed, and reliability of our services and tools, as well as customers' ability and willingness to change business practices. Some of our current and potential competitors have greater resources, longer histories, more customers, greater brand recognition, and greater control over inputs critical to our various businesses. They may secure better terms from suppliers, a",
+          "total_chars": 348067,
+          "next_start": 16826,
+          "resources": {
+            "peak_rss_mib": 943.875,
+            "cpu_seconds": 1.2599679999999998,
+            "wall_seconds": 1.2635237820004477,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 1.319585826000548
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000000000-25-000990",
+        "cik": "0001903595",
+        "company": "Brag House Holdings, Inc.",
+        "form_type": "UPLOAD",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 268,
+        "source_md5": "568f1f334bb06be8d2b2b754e98c0f70",
+        "content_sha256": "65ba18ffcb2b25b99143aa5368fcfeb56e1ef76c74007ba5a9f776980cb8fc0e",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2f46aec8-9496-5609-bdc0-c98f0f82adfe",
+        "section": "Attached PDF Documents",
+        "section_index": 3,
+        "chunk_index": 0,
+        "char_start": 9470,
+        "char_end": 11792,
+        "text": "### Attached PDF Documents\n\n\n**Attachment 1:** `filename1`\n\nUNITED STATES\nSECURITIES AND EXCHANGE COMMISSION\nWASHINGTON, D.C. 20549\n\nDIVISION OF CORPORATION FINANCE\n\nJanuary 29, 2025\n\nLavell Juan Malloy II\nChief Executive Officer\nBrag House Holdings, Inc.\n45 Park Street\nMontclair, NJ 07042\n\nRe: Brag House Holdings, Inc.\nAmendment No. 4 to Registration Statement on Form S-1\nFiled January 13, 2025\nFile No. 333-280282\n\nDear Lavell Juan Malloy II:\n\nWe have reviewed your amended registration statement and have the following comment(s).\n\nPlease respond to this letter by amending your registration statement and providing the requested information. If you do not believe a comment applies to your facts and circumstances or do not believe an amendment is appropriate, please tell us why in your response.\n\nAfter reviewing any amendment to your registration statement and the information you provide in response to this letter, we may have additional comments.\n\n**Amendment No. 4 to Registration Statement on Form S-1 filed January 13, 2025**\n\n**Risk Factors**\n**Risks Relating to Our Business, page 14**\n\n1. Please add a risk factor to address your outstanding debt obligations, as we note that in addition to the original issue discount convertible promissory notes, a number of bridge loans and other short-term loans were entered into by the company between June and December 2024. Highlight the terms of these loans, such as the 100% interest fee and \"additional 100% fee in shares of the Company's Common Stock\" discussed in connection with the bridge loans at page F-44. State your total indebtedness and how much of such amount may be converted into shares of common stock and at what conversion price(s). Provide a cross-reference to this risk factor where you discuss your financial condition at page 9 of the prospectus summary.\n\nJanuary 29, 2025\n\nPage 2\n\nUse of Proceeds, page 42\n\n2. We note your disclosure beginning at page F-46 that certain short-term loan amounts incurred in November and December 2024 will potentially be repaid from \"the proceeds of the IPO.\" If any material part of the proceeds from this offering are to be used to discharge indebtedness, clarify as much and disclose the interest rate and maturity of such indebtedness. Refer to Item 504 of Regulation S-K and the instructions thereto.",
+        "token_count": 517,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001104659-25-007860",
+        "cik": "0001383951",
+        "company": "Nomura America Finance, LLC",
+        "form_type": "424B2",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 317,
+        "source_md5": "d00c37ebda304b62397e71c9344dbd16",
+        "content_sha256": "9f544056bb884c3e6d831f3d8bee37bb32d18da6334059fe3f7e123942133a32",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "06597cb7-a6cf-596d-a9db-55738ed49910",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 19,
+        "char_start": 53159,
+        "char_end": 56347,
+        "text": "The historical values of the common stock of Apple Inc. should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Apple Inc. on any observation date, including the final valuation date.\n\n**Description of Microsoft Corporation**\n\nMicrosoft Corporation develops, manufactures, licenses, sells, and supports software products. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 001-37845, or its CIK Code: 0000789019. Its common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"MSFT.\"\n\n**Historical performance of the common stock of Microsoft Corporation**\n\nThe following graph sets forth the historical performance of the common stock of Microsoft Corporation based on the daily historical closing values from January 1, 2020 through January 29, 2025. We obtained the closing values below from Bloomberg. We have not undertaken any independent review of, or made any due diligence inquiry with respect to, the information obtained from Bloomberg.\n\n![](tm254667d10_424b2img003.jpg)\n\nThe historical values of the common stock of Microsoft Corporation should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Microsoft Corporation on any observation date, including the final valuation date.\n\n**Description of Amazon.com, Inc.**\n\nAmazon.com, Inc. is an online retailer. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 000-22513, or its CIK Code: 0001018724. Its common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"AMZN.\"\n\n**Historical performance of the common stock of Amazon.com, Inc.**\n\nThe following graph sets forth the historical performance of the common stock of Amazon.com, Inc. based on the daily historical closing values from January 1, 2020 through January 29, 2025. We obtained the closing values below from Bloomberg L.P. (\"Bloomberg\"). We have not undertaken any independent review of, or made any due diligence inquiry with respect to, the information obtained from Bloomberg.\n\n![](tm254667d10_424b2img004.jpg)\n\nThe historical values of the common stock of Amazon.com, Inc. should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Amazon.com, Inc. on any observation date, including the final valuation date.\n\n**Description of Alphabet Inc.**\n\nAlphabet Inc. operates as a holding company. The company, through its subsidiaries, provides web-based search, advertisements, maps, software applications, mobile operating systems, consumer content, enterprise solutions, commerce, and hardware products. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 001-37580, or its CIK Code: 0001652044. Its Class A common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"GOOGL.\"\n\n**Historical performance of the Class A common stock of Alphabet Inc.**",
+        "token_count": 663,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000000000-25-000990",
+        "cik": "0001903595",
+        "company": "Brag House Holdings, Inc.",
+        "form_type": "UPLOAD",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 268,
+        "source_md5": "568f1f334bb06be8d2b2b754e98c0f70",
+        "content_sha256": "65ba18ffcb2b25b99143aa5368fcfeb56e1ef76c74007ba5a9f776980cb8fc0e",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "28672934-d614-5389-8027-53182aa8ee86",
+        "section": "Text-Extract",
+        "section_index": 1,
+        "chunk_index": 0,
+        "char_start": 960,
+        "char_end": 3859,
+        "text": "## Text-Extract\n\n\n\n```\n\n                                                            January 29, 2025\n\nLavell Juan Malloy II\nChief Executive Officer\nBrag House Holdings, Inc.\n45 Park Street\nMontclair, NJ 07042\n\n        Re: Brag House Holdings, Inc.\n            Amendment No. 4 to Registration Statement on Form S-1\n            Filed January 13, 2025\n            File No. 333-280282\nDear Lavell Juan Malloy II:\n\n     We have reviewed your amended registration statement and have the\nfollowing\ncomment(s).\n\n        Please respond to this letter by amending your registration statement\nand providing\nthe requested information. If you do not believe a comment applies to your\nfacts and\ncircumstances or do not believe an amendment is appropriate, please tell us why\nin your\nresponse.\n\n       After reviewing any amendment to your registration statement and the\ninformation\nyou provide in response to this letter, we may have additional comments.\n\nAmendment No. 4 to Registration Statement on Form S-1 filed January 13, 2025\nRisk Factors\nRisks Relating to Our Business, page 14\n\n1.     Please add a risk factor to address your outstanding debt obligations,\nas we note that\n       in addition to the original issue discount convertible promissory notes,\na number\n       of bridge loans and other short-term loans were entered into by the\ncompany between\n       June and December 2024. Highlight the terms of these loans, such as the\n100%\n       interest fee and \"additional 100% fee in shares of the Company's Common\nStock\"\n       discussed in connection with the bridge loans at page F-44. State your\ntotal\n       indebtedness and how much of such amount may be converted into shares of\ncommon\n       stock and at what conversion price(s). Provide a cross-reference to this\nrisk factor\n       where you discuss your financial condition at page 9 of the prospectus\nsummary.\n January 29, 2025\nPage 2\nUse of Proceeds, page 42\n\n2.     We note your disclosure beginning at page F-46 that certain short-term\nloan\n       amounts incurred in November and December 2024 will potentially be\nrepaid from\n       \"the proceeds of the IPO.\" If any material part of the proceeds from\nthis offering are to\n       be used to discharge indebtedness, clarify as much and disclose the\ninterest rate and\n       maturity of such indebtedness. Refer to Item 504 of Regulation S-K and\nthe\n       instructions thereto.\nBusiness, page 55\n\n3.     Please revise throughout your business and industry disclosure to\nprovide\n       updated performance metrics and other information, given passage of\ntime. For\n       example, we note that your disclosure about the e-sports industry relies\non several\n       sources from 2021 and 2022, and the most recent disclosure of metrics\nidentified as\n       key performance indicators (e.g., video views, impressions, etc.)\nappears to be as of\n       December 31, 2023.\nOur B2B Strategy, page 58",
+        "token_count": 652,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001018724-25-000004",
+        "cik": "0001018724",
+        "company": "AMAZON COM INC",
+        "form_type": "10-K",
+        "filed_date": "20250207",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 36047,
+        "source_md5": "c34a6f79641a9f3f97c6eabbfa5f9426",
+        "content_sha256": "971a71b21a061f649b274e65944062a372ee19a23871d7cf916f136655e36081",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "d4456cc8-0d66-5ad2-bbfd-df94d75641dc",
+        "section": "Exhibit 23.1",
+        "section_index": 3,
+        "chunk_index": 0,
+        "char_start": 334006,
+        "char_end": 336911,
+        "text": "## Exhibit 23.1\n\n\n\n**Exhibit 23.1** \n\n**Consent of Independent Registered Public Accounting Firm** \n\nWe consent to the incorporation by reference in the following Registration Statements:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-4 No. 333-55943), as amended, pertaining to the acquisition shelf-registration of Amazon.com, Inc. common stock,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-28763), as amended, pertaining to the Amazon.com, Inc. 1997 Stock Incentive Plan (formerly the \"1997 Stock Option Plan\") and the Amended and Restated 1994 Stock Option Plan of Amazon.com, Inc.,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-74419) pertaining to the Amazon.com, Inc. 1999 Nonofficer Employee Stock Option Plan,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 POS No. 333-160831) pertaining to the Zappos.com, Inc. 2009 Stock Plan,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(e)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-169470) pertaining to the Amazon.com, Inc. 1997 Stock Incentive Plan,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(f)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-173054), pertaining to the Quidsi, Inc. (fka1800Diapers, Inc.) 2006 Stock Option/Stock Issuance Plan,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(g)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-181073) pertaining to the Kiva Systems, Inc. 2003 Stock Plan, as amended,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(h)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-199572) pertaining to the Twitch Interactive, Inc. Amended and Restated 2007 Stock Plan,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-207591) pertaining to the Elemental Technologies, Inc. 2006 Stock Incentive Plan, as amended and restated,\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(j)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-8 No. 333-249847) pertaining to the Amazon.com, Inc. 1997 Stock Incentive Plan (as Amended and Restated), and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(k)&nbsp;&nbsp;&nbsp;&nbsp;Registration Statement (Form S-3 No. 333-269547) pertaining to the shelf registration of Amazon.com, Inc. securities.\n\nof our reports dated February 6, 2025, with respect to the consolidated financial statements of Amazon.com, Inc. and the effectiveness of internal control over financial reporting of Amazon.com, Inc. included in this Annual Report (Form 10-K) of Amazon.com, Inc. for the year ended December 31, 2024.\n\n\n/s/ Ernst & Young LLP\n\nSeattle, Washington\n\nFebruary 6, 2025",
+        "token_count": 828,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001104659-25-007860",
+        "cik": "0001383951",
+        "company": "Nomura America Finance, LLC",
+        "form_type": "424B2",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 317,
+        "source_md5": "d00c37ebda304b62397e71c9344dbd16",
+        "content_sha256": "9f544056bb884c3e6d831f3d8bee37bb32d18da6334059fe3f7e123942133a32",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "797eb916-eb43-5859-aa9f-b079b8eeb66c",
+        "section": "Attached PDF Documents",
+        "section_index": 1,
+        "chunk_index": 0,
+        "char_start": 66652,
+        "char_end": 69829,
+        "text": "### Attached PDF Documents\n\n\n**Attachment 1:** `tm254667-10_424b2.pdf`\n\nThe information in this preliminary pricing supplement is not complete and may be changed. This preliminary pricing supplement is not an offer to sell nor does it seek an offer to buy these securities in any jurisdiction where the offer or sale is not permitted.\n\nFiled Pursuant to Rule 424(b)(2)\nRegistration Statement Nos. 333-273353\n333-273353-01\n\nSUBJECT TO COMPLETION. DATED January 31, 2025\n\nPRICING SUPPLEMENT TO THE PROSPECTUS DATED JULY 20, 2023 AND THE PRODUCT PROSPECTUS\nSUPPLEMENT DATED FEBRUARY 29, 2024\n\nNOMURA\n\nUS$\nNomura America Finance, LLC\nSenior Global Medium-Term Notes, Series A\nFully and Unconditionally Guaranteed by Nomura Holdings, Inc.\n\nAutocallable Contingent Coupon Barrier Notes Linked to the Least Performing of the Equity Securities of Apple Inc., Microsoft Corporation, Amazon.com, Inc. and Alphabet Inc. due February 17, 2028\n\n- Nomura America Finance, LLC is offering the autocallable contingent coupon barrier notes linked to the least performing of the common stock of Apple Inc., the common stock of Microsoft Corporation, the common stock of Amazon.com, Inc. and the Class A common stock of Alphabet Inc. (each, a \"reference asset\" and together, the \"reference assets\") due February 17, 2028 (the \"notes\") described below. The notes are unsecured securities. All payments on the notes are subject to our credit risk and that of the guarantor of the notes, Nomura Holdings, Inc.\n- Quarterly contingent coupon payments at a rate of at least 2.625% (equivalent to at least 10.50% per annum) (to be determined on the trade date), payable if the closing value of each reference asset on the applicable coupon observation date is greater than or equal to 60% of its initial value.\n- Callable quarterly at the principal amount plus the applicable contingent coupon on any call observation date on or after August 13, 2025 if the closing value of each reference asset is at or above its call barrier level.\n- If the notes are not called and the least performing reference asset declines by more than 40%, there is full exposure to declines in the least performing reference asset, and you will lose all or a portion of your principal amount at maturity. The reference asset with the lowest reference asset performance is the \"least performing reference asset.\"\n- Approximately a three year maturity, if not called.\n- The notes will not be listed on any securities exchange.\n- The notes are not ordinary debt securities, and you should carefully consider whether the notes are suited to your particular circumstances.\n\nInvesting in the notes involves significant risks, including our and Nomura's credit risk. You should carefully consider the risk factors under \"Additional Risk Factors Specific to Your Notes\" beginning on page PS-6 of this pricing supplement, under \"Risk Factors\" beginning on page 6 in the accompanying prospectus, under \"Additional Risk Factors Specific to the Notes\" beginning on page PS-18 of the accompanying product prospectus supplement, and any risk factors incorporated by reference into the accompanying prospectus before you invest in the notes.",
+        "token_count": 688,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "found": true,
+        "id": "0001018724-25-000004:4826:16826",
+        "accession": "0001018724-25-000004",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+        "char_start": 4826,
+        "char_end": 16826,
+        "text": "Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report. \u2612\n\nIf securities are registered pursuant to Section 12(b) of the Exchange Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. \u2610\n\nIndicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant's executive officers during the relevant recovery period pursuant to \u00a7240.10D-1(b). \u2610\n\nIndicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2610&nbsp;&nbsp;&nbsp;&nbsp;No \u2612\n\n---\n\n\n\n| | |\n|:---|:---|\n| Aggregate market value of voting stock held by non-affiliates of the registrant as of June 30, 2024 | $1815014489485 |\n| Number of shares of common stock outstanding as of January 29, 2025 | 10597729352 |\n\n---\n\n\n\n____________________________________\n\n**DOCUMENTS INCORPORATED BY REFERENCE**\n\nThe information required by Part III of this Report, to the extent not set forth herein, is incorporated herein by reference from the registrant's definitive proxy statement relating to the Annual Meeting of Shareholders to be held in 2025, which definitive proxy statement shall be filed with the Securities and Exchange Commission within 120 days after the end of the fiscal year to which this Report relates.\n\n\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**AMAZON.COM, INC.**\n\n**FORM 10-K**\n\n**For the Fiscal Year Ended December 31, 2024** \n\n**INDEX**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | | **Page** |\n| **PART I** | **PART I** | |\n| Item 1. | <u>[Business](#i8a64c58a8ced4ccaa47e02e81fab0039_13)</u> | <u>[3](#i8a64c58a8ced4ccaa47e02e81fab0039_13)</u> |\n| Item 1A. | <u>[Risk Factors](#i8a64c58a8ced4ccaa47e02e81fab0039_16)</u> | <u>[6](#i8a64c58a8ced4ccaa47e02e81fab0039_16)</u> |\n| Item 1B. | <u>[Unresolved Staff Comments](#i8a64c58a8ced4ccaa47e02e81fab0039_19)</u> | <u>[16](#i8a64c58a8ced4ccaa47e02e81fab0039_19)</u> |\n| Item 1C. | <u>[Cybersecurity](#i8a64c58a8ced4ccaa47e02e81fab0039_22)</u> | <u>[17](#i8a64c58a8ced4ccaa47e02e81fab0039_22)</u> |\n| Item 2. | <u>[Properties](#i8a64c58a8ced4ccaa47e02e81fab0039_25)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_25)</u> |\n| Item 3. | <u>[Legal Proceedings](#i8a64c58a8ced4ccaa47e02e81fab0039_28)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_28)</u> |\n| Item 4. | <u>[Mine Safety Disclosures](#i8a64c58a8ced4ccaa47e02e81fab0039_31)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_31)</u> |\n| **PART II** | **PART II** |  |\n| Item 5. | <u>[Market for the Registrant's Common Stock, Related Shareholder Matters, and Issuer Purchases of Equity Securities](#i8a64c58a8ced4ccaa47e02e81fab0039_37)</u> | <u>[19](#i8a64c58a8ced4ccaa47e02e81fab0039_37)</u> |\n| Item 6. | <u>[Reserved](#i8a64c58a8ced4ccaa47e02e81fab0039_43)</u> | <u>[19](#i8a64c58a8ced4ccaa47e02e81fab0039_43)</u> |\n| Item 7. | <u>[Management's Discussion and Analysis of Financial Condition and Results of Operations](#i8a64c58a8ced4ccaa47e02e81fab0039_49)</u> | <u>[20](#i8a64c58a8ced4ccaa47e02e81fab0039_49)</u> |\n| Item 7A. | <u>[Quantitative and Qualitative Disclosures About Market Risk](#i8a64c58a8ced4ccaa47e02e81fab0039_100)</u> | <u>[31](#i8a64c58a8ced4ccaa47e02e81fab0039_100)</u> |\n| Item 8. | <u>[Financial Statements and Supplementary Data](#i8a64c58a8ced4ccaa47e02e81fab0039_112)</u> | <u>[33](#i8a64c58a8ced4ccaa47e02e81fab0039_112)</u> |\n| Item 9. | <u>[Changes in and Disagreements with Accountants on Accounting and Financial Disclosure](#i8a64c58a8ced4ccaa47e02e81fab0039_349)</u> | <u>[70](#i8a64c58a8ced4ccaa47e02e81fab0039_349)</u> |\n| Item 9A. | <u>[Controls and Procedures](#i8a64c58a8ced4ccaa47e02e81fab0039_352)</u> | <u>[70](#i8a64c58a8ced4ccaa47e02e81fab0039_352)</u> |\n| Item 9B. | <u>[Other Information](#i8a64c58a8ced4ccaa47e02e81fab0039_358)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_358)</u> |\n| Item 9C. | <u>[Disclosure Regarding Foreign Jurisdictions that Prevent Inspections](#i8a64c58a8ced4ccaa47e02e81fab0039_364)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_364)</u> |\n| **PART III** | **PART III** |  |\n| Item 10. | <u>[Directors, Executive Officers, and Corporate Governance](#i8a64c58a8ced4ccaa47e02e81fab0039_370)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_370)</u> |\n| Item 11. | <u>[Executive Compensation](#i8a64c58a8ced4ccaa47e02e81fab0039_373)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_373)</u> |\n| Item 12. | <u>[Security Ownership of Certain Beneficial Owners and Management and Related Shareholder Matters](#i8a64c58a8ced4ccaa47e02e81fab0039_376)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_376)</u> |\n| Item 13. | <u>[Certain Relationships and Related Transactions, and Director Independence](#i8a64c58a8ced4ccaa47e02e81fab0039_379)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_379)</u> |\n| Item 14. | <u>[Principal Accountant Fees and Services](#i8a64c58a8ced4ccaa47e02e81fab0039_382)</u> | <u>[73](#i8a64c58a8ced4ccaa47e02e81fab0039_382)</u> |\n| **PART IV** | **PART IV** |  |\n| Item 15. | <u>[Exhibits, Financial Statement Schedules](#i8a64c58a8ced4ccaa47e02e81fab0039_388)</u> | <u>[74](#i8a64c58a8ced4ccaa47e02e81fab0039_388)</u> |\n| Item 16. | <u>[Form 10-K Summary](#i8a64c58a8ced4ccaa47e02e81fab0039_391)</u> | <u>[76](#i8a64c58a8ced4ccaa47e02e81fab0039_391)</u> |\n| <u>[Signatures](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> | <u>[Signatures](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> | <u>[77](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**AMAZON.COM, INC.**\n\n**PART I**\n\n---\n\n\n\n| | |\n|:---|:---|\n| **Item 1.** | ***Business*** |\n\n---\n\n\n\n*This Annual Report on Form 10-K and the documents incorporated herein by reference contain forward-looking statements based on expectations, estimates, and projections as of the date of this filing. Actual results and outcomes may differ materially from those expressed in forward-looking statements. See Item 1A of Part I \u2014 \"Risk Factors.\" As used herein, \"Amazon.com,\" \"we,\" \"our,\" and similar terms include Amazon.com, Inc. and its subsidiaries, unless the context indicates otherwise.*\n\n**General**\n\nWe seek to be Earth's most customer-centric company. We are guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. In each of our segments, we serve our primary customer sets, consisting of consumers, sellers, developers, enterprises, content creators, advertisers, and employees.\n\nWe have organized our operations into three segments: North America, International, and Amazon Web Services (\"AWS\"). These segments reflect the way the Company evaluates its business performance and manages its operations. Information on our net sales is contained in Item 8 of Part II, \"Financial Statements and Supplementary Data \u2014 Note 10 \u2014 Segment Information.\"\n\n**Consumers**\n\nWe serve consumers through our online and physical stores and focus on selection, price, and convenience. We design our stores to enable hundreds of millions of unique products to be sold by us and by third parties across dozens of product categories. Customers access our offerings through our websites, mobile apps, Alexa, devices, streaming, and physically visiting our stores. We also manufacture and sell electronic devices, including Kindle, Fire tablet, Fire TV, Echo, Ring, Blink, and eero, and we develop and produce media content. We seek to offer our customers low prices, fast and free delivery, easy-to-use functionality, and timely customer service. In addition, we offer subscription services such as Amazon Prime, a membership program that includes fast, free shipping on tens of millions of items, access to award-winning movies and series, live sports, and other benefits.\n\nWe fulfill customer orders in a number of ways, including through: North America and International fulfillment networks that we operate; co-sourced and outsourced arrangements in certain countries; digital delivery; and through our physical stores. We operate customer service centers globally, which are supplemented by co-sourced arrangements. See Item 2 of Part I, \"Properties.\"\n\n**Sellers**\n\nWe offer programs that enable sellers to grow their businesses, sell their products in our stores, and fulfill orders using our services. We are not the seller of record in these transactions. We earn fixed fees, a percentage of sales, per-unit activity fees, interest, or some combination thereof, for our seller programs.\n\n**Developers and Enterprises**\n\nWe serve developers and enterprises of all sizes, including start-ups, government agencies, and academic institutions, through AWS, which offers a broad set of on-demand technology services, including compute, storage, database, analytics, and machine learning, and other services.\n\n**Content Creators**\n\nWe offer programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content.\n\n**Advertisers**\n\nWe provide advertising services to sellers, vendors, publishers, authors, and others, through programs such as sponsored ads, display, and video advertising.\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**Competition**\n\nOur businesses encompass a large variety of product types, service offerings, and delivery channels. The worldwide marketplace in which we compete is evolving rapidly and intensely competitive, and we face a broad array of competitors from many different industry sectors around the world. Our current and potential competitors include: (1) physical, e-commerce, and omnichannel retailers, publishers, vendors, distributors, manufacturers, and producers of the products we offer and sell to consumers and businesses; (2) publishers, producers, and distributors of physical, digital, and interactive media of all types and all distribution channels; (3) web search engines, comparison shopping websites, social networks, web portals, virtual assistants, and other online and app-based means of discovering, using, or acquiring goods and services, either directly or in collaboration with other retailers; (4) companies that provide e-commerce services, including website development and hosting, omnichannel sales, inventory and supply chain management, advertising, fulfillment, customer service, and payment processing; (5) companies that provide fulfillment and logistics services for themselves or for third parties, whether online or offline; (6) companies that provide information technology services or products, including on-premises or cloud-based infrastructure, tools and services relating to artificial intelligence, and other services; (7) companies that design, manufacture, market, or sell consumer electronics, communications, and other electronic devices and services; (8) companies that sell grocery products online and in physical stores; (9) companies that provide advertising services, whether in digital or other formats; and (10) providers of virtual or in-person healthcare services. We believe that the principal competitive factors in our retail businesses include selection, price, and convenience, including fast and reliable fulfillment. Additional competitive factors for our seller and enterprise services include the quality, speed, and reliability of our services and tools, as well as customers' ability and willingness to change business practices. Some of our current and potential competitors have greater resources, longer histories, more customers, greater brand recognition, and greater control over inputs critical to our various businesses. They may secure better terms from suppliers, a",
+        "total_chars": 348067,
+        "next_start": 16826,
+        "resources": {
+          "peak_rss_mib": 943.875,
+          "cpu_seconds": 1.2599679999999998,
+          "wall_seconds": 1.2635237820004477,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "```json\n{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's figure of 10,597,729,352 shares matches the reference and the gold evidence exactly, and the cover-page table in the retrieved excerpt (accession 0001018724-25-000004, Original filing Markdown) shows the same value for shares outstanding as of January 29, 2025. The answer is correctly stated with no calculation needed. The cited accession and the cover-page content are supported by the retrieved text. The only minor issue is that the cited character offsets (4826\u201316826) and source path correspond to the retrieved chunk, which does support the claim, but the reference cover-page label was 'Cover Page - Shares Outstanding' while the retrieved section is labeled 'Original filing Markdown'; this is a labeling difference, not an error. Score reduced slightly for the unnecessary inclusion of internal file paths and offsets in a user-facing answer.\"}\n```",
+    "message": {
+      "role": "assistant",
+      "content": "```json\n{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's figure of 10,597,729,352 shares matches the reference and the gold evidence exactly, and the cover-page table in the retrieved excerpt (accession 0001018724-25-000004, Original filing Markdown) shows the same value for shares outstanding as of January 29, 2025. The answer is correctly stated with no calculation needed. The cited accession and the cover-page content are supported by the retrieved text. The only minor issue is that the cited character offsets (4826\u201316826) and source path correspond to the retrieved chunk, which does support the claim, but the reference cover-page label was 'Cover Page - Shares Outstanding' while the retrieved section is labeled 'Original filing Markdown'; this is a labeling difference, not an error. Score reduced slightly for the unnecessary inclusion of internal file paths and offsets in a user-facing answer.\"}\n```",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:35:13.697637+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "896d09fea17be20cdbc8d2a6:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042511-4t363TYA4k61gdxPlWWv",
+    "usage": {
+      "prompt_tokens": 27425,
+      "completion_tokens": 315,
+      "total_tokens": 27740,
+      "cost": 0.0029,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029,
+        "upstream_inference_prompt_cost": 0.0027425,
+        "upstream_inference_completions_cost": 0.0001575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.8353585320001002,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 95,
+    "rationale": "The candidate's figure of 10,597,729,352 shares matches the reference and the gold evidence exactly, and the cover-page table in the retrieved excerpt (accession 0001018724-25-000004, Original filing Markdown) shows the same value for shares outstanding as of January 29, 2025. The answer is correctly stated with no calculation needed. The cited accession and the cover-page content are supported by the retrieved text. The only minor issue is that the cited character offsets (4826\u201316826) and source path correspond to the retrieved chunk, which does support the claim, but the reference cover-page label was 'Cover Page - Shares Outstanding' while the retrieved section is labeled 'Original filing Markdown'; this is a labeling difference, not an error. Score reduced slightly for the unnecessary inclusion of internal file paths and offsets in a user-facing answer."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,873 @@
+{
+  "question_id": "Q006",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 90.93974685299872,
+    "accession_recall": 0.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "NVIDIA Corporation\u2019s independent registered public accounting firm is **PricewaterhouseCoopers LLP (PwC)**. I can\u2019t verify from the available filing evidence here the year they began serving as NVIDIA\u2019s auditor.",
+    "usage": {
+      "prompt_tokens": 29299,
+      "completion_tokens": 424,
+      "total_tokens": 29723,
+      "cost": 0.001281115
+    },
+    "seconds": 12.951109353999527,
+    "tool_seconds": 90.93974685299872,
+    "tool_calls": 6,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_iGUF9SMqzVf3hCCkcN3DoHQg",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"NVIDIA Corporation independent registered public accounting firm auditor served since year auditor tenure audit report\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_iGUF9SMqzVf3hCCkcN3DoHQg",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"NVIDIA Corporation independent registered public accounting firm auditor served since year auditor tenure audit report\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:24:11.272489+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "db9123e691a8ade83ef1f70e:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041849-Zbd4LDiLxV0Pj28ZZX7T",
+        "usage": {
+          "prompt_tokens": 792,
+          "completion_tokens": 33,
+          "total_tokens": 825,
+          "cost": 9.57e-05,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 9.57e-05,
+            "upstream_inference_prompt_cost": 7.92e-05,
+            "upstream_inference_completions_cost": 1.65e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 1.8398835979996875,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_eHCx0HbUtoFE8QcT0OMQtP1U",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"10-K\",\"start_row\":0}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "call_MtnhrqLmtRBcMFMUimn9Q4GU",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"DEF 14A\",\"start_row\":0}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_eHCx0HbUtoFE8QcT0OMQtP1U",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"10-K\",\"start_row\":0}"
+            }
+          },
+          {
+            "type": "function",
+            "index": 1,
+            "id": "call_MtnhrqLmtRBcMFMUimn9Q4GU",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"DEF 14A\",\"start_row\":0}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:27:55.325999+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "db9123e691a8ade83ef1f70e:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042073-weaKcwBH5HRmZTdUurW9",
+        "usage": {
+          "prompt_tokens": 5225,
+          "completion_tokens": 134,
+          "total_tokens": 5359,
+          "cost": 0.00072005,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 5222,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00072005,
+            "upstream_inference_prompt_cost": 0.00065305,
+            "upstream_inference_completions_cost": 6.7e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.252250715999253,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_ZDJnclReiZHXPzxK2NVxFy1Q",
+              "function": {
+                "name": "duckdb_query",
+                "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month FROM filings WHERE accession='1045810' AND month IN (1,2,3) ORDER BY year DESC LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_ZDJnclReiZHXPzxK2NVxFy1Q",
+            "function": {
+              "name": "duckdb_query",
+              "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month FROM filings WHERE accession='1045810' AND month IN (1,2,3) ORDER BY year DESC LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:31:07.596735+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "db9123e691a8ade83ef1f70e:agent:2",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042265-nhS6kNq6wimvmxdYQ7vq",
+        "usage": {
+          "prompt_tokens": 5569,
+          "completion_tokens": 84,
+          "total_tokens": 5653,
+          "cost": 0.00013752,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 5222,
+            "cache_write_tokens": 344,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00013752,
+            "upstream_inference_prompt_cost": 9.552e-05,
+            "upstream_inference_completions_cost": 4.2e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.47415090100003,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_hzkX6cPEEGDs8Q26zTXB6MDP",
+              "function": {
+                "name": "duckdb_query",
+                "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month FROM filings WHERE accession='1045810' LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_hzkX6cPEEGDs8Q26zTXB6MDP",
+            "function": {
+              "name": "duckdb_query",
+              "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month FROM filings WHERE accession='1045810' LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:35:18.243262+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "db9123e691a8ade83ef1f70e:agent:3",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042516-sX6DGo59fSLYCkWp5Zcb",
+        "usage": {
+          "prompt_tokens": 5744,
+          "completion_tokens": 70,
+          "total_tokens": 5814,
+          "cost": 0.000112835,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 5566,
+            "cache_write_tokens": 175,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000112835,
+            "upstream_inference_prompt_cost": 7.7835e-05,
+            "upstream_inference_completions_cost": 3.5e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.3345438070000455,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_ZlvoS3Kf0uMwOn16iyClgcq2",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"\",\"start_row\":0}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_ZlvoS3Kf0uMwOn16iyClgcq2",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"\",\"start_row\":0}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:35:35.532263+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "db9123e691a8ade83ef1f70e:agent:4",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042534-tnvN2SpLocxb4OY6qEwX",
+        "usage": {
+          "prompt_tokens": 5905,
+          "completion_tokens": 57,
+          "total_tokens": 5962,
+          "cost": 0.000106335,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 5741,
+            "cache_write_tokens": 161,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000106335,
+            "upstream_inference_prompt_cost": 7.7835e-05,
+            "upstream_inference_completions_cost": 2.85e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.005008344000089,
+        "attempts": 1
+      },
+      {
+        "text": "NVIDIA Corporation\u2019s independent registered public accounting firm is **PricewaterhouseCoopers LLP (PwC)**. I can\u2019t verify from the available filing evidence here the year they began serving as NVIDIA\u2019s auditor.",
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA Corporation\u2019s independent registered public accounting firm is **PricewaterhouseCoopers LLP (PwC)**. I can\u2019t verify from the available filing evidence here the year they began serving as NVIDIA\u2019s auditor.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:35:59.947159+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "none"
+        },
+        "tag": "db9123e691a8ade83ef1f70e:agent:5",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042558-9uo842tVcZ0qGi4HRE54",
+        "usage": {
+          "prompt_tokens": 6064,
+          "completion_tokens": 46,
+          "total_tokens": 6110,
+          "cost": 0.000108675,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 5830,
+            "cache_write_tokens": 159,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000108675,
+            "upstream_inference_prompt_cost": 8.5675e-05,
+            "upstream_inference_completions_cost": 2.3e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.0452719880004224,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_iGUF9SMqzVf3hCCkcN3DoHQg",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"NVIDIA Corporation independent registered public accounting firm auditor served since year auditor tenure audit report\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0001213900-25-004491",
+              "cik": "0001885461",
+              "company": "ShoulderUP Technology Acquisition Corp.",
+              "form_type": "DEFM14A",
+              "filed_date": "20250117",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 400,
+              "source_md5": "85ff236b3b7c9b6ccd3657857a037585",
+              "content_sha256": "c1b88d3808ea99a01c8e472bf4c859bd2fdc74d2f9daeca128131d2f3339b5b7",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "015c8920-cd7a-5224-8842-b945208484a8",
+              "section": "Audit Committee",
+              "section_index": 272,
+              "chunk_index": 0,
+              "char_start": 822607,
+              "char_end": 826094,
+              "text": "#### Audit Committee\nWe have established an audit committee of the board of directors. Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd serve as members of our audit committee, and Lauren C. Anderson chairs the audit committee. Each of Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd meet the independent director standard under Rule 10A-3(b)(l) under the Exchange Act.\n\nEach member of the audit committee is financially literate and our board of directors has determined that Shawn Henry qualifies as an \"audit committee financial expert\" as defined in applicable SEC rules and has accounting or related financial management expertise.\n\nWe have adopted an audit committee charter, which details the principal functions of the audit committee, including:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 assisting board oversight of (1) the integrity of our financial statements, (2) our compliance with legal and regulatory requirements, (3) our independent registered public accounting firm's qualifications and independence, and (4) the performance of our internal audit function and independent auditors; the appointment, compensation, retention, replacement, and oversight of the work of the independent auditors and any other independent registered public accounting firm engaged by us;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 pre-approving all audit and non-audit services to be provided by the independent auditors or any other registered public accounting firm engaged by us, and establishing pre-approval policies and procedures; reviewing and discussing with the independent auditors all relationships the auditors have with us in order to evaluate their continued independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear policies for audit partner rotation in compliance with applicable laws and regulations; obtaining and reviewing a report, at least annually, from the independent registered public accounting firm describing (1) the independent auditor's internal quality-control procedures and (2) any material issues raised by the most recent internal quality-control review, or peer review, of the audit firm, or by any inquiry or investigation by governmental or professional authorities, within the preceding five years respecting one or more independent audits carried out by the firm and any steps taken to deal with such issues;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 meeting to review and discuss our annual audited financial statements and quarterly financial statements with management and the independent auditor, including reviewing our specific disclosures under \"*Management's Discussion and Analysis of Financial Condition and Results of Operations*\"; reviewing and approving any related party transaction required to be disclosed pursuant to Item 404 of Regulation S-K promulgated by the SEC prior to us entering into such transaction; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing with management, the independent auditors, and our legal advisors, as appropriate, any legal, regulatory or compliance matters, including any correspondence with regulators or government agencies and any employee complaints or published reports that raise material issues regarding our financial statements or accounting policies and any significant changes in accounting standards or rules promulgated by the Financial Accounting Standards Board, the SEC or other regulatory authorities.",
+              "token_count": 647,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "a6205dc2-ab89-51c2-905b-ce0c5b66df96",
+              "section": "Audit Committee",
+              "section_index": 385,
+              "chunk_index": 0,
+              "char_start": 1278488,
+              "char_end": 1281588,
+              "text": "#### Audit Committee\nWe have established an audit committee of the Board of Directors. Chunyi (Charlie) Hao, Tiemei (Sarah) Li and Sanjay Prasad serve as members of our audit committee and Ms. Li serves as its chair. Under the Nasdaq listing standards and applicable SEC rules, we are required to have at least three members of the audit committee, all of whom must be independent, subject to certain phase-in provisions. Each such member of our audit committee meets the independent director standard under Nasdaq listing standards and under Rule 10A-3(b)(1) of the Exchange Act.\n\nEach member of the audit committee is financially literate and the Finnovate Board has determined that Ms. Li qualifies as an \"audit committee financial expert\" as defined in applicable SEC rules and has accounting or related financial management expertise.\n\nWe have adopted an audit committee charter, which details the purpose and principal functions of the audit committee, including:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 the appointment, compensation, retention, replacement, and oversight of the work of the independent auditors and any other independent registered public accounting firm engaged by us;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 pre-approving all audit and non-audit services to be provided by the independent auditors or any other registered public accounting firm engaged by us, and establishing pre-approval policies and procedures;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing and discussing with the independent auditors all relationships the auditors have with us in order to evaluate their continued independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear hiring policies for employees or former employees of the independent auditors;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear policies for audit partner rotation in compliance with applicable laws and regulations;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 obtaining and reviewing a report, at least annually, from the independent auditors describing (i) the independent auditor's internal quality-control procedures and (ii) any material issues raised by the most recent internal quality-control review, or peer review, of the audit firm, or by any inquiry or investigation by governmental or professional authorities, within, the preceding five years respecting one or more independent audits carried out by the firm and any steps taken to deal with such issues;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 meeting to review and discuss our annual audited financial statements and quarterly financial statements with management and the independent auditor, including reviewing our specific disclosures under \"Management's Discussion and Analysis of Financial Condition and Results of Operations\";\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing and approving any related party transaction required to be disclosed pursuant to Item 404 of Regulation S-K promulgated by the SEC prior to us entering into such transaction; and",
+              "token_count": 621,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000950170-25-009168",
+              "cik": "0001177648",
+              "company": "ENANTA PHARMACEUTICALS INC",
+              "form_type": "DEF 14A",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 818,
+              "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+              "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2aeed529-f68c-5fcc-a395-712a3793656b",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 37,
+              "char_start": 94043,
+              "char_end": 97506,
+              "text": "The firm of PricewaterhouseCoopers LLP, an independent registered public accounting firm, has audited our financial statements for each of the years ended September 30, 2024, 2023 and 2022. Our Audit Committee has appointed them to serve as our auditors for the fiscal year ending September 30, 2025. Detailed disclosure of the audit and tax fees we paid to PricewaterhouseCoopers LLP in 2024 and 2023 may be found in the \"Audit Fees\" section of this proxy statement. Based on these disclosures and information in the Audit Committee Report provided elsewhere in this proxy statement, our Audit Committee is satisfied that PricewaterhouseCoopers LLP is sufficiently independent of management to perform its duties properly. Although not legally required to do so, our Board considers it desirable to seek, and recommends, stockholder ratification of our selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2025. If the stockholders fail to ratify our selection, the Audit Committee will reconsider whether or not to retain that firm. Even if the selection is ratified, the Audit Committee in its discretion may direct the appointment of a different independent registered public accounting firm at any time during the year if the Audit Committee determines that such a change would be in the best interest of Enanta and its stockholders.\n\n**Recommendation** \n\n**We recommend a vote \"FOR\" ratification of the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm.** \n\n------\n\n**CORPORATE GOVERNANCE** \n\n**Board and Committee Matters** \n\n*Board Leadership and Independence.* Our Board of Directors has determined that each of Mark G. Foletta and Lesley Russell, MBChB, MRCP, as well as four of the other directors continuing their terms after the 2025 Annual Meeting, are independent directors as defined by applicable Nasdaq Stock Market standards governing the independence of directors. Jay R. Luly, Ph.D., our President and Chief Executive Officer, is not considered independent.\n\nThe Board of Directors sets company strategy and provides oversight and accountability for our Chief Executive Officer and management. Among the general responsibilities for the direction and management of the business, the Board is expressly designated to have responsibility for reviewing matters related to environmental, social and governance (ESG) issues, as well as adopting appropriate standards and other required metrics used to measure and track ESG performance and progress.\n\nDr. Carter has served as our non-executive Chairman of the Board since December 2015. Dr. Carter presides over meetings of the Board of Directors and provides guidance to our Chief Executive Officer. Dr. Luly is responsible for setting the strategic direction for our Company and the day-to-day leadership and performance of the Company. We believe that separation of our Board of Directors and executive leadership preserves the independence of these roles and maximizes performance.\n\n*Board Meetings and Committees.* Our Board of Directors held eleven meetings during 2024, and the independent directors held executive sessions at four of the meetings of the Board. During 2024, each of the directors then in office attended at least 75% of the aggregate of all meetings of the Board of Directors and all meetings of the committees of the Board of Directors on which such director then served.",
+              "token_count": 673,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001410578-25-000056",
+              "cik": "0001779578",
+              "company": "BGM Group Ltd.",
+              "form_type": "20-F",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 440,
+              "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+              "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "efaeffd8-8d14-5639-80f4-f053f4585862",
+              "section": "Item 3. KEY INFORMATION",
+              "section_index": 3,
+              "chunk_index": 31,
+              "char_start": 110955,
+              "char_end": 114330,
+              "text": "On December 2, 2021, the SEC issued amendments to finalize rules implementing the submission and disclosure requirements in the Holding Foreign Companies Accountable Act. The rules apply to registrants that the SEC identifies as having filed an annual report with an audit report issued by a registered public accounting firm that is located in a foreign jurisdiction and that PCAOB is unable to inspect or investigate completely because of a position taken by an authority in foreign jurisdictions.\n\nOn December 16, 2021, the PCAOB issued a report on its determination that it is unable to inspect or investigate completely PCAOB-registered public accounting firms headquartered in China and in Hong Kong because of positions taken by PRC and Hong Kong authorities in those jurisdictions. The PCAOB has made such determination as mandated under the Holding Foreign Companies Accountable Act. Pursuant to each annual determination by the PCAOB, the SEC will, on an annual basis, identify issuers that have used non-inspected audit firms and thus are at risk of such suspensions in the future. Our auditors, ZH CPA, LLC and Enrome LLP, the independent registered public accounting firms that issue the audit reports included elsewhere in this annual report, as auditors of companies that are traded publicly in the U.S. and a firm registered with the PCAOB, are subject to laws in the U.S., pursuant to which the PCAOB conducts regular inspections to assess their compliance with the applicable professional standards. Our auditors are located in Denver, Colorado and Singapore, and have been inspected by the PCAOB on a regular basis. Our auditors are not subject to the determination issued by the PCAOB on December 16, 2021.\n\nOn June 22, 2021, the U.S. Senate passed the Accelerating Holding Foreign Companies Accountable Act, and on December 29, 2022, the Consolidated Appropriations Act was signed into law by President Biden, which contained, among other things, an identical provision to the Accelerating Holding Foreign Companies Accountable Act and amended the HFCA Act by requiring the SEC to prohibit an issuer's securities from trading on any U.S. stock exchanges if its auditor is not subject to PCAOB inspections for two consecutive years instead of three, thus reducing the time period for triggering the prohibition on trading.\n\nOn August 26, 2022, the CSRC, the MOF, and the PCAOB signed the Protocol governing inspections and investigations of audit firms based in mainland China and Hong Kong, taking the first step toward opening access for the PCAOB to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong. Pursuant to the fact sheet with respect to the Protocol disclosed by the SEC, the PCAOB shall have independent discretion to select any issuer audits for inspection or investigation and has the unfettered ability to transfer information to the SEC. On December 15, 2022, the PCAOB Board determined that the PCAOB was able to secure complete access to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong and voted to vacate its previous determinations to the contrary. However, should PRC authorities obstruct or otherwise fail to facilitate the PCAOB's access in the future, the PCAOB Board will consider the need to issue a new determination.",
+              "token_count": 660,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000898531-25-000002",
+              "cik": "0000891944",
+              "company": "HENNESSY FUNDS TRUST",
+              "form_type": "497",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 899,
+              "source_md5": "7d32679b0a771cfbe7ba5e918786aae9",
+              "content_sha256": "2a555529c69dbde466d93f78dd2ce23891362d9ceed1a82dad426fb47ed970e0",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "465a9965-e86f-5af7-af71-2aa2979910f1",
+              "section": "BOARD COMMITTEES",
+              "section_index": 48,
+              "chunk_index": 0,
+              "char_start": 73918,
+              "char_end": 75872,
+              "text": "#### BOARD COMMITTEES\nThe Audit Committee of the Board of Trustees comprises Mr. DeSousa, Mr. Doyle (Chair), Ms. Garvie, and Mr. Richardson. The primary functions of the Audit Committee are to recommend to the Board of Trustees the independent registered public accounting firm to be retained to perform the annual audit, to review the results of the audit, to review the Funds' internal controls, and to review certain other matters relating to the Funds' independent registered public accounting firm and financial records. The Audit Committee met once during the fiscal year ended August 31, 2023, and once during the two-month period ended October 31, 2023, with respect to the Fund.\n\nIn overseeing the Auditor, the Audit Committee (i) reviews the Auditor's independence from the Hennessy Funds and management, and from the Investment Manager, (ii) reviews periodically the level of fees approved for payment to the Auditor and the pre-approved non-audit services it has provided to the Hennessy Funds to ensure their compatibility with the Auditor's independence, (iii) reviews the Auditor's performance, qualifications and quality control procedures, (iv) reviews the scope of and overall plans for the annual audit, (v) reviews the Auditor's performance, qualifications, and quality control procedures, (vi) consults with management and the Auditors with respect to the Hennessy Funds' processes for risk assessment and risk management, (vii) reviews with management the scope and effectiveness of the Hennessy Funds' disclosure controls and procedures, including for purposes of evaluating the accuracy and fair presentation of the company's financial statements in connection with certifications made by the chief executive officer and chief financial officer, and (viii) reviews significant legal developments and the Hennessy Funds' processes for monitoring compliance with law as it relates to the financial statements and related disclosure.",
+              "token_count": 378,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.017721769000672793
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_eHCx0HbUtoFE8QcT0OMQtP1U",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"10-K\",\"start_row\":0}"
+          }
+        },
+        "output": {
+          "error": "malloc of size 1182595840 failed",
+          "error_type": "ArrowMemoryError",
+          "resources": {
+            "peak_rss_mib": 981.6328125,
+            "cpu_seconds": 6.555918999999999,
+            "wall_seconds": 6.659625500999937,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 30.112253175999285
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 1,
+          "id": "call_MtnhrqLmtRBcMFMUimn9Q4GU",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"DEF 14A\",\"start_row\":0}"
+          }
+        },
+        "output": {
+          "error": "malloc of size 85060544 failed",
+          "error_type": "ArrowMemoryError",
+          "resources": {
+            "peak_rss_mib": 1043.8046875,
+            "cpu_seconds": 9.087617999999999,
+            "wall_seconds": 9.250626351000392,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 34.95932002999962
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_ZDJnclReiZHXPzxK2NVxFy1Q",
+          "function": {
+            "name": "duckdb_query",
+            "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month FROM filings WHERE accession='1045810' AND month IN (1,2,3) ORDER BY year DESC LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\"}"
+          }
+        },
+        "output": {
+          "rows": [],
+          "truncated": false,
+          "resources": {
+            "peak_rss_mib": 505.39453125,
+            "cpu_seconds": 0.577907,
+            "wall_seconds": 0.6831761319999714,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 0.8435112890001619
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_hzkX6cPEEGDs8Q26zTXB6MDP",
+          "function": {
+            "name": "duckdb_query",
+            "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month FROM filings WHERE accession='1045810' LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+          }
+        },
+        "output": {
+          "rows": [],
+          "truncated": false,
+          "resources": {
+            "peak_rss_mib": 506.26953125,
+            "cpu_seconds": 0.52372,
+            "wall_seconds": 0.48140917399996397,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 2.6420929869991596
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_ZlvoS3Kf0uMwOn16iyClgcq2",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"\",\"start_row\":0}"
+          }
+        },
+        "output": {
+          "error": "malloc of size 646993472 failed",
+          "error_type": "ArrowMemoryError",
+          "resources": {
+            "peak_rss_mib": 1020.09375,
+            "cpu_seconds": 9.461791,
+            "wall_seconds": 9.602998954999748,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 22.364847601999827
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0001213900-25-004491",
+        "cik": "0001885461",
+        "company": "ShoulderUP Technology Acquisition Corp.",
+        "form_type": "DEFM14A",
+        "filed_date": "20250117",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 400,
+        "source_md5": "85ff236b3b7c9b6ccd3657857a037585",
+        "content_sha256": "c1b88d3808ea99a01c8e472bf4c859bd2fdc74d2f9daeca128131d2f3339b5b7",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "015c8920-cd7a-5224-8842-b945208484a8",
+        "section": "Audit Committee",
+        "section_index": 272,
+        "chunk_index": 0,
+        "char_start": 822607,
+        "char_end": 826094,
+        "text": "#### Audit Committee\nWe have established an audit committee of the board of directors. Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd serve as members of our audit committee, and Lauren C. Anderson chairs the audit committee. Each of Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd meet the independent director standard under Rule 10A-3(b)(l) under the Exchange Act.\n\nEach member of the audit committee is financially literate and our board of directors has determined that Shawn Henry qualifies as an \"audit committee financial expert\" as defined in applicable SEC rules and has accounting or related financial management expertise.\n\nWe have adopted an audit committee charter, which details the principal functions of the audit committee, including:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 assisting board oversight of (1) the integrity of our financial statements, (2) our compliance with legal and regulatory requirements, (3) our independent registered public accounting firm's qualifications and independence, and (4) the performance of our internal audit function and independent auditors; the appointment, compensation, retention, replacement, and oversight of the work of the independent auditors and any other independent registered public accounting firm engaged by us;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 pre-approving all audit and non-audit services to be provided by the independent auditors or any other registered public accounting firm engaged by us, and establishing pre-approval policies and procedures; reviewing and discussing with the independent auditors all relationships the auditors have with us in order to evaluate their continued independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear policies for audit partner rotation in compliance with applicable laws and regulations; obtaining and reviewing a report, at least annually, from the independent registered public accounting firm describing (1) the independent auditor's internal quality-control procedures and (2) any material issues raised by the most recent internal quality-control review, or peer review, of the audit firm, or by any inquiry or investigation by governmental or professional authorities, within the preceding five years respecting one or more independent audits carried out by the firm and any steps taken to deal with such issues;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 meeting to review and discuss our annual audited financial statements and quarterly financial statements with management and the independent auditor, including reviewing our specific disclosures under \"*Management's Discussion and Analysis of Financial Condition and Results of Operations*\"; reviewing and approving any related party transaction required to be disclosed pursuant to Item 404 of Regulation S-K promulgated by the SEC prior to us entering into such transaction; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing with management, the independent auditors, and our legal advisors, as appropriate, any legal, regulatory or compliance matters, including any correspondence with regulators or government agencies and any employee complaints or published reports that raise material issues regarding our financial statements or accounting policies and any significant changes in accounting standards or rules promulgated by the Financial Accounting Standards Board, the SEC or other regulatory authorities.",
+        "token_count": 647,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "a6205dc2-ab89-51c2-905b-ce0c5b66df96",
+        "section": "Audit Committee",
+        "section_index": 385,
+        "chunk_index": 0,
+        "char_start": 1278488,
+        "char_end": 1281588,
+        "text": "#### Audit Committee\nWe have established an audit committee of the Board of Directors. Chunyi (Charlie) Hao, Tiemei (Sarah) Li and Sanjay Prasad serve as members of our audit committee and Ms. Li serves as its chair. Under the Nasdaq listing standards and applicable SEC rules, we are required to have at least three members of the audit committee, all of whom must be independent, subject to certain phase-in provisions. Each such member of our audit committee meets the independent director standard under Nasdaq listing standards and under Rule 10A-3(b)(1) of the Exchange Act.\n\nEach member of the audit committee is financially literate and the Finnovate Board has determined that Ms. Li qualifies as an \"audit committee financial expert\" as defined in applicable SEC rules and has accounting or related financial management expertise.\n\nWe have adopted an audit committee charter, which details the purpose and principal functions of the audit committee, including:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 the appointment, compensation, retention, replacement, and oversight of the work of the independent auditors and any other independent registered public accounting firm engaged by us;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 pre-approving all audit and non-audit services to be provided by the independent auditors or any other registered public accounting firm engaged by us, and establishing pre-approval policies and procedures;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing and discussing with the independent auditors all relationships the auditors have with us in order to evaluate their continued independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear hiring policies for employees or former employees of the independent auditors;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear policies for audit partner rotation in compliance with applicable laws and regulations;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 obtaining and reviewing a report, at least annually, from the independent auditors describing (i) the independent auditor's internal quality-control procedures and (ii) any material issues raised by the most recent internal quality-control review, or peer review, of the audit firm, or by any inquiry or investigation by governmental or professional authorities, within, the preceding five years respecting one or more independent audits carried out by the firm and any steps taken to deal with such issues;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 meeting to review and discuss our annual audited financial statements and quarterly financial statements with management and the independent auditor, including reviewing our specific disclosures under \"Management's Discussion and Analysis of Financial Condition and Results of Operations\";\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing and approving any related party transaction required to be disclosed pursuant to Item 404 of Regulation S-K promulgated by the SEC prior to us entering into such transaction; and",
+        "token_count": 621,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-009168",
+        "cik": "0001177648",
+        "company": "ENANTA PHARMACEUTICALS INC",
+        "form_type": "DEF 14A",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 818,
+        "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+        "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2aeed529-f68c-5fcc-a395-712a3793656b",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 37,
+        "char_start": 94043,
+        "char_end": 97506,
+        "text": "The firm of PricewaterhouseCoopers LLP, an independent registered public accounting firm, has audited our financial statements for each of the years ended September 30, 2024, 2023 and 2022. Our Audit Committee has appointed them to serve as our auditors for the fiscal year ending September 30, 2025. Detailed disclosure of the audit and tax fees we paid to PricewaterhouseCoopers LLP in 2024 and 2023 may be found in the \"Audit Fees\" section of this proxy statement. Based on these disclosures and information in the Audit Committee Report provided elsewhere in this proxy statement, our Audit Committee is satisfied that PricewaterhouseCoopers LLP is sufficiently independent of management to perform its duties properly. Although not legally required to do so, our Board considers it desirable to seek, and recommends, stockholder ratification of our selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2025. If the stockholders fail to ratify our selection, the Audit Committee will reconsider whether or not to retain that firm. Even if the selection is ratified, the Audit Committee in its discretion may direct the appointment of a different independent registered public accounting firm at any time during the year if the Audit Committee determines that such a change would be in the best interest of Enanta and its stockholders.\n\n**Recommendation** \n\n**We recommend a vote \"FOR\" ratification of the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm.** \n\n------\n\n**CORPORATE GOVERNANCE** \n\n**Board and Committee Matters** \n\n*Board Leadership and Independence.* Our Board of Directors has determined that each of Mark G. Foletta and Lesley Russell, MBChB, MRCP, as well as four of the other directors continuing their terms after the 2025 Annual Meeting, are independent directors as defined by applicable Nasdaq Stock Market standards governing the independence of directors. Jay R. Luly, Ph.D., our President and Chief Executive Officer, is not considered independent.\n\nThe Board of Directors sets company strategy and provides oversight and accountability for our Chief Executive Officer and management. Among the general responsibilities for the direction and management of the business, the Board is expressly designated to have responsibility for reviewing matters related to environmental, social and governance (ESG) issues, as well as adopting appropriate standards and other required metrics used to measure and track ESG performance and progress.\n\nDr. Carter has served as our non-executive Chairman of the Board since December 2015. Dr. Carter presides over meetings of the Board of Directors and provides guidance to our Chief Executive Officer. Dr. Luly is responsible for setting the strategic direction for our Company and the day-to-day leadership and performance of the Company. We believe that separation of our Board of Directors and executive leadership preserves the independence of these roles and maximizes performance.\n\n*Board Meetings and Committees.* Our Board of Directors held eleven meetings during 2024, and the independent directors held executive sessions at four of the meetings of the Board. During 2024, each of the directors then in office attended at least 75% of the aggregate of all meetings of the Board of Directors and all meetings of the committees of the Board of Directors on which such director then served.",
+        "token_count": 673,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001410578-25-000056",
+        "cik": "0001779578",
+        "company": "BGM Group Ltd.",
+        "form_type": "20-F",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 440,
+        "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+        "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "efaeffd8-8d14-5639-80f4-f053f4585862",
+        "section": "Item 3. KEY INFORMATION",
+        "section_index": 3,
+        "chunk_index": 31,
+        "char_start": 110955,
+        "char_end": 114330,
+        "text": "On December 2, 2021, the SEC issued amendments to finalize rules implementing the submission and disclosure requirements in the Holding Foreign Companies Accountable Act. The rules apply to registrants that the SEC identifies as having filed an annual report with an audit report issued by a registered public accounting firm that is located in a foreign jurisdiction and that PCAOB is unable to inspect or investigate completely because of a position taken by an authority in foreign jurisdictions.\n\nOn December 16, 2021, the PCAOB issued a report on its determination that it is unable to inspect or investigate completely PCAOB-registered public accounting firms headquartered in China and in Hong Kong because of positions taken by PRC and Hong Kong authorities in those jurisdictions. The PCAOB has made such determination as mandated under the Holding Foreign Companies Accountable Act. Pursuant to each annual determination by the PCAOB, the SEC will, on an annual basis, identify issuers that have used non-inspected audit firms and thus are at risk of such suspensions in the future. Our auditors, ZH CPA, LLC and Enrome LLP, the independent registered public accounting firms that issue the audit reports included elsewhere in this annual report, as auditors of companies that are traded publicly in the U.S. and a firm registered with the PCAOB, are subject to laws in the U.S., pursuant to which the PCAOB conducts regular inspections to assess their compliance with the applicable professional standards. Our auditors are located in Denver, Colorado and Singapore, and have been inspected by the PCAOB on a regular basis. Our auditors are not subject to the determination issued by the PCAOB on December 16, 2021.\n\nOn June 22, 2021, the U.S. Senate passed the Accelerating Holding Foreign Companies Accountable Act, and on December 29, 2022, the Consolidated Appropriations Act was signed into law by President Biden, which contained, among other things, an identical provision to the Accelerating Holding Foreign Companies Accountable Act and amended the HFCA Act by requiring the SEC to prohibit an issuer's securities from trading on any U.S. stock exchanges if its auditor is not subject to PCAOB inspections for two consecutive years instead of three, thus reducing the time period for triggering the prohibition on trading.\n\nOn August 26, 2022, the CSRC, the MOF, and the PCAOB signed the Protocol governing inspections and investigations of audit firms based in mainland China and Hong Kong, taking the first step toward opening access for the PCAOB to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong. Pursuant to the fact sheet with respect to the Protocol disclosed by the SEC, the PCAOB shall have independent discretion to select any issuer audits for inspection or investigation and has the unfettered ability to transfer information to the SEC. On December 15, 2022, the PCAOB Board determined that the PCAOB was able to secure complete access to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong and voted to vacate its previous determinations to the contrary. However, should PRC authorities obstruct or otherwise fail to facilitate the PCAOB's access in the future, the PCAOB Board will consider the need to issue a new determination.",
+        "token_count": 660,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000898531-25-000002",
+        "cik": "0000891944",
+        "company": "HENNESSY FUNDS TRUST",
+        "form_type": "497",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 899,
+        "source_md5": "7d32679b0a771cfbe7ba5e918786aae9",
+        "content_sha256": "2a555529c69dbde466d93f78dd2ce23891362d9ceed1a82dad426fb47ed970e0",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "465a9965-e86f-5af7-af71-2aa2979910f1",
+        "section": "BOARD COMMITTEES",
+        "section_index": 48,
+        "chunk_index": 0,
+        "char_start": 73918,
+        "char_end": 75872,
+        "text": "#### BOARD COMMITTEES\nThe Audit Committee of the Board of Trustees comprises Mr. DeSousa, Mr. Doyle (Chair), Ms. Garvie, and Mr. Richardson. The primary functions of the Audit Committee are to recommend to the Board of Trustees the independent registered public accounting firm to be retained to perform the annual audit, to review the results of the audit, to review the Funds' internal controls, and to review certain other matters relating to the Funds' independent registered public accounting firm and financial records. The Audit Committee met once during the fiscal year ended August 31, 2023, and once during the two-month period ended October 31, 2023, with respect to the Fund.\n\nIn overseeing the Auditor, the Audit Committee (i) reviews the Auditor's independence from the Hennessy Funds and management, and from the Investment Manager, (ii) reviews periodically the level of fees approved for payment to the Auditor and the pre-approved non-audit services it has provided to the Hennessy Funds to ensure their compatibility with the Auditor's independence, (iii) reviews the Auditor's performance, qualifications and quality control procedures, (iv) reviews the scope of and overall plans for the annual audit, (v) reviews the Auditor's performance, qualifications, and quality control procedures, (vi) consults with management and the Auditors with respect to the Hennessy Funds' processes for risk assessment and risk management, (vii) reviews with management the scope and effectiveness of the Hennessy Funds' disclosure controls and procedures, including for purposes of evaluating the accuracy and fair presentation of the company's financial statements in connection with certifications made by the chief executive officer and chief financial officer, and (viii) reviews significant legal developments and the Hennessy Funds' processes for monitoring compliance with law as it relates to the financial statements and related disclosure.",
+        "token_count": 378,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 50, \"citation_support\": 0, \"rationale\": \"The candidate correctly identifies PricewaterhouseCoopers LLP as NVIDIA's auditor, which matches the reference. However, it fails to provide the year of service (2004), stating it cannot verify it. The reference answer is answerable, so abstaining on the second part makes the answer only partially correct. Citation support is 0 because none of the retrieved excerpts mention NVIDIA or PwC's tenure; the gold evidence quote was not retrieved, and the candidate cites no excerpt supporting its claim.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 50, \"citation_support\": 0, \"rationale\": \"The candidate correctly identifies PricewaterhouseCoopers LLP as NVIDIA's auditor, which matches the reference. However, it fails to provide the year of service (2004), stating it cannot verify it. The reference answer is answerable, so abstaining on the second part makes the answer only partially correct. Citation support is 0 because none of the retrieved excerpts mention NVIDIA or PwC's tenure; the gold evidence quote was not retrieved, and the candidate cites no excerpt supporting its claim.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:36:02.627638+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "db9123e691a8ade83ef1f70e:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042560-3umEXfBHpHrw6rKjJllU",
+    "usage": {
+      "prompt_tokens": 16310,
+      "completion_tokens": 198,
+      "total_tokens": 16508,
+      "cost": 0.00173,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00173,
+        "upstream_inference_prompt_cost": 0.001631,
+        "upstream_inference_completions_cost": 9.9e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.6758945899991886,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 50,
+    "citation_support": 0,
+    "rationale": "The candidate correctly identifies PricewaterhouseCoopers LLP as NVIDIA's auditor, which matches the reference. However, it fails to provide the year of service (2004), stating it cannot verify it. The reference answer is answerable, so abstaining on the second part makes the answer only partially correct. Citation support is 0 because none of the retrieved excerpts mention NVIDIA or PwC's tenure; the gold evidence quote was not retrieved, and the candidate cites no excerpt supporting its claim."
+  },
+  "status": "ok"
+}

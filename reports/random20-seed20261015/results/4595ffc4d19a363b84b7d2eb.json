@@ -1,0 +1,117 @@
+{
+  "question_id": "Q055",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.03098001899979863,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Comcast\u2019s FY2024 operating income margin was **18.82%**:\n\n\\[\n\\frac{\\text{Operating income } \\$23{,}297\\text{ million}}{\\text{Revenue } \\$123{,}731\\text{ million}}\\times 100\n=18.82\\%\n\\]\n\nSource: accession **0001166691-25-000011**, **Consolidated Statements of Income**, chunk **31**.",
+    "message": {
+      "role": "assistant",
+      "content": "Comcast\u2019s FY2024 operating income margin was **18.82%**:\n\n\\[\n\\frac{\\text{Operating income } \\$23{,}297\\text{ million}}{\\text{Revenue } \\$123{,}731\\text{ million}}\\times 100\n=18.82\\%\n\\]\n\nSource: accession **0001166691-25-000011**, **Consolidated Statements of Income**, chunk **31**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:41.244188+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "4595ffc4d19a363b84b7d2eb:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041939-XLAZcxQ8DETknJeNLH7v",
+    "usage": {
+      "prompt_tokens": 16831,
+      "completion_tokens": 97,
+      "total_tokens": 16928,
+      "cost": 0.0021523,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 16828,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0021523,
+        "upstream_inference_prompt_cost": 0.0021038,
+        "upstream_inference_completions_cost": 4.85e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.9083373189996564,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 45, \"citation_support\": 90, \"rationale\": \"The inputs are correct: operating income of $23,297M and revenue of $123,731M match the Consolidated Statements of Income. The arithmetic is wrong, though. 23,297 / 123,731 = 0.188285, which is 18.83% when rounded to two decimals, not 18.82%. The final reported figure therefore differs from the reference by 0.01 percentage points. The citation to accession 0001166691-25-000011, Consolidated Statements of Income, is supported by the first retrieved excerpt, which is chunk 31 and contains the income statement table.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 45, \"citation_support\": 90, \"rationale\": \"The inputs are correct: operating income of $23,297M and revenue of $123,731M match the Consolidated Statements of Income. The arithmetic is wrong, though. 23,297 / 123,731 = 0.188285, which is 18.83% when rounded to two decimals, not 18.82%. The final reported figure therefore differs from the reference by 0.01 percentage points. The citation to accession 0001166691-25-000011, Consolidated Statements of Income, is supported by the first retrieved excerpt, which is chunk 31 and contains the income statement table.\"}",
+      "refusal": null,
+      "reasoning": "Let me verify: 23297/123731 actually comes out to 18.83% when computed precisely, so the candidate's 18.82% is off by a rounding error in the last digit.\n\nChecking the citation now \u2014 the Consolidated Statements of Income table does appear in chunk 31, so that citation is well supported, probably around 90.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me verify: 23297/123731 actually comes out to 18.83% when computed precisely, so the candidate's 18.82% is off by a rounding error in the last digit.\n\nChecking the citation now \u2014 the Consolidated Statements of Income table does appear in chunk 31, so that citation is well supported, probably around 90.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSmQsKEAgSGAI4AUIIdGhpbmtpbmcSDJXg6l8P0+XcLXX1CRoMZKVV/wDipX4Rw8hfIjACMfcr+nfbJbNpe6a2x1jbJ4ldZRN6FA+hvDM7NItyUH6OQgqdmPl6NuGdslGWGwgqtgpT48CIlTr4uzTB3qBFjqdsJQHBSwpxiR/QG8DJIuXH6OrAbVjTK+40eYYvsicRb4ss9XsynKW9mQcNgRwF+20cXg7tQvboTK6JxrabLprQGVhT1IyA3WPuVS+zdfa21mfGmYbKRn1Auvj2WBuyB6uEcNNWlG0MyKzhWCtXEFtCePK9mI5WhpZhpqF3FdVFG5ss4wUflY3rVYwa3PaXson5N5WnQsmABHqaYk4fEYmDS9EzFr9D6Llsb1pvLihi2WbARDXMQIXOAqXeTqNMtFAoW9BPfx1XHmeD8gwCRpxRQRfS0CPbH4NIXDz+Obw2JLJM+cksyxS7cbN38JWVX6Nd9OBCTr7Nm2zUgqGqrU3UVFApLLmwibpWQ7gPKRnMlpO6Vz/Tcw1R3/VN8KhsQ1epja4yrYlYSODgMMV1Zd6DrPQ4erkZRjDc4uaGteHOiSl9ia2TDBxLJk+rQMs1AAhWD/CDn+bRi4CbwuxPcDP2ABos3yUnG6AnBJ1BDQi0Mzc8zqZGb+o1SczJO9P5eW29+AZkEBNfIvfdJ4/qpPXmUwiWNHXO0/5mfqIVIjYSJVcO/cHqa898Afso4tL3fmp1Nr/4JxleI/VhxST/PW04BoOhHmV8eAqcl5Bg4jW14nqzWQlQeKDziaAL1FjDZOE5u6RnXDmWmvNFQa/rOomlrrdP1RGFQI2XPfqhofLgXczwM1Ze2dI1zpxK3QyHW4dJMTKckalOVR/JWOm0iTQghhZ+6LrkgcW8/C3bXXdG1CxzBH92LeU2I0y7h6cKSKdoaTVF1696bKbUCTa99LVScUyJrHjepMJwxabtCY24rEz3H0K2qGAg25Y5YdCkHOxcZxDGesiXOhvjqUWHSD8WQgT4cRAgNGbv6UagXdR6vxm5uyK4/S3hhvUBbaQVs5e8bbD+vbogX6MF84Ac35ohiiKPdslcAXH43+0muhgDii97G2UZOKl7H2708IzF6ei9UrbzLjzqpOEM6GmG2hqn3u0jHgX+L8s5SPCaCvOq/fbonhoUT/O3WR1fk2XaSxftZ/s1UK3orc3/8GpW0pj0hFwJ1Jd3khgRe/KmsqOnrxIR/aOH8DcuP9veG8msfvoRGe5FrpX3HsSE4I2Uvw2JUqM2qfTKB4sJpvjXzDhktNu57hgpCBFxRz71y5QNM8S+PVeG8TgwU6EKVIit3rrfpjD8R8b+JoufWbQOudac7leYidGaEcxk6oxt/SgpAdOUTPFn5lxmFJL2itprUNjItoYS5+sjyiPKBDYdpVA8eycMJ3POwhgGDeGTJ8AHy/6uzepBNBz94AnfSShJfY5uGsx7Ii7taPKf9T7h4RzGJixpiPhFVOKu2dEKqfx72rlAiXfza8OLK60TYMfxnmreYXAfmpTaHBBFkIcsjZwqyrHK10ouzVfF0Z8OL6q/ACBe3M+VBTkvrqrczpD21q258P9sG0mqtjfQY4ixQ8dtFhannfaCDIRr1EE+1Th6JEB7jcftGo1K1daMuQ6EIbftoY8ozlGYLUsiHuJtmfoPfE2oFLtgJ7n2WTi5ODbtCPI3mobu7sw3w2x4oAA6EWppMWa/hmsZr/1o4/Q+ZCs6Yj1rhuP5g77fMdmnOGZ4u/2xB0J/43ncJWhmUB5/c7IlHsMSa6/7Hv4xL/LI2n8KjL3LDTJDiYjZkKBoOpW7kqXhogxDmxyk2BIO1KuBnBNEdpoWKFbfUNO31Z/3p4LH2mFC8+jgI31WCIIFhHzPH1tjB2d52rJZNsvUYgb3qgIa1SE90ludlhgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:11.212037+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "4595ffc4d19a363b84b7d2eb:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042147-oQ02dkyYmE7319P0EdZs",
+    "usage": {
+      "prompt_tokens": 26139,
+      "completion_tokens": 547,
+      "total_tokens": 26686,
+      "cost": 0.0028874,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028874,
+        "upstream_inference_prompt_cost": 0.0026139,
+        "upstream_inference_completions_cost": 0.0002735
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 337,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.434366702000261,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 45,
+    "citation_support": 90,
+    "rationale": "The inputs are correct: operating income of $23,297M and revenue of $123,731M match the Consolidated Statements of Income. The arithmetic is wrong, though. 23,297 / 123,731 = 0.188285, which is 18.83% when rounded to two decimals, not 18.82%. The final reported figure therefore differs from the reference by 0.01 percentage points. The citation to accession 0001166691-25-000011, Consolidated Statements of Income, is supported by the first retrieved excerpt, which is chunk 31 and contains the income statement table."
+  },
+  "status": "ok"
+}

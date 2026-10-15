@@ -1,0 +1,472 @@
+{
+  "question_id": "Q074",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/agentic",
+  "retrieval": {
+    "seconds": 0.023151696999775595,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "NVIDIA recorded the higher gross profit margin: **75.0%** in FY2025, compared with Adobe\u2019s **89%** in FY2024? Actually, Adobe\u2019s reported total gross profit as a percentage of revenue was **89%**, so **Adobe was higher by 14 percentage points** (89% \u2212 75.0% = 14 percentage points).\n\nSources: Adobe FY2024 10-K, accession **0000796343-25-000004**, chunk **b8fa3362-a910-51b7-aebe-a44fa81085a4**; NVIDIA FY2025 10-K, accession **0001045810-25-000023**, chunk **2d4cee94-0f7b-599b-aa19-f5ffe2997e11**.",
+    "usage": {
+      "prompt_tokens": 10153,
+      "completion_tokens": 224,
+      "total_tokens": 10377,
+      "cost": 0.0013608499999999998
+    },
+    "seconds": 3.55399566000051,
+    "tool_seconds": 0.023151696999775595,
+    "tool_calls": 1,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_mWHMWpIKIsTni19r1Tzfilz5",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Adobe Inc fiscal year 2024 annual report gross profit revenue cost of revenue gross margin; NVIDIA Corporation fiscal year 2025 annual report revenue cost of revenue gross profit margin\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_mWHMWpIKIsTni19r1Tzfilz5",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Adobe Inc fiscal year 2024 annual report gross profit revenue cost of revenue gross margin; NVIDIA Corporation fiscal year 2025 annual report revenue cost of revenue gross profit margin\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:26:28.079540+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "1b64a6b372039defccb2d1a6:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041984-3GP0uHmji942DjsRZvkD",
+        "usage": {
+          "prompt_tokens": 808,
+          "completion_tokens": 51,
+          "total_tokens": 859,
+          "cost": 0.0001063,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0001063,
+            "upstream_inference_prompt_cost": 8.08e-05,
+            "upstream_inference_completions_cost": 2.55e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 0.3804605180002909,
+        "attempts": 1
+      },
+      {
+        "text": "NVIDIA recorded the higher gross profit margin: **75.0%** in FY2025, compared with Adobe\u2019s **89%** in FY2024? Actually, Adobe\u2019s reported total gross profit as a percentage of revenue was **89%**, so **Adobe was higher by 14 percentage points** (89% \u2212 75.0% = 14 percentage points).\n\nSources: Adobe FY2024 10-K, accession **0000796343-25-000004**, chunk **b8fa3362-a910-51b7-aebe-a44fa81085a4**; NVIDIA FY2025 10-K, accession **0001045810-25-000023**, chunk **2d4cee94-0f7b-599b-aa19-f5ffe2997e11**.",
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA recorded the higher gross profit margin: **75.0%** in FY2025, compared with Adobe\u2019s **89%** in FY2024? Actually, Adobe\u2019s reported total gross profit as a percentage of revenue was **89%**, so **Adobe was higher by 14 percentage points** (89% \u2212 75.0% = 14 percentage points).\n\nSources: Adobe FY2024 10-K, accession **0000796343-25-000004**, chunk **b8fa3362-a910-51b7-aebe-a44fa81085a4**; NVIDIA FY2025 10-K, accession **0001045810-25-000023**, chunk **2d4cee94-0f7b-599b-aa19-f5ffe2997e11**.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:29:55.850651+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "1b64a6b372039defccb2d1a6:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042193-qi6VVWMjtQGoIsqGgx3W",
+        "usage": {
+          "prompt_tokens": 9345,
+          "completion_tokens": 173,
+          "total_tokens": 9518,
+          "cost": 0.00125455,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 9342,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00125455,
+            "upstream_inference_prompt_cost": 0.00116805,
+            "upstream_inference_completions_cost": 8.65e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.173535142000219,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_mWHMWpIKIsTni19r1Tzfilz5",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Adobe Inc fiscal year 2024 annual report gross profit revenue cost of revenue gross margin; NVIDIA Corporation fiscal year 2025 annual report revenue cost of revenue gross profit margin\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "b8fa3362-a910-51b7-aebe-a44fa81085a4",
+              "section": "ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA",
+              "section_index": 12,
+              "chunk_index": 6,
+              "char_start": 291763,
+              "char_end": 300663,
+              "text": "Gains and losses related to changes in the fair value of foreign exchange forward contracts which hedge certain balance sheet positions are recorded each period as a component of other income (expense), net in our Consolidated Statements of Income. Foreign exchange forward contracts and option contracts hedging forecasted foreign currency revenue and expenses and Treasury lock agreements are designated as cash flow hedges with gains and losses recorded net of tax as a component of accumulated other comprehensive income (loss) in our Consolidated Balance Sheets until the forecasted transaction occurs. When the forecasted transaction affects earnings, we reclassify the related gain or loss on the foreign currency revenue, foreign currency expense or Treasury lock cash flow hedge to revenue, operating expense or interest expense, as applicable.\n\n*Concentration of Risk*\n\nFinancial instruments that potentially subject us to concentrations of credit risk are short-term fixed-income investments, structured repurchase transactions, foreign currency and interest rate hedge contracts and trade receivables.\n\nOur investment portfolio consists of investment-grade securities diversified among security types, industries and issuers. Our cash and investments are held and primarily managed by recognized financial institutions that follow our investment policy. Our policy limits the amount of credit exposure to any one security issue or issuer and we believe no significant concentration of credit risk exists with respect to these investments.\n\nWe enter into master netting arrangements to mitigate credit risk in derivative transactions by permitting net settlement of transactions with the same counterparty. We also enter into collateral security agreements with certain of our counterparties to exchange cash collateral when the net fair value of certain derivative instruments fluctuates from contractually established thresholds.\n\nCredit risk in receivables is limited to OEMs, dealers and distributors of hardware and software products to the retail market, customers to whom we license software directly and our SaaS offerings. A credit review is completed for our new distributors, dealers and OEMs. We also perform ongoing credit evaluations of our customers' financial condition and require letters of credit or other guarantees, whenever deemed necessary. The credit limit given to the customer is based on our risk assessment of their ability to pay, country risk and other factors and is not contingent on the resale of the product or on the collection of payments from their customers. Certain contracts with advertising agencies contain sequential liability provisions, under which the agency is not required to pay until payment is received from the agency's customers. In these circumstances, we evaluate the credit-worthiness of the agency's customers in addition to the agency itself. If we license our software or provide SaaS services to a customer where we have a reason to believe the customer's ability and intention to pay is not probable, the arrangement is not considered to be a revenue contract. Accordingly, we will not recognize any consideration received as revenue until termination or substantive completion of the services.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\n**Recent Accounting Pronouncements Not Yet Effective**\n\nIn November 2023, the Financial Accounting Standards Board (the \"FASB\") issued Accounting Standards Update (\"ASU\") No. 2023-07, Segment Reporting, which expands annual and interim disclosure requirements for reportable segments, primarily through enhanced disclosures about significant segment expenses. The updated standard is effective for our annual periods beginning in fiscal 2025 and interim periods beginning in the first quarter of fiscal 2026. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn December 2023, the FASB issued ASU No. 2023-09, Income Taxes, which prescribes standardized categories and disaggregation of information in the reconciliation of provision for income taxes, requires disclosure of disaggregated income taxes paid, and modifies other income tax-related disclosure requirements. The updated standard is effective for us beginning with our fiscal year 2026 annual reporting period. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn November 2024, the FASB issued ASU No. 2024-03, Income Statement\u2014Reporting Comprehensive Income\u2014Expense Disaggregation Disclosures, which requires additional disclosure of certain costs and expenses within the notes to the financial statements. The updated standard is effective for our annual periods beginning in fiscal 2028 and interim periods beginning in the first quarter of fiscal 2029. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nThere have been no other recent accounting pronouncements, changes in accounting pronouncements or recently adopted accounting guidance during fiscal 2024 that are of significance or potential significance to us.\n\n**NOTE 2. REVENUE**\n\n*Segment Information*\n\nWe report segment information based on the \"management\" approach. The management approach designates the internal reporting used by management for making decisions and assessing performance as the source of our reportable segments.\n\nOur Chief Executive Officer, the chief operating decision maker, reviews revenue and gross margin information for each of our reportable segments, but does not review operating expenses on a segment by segment basis. In addition, with the exception of goodwill, we do not identify or allocate our assets by the reportable segments.\n\nOur business is organized into the following reportable segments:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Media*\u2014Our Digital Media segment provides products and services that enable individuals, teams, businesses, and enterprises to create, publish and promote their content anywhere and accelerate their productivity by transforming how they view, share, engage with and collaborate on documents and creative content. Our customers include creative professionals, including photographers, video editors, graphic and experience designers and game developers; communicators, including content creators, students, marketers and knowledge workers; and consumers.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Experience*\u2014Our Digital Experience segment provides an integrated platform and set of products, services and solutions that enable businesses to create, manage, execute, measure, monetize and optimize customer experiences that span from analytics to commerce. Our customers include marketers, advertisers, agencies, publishers, merchandisers, merchants, web analysts, data scientists, developers and executives across the C-suite.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Publishing and Advertising*\u2014Our Publishing and Advertising segment contains legacy products and services that address diverse market opportunities, including eLearning solutions, technical document publishing, web conferencing, document and forms platform, web app development, high-end printing and our Adobe Advertising offerings.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\nOur segment revenue and results for fiscal 2024, 2023 and 2022 were as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **Digital <br>Media** | **Digital <br>Experience** | **Publishing and <br>Advertising** | **Total** |\n| **Fiscal 2024** |  |  |  |  |\n| Revenue | $15864 | $5366 | $275 | $21505 |\n| Cost of revenue | 680 | 1589 | 89 | 2358 |\n| Gross profit | $15184 | $3777 | $186 | $19147 |\n| Gross profit as a percentage of revenue | 96% | 70% | 68% | 89% |\n| **Fiscal 2023** |  |  |  |  |\n| Revenue | $14216 | $4893 | $300 | $19409 |\n| Cost of revenue | 665 | 1603 | 86 | 2354 |\n| Gross profit | $13551 | $3290 | $214 | $17055 |\n| Gross profit as a percentage of revenue | 95% | 67% | 71% | 88% |\n| **Fiscal 2022** |  |  |  |  |\n| Revenue | $12842 | $4422 | $342 | $17606 |\n| Cost of revenue | 561 | 1502 | 102 | 2165 |\n| Gross profit | $12281 | $2920 | $240 | $15441 |\n| Gross profit as a percentage of revenue | 96% | 66% | 70% | 88% |\n\n---\n\n\n\nWe generally categorize revenue by geographic area based on where the customer manages their utilization of our offerings. Revenue by geographic area for fiscal 2024, 2023 and 2022 were as follows:\n\n---",
+              "token_count": 1844,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001045810-25-000023",
+              "cik": "0001045810",
+              "company": "NVIDIA CORP",
+              "form_type": "10-K",
+              "filed_date": "20250226",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 59611,
+              "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+              "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2d4cee94-0f7b-599b-aa19-f5ffe2997e11",
+              "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+              "section_index": 10,
+              "chunk_index": 3,
+              "char_start": 228847,
+              "char_end": 237114,
+              "text": "Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location. Revenue from sales to customers outside of the United States accounted for 53% and 56% of total revenue for fiscal years 2025 and 2024, respectively.\n\n**Gross Profit and Gross Margin**\n\nGross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.\n\nGross margins increased to 75.0% in fiscal year 2025 from 72.7% in fiscal year 2024. The year over year increase was primarily driven by a higher mix of Data Center revenue.\n\nProvisions for inventory and excess inventory purchase obligations totaled $3.7 billion and $2.2 billion for fiscal years 2025 and 2024, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $689 million and $540 million for fiscal years 2025 and 2024, respectively. The net effect on our gross margin was an unfavorable impact of 2.3% and 2.7% in fiscal years 2025 and 2024, respectively.\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Research and development expenses | $12914 | $8675 | $4239 | 49% |\n| *% of net revenue* | *9.9 %* | *14.2 %* |  |  |\n| Sales, general and administrative expenses | 3491 | 2654 | 837 | 32% |\n| *% of net revenue* | *2.7 %* | *4.4 %* |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | $16405 | $11329 | $5076 | 45% |\n| &nbsp;&nbsp;&nbsp;&nbsp;*% of net revenue* | *12.6 %* | *18.6 %* |  |  |\n\n---\n\n\n\nThe increases in research and development expenses for fiscal year 2025 were driven by a 32% increase in compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases, a 100% increase in compute and infrastructure, and a 234% increase in engineering development costs for new product introductions.\n\nThe increases in sales, general and administrative expenses for fiscal year 2025 were primarily driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Other Income (Expense), Net**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Interest income | $1786 | $866 | $920 |\n| Interest expense | (247) | (257) | 10 |\n| Other, net | 1034 | 237 | 797 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | $2573 | $846 | $1727 |\n\n---\n\n\n\nThe increase in interest income was primarily due to growth in cash, cash equivalents, and marketable securities.\n\nInterest expense is comprised of coupon interest and debt discount amortization related to our notes.\n\nOther, net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. The change in Other, net, compared to fiscal year 2024, was primarily driven by an increase in fair value of our non-marketable equity securities and publicly-held equity securities. Refer to Note 8 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information regarding our non-marketable equity securities.\n\n**Income Taxes**\n\nIncome tax expense was $11.1 billion and $4.1 billion for fiscal years 2025 and 2024, respectively. Income tax as a percentage of income before income tax was an expense of 13.3% and 12.0% for fiscal years 2025 and 2024, respectively.\n\nThe effective tax rate increased primarily due to higher pre-tax income and a prior year discrete benefit due to an audit resolution.\n\nOur effective tax rates for fiscal years 2025 and 2024 were lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, stock-based compensation, the U.S. federal research tax credit, and income earned in jurisdictions that are subject to taxes at rates lower than the U.S. federal statutory tax rate. Our effective tax rate for fiscal year 2024 was additionally benefited by the audit resolution.\n\nGiven our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could vary based on our assessment of all available information.\n\nRefer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.\n\n**Liquidity and Capital Resources**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Cash and cash equivalents | $8589 | $7280 |\n| Marketable securities | 34621 | 18704 |\n| Cash, cash equivalents, and marketable securities | $43210 | $25984 |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Net cash provided by operating activities | $64089 | $28090 |\n| Net cash used in investing activities | $(20421) | $(10566) |\n| Net cash used in financing activities | $(42359) | $(13633) |\n\n---\n\n\n\nOur investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain maturity limits on our portfolio.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\nCash provided by operating activities increased in fiscal year 2025 compared to fiscal year 2024, due to growth in revenue.\n\nCash used in investing activities increased in fiscal year 2025 compared to fiscal year 2024, primarily driven by net purchases of marketable securities, and purchase of land, property and equipment.\n\nCash used in financing activities increased in fiscal year 2025 compared to fiscal year 2024, mainly due to higher share repurchases and higher tax payments related to RSUs.\n\n**Liquidity**\n\nOur primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of January 26, 2025, we had $43.2 billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.\n\nOur marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly rated financial institutions. These marketable securities are primarily denominated in U.S. dollars. Refer to Note 7 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+              "token_count": 1944,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000320187-25-000004",
+              "cik": "0000320187",
+              "company": "NIKE, Inc.",
+              "form_type": "10-Q",
+              "filed_date": "20250103",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 43713,
+              "source_md5": "2444bf04829ac85518721ff551dba986",
+              "content_sha256": "deda8fe46f6410d030410dafa7e2efac0601d30401671f36761f7a8c5bf308a9",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "d5fe7cd1-0a6b-5c98-88a0-3e069a38aafb",
+              "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 2,
+              "chunk_index": 2,
+              "char_start": 106955,
+              "char_end": 114435,
+              "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand footwear revenues decreased 12% on a currency-neutral basis. Unit sales of footwear decreased 7%, while lower average selling price (\"ASP\") per pair reduced footwear revenues by approximately 5 percentage points. Lower ASP per pair was primarily due to higher discounts and changes in channel mix.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand apparel revenues decreased 2% on a currency-neutral basis. Unit sales of apparel were flat, while lower ASP per unit reduced apparel revenues by approximately 2 percentage points. Lower ASP per unit was primarily due to changes in channel mix and higher discounts, partially offset by strategic pricing actions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand wholesale revenues decreased 3% on a reported basis and 4% on a currency-neutral basis. The decrease on a currency-neutral basis was driven by lower revenues in Greater China, EMEA, North America and Asia Pacific & Latin America (\"APLA\").\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Direct revenues were $5.0 billion in the second quarter of fiscal 2025, compared to $5.7 billion for the second quarter of fiscal 2024. NIKE Brand Digital sales were $2.8 billion for the second quarter of fiscal 2025 compared to $3.5 billion for the second quarter of fiscal 2024. On a currency-neutral basis, NIKE Direct revenues decreased 14%, primarily due to NIKE Brand Digital sales declines of 21% and comparable store sales declines of 2% compared to the second quarter of fiscal 2024. For additional information regarding comparable store sales, including the definition, see \"Comparable Store Sales\".\n\n**FIRST SIX MONTHS OF FISCAL 2025 COMPARED TO FIRST SIX MONTHS OF FISCAL 2024**\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE, Inc. Revenues were $23.9 billion for the first six months of fiscal 2025 compared to $26.3 billion for the first six months of fiscal 2024. On a currency-neutral basis, NIKE, Inc. Revenues decreased 9%, primarily due to lower revenues in North America, EMEA, Greater China and Converse which each reduced NIKE, Inc. Revenues by 4, 3, 1 and 1 percentage points, respectively.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand revenues, which represented over 90% of NIKE, Inc. Revenues, decreased 9% on a reported basis and 9% on a currency-neutral basis. The decrease on a currency-neutral basis was due to lower revenues in Men's, the Jordan Brand, Women's and Kids'.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand footwear revenues decreased 11% on a currency-neutral basis. Unit sales of footwear decreased 9%, while lower ASP per pair reduced footwear revenues by approximately 2 percentage points. Lower ASP per pair was primarily due to higher discounts and changes in channel mix, partially offset by strategic pricing actions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand apparel revenues decreased 6% on a currency-neutral basis. Unit sales of apparel decreased 6%,while ASP per unit was flat, as strategic pricing actions and lower discounts were offset by changes in channel mix.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand wholesale revenues decreased 5% on a reported and currency-neutral basis. The decrease on a currency-neutral basis was driven by lower revenues in EMEA, North America, Greater China and APLA.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Direct revenues were $9.7 billion for the first six months of fiscal 2025, compared to $11.1 billion for the first six months of fiscal 2024. NIKE Brand Digital sales were $5.1 billion for the first six months of fiscal 2025 compared to $6.4 billion for the first six months of fiscal 2024. On a currency-neutral basis, NIKE Direct revenues decreased 13%, primarily due to NIKE Brand Digital sales declines of 20% and comparable store sales declines of 1% compared to the first six months of fiscal 2024.\n\n**GROSS MARGIN**\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** |\n|<br>*(Dollars in millions)* | **2024** | **2023** | **% CHANGE** | **2024** | **2023** | **% CHANGE** |\n| Gross profit | $5389 | $5971 | -10% | $10646 | $11691 | -9% |\n| Gross margin | 43.6% | 44.6% | (100) bps | 44.5% | 44.4% | 10 bps |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i5758c2e154794461aaebb231a4c2a401_7)</u>\n\n**SECOND QUARTER OF FISCAL 2025 COMPARED TO SECOND QUARTER OF FISCAL 2024**\n\nFor the second quarter of fiscal 2025, our consolidated gross margin was 100 basis points lower than the prior year due to:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand ASP (decreasing gross margin approximately 330 basis points), primarily due to higher discounts, product mix and changes in channel mix, partially offset by benefits from strategic pricing actions;\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Higher other costs (decreasing gross margin approximately 70 basis points), in part due to higher inventory obsolescence reserves; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower gross margin from Converse (decreasing gross margin approximately 20 basis points).\n\nThis was partially offset by:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand product costs (increasing gross margin approximately 260 basis points), primarily due to product mix and lower product input costs;\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower warehousing and logistics costs (increasing gross margin approximately 50 basis points); and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Favorable changes in foreign currency exchange rates, net of hedges (increasing gross margin approximately 20 basis points).\n\n**FIRST SIX MONTHS OF FISCAL 2025 COMPARED TO FIRST SIX MONTHS OF FISCAL 2024**\n\nFor the first six months of fiscal 2025, our consolidated gross margin was 10 basis points higher than the prior year due to:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand product costs (increasing gross margin approximately 190 basis points), primarily due to product mix; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower warehousing and logistics costs (increasing gross margin approximately 50 basis points).\n\nThis was partially offset by:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand ASP (decreasing gross margin approximately 150 basis points), primarily due to changes in channel mix, higher discounts and product mix, partially offset by benefits from strategic pricing actions; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Higher other costs (decreasing gross margin approximately 60 basis points), in part due to higher inventory obsolescence reserves.\n\n**TOTAL SELLING AND ADMINISTRATIVE EXPENSE**\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** |\n|<br>*(Dollars in millions)* | **2024** | **2023** | **% CHANGE** | **2024** | **2023** | **% CHANGE** |\n| Demand creation expense<sup>(1)</sup> | $1122 | $1114 | 1% | $2348 | $2183 | 8% |\n| Operating overhead expense<sup>(2)</sup> | 2883 | 3032 | -5% | 5705 | 6079 | -6% |\n| Total selling and administrative expense | $4005 | $4146 | -3% | $8053 | $8262 | -3% |\n| &nbsp;&nbsp;&nbsp;% of revenues | 32.4% | 31.0% | 140 bps | 33.6% | 31.4% | 220 bps |\n\n---",
+              "token_count": 1995,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001437749-25-002182",
+              "cik": "0001084869",
+              "company": "1 800 FLOWERS COM INC",
+              "form_type": "8-K",
+              "filed_date": "20250130",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 776,
+              "source_md5": "7cd36f25382c9156c479a20ca3d1b88e",
+              "content_sha256": "eb93a36c8dd188301f2d18848efe9032acbe9fd2a509870129f7639656785c4b",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "bcb64636-3e11-5a48-80a6-436d8a2a0392",
+              "section": "Exhibit 99.1",
+              "section_index": 5,
+              "chunk_index": 1,
+              "char_start": 540824,
+              "char_end": 543760,
+              "text": "\u25cf Net income for the quarter was $64.3 million, or $1.00 per diluted share, as compared with net income of $62.9 million, or $0.97 per diluted share in the prior year period.\n\n\u25cf Adjusted Net Income<sup>1</sup> was $69.2 million, or $1.08 per diluted share, compared with an Adjusted Net Income<sup>1</sup> of $82.7 million, or $1.27 per diluted share, in the prior year period.\n\n\u25cf Adjusted EBITDA<sup>1</sup> for the quarter was $116.3 million, as compared with Adjusted EBITDA<sup>1</sup> of $130.1 million in the prior year period.\n\n**<u>Segment Results</u>**\n\nThe Company provides Fiscal 2025 second quarter financial results for its Gourmet Foods and Gift Baskets, Consumer Floral and Gifts, and BloomNet\u00ae segments in the tables attached to this release and as follows:\n\n\u25cf **Gourmet Foods and Gift Baskets**: Revenues for the quarter declined 4.0% to $518.5 million as compared with the prior year period. The Company estimates that the issues associated with the implementation of its new order management system resulted in lost revenue of approximately $20 million. Gross profit margin increased 30 basis points to 43.5%, benefiting from the Company's inventory and labor optimization efforts that offset the incremental costs associated with the order management system issues. Excluding the impact of the systems implementation costs, adjusted segment contribution margin<sup>1</sup> was $111.4 million, as compared with segment contribution margin<sup>1</sup> of $118.2 million in the prior year period.\n\n\u25cf **Consumer Floral & Gifts**: Revenues for the quarter declined 8.0% to $234.3 million as compared with the prior year period. Gross profit margin decreased 90 basis points to 41.9%, primarily due to deleveraging on the sales decline and a promotional consumer environment. Segment contribution margin<sup>1</sup> was $21.6 million, compared with adjusted segment contribution margin<sup>1</sup> of $30.4 million in the prior year period, excluding the intangible impairment.\n\n\u25cf **BloomNet**: Revenues for the quarter declined 16.2% to $22.8 million as compared with the prior year period. Revenue and gross margin were impacted by the lower volume of lower margin orders processed by BloomNet. Gross profit margin increased 330 basis points to 50.9% due to lower florist rebates. Segment contribution margin<sup>1</sup> was $7.5 million, compared with $9.1 million in the prior year period.\n\n1-800-FLOWERS.COM, Inc. \\| Fiscal 2024 Second Quarter Results \\| Page 2\n\n------\n\n**<u>Company Guidance</u>**\n\nBased on the Company's performance during its fiscal second quarter, the Company is updating its Fiscal 2025 guidance as outlined below. The Company expects its revenue trends to improve as the fiscal year progresses, benefiting from its Relationship Innovation initiatives that have expanded the Company's offerings, broadened price points and enhanced the user experience.\n\nFor Fiscal 2025, the company now expects:",
+              "token_count": 686,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "95234a34-90b8-541a-b88b-0fdcca80a311",
+              "section": "Gross profit/(loss) and gross profit/(loss) margin",
+              "section_index": 306,
+              "chunk_index": 0,
+              "char_start": 1088351,
+              "char_end": 1089170,
+              "text": "#### Gross profit/(loss) and gross profit/(loss) margin\nAs a result of the foregoing, we recorded gross profit of US$0.5 million and gross loss of US$0.4 million for the fiscal years ended June 30, 2024 and 2023, respectively, representing gross profit margin of 8.8% and gross loss margin of 81.6% for the same years, respectively.\n\nAs mentioned in the analysis of cost of revenues, we achieved gross profit for the fiscal year ended June 30, 2024, mainly due to: (i) increase of sales and (ii) better cost control on the production of *Q*-trucks, partially offset by the increase in the provision for inventory reserves. We expect that our gross margin will improve as the scale of economy of our business increases in accordance with the increase in our vehicle and component sales.\n\n[**Table of Contents**](#TOC001)",
+              "token_count": 195,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.023151696999775595
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "b8fa3362-a910-51b7-aebe-a44fa81085a4",
+        "section": "ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA",
+        "section_index": 12,
+        "chunk_index": 6,
+        "char_start": 291763,
+        "char_end": 300663,
+        "text": "Gains and losses related to changes in the fair value of foreign exchange forward contracts which hedge certain balance sheet positions are recorded each period as a component of other income (expense), net in our Consolidated Statements of Income. Foreign exchange forward contracts and option contracts hedging forecasted foreign currency revenue and expenses and Treasury lock agreements are designated as cash flow hedges with gains and losses recorded net of tax as a component of accumulated other comprehensive income (loss) in our Consolidated Balance Sheets until the forecasted transaction occurs. When the forecasted transaction affects earnings, we reclassify the related gain or loss on the foreign currency revenue, foreign currency expense or Treasury lock cash flow hedge to revenue, operating expense or interest expense, as applicable.\n\n*Concentration of Risk*\n\nFinancial instruments that potentially subject us to concentrations of credit risk are short-term fixed-income investments, structured repurchase transactions, foreign currency and interest rate hedge contracts and trade receivables.\n\nOur investment portfolio consists of investment-grade securities diversified among security types, industries and issuers. Our cash and investments are held and primarily managed by recognized financial institutions that follow our investment policy. Our policy limits the amount of credit exposure to any one security issue or issuer and we believe no significant concentration of credit risk exists with respect to these investments.\n\nWe enter into master netting arrangements to mitigate credit risk in derivative transactions by permitting net settlement of transactions with the same counterparty. We also enter into collateral security agreements with certain of our counterparties to exchange cash collateral when the net fair value of certain derivative instruments fluctuates from contractually established thresholds.\n\nCredit risk in receivables is limited to OEMs, dealers and distributors of hardware and software products to the retail market, customers to whom we license software directly and our SaaS offerings. A credit review is completed for our new distributors, dealers and OEMs. We also perform ongoing credit evaluations of our customers' financial condition and require letters of credit or other guarantees, whenever deemed necessary. The credit limit given to the customer is based on our risk assessment of their ability to pay, country risk and other factors and is not contingent on the resale of the product or on the collection of payments from their customers. Certain contracts with advertising agencies contain sequential liability provisions, under which the agency is not required to pay until payment is received from the agency's customers. In these circumstances, we evaluate the credit-worthiness of the agency's customers in addition to the agency itself. If we license our software or provide SaaS services to a customer where we have a reason to believe the customer's ability and intention to pay is not probable, the arrangement is not considered to be a revenue contract. Accordingly, we will not recognize any consideration received as revenue until termination or substantive completion of the services.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\n**Recent Accounting Pronouncements Not Yet Effective**\n\nIn November 2023, the Financial Accounting Standards Board (the \"FASB\") issued Accounting Standards Update (\"ASU\") No. 2023-07, Segment Reporting, which expands annual and interim disclosure requirements for reportable segments, primarily through enhanced disclosures about significant segment expenses. The updated standard is effective for our annual periods beginning in fiscal 2025 and interim periods beginning in the first quarter of fiscal 2026. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn December 2023, the FASB issued ASU No. 2023-09, Income Taxes, which prescribes standardized categories and disaggregation of information in the reconciliation of provision for income taxes, requires disclosure of disaggregated income taxes paid, and modifies other income tax-related disclosure requirements. The updated standard is effective for us beginning with our fiscal year 2026 annual reporting period. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nIn November 2024, the FASB issued ASU No. 2024-03, Income Statement\u2014Reporting Comprehensive Income\u2014Expense Disaggregation Disclosures, which requires additional disclosure of certain costs and expenses within the notes to the financial statements. The updated standard is effective for our annual periods beginning in fiscal 2028 and interim periods beginning in the first quarter of fiscal 2029. Early adoption is permitted. We are currently evaluating the impact that the updated standard will have on our financial statement disclosures.\n\nThere have been no other recent accounting pronouncements, changes in accounting pronouncements or recently adopted accounting guidance during fiscal 2024 that are of significance or potential significance to us.\n\n**NOTE 2. REVENUE**\n\n*Segment Information*\n\nWe report segment information based on the \"management\" approach. The management approach designates the internal reporting used by management for making decisions and assessing performance as the source of our reportable segments.\n\nOur Chief Executive Officer, the chief operating decision maker, reviews revenue and gross margin information for each of our reportable segments, but does not review operating expenses on a segment by segment basis. In addition, with the exception of goodwill, we do not identify or allocate our assets by the reportable segments.\n\nOur business is organized into the following reportable segments:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Media*\u2014Our Digital Media segment provides products and services that enable individuals, teams, businesses, and enterprises to create, publish and promote their content anywhere and accelerate their productivity by transforming how they view, share, engage with and collaborate on documents and creative content. Our customers include creative professionals, including photographers, video editors, graphic and experience designers and game developers; communicators, including content creators, students, marketers and knowledge workers; and consumers.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Digital Experience*\u2014Our Digital Experience segment provides an integrated platform and set of products, services and solutions that enable businesses to create, manage, execute, measure, monetize and optimize customer experiences that span from analytics to commerce. Our customers include marketers, advertisers, agencies, publishers, merchandisers, merchants, web analysts, data scientists, developers and executives across the C-suite.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *Publishing and Advertising*\u2014Our Publishing and Advertising segment contains legacy products and services that address diverse market opportunities, including eLearning solutions, technical document publishing, web conferencing, document and forms platform, web app development, high-end printing and our Adobe Advertising offerings.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**ADOBE INC.**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)**\n\nOur segment revenue and results for fiscal 2024, 2023 and 2022 were as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **Digital <br>Media** | **Digital <br>Experience** | **Publishing and <br>Advertising** | **Total** |\n| **Fiscal 2024** |  |  |  |  |\n| Revenue | $15864 | $5366 | $275 | $21505 |\n| Cost of revenue | 680 | 1589 | 89 | 2358 |\n| Gross profit | $15184 | $3777 | $186 | $19147 |\n| Gross profit as a percentage of revenue | 96% | 70% | 68% | 89% |\n| **Fiscal 2023** |  |  |  |  |\n| Revenue | $14216 | $4893 | $300 | $19409 |\n| Cost of revenue | 665 | 1603 | 86 | 2354 |\n| Gross profit | $13551 | $3290 | $214 | $17055 |\n| Gross profit as a percentage of revenue | 95% | 67% | 71% | 88% |\n| **Fiscal 2022** |  |  |  |  |\n| Revenue | $12842 | $4422 | $342 | $17606 |\n| Cost of revenue | 561 | 1502 | 102 | 2165 |\n| Gross profit | $12281 | $2920 | $240 | $15441 |\n| Gross profit as a percentage of revenue | 96% | 66% | 70% | 88% |\n\n---\n\n\n\nWe generally categorize revenue by geographic area based on where the customer manages their utilization of our offerings. Revenue by geographic area for fiscal 2024, 2023 and 2022 were as follows:\n\n---",
+        "token_count": 1844,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001045810-25-000023",
+        "cik": "0001045810",
+        "company": "NVIDIA CORP",
+        "form_type": "10-K",
+        "filed_date": "20250226",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 59611,
+        "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+        "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2d4cee94-0f7b-599b-aa19-f5ffe2997e11",
+        "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "section_index": 10,
+        "chunk_index": 3,
+        "char_start": 228847,
+        "char_end": 237114,
+        "text": "Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location. Revenue from sales to customers outside of the United States accounted for 53% and 56% of total revenue for fiscal years 2025 and 2024, respectively.\n\n**Gross Profit and Gross Margin**\n\nGross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.\n\nGross margins increased to 75.0% in fiscal year 2025 from 72.7% in fiscal year 2024. The year over year increase was primarily driven by a higher mix of Data Center revenue.\n\nProvisions for inventory and excess inventory purchase obligations totaled $3.7 billion and $2.2 billion for fiscal years 2025 and 2024, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $689 million and $540 million for fiscal years 2025 and 2024, respectively. The net effect on our gross margin was an unfavorable impact of 2.3% and 2.7% in fiscal years 2025 and 2024, respectively.\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Research and development expenses | $12914 | $8675 | $4239 | 49% |\n| *% of net revenue* | *9.9 %* | *14.2 %* |  |  |\n| Sales, general and administrative expenses | 3491 | 2654 | 837 | 32% |\n| *% of net revenue* | *2.7 %* | *4.4 %* |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | $16405 | $11329 | $5076 | 45% |\n| &nbsp;&nbsp;&nbsp;&nbsp;*% of net revenue* | *12.6 %* | *18.6 %* |  |  |\n\n---\n\n\n\nThe increases in research and development expenses for fiscal year 2025 were driven by a 32% increase in compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases, a 100% increase in compute and infrastructure, and a 234% increase in engineering development costs for new product introductions.\n\nThe increases in sales, general and administrative expenses for fiscal year 2025 were primarily driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Other Income (Expense), Net**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Interest income | $1786 | $866 | $920 |\n| Interest expense | (247) | (257) | 10 |\n| Other, net | 1034 | 237 | 797 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | $2573 | $846 | $1727 |\n\n---\n\n\n\nThe increase in interest income was primarily due to growth in cash, cash equivalents, and marketable securities.\n\nInterest expense is comprised of coupon interest and debt discount amortization related to our notes.\n\nOther, net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. The change in Other, net, compared to fiscal year 2024, was primarily driven by an increase in fair value of our non-marketable equity securities and publicly-held equity securities. Refer to Note 8 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information regarding our non-marketable equity securities.\n\n**Income Taxes**\n\nIncome tax expense was $11.1 billion and $4.1 billion for fiscal years 2025 and 2024, respectively. Income tax as a percentage of income before income tax was an expense of 13.3% and 12.0% for fiscal years 2025 and 2024, respectively.\n\nThe effective tax rate increased primarily due to higher pre-tax income and a prior year discrete benefit due to an audit resolution.\n\nOur effective tax rates for fiscal years 2025 and 2024 were lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, stock-based compensation, the U.S. federal research tax credit, and income earned in jurisdictions that are subject to taxes at rates lower than the U.S. federal statutory tax rate. Our effective tax rate for fiscal year 2024 was additionally benefited by the audit resolution.\n\nGiven our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could vary based on our assessment of all available information.\n\nRefer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.\n\n**Liquidity and Capital Resources**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Cash and cash equivalents | $8589 | $7280 |\n| Marketable securities | 34621 | 18704 |\n| Cash, cash equivalents, and marketable securities | $43210 | $25984 |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Net cash provided by operating activities | $64089 | $28090 |\n| Net cash used in investing activities | $(20421) | $(10566) |\n| Net cash used in financing activities | $(42359) | $(13633) |\n\n---\n\n\n\nOur investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain maturity limits on our portfolio.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\nCash provided by operating activities increased in fiscal year 2025 compared to fiscal year 2024, due to growth in revenue.\n\nCash used in investing activities increased in fiscal year 2025 compared to fiscal year 2024, primarily driven by net purchases of marketable securities, and purchase of land, property and equipment.\n\nCash used in financing activities increased in fiscal year 2025 compared to fiscal year 2024, mainly due to higher share repurchases and higher tax payments related to RSUs.\n\n**Liquidity**\n\nOur primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of January 26, 2025, we had $43.2 billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.\n\nOur marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly rated financial institutions. These marketable securities are primarily denominated in U.S. dollars. Refer to Note 7 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+        "token_count": 1944,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000320187-25-000004",
+        "cik": "0000320187",
+        "company": "NIKE, Inc.",
+        "form_type": "10-Q",
+        "filed_date": "20250103",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 43713,
+        "source_md5": "2444bf04829ac85518721ff551dba986",
+        "content_sha256": "deda8fe46f6410d030410dafa7e2efac0601d30401671f36761f7a8c5bf308a9",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "d5fe7cd1-0a6b-5c98-88a0-3e069a38aafb",
+        "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 2,
+        "chunk_index": 2,
+        "char_start": 106955,
+        "char_end": 114435,
+        "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand footwear revenues decreased 12% on a currency-neutral basis. Unit sales of footwear decreased 7%, while lower average selling price (\"ASP\") per pair reduced footwear revenues by approximately 5 percentage points. Lower ASP per pair was primarily due to higher discounts and changes in channel mix.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand apparel revenues decreased 2% on a currency-neutral basis. Unit sales of apparel were flat, while lower ASP per unit reduced apparel revenues by approximately 2 percentage points. Lower ASP per unit was primarily due to changes in channel mix and higher discounts, partially offset by strategic pricing actions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand wholesale revenues decreased 3% on a reported basis and 4% on a currency-neutral basis. The decrease on a currency-neutral basis was driven by lower revenues in Greater China, EMEA, North America and Asia Pacific & Latin America (\"APLA\").\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Direct revenues were $5.0 billion in the second quarter of fiscal 2025, compared to $5.7 billion for the second quarter of fiscal 2024. NIKE Brand Digital sales were $2.8 billion for the second quarter of fiscal 2025 compared to $3.5 billion for the second quarter of fiscal 2024. On a currency-neutral basis, NIKE Direct revenues decreased 14%, primarily due to NIKE Brand Digital sales declines of 21% and comparable store sales declines of 2% compared to the second quarter of fiscal 2024. For additional information regarding comparable store sales, including the definition, see \"Comparable Store Sales\".\n\n**FIRST SIX MONTHS OF FISCAL 2025 COMPARED TO FIRST SIX MONTHS OF FISCAL 2024**\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE, Inc. Revenues were $23.9 billion for the first six months of fiscal 2025 compared to $26.3 billion for the first six months of fiscal 2024. On a currency-neutral basis, NIKE, Inc. Revenues decreased 9%, primarily due to lower revenues in North America, EMEA, Greater China and Converse which each reduced NIKE, Inc. Revenues by 4, 3, 1 and 1 percentage points, respectively.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand revenues, which represented over 90% of NIKE, Inc. Revenues, decreased 9% on a reported basis and 9% on a currency-neutral basis. The decrease on a currency-neutral basis was due to lower revenues in Men's, the Jordan Brand, Women's and Kids'.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand footwear revenues decreased 11% on a currency-neutral basis. Unit sales of footwear decreased 9%, while lower ASP per pair reduced footwear revenues by approximately 2 percentage points. Lower ASP per pair was primarily due to higher discounts and changes in channel mix, partially offset by strategic pricing actions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand apparel revenues decreased 6% on a currency-neutral basis. Unit sales of apparel decreased 6%,while ASP per unit was flat, as strategic pricing actions and lower discounts were offset by changes in channel mix.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand wholesale revenues decreased 5% on a reported and currency-neutral basis. The decrease on a currency-neutral basis was driven by lower revenues in EMEA, North America, Greater China and APLA.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Direct revenues were $9.7 billion for the first six months of fiscal 2025, compared to $11.1 billion for the first six months of fiscal 2024. NIKE Brand Digital sales were $5.1 billion for the first six months of fiscal 2025 compared to $6.4 billion for the first six months of fiscal 2024. On a currency-neutral basis, NIKE Direct revenues decreased 13%, primarily due to NIKE Brand Digital sales declines of 20% and comparable store sales declines of 1% compared to the first six months of fiscal 2024.\n\n**GROSS MARGIN**\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** |\n|<br>*(Dollars in millions)* | **2024** | **2023** | **% CHANGE** | **2024** | **2023** | **% CHANGE** |\n| Gross profit | $5389 | $5971 | -10% | $10646 | $11691 | -9% |\n| Gross margin | 43.6% | 44.6% | (100) bps | 44.5% | 44.4% | 10 bps |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i5758c2e154794461aaebb231a4c2a401_7)</u>\n\n**SECOND QUARTER OF FISCAL 2025 COMPARED TO SECOND QUARTER OF FISCAL 2024**\n\nFor the second quarter of fiscal 2025, our consolidated gross margin was 100 basis points lower than the prior year due to:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand ASP (decreasing gross margin approximately 330 basis points), primarily due to higher discounts, product mix and changes in channel mix, partially offset by benefits from strategic pricing actions;\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Higher other costs (decreasing gross margin approximately 70 basis points), in part due to higher inventory obsolescence reserves; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower gross margin from Converse (decreasing gross margin approximately 20 basis points).\n\nThis was partially offset by:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand product costs (increasing gross margin approximately 260 basis points), primarily due to product mix and lower product input costs;\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower warehousing and logistics costs (increasing gross margin approximately 50 basis points); and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Favorable changes in foreign currency exchange rates, net of hedges (increasing gross margin approximately 20 basis points).\n\n**FIRST SIX MONTHS OF FISCAL 2025 COMPARED TO FIRST SIX MONTHS OF FISCAL 2024**\n\nFor the first six months of fiscal 2025, our consolidated gross margin was 10 basis points higher than the prior year due to:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand product costs (increasing gross margin approximately 190 basis points), primarily due to product mix; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower warehousing and logistics costs (increasing gross margin approximately 50 basis points).\n\nThis was partially offset by:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand ASP (decreasing gross margin approximately 150 basis points), primarily due to changes in channel mix, higher discounts and product mix, partially offset by benefits from strategic pricing actions; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Higher other costs (decreasing gross margin approximately 60 basis points), in part due to higher inventory obsolescence reserves.\n\n**TOTAL SELLING AND ADMINISTRATIVE EXPENSE**\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** |\n|<br>*(Dollars in millions)* | **2024** | **2023** | **% CHANGE** | **2024** | **2023** | **% CHANGE** |\n| Demand creation expense<sup>(1)</sup> | $1122 | $1114 | 1% | $2348 | $2183 | 8% |\n| Operating overhead expense<sup>(2)</sup> | 2883 | 3032 | -5% | 5705 | 6079 | -6% |\n| Total selling and administrative expense | $4005 | $4146 | -3% | $8053 | $8262 | -3% |\n| &nbsp;&nbsp;&nbsp;% of revenues | 32.4% | 31.0% | 140 bps | 33.6% | 31.4% | 220 bps |\n\n---",
+        "token_count": 1995,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001437749-25-002182",
+        "cik": "0001084869",
+        "company": "1 800 FLOWERS COM INC",
+        "form_type": "8-K",
+        "filed_date": "20250130",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 776,
+        "source_md5": "7cd36f25382c9156c479a20ca3d1b88e",
+        "content_sha256": "eb93a36c8dd188301f2d18848efe9032acbe9fd2a509870129f7639656785c4b",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "bcb64636-3e11-5a48-80a6-436d8a2a0392",
+        "section": "Exhibit 99.1",
+        "section_index": 5,
+        "chunk_index": 1,
+        "char_start": 540824,
+        "char_end": 543760,
+        "text": "\u25cf Net income for the quarter was $64.3 million, or $1.00 per diluted share, as compared with net income of $62.9 million, or $0.97 per diluted share in the prior year period.\n\n\u25cf Adjusted Net Income<sup>1</sup> was $69.2 million, or $1.08 per diluted share, compared with an Adjusted Net Income<sup>1</sup> of $82.7 million, or $1.27 per diluted share, in the prior year period.\n\n\u25cf Adjusted EBITDA<sup>1</sup> for the quarter was $116.3 million, as compared with Adjusted EBITDA<sup>1</sup> of $130.1 million in the prior year period.\n\n**<u>Segment Results</u>**\n\nThe Company provides Fiscal 2025 second quarter financial results for its Gourmet Foods and Gift Baskets, Consumer Floral and Gifts, and BloomNet\u00ae segments in the tables attached to this release and as follows:\n\n\u25cf **Gourmet Foods and Gift Baskets**: Revenues for the quarter declined 4.0% to $518.5 million as compared with the prior year period. The Company estimates that the issues associated with the implementation of its new order management system resulted in lost revenue of approximately $20 million. Gross profit margin increased 30 basis points to 43.5%, benefiting from the Company's inventory and labor optimization efforts that offset the incremental costs associated with the order management system issues. Excluding the impact of the systems implementation costs, adjusted segment contribution margin<sup>1</sup> was $111.4 million, as compared with segment contribution margin<sup>1</sup> of $118.2 million in the prior year period.\n\n\u25cf **Consumer Floral & Gifts**: Revenues for the quarter declined 8.0% to $234.3 million as compared with the prior year period. Gross profit margin decreased 90 basis points to 41.9%, primarily due to deleveraging on the sales decline and a promotional consumer environment. Segment contribution margin<sup>1</sup> was $21.6 million, compared with adjusted segment contribution margin<sup>1</sup> of $30.4 million in the prior year period, excluding the intangible impairment.\n\n\u25cf **BloomNet**: Revenues for the quarter declined 16.2% to $22.8 million as compared with the prior year period. Revenue and gross margin were impacted by the lower volume of lower margin orders processed by BloomNet. Gross profit margin increased 330 basis points to 50.9% due to lower florist rebates. Segment contribution margin<sup>1</sup> was $7.5 million, compared with $9.1 million in the prior year period.\n\n1-800-FLOWERS.COM, Inc. \\| Fiscal 2024 Second Quarter Results \\| Page 2\n\n------\n\n**<u>Company Guidance</u>**\n\nBased on the Company's performance during its fiscal second quarter, the Company is updating its Fiscal 2025 guidance as outlined below. The Company expects its revenue trends to improve as the fiscal year progresses, benefiting from its Relationship Innovation initiatives that have expanded the Company's offerings, broadened price points and enhanced the user experience.\n\nFor Fiscal 2025, the company now expects:",
+        "token_count": 686,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "95234a34-90b8-541a-b88b-0fdcca80a311",
+        "section": "Gross profit/(loss) and gross profit/(loss) margin",
+        "section_index": 306,
+        "chunk_index": 0,
+        "char_start": 1088351,
+        "char_end": 1089170,
+        "text": "#### Gross profit/(loss) and gross profit/(loss) margin\nAs a result of the foregoing, we recorded gross profit of US$0.5 million and gross loss of US$0.4 million for the fiscal years ended June 30, 2024 and 2023, respectively, representing gross profit margin of 8.8% and gross loss margin of 81.6% for the same years, respectively.\n\nAs mentioned in the analysis of cost of revenues, we achieved gross profit for the fiscal year ended June 30, 2024, mainly due to: (i) increase of sales and (ii) better cost control on the production of *Q*-trucks, partially offset by the increase in the provision for inventory reserves. We expect that our gross margin will improve as the scale of economy of our business increases in accordance with the increase in our vehicle and component sales.\n\n[**Table of Contents**](#TOC001)",
+        "token_count": 195,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 80, \"citation_support\": 90, \"rationale\": \"The final answer is correct: Adobe's FY2024 gross margin of about 89% is higher than NVIDIA's FY2025 gross margin of 75.0%, and the gap is about 14 percentage points. The reference gives 14.05 pp from unrounded figures (89.04% vs 74.99%), so 14 is a rounded but acceptable difference. The response opens with a self-contradictory sentence ('NVIDIA recorded the higher... Actually...') that makes it harder to read. It also omits the exact dollar inputs. Citations are accurate: the Adobe chunk b8fa3362 contains the 89% segment table, and the NVIDIA chunk 2d4cee94 contains the 75.0% gross margin statement. The NVIDIA $97,858M gross profit figure cited in the gold evidence does not appear in the retrieved excerpts, so the response does not rely on it.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 80, \"citation_support\": 90, \"rationale\": \"The final answer is correct: Adobe's FY2024 gross margin of about 89% is higher than NVIDIA's FY2025 gross margin of 75.0%, and the gap is about 14 percentage points. The reference gives 14.05 pp from unrounded figures (89.04% vs 74.99%), so 14 is a rounded but acceptable difference. The response opens with a self-contradictory sentence ('NVIDIA recorded the higher... Actually...') that makes it harder to read. It also omits the exact dollar inputs. Citations are accurate: the Adobe chunk b8fa3362 contains the 89% segment table, and the NVIDIA chunk 2d4cee94 contains the 75.0% gross margin statement. The NVIDIA $97,858M gross profit figure cited in the gold evidence does not appear in the retrieved excerpts, so the response does not rely on it.\"}",
+      "refusal": null,
+      "reasoning": "Checking the numbers: Adobe comes out to 89.04% (19147/21505) and NVIDIA to 74.99% (97858/130497), giving a gap of about 14.05 percentage points. The candidate's figures of 89%, 75.0%, and a 14 pp difference line up closely enough with this, though the phrasing in their opening is a bit muddled.\n\nBoth citations check out \u2014 Adobe's 89% traces to the table in chunk b8fa3362 and NVIDIA's 75.0% to the text in chunk 2d4cee94, though the underlying 97858 figure isn't directly visible in the excerpt. I'll settle on correctness around 80 and citation support around 90.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking the numbers: Adobe comes out to 89.04% (19147/21505) and NVIDIA to 74.99% (97858/130497), giving a gap of about 14.05 percentage points. The candidate's figures of 89%, 75.0%, and a 14 pp difference line up closely enough with this, though the phrasing in their opening is a bit muddled.\n\nBoth citations check out \u2014 Adobe's 89% traces to the table in chunk b8fa3362 and NVIDIA's 75.0% to the text in chunk 2d4cee94, though the underlying 97858 figure isn't directly visible in the excerpt. I'll settle on correctness around 80 and citation support around 90.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSzg0KEAgSGAI4AUIIdGhpbmtpbmcSDHdAKsaD8G1ykImz9hoMEPCQXN/Hv4N0YJNDIjCfMpR6X6bItrZhis5o0XmPDLtu64Jb9WIaQ187Mxy/+7ufZn9aX3yUq7OoEmWRUvgq6wwI4IyicPuyA/0frtkXIEZa9pAOMrolkObAnPWfLq1UCJGx1XxPA880zwAIlqb6dsDvAaLntyVbFP9Jk7iFoPlNscP705LV/+vlxw9V7GD6YPV8kOVIY8AVjKR+mpewKXHyXzEfbCBKty/xrpqfewJLSYoNmqjlhb5Nu9gd2NvYMt7LuzpxfiZzTzGdIaxZHqi3BOdpGV6R+rS6S/6F2Hh3fy8xzVYcuSLFyXFaYLqFGhczKU5sQOdBBsAUE668rLHqN+uT72Gw2mlylR4GhbS1XCoXKJYgeJAKKIEfIT+PwcibakPvS4u9p/73HWfxndackTZOGMferj6OeknkwNjs+8k9WLiuScM3QK0OIpA8zkxvQcgUIi79CJTOgxB7yJ0/C5pIQQWfZO9fdBcKI+BoJkheq20kjBg0DpO2+B/rboxvD2ykhGHqGknEhujObQnzmlCm8ZZHcVC8jafp6jD+phKaNddUsGchwsXpP9KxEIwETL5O+Z8mC7yLeFcJ9ruTZuBqAaPQXu8SWxjrW1W7CirJUSbYmGKCWQw3WMoutmjg5GyW5YtughOvE4A4Tjqt5Pd9A5DId1gO2L2tEWhepBHWuJquFHggsX10KGsjPiIyR6BQRM2fb5FckBR3ocQxPt0rzwLrP4YIT2KQ06OHX5pjPyl/CGgo3O2rQtomzKrKxMe2NXKZfLVegEQ6at/ISLRcP2dAcaVyM8aMaiHI6gbFz0Cj1y9XNcT849yPzjj86bJ24MkV1nevf7IGooytdyrGpP21cWekvKJu6ZopdTJj75hNFDNEYZYePD3TFRmoSxGAOJlNf88rH/FzBZwZ7FOwfCcL1rF62MOJXCAkSVkeZx0r7fwBoGjSN70sTj3gL+soJR/oNKsY3jkHaU9dM9Lwdkx51tMuohAvmIW5Fo1reogaz0dmaugz4eESzR0Ry4d81etkLCZeTHdYKwPG5/R7gKAexziWFSVNXVb/7W9qb2nxjeM4dWzm2+C+mLdK7fhIlB5EAWNnXdMvCFCzORs8HVpbSIyXPYj0n0KmfgvfBNVjpvWGKA+TIxFgio2ZFTxVf4n9KYbZIx+7UBWD8EuyXN8eM2+7450+H9L32enEpp7YX84YnzE/t7POliQqN92SNlytJU2Dymi7sbi5w1qyPp9/Zy8JfnHXN7Btg7n/vXwGWuvqLMwvKj0ZIVroCwi7yLUerbwvRCPIGKRvWRoi2wNDCRFYbEJLXxAIYA9B7Irkr5spMJNz6/O+QDPzul1zdMTy2d6UHNeB16ZA+zkeBvl8hnq9MQhyBjO/TUGFqClAFNwDmS5hoRgOC+5oGQvrsnprvPVcUOp/JKXdscQ62NnsWOyGMh3sTetcaXbticH7HInXUDgxV5kOX2a62Fv+E28h0Cgp49q561zSqCTJAVCzBgXU5msuiNLzwNTOwTPMLVBse91kRPRAd0574q4dVPcPU0+ONIzLRFx+XgJOQI3d/J8OhiJNWDgNgCXx8dwrk+x2Rh/qKBKr1FgpIWEIbSfUa3MLDqfOC20W6LN5Yfl9ss+JlEg8ptJyzTm22nN8if3X/HW3lAKw2HMf32X7Wuwqz9fxKyWP89nMqhCatfI3TAraeQ9b5EtKS1Jgdyp3Z+UtV+DynCDesP8Sa+j/TouqEJUCmOF1vzdLxSj89mIr7/Zkozy7OMXrnBW2nH2is5ysxDR39KTmL6d3826T+yvY+dj0rp6g+Tef+OM5ZsLaBC+JIJn60CtMAt3mcyzKwglsb5agkg2MEbxF+FN3mdzv9nfY7C4W9CHMVnDifaawlJdXCS2vLzYikGLe6gphNqvaNZcm42kptHrbxuVABr4Vm/av6pcwkxIGxOSao3C0z+eE5j2QCbWtubsomqBFZx3+tB21pGbS0JMl8JbJ6siVhHc/aNJQIe+REbZ2sLeMhZvnQWhRE+4d3Xees1SFv8/dPlYR9jCKCdjP8P9w/oRL25sZah5Z1elfQ8V7WU5nmaiLYeM1KuJQ8f6kZd8IaGyj+fJMHaZNjQswR0q9oolCt0t4ZJBI9O310xz9rYUT/d0ZIE5Z7MgxbjyiNa4SQx7ML3c+ebWdi4IEURd3eLfhdfTEHiJ5ftv4ge6xO+hzw6Otud7Hfhc3Ye2dcbfU2w0BmUh41IyHsn0BwyXi7cGJ4aw6sEVMz6FAJuD/nxqFrq34jBgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:35:10.847571+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "1b64a6b372039defccb2d1a6:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042329-bM3IAdQdwrPA5EDrxpkg",
+    "usage": {
+      "prompt_tokens": 27833,
+      "completion_tokens": 816,
+      "total_tokens": 28649,
+      "cost": 0.0031913,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0031913,
+        "upstream_inference_prompt_cost": 0.0027833,
+        "upstream_inference_completions_cost": 0.000408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 495,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 182.02035184000033,
+    "attempts": 2
+  },
+  "judgment": {
+    "correctness": 80,
+    "citation_support": 90,
+    "rationale": "The final answer is correct: Adobe's FY2024 gross margin of about 89% is higher than NVIDIA's FY2025 gross margin of 75.0%, and the gap is about 14 percentage points. The reference gives 14.05 pp from unrounded figures (89.04% vs 74.99%), so 14 is a rounded but acceptable difference. The response opens with a self-contradictory sentence ('NVIDIA recorded the higher... Actually...') that makes it harder to read. It also omits the exact dollar inputs. Citations are accurate: the Adobe chunk b8fa3362 contains the 89% segment table, and the NVIDIA chunk 2d4cee94 contains the 75.0% gross margin statement. The NVIDIA $97,858M gross profit figure cited in the gold evidence does not appear in the retrieved excerpts, so the response does not rely on it."
+  },
+  "status": "ok"
+}

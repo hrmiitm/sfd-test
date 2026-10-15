@@ -1,0 +1,117 @@
+{
+  "question_id": "Q088",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.03163089499958005,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Gross expenses were **$770,000** from July 23 through December 31, 2024. The statement reports gross expenses of **$770 thousand**; calculation: $770 thousand \u00d7 1,000 = **$770,000**. This is before the $770,000 Sponsor\u2019s Fee waiver.  \n\n**Source:** Accession 0000950170-25-029407, *Statement of Operations*, Item 16, chunk 4.",
+    "message": {
+      "role": "assistant",
+      "content": "Gross expenses were **$770,000** from July 23 through December 31, 2024. The statement reports gross expenses of **$770 thousand**; calculation: $770 thousand \u00d7 1,000 = **$770,000**. This is before the $770,000 Sponsor\u2019s Fee waiver.  \n\n**Source:** Accession 0000950170-25-029407, *Statement of Operations*, Item 16, chunk 4.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:25.862991+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "49918aaa7500e40312f1517e:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042043-D7wyEUFLeLSJLw66bnW8",
+    "usage": {
+      "prompt_tokens": 15727,
+      "completion_tokens": 99,
+      "total_tokens": 15826,
+      "cost": 0.0020153,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 15724,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0020153,
+        "upstream_inference_prompt_cost": 0.0019658,
+        "upstream_inference_completions_cost": 4.95e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.0942393469995295,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 94, \"rationale\": \"The candidate's $770,000 matches the reference's $770 thousand, since the statements are presented in thousands. It correctly notes the $770 thousand Sponsor's Fee waiver offsets the expense, leaving net expenses at zero, and the period dates are correct. The cited accession number and Item 16 chunk 4 Statement of Operations are supported by the retrieved excerpts. Minor deduction because the candidate labels the section 'Item 16' rather than 'Item 8' as in the gold evidence, though the retrieved chunk does sit under Item 16.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 94, \"rationale\": \"The candidate's $770,000 matches the reference's $770 thousand, since the statements are presented in thousands. It correctly notes the $770 thousand Sponsor's Fee waiver offsets the expense, leaving net expenses at zero, and the period dates are correct. The cited accession number and Item 16 chunk 4 Statement of Operations are supported by the retrieved excerpts. Minor deduction because the candidate labels the section 'Item 16' rather than 'Item 8' as in the gold evidence, though the retrieved chunk does sit under Item 16.\"}",
+      "refusal": null,
+      "reasoning": "$770 thousand matches $770,000 as stated in thousands, and the candidate correctly locates it in Item 16's statement of operations, properly noting it's before the Sponsor's Fee waiver. This looks essentially correct, around 95%.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "$770 thousand matches $770,000 as stated in thousands, and the candidate correctly locates it in Item 16's statement of operations, properly noting it's before the Sponsor's Fee waiver. This looks essentially correct, around 95%.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSugkKEAgSGAI4AUIIdGhpbmtpbmcSDEynnyySPMpOAZY8RxoMPuuW2sf+rBCcuAOwIjD5lxHib1QTMiy8oWKcQTENOB4XFQjQmn5fEqZ6RK7lHs0gedzSFU3UbQpAu4l01+Iq1wgw83OcGXDS4bbIKoCbbYO255dvoFnNy3eiEmctVo3z+lzWftRzo3uRbe73nNPrYS0MImNfCQWXyZQGGb6joWT7MyP/8s+2+W9ks+TRsjgG71exr75kXvcObuWOoo7EunCo8lK/Uf77zjOuWuGb+yYQF8901/n4HAn/WaT7Yd6JYUAFXjCIgYzThGiYkcclGfyvCQR97zIjwCLwJ/qBseC0cLgNhS4gC429yVYlskqyScf3+CXHn2qhptMNUGeNbz+1kCuk+gIzlKyTrd8jrjrkK8QtY/iX8CvrEoATirE9mLaj9qMukKeEaEfZMz269VU8Vk7kRKEwwWcmRHTNdIw8FjAWAZblj2TzljBXEV5hFrNQOaQl+aa//upUGBZe9OzPTzI3KjVr7RoAKDavD119XA7Lrpvgs8hwDElc+kT+UX414CEIkbo+BjavkX/fkqpzqJCydT9xvfDa1Hjg98kYg0RUNzjLFxKGYML31X/n6wUNH7CL+/6kt3ZPnSJpVIZfS2CJvvQt6CoKCTgPniQ6g238j1NkCZGdftKZc9pGa1Mlf+DlGBV6glpJeEGhUnd2bnD6vBq1b4FNbj2pbwOfzAPzqYNJ/GG35WdPpJYDT20JFh+W7hA5XjvfJQE4tUHsiVcuCaO3DkQvMhkRYyp3qq/xQdWMW6MH7kauTtc0Ys90ecIms+NAhdrnJHxgSr09RaMzBoDNkanMK2rywOYPMMONiKEpTCcxejILyNtm6StiYgji2tdudjtbjAwheMVGqFuyq7zi27bEm6IUU7bwd68Sqeb51ZOqvqPuDBtCSGkxvrAa6t7Q0JOSiQvG06/UtHE8Hd30Wf68MRV2v4DGKsEMRtXLIJgl4VUVUrP3zO3LJ/ReS/71bWrR+8RENGuHZCBYmB7Kvv3wWzMA2wu8XMwnGrjAC95Md1z6jcGaqfvBLeut5zTAxWJTTSRYgjUETi06kKg6c5m+er0z1TVgDSyuWpwk9FlpS2JDd4MRMwN88m+hKDaV9FQXmDcYn2wHgx+qEWWu3G8WVeE/aU3PPJiQm2DtFwreuZ8N6jCdPg8DgDXpkpsvhu5FY8s9G3YPjqApgff/+cPfdr7l+4m/fheVqcf1EAylTdXVyUlbDJswR6+/+85Hsw2oU8V7Qlv26j9xT9r2OOAmHPl60T5jG+OPCV0ikEpsOT4Xu46Qdccmg+yCewyK69fk8MqFMf0IlwuwWXOl3b03u8Fl8M1wvdw0vAXzafbIYjIuHzASR9qWGyeldtaFWqKOWFRVgAGAvaW8DRUH9OI0u7vnWlcU+lcWNI2I16K849k4qzxGEZSJtzgaoOqxCOj4OMz9bADMSVsu2zLO3p8M0WK5xNA9GfBU4KJFXURGUBinmk/DI6fnwrNcSC+oLKo58Gofz7UYaAW8RczybcE8k1l3tdMsf+74HDfk3Y99A3O5M5tPU4jw/sGekl99dJjniUV9+Wzilvpm6zaJGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:39.850219+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "49918aaa7500e40312f1517e:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042235-EdE4U95nAvRtQ9wQiqPu",
+    "usage": {
+      "prompt_tokens": 25197,
+      "completion_tokens": 444,
+      "total_tokens": 25641,
+      "cost": 0.0027417,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0027417,
+        "upstream_inference_prompt_cost": 0.0025197,
+        "upstream_inference_completions_cost": 0.000222
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 232,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.965736017000381,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 94,
+    "rationale": "The candidate's $770,000 matches the reference's $770 thousand, since the statements are presented in thousands. It correctly notes the $770 thousand Sponsor's Fee waiver offsets the expense, leaving net expenses at zero, and the period dates are correct. The cited accession number and Item 16 chunk 4 Statement of Operations are supported by the retrieved excerpts. Minor deduction because the candidate labels the section 'Item 16' rather than 'Item 8' as in the gold evidence, though the retrieved chunk does sit under Item 16."
+  },
+  "status": "ok"
+}

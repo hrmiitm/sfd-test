@@ -1,0 +1,472 @@
+{
+  "question_id": "Q064",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 16.088117864000196,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Microsoft\u2019s gross margin percentage was **68.7%** for the three months ended December 31, 2024.\n\nCalculation from the Income Statements: gross margin of **$47,833 million** \u00f7 revenue of **$69,632 million** \u00d7 100 = **68.7%**. (Microsoft 10-Q, accession **0000950170-25-010491**, search result chunk **c0afa9dd-a3a0-52f0-907e-3491234bc030**.)",
+    "usage": {
+      "prompt_tokens": 11571,
+      "completion_tokens": 152,
+      "total_tokens": 11723,
+      "cost": 0.0015023500000000002
+    },
+    "seconds": 5.027983777000372,
+    "tool_seconds": 16.088117864000196,
+    "tool_calls": 1,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_r0WrThQcBaaF8gbRDUX7qFKl",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Microsoft Corporation December 31, 2024 three months Income Statements revenue cost of revenue gross margin 10-Q\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_r0WrThQcBaaF8gbRDUX7qFKl",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Microsoft Corporation December 31, 2024 three months Income Statements revenue cost of revenue gross margin 10-Q\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:25:59.728962+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "bf59c152313ac66909f01704:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041958-0uuWS0NaS7DsdkRc9sGm",
+        "usage": {
+          "prompt_tokens": 798,
+          "completion_tokens": 39,
+          "total_tokens": 837,
+          "cost": 9.93e-05,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 9.93e-05,
+            "upstream_inference_prompt_cost": 7.98e-05,
+            "upstream_inference_completions_cost": 1.95e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 1.5479869020000478,
+        "attempts": 1
+      },
+      {
+        "text": "Microsoft\u2019s gross margin percentage was **68.7%** for the three months ended December 31, 2024.\n\nCalculation from the Income Statements: gross margin of **$47,833 million** \u00f7 revenue of **$69,632 million** \u00d7 100 = **68.7%**. (Microsoft 10-Q, accession **0000950170-25-010491**, search result chunk **c0afa9dd-a3a0-52f0-907e-3491234bc030**.)",
+        "message": {
+          "role": "assistant",
+          "content": "Microsoft\u2019s gross margin percentage was **68.7%** for the three months ended December 31, 2024.\n\nCalculation from the Income Statements: gross margin of **$47,833 million** \u00f7 revenue of **$69,632 million** \u00d7 100 = **68.7%**. (Microsoft 10-Q, accession **0000950170-25-010491**, search result chunk **c0afa9dd-a3a0-52f0-907e-3491234bc030**.)",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:29:40.387512+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "bf59c152313ac66909f01704:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042177-idJmfqPfzLnxDqAYiHra",
+        "usage": {
+          "prompt_tokens": 10773,
+          "completion_tokens": 113,
+          "total_tokens": 10886,
+          "cost": 0.00140305,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 10770,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00140305,
+            "upstream_inference_prompt_cost": 0.00134655,
+            "upstream_inference_completions_cost": 5.65e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.4799968750003245,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_r0WrThQcBaaF8gbRDUX7qFKl",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Microsoft Corporation December 31, 2024 three months Income Statements revenue cost of revenue gross margin 10-Q\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000950170-25-010491",
+              "cik": "0000789019",
+              "company": "MICROSOFT CORP",
+              "form_type": "10-Q",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 75462,
+              "source_md5": "599a5ce07bdd6ee71084a4085261b524",
+              "content_sha256": "d036a36e2c4aa84515f8aab2aa1890c050c4536da9d1fa76ce81be3819e0ea2c",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "c0afa9dd-a3a0-52f0-907e-3491234bc030",
+              "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 2,
+              "chunk_index": 1,
+              "char_start": 114183,
+              "char_end": 122051,
+              "text": "In the first quarter of fiscal year 2025, we made updates to our metrics in connection with the segment changes described above. These changes align our metrics with how we manage and monitor certain businesses. The key change was bringing the commercial components of Microsoft 365 together and creating a new Microsoft 365 Commercial cloud revenue growth metric. Other changes include combining Windows OEM and Devices into a single revenue growth metric that brings revenue from PC market-driven businesses together, as well as elevating our cloud revenue growth metrics to align to our strategic focus on cloud growth.\n\n***Commercial***\n\nOur commercial business primarily consists of Server products and cloud services, Microsoft 365 Commercial products and cloud services, the commercial portion of LinkedIn, Enterprise and partner services, and Dynamics products and cloud services. Our commercial metrics allow management and investors to assess the overall health of our commercial business and include leading indicators of future performance.\n\n---\n\n\n\n| | |\n|:---|:---|\n| &nbsp;&nbsp;&nbsp;Commercial remaining performance obligation | Commercial portion of revenue allocated to remaining performance obligations, which includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods |\n| &nbsp;&nbsp;&nbsp;Microsoft Cloud revenue and revenue growth | Revenue from Microsoft 365 Commercial cloud, Azure and other cloud services, the commercial portion of LinkedIn, and Dynamics 365 |\n| &nbsp;&nbsp;&nbsp;Microsoft Cloud gross margin percentage | Gross margin percentage for our Microsoft Cloud business |\n\n---\n\n\n\n***Productivity and Business Processes and Intelligent Cloud***\n\nMetrics related to our Productivity and Business Processes and Intelligent Cloud segments assess the health of our core businesses within these segments. The metrics primarily reflect growth across our cloud services.\n\n---\n\n\n\n| | |\n|:---|:---|\n| &nbsp;&nbsp;&nbsp;Microsoft 365 Commercial cloud revenue growth | Revenue from Microsoft 365 Commercial subscriptions, comprising Microsoft 365 Commercial, Enterprise Mobility + Security, the cloud portion of Windows Commercial, the per-user portion of Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft Viva, and Microsoft 365 Copilot |\n| &nbsp;&nbsp;&nbsp;Microsoft 365 Commercial seat growth | The number of Microsoft 365 Commercial seats at end of period where seats are paid users covered by a Microsoft 365 Commercial subscription |\n| &nbsp;&nbsp;&nbsp;Microsoft 365 Consumer cloud revenue growth | Revenue from Microsoft 365 Consumer subscriptions and other consumer services |\n| &nbsp;&nbsp;&nbsp;Microsoft 365 Consumer subscribers | The number of Microsoft 365 Consumer subscribers at end of period |\n| &nbsp;&nbsp;&nbsp;LinkedIn revenue growth | Revenue from LinkedIn, including Talent Solutions, Marketing Solutions, Premium Subscriptions, and Sales Solutions |\n| &nbsp;&nbsp;&nbsp;Dynamics 365 revenue growth | Revenue from Dynamics 365, including a set of intelligent, cloud-based applications across ERP, CRM, Power Apps, and Power Automate |\n| &nbsp;&nbsp;&nbsp;Azure and other cloud services revenue growth | Revenue from Azure and other cloud services, including cloud and AI consumption-based services, GitHub cloud services, Nuance Healthcare cloud services, virtual desktop offerings, and other cloud services |\n\n---\n\n\n\n------\n\n<u>PART I</u>\n\nItem 2\n\n***More Personal Computing***\n\nMetrics related to our More Personal Computing segment assess the performance of our key consumer businesses.\n\n---\n\n\n\n| | |\n|:---|:---|\n| &nbsp;&nbsp;&nbsp;Windows OEM and Devices revenue growth | Revenue from sales of Windows Pro and non-Pro licenses sold through the OEM channel and sales of first-party Devices, including Surface, HoloLens, and PC accessories |\n| &nbsp;&nbsp;&nbsp;Xbox content and services revenue growth | Revenue from Xbox content and services, comprising first- and third-party content (including games and in-game content), Xbox Game Pass and other subscriptions, Xbox Cloud Gaming, advertising, third-party disc royalties, and other cloud services |\n| &nbsp;&nbsp;&nbsp;Search and news advertising revenue (ex TAC) growth | Revenue from search and news advertising excluding traffic acquisition costs (\"TAC\") paid to Bing Ads network publishers and news partners |\n\n---\n\n\n\n<u>SUMMARY RESULTS OF OPERATIONS</u>\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| &nbsp;&nbsp;&nbsp;&nbsp;**(In millions, except percentages and per share amounts)** | **Three Months Ended**<br>**December 31,** | **Three Months Ended**<br>**December 31,** | **Percentage**<br>**Change** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Percentage**<br>**Change** |\n|  | **2024** | **2023** |  | **2024** | **2023** |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Revenue | $**69632** | $62020 | 12% | $**135217** | $118537 | 14% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Gross margin | **47833** | 42397 | 13% | **93319** | 82612 | 13% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Operating income | **31653** | 27032 | 17% | **62205** | 53927 | 15% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net income  | **24108** | 21870 | 10% | **48775** | 44161 | 10% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Diluted earnings per share | **3.23** | 2.93 | 10% | **6.53** | 5.92 | 10% |\n\n---\n\n\n\n***Three Months Ended December 31, 2024 Compared with Three Months Ended December 31, 2023***\n\nRevenue increased $7.6 billion or 12% driven by growth in Intelligent Cloud and Productivity and Business Processes. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Microsoft 365 Commercial cloud. More Personal Computing revenue was relatively unchanged.\n\nCost of revenue increased $2.2 billion or 11% driven by growth in Microsoft Cloud, offset in part by Gaming.\n\nGross margin increased $5.4 billion or 13% driven by growth across each of our segments.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin percentage increased slightly driven by More Personal Computing and sales mix shift to higher margin businesses within More Personal Computing, offset in part by Intelligent Cloud.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft Cloud gross margin percentage decreased to 70% driven by scaling our AI infrastructure.\n\nOperating expenses increased $815 million or 5% driven by investments in cloud engineering.\n\nOperating income increased $4.6 billion or 17% driven by growth across each of our segments.\n\n***Six Months Ended December 31, 2024 Compared with Six Months Ended December 31, 2023***\n\nRevenue increased $16.7 billion or 14% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Microsoft 365 Commercial cloud. More Personal Computing revenue increased driven by Gaming.\n\nCost of revenue increased $6.0 billion or 17% driven by growth in Microsoft Cloud.\n\nGross margin increased $10.7 billion or 13% driven by growth across each of our segments.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin percentage decreased slightly driven by Intelligent Cloud, offset in part by More Personal Computing.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft Cloud gross margin percentage decreased to 70% driven by scaling our AI infrastructure.\n\n------\n\n<u>PART I</u>\n\nItem 2\n\nOperating expenses increased $2.4 billion or 8% driven by investments in cloud engineering and the impact of the Activision Blizzard acquisition.\n\nOperating income increased $8.3 billion or 15% driven by growth across each of our segments.\n\n<u>SEGMENT RESULTS OF OPERATIONS</u>\n\n---",
+              "token_count": 1767,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000950170-25-010491",
+              "cik": "0000789019",
+              "company": "MICROSOFT CORP",
+              "form_type": "10-Q",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 75462,
+              "source_md5": "599a5ce07bdd6ee71084a4085261b524",
+              "content_sha256": "d036a36e2c4aa84515f8aab2aa1890c050c4536da9d1fa76ce81be3819e0ea2c",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "6ecd1f75-c0d7-5329-be25-9908fa210d5f",
+              "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 2,
+              "chunk_index": 2,
+              "char_start": 122055,
+              "char_end": 129592,
+              "text": "| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| &nbsp;&nbsp;&nbsp;&nbsp;**(In millions, except percentages)** | **Three Months Ended**<br>**December 31,** | **Three Months Ended**<br>**December 31,** | **Percentage**<br>**Change** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Percentage**<br>**Change** |\n|  | **2024** | **2023** |  | **2024** | **2023** |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Revenue** |  |  |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Productivity and Business Processes | $**29437** | $25854 | 14% | $**57754** | $51080 | 13% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Intelligent Cloud | **25544** | 21525 | 19% | **49636** | 41538 | 19% |\n| &nbsp;&nbsp;&nbsp;&nbsp;More Personal Computing | **14651** | 14641 | 0% | **27827** | 25919 | 7% |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total | $**69632** | $62020 | 12% | $**135217** | $118537 | 14% |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Operating Income** |  |  |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Productivity and Business Processes | $**16885** | $14515 | 16% | $**33401** | $28812 | 16% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Intelligent Cloud | **10851** | 9555 | 14% | **21354** | 18463 | 16% |\n| &nbsp;&nbsp;&nbsp;&nbsp;More Personal Computing | **3917** | 2962 | 32% | **7450** | 6652 | 12% |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total | $**31653** | $27032 | 17% | $**62205** | $53927 | 15% |\n\n---\n\n\n\n**Reportable Segments**\n\n***Three Months Ended December 31, 2024 Compared with Three Months Ended December 31, 2023***\n\n*Productivity and Business Processes*\n\nRevenue increased $3.6 billion or 14%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Commercial products and cloud services revenue increased $2.8 billion or 15%. Microsoft 365 Commercial cloud revenue grew 16% with Microsoft 365 Commercial seat growth of 7% driven by small and medium business and frontline worker offerings, as well as growth in revenue per user. Microsoft 365 Commercial products revenue grew 13% driven by the Windows Commercial on-premises components of Microsoft 365 suite sales and an increase in transactional purchasing with the launch of Office 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Consumer products and cloud services revenue increased $142 million or 8%. Microsoft 365 Consumer cloud revenue grew 8% driven by Microsoft 365 Consumer subscriber growth of 10% to 86.3 million with mix shift to Microsoft 365 Basic.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022LinkedIn revenue increased $392 million or 9% driven by growth across all lines of business \u2013 Marketing Solutions, Talent Solutions, Premium Subscriptions, and Sales Solutions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Dynamics products and cloud services revenue increased $254 million or 15% driven by growth in Dynamics 365, offset in part by a decline in Dynamics on-premises products. Dynamics 365 revenue grew 19% driven by growth across all workloads.\n\nOperating income increased $2.4 billion or 16%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $2.8 billion or 13% driven by growth in Microsoft 365 Commercial cloud. Gross margin percentage decreased slightly driven by scaling our AI infrastructure.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses increased $390 million or 6% driven by investments in cloud engineering.\n\n------\n\n<u>PART I</u>\n\nItem 2\n\n*Intelligent Cloud*\n\nRevenue increased $4.0 billion or 19%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Server products and cloud services revenue increased $4.0 billion or 21% driven by Azure and other cloud services. Azure and other cloud services revenue grew 31% driven by demand for our portfolio of services, including 13 points from our AI services which grew 157%. Server products revenue decreased 3% driven by a decrease in transactional purchasing and a prior year comparable that benefited from purchasing ahead of Windows Server 2012 end of support.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Enterprise and partner services revenue decreased $25 million or 1% driven by a decline in Industry Solutions, offset in part by growth in Enterprise Support Services.\n\nOperating income increased $1.3 billion or 14%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $1.8 billion or 12% driven by growth in Azure. Gross margin percentage decreased driven by scaling our AI infrastructure.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses increased $482 million or 10% driven by investments in cloud engineering.\n\n*More Personal Computing*\n\nRevenue was relatively unchanged.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Windows and Devices revenue increased $149 million or 3%. Windows OEM and Devices revenue increased 4% as commercial inventory builds drove growth in Windows OEM, offset in part by a decline in Devices.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gaming revenue decreased $530 million or 7% driven by a decline in Xbox hardware, offset in part by growth in Xbox content and services. Xbox hardware revenue decreased 29% driven by lower volume of consoles sold. Xbox content and services revenue increased 2% driven by growth in Xbox Game Pass.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Search and news advertising revenue increased $390 million or 12%. Search and news advertising revenue excluding traffic acquisition costs increased 21% driven by higher search volume and higher revenue per search.\n\nOperating income increased $955 million or 32%, including a favorable foreign currency impact of 2%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $898 million or 13% driven by growth in Gaming, Search and news advertising, and Windows and Devices. Gross margin percentage increased driven by sales mix shift to higher margin businesses and improvement in Gaming and Search and news advertising.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses decreased $57 million or 1% primarily driven by Gaming.\n\n***Six Months Ended December 31, 2024 Compared with Six Months Ended December 31, 2023***\n\n*Productivity and Business Processes*\n\nRevenue increased $6.7 billion or 13%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Commercial products and cloud services revenue increased $5.2 billion or 14%. Microsoft 365 Commercial cloud revenue grew 15% driven by seat growth and growth in revenue per user. Microsoft 365 Commercial products revenue grew 7% driven by the Windows Commercial on-premises components of Microsoft 365 suite sales.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Consumer products and cloud services revenue increased $226 million or 7%. Microsoft 365 Consumer cloud revenue grew 7% with continued growth in Microsoft 365 Consumer subscribers.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022LinkedIn revenue increased $771 million or 10% driven by growth across all lines of business \u2013 Marketing Solutions, Talent Solutions, Premium Subscriptions, and Sales Solutions.",
+              "token_count": 1976,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000950170-25-010491",
+              "cik": "0000789019",
+              "company": "MICROSOFT CORP",
+              "form_type": "10-Q",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 75462,
+              "source_md5": "599a5ce07bdd6ee71084a4085261b524",
+              "content_sha256": "d036a36e2c4aa84515f8aab2aa1890c050c4536da9d1fa76ce81be3819e0ea2c",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "7c0d4850-3424-5ad3-8a1f-3382a020e6b0",
+              "section": "ITEM 1. FINANCIAL STATEMENTS",
+              "section_index": 1,
+              "chunk_index": 15,
+              "char_start": 92380,
+              "char_end": 99405,
+              "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Commercial products and cloud services, including Microsoft 365 Commercial cloud, comprising Microsoft 365 Commercial, Enterprise Mobility + Security, the cloud portion of Windows Commercial, the per-user portion of Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft Viva, and Microsoft 365 Copilot; and Microsoft 365 Commercial products, comprising Windows Commercial on-premises and Office licensed on-premises.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Consumer products and cloud services, including Microsoft 365 Consumer subscriptions, Office licensed on-premises, and other consumer services.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022LinkedIn, including Talent Solutions, Marketing Solutions, Premium Subscriptions, and Sales Solutions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Dynamics products and cloud services, including Dynamics 365, comprising a set of intelligent, cloud-based applications across ERP, CRM, Power Apps, and Power Automate; and on-premises ERP and CRM applications.\n\n**Intelligent Cloud**\n\nOur Intelligent Cloud segment consists of our public, private, and hybrid server products and cloud services that can power modern business and developers. This segment primarily comprises:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Server products and cloud services, including Azure and other cloud services, comprising cloud and AI consumption-based services, GitHub cloud services, Nuance Healthcare cloud services, virtual desktop offerings, and other cloud services; and Server products, comprising SQL Server, Windows Server, Visual Studio, System Center, related Client Access Licenses (\"CALs\"), and other on-premises offerings.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Enterprise and partner services, including Enterprise Support Services, Industry Solutions, Nuance professional services, Microsoft Partner Network, and Learning Experience.\n\n**More Personal Computing**\n\nOur More Personal Computing segment consists of products and services that put customers at the center of the experience with our technology. This segment primarily comprises:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Windows and Devices, including Windows, comprising Windows OEM licensing (Windows Pro and non-Pro licenses sold through the OEM channel), Windows Internet of Things, and patent licensing; and Devices, comprising Surface, HoloLens, and PC accessories.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gaming, including Xbox hardware and Xbox content and services, comprising first- and third-party content (including games and in-game content), Xbox Game Pass and other subscriptions, Xbox Cloud Gaming, advertising, third-party disc royalties, and other cloud services.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Search and news advertising, comprising Bing (including Copilot), Microsoft News, Microsoft Edge, and third-party affiliates.\n\nRevenue and costs are generally directly attributed to our segments. However, due to the integrated structure of our business, certain revenue recognized and costs incurred by one segment may benefit other segments. Revenue from certain contracts is allocated among the segments based on the relative value of the underlying products and services, which can include allocation based on actual prices charged, prices when sold separately, or estimated costs plus a profit margin. Cost of revenue is allocated in certain cases based on a relative revenue methodology. Operating expenses that are allocated primarily include those relating to marketing of products and services from which multiple segments benefit and are generally allocated based on relative gross margin.\n\n------\n\n<u>PART I</u>\n\nItem 1\n\nIn addition, certain costs are incurred at a corporate level and allocated to our segments. These allocated costs generally include legal, including settlements and fines, information technology, human resources, finance, excise taxes, field selling, shared facilities services, customer service and support, and severance incurred as part of a corporate program. Each allocation is measured differently based on the specific facts and circumstances of the costs being allocated and is generally based on relative gross margin or relative headcount.\n\nSegment revenue and operating income were as follows during the periods presented:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| **(In millions)** | **Three Months Ended** <br>**December 31,** | **Three Months Ended** <br>**December 31,** | **Six Months Ended** <br>**December 31,** | **Six Months Ended** <br>**December 31,** |\n|  | **2024** | **2023** | **2024** | **2023** |\n| **Revenue** |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Productivity and Business Processes | $**29437** | $25854 | $**57754** | $51080 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Intelligent Cloud | **25544** | 21525 | **49636** | 41538 |\n| &nbsp;&nbsp;&nbsp;&nbsp;More Personal Computing | **14651** | 14641 | **27827** | 25919 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total | $**69632** | $62020 | $**135217** | $118537 |\n| **Operating Income**  |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Productivity and Business Processes | $**16885** | $14515 | $**33401** | $28812 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Intelligent Cloud | **10851** | 9555 | **21354** | 18463 |\n| &nbsp;&nbsp;&nbsp;&nbsp;More Personal Computing | **3917** | 2962 | **7450** | 6652 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total  | $**31653** | $27032 | $**62205** | $53927 |\n\n---\n\n\n\nNo sales to an individual customer or country other than the United States accounted for more than 10% of revenue for the three or six months ended December 31, 2024 or 2023. Revenue, classified by the major geographic areas in which our customers were located, was as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| **(In millions)** | **Three Months Ended** <br>**December 31,** | **Three Months Ended** <br>**December 31,** | **Six Months Ended** <br>**December 31,** | **Six Months Ended** <br>**December 31,** |\n|  | **2024** | **2023** | **2024** | **2023** |\n| &nbsp;&nbsp;&nbsp;&nbsp;United States <sup>(a)</sup> | $**35537** | $32295 | $**69450** | $61107 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other countries  | **34095** | 29725 | **65767** | 57430 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total | $**69632** | $62020 | $**135217** | $118537 |\n\n---\n\n\n\n(a)*Includes billings to OEMs and certain multinational organizations because of the nature of these businesses and the impracticability of determining the geographic source of the revenue.*\n\n------\n\n<u>PART I</u>\n\nItem 1\n\nRevenue, classified by significant product and service offerings, was as follows:\n\n---",
+              "token_count": 1701,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000017843-25-000003",
+              "cik": "0000017843",
+              "company": "CARPENTER TECHNOLOGY CORP",
+              "form_type": "10-Q",
+              "filed_date": "20250130",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 140,
+              "source_md5": "bb78bf8f54035396625f5c404483cb9a",
+              "content_sha256": "acb2b53ebfaf55a43e7e353630998205335d3401ac9720235635276146dbbbae",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "922f3253-1913-5fd1-9a30-c7acd6d3958d",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 53,
+              "char_start": 109310,
+              "char_end": 111758,
+              "text": "Our gross profit in the three months ended December 31, 2024, increased to $177.5 million, or 26.2 percent of net sales, as compared with $122.6 million, or 19.6 percent of net sales in the three months ended December 31, 2023. Excluding the impact of surcharge revenue, our adjusted gross margin in the three months ended December 31, 2024, was 32.4 percent as compared to 25.3 percent in the three months ended December 31, 2023. The increased gross profit for the three months ended December 31, 2024 reflects an ongoing improvement in product mix with a shift in capacity to more complex, higher value materials as well as pricing actions and expanding operational efficiencies.\n\nOur surcharge mechanism is structured to recover increases in raw material costs, although in certain cases with a lag effect as discussed above. While the surcharge generally protects the absolute gross profit dollars, it does have a dilutive effect on gross margin as a percent of sales. We present and discuss these financial measures because management believes removing the impact of these items provides a more consistent and meaningful basis for comparing results of operations from period to period. See the section \"Non-GAAP Financial Measures\" below for further discussion of these financial measures. The following represents a summary of the dilutive impact of the surcharge on gross margin.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Three Months Ended<br>December 31,** | **Three Months Ended<br>December 31,** |\n|<br>**($ in millions)** | **2024** | **2023** |\n| Net sales | $676.9 | $624.2 |\n| Less: surcharge revenue | 128.9 | 138.9 |\n| Net sales excluding surcharge revenue | $548.0 | $485.3 |\n| Gross profit | $177.5 | $122.6 |\n| Gross margin | 26.2% | 19.6% |\n| Gross margin excluding surcharge revenue | 32.4% | 25.3% |\n\n---\n\n\n\n**Selling, General and Administrative Expenses**\n\nSelling, general and administrative expenses in the three months ended December 31, 2024, were $58.6 million or 8.7 percent of net sales (10.7 percent of net sales excluding surcharge) as compared with $52.8 million or 8.5 percent of net sales (10.9 percent of net sales excluding surcharge) in the three months ended December 31, 2023. The selling, general and administrative expenses for the three months ended December 31, 2024 reflect higher salary, benefit and variable compensation costs compared to the three months ended December 31, 2023.\n\n**Operating Income**",
+              "token_count": 592,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000950170-25-010491",
+              "cik": "0000789019",
+              "company": "MICROSOFT CORP",
+              "form_type": "10-Q",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 75462,
+              "source_md5": "599a5ce07bdd6ee71084a4085261b524",
+              "content_sha256": "d036a36e2c4aa84515f8aab2aa1890c050c4536da9d1fa76ce81be3819e0ea2c",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "b6dbb19e-21da-5c66-83af-12d926d463f8",
+              "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 2,
+              "chunk_index": 3,
+              "char_start": 129594,
+              "char_end": 136618,
+              "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Dynamics products and cloud services revenue increased $477 million or 15% driven by growth in Dynamics 365, offset in part by a decline in Dynamics on-premises products. Dynamics 365 revenue grew 19% driven by growth across all workloads.\n\n------\n\n<u>PART I</u>\n\nItem 2\n\nOperating income increased $4.6 billion or 16%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $5.1 billion or 12% driven by growth in Microsoft 365 Commercial cloud. Gross margin percentage decreased slightly driven by scaling our AI infrastructure.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses increased $491 million or 4% driven by investments in cloud engineering and commercial sales.\n\n*Intelligent Cloud*\n\nRevenue increased $8.1 billion or 19%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Server products and cloud services revenue increased $8.1 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 32% driven by demand for our portfolio of services, including 12 points from our AI services which grew 178%. Server products revenue decreased 2% driven by a decrease in transactional purchasing.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Enterprise and partner services revenue decreased $41 million or 1% driven by a decline in Industry Solutions.\n\nOperating income increased $2.9 billion or 16%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $3.7 billion or 13% driven by growth in Azure. Gross margin percentage decreased driven by scaling our AI infrastructure.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses increased $854 million or 9% driven by investments in cloud engineering.\n\n*More Personal Computing*\n\nRevenue increased $1.9 billion or 7%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Windows and Devices revenue increased $138 million or 2%. Windows OEM and Devices revenue increased 3% as commercial inventory builds drove growth in Windows OEM, offset in part by a decline in Devices.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gaming revenue increased $1.2 billion or 11% driven by growth in Xbox content and services, offset in part by a decline in Xbox hardware. Xbox content and services revenue increased 24% driven by the impact of the Activision Blizzard acquisition. Xbox hardware revenue decreased 29% driven by lower volume of consoles sold.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Search and news advertising revenue increased $597 million or 10%. Search and news advertising revenue excluding traffic acquisition costs increased 20% driven by higher search volume and higher revenue per search.\n\nOperating income increased $798 million or 12%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $1.9 billion or 15% driven by growth in Gaming, including the impact of the Activision Blizzard acquisition. Gross margin percentage increased driven by sales mix shift to higher margin businesses and improvement in Search and news advertising and Gaming.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses increased $1.1 billion or 17% driven by the impact of the Activision Blizzard acquisition.\n\n------\n\n<u>PART I</u>\n\nItem 2\n\n<u>OPERATING EXPENSES</u>\n\n**Research and Development**\n\n---\n\n\n\n| | | | | | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|\n| &nbsp;&nbsp;&nbsp;&nbsp;**(In millions, except percentages)** | **Three Months Ended**<br>**December 31,** | **Three Months Ended**<br>**December 31,** | **Three Months Ended**<br>**December 31,** | **Three Months Ended**<br>**December 31,** | **Percentage**<br>**Change** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Percentage**<br>**Change** |\n|  | **2024** | **2024** | **2023** | **2023** |  | **2024** | **2024** | **2023** | **2023** |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Research and development | **$** | **7917** | $| 7142 | 11% | **$** | **15461** | $| 13801 | 12% |\n| &nbsp;&nbsp;&nbsp;&nbsp;As a percent of revenue |  | **11%** |  | 12% | (1)ppt |  | **11%** |  | 12% | (1)ppt |\n\n---\n\n\n\nResearch and development expenses include payroll, employee benefits, stock-based compensation expense, and other headcount-related expenses associated with product development. Research and development expenses also include third-party development and programming costs and the amortization of purchased software code and services content.\n\n***Three Months Ended December 31, 2024 Compared with Three Months Ended December 31, 2023***\n\nResearch and development expenses increased $775 million or 11% driven by investments in cloud engineering.\n\n***Six Months Ended December 31, 2024 Compared with Six Months Ended December 31, 2023***\n\nResearch and development expenses increased $1.7 billion or 12% driven by investments in cloud engineering and the impact of the Activision Blizzard acquisition.\n\n**Sales and Marketing**\n\n---\n\n\n\n| | | | | | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|\n| &nbsp;&nbsp;&nbsp;&nbsp;**(In millions, except percentages)** | **Three Months Ended<br>December 31,** | **Three Months Ended<br>December 31,** | **Three Months Ended<br>December 31,** | **Three Months Ended<br>December 31,** | **Percentage**<br>**Change** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Percentage**<br>**Change** |\n|  | **2024** | **2024** | **2023** | **2023** |  | **2024** | **2024** | **2023** | **2023** |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Sales and marketing | **$** | **6440** | $| 6246 | 3% | **$** | **12157** | $| 11433 | 6% |\n| &nbsp;&nbsp;&nbsp;&nbsp;As a percent of revenue |  | **9%** |  | 10% | (1)ppt |  | **9%** |  | 10% | (1)ppt |\n\n---\n\n\n\nSales and marketing expenses include payroll, employee benefits, stock-based compensation expense, and other headcount-related expenses associated with sales and marketing personnel, and the costs of advertising, promotions, trade shows, seminars, and other programs.\n\n***Three Months Ended December 31, 2024 Compared with Three Months Ended December 31, 2023***\n\nSales and marketing expenses increased $194 million or 3% driven by investments in commercial sales.\n\n***Six Months Ended December 31, 2024 Compared with Six Months Ended December 31, 2023***\n\nSales and marketing expenses increased $724 million or 6% driven by the impact of the Activision Blizzard acquisition and investments in commercial sales.\n\n**General and Administrative**\n\n---",
+              "token_count": 1860,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 16.088117864000196
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000950170-25-010491",
+        "cik": "0000789019",
+        "company": "MICROSOFT CORP",
+        "form_type": "10-Q",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 75462,
+        "source_md5": "599a5ce07bdd6ee71084a4085261b524",
+        "content_sha256": "d036a36e2c4aa84515f8aab2aa1890c050c4536da9d1fa76ce81be3819e0ea2c",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "c0afa9dd-a3a0-52f0-907e-3491234bc030",
+        "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 2,
+        "chunk_index": 1,
+        "char_start": 114183,
+        "char_end": 122051,
+        "text": "In the first quarter of fiscal year 2025, we made updates to our metrics in connection with the segment changes described above. These changes align our metrics with how we manage and monitor certain businesses. The key change was bringing the commercial components of Microsoft 365 together and creating a new Microsoft 365 Commercial cloud revenue growth metric. Other changes include combining Windows OEM and Devices into a single revenue growth metric that brings revenue from PC market-driven businesses together, as well as elevating our cloud revenue growth metrics to align to our strategic focus on cloud growth.\n\n***Commercial***\n\nOur commercial business primarily consists of Server products and cloud services, Microsoft 365 Commercial products and cloud services, the commercial portion of LinkedIn, Enterprise and partner services, and Dynamics products and cloud services. Our commercial metrics allow management and investors to assess the overall health of our commercial business and include leading indicators of future performance.\n\n---\n\n\n\n| | |\n|:---|:---|\n| &nbsp;&nbsp;&nbsp;Commercial remaining performance obligation | Commercial portion of revenue allocated to remaining performance obligations, which includes unearned revenue and amounts that will be invoiced and recognized as revenue in future periods |\n| &nbsp;&nbsp;&nbsp;Microsoft Cloud revenue and revenue growth | Revenue from Microsoft 365 Commercial cloud, Azure and other cloud services, the commercial portion of LinkedIn, and Dynamics 365 |\n| &nbsp;&nbsp;&nbsp;Microsoft Cloud gross margin percentage | Gross margin percentage for our Microsoft Cloud business |\n\n---\n\n\n\n***Productivity and Business Processes and Intelligent Cloud***\n\nMetrics related to our Productivity and Business Processes and Intelligent Cloud segments assess the health of our core businesses within these segments. The metrics primarily reflect growth across our cloud services.\n\n---\n\n\n\n| | |\n|:---|:---|\n| &nbsp;&nbsp;&nbsp;Microsoft 365 Commercial cloud revenue growth | Revenue from Microsoft 365 Commercial subscriptions, comprising Microsoft 365 Commercial, Enterprise Mobility + Security, the cloud portion of Windows Commercial, the per-user portion of Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft Viva, and Microsoft 365 Copilot |\n| &nbsp;&nbsp;&nbsp;Microsoft 365 Commercial seat growth | The number of Microsoft 365 Commercial seats at end of period where seats are paid users covered by a Microsoft 365 Commercial subscription |\n| &nbsp;&nbsp;&nbsp;Microsoft 365 Consumer cloud revenue growth | Revenue from Microsoft 365 Consumer subscriptions and other consumer services |\n| &nbsp;&nbsp;&nbsp;Microsoft 365 Consumer subscribers | The number of Microsoft 365 Consumer subscribers at end of period |\n| &nbsp;&nbsp;&nbsp;LinkedIn revenue growth | Revenue from LinkedIn, including Talent Solutions, Marketing Solutions, Premium Subscriptions, and Sales Solutions |\n| &nbsp;&nbsp;&nbsp;Dynamics 365 revenue growth | Revenue from Dynamics 365, including a set of intelligent, cloud-based applications across ERP, CRM, Power Apps, and Power Automate |\n| &nbsp;&nbsp;&nbsp;Azure and other cloud services revenue growth | Revenue from Azure and other cloud services, including cloud and AI consumption-based services, GitHub cloud services, Nuance Healthcare cloud services, virtual desktop offerings, and other cloud services |\n\n---\n\n\n\n------\n\n<u>PART I</u>\n\nItem 2\n\n***More Personal Computing***\n\nMetrics related to our More Personal Computing segment assess the performance of our key consumer businesses.\n\n---\n\n\n\n| | |\n|:---|:---|\n| &nbsp;&nbsp;&nbsp;Windows OEM and Devices revenue growth | Revenue from sales of Windows Pro and non-Pro licenses sold through the OEM channel and sales of first-party Devices, including Surface, HoloLens, and PC accessories |\n| &nbsp;&nbsp;&nbsp;Xbox content and services revenue growth | Revenue from Xbox content and services, comprising first- and third-party content (including games and in-game content), Xbox Game Pass and other subscriptions, Xbox Cloud Gaming, advertising, third-party disc royalties, and other cloud services |\n| &nbsp;&nbsp;&nbsp;Search and news advertising revenue (ex TAC) growth | Revenue from search and news advertising excluding traffic acquisition costs (\"TAC\") paid to Bing Ads network publishers and news partners |\n\n---\n\n\n\n<u>SUMMARY RESULTS OF OPERATIONS</u>\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| &nbsp;&nbsp;&nbsp;&nbsp;**(In millions, except percentages and per share amounts)** | **Three Months Ended**<br>**December 31,** | **Three Months Ended**<br>**December 31,** | **Percentage**<br>**Change** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Percentage**<br>**Change** |\n|  | **2024** | **2023** |  | **2024** | **2023** |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Revenue | $**69632** | $62020 | 12% | $**135217** | $118537 | 14% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Gross margin | **47833** | 42397 | 13% | **93319** | 82612 | 13% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Operating income | **31653** | 27032 | 17% | **62205** | 53927 | 15% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net income  | **24108** | 21870 | 10% | **48775** | 44161 | 10% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Diluted earnings per share | **3.23** | 2.93 | 10% | **6.53** | 5.92 | 10% |\n\n---\n\n\n\n***Three Months Ended December 31, 2024 Compared with Three Months Ended December 31, 2023***\n\nRevenue increased $7.6 billion or 12% driven by growth in Intelligent Cloud and Productivity and Business Processes. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Microsoft 365 Commercial cloud. More Personal Computing revenue was relatively unchanged.\n\nCost of revenue increased $2.2 billion or 11% driven by growth in Microsoft Cloud, offset in part by Gaming.\n\nGross margin increased $5.4 billion or 13% driven by growth across each of our segments.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin percentage increased slightly driven by More Personal Computing and sales mix shift to higher margin businesses within More Personal Computing, offset in part by Intelligent Cloud.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft Cloud gross margin percentage decreased to 70% driven by scaling our AI infrastructure.\n\nOperating expenses increased $815 million or 5% driven by investments in cloud engineering.\n\nOperating income increased $4.6 billion or 17% driven by growth across each of our segments.\n\n***Six Months Ended December 31, 2024 Compared with Six Months Ended December 31, 2023***\n\nRevenue increased $16.7 billion or 14% driven by growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Microsoft 365 Commercial cloud. More Personal Computing revenue increased driven by Gaming.\n\nCost of revenue increased $6.0 billion or 17% driven by growth in Microsoft Cloud.\n\nGross margin increased $10.7 billion or 13% driven by growth across each of our segments.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin percentage decreased slightly driven by Intelligent Cloud, offset in part by More Personal Computing.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft Cloud gross margin percentage decreased to 70% driven by scaling our AI infrastructure.\n\n------\n\n<u>PART I</u>\n\nItem 2\n\nOperating expenses increased $2.4 billion or 8% driven by investments in cloud engineering and the impact of the Activision Blizzard acquisition.\n\nOperating income increased $8.3 billion or 15% driven by growth across each of our segments.\n\n<u>SEGMENT RESULTS OF OPERATIONS</u>\n\n---",
+        "token_count": 1767,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-010491",
+        "cik": "0000789019",
+        "company": "MICROSOFT CORP",
+        "form_type": "10-Q",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 75462,
+        "source_md5": "599a5ce07bdd6ee71084a4085261b524",
+        "content_sha256": "d036a36e2c4aa84515f8aab2aa1890c050c4536da9d1fa76ce81be3819e0ea2c",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "6ecd1f75-c0d7-5329-be25-9908fa210d5f",
+        "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 2,
+        "chunk_index": 2,
+        "char_start": 122055,
+        "char_end": 129592,
+        "text": "| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| &nbsp;&nbsp;&nbsp;&nbsp;**(In millions, except percentages)** | **Three Months Ended**<br>**December 31,** | **Three Months Ended**<br>**December 31,** | **Percentage**<br>**Change** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Percentage**<br>**Change** |\n|  | **2024** | **2023** |  | **2024** | **2023** |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Revenue** |  |  |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Productivity and Business Processes | $**29437** | $25854 | 14% | $**57754** | $51080 | 13% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Intelligent Cloud | **25544** | 21525 | 19% | **49636** | 41538 | 19% |\n| &nbsp;&nbsp;&nbsp;&nbsp;More Personal Computing | **14651** | 14641 | 0% | **27827** | 25919 | 7% |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total | $**69632** | $62020 | 12% | $**135217** | $118537 | 14% |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Operating Income** |  |  |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Productivity and Business Processes | $**16885** | $14515 | 16% | $**33401** | $28812 | 16% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Intelligent Cloud | **10851** | 9555 | 14% | **21354** | 18463 | 16% |\n| &nbsp;&nbsp;&nbsp;&nbsp;More Personal Computing | **3917** | 2962 | 32% | **7450** | 6652 | 12% |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total | $**31653** | $27032 | 17% | $**62205** | $53927 | 15% |\n\n---\n\n\n\n**Reportable Segments**\n\n***Three Months Ended December 31, 2024 Compared with Three Months Ended December 31, 2023***\n\n*Productivity and Business Processes*\n\nRevenue increased $3.6 billion or 14%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Commercial products and cloud services revenue increased $2.8 billion or 15%. Microsoft 365 Commercial cloud revenue grew 16% with Microsoft 365 Commercial seat growth of 7% driven by small and medium business and frontline worker offerings, as well as growth in revenue per user. Microsoft 365 Commercial products revenue grew 13% driven by the Windows Commercial on-premises components of Microsoft 365 suite sales and an increase in transactional purchasing with the launch of Office 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Consumer products and cloud services revenue increased $142 million or 8%. Microsoft 365 Consumer cloud revenue grew 8% driven by Microsoft 365 Consumer subscriber growth of 10% to 86.3 million with mix shift to Microsoft 365 Basic.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022LinkedIn revenue increased $392 million or 9% driven by growth across all lines of business \u2013 Marketing Solutions, Talent Solutions, Premium Subscriptions, and Sales Solutions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Dynamics products and cloud services revenue increased $254 million or 15% driven by growth in Dynamics 365, offset in part by a decline in Dynamics on-premises products. Dynamics 365 revenue grew 19% driven by growth across all workloads.\n\nOperating income increased $2.4 billion or 16%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $2.8 billion or 13% driven by growth in Microsoft 365 Commercial cloud. Gross margin percentage decreased slightly driven by scaling our AI infrastructure.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses increased $390 million or 6% driven by investments in cloud engineering.\n\n------\n\n<u>PART I</u>\n\nItem 2\n\n*Intelligent Cloud*\n\nRevenue increased $4.0 billion or 19%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Server products and cloud services revenue increased $4.0 billion or 21% driven by Azure and other cloud services. Azure and other cloud services revenue grew 31% driven by demand for our portfolio of services, including 13 points from our AI services which grew 157%. Server products revenue decreased 3% driven by a decrease in transactional purchasing and a prior year comparable that benefited from purchasing ahead of Windows Server 2012 end of support.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Enterprise and partner services revenue decreased $25 million or 1% driven by a decline in Industry Solutions, offset in part by growth in Enterprise Support Services.\n\nOperating income increased $1.3 billion or 14%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $1.8 billion or 12% driven by growth in Azure. Gross margin percentage decreased driven by scaling our AI infrastructure.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses increased $482 million or 10% driven by investments in cloud engineering.\n\n*More Personal Computing*\n\nRevenue was relatively unchanged.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Windows and Devices revenue increased $149 million or 3%. Windows OEM and Devices revenue increased 4% as commercial inventory builds drove growth in Windows OEM, offset in part by a decline in Devices.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gaming revenue decreased $530 million or 7% driven by a decline in Xbox hardware, offset in part by growth in Xbox content and services. Xbox hardware revenue decreased 29% driven by lower volume of consoles sold. Xbox content and services revenue increased 2% driven by growth in Xbox Game Pass.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Search and news advertising revenue increased $390 million or 12%. Search and news advertising revenue excluding traffic acquisition costs increased 21% driven by higher search volume and higher revenue per search.\n\nOperating income increased $955 million or 32%, including a favorable foreign currency impact of 2%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $898 million or 13% driven by growth in Gaming, Search and news advertising, and Windows and Devices. Gross margin percentage increased driven by sales mix shift to higher margin businesses and improvement in Gaming and Search and news advertising.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses decreased $57 million or 1% primarily driven by Gaming.\n\n***Six Months Ended December 31, 2024 Compared with Six Months Ended December 31, 2023***\n\n*Productivity and Business Processes*\n\nRevenue increased $6.7 billion or 13%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Commercial products and cloud services revenue increased $5.2 billion or 14%. Microsoft 365 Commercial cloud revenue grew 15% driven by seat growth and growth in revenue per user. Microsoft 365 Commercial products revenue grew 7% driven by the Windows Commercial on-premises components of Microsoft 365 suite sales.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Consumer products and cloud services revenue increased $226 million or 7%. Microsoft 365 Consumer cloud revenue grew 7% with continued growth in Microsoft 365 Consumer subscribers.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022LinkedIn revenue increased $771 million or 10% driven by growth across all lines of business \u2013 Marketing Solutions, Talent Solutions, Premium Subscriptions, and Sales Solutions.",
+        "token_count": 1976,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-010491",
+        "cik": "0000789019",
+        "company": "MICROSOFT CORP",
+        "form_type": "10-Q",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 75462,
+        "source_md5": "599a5ce07bdd6ee71084a4085261b524",
+        "content_sha256": "d036a36e2c4aa84515f8aab2aa1890c050c4536da9d1fa76ce81be3819e0ea2c",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "7c0d4850-3424-5ad3-8a1f-3382a020e6b0",
+        "section": "ITEM 1. FINANCIAL STATEMENTS",
+        "section_index": 1,
+        "chunk_index": 15,
+        "char_start": 92380,
+        "char_end": 99405,
+        "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Commercial products and cloud services, including Microsoft 365 Commercial cloud, comprising Microsoft 365 Commercial, Enterprise Mobility + Security, the cloud portion of Windows Commercial, the per-user portion of Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft Viva, and Microsoft 365 Copilot; and Microsoft 365 Commercial products, comprising Windows Commercial on-premises and Office licensed on-premises.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Microsoft 365 Consumer products and cloud services, including Microsoft 365 Consumer subscriptions, Office licensed on-premises, and other consumer services.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022LinkedIn, including Talent Solutions, Marketing Solutions, Premium Subscriptions, and Sales Solutions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Dynamics products and cloud services, including Dynamics 365, comprising a set of intelligent, cloud-based applications across ERP, CRM, Power Apps, and Power Automate; and on-premises ERP and CRM applications.\n\n**Intelligent Cloud**\n\nOur Intelligent Cloud segment consists of our public, private, and hybrid server products and cloud services that can power modern business and developers. This segment primarily comprises:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Server products and cloud services, including Azure and other cloud services, comprising cloud and AI consumption-based services, GitHub cloud services, Nuance Healthcare cloud services, virtual desktop offerings, and other cloud services; and Server products, comprising SQL Server, Windows Server, Visual Studio, System Center, related Client Access Licenses (\"CALs\"), and other on-premises offerings.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Enterprise and partner services, including Enterprise Support Services, Industry Solutions, Nuance professional services, Microsoft Partner Network, and Learning Experience.\n\n**More Personal Computing**\n\nOur More Personal Computing segment consists of products and services that put customers at the center of the experience with our technology. This segment primarily comprises:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Windows and Devices, including Windows, comprising Windows OEM licensing (Windows Pro and non-Pro licenses sold through the OEM channel), Windows Internet of Things, and patent licensing; and Devices, comprising Surface, HoloLens, and PC accessories.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gaming, including Xbox hardware and Xbox content and services, comprising first- and third-party content (including games and in-game content), Xbox Game Pass and other subscriptions, Xbox Cloud Gaming, advertising, third-party disc royalties, and other cloud services.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Search and news advertising, comprising Bing (including Copilot), Microsoft News, Microsoft Edge, and third-party affiliates.\n\nRevenue and costs are generally directly attributed to our segments. However, due to the integrated structure of our business, certain revenue recognized and costs incurred by one segment may benefit other segments. Revenue from certain contracts is allocated among the segments based on the relative value of the underlying products and services, which can include allocation based on actual prices charged, prices when sold separately, or estimated costs plus a profit margin. Cost of revenue is allocated in certain cases based on a relative revenue methodology. Operating expenses that are allocated primarily include those relating to marketing of products and services from which multiple segments benefit and are generally allocated based on relative gross margin.\n\n------\n\n<u>PART I</u>\n\nItem 1\n\nIn addition, certain costs are incurred at a corporate level and allocated to our segments. These allocated costs generally include legal, including settlements and fines, information technology, human resources, finance, excise taxes, field selling, shared facilities services, customer service and support, and severance incurred as part of a corporate program. Each allocation is measured differently based on the specific facts and circumstances of the costs being allocated and is generally based on relative gross margin or relative headcount.\n\nSegment revenue and operating income were as follows during the periods presented:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| **(In millions)** | **Three Months Ended** <br>**December 31,** | **Three Months Ended** <br>**December 31,** | **Six Months Ended** <br>**December 31,** | **Six Months Ended** <br>**December 31,** |\n|  | **2024** | **2023** | **2024** | **2023** |\n| **Revenue** |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Productivity and Business Processes | $**29437** | $25854 | $**57754** | $51080 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Intelligent Cloud | **25544** | 21525 | **49636** | 41538 |\n| &nbsp;&nbsp;&nbsp;&nbsp;More Personal Computing | **14651** | 14641 | **27827** | 25919 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total | $**69632** | $62020 | $**135217** | $118537 |\n| **Operating Income**  |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Productivity and Business Processes | $**16885** | $14515 | $**33401** | $28812 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Intelligent Cloud | **10851** | 9555 | **21354** | 18463 |\n| &nbsp;&nbsp;&nbsp;&nbsp;More Personal Computing | **3917** | 2962 | **7450** | 6652 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total  | $**31653** | $27032 | $**62205** | $53927 |\n\n---\n\n\n\nNo sales to an individual customer or country other than the United States accounted for more than 10% of revenue for the three or six months ended December 31, 2024 or 2023. Revenue, classified by the major geographic areas in which our customers were located, was as follows:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| **(In millions)** | **Three Months Ended** <br>**December 31,** | **Three Months Ended** <br>**December 31,** | **Six Months Ended** <br>**December 31,** | **Six Months Ended** <br>**December 31,** |\n|  | **2024** | **2023** | **2024** | **2023** |\n| &nbsp;&nbsp;&nbsp;&nbsp;United States <sup>(a)</sup> | $**35537** | $32295 | $**69450** | $61107 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other countries  | **34095** | 29725 | **65767** | 57430 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total | $**69632** | $62020 | $**135217** | $118537 |\n\n---\n\n\n\n(a)*Includes billings to OEMs and certain multinational organizations because of the nature of these businesses and the impracticability of determining the geographic source of the revenue.*\n\n------\n\n<u>PART I</u>\n\nItem 1\n\nRevenue, classified by significant product and service offerings, was as follows:\n\n---",
+        "token_count": 1701,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000017843-25-000003",
+        "cik": "0000017843",
+        "company": "CARPENTER TECHNOLOGY CORP",
+        "form_type": "10-Q",
+        "filed_date": "20250130",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 140,
+        "source_md5": "bb78bf8f54035396625f5c404483cb9a",
+        "content_sha256": "acb2b53ebfaf55a43e7e353630998205335d3401ac9720235635276146dbbbae",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "922f3253-1913-5fd1-9a30-c7acd6d3958d",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 53,
+        "char_start": 109310,
+        "char_end": 111758,
+        "text": "Our gross profit in the three months ended December 31, 2024, increased to $177.5 million, or 26.2 percent of net sales, as compared with $122.6 million, or 19.6 percent of net sales in the three months ended December 31, 2023. Excluding the impact of surcharge revenue, our adjusted gross margin in the three months ended December 31, 2024, was 32.4 percent as compared to 25.3 percent in the three months ended December 31, 2023. The increased gross profit for the three months ended December 31, 2024 reflects an ongoing improvement in product mix with a shift in capacity to more complex, higher value materials as well as pricing actions and expanding operational efficiencies.\n\nOur surcharge mechanism is structured to recover increases in raw material costs, although in certain cases with a lag effect as discussed above. While the surcharge generally protects the absolute gross profit dollars, it does have a dilutive effect on gross margin as a percent of sales. We present and discuss these financial measures because management believes removing the impact of these items provides a more consistent and meaningful basis for comparing results of operations from period to period. See the section \"Non-GAAP Financial Measures\" below for further discussion of these financial measures. The following represents a summary of the dilutive impact of the surcharge on gross margin.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Three Months Ended<br>December 31,** | **Three Months Ended<br>December 31,** |\n|<br>**($ in millions)** | **2024** | **2023** |\n| Net sales | $676.9 | $624.2 |\n| Less: surcharge revenue | 128.9 | 138.9 |\n| Net sales excluding surcharge revenue | $548.0 | $485.3 |\n| Gross profit | $177.5 | $122.6 |\n| Gross margin | 26.2% | 19.6% |\n| Gross margin excluding surcharge revenue | 32.4% | 25.3% |\n\n---\n\n\n\n**Selling, General and Administrative Expenses**\n\nSelling, general and administrative expenses in the three months ended December 31, 2024, were $58.6 million or 8.7 percent of net sales (10.7 percent of net sales excluding surcharge) as compared with $52.8 million or 8.5 percent of net sales (10.9 percent of net sales excluding surcharge) in the three months ended December 31, 2023. The selling, general and administrative expenses for the three months ended December 31, 2024 reflect higher salary, benefit and variable compensation costs compared to the three months ended December 31, 2023.\n\n**Operating Income**",
+        "token_count": 592,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-010491",
+        "cik": "0000789019",
+        "company": "MICROSOFT CORP",
+        "form_type": "10-Q",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 75462,
+        "source_md5": "599a5ce07bdd6ee71084a4085261b524",
+        "content_sha256": "d036a36e2c4aa84515f8aab2aa1890c050c4536da9d1fa76ce81be3819e0ea2c",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "b6dbb19e-21da-5c66-83af-12d926d463f8",
+        "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 2,
+        "chunk_index": 3,
+        "char_start": 129594,
+        "char_end": 136618,
+        "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Dynamics products and cloud services revenue increased $477 million or 15% driven by growth in Dynamics 365, offset in part by a decline in Dynamics on-premises products. Dynamics 365 revenue grew 19% driven by growth across all workloads.\n\n------\n\n<u>PART I</u>\n\nItem 2\n\nOperating income increased $4.6 billion or 16%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $5.1 billion or 12% driven by growth in Microsoft 365 Commercial cloud. Gross margin percentage decreased slightly driven by scaling our AI infrastructure.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses increased $491 million or 4% driven by investments in cloud engineering and commercial sales.\n\n*Intelligent Cloud*\n\nRevenue increased $8.1 billion or 19%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Server products and cloud services revenue increased $8.1 billion or 22% driven by Azure and other cloud services. Azure and other cloud services revenue grew 32% driven by demand for our portfolio of services, including 12 points from our AI services which grew 178%. Server products revenue decreased 2% driven by a decrease in transactional purchasing.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Enterprise and partner services revenue decreased $41 million or 1% driven by a decline in Industry Solutions.\n\nOperating income increased $2.9 billion or 16%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $3.7 billion or 13% driven by growth in Azure. Gross margin percentage decreased driven by scaling our AI infrastructure.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses increased $854 million or 9% driven by investments in cloud engineering.\n\n*More Personal Computing*\n\nRevenue increased $1.9 billion or 7%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Windows and Devices revenue increased $138 million or 2%. Windows OEM and Devices revenue increased 3% as commercial inventory builds drove growth in Windows OEM, offset in part by a decline in Devices.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gaming revenue increased $1.2 billion or 11% driven by growth in Xbox content and services, offset in part by a decline in Xbox hardware. Xbox content and services revenue increased 24% driven by the impact of the Activision Blizzard acquisition. Xbox hardware revenue decreased 29% driven by lower volume of consoles sold.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Search and news advertising revenue increased $597 million or 10%. Search and news advertising revenue excluding traffic acquisition costs increased 20% driven by higher search volume and higher revenue per search.\n\nOperating income increased $798 million or 12%.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Gross margin increased $1.9 billion or 15% driven by growth in Gaming, including the impact of the Activision Blizzard acquisition. Gross margin percentage increased driven by sales mix shift to higher margin businesses and improvement in Search and news advertising and Gaming.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022Operating expenses increased $1.1 billion or 17% driven by the impact of the Activision Blizzard acquisition.\n\n------\n\n<u>PART I</u>\n\nItem 2\n\n<u>OPERATING EXPENSES</u>\n\n**Research and Development**\n\n---\n\n\n\n| | | | | | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|\n| &nbsp;&nbsp;&nbsp;&nbsp;**(In millions, except percentages)** | **Three Months Ended**<br>**December 31,** | **Three Months Ended**<br>**December 31,** | **Three Months Ended**<br>**December 31,** | **Three Months Ended**<br>**December 31,** | **Percentage**<br>**Change** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Percentage**<br>**Change** |\n|  | **2024** | **2024** | **2023** | **2023** |  | **2024** | **2024** | **2023** | **2023** |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Research and development | **$** | **7917** | $| 7142 | 11% | **$** | **15461** | $| 13801 | 12% |\n| &nbsp;&nbsp;&nbsp;&nbsp;As a percent of revenue |  | **11%** |  | 12% | (1)ppt |  | **11%** |  | 12% | (1)ppt |\n\n---\n\n\n\nResearch and development expenses include payroll, employee benefits, stock-based compensation expense, and other headcount-related expenses associated with product development. Research and development expenses also include third-party development and programming costs and the amortization of purchased software code and services content.\n\n***Three Months Ended December 31, 2024 Compared with Three Months Ended December 31, 2023***\n\nResearch and development expenses increased $775 million or 11% driven by investments in cloud engineering.\n\n***Six Months Ended December 31, 2024 Compared with Six Months Ended December 31, 2023***\n\nResearch and development expenses increased $1.7 billion or 12% driven by investments in cloud engineering and the impact of the Activision Blizzard acquisition.\n\n**Sales and Marketing**\n\n---\n\n\n\n| | | | | | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|:---|\n| &nbsp;&nbsp;&nbsp;&nbsp;**(In millions, except percentages)** | **Three Months Ended<br>December 31,** | **Three Months Ended<br>December 31,** | **Three Months Ended<br>December 31,** | **Three Months Ended<br>December 31,** | **Percentage**<br>**Change** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Six Months Ended**<br>**December 31,** | **Percentage**<br>**Change** |\n|  | **2024** | **2024** | **2023** | **2023** |  | **2024** | **2024** | **2023** | **2023** |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Sales and marketing | **$** | **6440** | $| 6246 | 3% | **$** | **12157** | $| 11433 | 6% |\n| &nbsp;&nbsp;&nbsp;&nbsp;As a percent of revenue |  | **9%** |  | 10% | (1)ppt |  | **9%** |  | 10% | (1)ppt |\n\n---\n\n\n\nSales and marketing expenses include payroll, employee benefits, stock-based compensation expense, and other headcount-related expenses associated with sales and marketing personnel, and the costs of advertising, promotions, trade shows, seminars, and other programs.\n\n***Three Months Ended December 31, 2024 Compared with Three Months Ended December 31, 2023***\n\nSales and marketing expenses increased $194 million or 3% driven by investments in commercial sales.\n\n***Six Months Ended December 31, 2024 Compared with Six Months Ended December 31, 2023***\n\nSales and marketing expenses increased $724 million or 6% driven by the impact of the Activision Blizzard acquisition and investments in commercial sales.\n\n**General and Administrative**\n\n---",
+        "token_count": 1860,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 88, \"citation_support\": 70, \"rationale\": \"The candidate's calculation is correct: 47,833 / 69,632 = 68.69%, which rounds to 68.7%. The only gap from the reference is one-decimal precision rather than two. The cited chunk (c0afa9dd) does contain the gross margin of 47,833 and revenue of 69,632 for the three months ended December 31, 2024, so the figures are supported. However, that chunk is the MD&A Summary Results of Operations table, not the Income Statements section the candidate attributes it to, and the gold-evidence Income Statements row was not among the retrieved excerpts. That mislabeling lowers citation support.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 88, \"citation_support\": 70, \"rationale\": \"The candidate's calculation is correct: 47,833 / 69,632 = 68.69%, which rounds to 68.7%. The only gap from the reference is one-decimal precision rather than two. The cited chunk (c0afa9dd) does contain the gross margin of 47,833 and revenue of 69,632 for the three months ended December 31, 2024, so the figures are supported. However, that chunk is the MD&A Summary Results of Operations table, not the Income Statements section the candidate attributes it to, and the gold-evidence Income Statements row was not among the retrieved excerpts. That mislabeling lowers citation support.\"}",
+      "refusal": null,
+      "reasoning": "Checking the math: 47833/69632 gives about 68.69%, so the reference value is correct. The candidate's 68.7% is just the rounded version of that same figure, so it's essentially correct with a negligible precision difference\u2014I'd rate correctness around 90.\n\nThe citation points to chunk c0afa9dd, which does contain the 47833 and 69632 figures, though it's actually from an MD&A summary rather than the Income Statements the candidate labeled it as\u2014a minor mislabeling issue. Overall citation support looks decent, maybe 70, while correctness lands near 88 given the rounding agreement.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking the math: 47833/69632 gives about 68.69%, so the reference value is correct. The candidate's 68.7% is just the rounded version of that same figure, so it's essentially correct with a negligible precision difference\u2014I'd rate correctness around 90.\n\nThe citation points to chunk c0afa9dd, which does contain the 47833 and 69632 figures, though it's actually from an MD&A summary rather than the Income Statements the candidate labeled it as\u2014a minor mislabeling issue. Overall citation support looks decent, maybe 70, while correctness lands near 88 given the rounding agreement.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS5wsKEAgSGAI4AUIIdGhpbmtpbmcSDOwZNFedcR2MJtCObhoMRhSToAGpzMoJ6nZ7IjBmJvaqB/nxxa8berhGZoiPZl6u06u0KUqpFRoJcWwfBqiQvMZ+T8wpZ3WDNqyXrMEqhAulMvxaTvLPBEmJ2t9Gt2PQ1xwo0SoaW0P44IPxa8GVNd7KKQmmjEb9/Vm4MAp9RAEEbo6uMzA1O27EgXlI8Y6iFvYLio5aV2WYbEE8NL6nbBWw3VmHyWzJygYmQDzeFDhmYtSbhhbgJWDhfdUsVDAz01wgp2XFnh1r+daXIreOMlNZeIcZofvlbH9qjY3eX1YDAKlnLMLoRnh2PycWZnvnMDDdZFG/TAdZuYKlwWHO2U/DQsfqMo/JzqfhnFqB8dAKx0Fmf86fXxUgw26Kie4vsjVEcBNwgmyJNCrbTY+ht9UzMHw5EWWF4cHB9NYb0nypHq/yJ8FiyA4b19Gdc9KbpzHz3gRhruTvkTH02ZwhCaYxEqeKAlOwObR7eoXWJ/SOGiG/lcHUov3GZMLo+2+p0xY0/tXgoJH5X7zcP5hf5TS0hHSLaxLZyBK+wnqrQ5YwxQ2rJbZFMmQLBgA+6JIsiHC5pvyjrWiBpLqR1VzfyfiwpyZYtcG0plLRhxEL853RqgzvNTVne0Jc0AkCzODootSp03ajltM2/oAB/kkQsJV53zSqNwNW0ezg7U3wA2PEIcpYSDoqPpuCh/PeS9bQZ6UpHN+gzjqZmynvLcqvIR8pLwJarDumGuZFFckVtP735UdYsXJ7iZNOB4fN1RYejAhU1xEyUmrcCNthpg8AtTiGhjPKdkS+JoQkusKqKIQFPHEVNW4sfrMqphoNoyChd8OtYOQ7JECGtzjP57k38V+iiaEF+Z0/WwK5ShCog7anuwOY7HWG4zLDky8O9oq5QKRbksSexWpLiGy+FO0pM2di7PU1A0gxgJsddd3SGTlUjDEDcHvRc+dM/QnsJXwfiai3k3m9wI0S8CK0i78PYQIqthJMRarF6vkBSmIMO92qd6lxrvzG7m1FrV8ctt0DdA9djHyu0bRhgqWsWiTS/Qf0EkZ37nXv8iCF66rrCvb2zOKyx3UBMze5TvcVeyj2ZuAuIm251HhIciWIEpM44w6FUXN18EBRZYY15Z+DMCC35fmhpA89XADnLwa+43hS9QOnvT7FdEKHcSY6W9ps/Q4pkLz3JCsUQhDCoHSACWQzP6eyXkgBL3TJVhEW+peGxickSeoJtVCKqphMJxbXJ34MiQgtYhQd3M/89QudpGlw/x9bG+n8a92dX/vB3WeP2XOKyJd7kwpBnnsfx0oJyNAq5mL7/CWRJR3ngFVs4GVsoKR8We9B355OGRh9/mZKtFEj3lr+fU/C1yRXt8dZMgtcbYJiTAMRdvJfYpw0CRsJbbSM+LzfbZxuxZr58fHoUHy1y7bQGSuXkauNsl6OdGmKReCGKOhExylCRpmOysiS/SHagQbte6xTBD0hh8eVKEwmbX7ml5By5YQIasvv51wxmu5yg39GSUCl5/G1nA6obMFbjBZlmkFwjF7kjsh9zqhRk9/y0VY55MhDedZ4yLAFg1HH+R6x0CmQgF5WEXW43E9NbLEOv/uS1muGwijkDjBpX7nbL8HCQHt7uR64T9hhSc++FUAIb8oHK2wGC8g6b7YTmYvYZh6VhARBgSWOifSVRm4RVaK2t8Un9eqWfTD2qo0NKYEL7iYunjHyp0O2Zor4ZqP/rC9u6TtaMngajcw5lkge9l5wwzXXRvbdhgTJogdU/RI8IXd9354FHDby6XyDB26w5luiZ1oaxtYRErt3ISobP3M8S9+p9ngH+0J61dXpVBCcUyLlIQFMt/oNNseNTTcYji619CW4DZ1NqvReTSTwYAWnvv6fn0c435bLNWy1b2/RUqmBYfnNByhDido3Il6nITZe6KQlqfdJjy8yxt4g5fSsdIUC9aWlyQYAxKKfybeiGU2fvmk0TBC9RRV1bta/FC6GPhxUHLDsdlzOjRgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:34:26.818330+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "bf59c152313ac66909f01704:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042286-uEYYDXGpZge7Lt3hUTGr",
+    "usage": {
+      "prompt_tokens": 35208,
+      "completion_tokens": 592,
+      "total_tokens": 35800,
+      "cost": 0.0038168,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0038168,
+        "upstream_inference_prompt_cost": 0.0035208,
+        "upstream_inference_completions_cost": 0.000296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 361,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 182.94809844100018,
+    "attempts": 2
+  },
+  "judgment": {
+    "correctness": 88,
+    "citation_support": 70,
+    "rationale": "The candidate's calculation is correct: 47,833 / 69,632 = 68.69%, which rounds to 68.7%. The only gap from the reference is one-decimal precision rather than two. The cited chunk (c0afa9dd) does contain the gross margin of 47,833 and revenue of 69,632 for the three months ended December 31, 2024, so the figures are supported. However, that chunk is the MD&A Summary Results of Operations table, not the Income Statements section the candidate attributes it to, and the gold-evidence Income Statements row was not among the retrieved excerpts. That mislabeling lowers citation support."
+  },
+  "status": "ok"
+}

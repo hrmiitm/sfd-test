@@ -1,0 +1,117 @@
+{
+  "question_id": "Q006",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.1282925580007941,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "NVIDIA\u2019s independent registered public accounting firm is **PricewaterhouseCoopers LLP (PwC)**. The supplied excerpts do **not** state the year it began serving as auditor. **[Accession 0001045810-25-000023, Item 15. Exhibits and Financial Statement Schedules, chunk 1365cad4-e6b6-50f3-bd02-acde30ea563c; Exhibit 23.1, chunk cb0a4777-10f6-5e37-8910-081e2a3f8a56]**",
+    "message": {
+      "role": "assistant",
+      "content": "NVIDIA\u2019s independent registered public accounting firm is **PricewaterhouseCoopers LLP (PwC)**. The supplied excerpts do **not** state the year it began serving as auditor. **[Accession 0001045810-25-000023, Item 15. Exhibits and Financial Statement Schedules, chunk 1365cad4-e6b6-50f3-bd02-acde30ea563c; Exhibit 23.1, chunk cb0a4777-10f6-5e37-8910-081e2a3f8a56]**",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq0GN_FGcByqvoZPcZNL8zuayCxTs2hMcLwbgaQHeXkGVtUnbntmzD5G1lM5qokD0mX7uhxAg6tfqsHY-pq5IpfSqsyVAiVh3SNHiwlsKexB_bOeXX4AG6LXrojLT1xdq5K01gCzPz_Mudsu00Ojt8U9rRAp0A7qncOscWi0E1IrfSAEI64XGaqiHJnhd-hozJXNfupnULlCKh27e4i5xfcxOy7zhxWhCqzZKZ5vbHgZJCPWFfvOnqLf-odFcwuysEPpPUy8pFXWmC0n6maesrqUcfAE2nkAa8C0XqM-fv1gtNSaPgPZdCAzoxaGKKEJ_f7Hfk3V0CsJBNLW1mK3peWXlQMjRp-P85XlYcj9HjasGFY8LSFvNuDsHBkvzHYyKhgmQRv4vGRyaA22eIGM349CMlryHw31Y2RcUt7F16aVrwNgK3Sxmo-w6W66gc_xJfs7YF0zR89jvZak3a-ZIwJZhvhQhVnYqXQwfN5qGYTmyKlRI0UycyELzqC5gsssKYyL_AgQ8QQOaJyWvUmgNj82b1k5ZQHn-xFvyNe2EUorEAzElHFATc218iNKKyb4oLBefIBjG3bsAm3C5_-73-VwbNeAAsIihKb-yU3LE5LGlvVbZXq7oxAMKMpP6O1CneAPxBaGQ3e0xZhA6jtroT_Kw1ZEtSFiz16vODm8wYPgtr-U-syYjNNkc8wR5oimY98KxZEDIBgvq3tJi6hkgjIAB7BY-8dWzpJ76OEZGHBzsChU9hmTvQ52NdUZdV5_m4GijPawp4CVgU2IpUb-Y0BOR7m66hsOA531iV05vydOX3ugoR70oVMJvVg_0ZTA287rU_7RNkVyj2wtsvBgyzP1SgpTAs1uV13Nv3qw3M7a8Ytkmoo2Caqr5MoVM-vezPohKoly4W0TI71GHmI_8j9DtQbL9tYrv_jGZvlf5jIOOPpZ_SlNkhbAuV-1BvnOqZqsaSwwaKQAmoEDVmZODSG9VDtbFpgpmUlSs6z8zoLLqfKxWC-eshv9mJwhhNqvBStrfazIbQNt2Oo921FG1SJFewV8awcZAU7tyiiJQawTRRoK8YkhdrQgDTb-fJKjfLlcQBmgxh_mMxYjFLRHRdeI3TOAYoYKs-B7pt9V60d74fTpjnDOrvx76KL0pCS0fufbyiUyf7UwePlTO6twgjPQGzwz0kjoxFduMo3w640qcvh4M883T620-wYe_Vi8almP7xvzm3Jb0lZyRV-5Yed-NxtDhv18iTKUJTZercK8oxqiuXoYHlRYHX8-tf5sewk-7yEVZSSfyCVe6EgzJXzbOpmBc5WkBLq3GlMhCj6fxner6la8wxgDlFErFy24QipYrx9BHsW9vleOvUb_8OVOpfDtipyHV6mgFBvIvbG3l0FhqDRpkfhfWmxXkJNRvbxMTqZ0l0hIZa1z4ZWHmPm8oTqHol1F1845LK4yUDY6n8yBivU_4mQgpsfHlHcBASM8AEhbPeQ2pcGG1USr_r2DNLHQn1TAl68eCf6fnPLIz-5xukaT8XfYGA9NQvxpteb2gnRbkVUAZGgHY4GLQUfCijM0o5WsiQUg1-n3dSIrkE3DG_3GE1LXOAx_a2FIlRjSTVId5ApOsSt3BX5aB1_Atco_zC_oKCbXXBxzYJrJFF4ezTbJoBBy3aVgHi_ri0YGYz_9OkqDgMx7RNpMb3Ev1RoOK7YDhFuMdd9aPUbSt6aHbRRyp_ZnytGlfR0dIykPRHQby8g7NbWfNwlZWiLr6ZYA1JcV_nEmJx8mIUz3Wf0PRWugJzcYEReUfxjlGIxIcJMgEdxpwqqNcFf2WmHsM5yrIELQkNK-lld6uHD3nhKwVgnRiieJ1N3Uad4EQmH70hBgnTJhSc3TNePFzex-t09KkHwwHqrepqzZX_DGLwXN4YNyvC5guB5vgroH69PbJW2L8oTdLug7whh3fhLspfvugwZ10uBVmDwQq1kCB0mpSduuSSXM9brvidH-XBzZWyPqmhbMIqh86YiAWHG5CnZbYU_kxGXnb1bwbNqMwBOQVkse2iLN8CMejZiBT0VEzODKlQFt4xIMrmwYEYoPimkZ6d7puFFiLxI5eeqeExxNN_vyFDRwEiFf8s7eI16oezSN3g6vITzYbY47yTDU8k7hM0CVMa7v1M0eVJfeDw9qLZIoJhJY0rLs_eV55NMlMkGK7vPv_81fqWccPyiDN-QfSTks_XbXKYZzq8WtNP0cLgkxi1lyITZ0_AMQ3VfBwBcWKYeIyWjsQTMLrrGdSZvjYukHDrycvSwi5zdBbMPFOy5ePZsKOLXUN_fIy1841Skpx5suwpMgatTOrklsbdrNFRYAzYwkq7Hljr1qC0eLYbaUBEtD5aifH3gFu60tMj7NM5wfhj-Nkglv2zgbPvVhkm87U6awRRbonAkW-5da3gXBRShL7VAXfhrVHHMfPViP6nqOozbC0pF1GE7p6LaTFBWMKsh5O0risxaxaNFgvNyGt0UMgl_hBz1oK7YNHEnH52mJCwreGRqC0LYbPO807rCxtCT8qBE1VT_x_Xt76w6cAyeA0J5-mfMvnByyeshVCZd-gdYkWvTb-6t170-fzFiLLka-9sTsByveRpfPKz98g6X-9yA91GbXKpJYA6MxBnW5fKcAUt2GHRV2H_z_5I0RFBIw8ldgF7Vd6Rm5J04VGeHKMj5c-iDXAsjq1uXO5Ay4UYy5gm4MIklBD_-DeIuMjLdLZueW4UdNWfzaKdJW4NU4IGZjQaeukgZn55Fvgd825IZtykJ6NAjnXZ7oJbMpoGgX3UYxYXx8MDMpzzFzB9bBD2dvqqdB_g0kqKG1ldKc7vZ13_usCnQOobb62aWQjZjqqZ1ZBUEX1hqEsMfbaHKEb4QJQj6mcplyQMqt4nnJ5_MmxQzqJQEssfT7t_zd_SFu_fHo1tbNvld_3VBxGwibrNcgeQPvPTTfvQxa345PenOIVrAqf4W8xIOg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+          "format": "openai-responses-v1",
+          "id": "rs_0d1b5d08fcecb98c016ad0637e0da487d1a6fa53a6886f8c07",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:44.865723+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d0f4040a7b4eb5717d07d1d6:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041851-8AYuAhh8GUMGLvwykhea",
+    "usage": {
+      "prompt_tokens": 9691,
+      "completion_tokens": 238,
+      "total_tokens": 9929,
+      "cost": 0.0013303,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 9688,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013303,
+        "upstream_inference_prompt_cost": 0.0012113,
+        "upstream_inference_completions_cost": 0.000119
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 110,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 35.04494351699941,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 45, \"citation_support\": 60, \"rationale\": \"The candidate correctly identifies PricewaterhouseCoopers LLP as the auditor, which matches the reference. However, it states the excerpts do not give the year service began, so it omits the key fact of 2004. The gold evidence quote 'We have served as the Company's auditor since 2004' appears in the Item 8 audit report, which the candidate did not retrieve; the retrieved excerpts from Item 15 and Exhibit 23.1 do not contain the 2004 statement. The candidate's abstention on the year is therefore an incorrect refusal on a question the reference treats as answerable, earning partial credit for the auditor identity only. Citations are to real retrieved chunks (Exhibit 23.1 and Item 15 chunk 1365cad4) that support the PwC identification, so citation support is good, though they do not support the year claim, which the candidate correctly did not make.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 45, \"citation_support\": 60, \"rationale\": \"The candidate correctly identifies PricewaterhouseCoopers LLP as the auditor, which matches the reference. However, it states the excerpts do not give the year service began, so it omits the key fact of 2004. The gold evidence quote 'We have served as the Company's auditor since 2004' appears in the Item 8 audit report, which the candidate did not retrieve; the retrieved excerpts from Item 15 and Exhibit 23.1 do not contain the 2004 statement. The candidate's abstention on the year is therefore an incorrect refusal on a question the reference treats as answerable, earning partial credit for the auditor identity only. Citations are to real retrieved chunks (Exhibit 23.1 and Item 15 chunk 1365cad4) that support the PwC identification, so citation support is good, though they do not support the year claim, which the candidate correctly did not make.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:59.009080+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d0f4040a7b4eb5717d07d1d6:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042076-UMd6MGmr53XrQlgmRuT9",
+    "usage": {
+      "prompt_tokens": 15303,
+      "completion_tokens": 313,
+      "total_tokens": 15616,
+      "cost": 0.0016868,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0016868,
+        "upstream_inference_prompt_cost": 0.0015303,
+        "upstream_inference_completions_cost": 0.0001565
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.6812044630005403,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 45,
+    "citation_support": 60,
+    "rationale": "The candidate correctly identifies PricewaterhouseCoopers LLP as the auditor, which matches the reference. However, it states the excerpts do not give the year service began, so it omits the key fact of 2004. The gold evidence quote 'We have served as the Company's auditor since 2004' appears in the Item 8 audit report, which the candidate did not retrieve; the retrieved excerpts from Item 15 and Exhibit 23.1 do not contain the 2004 statement. The candidate's abstention on the year is therefore an incorrect refusal on a question the reference treats as answerable, earning partial credit for the auditor identity only. Citations are to real retrieved chunks (Exhibit 23.1 and Item 15 chunk 1365cad4) that support the PwC identification, so citation support is good, though they do not support the year claim, which the candidate correctly did not make."
+  },
+  "status": "ok"
+}

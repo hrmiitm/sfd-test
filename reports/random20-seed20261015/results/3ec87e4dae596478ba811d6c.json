@@ -1,0 +1,977 @@
+{
+  "question_id": "Q004",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 26.322355938000328,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to the cover page of Amazon.com, Inc.\u2019s Form 10-K for the fiscal year ended December 31, 2024 (Accession No. `0001018724-25-000004`), the number of shares of common stock outstanding as of January 29, 2025 was:\n\n**10,597,729,352 shares**",
+    "usage": {
+      "prompt_tokens": 31783,
+      "completion_tokens": 347,
+      "total_tokens": 32130,
+      "cost": 0.0251385
+    },
+    "seconds": 18.33775304000119,
+    "tool_seconds": 26.322355938000328,
+    "tool_calls": 4,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_243729",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Amazon outstanding January 29 2025 common stock\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1+S5hriMM47Fli+v6No3X7et5smb7Yuo0Rmn42aBSQ3dovjIVmT5WCvkemAdVN1MYxNN2KZ/6o+2bxtx8BbK/rCQp4wO2DYYHRXjQ1D/+d8lfME",
+              "format": "google-gemini-v1",
+              "id": "call_243729",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_243729",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Amazon outstanding January 29 2025 common stock\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:24:02.903449+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "3ec87e4dae596478ba811d6c:agent:0",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792041841-Jp5ChT01Ez0rXKbEsYiR",
+        "usage": {
+          "prompt_tokens": 920,
+          "completion_tokens": 28,
+          "total_tokens": 948,
+          "cost": 0.000795,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000795,
+            "upstream_inference_prompt_cost": 0.00069,
+            "upstream_inference_completions_cost": 0.000105
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.270497061000242,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_333887",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"form_type\":\"10-K\",\"company\":\"AMAZON\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1+ZavELSLpnjSPe9tzAoAHjMTQqI9NYO48beLWNRTHP6KQXPDedpPbXHf2ed6wOrU5eiXfxdbhr1Owt0oHjIJpbpwOE04oUzFrnOVBV6+Y/NAxK",
+              "format": "google-gemini-v1",
+              "id": "call_333887",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_333887",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"form_type\":\"10-K\",\"company\":\"AMAZON\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:27:47.909512+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "3ec87e4dae596478ba811d6c:agent:1",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042062-JeIncOL1NM87MLVahZF3",
+        "usage": {
+          "prompt_tokens": 5596,
+          "completion_tokens": 72,
+          "total_tokens": 5668,
+          "cost": 0.004467,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004467,
+            "upstream_inference_prompt_cost": 0.004197,
+            "upstream_inference_completions_cost": 0.00027
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 5.7835922129997925,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_429774",
+              "function": {
+                "name": "duckdb_query",
+                "arguments": "{\"sql\":\"SELECT file_stem, source_path, accession, year, month, char_count FROM filings WHERE accession='0001018724'\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1/GL33GKmLdARCay30WzoObJDdTj/G8AirYAguJH18BZuHrKSKaihoCPUXrdf6luEC1fiaWY0x1T2cEaiKqm8d7JwiSjf3620CXs0iQEaUaknhs",
+              "format": "google-gemini-v1",
+              "id": "call_429774",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_429774",
+            "function": {
+              "name": "duckdb_query",
+              "arguments": "{\"sql\":\"SELECT file_stem, source_path, accession, year, month, char_count FROM filings WHERE accession='0001018724'\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:30:53.909108+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "3ec87e4dae596478ba811d6c:agent:2",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042251-vhVDbHf1WXI0vdWjqOQu",
+        "usage": {
+          "prompt_tokens": 5754,
+          "completion_tokens": 50,
+          "total_tokens": 5804,
+          "cost": 0.004503,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004503,
+            "upstream_inference_prompt_cost": 0.0043155,
+            "upstream_inference_completions_cost": 0.0001875
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.067580953000288,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_640585",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"needle\":\"January 29, 2025\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"file_stem\":\"0001018724-25-000004\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1/EhLTQ1IBYgknlb4JiZUpXUpHkMSwQw4XR/3v+NJpTChAT51pFw73cAdy8zET5ecIGEXFDMSDlsw/nbAJKhQPkp6fbUro0DvccsK/Gk/P0f+mv",
+              "format": "google-gemini-v1",
+              "id": "call_640585",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_640585",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"needle\":\"January 29, 2025\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"file_stem\":\"0001018724-25-000004\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:35:16.542274+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "3ec87e4dae596478ba811d6c:agent:3",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042513-2vJMsEIy0YEQ5VGAf9fA",
+        "usage": {
+          "prompt_tokens": 7603,
+          "completion_tokens": 96,
+          "total_tokens": 7699,
+          "cost": 0.00606225,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00606225,
+            "upstream_inference_prompt_cost": 0.00570225,
+            "upstream_inference_completions_cost": 0.00036
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.4914906490002977,
+        "attempts": 1
+      },
+      {
+        "text": "According to the cover page of Amazon.com, Inc.\u2019s Form 10-K for the fiscal year ended December 31, 2024 (Accession No. `0001018724-25-000004`), the number of shares of common stock outstanding as of January 29, 2025 was:\n\n**10,597,729,352 shares**",
+        "message": {
+          "role": "assistant",
+          "content": "According to the cover page of Amazon.com, Inc.\u2019s Form 10-K for the fiscal year ended December 31, 2024 (Accession No. `0001018724-25-000004`), the number of shares of common stock outstanding as of January 29, 2025 was:\n\n**10,597,729,352 shares**",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a1+aGIWBPFwUQ2xVVPZA9VqDr7nJZaKUB5/d8agsGsQcWT2KSOrD6KPvKgzTo1V2/u6/GflbkfJMSDwuidkkbbp1ju7ZjX72JtP12igyoqzHPLi9",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:35:35.130494+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "3ec87e4dae596478ba811d6c:agent:4",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042532-Tyyh3tfZoeJxT3xzZpud",
+        "usage": {
+          "prompt_tokens": 11910,
+          "completion_tokens": 101,
+          "total_tokens": 12011,
+          "cost": 0.00931125,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00931125,
+            "upstream_inference_prompt_cost": 0.0089325,
+            "upstream_inference_completions_cost": 0.00037875
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.724592164000569,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_243729",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Amazon outstanding January 29 2025 common stock\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0001104659-25-007860",
+              "cik": "0001383951",
+              "company": "Nomura America Finance, LLC",
+              "form_type": "424B2",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 317,
+              "source_md5": "d00c37ebda304b62397e71c9344dbd16",
+              "content_sha256": "9f544056bb884c3e6d831f3d8bee37bb32d18da6334059fe3f7e123942133a32",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "06597cb7-a6cf-596d-a9db-55738ed49910",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 19,
+              "char_start": 53159,
+              "char_end": 56347,
+              "text": "The historical values of the common stock of Apple Inc. should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Apple Inc. on any observation date, including the final valuation date.\n\n**Description of Microsoft Corporation**\n\nMicrosoft Corporation develops, manufactures, licenses, sells, and supports software products. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 001-37845, or its CIK Code: 0000789019. Its common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"MSFT.\"\n\n**Historical performance of the common stock of Microsoft Corporation**\n\nThe following graph sets forth the historical performance of the common stock of Microsoft Corporation based on the daily historical closing values from January 1, 2020 through January 29, 2025. We obtained the closing values below from Bloomberg. We have not undertaken any independent review of, or made any due diligence inquiry with respect to, the information obtained from Bloomberg.\n\n![](tm254667d10_424b2img003.jpg)\n\nThe historical values of the common stock of Microsoft Corporation should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Microsoft Corporation on any observation date, including the final valuation date.\n\n**Description of Amazon.com, Inc.**\n\nAmazon.com, Inc. is an online retailer. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 000-22513, or its CIK Code: 0001018724. Its common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"AMZN.\"\n\n**Historical performance of the common stock of Amazon.com, Inc.**\n\nThe following graph sets forth the historical performance of the common stock of Amazon.com, Inc. based on the daily historical closing values from January 1, 2020 through January 29, 2025. We obtained the closing values below from Bloomberg L.P. (\"Bloomberg\"). We have not undertaken any independent review of, or made any due diligence inquiry with respect to, the information obtained from Bloomberg.\n\n![](tm254667d10_424b2img004.jpg)\n\nThe historical values of the common stock of Amazon.com, Inc. should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Amazon.com, Inc. on any observation date, including the final valuation date.\n\n**Description of Alphabet Inc.**\n\nAlphabet Inc. operates as a holding company. The company, through its subsidiaries, provides web-based search, advertisements, maps, software applications, mobile operating systems, consumer content, enterprise solutions, commerce, and hardware products. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 001-37580, or its CIK Code: 0001652044. Its Class A common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"GOOGL.\"\n\n**Historical performance of the Class A common stock of Alphabet Inc.**",
+              "token_count": 663,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001193125-25-012347",
+              "cik": "0000798528",
+              "company": "ODYSSEY MARINE EXPLORATION INC",
+              "form_type": "1-A",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 289,
+              "source_md5": "c6ad94c06369af197078ea5e3d29e7c2",
+              "content_sha256": "deb23a5b5ab0b496be97ad644428e6df4c46f5f8759bec4d430fc508197828ce",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "28c8665c-c7a4-5467-8fa8-6895a9ad318c",
+              "section": "[**Table of Contents**](#toc)",
+              "section_index": 8,
+              "chunk_index": 0,
+              "char_start": 16518,
+              "char_end": 17300,
+              "text": "##### [**Table of Contents**](#toc)\n(1) Based on 29,125,333 shares of common stock issued and outstanding as of January 23, 2025. Excludes the following:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 2,152,074 shares underlying stock options outstanding under our employee stock incentive plans\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 10,727,388 shares underlying outstanding warrants for the purchase of common stock\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 20,282,409 shares underlying the conversion of convertible debt outstanding\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 7,220,141 shares underlying the right to acquire shares of our common stock pursuant to a stock purchase\nagreement\n\n------",
+              "token_count": 205,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001739566-25-000053",
+              "cik": "0001739566",
+              "company": "Utz Brands, Inc.",
+              "form_type": "10-K",
+              "filed_date": "20250220",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 60846,
+              "source_md5": "f48385a7b14848b80d8e7e164d660577",
+              "content_sha256": "3d5223dfe2cb813d95d09f53141bf5dcc11cde32aa878e4fb82afbf87bacc18b",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "f6e68303-b71e-5763-a496-043634a7f4f4",
+              "section": "Item 8. Financial Statements and Supplementary Data",
+              "section_index": 12,
+              "chunk_index": 17,
+              "char_start": 370623,
+              "char_end": 375374,
+              "text": "Basic earnings per share is based on the weighted average number of shares of Class A Common Stock issued and outstanding. Diluted earnings per share is based on the weighted average number shares of Class A Common Stock issued and outstanding and the effect of all dilutive common stock equivalents and potentially dilutive share-based awards outstanding. There is no difference in the number of shares used to calculate basic and diluted shares outstanding due to the Company's net loss position. The potentially dilutive securities that would be anti-dilutive due to the Company's net loss are not included in the calculation of diluted net loss per share attributable to controlling interest. The anti-dilutive securities are included in the table below. Refer to *Note 11. Share-Based Compensation* for further information on the share-based awards considered in the diluted earnings per share computation.\n\n------\n\nThe following tables reconcile the numerators and denominators used in the computations of both basic and diluted earnings per\n\nshare:\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| *(in thousands, except share data)* | **For the Fiscal Year Ended December 29, 2024** | **For the Fiscal Year Ended December 31, 2023** | **For the Fiscal Year Ended January 1, 2023** |\n| *Numerator:* |  |  |  |\n| &nbsp;&nbsp;Net income (loss) attributable to controlling interest | $15974 | $(24937) | $(392) |\n| *Denominator:* |  |  |  |\n| &nbsp;&nbsp;Weighted average Class A Common Stock shares, basic | 82102876 | 81081458 | 80093094 |\n| &nbsp;&nbsp;Dilutive securities included in diluted earnings per share calculation |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Warrants | 2423454 |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;RSUs | 544916 |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;PSUs | 327939 |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Stock options | 34795 |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total dilutive weighted average shares | 85433980 | 81081458 | 80093094 |\n| **Basic earnings per share** | $0.19 | $(0.31) | $\u2014 |\n| **Diluted earnings per share** | $0.19 | $(0.31) | $\u2014 |\n| Weighted average Class V Common Stock not subject to earnings per share calculation | 58725374 | 59349000 | 59349000 |\n| Net (income) loss attributable to noncontrolling interest | $(14763) | $15095 | 13649 |\n\n---\n\n\n\nThe diluted earnings per share computation excludes the effect of certain RSUs and stock options granted to directors and management which convert into, or are exercisable for, shares of Class A Common Stock upon vesting as their inclusion would have been anti-dilutive. Anti-dilutive securities excluded from diluted earnings per share calculation:\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| *(in thousands)* | **For the Fiscal Year Ended December 29, 2024** | **For the Fiscal Year Ended December 31, 2023** | **For the Fiscal Year Ended January 1, 2023** |\n| &nbsp;&nbsp;&nbsp;&nbsp;Warrants |  | 1882627 | 1888256 |\n| &nbsp;&nbsp;&nbsp;&nbsp;RSUs | 78105 | 271330 | 83261 |\n| &nbsp;&nbsp;&nbsp;&nbsp;PSUs | 194695 | 125958 | 62408 |\n\n---\n\n\n\nShares of the Company's Class V Common Stock do not participate in earnings of the Company and, therefore, are not participating securities. The PSUs, RSUs granted to our directors and certain employees in fiscal year 2020, and 2020 LTIP RSUs were not considered participating securities despite the holders of these stock-based compensation awards being entitled to participate in dividends declared on Class A Common Stock, if and when declared, on a one-to-one per-share basis, because the dividends are only payable upon full vesting of the awards, and as such, the dividend is forfeitable. The net income attributable to the noncontrolling interest was $14.8 million for the fiscal year ended December 29, 2024, net loss attributable to non-controlling interest of $15.1 million for the fiscal year ended December 31, 2023, and net loss attributable to non-controlling interest of $13.6 million for the fiscal year ended January 1, 2023, respectively.\n\n**20. SUBSEQUENT EVENTS**\n\nOn January 29, 2025, the Company amended its Term Loan B to refinance in full all of the $630.3 million outstanding term loan, reduce the interest rate from SOFR plus the applicable rate of 2.75% to SOFR plus the applicable rate of 2.50% and extended the maturity date from January 20, 2028 to January 29, 2032, as well as make certain other changes. Other material terms of the Term Loan B remain unchanged.\n\nIn January 2025, noncontrolling interest exchanged an additional 2,000,000 Common Company Units together with the surrender and cancellation of the same number of shares of Class V Common Stock for an equal number of shares of Class A Common Stock. The Company did not receive any proceeds as a result of this exchange.\n\n------",
+              "token_count": 1195,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001193125-25-012347",
+              "cik": "0000798528",
+              "company": "ODYSSEY MARINE EXPLORATION INC",
+              "form_type": "1-A",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 289,
+              "source_md5": "c6ad94c06369af197078ea5e3d29e7c2",
+              "content_sha256": "deb23a5b5ab0b496be97ad644428e6df4c46f5f8759bec4d430fc508197828ce",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "59ef80e7-0827-573c-98db-28f5362a4140",
+              "section": "[**Table of Contents**](#toc)",
+              "section_index": 58,
+              "chunk_index": 2,
+              "char_start": 211245,
+              "char_end": 211571,
+              "text": "(1) Unless otherwise noted, the nature of beneficial ownership consists of sole voting and investment power.\n\n(2) As of January 15, 2025, the Company had 29,125,333 shares of common stock outstanding.\n\n(3) Consists of 267,949 shares and 348,069 shares underlying currently exercisable stock options held by Mr.\nGordon.\n\n------",
+              "token_count": 79,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001104659-25-007458",
+              "cik": "0001383951",
+              "company": "Nomura America Finance, LLC",
+              "form_type": "424B2",
+              "filed_date": "20250130",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 318,
+              "source_md5": "6d5a84d2d189ee21cff048d9e08e55ba",
+              "content_sha256": "51ea8c6e6ad80a39d50751db3b7001a786ce5042cfcf17a63b44f0a7e15cb944",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "4bb2141f-8e3e-5194-9001-c2e51c1790fe",
+              "section": "Nomura",
+              "section_index": 5,
+              "chunk_index": 0,
+              "char_start": 73857,
+              "char_end": 76052,
+              "text": "# Nomura\n\nJanuary 29, 2025\n\nTERMS OF THE NOTES\n\n| Issuer: | Nomura America Finance, LLC (\u201cwe\u201d or \u201cus\u201d) |  |  |\n| --- | --- | --- | --- |\n| Guarantor: | Nomura Holdings, Inc. (\u201cNomura\u201d) |  |  |\n| Principal Amount: | US$450,000 |  |  |\n| Reference Assets: | The least performing of the common stock of The Goldman Sachs Group, Inc. (Ticker: GS) (\u201cGS\u201d), the common stock of Citigroup Inc. (Ticker: C) (\u201cC\u201d) and the common stock of Morgan Stanley (Ticker: MS) (\u201cMS\u201d) (each, a \u201creference asset\u201d and together, the \u201creference assets\u201d) |  |  |\n| Trade Date: | January 29, 2025 |  |  |\n| Original Issue Date: | January 31, 2025 |  |  |\n| Stated Maturity Date: | February 3, 2028, unless that date is not a business day, in which case the maturity date will be the next following business day. The actual maturity date for the notes may be different if postponed as described under \u201cGeneral Terms of the Notes-Market Disruption Events\u201d in the accompanying product prospectus supplement. |  |  |\n| Final Valuation Date: | January 31, 2028, subject to postponement as described under \u201cGeneral Terms of the Notes-Market Disruption Events\u201d in the accompanying product prospectus supplement. |  |  |\n| Coupon Observation Dates and Coupon Payment Dates: | Coupon Observation Dates | Coupon Payment Dates |  |\n|  | April 29, 2025 | May 2, 2025 |  |\n|  | July 29, 2025* | August 1, 2025** |  |\n|  | October 29, 2025* | November 3, 2025** |  |\n|  | January 29, 2026* | February 3, 2026** |  |\n|  | April 29, 2026* | May 4, 2026** |  |\n|  | July 29, 2026* | August 3, 2026** |  |\n|  | October 29, 2026* | November 3, 2026** |  |\n|  | January 29, 2027* | February 3, 2027** |  |\n|  | April 29, 2027* | May 4, 2027** |  |\n|  | July 29, 2027* | August 3, 2027** |  |\n|  | October 29, 2027* | November 3, 2027** |  |\n|  | January 31, 2028 | February 3, 2028 |  |\n|  | (the Final Valuation Date) | (the Stated Maturity Date) |  |\n|  | *These coupon observation dates are also call observation dates **These coupon payment dates are also call settlement dates Each subject to postponement as described under \u201cGeneral Terms of the Notes-Market Disruption Events\u201d in the accompanying product prospectus supplement. |  |  |\n",
+              "token_count": 696,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.014296374999503314
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_333887",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"form_type\":\"10-K\",\"company\":\"AMAZON\"}"
+          }
+        },
+        "output": {
+          "error": "malloc of size 646993472 failed",
+          "error_type": "ArrowMemoryError",
+          "resources": {
+            "peak_rss_mib": 1020.27734375,
+            "cpu_seconds": 9.074564,
+            "wall_seconds": 11.389194356999724,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 23.070804396000312
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_429774",
+          "function": {
+            "name": "duckdb_query",
+            "arguments": "{\"sql\":\"SELECT file_stem, source_path, accession, year, month, char_count FROM filings WHERE accession='0001018724'\"}"
+          }
+        },
+        "output": {
+          "rows": [
+            {
+              "file_stem": "0001018724-25-000014",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 7541
+            },
+            {
+              "file_stem": "0001018724-25-000024",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 9123
+            },
+            {
+              "file_stem": "0001959173-25-001264",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 6103
+            },
+            {
+              "file_stem": "0002007317-25-000181",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 5621
+            },
+            {
+              "file_stem": "0001018724-25-000004",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 348067
+            },
+            {
+              "file_stem": "0001018724-25-000002",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 58230
+            },
+            {
+              "file_stem": "0001018724-25-000010",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 6061
+            },
+            {
+              "file_stem": "0001018724-25-000020",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 7520
+            },
+            {
+              "file_stem": "0001104659-25-010585",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 12132
+            },
+            {
+              "file_stem": "0001950047-25-001131",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 5475
+            },
+            {
+              "file_stem": "0001018724-25-000018",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 9182
+            },
+            {
+              "file_stem": "0001018724-25-000012",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 7558
+            },
+            {
+              "file_stem": "0001018724-25-000016",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 9541
+            },
+            {
+              "file_stem": "0001104659-25-010572",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 4641
+            },
+            {
+              "file_stem": "0001018724-25-000008",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 6095
+            },
+            {
+              "file_stem": "0001018724-25-000006",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 6866
+            },
+            {
+              "file_stem": "0001959173-25-001237",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 5702
+            },
+            {
+              "file_stem": "0001959173-25-001235",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 5679
+            },
+            {
+              "file_stem": "0001950047-25-000777",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 6241
+            },
+            {
+              "file_stem": "0002007317-25-000194",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "accession": "0001018724",
+              "year": 2025,
+              "month": 2,
+              "char_count": 5652
+            }
+          ],
+          "truncated": true,
+          "resources": {
+            "peak_rss_mib": 505.39453125,
+            "cpu_seconds": 0.618045,
+            "wall_seconds": 0.5719963780002217,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 0.722764883000309
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_640585",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"needle\":\"January 29, 2025\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"file_stem\":\"0001018724-25-000004\"}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0001018724-25-000004:4826:16826",
+          "accession": "0001018724-25-000004",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+          "char_start": 4826,
+          "char_end": 16826,
+          "text": "Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report. \u2612\n\nIf securities are registered pursuant to Section 12(b) of the Exchange Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. \u2610\n\nIndicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant's executive officers during the relevant recovery period pursuant to \u00a7240.10D-1(b). \u2610\n\nIndicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2610&nbsp;&nbsp;&nbsp;&nbsp;No \u2612\n\n---\n\n\n\n| | |\n|:---|:---|\n| Aggregate market value of voting stock held by non-affiliates of the registrant as of June 30, 2024 | $1815014489485 |\n| Number of shares of common stock outstanding as of January 29, 2025 | 10597729352 |\n\n---\n\n\n\n____________________________________\n\n**DOCUMENTS INCORPORATED BY REFERENCE**\n\nThe information required by Part III of this Report, to the extent not set forth herein, is incorporated herein by reference from the registrant's definitive proxy statement relating to the Annual Meeting of Shareholders to be held in 2025, which definitive proxy statement shall be filed with the Securities and Exchange Commission within 120 days after the end of the fiscal year to which this Report relates.\n\n\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**AMAZON.COM, INC.**\n\n**FORM 10-K**\n\n**For the Fiscal Year Ended December 31, 2024** \n\n**INDEX**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | | **Page** |\n| **PART I** | **PART I** | |\n| Item 1. | <u>[Business](#i8a64c58a8ced4ccaa47e02e81fab0039_13)</u> | <u>[3](#i8a64c58a8ced4ccaa47e02e81fab0039_13)</u> |\n| Item 1A. | <u>[Risk Factors](#i8a64c58a8ced4ccaa47e02e81fab0039_16)</u> | <u>[6](#i8a64c58a8ced4ccaa47e02e81fab0039_16)</u> |\n| Item 1B. | <u>[Unresolved Staff Comments](#i8a64c58a8ced4ccaa47e02e81fab0039_19)</u> | <u>[16](#i8a64c58a8ced4ccaa47e02e81fab0039_19)</u> |\n| Item 1C. | <u>[Cybersecurity](#i8a64c58a8ced4ccaa47e02e81fab0039_22)</u> | <u>[17](#i8a64c58a8ced4ccaa47e02e81fab0039_22)</u> |\n| Item 2. | <u>[Properties](#i8a64c58a8ced4ccaa47e02e81fab0039_25)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_25)</u> |\n| Item 3. | <u>[Legal Proceedings](#i8a64c58a8ced4ccaa47e02e81fab0039_28)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_28)</u> |\n| Item 4. | <u>[Mine Safety Disclosures](#i8a64c58a8ced4ccaa47e02e81fab0039_31)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_31)</u> |\n| **PART II** | **PART II** |  |\n| Item 5. | <u>[Market for the Registrant's Common Stock, Related Shareholder Matters, and Issuer Purchases of Equity Securities](#i8a64c58a8ced4ccaa47e02e81fab0039_37)</u> | <u>[19](#i8a64c58a8ced4ccaa47e02e81fab0039_37)</u> |\n| Item 6. | <u>[Reserved](#i8a64c58a8ced4ccaa47e02e81fab0039_43)</u> | <u>[19](#i8a64c58a8ced4ccaa47e02e81fab0039_43)</u> |\n| Item 7. | <u>[Management's Discussion and Analysis of Financial Condition and Results of Operations](#i8a64c58a8ced4ccaa47e02e81fab0039_49)</u> | <u>[20](#i8a64c58a8ced4ccaa47e02e81fab0039_49)</u> |\n| Item 7A. | <u>[Quantitative and Qualitative Disclosures About Market Risk](#i8a64c58a8ced4ccaa47e02e81fab0039_100)</u> | <u>[31](#i8a64c58a8ced4ccaa47e02e81fab0039_100)</u> |\n| Item 8. | <u>[Financial Statements and Supplementary Data](#i8a64c58a8ced4ccaa47e02e81fab0039_112)</u> | <u>[33](#i8a64c58a8ced4ccaa47e02e81fab0039_112)</u> |\n| Item 9. | <u>[Changes in and Disagreements with Accountants on Accounting and Financial Disclosure](#i8a64c58a8ced4ccaa47e02e81fab0039_349)</u> | <u>[70](#i8a64c58a8ced4ccaa47e02e81fab0039_349)</u> |\n| Item 9A. | <u>[Controls and Procedures](#i8a64c58a8ced4ccaa47e02e81fab0039_352)</u> | <u>[70](#i8a64c58a8ced4ccaa47e02e81fab0039_352)</u> |\n| Item 9B. | <u>[Other Information](#i8a64c58a8ced4ccaa47e02e81fab0039_358)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_358)</u> |\n| Item 9C. | <u>[Disclosure Regarding Foreign Jurisdictions that Prevent Inspections](#i8a64c58a8ced4ccaa47e02e81fab0039_364)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_364)</u> |\n| **PART III** | **PART III** |  |\n| Item 10. | <u>[Directors, Executive Officers, and Corporate Governance](#i8a64c58a8ced4ccaa47e02e81fab0039_370)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_370)</u> |\n| Item 11. | <u>[Executive Compensation](#i8a64c58a8ced4ccaa47e02e81fab0039_373)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_373)</u> |\n| Item 12. | <u>[Security Ownership of Certain Beneficial Owners and Management and Related Shareholder Matters](#i8a64c58a8ced4ccaa47e02e81fab0039_376)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_376)</u> |\n| Item 13. | <u>[Certain Relationships and Related Transactions, and Director Independence](#i8a64c58a8ced4ccaa47e02e81fab0039_379)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_379)</u> |\n| Item 14. | <u>[Principal Accountant Fees and Services](#i8a64c58a8ced4ccaa47e02e81fab0039_382)</u> | <u>[73](#i8a64c58a8ced4ccaa47e02e81fab0039_382)</u> |\n| **PART IV** | **PART IV** |  |\n| Item 15. | <u>[Exhibits, Financial Statement Schedules](#i8a64c58a8ced4ccaa47e02e81fab0039_388)</u> | <u>[74](#i8a64c58a8ced4ccaa47e02e81fab0039_388)</u> |\n| Item 16. | <u>[Form 10-K Summary](#i8a64c58a8ced4ccaa47e02e81fab0039_391)</u> | <u>[76](#i8a64c58a8ced4ccaa47e02e81fab0039_391)</u> |\n| <u>[Signatures](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> | <u>[Signatures](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> | <u>[77](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**AMAZON.COM, INC.**\n\n**PART I**\n\n---\n\n\n\n| | |\n|:---|:---|\n| **Item 1.** | ***Business*** |\n\n---\n\n\n\n*This Annual Report on Form 10-K and the documents incorporated herein by reference contain forward-looking statements based on expectations, estimates, and projections as of the date of this filing. Actual results and outcomes may differ materially from those expressed in forward-looking statements. See Item 1A of Part I \u2014 \"Risk Factors.\" As used herein, \"Amazon.com,\" \"we,\" \"our,\" and similar terms include Amazon.com, Inc. and its subsidiaries, unless the context indicates otherwise.*\n\n**General**\n\nWe seek to be Earth's most customer-centric company. We are guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. In each of our segments, we serve our primary customer sets, consisting of consumers, sellers, developers, enterprises, content creators, advertisers, and employees.\n\nWe have organized our operations into three segments: North America, International, and Amazon Web Services (\"AWS\"). These segments reflect the way the Company evaluates its business performance and manages its operations. Information on our net sales is contained in Item 8 of Part II, \"Financial Statements and Supplementary Data \u2014 Note 10 \u2014 Segment Information.\"\n\n**Consumers**\n\nWe serve consumers through our online and physical stores and focus on selection, price, and convenience. We design our stores to enable hundreds of millions of unique products to be sold by us and by third parties across dozens of product categories. Customers access our offerings through our websites, mobile apps, Alexa, devices, streaming, and physically visiting our stores. We also manufacture and sell electronic devices, including Kindle, Fire tablet, Fire TV, Echo, Ring, Blink, and eero, and we develop and produce media content. We seek to offer our customers low prices, fast and free delivery, easy-to-use functionality, and timely customer service. In addition, we offer subscription services such as Amazon Prime, a membership program that includes fast, free shipping on tens of millions of items, access to award-winning movies and series, live sports, and other benefits.\n\nWe fulfill customer orders in a number of ways, including through: North America and International fulfillment networks that we operate; co-sourced and outsourced arrangements in certain countries; digital delivery; and through our physical stores. We operate customer service centers globally, which are supplemented by co-sourced arrangements. See Item 2 of Part I, \"Properties.\"\n\n**Sellers**\n\nWe offer programs that enable sellers to grow their businesses, sell their products in our stores, and fulfill orders using our services. We are not the seller of record in these transactions. We earn fixed fees, a percentage of sales, per-unit activity fees, interest, or some combination thereof, for our seller programs.\n\n**Developers and Enterprises**\n\nWe serve developers and enterprises of all sizes, including start-ups, government agencies, and academic institutions, through AWS, which offers a broad set of on-demand technology services, including compute, storage, database, analytics, and machine learning, and other services.\n\n**Content Creators**\n\nWe offer programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content.\n\n**Advertisers**\n\nWe provide advertising services to sellers, vendors, publishers, authors, and others, through programs such as sponsored ads, display, and video advertising.\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**Competition**\n\nOur businesses encompass a large variety of product types, service offerings, and delivery channels. The worldwide marketplace in which we compete is evolving rapidly and intensely competitive, and we face a broad array of competitors from many different industry sectors around the world. Our current and potential competitors include: (1) physical, e-commerce, and omnichannel retailers, publishers, vendors, distributors, manufacturers, and producers of the products we offer and sell to consumers and businesses; (2) publishers, producers, and distributors of physical, digital, and interactive media of all types and all distribution channels; (3) web search engines, comparison shopping websites, social networks, web portals, virtual assistants, and other online and app-based means of discovering, using, or acquiring goods and services, either directly or in collaboration with other retailers; (4) companies that provide e-commerce services, including website development and hosting, omnichannel sales, inventory and supply chain management, advertising, fulfillment, customer service, and payment processing; (5) companies that provide fulfillment and logistics services for themselves or for third parties, whether online or offline; (6) companies that provide information technology services or products, including on-premises or cloud-based infrastructure, tools and services relating to artificial intelligence, and other services; (7) companies that design, manufacture, market, or sell consumer electronics, communications, and other electronic devices and services; (8) companies that sell grocery products online and in physical stores; (9) companies that provide advertising services, whether in digital or other formats; and (10) providers of virtual or in-person healthcare services. We believe that the principal competitive factors in our retail businesses include selection, price, and convenience, including fast and reliable fulfillment. Additional competitive factors for our seller and enterprise services include the quality, speed, and reliability of our services and tools, as well as customers' ability and willingness to change business practices. Some of our current and potential competitors have greater resources, longer histories, more customers, greater brand recognition, and greater control over inputs critical to our various businesses. They may secure better terms from suppliers, a",
+          "total_chars": 348067,
+          "next_start": 16826,
+          "resources": {
+            "peak_rss_mib": 944.05078125,
+            "cpu_seconds": 1.0345019999999998,
+            "wall_seconds": 0.9968087380002544,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 2.5144902840002032
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0001104659-25-007860",
+        "cik": "0001383951",
+        "company": "Nomura America Finance, LLC",
+        "form_type": "424B2",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 317,
+        "source_md5": "d00c37ebda304b62397e71c9344dbd16",
+        "content_sha256": "9f544056bb884c3e6d831f3d8bee37bb32d18da6334059fe3f7e123942133a32",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "06597cb7-a6cf-596d-a9db-55738ed49910",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 19,
+        "char_start": 53159,
+        "char_end": 56347,
+        "text": "The historical values of the common stock of Apple Inc. should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Apple Inc. on any observation date, including the final valuation date.\n\n**Description of Microsoft Corporation**\n\nMicrosoft Corporation develops, manufactures, licenses, sells, and supports software products. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 001-37845, or its CIK Code: 0000789019. Its common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"MSFT.\"\n\n**Historical performance of the common stock of Microsoft Corporation**\n\nThe following graph sets forth the historical performance of the common stock of Microsoft Corporation based on the daily historical closing values from January 1, 2020 through January 29, 2025. We obtained the closing values below from Bloomberg. We have not undertaken any independent review of, or made any due diligence inquiry with respect to, the information obtained from Bloomberg.\n\n![](tm254667d10_424b2img003.jpg)\n\nThe historical values of the common stock of Microsoft Corporation should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Microsoft Corporation on any observation date, including the final valuation date.\n\n**Description of Amazon.com, Inc.**\n\nAmazon.com, Inc. is an online retailer. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 000-22513, or its CIK Code: 0001018724. Its common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"AMZN.\"\n\n**Historical performance of the common stock of Amazon.com, Inc.**\n\nThe following graph sets forth the historical performance of the common stock of Amazon.com, Inc. based on the daily historical closing values from January 1, 2020 through January 29, 2025. We obtained the closing values below from Bloomberg L.P. (\"Bloomberg\"). We have not undertaken any independent review of, or made any due diligence inquiry with respect to, the information obtained from Bloomberg.\n\n![](tm254667d10_424b2img004.jpg)\n\nThe historical values of the common stock of Amazon.com, Inc. should not be taken as an indication of future performance, and no assurance can be given as to the closing value of the common stock of Amazon.com, Inc. on any observation date, including the final valuation date.\n\n**Description of Alphabet Inc.**\n\nAlphabet Inc. operates as a holding company. The company, through its subsidiaries, provides web-based search, advertisements, maps, software applications, mobile operating systems, consumer content, enterprise solutions, commerce, and hardware products. Information filed by the company with the SEC under the Exchange Act can be located by reference to its SEC file number: 001-37580, or its CIK Code: 0001652044. Its Class A common stock is listed on the Nasdaq Global Select Market under the ticker symbol \"GOOGL.\"\n\n**Historical performance of the Class A common stock of Alphabet Inc.**",
+        "token_count": 663,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001193125-25-012347",
+        "cik": "0000798528",
+        "company": "ODYSSEY MARINE EXPLORATION INC",
+        "form_type": "1-A",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 289,
+        "source_md5": "c6ad94c06369af197078ea5e3d29e7c2",
+        "content_sha256": "deb23a5b5ab0b496be97ad644428e6df4c46f5f8759bec4d430fc508197828ce",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "28c8665c-c7a4-5467-8fa8-6895a9ad318c",
+        "section": "[**Table of Contents**](#toc)",
+        "section_index": 8,
+        "chunk_index": 0,
+        "char_start": 16518,
+        "char_end": 17300,
+        "text": "##### [**Table of Contents**](#toc)\n(1) Based on 29,125,333 shares of common stock issued and outstanding as of January 23, 2025. Excludes the following:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 2,152,074 shares underlying stock options outstanding under our employee stock incentive plans\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 10,727,388 shares underlying outstanding warrants for the purchase of common stock\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 20,282,409 shares underlying the conversion of convertible debt outstanding\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 7,220,141 shares underlying the right to acquire shares of our common stock pursuant to a stock purchase\nagreement\n\n------",
+        "token_count": 205,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001739566-25-000053",
+        "cik": "0001739566",
+        "company": "Utz Brands, Inc.",
+        "form_type": "10-K",
+        "filed_date": "20250220",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 60846,
+        "source_md5": "f48385a7b14848b80d8e7e164d660577",
+        "content_sha256": "3d5223dfe2cb813d95d09f53141bf5dcc11cde32aa878e4fb82afbf87bacc18b",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "f6e68303-b71e-5763-a496-043634a7f4f4",
+        "section": "Item 8. Financial Statements and Supplementary Data",
+        "section_index": 12,
+        "chunk_index": 17,
+        "char_start": 370623,
+        "char_end": 375374,
+        "text": "Basic earnings per share is based on the weighted average number of shares of Class A Common Stock issued and outstanding. Diluted earnings per share is based on the weighted average number shares of Class A Common Stock issued and outstanding and the effect of all dilutive common stock equivalents and potentially dilutive share-based awards outstanding. There is no difference in the number of shares used to calculate basic and diluted shares outstanding due to the Company's net loss position. The potentially dilutive securities that would be anti-dilutive due to the Company's net loss are not included in the calculation of diluted net loss per share attributable to controlling interest. The anti-dilutive securities are included in the table below. Refer to *Note 11. Share-Based Compensation* for further information on the share-based awards considered in the diluted earnings per share computation.\n\n------\n\nThe following tables reconcile the numerators and denominators used in the computations of both basic and diluted earnings per\n\nshare:\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| *(in thousands, except share data)* | **For the Fiscal Year Ended December 29, 2024** | **For the Fiscal Year Ended December 31, 2023** | **For the Fiscal Year Ended January 1, 2023** |\n| *Numerator:* |  |  |  |\n| &nbsp;&nbsp;Net income (loss) attributable to controlling interest | $15974 | $(24937) | $(392) |\n| *Denominator:* |  |  |  |\n| &nbsp;&nbsp;Weighted average Class A Common Stock shares, basic | 82102876 | 81081458 | 80093094 |\n| &nbsp;&nbsp;Dilutive securities included in diluted earnings per share calculation |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Warrants | 2423454 |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;RSUs | 544916 |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;PSUs | 327939 |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Stock options | 34795 |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total dilutive weighted average shares | 85433980 | 81081458 | 80093094 |\n| **Basic earnings per share** | $0.19 | $(0.31) | $\u2014 |\n| **Diluted earnings per share** | $0.19 | $(0.31) | $\u2014 |\n| Weighted average Class V Common Stock not subject to earnings per share calculation | 58725374 | 59349000 | 59349000 |\n| Net (income) loss attributable to noncontrolling interest | $(14763) | $15095 | 13649 |\n\n---\n\n\n\nThe diluted earnings per share computation excludes the effect of certain RSUs and stock options granted to directors and management which convert into, or are exercisable for, shares of Class A Common Stock upon vesting as their inclusion would have been anti-dilutive. Anti-dilutive securities excluded from diluted earnings per share calculation:\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| *(in thousands)* | **For the Fiscal Year Ended December 29, 2024** | **For the Fiscal Year Ended December 31, 2023** | **For the Fiscal Year Ended January 1, 2023** |\n| &nbsp;&nbsp;&nbsp;&nbsp;Warrants |  | 1882627 | 1888256 |\n| &nbsp;&nbsp;&nbsp;&nbsp;RSUs | 78105 | 271330 | 83261 |\n| &nbsp;&nbsp;&nbsp;&nbsp;PSUs | 194695 | 125958 | 62408 |\n\n---\n\n\n\nShares of the Company's Class V Common Stock do not participate in earnings of the Company and, therefore, are not participating securities. The PSUs, RSUs granted to our directors and certain employees in fiscal year 2020, and 2020 LTIP RSUs were not considered participating securities despite the holders of these stock-based compensation awards being entitled to participate in dividends declared on Class A Common Stock, if and when declared, on a one-to-one per-share basis, because the dividends are only payable upon full vesting of the awards, and as such, the dividend is forfeitable. The net income attributable to the noncontrolling interest was $14.8 million for the fiscal year ended December 29, 2024, net loss attributable to non-controlling interest of $15.1 million for the fiscal year ended December 31, 2023, and net loss attributable to non-controlling interest of $13.6 million for the fiscal year ended January 1, 2023, respectively.\n\n**20. SUBSEQUENT EVENTS**\n\nOn January 29, 2025, the Company amended its Term Loan B to refinance in full all of the $630.3 million outstanding term loan, reduce the interest rate from SOFR plus the applicable rate of 2.75% to SOFR plus the applicable rate of 2.50% and extended the maturity date from January 20, 2028 to January 29, 2032, as well as make certain other changes. Other material terms of the Term Loan B remain unchanged.\n\nIn January 2025, noncontrolling interest exchanged an additional 2,000,000 Common Company Units together with the surrender and cancellation of the same number of shares of Class V Common Stock for an equal number of shares of Class A Common Stock. The Company did not receive any proceeds as a result of this exchange.\n\n------",
+        "token_count": 1195,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001193125-25-012347",
+        "cik": "0000798528",
+        "company": "ODYSSEY MARINE EXPLORATION INC",
+        "form_type": "1-A",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 289,
+        "source_md5": "c6ad94c06369af197078ea5e3d29e7c2",
+        "content_sha256": "deb23a5b5ab0b496be97ad644428e6df4c46f5f8759bec4d430fc508197828ce",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "59ef80e7-0827-573c-98db-28f5362a4140",
+        "section": "[**Table of Contents**](#toc)",
+        "section_index": 58,
+        "chunk_index": 2,
+        "char_start": 211245,
+        "char_end": 211571,
+        "text": "(1) Unless otherwise noted, the nature of beneficial ownership consists of sole voting and investment power.\n\n(2) As of January 15, 2025, the Company had 29,125,333 shares of common stock outstanding.\n\n(3) Consists of 267,949 shares and 348,069 shares underlying currently exercisable stock options held by Mr.\nGordon.\n\n------",
+        "token_count": 79,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001104659-25-007458",
+        "cik": "0001383951",
+        "company": "Nomura America Finance, LLC",
+        "form_type": "424B2",
+        "filed_date": "20250130",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 318,
+        "source_md5": "6d5a84d2d189ee21cff048d9e08e55ba",
+        "content_sha256": "51ea8c6e6ad80a39d50751db3b7001a786ce5042cfcf17a63b44f0a7e15cb944",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "4bb2141f-8e3e-5194-9001-c2e51c1790fe",
+        "section": "Nomura",
+        "section_index": 5,
+        "chunk_index": 0,
+        "char_start": 73857,
+        "char_end": 76052,
+        "text": "# Nomura\n\nJanuary 29, 2025\n\nTERMS OF THE NOTES\n\n| Issuer: | Nomura America Finance, LLC (\u201cwe\u201d or \u201cus\u201d) |  |  |\n| --- | --- | --- | --- |\n| Guarantor: | Nomura Holdings, Inc. (\u201cNomura\u201d) |  |  |\n| Principal Amount: | US$450,000 |  |  |\n| Reference Assets: | The least performing of the common stock of The Goldman Sachs Group, Inc. (Ticker: GS) (\u201cGS\u201d), the common stock of Citigroup Inc. (Ticker: C) (\u201cC\u201d) and the common stock of Morgan Stanley (Ticker: MS) (\u201cMS\u201d) (each, a \u201creference asset\u201d and together, the \u201creference assets\u201d) |  |  |\n| Trade Date: | January 29, 2025 |  |  |\n| Original Issue Date: | January 31, 2025 |  |  |\n| Stated Maturity Date: | February 3, 2028, unless that date is not a business day, in which case the maturity date will be the next following business day. The actual maturity date for the notes may be different if postponed as described under \u201cGeneral Terms of the Notes-Market Disruption Events\u201d in the accompanying product prospectus supplement. |  |  |\n| Final Valuation Date: | January 31, 2028, subject to postponement as described under \u201cGeneral Terms of the Notes-Market Disruption Events\u201d in the accompanying product prospectus supplement. |  |  |\n| Coupon Observation Dates and Coupon Payment Dates: | Coupon Observation Dates | Coupon Payment Dates |  |\n|  | April 29, 2025 | May 2, 2025 |  |\n|  | July 29, 2025* | August 1, 2025** |  |\n|  | October 29, 2025* | November 3, 2025** |  |\n|  | January 29, 2026* | February 3, 2026** |  |\n|  | April 29, 2026* | May 4, 2026** |  |\n|  | July 29, 2026* | August 3, 2026** |  |\n|  | October 29, 2026* | November 3, 2026** |  |\n|  | January 29, 2027* | February 3, 2027** |  |\n|  | April 29, 2027* | May 4, 2027** |  |\n|  | July 29, 2027* | August 3, 2027** |  |\n|  | October 29, 2027* | November 3, 2027** |  |\n|  | January 31, 2028 | February 3, 2028 |  |\n|  | (the Final Valuation Date) | (the Stated Maturity Date) |  |\n|  | *These coupon observation dates are also call observation dates **These coupon payment dates are also call settlement dates Each subject to postponement as described under \u201cGeneral Terms of the Notes-Market Disruption Events\u201d in the accompanying product prospectus supplement. |  |  |\n",
+        "token_count": 696,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "found": true,
+        "id": "0001018724-25-000004:4826:16826",
+        "accession": "0001018724-25-000004",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+        "char_start": 4826,
+        "char_end": 16826,
+        "text": "Act (15 U.S.C. 7262(b)) by the registered public accounting firm that prepared or issued its audit report. \u2612\n\nIf securities are registered pursuant to Section 12(b) of the Exchange Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. \u2610\n\nIndicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant's executive officers during the relevant recovery period pursuant to \u00a7240.10D-1(b). \u2610\n\nIndicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2610&nbsp;&nbsp;&nbsp;&nbsp;No \u2612\n\n---\n\n\n\n| | |\n|:---|:---|\n| Aggregate market value of voting stock held by non-affiliates of the registrant as of June 30, 2024 | $1815014489485 |\n| Number of shares of common stock outstanding as of January 29, 2025 | 10597729352 |\n\n---\n\n\n\n____________________________________\n\n**DOCUMENTS INCORPORATED BY REFERENCE**\n\nThe information required by Part III of this Report, to the extent not set forth herein, is incorporated herein by reference from the registrant's definitive proxy statement relating to the Annual Meeting of Shareholders to be held in 2025, which definitive proxy statement shall be filed with the Securities and Exchange Commission within 120 days after the end of the fiscal year to which this Report relates.\n\n\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**AMAZON.COM, INC.**\n\n**FORM 10-K**\n\n**For the Fiscal Year Ended December 31, 2024** \n\n**INDEX**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | | **Page** |\n| **PART I** | **PART I** | |\n| Item 1. | <u>[Business](#i8a64c58a8ced4ccaa47e02e81fab0039_13)</u> | <u>[3](#i8a64c58a8ced4ccaa47e02e81fab0039_13)</u> |\n| Item 1A. | <u>[Risk Factors](#i8a64c58a8ced4ccaa47e02e81fab0039_16)</u> | <u>[6](#i8a64c58a8ced4ccaa47e02e81fab0039_16)</u> |\n| Item 1B. | <u>[Unresolved Staff Comments](#i8a64c58a8ced4ccaa47e02e81fab0039_19)</u> | <u>[16](#i8a64c58a8ced4ccaa47e02e81fab0039_19)</u> |\n| Item 1C. | <u>[Cybersecurity](#i8a64c58a8ced4ccaa47e02e81fab0039_22)</u> | <u>[17](#i8a64c58a8ced4ccaa47e02e81fab0039_22)</u> |\n| Item 2. | <u>[Properties](#i8a64c58a8ced4ccaa47e02e81fab0039_25)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_25)</u> |\n| Item 3. | <u>[Legal Proceedings](#i8a64c58a8ced4ccaa47e02e81fab0039_28)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_28)</u> |\n| Item 4. | <u>[Mine Safety Disclosures](#i8a64c58a8ced4ccaa47e02e81fab0039_31)</u> | <u>[18](#i8a64c58a8ced4ccaa47e02e81fab0039_31)</u> |\n| **PART II** | **PART II** |  |\n| Item 5. | <u>[Market for the Registrant's Common Stock, Related Shareholder Matters, and Issuer Purchases of Equity Securities](#i8a64c58a8ced4ccaa47e02e81fab0039_37)</u> | <u>[19](#i8a64c58a8ced4ccaa47e02e81fab0039_37)</u> |\n| Item 6. | <u>[Reserved](#i8a64c58a8ced4ccaa47e02e81fab0039_43)</u> | <u>[19](#i8a64c58a8ced4ccaa47e02e81fab0039_43)</u> |\n| Item 7. | <u>[Management's Discussion and Analysis of Financial Condition and Results of Operations](#i8a64c58a8ced4ccaa47e02e81fab0039_49)</u> | <u>[20](#i8a64c58a8ced4ccaa47e02e81fab0039_49)</u> |\n| Item 7A. | <u>[Quantitative and Qualitative Disclosures About Market Risk](#i8a64c58a8ced4ccaa47e02e81fab0039_100)</u> | <u>[31](#i8a64c58a8ced4ccaa47e02e81fab0039_100)</u> |\n| Item 8. | <u>[Financial Statements and Supplementary Data](#i8a64c58a8ced4ccaa47e02e81fab0039_112)</u> | <u>[33](#i8a64c58a8ced4ccaa47e02e81fab0039_112)</u> |\n| Item 9. | <u>[Changes in and Disagreements with Accountants on Accounting and Financial Disclosure](#i8a64c58a8ced4ccaa47e02e81fab0039_349)</u> | <u>[70](#i8a64c58a8ced4ccaa47e02e81fab0039_349)</u> |\n| Item 9A. | <u>[Controls and Procedures](#i8a64c58a8ced4ccaa47e02e81fab0039_352)</u> | <u>[70](#i8a64c58a8ced4ccaa47e02e81fab0039_352)</u> |\n| Item 9B. | <u>[Other Information](#i8a64c58a8ced4ccaa47e02e81fab0039_358)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_358)</u> |\n| Item 9C. | <u>[Disclosure Regarding Foreign Jurisdictions that Prevent Inspections](#i8a64c58a8ced4ccaa47e02e81fab0039_364)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_364)</u> |\n| **PART III** | **PART III** |  |\n| Item 10. | <u>[Directors, Executive Officers, and Corporate Governance](#i8a64c58a8ced4ccaa47e02e81fab0039_370)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_370)</u> |\n| Item 11. | <u>[Executive Compensation](#i8a64c58a8ced4ccaa47e02e81fab0039_373)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_373)</u> |\n| Item 12. | <u>[Security Ownership of Certain Beneficial Owners and Management and Related Shareholder Matters](#i8a64c58a8ced4ccaa47e02e81fab0039_376)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_376)</u> |\n| Item 13. | <u>[Certain Relationships and Related Transactions, and Director Independence](#i8a64c58a8ced4ccaa47e02e81fab0039_379)</u> | <u>[72](#i8a64c58a8ced4ccaa47e02e81fab0039_379)</u> |\n| Item 14. | <u>[Principal Accountant Fees and Services](#i8a64c58a8ced4ccaa47e02e81fab0039_382)</u> | <u>[73](#i8a64c58a8ced4ccaa47e02e81fab0039_382)</u> |\n| **PART IV** | **PART IV** |  |\n| Item 15. | <u>[Exhibits, Financial Statement Schedules](#i8a64c58a8ced4ccaa47e02e81fab0039_388)</u> | <u>[74](#i8a64c58a8ced4ccaa47e02e81fab0039_388)</u> |\n| Item 16. | <u>[Form 10-K Summary](#i8a64c58a8ced4ccaa47e02e81fab0039_391)</u> | <u>[76](#i8a64c58a8ced4ccaa47e02e81fab0039_391)</u> |\n| <u>[Signatures](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> | <u>[Signatures](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> | <u>[77](#i8a64c58a8ced4ccaa47e02e81fab0039_394)</u> |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**AMAZON.COM, INC.**\n\n**PART I**\n\n---\n\n\n\n| | |\n|:---|:---|\n| **Item 1.** | ***Business*** |\n\n---\n\n\n\n*This Annual Report on Form 10-K and the documents incorporated herein by reference contain forward-looking statements based on expectations, estimates, and projections as of the date of this filing. Actual results and outcomes may differ materially from those expressed in forward-looking statements. See Item 1A of Part I \u2014 \"Risk Factors.\" As used herein, \"Amazon.com,\" \"we,\" \"our,\" and similar terms include Amazon.com, Inc. and its subsidiaries, unless the context indicates otherwise.*\n\n**General**\n\nWe seek to be Earth's most customer-centric company. We are guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. In each of our segments, we serve our primary customer sets, consisting of consumers, sellers, developers, enterprises, content creators, advertisers, and employees.\n\nWe have organized our operations into three segments: North America, International, and Amazon Web Services (\"AWS\"). These segments reflect the way the Company evaluates its business performance and manages its operations. Information on our net sales is contained in Item 8 of Part II, \"Financial Statements and Supplementary Data \u2014 Note 10 \u2014 Segment Information.\"\n\n**Consumers**\n\nWe serve consumers through our online and physical stores and focus on selection, price, and convenience. We design our stores to enable hundreds of millions of unique products to be sold by us and by third parties across dozens of product categories. Customers access our offerings through our websites, mobile apps, Alexa, devices, streaming, and physically visiting our stores. We also manufacture and sell electronic devices, including Kindle, Fire tablet, Fire TV, Echo, Ring, Blink, and eero, and we develop and produce media content. We seek to offer our customers low prices, fast and free delivery, easy-to-use functionality, and timely customer service. In addition, we offer subscription services such as Amazon Prime, a membership program that includes fast, free shipping on tens of millions of items, access to award-winning movies and series, live sports, and other benefits.\n\nWe fulfill customer orders in a number of ways, including through: North America and International fulfillment networks that we operate; co-sourced and outsourced arrangements in certain countries; digital delivery; and through our physical stores. We operate customer service centers globally, which are supplemented by co-sourced arrangements. See Item 2 of Part I, \"Properties.\"\n\n**Sellers**\n\nWe offer programs that enable sellers to grow their businesses, sell their products in our stores, and fulfill orders using our services. We are not the seller of record in these transactions. We earn fixed fees, a percentage of sales, per-unit activity fees, interest, or some combination thereof, for our seller programs.\n\n**Developers and Enterprises**\n\nWe serve developers and enterprises of all sizes, including start-ups, government agencies, and academic institutions, through AWS, which offers a broad set of on-demand technology services, including compute, storage, database, analytics, and machine learning, and other services.\n\n**Content Creators**\n\nWe offer programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content.\n\n**Advertisers**\n\nWe provide advertising services to sellers, vendors, publishers, authors, and others, through programs such as sponsored ads, display, and video advertising.\n\n------\n\n<u>[**Table of Contents**](#i8a64c58a8ced4ccaa47e02e81fab0039_7)</u>\n\n**Competition**\n\nOur businesses encompass a large variety of product types, service offerings, and delivery channels. The worldwide marketplace in which we compete is evolving rapidly and intensely competitive, and we face a broad array of competitors from many different industry sectors around the world. Our current and potential competitors include: (1) physical, e-commerce, and omnichannel retailers, publishers, vendors, distributors, manufacturers, and producers of the products we offer and sell to consumers and businesses; (2) publishers, producers, and distributors of physical, digital, and interactive media of all types and all distribution channels; (3) web search engines, comparison shopping websites, social networks, web portals, virtual assistants, and other online and app-based means of discovering, using, or acquiring goods and services, either directly or in collaboration with other retailers; (4) companies that provide e-commerce services, including website development and hosting, omnichannel sales, inventory and supply chain management, advertising, fulfillment, customer service, and payment processing; (5) companies that provide fulfillment and logistics services for themselves or for third parties, whether online or offline; (6) companies that provide information technology services or products, including on-premises or cloud-based infrastructure, tools and services relating to artificial intelligence, and other services; (7) companies that design, manufacture, market, or sell consumer electronics, communications, and other electronic devices and services; (8) companies that sell grocery products online and in physical stores; (9) companies that provide advertising services, whether in digital or other formats; and (10) providers of virtual or in-person healthcare services. We believe that the principal competitive factors in our retail businesses include selection, price, and convenience, including fast and reliable fulfillment. Additional competitive factors for our seller and enterprise services include the quality, speed, and reliability of our services and tools, as well as customers' ability and willingness to change business practices. Some of our current and potential competitors have greater resources, longer histories, more customers, greater brand recognition, and greater control over inputs critical to our various businesses. They may secure better terms from suppliers, a",
+        "total_chars": 348067,
+        "next_start": 16826,
+        "resources": {
+          "peak_rss_mib": 944.05078125,
+          "cpu_seconds": 1.0345019999999998,
+          "wall_seconds": 0.9968087380002544,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      }
+    ],
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash"
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 100, \"rationale\": \"The candidate's figure of 10,597,729,352 shares outstanding as of January 29, 2025 matches the reference and the gold evidence exactly, and the retrieved excerpt from accession 0001018724-25-000004 shows the same cover-page value. The candidate correctly identifies the 10-K for fiscal year ended December 31, 2024 and the accession number, which are supported by the retrieved text. Formatting with comma separators is equivalent to the reference number.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 100, \"rationale\": \"The candidate's figure of 10,597,729,352 shares outstanding as of January 29, 2025 matches the reference and the gold evidence exactly, and the retrieved excerpt from accession 0001018724-25-000004 shows the same cover-page value. The candidate correctly identifies the 10-K for fiscal year ended December 31, 2024 and the accession number, which are supported by the retrieved text. Formatting with comma separators is equivalent to the reference number.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:35:40.450398+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "3ec87e4dae596478ba811d6c:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042538-WJkWem3R0pn6uXLhI2T8",
+    "usage": {
+      "prompt_tokens": 27131,
+      "completion_tokens": 179,
+      "total_tokens": 27310,
+      "cost": 0.0028026,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028026,
+        "upstream_inference_prompt_cost": 0.0027131,
+        "upstream_inference_completions_cost": 8.95e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.7231313969996336,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 100,
+    "rationale": "The candidate's figure of 10,597,729,352 shares outstanding as of January 29, 2025 matches the reference and the gold evidence exactly, and the retrieved excerpt from accession 0001018724-25-000004 shows the same cover-page value. The candidate correctly identifies the 10-K for fiscal year ended December 31, 2024 and the accession number, which are supported by the retrieved text. Formatting with comma separators is equivalent to the reference number."
+  },
+  "status": "ok"
+}

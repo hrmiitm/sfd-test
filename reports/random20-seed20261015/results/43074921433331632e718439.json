@@ -1,0 +1,117 @@
+{
+  "question_id": "Q026",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/bm25",
+  "retrieval": {
+    "seconds": 0.006822129999818571,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Levi Strauss & Co.\u2019s SG&A expenses in fiscal 2024 were **$3,246.2 million**, equal to **51.1% of net revenues**.\n\nCalculation: $3,246.2 million \u00f7 $6,355.3 million net revenues \u00d7 100 = **51.1%** (rounded).  \nSource: 10-K, accession **0000094845-25-000005**, Filing Summary, chunk **7800a9af-162a-5e50-b146-b4ba64b4b763**.",
+    "message": {
+      "role": "assistant",
+      "content": "Levi Strauss & Co.\u2019s SG&A expenses in fiscal 2024 were **$3,246.2 million**, equal to **51.1% of net revenues**.\n\nCalculation: $3,246.2 million \u00f7 $6,355.3 million net revenues \u00d7 100 = **51.1%** (rounded).  \nSource: 10-K, accession **0000094845-25-000005**, Filing Summary, chunk **7800a9af-162a-5e50-b146-b4ba64b4b763**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:07.698605+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "43074921433331632e718439:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041903-qucSLs0sTrzPLKp2Hw6h",
+    "usage": {
+      "prompt_tokens": 15701,
+      "completion_tokens": 122,
+      "total_tokens": 15823,
+      "cost": 0.00202355,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 15698,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00202355,
+        "upstream_inference_prompt_cost": 0.00196255,
+        "upstream_inference_completions_cost": 6.1e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.284050578999995,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 92, \"citation_support\": 95, \"rationale\": \"The candidate correctly states SG&A of $3,246.2 million and 51.1% of net revenues, matching the reference and gold evidence. Its arithmetic checks out: 3,246.2 \u00f7 6,355.3 \u2248 51.1%, and net revenues of $6,355.3 million appear in the retrieved excerpts. It omits the 6.4% year-over-year increase from $3,051.9 million, a minor gap. The cited accession matches the gold evidence, and chunk 7800a9af is the excerpt containing the SG&A table with these figures, so the citation is well supported.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 92, \"citation_support\": 95, \"rationale\": \"The candidate correctly states SG&A of $3,246.2 million and 51.1% of net revenues, matching the reference and gold evidence. Its arithmetic checks out: 3,246.2 \u00f7 6,355.3 \u2248 51.1%, and net revenues of $6,355.3 million appear in the retrieved excerpts. It omits the 6.4% year-over-year increase from $3,051.9 million, a minor gap. The cited accession matches the gold evidence, and chunk 7800a9af is the excerpt containing the SG&A table with these figures, so the citation is well supported.\"}",
+      "refusal": null,
+      "reasoning": "I'm verifying the SG&A figure of $3,246.2M at 51.1% of net revenues matches the calculation against $6,355.3M, and confirming the citation accession number and chunk index align with the source table.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm verifying the SG&A figure of $3,246.2M at 51.1% of net revenues matches the calculation against $6,355.3M, and confirming the citation accession number and chunk index align with the source table.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSmgkKEAgSGAI4AUIIdGhpbmtpbmcSDLjktWxGUwsZVcLMKhoMNyuac4jcqKOJIgJUIjALL4E6X7py7oGCRbcvP3erEIF5f08WIe2X3iy7JWB58fyMAq38f5mDy+tivLvlNIkqtwgBRVB72l1NMTrXWSzkuVwoTvHMuoP1PGPjJMSarlyJ3E9yMFtB7uJIOwJe+bNwKURw8sJUnzeuKc8Yh4dIu7+WNZz3rui+Gz0Yz7vi1hsCB+gOFZS2vO2QMu+TKpGuZWFlQXAkWA5R4xg8lTHLTSNNUyfAZVCz54UeQyhXOKlwHPYrldZeCir20zCtK4Bet+9YZ/wd0VYFAqCCMedAwAyg7NT6D4L2nwFDQFv+NaeUuRHF+b9Mzv0VWZKW2/RJFF5OF9uuzmjqpaE4qIQTs4U05rN4SLxRKcYn/Us7Oh1X4rFHg1qthNgb+jENPovniMvnHqx07xJLVgylIjpra7XSUkzF3Hps7mNd9EK/t+zTUNnemB7DZsMAqpO3Y9eSJzPfLp4VFSgM1yDRWAvCOfK8JVJGcDjcQdSUl90R4UJXzo+rt65OYbXHKTfctYQLiw3z3XRKCruKaUoWQGS/ZReY0ijIfB15o9b2Rq5RJvFauizkdr/uzy2JUVUQn8oN4mblxXr1yEKJTv38rqJ6RrwShy0goER2uI3uOJVH/BMIoJZr9Dm0JMKtElFXGtNw+cC8Gr8adARGYfvqqFW++95I/dgGNMhpriYo2glupuW8UfIcsWwfJtC0rEs82wHhWgx0tyAwZB/uby8P8DzjPHSPZAy0apDUlVY9aEvmS7DXQeyLy9SCOR25qotiGSGa+tgFlFHQ8IExKK+l1qI+UGeLITzkocf0tjVmI5r9KlNswOb1l9jyf+tFYbD1PzOTxYnJdbye+DuoC+FRzZ2Ow6Co6DGpO7gx7FLiBnoq8apxhaxOYqLWcxSRp+V/5oY/xuzNTWL6RI1OH0/EwOBXLaHcm3SU0gRF45Kj3o2fPvs0g+Unx/zapFbMeKfT7r9L2LZEu2zz5SpINCvmLVSLanYa+xpiX47EXS10aeoBLnxkH8bGkFmsQOE+eBT3lE2V/JL+ZJqVHO241sxBvSPtxDRsLOfjQA6UN4QlhmpuofTyXUqDHZgmDawDMsFdaUoz2bMDH84XLCbM+Kbpd6JggOPWDScojpwMGjl0ylR2dEAfP9HCD2aUFcAWaw670bqDWLq4wLM7SxE4ESFGWC9OXVgOJ7ESL+/W4JUKvhx9TEA92bq+06chCSo6VbetbVesoR/ZvICD9R+igYmDOA/NBDlR3LjhitUFGwyQdOcV+aADN4vfw/MlcUfYSROC/GUqvs9KIZ3UW/Pk+jPll6XxpPxQWD9Fcf6nv/gCLFxaOZkieqCqAxEvgPDje8Zd5AJZDhvn8PHL5HNj1yw2LS14zm+sSH1PeH740tSpa5zi9BuLhlG19HH0X9PrD6WjLg8WGsdKhYXSPB0m1do5RzJLC285xuIYOwzIhn3Le+t21RARBWq6RRRWylkFf/EeKoLcHpgA+Ruf/Xo8xhcnvOf8Ua/phPZ+uJWBERgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:28.826389+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "43074921433331632e718439:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042105-9LD7oQJIzYWngnSac6dO",
+    "usage": {
+      "prompt_tokens": 24261,
+      "completion_tokens": 467,
+      "total_tokens": 24728,
+      "cost": 0.0026596,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0026596,
+        "upstream_inference_prompt_cost": 0.0024261,
+        "upstream_inference_completions_cost": 0.0002335
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 245,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.64378850599951,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 92,
+    "citation_support": 95,
+    "rationale": "The candidate correctly states SG&A of $3,246.2 million and 51.1% of net revenues, matching the reference and gold evidence. Its arithmetic checks out: 3,246.2 \u00f7 6,355.3 \u2248 51.1%, and net revenues of $6,355.3 million appear in the retrieved excerpts. It omits the 6.4% year-over-year increase from $3,051.9 million, a minor gap. The cited accession matches the gold evidence, and chunk 7800a9af is the excerpt containing the SG&A table with these figures, so the citation is well supported."
+  },
+  "status": "ok"
+}

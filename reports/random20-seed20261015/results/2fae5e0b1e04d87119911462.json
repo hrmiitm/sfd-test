@@ -1,0 +1,123 @@
+{
+  "question_id": "Q030",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/vector",
+  "retrieval": {
+    "seconds": 0.011301483999886841,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "The supplied excerpts don\u2019t provide ConocoPhillips\u2019s **total 2024 expenses** for either line item, so I can\u2019t determine the requested amounts. The disclosed **$8.6 billion** is only purchased-commodities expense for transactions with Non-Obligated Subsidiaries\u2014not the company-wide total. No total for production and operating expenses is shown in the excerpts. **Units:** millions of dollars in the referenced table.  \n*(Accession 0001163165-25-000012, Item 7, chunk b4fc4a5d-7f3c-5f25-bb73-2b2418734714.)*",
+    "message": {
+      "role": "assistant",
+      "content": "The supplied excerpts don\u2019t provide ConocoPhillips\u2019s **total 2024 expenses** for either line item, so I can\u2019t determine the requested amounts. The disclosed **$8.6 billion** is only purchased-commodities expense for transactions with Non-Obligated Subsidiaries\u2014not the company-wide total. No total for production and operating expenses is shown in the excerpts. **Units:** millions of dollars in the referenced table.  \n*(Accession 0001163165-25-000012, Item 7, chunk b4fc4a5d-7f3c-5f25-bb73-2b2418734714.)*",
+      "refusal": null,
+      "reasoning": "**Addressing income statement issues**\n\nI need to consider that some key values are missing from the income statement, which isn't excerpted properly. I wonder if I should question whether it's sufficient. Also, I've asked about two expenses but can't infer their impact without more explicit details. I think I need the complete financial statement for clarity. For instance, the figure of 8.6 billion in purchased commodities might only represent intercompany transactions, not the total, and production operations are notably absent. I'll need to explain this clearly.",
+      "reasoning_details": [
+        {
+          "type": "reasoning.summary",
+          "summary": "**Addressing income statement issues**\n\nI need to consider that some key values are missing from the income statement, which isn't excerpted properly. I wonder if I should question whether it's sufficient. Also, I've asked about two expenses but can't infer their impact without more explicit details. I think I need the complete financial statement for clarity. For instance, the figure of 8.6 billion in purchased commodities might only represent intercompany transactions, not the total, and production operations are notably absent. I'll need to explain this clearly.",
+          "format": "openai-responses-v1",
+          "index": 0
+        },
+        {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq0GPFJ1gdbsFps_NyxVT32vAKihPKVqk8haGfdGUc8qreGnwm6qr4sFLXMh0QWMr3FfV4VF3YlsQ3OHed0wcfTWj3toQxwt45ZDh_XDnRqOgSivR1GC60UIobZB0gfuEcsYSNGi9HmYbDalt8Jb4GQZG1jVfdspJQ9scQYQ4UNgLVvS-CtOxE2SdrXK-nQ9KgnwwsRRyIFkrPpTVE8zC7arpETrZEKgSU3jCWXJJtHIdBmO2ZykldT61rIViyfrA1cXuedwi1-HS1qziwpJAa2w5q8wYJq1KxJG6KWI1VmVRyKrqH3tHET-uiml_xWIyodI43J0eK0sip4pzOJc0tfa4A493emmJpZv0J2SZluHKoYFtHIogAKvyxzF1eag_5Lr6m0KtOxG-EW0PeCiOuhq74dOSVXWpSGXV1c2i8nXMHx6BxK4luYGwUAuahx2Nd9ltBuzabifjUTaAN1iTZarOgIPa-SduPFaX8QjO3aileSjGY_C9dmUbb0AFL4hrnzfvRdbRBoxOCCfmcObR3aXbW8NTqZjCeJnh0pibud7nxozQRZhUhv8uTT0S5rxKFWbAl3iHmHvzvYkY4P9We4yFGtDwl3_3B4au3oLclT-Qy5V_4r-37bCKusv6UimyhfLa3_G0pDLzAcPTowFCR_UCFSjGySECD9gOTmHOjmiMNKknmQvZZwOHDFSedivSIZv9OD855nkh-2nWDZnGT6FgcrYe9pkWKXB1s9Wagi8Q1YtuVB4jwu9t93cgKTmRiAR2_RDAVUm8VNMZLJCA3L9sqZ4Ee1cP4nCz8ryVIJ92uatPiuPeT69E8IKOEnMgl2pMhNcInxFpotgISM3SyuaYyqp0VdtF1QSVG5IJFqEN0hMaaeAwY-15_-YbkAPMFgYmjGoL62v7PpCC8HhkHEYVeuLTDnWVNSLsqjMs2OPDqo-wD_ZGZHF9K2Lt9o1mhwIDA9NSv24y-J___zC9Im1QNY4uswBVLbup-2ZERjka2--xlStMT0NUqYIPZAXW0J3VgspU8DErS00QLfrDvDHbVCdL3yuvFA4aBQPfcWUCZzO5Q-WTTSMHorNXQHkdvrDF_faP20PCxjHGKPyvfXLSfPZo2RCL-SRHnJqgGk5g4-9WPJ2irkk6Wf9TiqGrZRb0ExN-sMFnxfE5BTTT2cGH75aN67VyF69MiK-g8vxhCT90imoRw9Ljl_uKhYGfl295q0CUSMMuYNX-nPd--lNgWKYSvBsvp5WRc1uU4jnQgWz324hGmPQawtVp_zbiX2Rsh0w_jVfgsE9kWAc6YSHhdqJYEBF_MjY2dsGPNQAtdbX4KhfPSumvZUO5hNA39uloVbehNsNO7SztYX49RQ0s3yuVJ5TG_anpPL8KEj_cQ7epsymeKgk9PFRGSaaT0f4CZZPtxQmAww1r-PZp2_AbXxFGJRFd5u6Gmy2oUkBqmJFW4qVacezVu9v1RGvnL2p6WpO4EXq-CfYEndQJ7ikj8Zcpgf1A3tGg2bHK1P1h2TTbmcDmec355kLddMwDLSEh2lH_Mqe-DlF_BMQl9HOcOcGM74w-qL41g4eedyFedOasXq41qL0yE9PlW21zxr61ngfsU5NX518Ar0lthxeQqT4KPNuqjcj4WDR0_y5Jw5invox-X4dHQzbLVIJEMGXuAXak9VIpJHkxXBzxdFKBvBoU5Gl_FNPAd3ZMIKYmR5KFfT1V_-32mMcyreu4gpkjVJ7ZuDaMhrgRvxbW4Oea8aEgwPeiP_idykbV1RuaV1v05VNNQdQFotxJaaLZ-oNO6P8OfmmnhjGx8z0kRhxgPPt_lKdmekwYNn2ajaNxYo6ybO0b_bV_bhIUmIb77V1GHpQcA-Kr1l3bTA7lhGC1wUmsqM_7_GeGLTwdQ6qgtSkvivXpbYzFRjiz0_Chtg6lc3e1Y90y9AbMALbzoenTymTthcPRH0s07UyzO822nuh1zQcKh2Hiijk61GfqQelDNOQ2RloKseQfjtJvXaU_qM0dfh0sfRb-h09J8iy5sGZraSk7xJ4v65VGqoAh2q6XElnEu2qWpfC-NQ3ZTmNXs_UcVtyrI-hlt7TffuKHQhKQtFulDhn8QJVnkXYcIGmTI6IFQB65OKBzx7prf7HOYfkEdrGULZaS3-dqZdFV9iNWFL_ZQ1P4BZ6FDdKvBsXdD_NdSdCEvKwZnrTRRUPl0_o5qdjbk1-Yb6HVYpFv9wesxZoPjlRbOrEsKk9gXNWyuOB1Ki3047h1PvyidR5sWmUoafxw6qAoPZ1FJX81xg3W7uBNxFY9H4sepcviJscPLp92l_9UnaW1ikOuTWJYzjgUTn4QG7jAg6zhmJVKySIy1Z69yVAoy-paWpI4ezNRASYI2n2D0Ica9eglx6ev7YBve54zEBrYvOW4zaDbHnTl3CFT_kd36KJsM1towceSpc4IhbboRUYB0oz8y9HpDQmK3yzjb8k6gflCk9kxxxMYtdk6m7V_vs3JRbLlSBUcoWzgV0gAZhVw4_F2VFD7nBg==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+          "format": "openai-responses-v1",
+          "id": "rs_04eab88e72112223016ad063c3699087d1a8ce6c57994acfe2",
+          "index": 1
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:26.109026+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "2fae5e0b1e04d87119911462:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041920-rgvYDzlNaHbRVDTgOkDW",
+    "usage": {
+      "prompt_tokens": 18180,
+      "completion_tokens": 212,
+      "total_tokens": 18392,
+      "cost": 0.002378425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 18177,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002378425,
+        "upstream_inference_prompt_cost": 0.002272425,
+        "upstream_inference_completions_cost": 0.000106
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 69,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.639490303999992,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 3, \"citation_support\": 2, \"rationale\": \"The reference answer gives 2024 Purchased commodities $20,012M and Production and operating expenses $8,751M, which are supported by the gold evidence table (Consolidated Statements of Income). The candidate claims the excerpts do not provide these figures and abstains, which is incorrect since the retrieved excerpts include the gold evidence chunk context not visible in the retrieved set; the candidate cites an Item 7 chunk and misstates the excerpts. The candidate's only correct content is that $8.6 billion is purchased-commodities expense for Non-Obligated Subsidiaries, which is accurate but not the requested total. Citation support is weak because the candidate cites a chunk (b4fc4a5d) that does not contain the income statement figures requested, and it did not cite the income statement line items.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 3, \"citation_support\": 2, \"rationale\": \"The reference answer gives 2024 Purchased commodities $20,012M and Production and operating expenses $8,751M, which are supported by the gold evidence table (Consolidated Statements of Income). The candidate claims the excerpts do not provide these figures and abstains, which is incorrect since the retrieved excerpts include the gold evidence chunk context not visible in the retrieved set; the candidate cites an Item 7 chunk and misstates the excerpts. The candidate's only correct content is that $8.6 billion is purchased-commodities expense for Non-Obligated Subsidiaries, which is accurate but not the requested total. Citation support is weak because the candidate cites a chunk (b4fc4a5d) that does not contain the income statement figures requested, and it did not cite the income statement line items.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:49.800645+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "2fae5e0b1e04d87119911462:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042127-zArAMkTm7YbOEwANsxhe",
+    "usage": {
+      "prompt_tokens": 28987,
+      "completion_tokens": 287,
+      "total_tokens": 29274,
+      "cost": 0.0030422,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0030422,
+        "upstream_inference_prompt_cost": 0.0028987,
+        "upstream_inference_completions_cost": 0.0001435
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.684215162000328,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 3,
+    "citation_support": 2,
+    "rationale": "The reference answer gives 2024 Purchased commodities $20,012M and Production and operating expenses $8,751M, which are supported by the gold evidence table (Consolidated Statements of Income). The candidate claims the excerpts do not provide these figures and abstains, which is incorrect since the retrieved excerpts include the gold evidence chunk context not visible in the retrieved set; the candidate cites an Item 7 chunk and misstates the excerpts. The candidate's only correct content is that $8.6 billion is purchased-commodities expense for Non-Obligated Subsidiaries, which is accurate but not the requested total. Citation support is weak because the candidate cites a chunk (b4fc4a5d) that does not contain the income statement figures requested, and it did not cite the income statement line items."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,117 @@
+{
+  "question_id": "Q064",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.04262671800006501,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Microsoft\u2019s gross margin percentage was **68.7%** for the three months ended December 31, 2024.\n\nCalculation from the Income Statements: **gross margin \u00f7 revenue \u00d7 100 = $47,833 million \u00f7 $69,632 million \u00d7 100 = 68.7%** (rounded to one decimal place).\n\nSource: accession **0000950170-25-010491**, **Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations**, chunk **c0afa9dd-a3a0-52f0-907e-3491234bc030**.",
+    "message": {
+      "role": "assistant",
+      "content": "Microsoft\u2019s gross margin percentage was **68.7%** for the three months ended December 31, 2024.\n\nCalculation from the Income Statements: **gross margin \u00f7 revenue \u00d7 100 = $47,833 million \u00f7 $69,632 million \u00d7 100 = 68.7%** (rounded to one decimal place).\n\nSource: accession **0000950170-25-010491**, **Item 2. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations**, chunk **c0afa9dd-a3a0-52f0-907e-3491234bc030**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:03.906813+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "75a96212255bbd498441b5c9:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041959-l4lJxV0kxG9jHa6yMEmI",
+    "usage": {
+      "prompt_tokens": 13500,
+      "completion_tokens": 132,
+      "total_tokens": 13632,
+      "cost": 0.001753425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 13497,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001753425,
+        "upstream_inference_prompt_cost": 0.001687425,
+        "upstream_inference_completions_cost": 6.6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.728101035999316,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 85, \"citation_support\": 90, \"rationale\": \"The candidate's figure of 68.7% is 47,833 / 69,632 rounded to one decimal, which matches the reference's 68.69% (the exact ratio is about 68.69%). The inputs ($47,833M gross margin and $69,632M revenue) are correct, and the period is correct. The answer loses some precision by not giving two decimals as the reference does. The candidate cites the MD&A chunk (c0afa9dd...) rather than the gold Income Statements section; that chunk is in the retrieved excerpts and contains the same gross margin and revenue figures in its Summary Results table, so the citation is supported, though it is not the gold section.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 85, \"citation_support\": 90, \"rationale\": \"The candidate's figure of 68.7% is 47,833 / 69,632 rounded to one decimal, which matches the reference's 68.69% (the exact ratio is about 68.69%). The inputs ($47,833M gross margin and $69,632M revenue) are correct, and the period is correct. The answer loses some precision by not giving two decimals as the reference does. The candidate cites the MD&A chunk (c0afa9dd...) rather than the gold Income Statements section; that chunk is in the retrieved excerpts and contains the same gross margin and revenue figures in its Summary Results table, so the citation is supported, though it is not the gold section.\"}",
+      "refusal": null,
+      "reasoning": "Let me verify this 47833/69632 division more precisely \u2014 it comes out to roughly 68.69%, which rounds to 68.7% when expressed to one decimal place.\n\nThe citation checks out too: the candidate references the MD&A chunk, which is in the retrieved excerpts and contains the same gross margin figures as the gold Income Statements section. So citation support should be high, around 90, while correctness lands around 85 given the slight precision rounding.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me verify this 47833/69632 division more precisely \u2014 it comes out to roughly 68.69%, which rounds to 68.7% when expressed to one decimal place.\n\nThe citation checks out too: the candidate references the MD&A chunk, which is in the retrieved excerpts and contains the same gross margin figures as the gold Income Statements section. So citation support should be high, around 90, while correctness lands around 85 given the slight precision rounding.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSrAoKEAgSGAI4AUIIdGhpbmtpbmcSDEl5PZTWsYCoCFM0LRoM+8RG3CZ4VVT6FP+HIjAbw9AVIOVGEWrAY7RDIPjqjZthIa7mOSc6wWwWhTfRaWpV69AqtNZsVEn47E6gl60qyQkfyGp07OnBRkdzQEb172NuanvlofVKaApwzwCDQ0FGsODey8wVaWgN83TdEUK8UaZCXBuiOBwo4WM35D/Q5sG52YNFD0LJnhqkpc/K9r0cImWnetjAS4A9eqN7GSk4qkg2w5zxzfcHtg46wrhdqRHfnJUFsTAWQDQ9V1+/gQU8vRLi5IoUbBoWMqwBUdVl3jrbk0Yac4KqXI7uLthI2kpg1doJ/9iTEqL34WlobgBbETk6Q0ChOy/D3/bqaRgCs0hEw2fm7PaasW59tjm1vaGLmHLISKgkMApT+XBtAlEqE1LxdZKKUcbHXiXzKi093EA7J3/HFLRKvinPVLPndL7OXaWtmV4/Ji4lZuXWUeO4HqEzixnLeS+MXm0aoGt3v58Q3hj+UWkfw/uqeX5nXublhmkpg8ZiEyp6rxKzsCCocRNg9FgKGyjPZdl4OIV5rbdkELVVue6lZc9zFzss06ObKCGe2Mr1a7ubSiY3NcpK+tFdljRbHnVgBiGh1spoeYi9IzPzJKP4KY+ybZmRyQHCi4EtMPFy1I51qvoGqw0AfOrW+FFIsz9k8RGCuoGI4cKKcqdTmPP92gATl04AuMNf0OKFyPxnU6SOswZSOOLkSnzgokkifWCP+cmUU1wuRpbGs1CGnR+u3qc2MRGt7g9JzEQtXCopFfs0VI8hXWhRucHjOq5mml6az0gM24/Y8VK4JN0AUtvY7kgdox5Mu4oEHQCTVVWaFApAhJiG3Ld22gNIYzKVtNhc058bQMiG2O/zpw8UevqbORCP21HVWomUuGuw2YDCSVVwt9ne/4tuG2pygkvT8HgkMxK8J9Rm1s6WQ6rBNcQOtuXBV67oerTy1XQyiZYTYeU2GeXDncZyG+1WfSKew+UqDwYwxAgIO5PxwgRKhnew6OjBLV5bRpq4RP/OQRmPbhI2nfDZ8DLgnVitmK3fc8Yx8SrPsLGYZpDHTuvicxQqbTm/Etv3BKks8Od+MK1to9CCtqwas2bRUQrVaQh2HXTcbzimQx8a5DoNhYqn0HNaSCGIz1IA8wcNul86kDVBDgomPDapc8L9YRB4AxL+URe1sozFvTFSPG2acN18QGsKMiZOnImKKfmO946tVwXX63WgKBzRlBRRdK+M+FSVoJEto0tT3sBkPj5kO4m2yuDszAQRogWYHR5YOswiYVxtox67zAI0gckrCdmptWVtJDx53T+1MWx9Akhz07PkZ4WVvpmPc+vwURAoAUGW972RGRdLoWRkIUKVKyT4PzXxaKMhO7wPUeZpxf0NXChRF43pBMHJpP6EYdFoTbLXCbL/j9zrRIOe2hOEnmdtVCbW+ihSXwoTl1LD3ZaFRoXHEhXfXrVx44jqx82v50L791HDTaKrkm98ShmbNzm7H/IzOH42GfmCqnQ2JNzZkh3lYMDhv8L/Wu+e+EMgoQm7JDY48pB8wKn5ccDp259RSfKbf2bjNoXmQUYsJMAjKr5gdCahwb0UeUZPx/oP2rg3SrBNoLa4MHtM1I9omWCnLgnoCUR6819qr2q+ZTSIHvhSgm4pDzdW0FLKg73QEetUHu+8WX7hsyXU8yJlqtdIgmme8gnEn6+6G8wAP+7xiwHNuABsX8U7IUgXDtNqlvJMFl79TiojGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:36.702590+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "75a96212255bbd498441b5c9:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042172-PHF1nKWPcbx6cqcmBruz",
+    "usage": {
+      "prompt_tokens": 23003,
+      "completion_tokens": 560,
+      "total_tokens": 23563,
+      "cost": 0.0025803,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0025803,
+        "upstream_inference_prompt_cost": 0.0023003,
+        "upstream_inference_completions_cost": 0.00028
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 322,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.265310353000132,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 85,
+    "citation_support": 90,
+    "rationale": "The candidate's figure of 68.7% is 47,833 / 69,632 rounded to one decimal, which matches the reference's 68.69% (the exact ratio is about 68.69%). The inputs ($47,833M gross margin and $69,632M revenue) are correct, and the period is correct. The answer loses some precision by not giving two decimals as the reference does. The candidate cites the MD&A chunk (c0afa9dd...) rather than the gold Income Statements section; that chunk is in the retrieved excerpts and contains the same gross margin and revenue figures in its Summary Results table, so the citation is supported, though it is not the gold section."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,117 @@
+{
+  "question_id": "Q028",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.03230198500023107,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "For fiscal year 2024, Citigroup reported (in **millions of dollars**):\n\n- **Net interest income:** $54,095  \n- **Non-interest revenue:** $27,044  \n- **Revenues, net of interest expense:** $81,139  \n\nCalculation: **$54,095 + $27,044 = $81,139**.\n\nSource: Citigroup Inc. 2024 Form 10-K, accession **0000831001-25-000067**, \u201cResults of Operations\u2014Summary of Selected Financial Data,\u201d chunk **7**.",
+    "message": {
+      "role": "assistant",
+      "content": "For fiscal year 2024, Citigroup reported (in **millions of dollars**):\n\n- **Net interest income:** $54,095  \n- **Non-interest revenue:** $27,044  \n- **Revenues, net of interest expense:** $81,139  \n\nCalculation: **$54,095 + $27,044 = $81,139**.\n\nSource: Citigroup Inc. 2024 Form 10-K, accession **0000831001-25-000067**, \u201cResults of Operations\u2014Summary of Selected Financial Data,\u201d chunk **7**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:18.854195+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "ca9e7e6e93f1236d3919160f:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041916-Yro7qbSLa4sXMSZj1IaI",
+    "usage": {
+      "prompt_tokens": 16338,
+      "completion_tokens": 121,
+      "total_tokens": 16459,
+      "cost": 0.002102675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 16335,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002102675,
+        "upstream_inference_prompt_cost": 0.002042175,
+        "upstream_inference_completions_cost": 6.05e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.794264766000197,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 90, \"rationale\": \"The candidate's three figures match the reference and the filing: Net interest income $54,095M, Non-interest revenue $27,044M, and Revenues net of interest expense $81,139M. Units (millions) are stated, and the addition check ($54,095 + $27,044 = $81,139) is correct. The cited accession 0000831001-25-000067 matches the retrieved excerpts. The retrieved chunk 7 contains the \\\"Summary of Selected Financial Data\\\" table with all three values, so the citation is well supported. The small deduction reflects that the candidate's section label is a paraphrase and the gold quote is the revenue row alone, not the full table.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 90, \"rationale\": \"The candidate's three figures match the reference and the filing: Net interest income $54,095M, Non-interest revenue $27,044M, and Revenues net of interest expense $81,139M. Units (millions) are stated, and the addition check ($54,095 + $27,044 = $81,139) is correct. The cited accession 0000831001-25-000067 matches the retrieved excerpts. The retrieved chunk 7 contains the \\\"Summary of Selected Financial Data\\\" table with all three values, so the citation is well supported. The small deduction reflects that the candidate's section label is a paraphrase and the gold quote is the revenue row alone, not the full table.\"}",
+      "refusal": null,
+      "reasoning": "The numbers check out: 54,095 plus 27,044 equals 81,139, matching NII, non-interest revenue, and total revenues exactly. The citation also lines up with the \"Summary of Selected Financial Data\" section in chunk 7.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The numbers check out: 54,095 plus 27,044 equals 81,139, matching NII, non-interest revenue, and total revenues exactly. The citation also lines up with the \"Summary of Selected Financial Data\" section in chunk 7.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSuwkKEAgSGAI4AUIIdGhpbmtpbmcSDPqOeRdntFp6wz4wFBoM+v61X+N1VlYc9nqiIjDwiIyjiFSwqAR11oVzby2SBNjF5rRBgazSHssgELAwGn8h7GiKHXZq+ieNA0EyJQ0q2AiTEEJV/19WPlJqaXMMJsgUMrfJu26MtlFYYMW3rZ6GiLe7gVFFtKOFRBrdJGCTU06Mm9q6PfwTwSE74tRVSvu6BrAWnZBk9c1Z6dktndfLxOxnBouzLTqzwcumwf7bDVASKrfX3iSHo7Xqb8XAp9il7QkLTS+Cwd598fXEXfy57wQ8Lzz9y4KxdlZyKvJUoEapLU5j1NCN3Qyw/A5OgZojSpS4GCVSQ2ZuWDaBg3G5Ed2wf6i4POh1zVZa+TbMfnY79OnVtFqq71Dl/407rvKYVyguPT0VkUgM+wyrOEPWeCi8ctMVcsi0RXtoC/5+U9v5w6lfRGamRESN1e3umqjMkayGzALLDm2Q/JZfIpejfnHt4RPUnZF0QquO63fRO1/T42AE80GlNuFSmGMua6W40ylfxEznDCqN5VNqsuhOOBQvDxncpE7/nM02WWnc9xGVjH1gD7DvAxrehYdhl3h3TNSeuhWYmiMTozk2b0hJL54cjVlFrFrC3tUydJ0MQ3FL62fRUny0IZZtA7MpHxcNb0/q/kYj56pmUSPgAA/Vq+AgxETccmZOaRHim8iyDUR9VZZvRMPcfBe8bWijENV4gqsXN21jKD8VOBBm5QiS4/DH5RFyYymgtWMchLb/JUZfMsNrmHd64ue5n6Bc/HRHyx9uSTJSVub08sGioEEY/qylmRplTW2/S7QXzoPLfJYQnRGD8I5uOrLytRIk7YHqmHCAx1mTD+EL3tZ3Xk2pLuuvdglFFCPkBvA5jUBxR7r/LCvmblnoDHd+6WWRImJF1mPI45E+0UaRV5y0oJLrsAsJq+CRYUrfYm0pG5zl1uIW5kNKFt0OuM4Iah+1/Esr5B/iHoinKSm5IecucRjGdrWXz4GVaFFLXUoh5/pXIWKbOosFgWOnTRL3yjPnGlRCygBXB8Rp+ypAa4S8rj/B3j6XtREiXLwXuZvxQT4g1RytKhIwq7aEbZhDPyhxP9W3QLSMPqqvlf+s7exZ8jbTQ781C+mn0owqrVYZkMO4OfENrDdAWVihC+6i2FFtSs/Jve2WMPHSypoqqkBnAmOWRaGcX3elIvfEsrl6P6LrH1FWHVFbyxfMt8qrnOaF3fL3KnVZegkAU62bxM6X/2ARvQqHn2X93qpD8Ll4XQN9gEx3zorhYKfjHXJhMCkBAYErn7QES9S7z3lz6nQoVJKG5IssOj1O4xKINoom07eAaFthokwiYZANdwXaPttwNd7dp9ByuQ9zI5oPdcP9ZCjJeCOqESwOy4/lQAGB20dvTAvctN2cxPQIwUmO3zI63/e7INQ1/9MSQqe7ILbU7zkVbrOJBQN+kkTXrBpXuUPHcnvII2DRKIu1Xn9y9CCQ2nz238830KLRNTD3bq1YFbVLvSQa9J7hGHLDAyl/k9R/hNIQRIZUQJ7NtguF6dPgmeJO05Uhi/e99/ZOuaZl3PCRSzEUQdYzUolywVJpIaviXpNI3Wp6MHX3FxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:40.384742+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "ca9e7e6e93f1236d3919160f:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042115-ahNZ5XDR6sLTEpp7bqjq",
+    "usage": {
+      "prompt_tokens": 25032,
+      "completion_tokens": 465,
+      "total_tokens": 25497,
+      "cost": 0.0027357,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0027357,
+        "upstream_inference_prompt_cost": 0.0025032,
+        "upstream_inference_completions_cost": 0.0002325
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 226,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.740768845000275,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 90,
+    "rationale": "The candidate's three figures match the reference and the filing: Net interest income $54,095M, Non-interest revenue $27,044M, and Revenues net of interest expense $81,139M. Units (millions) are stated, and the addition check ($54,095 + $27,044 = $81,139) is correct. The cited accession 0000831001-25-000067 matches the retrieved excerpts. The retrieved chunk 7 contains the \"Summary of Selected Financial Data\" table with all three values, so the citation is well supported. The small deduction reflects that the candidate's section label is a paraphrase and the gold quote is the revenue row alone, not the full table."
+  },
+  "status": "ok"
+}

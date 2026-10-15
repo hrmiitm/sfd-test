@@ -1,0 +1,99 @@
+{
+  "tests": {
+    "passed": 26,
+    "command": "systemd-run --user --scope -p MemoryMax=2G -p MemorySwapMax=0 -p CPUQuota=100% .venv/bin/python -m pytest -q"
+  },
+  "os_limits": {
+    "memory.max": "2147483648",
+    "memory.peak": "1149030400",
+    "memory.swap.max": "0",
+    "cpu.max": "100000 100000"
+  },
+  "resume_verified_no_new_calls": true,
+  "notes": [
+    "memory.peak was observed during the live smoke, not continuously sampled through exit.",
+    "Agentic original-source scope is broader than the indexed-only retrieval methods.",
+    "Use scripts/benchmark.sh to apply process-tree limits; direct module execution does not apply that cgroup cap."
+  ],
+  "qdrant_summary": [
+    {
+      "model": "google/gemini-3.8-flash",
+      "retrieval": "qdrant/agentic",
+      "completed": 1,
+      "expected": 1,
+      "errors": 0,
+      "max_source_worker_rss_mib": 981.90625,
+      "tool_calls": 2,
+      "correctness": 96,
+      "citation_support": 97,
+      "accession_recall": 1.0,
+      "mean_retrieval_seconds": 4.140405471000122,
+      "mean_judge_seconds": 13.111566333000155,
+      "prompt_tokens": 21659,
+      "completion_tokens": 509,
+      "mean_answer_seconds": 32.69303849899916,
+      "reported_chat_cost_usd": 0.0085798,
+      "unknown_cost_calls": 0
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "retrieval": "qdrant/agentic",
+      "completed": 1,
+      "expected": 1,
+      "errors": 0,
+      "max_source_worker_rss_mib": 981.6953125,
+      "tool_calls": 5,
+      "correctness": 96,
+      "citation_support": 92,
+      "accession_recall": 1.0,
+      "mean_retrieval_seconds": 5.939422740998452,
+      "mean_judge_seconds": 6.864784411000073,
+      "prompt_tokens": 67311,
+      "completion_tokens": 725,
+      "mean_answer_seconds": 106.18327511000189,
+      "reported_chat_cost_usd": 0.005065915000000001,
+      "unknown_cost_calls": 0
+    }
+  ],
+  "lancedb_summary": [
+    {
+      "model": "google/gemini-3.8-flash",
+      "retrieval": "lancedb/agentic",
+      "completed": 1,
+      "expected": 1,
+      "errors": 0,
+      "max_source_worker_rss_mib": 981.67578125,
+      "tool_calls": 2,
+      "correctness": 100,
+      "citation_support": 100,
+      "accession_recall": 1.0,
+      "mean_retrieval_seconds": 4.253839363000225,
+      "mean_judge_seconds": 2.6600530899995647,
+      "prompt_tokens": 21679,
+      "completion_tokens": 527,
+      "mean_answer_seconds": 6.195667696998498,
+      "reported_chat_cost_usd": 0.00862785,
+      "unknown_cost_calls": 0
+    },
+    {
+      "model": "openai/gpt-6-luna",
+      "retrieval": "lancedb/agentic",
+      "completed": 1,
+      "expected": 1,
+      "errors": 0,
+      "max_source_worker_rss_mib": 0,
+      "tool_calls": 1,
+      "correctness": 96,
+      "citation_support": 95,
+      "accession_recall": 1.0,
+      "mean_retrieval_seconds": 3.422990521000429,
+      "mean_judge_seconds": 3.8852809370000614,
+      "prompt_tokens": 32445,
+      "completion_tokens": 389,
+      "mean_answer_seconds": 2.8612620140002036,
+      "reported_chat_cost_usd": 0.0036430250000000003,
+      "unknown_cost_calls": 0
+    }
+  ],
+  "completed_live_cases": 4
+}

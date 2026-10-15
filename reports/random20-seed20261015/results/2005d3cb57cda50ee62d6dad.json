@@ -1,0 +1,117 @@
+{
+  "question_id": "Q081",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.04808006499933981,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Pfizer disclosed that on February 4, 2025, it issued a press release announcing its financial results for the fourth quarter and full year 2024. **Citation:** accession 0000078003-25-000017, \u201cItem 2.02 Results of Operations and Financial Condition,\u201d chunk 0.",
+    "message": {
+      "role": "assistant",
+      "content": "Pfizer disclosed that on February 4, 2025, it issued a press release announcing its financial results for the fourth quarter and full year 2024. **Citation:** accession 0000078003-25-000017, \u201cItem 2.02 Results of Operations and Financial Condition,\u201d chunk 0.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:43.642146+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "2005d3cb57cda50ee62d6dad:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042001-vbYLWuZSHCJkluzJxjNW",
+    "usage": {
+      "prompt_tokens": 6721,
+      "completion_tokens": 69,
+      "total_tokens": 6790,
+      "cost": 0.00087455,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 6718,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00087455,
+        "upstream_inference_prompt_cost": 0.00084005,
+        "upstream_inference_completions_cost": 3.45e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.6395278370000597,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 75, \"citation_support\": 90, \"rationale\": \"The candidate correctly identifies the core event: a February 4, 2025 press release furnished under Item 2.02 reporting Pfizer's fourth-quarter and full-year 2024 financial results. This matches the retrieved Item 2.02 chunk and the Filing Summary. The reference also mentions 2025 financial guidance, but neither the gold evidence nor the retrieved excerpts support that, so the candidate's omission is a minor gap rather than an error. The citation (accession 0000078003-25-000017, Item 2.02 section, chunk 0) matches the retrieved excerpt. The quoted section title is accurate, though the gold quote is a different header string.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 75, \"citation_support\": 90, \"rationale\": \"The candidate correctly identifies the core event: a February 4, 2025 press release furnished under Item 2.02 reporting Pfizer's fourth-quarter and full-year 2024 financial results. This matches the retrieved Item 2.02 chunk and the Filing Summary. The reference also mentions 2025 financial guidance, but neither the gold evidence nor the retrieved excerpts support that, so the candidate's omission is a minor gap rather than an error. The citation (accession 0000078003-25-000017, Item 2.02 section, chunk 0) matches the retrieved excerpt. The quoted section title is accurate, though the gold quote is a different header string.\"}",
+      "refusal": null,
+      "reasoning": "The reference mentions \"2025 financial guidance\" but the evidence only supports Q4 and full-year 2024 results, not 2025 guidance. The candidate's claim about the Feb 4, 2025 press release announcing Q4 and FY 2024 results aligns with the retrieved text and gold evidence, so it's correct on the core event.\n\nFor citation support, the candidate cites the accession number and Item 2.02 section, which matches chunk 0's section header \u2014 this is well supported, so I'd put correctness around 75 given the minor omission, and citation support around 90.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The reference mentions \"2025 financial guidance\" but the evidence only supports Q4 and full-year 2024 results, not 2025 guidance. The candidate's claim about the Feb 4, 2025 press release announcing Q4 and FY 2024 results aligns with the retrieved text and gold evidence, so it's correct on the core event.\n\nFor citation support, the candidate cites the accession number and Item 2.02 section, which matches chunk 0's section header \u2014 this is well supported, so I'd put correctness around 75 given the minor omission, and citation support around 90.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:13.383479+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "2005d3cb57cda50ee62d6dad:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042208-wbJb8btiKViqmyzFrDfH",
+    "usage": {
+      "prompt_tokens": 10220,
+      "completion_tokens": 608,
+      "total_tokens": 10828,
+      "cost": 0.001326,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001326,
+        "upstream_inference_prompt_cost": 0.001022,
+        "upstream_inference_completions_cost": 0.000304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 363,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.564766077000058,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 75,
+    "citation_support": 90,
+    "rationale": "The candidate correctly identifies the core event: a February 4, 2025 press release furnished under Item 2.02 reporting Pfizer's fourth-quarter and full-year 2024 financial results. This matches the retrieved Item 2.02 chunk and the Filing Summary. The reference also mentions 2025 financial guidance, but neither the gold evidence nor the retrieved excerpts support that, so the candidate's omission is a minor gap rather than an error. The citation (accession 0000078003-25-000017, Item 2.02 section, chunk 0) matches the retrieved excerpt. The quoted section title is accurate, though the gold quote is a different header string."
+  },
+  "status": "ok"
+}

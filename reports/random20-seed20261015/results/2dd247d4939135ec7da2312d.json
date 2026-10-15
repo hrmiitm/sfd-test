@@ -1,0 +1,126 @@
+{
+  "question_id": "Q004",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.023051738000503974,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to the cover page of Amazon.com, Inc.'s Form 10-K for the fiscal year ended December 31, 2024, the number of shares of common stock outstanding as of January 29, 2025 was:\n\n* **10,597,729,352 shares**\n\n*(Source: Form 10-K, Accession No. 0001018724-25-000004, Section: \"Filing Summary\", Chunk ID: `f05c5750-f394-518a-9e8a-8b41aa7ac89e`)*",
+    "message": {
+      "role": "assistant",
+      "content": "According to the cover page of Amazon.com, Inc.'s Form 10-K for the fiscal year ended December 31, 2024, the number of shares of common stock outstanding as of January 29, 2025 was:\n\n* **10,597,729,352 shares**\n\n*(Source: Form 10-K, Accession No. 0001018724-25-000004, Section: \"Filing Summary\", Chunk ID: `f05c5750-f394-518a-9e8a-8b41aa7ac89e`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a18A+qFSUC7TyBNj6QcMVKNNTrxCKBqnE//F623H2ihjD2k94QkAFxADAfylIdiAdbXgQ5T9EuJgSecc5eECqg+qZW72Wo4Ax3XdWVTGBL137yug",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:05.544442+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "2dd247d4939135ec7da2312d:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041842-LIbV0DPIWOh3wytgl23T",
+    "usage": {
+      "prompt_tokens": 15108,
+      "completion_tokens": 160,
+      "total_tokens": 15268,
+      "cost": 0.011931,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011931,
+        "upstream_inference_prompt_cost": 0.011331,
+        "upstream_inference_completions_cost": 0.0006
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.5990360839996356,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 92, \"rationale\": \"The candidate gives 10,597,729,352 shares, which matches the reference and the gold evidence exactly, including the January 29, 2025 date. The cited accession 0001018724-25-000004 matches the gold evidence. The cited chunk ID f05c5750-f394-518a-9e8a-8b41aa7ac89e appears in the retrieved excerpts, and that chunk contains the cover-page line 'Number of shares of common stock outstanding as of January 29, 2025 | 10597729352'. The section label 'Filing Summary' matches the chunk metadata. The citation does not quote the line verbatim, so support is slightly below full.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 92, \"rationale\": \"The candidate gives 10,597,729,352 shares, which matches the reference and the gold evidence exactly, including the January 29, 2025 date. The cited accession 0001018724-25-000004 matches the gold evidence. The cited chunk ID f05c5750-f394-518a-9e8a-8b41aa7ac89e appears in the retrieved excerpts, and that chunk contains the cover-page line 'Number of shares of common stock outstanding as of January 29, 2025 | 10597729352'. The section label 'Filing Summary' matches the chunk metadata. The citation does not quote the line verbatim, so support is slightly below full.\"}",
+      "refusal": null,
+      "reasoning": "The candidate's 10,597,729,352 shares matches the reference, and the citation checks out \u2014 the chunk ID and accession number align with the retrieved excerpts in the \"Filing Summary\" section, even though the quote isn't verbatim. So I'd rate correctness at 100 and citation support around 90.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The candidate's 10,597,729,352 shares matches the reference, and the citation checks out \u2014 the chunk ID and accession number align with the retrieved excerpts in the \"Filing Summary\" section, even though the quote isn't verbatim. So I'd rate correctness at 100 and citation support around 90.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSoQkKEAgSGAI4AUIIdGhpbmtpbmcSDF8JZTDF2xfyHfsCXBoM2cZ83kUn5ZfAodjMIjAFBlOYg2Jd9W1yztXpMC9MQQYL9W8xJHFmnZFeImTEKIAH5DfLFCUUiJ4wEmzZ9DAqvghfWsZzSYPTdK575CwcpKXl7f6LA2S8pQTf+TT8QMDkZgvUUQDLLdqt2avzB2h0kNpEUk1P9z7svdIhaKotzwumgboVQ+aSXprbBg1YbE5rtH9CF8h+rqhEf5bSm3G7Rv0BQl0X73P7oHO+SLkTTUwBr5Ax4XQuo+kBb8oGDLeawPnZdzcRYLp4WGk50M8gCmXunef0fI054IXEgq69Sh5QFHWxkgKDFqFZ2ahVVUOaHOxj81A1ZVl/RcELsMisw36/O1cGgeo4ykXfwk28n0KYc+1h/lGJl6gQd+vHCUiA3DjuNobTad6tskv8LjmYKVrjzrgnmMYx//HlnMQF2jf5ps1eCrS7bD7ikqJ1ob4j+otyManGZsmwyEMmXGOu7Zd75hj49iuZJ5X6s2+om4Mc/XhZ7765RMsRMRqNGNzfK5WFLHpx2uAw4YEr/MKI3+o7QEyzIRYrRdHRzoAeambRbINRk9gvolhnFL+HUKyHgPMp90QTPGPE3d1o7ysV0k5JMRKDePS3TPmXc6iPku7m/h3HJge4W9zt/ponsIyyUxAPzYkxd34ntgUARH5XRaAvyEaCc+i9Uc/lhOrsMF5foxDL2xTpzJwI2NgUFIahUyRfSAEJAFCedgwaIMwUXYMOxW/gutPdaqWWjo4TdGmAAZtFu0jDrvEU2rcIoMhO2zv2Mzw6LOObDz+8SQ6Ub+ZrT0uldhHTxkq5AXbqC5bWT1GTK9ZYAWNxTgXSGBtPPnHhjCdqi/wR/JhWH8PQTyV3QgcKUFjND4NWvicam0A+MCwroT6cH+D5TYFmoCejikENVMuUpULArZRokLP2+Fb5fCcTdSZVmYPEFIUZfEWVyhr6mNaHw7iK+HiCo1MEuvIo7ocuqdZjJCKYTmTDABmhKzy15H00e6Kd9EZMqc5XXiJIxaI7Lr1CnDq5EEBqnOcFufQAZ6G6sfKWEiYdTgnpsP6lqz23g0TcuyJU5rv9TNm3YMgBVpzn8BGEMCXn4kDNLy3oYaV7JEg9zJPYb1pKFPMzzth/zDd4S5HxmYBF/bjKlMI8ZLXxEocaZF/BgnTrkVTOArXx/8l0syiV5GfIlBlBrqpg47G4NNqldECAyLsxdO0+Sv9Q7Iv4QLEZxx7HnIDamrrNFX8xh6Pc863l/1pvBdtAZYQQjNgBLBwVTc2YXRawrv/tavheKa6fWovxWajSr3AkeqrNUYRVoAkJcEgr4FOK22lLSoUWKk8uhEsv1E0/FdiMvBOTpGeHnbmMewzowo3Av5z7cic4tJEEMnaAKn6lHXRDtpIyylG1TBbcmdeBEMVFmHhP0s1E4RVJOBuhP6xpwflCoiYh69GAvBMHeU1BGXqjsokWiESOHIu8oFcI91rHysHs23whFzieKECKAiuvY5o2L8WIuEEivAAAozxK2e8aNNEMoRHFGHQlDHb898Gf7rlOWwIYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:51.645515+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "2dd247d4939135ec7da2312d:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042067-ZuRrvDOj79AjFAf5Gagn",
+    "usage": {
+      "prompt_tokens": 20137,
+      "completion_tokens": 441,
+      "total_tokens": 20578,
+      "cost": 0.0022342,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0022342,
+        "upstream_inference_prompt_cost": 0.0020137,
+        "upstream_inference_completions_cost": 0.0002205
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 203,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.932282924999527,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 92,
+    "rationale": "The candidate gives 10,597,729,352 shares, which matches the reference and the gold evidence exactly, including the January 29, 2025 date. The cited accession 0001018724-25-000004 matches the gold evidence. The cited chunk ID f05c5750-f394-518a-9e8a-8b41aa7ac89e appears in the retrieved excerpts, and that chunk contains the cover-page line 'Number of shares of common stock outstanding as of January 29, 2025 | 10597729352'. The section label 'Filing Summary' matches the chunk metadata. The citation does not quote the line verbatim, so support is slightly below full."
+  },
+  "status": "ok"
+}

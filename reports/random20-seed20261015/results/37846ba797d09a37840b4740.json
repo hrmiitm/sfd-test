@@ -1,0 +1,117 @@
+{
+  "question_id": "Q028",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.03230198500023107,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to Citigroup Inc.'s Consolidated Statement of Income and Summary of Selected Financial Data in its 2024 Form 10-K, the figures for fiscal year 2024 were as follows:\n\n* **Net interest income:** $54,095 million (or ~$54.1 billion)\n* **Non-interest revenue:** $27,044 million (or ~$27.0 billion)\n* **Revenues, net of interest expense:** $81,139 million (or ~$81.1 billion)\n\n*(Source: Form 10-K for the fiscal year ended December 31, 2024, Accession: `0000831001-25-000067`, Filing Summary, Chunk IDs: `efe0d2ed-b1ce-51fa-8514-80597e1dab5c` and `076160cc-4a20-5231-a337-d5dfa40099d1`)*",
+    "message": {
+      "role": "assistant",
+      "content": "According to Citigroup Inc.'s Consolidated Statement of Income and Summary of Selected Financial Data in its 2024 Form 10-K, the figures for fiscal year 2024 were as follows:\n\n* **Net interest income:** $54,095 million (or ~$54.1 billion)\n* **Non-interest revenue:** $27,044 million (or ~$27.0 billion)\n* **Revenues, net of interest expense:** $81,139 million (or ~$81.1 billion)\n\n*(Source: Form 10-K for the fiscal year ended December 31, 2024, Accession: `0000831001-25-000067`, Filing Summary, Chunk IDs: `efe0d2ed-b1ce-51fa-8514-80597e1dab5c` and `076160cc-4a20-5231-a337-d5dfa40099d1`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1/rd4djxFx9/bxY1qyq4BOCdgZDk3U72JiseZBnHJ89yEQWKw4MLzFOQjnj/VQjjWiy18QjhtXrZPtECi36W8m4TsaWflyCUaZ5MjBTv0mLDryf",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:14.041515+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "37846ba797d09a37840b4740:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041911-lE4HGTCrUUB6J5ijLAd9",
+    "usage": {
+      "prompt_tokens": 19104,
+      "completion_tokens": 248,
+      "total_tokens": 19352,
+      "cost": 0.015258,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.015258,
+        "upstream_inference_prompt_cost": 0.014328,
+        "upstream_inference_completions_cost": 0.00093
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.5379061430003276,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's figures match the reference and the retrieved filing excerpts: Net interest income $54,095M (Consolidated Statement of Income and Selected Financial Data), Non-interest revenue $27,044M, and Revenues net of interest expense $81,139M, all for 2024 and in millions. The rounded billion equivalents are arithmetically consistent. The cited accession 0000831001-25-000067 and chunk IDs efe0d2ed... and 076160cc... correspond to retrieved excerpts that contain these exact values, so the citation is supported. Minor deduction only because the candidate labels the source as 'Filing Summary' and the answer is slightly more verbose than the reference, with no substantive error.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's figures match the reference and the retrieved filing excerpts: Net interest income $54,095M (Consolidated Statement of Income and Selected Financial Data), Non-interest revenue $27,044M, and Revenues net of interest expense $81,139M, all for 2024 and in millions. The rounded billion equivalents are arithmetically consistent. The cited accession 0000831001-25-000067 and chunk IDs efe0d2ed... and 076160cc... correspond to retrieved excerpts that contain these exact values, so the citation is supported. Minor deduction only because the candidate labels the source as 'Filing Summary' and the answer is slightly more verbose than the reference, with no substantive error.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:32.391904+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "37846ba797d09a37840b4740:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042109-3aaVSKV6lfUsHKyLbaau",
+    "usage": {
+      "prompt_tokens": 25126,
+      "completion_tokens": 261,
+      "total_tokens": 25387,
+      "cost": 0.0026431,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0026431,
+        "upstream_inference_prompt_cost": 0.0025126,
+        "upstream_inference_completions_cost": 0.0001305
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.563368552000611,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 95,
+    "rationale": "The candidate's figures match the reference and the retrieved filing excerpts: Net interest income $54,095M (Consolidated Statement of Income and Selected Financial Data), Non-interest revenue $27,044M, and Revenues net of interest expense $81,139M, all for 2024 and in millions. The rounded billion equivalents are arithmetically consistent. The cited accession 0000831001-25-000067 and chunk IDs efe0d2ed... and 076160cc... correspond to retrieved excerpts that contain these exact values, so the citation is supported. Minor deduction only because the candidate labels the source as 'Filing Summary' and the answer is slightly more verbose than the reference, with no substantive error."
+  },
+  "status": "ok"
+}

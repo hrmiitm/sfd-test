@@ -1,0 +1,126 @@
+{
+  "question_id": "Q051",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.01664371199967718,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "From Adobe Inc.'s **Consolidated Statements of Income** for the fiscal year ended November 29, 2024:\n\n- **Total revenue:** $21,505 million  \n- **Gross profit:** $19,147 million  \n\n### Calculation:\n$$\\text{Gross Profit Margin Percentage} = \\frac{\\text{Gross Profit}}{\\text{Total Revenue}} \\times 100$$\n\n$$\\text{Gross Profit Margin Percentage} = \\frac{\\$19,147}{\\$21,505} \\times 100 \\approx 89.0351\\% \\approx 89.04\\% \\text{ (or } 89\\% \\text{ rounded)}$$\n\n*(Note: In Note 2 (Revenue / Segment Information), total \"Gross profit as a percentage of revenue\" for fiscal 2024 is also reported as **89%**).*\n\n**Sources:**\n- Accession: `0000796343-25-000004`, Section: `CONSOLIDATED STATEMENTS OF INCOME`, Chunk ID: `c8e23789-3e5b-5998-a527-7bb13e5d5a92`\n- Accession: `0000796343-25-000004`, Section: `ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA` (Note 2), Chunk ID: `b8fa3362-a910-51b7-aebe-a44fa81085a4`",
+    "message": {
+      "role": "assistant",
+      "content": "From Adobe Inc.'s **Consolidated Statements of Income** for the fiscal year ended November 29, 2024:\n\n- **Total revenue:** $21,505 million  \n- **Gross profit:** $19,147 million  \n\n### Calculation:\n$$\\text{Gross Profit Margin Percentage} = \\frac{\\text{Gross Profit}}{\\text{Total Revenue}} \\times 100$$\n\n$$\\text{Gross Profit Margin Percentage} = \\frac{\\$19,147}{\\$21,505} \\times 100 \\approx 89.0351\\% \\approx 89.04\\% \\text{ (or } 89\\% \\text{ rounded)}$$\n\n*(Note: In Note 2 (Revenue / Segment Information), total \"Gross profit as a percentage of revenue\" for fiscal 2024 is also reported as **89%**).*\n\n**Sources:**\n- Accession: `0000796343-25-000004`, Section: `CONSOLIDATED STATEMENTS OF INCOME`, Chunk ID: `c8e23789-3e5b-5998-a527-7bb13e5d5a92`\n- Accession: `0000796343-25-000004`, Section: `ITEM 8. FINANCIAL STATEMENTS AND SUPPLEMENTARY DATA` (Note 2), Chunk ID: `b8fa3362-a910-51b7-aebe-a44fa81085a4`",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a18p2mqMXlMoEGMJ96iagm2wOgGxoNv6DqHOrd+gnd22ohkexz2cGkekvDzREGmajjYYwaVIj/grl4Pi14OozVDnnejwe0d8zITYvdTpPxNX6SzP",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:30.564343+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "85c0b861a9f1654fdd51e03c:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041927-wIxuupQdWLxcUd2paLdg",
+    "usage": {
+      "prompt_tokens": 19025,
+      "completion_tokens": 369,
+      "total_tokens": 19394,
+      "cost": 0.0156525,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0156525,
+        "upstream_inference_prompt_cost": 0.01426875,
+        "upstream_inference_completions_cost": 0.00138375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.506277026000134,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's 89.04% matches the reference. Its arithmetic is correct: 19,147 / 21,505 = 89.035%, which rounds to 89.04%. The inputs (gross profit $19,147M, total revenue $21,505M) match the Consolidated Statements of Income in the retrieved excerpts. The candidate also correctly notes that Note 2 reports 89% gross margin for fiscal 2024. Both cited chunk IDs appear among the retrieved excerpts and support the claims made. The minor deduction is that the response adds rounding variants and an extra note that the reference does not need.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's 89.04% matches the reference. Its arithmetic is correct: 19,147 / 21,505 = 89.035%, which rounds to 89.04%. The inputs (gross profit $19,147M, total revenue $21,505M) match the Consolidated Statements of Income in the retrieved excerpts. The candidate also correctly notes that Note 2 reports 89% gross margin for fiscal 2024. Both cited chunk IDs appear among the retrieved excerpts and support the claims made. The minor deduction is that the response adds rounding variants and an extra note that the reference does not need.\"}",
+      "refusal": null,
+      "reasoning": "Verifying the math: 19147/21505 comes out to 0.890352, confirming the 89.04% figure matches the reference. The citation checks out too\u2014it points to the consolidated income statement chunk and a related note that supports it.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Verifying the math: 19147/21505 comes out to 0.890352, confirming the 89.04% figure matches the reference. The citation checks out too\u2014it points to the consolidated income statement chunk and a related note that supports it.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS7AgKEAgSGAI4AUIIdGhpbmtpbmcSDIYlqaSmtz2W8+flhhoMgPjMgnA+Fob5Y8cQIjCGxdD+ZvsR/SoS/Zx/o/frDGQ8zBGp8WmtqXbWv+sqOOmAQ+pv3OogbU7tAbLkpnkqiQihrQuGGNynPQln/wr+Vwk70vIMnElcNXfpndL8YMZBYEk7+EAtia5TUgWbDQMczCIaHnGQfFF78UGeow8NTRrMR7zK0/kgc1NPxsi2hEsa8m2DnFsHwx908WgTwwnpOMYAhTG82u6GuO95Vf9O5MRxlKRav211AYDz/9ZDQ4j/9/aeJ/hE2clPaGf3jdkZr8zB2ArqNspgMa6Nipv2RrRwLjMjMR2KMyp+Z21cXYnbSZaeFHMGUssbO4d3LzINcC8LInUX4PTjtONYo8Md+e2hZ5/9HidPJVtPHGZcOcKIuQ6/sKU8DX1f5I+B4Frg0wvPdG1Iz2xwrxJ/YPSeap5BpNncaDS2+XxaGK0X3BzBE11D7J9oY/tE2z/heQAnVFBXdaD3dKH1L2A4/0LoWvbBuMsyztcApETMY//aQjM6LXPN8CZfIRu2CRxycxp3AvwbS0++fteUZPTsrL7A9onLt0tX/VwtOm7q9BciP4xO3XYG59mRMoGwqBtk8enG4TzO6c8wiX+I10eKHjbK+laJ8tnxMnSgLcw10UWWE8g91r28O3I+PPeVi5RsNW1C8ytTPV7nVaRtdAoxAi7t61DZMx7/nJkR7CzQfXWyiK3bcHUB4gxB1D66DdyRtazBqa7n06uWLcWjsYGiTI0tGnyWffyHd0azFSQwvV/DUBPPGl+i8kXfKvZBf9H6Mur/lSza0uc6tux330bVh8WTjVqIq3ljzebvcVCdTlZ5XbZAvsyp34kLqqMUIwdEKA9v6m3L+Xl2cmLxwXiIRPaJdXofzCtTf7W1tlbURPUFCd7Ircxp6/Yr7ucbow74cR9W2dKezvuyqaZuOTct2AH2lCCPl5D0Tbq8XYaNGLM9b0OaBvKAgncqALno65YCLKHGhlAgqX8SpHX6IhwboDdyDZNXBBw0iN8KV5w6j6azgfaheQ8tfZN+gg74lBmqdUP753+MyzFIfDUo6WPb2VrHnDjTypZ1Osjpac+U1qlihdInDGbGbrDosvF0mHK8d9nGR8l+2on3mqR8eQ56VB8S/UuII+q/7jC1FRXk8xf5D24havWuWq//rZuN1HOS4eENtfb3wKXXMwCyp2nfeXrCPxgIC6JfCBy0y4lYSQaIdTl01OsbbayXdzokuu/V3eUNYNxsFp3N6VCeo9LOd7X4PL52TE77pXVKj8zFnXqN6R5Z4kYxv/0vf7B/DeKS/ZHzfLQRzZRhQCbCiV/Xrlnsw99eT/Ih8a4rEn2XN1KnRmnsuQUR6cAHCL4RWuS48+PzuH94aSd6iYZI3PzPwWbCk248Yy2N9gwc8F9EjT2fAG2QQKlUIwnaWS+4XJSrhv7Kfxh1auq35BweIPhWMYG6DbZIxLyuwUip8Ec6GAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:59.522298+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "85c0b861a9f1654fdd51e03c:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042135-yMXoRrbJjzGxvVntyPxz",
+    "usage": {
+      "prompt_tokens": 25788,
+      "completion_tokens": 469,
+      "total_tokens": 26257,
+      "cost": 0.0028133,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028133,
+        "upstream_inference_prompt_cost": 0.0025788,
+        "upstream_inference_completions_cost": 0.0002345
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 244,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.907736015999944,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 95,
+    "rationale": "The candidate's 89.04% matches the reference. Its arithmetic is correct: 19,147 / 21,505 = 89.035%, which rounds to 89.04%. The inputs (gross profit $19,147M, total revenue $21,505M) match the Consolidated Statements of Income in the retrieved excerpts. The candidate also correctly notes that Note 2 reports 89% gross margin for fiscal 2024. Both cited chunk IDs appear among the retrieved excerpts and support the claims made. The minor deduction is that the response adds rounding variants and an extra note that the reference does not need."
+  },
+  "status": "ok"
+}

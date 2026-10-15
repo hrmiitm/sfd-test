@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "file": "sfd-v1-2025-01.parquet",
+      "filings": 90711,
+      "characters": 9724688094,
+      "compressed_bytes": 873335854
+    },
+    {
+      "file": "sfd-v1-2025-02.parquet",
+      "filings": 128993,
+      "characters": 14064974334,
+      "compressed_bytes": 1297350559
+    },
+    {
+      "file": "sfd-v1-2025-03.parquet",
+      "filings": 118933,
+      "characters": 15045635558,
+      "compressed_bytes": 1413672152
+    },
+    {
+      "file": "sfd-v1-2025-04.parquet",
+      "filings": 109085,
+      "characters": 16716735092,
+      "compressed_bytes": 1422787798
+    },
+    {
+      "file": "sfd-v1-2025-05.parquet",
+      "filings": 126665,
+      "characters": 16044646225,
+      "compressed_bytes": 1408854150
+    },
+    {
+      "file": "sfd-v1-2025-06.parquet",
+      "filings": 63680,
+      "characters": 5824710247,
+      "compressed_bytes": 498043763
+    }
+  ],
+  "total_filings": 638067,
+  "total_characters": 77421389550,
+  "prefix_characters": {
+    "1000": 96478835,
+    "10000": 728508206
+  }
+}

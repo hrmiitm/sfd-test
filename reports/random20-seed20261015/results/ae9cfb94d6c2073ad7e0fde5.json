@@ -1,0 +1,117 @@
+{
+  "question_id": "Q030",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.03011004300060449,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "For fiscal 2024, ConocoPhillips reported:\n\n- **Purchased commodities:** **$20,012 million** ($20.012 billion)\n- **Production and operating expenses:** **$8,751 million** ($8.751 billion)\n\nCalculation: the filing\u2019s table reports both expenses in millions of dollars; dividing each by 1,000 converts to billions. **Source:** accession **0001163165-25-000012**, Item 7, \u201cResults of Operations\u201d / \u201cIncome Statement Analysis,\u201d chunk **60c96100-be72-5594-b30e-5f7ac572a516**.",
+    "message": {
+      "role": "assistant",
+      "content": "For fiscal 2024, ConocoPhillips reported:\n\n- **Purchased commodities:** **$20,012 million** ($20.012 billion)\n- **Production and operating expenses:** **$8,751 million** ($8.751 billion)\n\nCalculation: the filing\u2019s table reports both expenses in millions of dollars; dividing each by 1,000 converts to billions. **Source:** accession **0001163165-25-000012**, Item 7, \u201cResults of Operations\u201d / \u201cIncome Statement Analysis,\u201d chunk **60c96100-be72-5594-b30e-5f7ac572a516**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:26.392521+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "ae9cfb94d6c2073ad7e0fde5:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041923-MiFavqrA3rnrPPjPdPaF",
+    "usage": {
+      "prompt_tokens": 18657,
+      "completion_tokens": 133,
+      "total_tokens": 18790,
+      "cost": 0.00239855,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 18654,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00239855,
+        "upstream_inference_prompt_cost": 0.00233205,
+        "upstream_inference_completions_cost": 6.65e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.055565366000337,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's figures match the reference and gold evidence exactly: Purchased commodities $20,012 million and Production and operating expenses $8,751 million for 2024. The unit conversions to billions are arithmetically correct. The cited accession 0001163165-25-000012 and chunk 60c96100-be72-5594-b30e-5f7ac572a516 both appear in the retrieved excerpts, and that chunk contains the 'Income Statement Analysis' table with these exact values under Item 7 Results of Operations. The citation is well supported. The only minor imprecision is that the section label is a paraphrase of the chunk's header rather than its exact text.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's figures match the reference and gold evidence exactly: Purchased commodities $20,012 million and Production and operating expenses $8,751 million for 2024. The unit conversions to billions are arithmetically correct. The cited accession 0001163165-25-000012 and chunk 60c96100-be72-5594-b30e-5f7ac572a516 both appear in the retrieved excerpts, and that chunk contains the 'Income Statement Analysis' table with these exact values under Item 7 Results of Operations. The citation is well supported. The only minor imprecision is that the section label is a paraphrase of the chunk's header rather than its exact text.\"}",
+      "refusal": null,
+      "reasoning": "The figures check out\u2014purchased commodities at $20,012M and production/operating expenses at $8,751M match the reference, and the citation traces correctly to the chunk containing the income statement analysis table under \"Item 7. Management's Discussion... Results of Operations.\" The candidate's section label \"Item 7\" is accurate.\n\nOverall citation support is strong, around 95, and correctness should be scored 100.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The figures check out\u2014purchased commodities at $20,012M and production/operating expenses at $8,751M match the reference, and the citation traces correctly to the chunk containing the income statement analysis table under \"Item 7. Management's Discussion... Results of Operations.\" The candidate's section label \"Item 7\" is accurate.\n\nOverall citation support is strong, around 95, and correctness should be scored 100.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS5wkKEAgSGAI4AUIIdGhpbmtpbmcSDMw2zOWHZQ1dasfRjBoMKAy0WHWS4JVB6HjPIjC0MW4OiNsPjXFxWYjqDw1EymIRkPcFKKQ285alIrzqIv8nvF3GAX32TkEz5uhjaZcqhAkkHdpqDO78SIaFH3QxzLfE2hEkU2f9phCUaA3hfTZ2ri7NDRzds7qlGZrM8TEbkwBhr49WaVHrR9isXHKKnxfD27QFNGfASlIt2Ra62fNXxcSdB3dWUTecLx+L/Su5NQjHPlwA9oCM2Obzuc2CbETB5FGdYShkKUgosIdijZhVM9YRJguLASQAYTj7QLd7zrR8ooOM1TErii/+7G2PKlMbSNjvGJyKTTLBX4vGvLtp9ad1hB4wnRjM9tHtRxmy14vVrycoc4We3ZfyzmfUbKZ/DHc/nAoh+NBrsuexOqvK38LwAy75UDp+I8o1HSpHk423FK/iQcf2BXKCGcDMrwympDfzlVV0smNR59iMI501Q7A+QGCBtFJWUnBKy9uXEM+1AmB+OlyQAKTs5N9H7TBYy6rNbNMSB33jU3n6SqLEYBJzAA7f2YoayiXAJbBxvgOkbfXFev8nw3vS8htmoRF37gPqHL2Am25QhjVc7+3ewowIw3oM1nRlLEms6yDRc2lO7yiSNPVHH8AUNkyYocsTCvn0Fn7qnS4eVgGKXGvVJt+zdm+cVH+6Pt4lWIGzKGuv1aiwL7cGZ9PF6hW2qrAPW4T0y3tQicGQoYdNMH1JPCQcW0vqaRD8ThKMTFBCru6E2X/XbErlGyc7Bs0tMSAIRJd6ONbPhOHmRzKGnyWeWRo2VtfMbBuX96LyMVX3NjxOS6IO/BRV29VqHHJjizSiy/eePCflxZMpywbu90WKQECOpk/IzaJ071yqPyVekCTISXMirDhNxSZ2Kkq7qMw5w+p1w8IKjwKRaIuMVVk/kxOMRVeeTo+wVBoKsZxZq3y5Fk5ZbVvI6KbSO0+DjFKYW6Hmw2I8m62y4K2/bm+MgNBbYeK2yLvAmIIiYQPCfl0VDmbsF4FLrIr3NQ1dCz+zWAsBEm65mVOSRArG98KJvA2BHVhJE0KOekSkHzHjWSWSHrCJh2wyr0CWU2TkkymQo76SJUzFTvypYQCCcSnMdKYYNvrZNJMtpzBQUL8Ova2jjP2a5GXn5iKJ2JwocL+vmCURjEahNGcqvcz9Da7LTjt/P0ZBWAHRMEr+YCYhGqsNFP8VeHT/K18Xszl7rt65w8PruBmwXWXp4awkA8Yzle63z5sEbIVlV8xkDCswEiKOSAvxorw9N7WerhKxlKhC7IXKth0g8gD8iklAma5bqxmVkjWe3SHiYVYcF+1w7Vb1taDKLL25WK0ox1zLW0j4+KoUV1O7CM6GBg8zOGWp0DO0my5mfs75rDFFb/cCtVEMIwj9JejtChIM92iczuA9L6Nb83TmyKU0UcmIGgtqiJk9E5ZXYXH4TNq4PVLJDI/zjqYqBRndp3fFNWg4txGuucgs9r9e+ZhE5DTTPZ7F3fINPQzOg2aXz/reF9itg2rmVTwzpunroHrlBIdY38EFgUrYnVcOO7ojBYDWSxYeCMKYcDOBSm7c/uHDMCzrkW19qmQpRtsLjH+6fKKfNh9/83lWdVz0tJ6f0MAVBzytFySoS4GiW0rUYGub4RBjlXOA4pxRGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:53.081840+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "ae9cfb94d6c2073ad7e0fde5:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042128-0dfomvOvLbdkQYaNvLpI",
+    "usage": {
+      "prompt_tokens": 29789,
+      "completion_tokens": 479,
+      "total_tokens": 30268,
+      "cost": 0.0032184,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032184,
+        "upstream_inference_prompt_cost": 0.0029789,
+        "upstream_inference_completions_cost": 0.0002395
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 239,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.138419818999864,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 96,
+    "rationale": "The candidate's figures match the reference and gold evidence exactly: Purchased commodities $20,012 million and Production and operating expenses $8,751 million for 2024. The unit conversions to billions are arithmetically correct. The cited accession 0001163165-25-000012 and chunk 60c96100-be72-5594-b30e-5f7ac572a516 both appear in the retrieved excerpts, and that chunk contains the 'Income Statement Analysis' table with these exact values under Item 7 Results of Operations. The citation is well supported. The only minor imprecision is that the section label is a paraphrase of the chunk's header rather than its exact text."
+  },
+  "status": "ok"
+}

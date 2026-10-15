@@ -1,0 +1,117 @@
+{
+  "question_id": "Q025",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.03005406000011135,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to Adobe Inc.'s fiscal 2024 Form 10-K:\n\n### 1. Fiscal Year 2024 Total Digital Media Segment Revenue\n* **$15,864 million** (or **$15.86 billion**)\n\n### 2. Year-over-Year Percentage Growth from Fiscal 2023\n* **Reported Growth:** **12%**\n* **Calculation:**\n  $$\\frac{\\$15,864\\text{ million} - \\$14,216\\text{ million}}{\\$14,216\\text{ million}} = \\frac{\\$1,648\\text{ million}}{\\$14,216\\text{ million}} \\approx 11.59\\% \\rightarrow 12\\%$$\n\n*(Sources: Accession `0000796343-25-000004`, Section \"Segments\", Chunk ID `839ad4e2-d434-562b-b699-c27185c0972b`; Section \"Digital Media\", Chunk ID `b52db0a2-1d0b-53bc-9889-5dd847e0b67c`; and Section \"NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)\", Chunk ID `065ae57a-28b6-5fda-a0e3-57c1a980d702`)*",
+    "message": {
+      "role": "assistant",
+      "content": "According to Adobe Inc.'s fiscal 2024 Form 10-K:\n\n### 1. Fiscal Year 2024 Total Digital Media Segment Revenue\n* **$15,864 million** (or **$15.86 billion**)\n\n### 2. Year-over-Year Percentage Growth from Fiscal 2023\n* **Reported Growth:** **12%**\n* **Calculation:**\n  $$\\frac{\\$15,864\\text{ million} - \\$14,216\\text{ million}}{\\$14,216\\text{ million}} = \\frac{\\$1,648\\text{ million}}{\\$14,216\\text{ million}} \\approx 11.59\\% \\rightarrow 12\\%$$\n\n*(Sources: Accession `0000796343-25-000004`, Section \"Segments\", Chunk ID `839ad4e2-d434-562b-b699-c27185c0972b`; Section \"Digital Media\", Chunk ID `b52db0a2-1d0b-53bc-9889-5dd847e0b67c`; and Section \"NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued)\", Chunk ID `065ae57a-28b6-5fda-a0e3-57c1a980d702`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a18B3/BvJDTQONtKJTga61qbBEUoZgi1tNG2QpzN5zNcyNyBA+A4rsSjlXxhdd9K/LnMfhZmGlCVCRnuxXdvMwq9bYMZahJRzJoveSQrzcKdZn0x",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:55.023627+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "61eb7ceaeeef3eadd531e701:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041892-0zosZVPDbyIUHMKwcr5h",
+    "usage": {
+      "prompt_tokens": 14490,
+      "completion_tokens": 343,
+      "total_tokens": 14833,
+      "cost": 0.01215375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01215375,
+        "upstream_inference_prompt_cost": 0.0108675,
+        "upstream_inference_completions_cost": 0.00128625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.9100990099996125,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "```json\n{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate reports Digital Media FY2024 revenue as $15,864 million ($15.86 billion), matching the reference and the retrieved segment table. Its growth calculation is correct: (15,864 - 14,216)/14,216 = 11.59%, which rounds to the reported 12%, consistent with the filing's stated 12%. The candidate shows the exact figures rather than the rounded $15.86B/$14.22B, which is a more precise but compatible presentation. Minor deduction because the candidate's calculation shows 11.59% rounded to 12% without noting that the filing's 12% is itself a rounded figure. Citations cite the correct accession and sections, and the retrieved excerpts directly support the $15,864M, $14,216M, and 12% figures; chunk IDs match retrieved chunks.\"}\n```",
+    "message": {
+      "role": "assistant",
+      "content": "```json\n{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate reports Digital Media FY2024 revenue as $15,864 million ($15.86 billion), matching the reference and the retrieved segment table. Its growth calculation is correct: (15,864 - 14,216)/14,216 = 11.59%, which rounds to the reported 12%, consistent with the filing's stated 12%. The candidate shows the exact figures rather than the rounded $15.86B/$14.22B, which is a more precise but compatible presentation. Minor deduction because the candidate's calculation shows 11.59% rounded to 12% without noting that the filing's 12% is itself a rounded figure. Citations cite the correct accession and sections, and the retrieved excerpts directly support the $15,864M, $14,216M, and 12% figures; chunk IDs match retrieved chunks.\"}\n```",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:13.140459+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "61eb7ceaeeef3eadd531e701:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042090-c8IkzSa7qPAfgwzmbMKb",
+    "usage": {
+      "prompt_tokens": 20353,
+      "completion_tokens": 298,
+      "total_tokens": 20651,
+      "cost": 0.0021843,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0021843,
+        "upstream_inference_prompt_cost": 0.0020353,
+        "upstream_inference_completions_cost": 0.000149
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.1730616079994434,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 95,
+    "rationale": "The candidate reports Digital Media FY2024 revenue as $15,864 million ($15.86 billion), matching the reference and the retrieved segment table. Its growth calculation is correct: (15,864 - 14,216)/14,216 = 11.59%, which rounds to the reported 12%, consistent with the filing's stated 12%. The candidate shows the exact figures rather than the rounded $15.86B/$14.22B, which is a more precise but compatible presentation. Minor deduction because the candidate's calculation shows 11.59% rounded to 12% without noting that the filing's 12% is itself a rounded figure. Citations cite the correct accession and sections, and the retrieved excerpts directly support the $15,864M, $14,216M, and 12% figures; chunk IDs match retrieved chunks."
+  },
+  "status": "ok"
+}

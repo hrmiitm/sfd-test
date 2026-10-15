@@ -1,0 +1,873 @@
+{
+  "question_id": "Q055",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/agentic",
+  "retrieval": {
+    "seconds": 39.69230890200015,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "status": "ok",
+  "answer": {
+    "text": "Based on the evidence retrieved from Comcast Corporation's Form 10-K for the fiscal year ended December 31, 2024 (Accession number `0001166691-25-000011` in `/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet`), the search located the Table of Contents and preliminary sections of the report; however, the tool budget was exhausted before the Consolidated Statement of Income or operating results table containing the exact figures for Comcast Corporation's fiscal year 2024 Revenue and Operating Income could be retrieved.\n\nTherefore, the available evidence is insufficient to calculate Comcast Corporation's operating income margin percentage for fiscal year 2024.",
+    "usage": {
+      "prompt_tokens": 51821,
+      "completion_tokens": 750,
+      "total_tokens": 52571,
+      "cost": 0.03636465
+    },
+    "seconds": 16.97475739499987,
+    "tool_seconds": 39.69230890200015,
+    "tool_calls": 6,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_417338",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"form_type\":\"10-K\",\"company\":\"COMCAST\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1/zrfgy8nzs0nGdPIs77Ip9u9WoNJWBcKvd3iEnsJ6vLEVpkg3RHQhPWy9EK792fFkuKtx9wYryTiAEOBuQztY937XmOq/tGm+Znsdd5djDzN06",
+              "format": "google-gemini-v1",
+              "id": "call_417338",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_417338",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"form_type\":\"10-K\",\"company\":\"COMCAST\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:25:34.032796+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "1ed79d7cbffd84d5acf59c0b:agent:0",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792041931-LfJmv1cSkbSxvh49qLS6",
+        "usage": {
+          "prompt_tokens": 905,
+          "completion_tokens": 71,
+          "total_tokens": 976,
+          "cost": 0.000945,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000945,
+            "upstream_inference_prompt_cost": 0.00067875,
+            "upstream_inference_completions_cost": 0.00026625
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 1.084930428000007,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_39053",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"needle\":\"Consolidated Statement of Income\",\"file_stem\":\"0001166691-25-000011\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a19U9Dc21jT9k+g2orfoPFxkPJE0fNKP1BsPOFe6OdRsIc1uMlPF6zYTOPV2uUf07Nx5oPzve+kLPyrjqcXvkRiJVbWchzMpOUAnb2nnUGIPYTo0",
+              "format": "google-gemini-v1",
+              "id": "call_39053",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_39053",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"needle\":\"Consolidated Statement of Income\",\"file_stem\":\"0001166691-25-000011\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:29:11.135644+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "1ed79d7cbffd84d5acf59c0b:agent:1",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042149-rLzlhImsYAaahN3iFf5U",
+        "usage": {
+          "prompt_tokens": 1137,
+          "completion_tokens": 91,
+          "total_tokens": 1228,
+          "cost": 0.001194,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001194,
+            "upstream_inference_prompt_cost": 0.00085275,
+            "upstream_inference_completions_cost": 0.00034125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.0786379880000823,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_25451",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"needle\":\"Consolidated Statement of Income\",\"file_stem\":\"0001166691-25-000011\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"start\":200000}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1/MepK4P30oTUl3nkvb5W579+yRYZ1gwIhgymh/nf03iH9d9ccwpP77OhYZEx2IGLr5oUCSJ6EAsjkHVL9IxIGJgngPzCuBWeV1mH0uHhQegUOW",
+              "format": "google-gemini-v1",
+              "id": "call_25451",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_25451",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"needle\":\"Consolidated Statement of Income\",\"file_stem\":\"0001166691-25-000011\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"start\":200000}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:31:11.446299+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "1ed79d7cbffd84d5acf59c0b:agent:2",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042269-bYeNyIoCRvuypZGtiq7r",
+        "usage": {
+          "prompt_tokens": 4627,
+          "completion_tokens": 100,
+          "total_tokens": 4727,
+          "cost": 0.00384525,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00384525,
+            "upstream_inference_prompt_cost": 0.00347025,
+            "upstream_inference_completions_cost": 0.000375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 1.9724474449994887,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_164479",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0001166691-25-000011\",\"start\":0,\"needle\":\"Item 8. Financial Statements\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a19+TE0BC/AuhCxRnnTxF8uVxclYgCa9Ly2AHS1Y6K9XbPYG5fJUWztYmYQ/+i8I2SV6F5K6AXoVZIXxyAKMDQHeq4z4SPVr2Ux+w7JiYkIlB07I",
+              "format": "google-gemini-v1",
+              "id": "call_164479",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_164479",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0001166691-25-000011\",\"start\":0,\"needle\":\"Item 8. Financial Statements\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:35:20.422670+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "1ed79d7cbffd84d5acf59c0b:agent:3",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042518-NWPfMswX18Kz3m7AqUgP",
+        "usage": {
+          "prompt_tokens": 8125,
+          "completion_tokens": 96,
+          "total_tokens": 8221,
+          "cost": 0.00645375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00645375,
+            "upstream_inference_prompt_cost": 0.00609375,
+            "upstream_inference_completions_cost": 0.00036
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.580287537000004,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_26826",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"start\":0,\"file_stem\":\"0001166691-25-000011\",\"needle\":\"Item 8\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a19XVerzwY854EpSYFxjeEQoEO6tJ2nFO3QnzS8ZxhZaII/5Yos6kKVEpRn+FZCmPs/i57oiNgHOJV/4WfODnoPRkYXML97eVovl3b5bGZoWqEKH",
+              "format": "google-gemini-v1",
+              "id": "call_26826",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_26826",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"start\":0,\"file_stem\":\"0001166691-25-000011\",\"needle\":\"Item 8\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:35:35.725169+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "1ed79d7cbffd84d5acf59c0b:agent:4",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042534-7Giw9DgoGpey8z5uO7uN",
+        "usage": {
+          "prompt_tokens": 8326,
+          "completion_tokens": 93,
+          "total_tokens": 8419,
+          "cost": 0.00659325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00659325,
+            "upstream_inference_prompt_cost": 0.0062445,
+            "upstream_inference_completions_cost": 0.00034875
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.176311512999746,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_2065637",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"needle\":\"ia8555b4da9c1428ea91f8f8e7517528b_181\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0001166691-25-000011\",\"start\":0}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a19KNl0BNa4xiJy9W1mvYrik0kMZinr6gRLPSTtKPcPp8E+O5tozFQ8vtpv9PVIjqnPoyVAtP3IB1O2xwgGdQRY2Dl2fWiIT2thinE4t/35ZLOiv",
+              "format": "google-gemini-v1",
+              "id": "call_2065637",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_2065637",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"needle\":\"ia8555b4da9c1428ea91f8f8e7517528b_181\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0001166691-25-000011\",\"start\":0}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:36:01.015307+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "1ed79d7cbffd84d5acf59c0b:agent:5",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042559-V1xgwjkBCDPQL7fhfuD8",
+        "usage": {
+          "prompt_tokens": 12411,
+          "completion_tokens": 124,
+          "total_tokens": 12535,
+          "cost": 0.00445965,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 7872,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00445965,
+            "upstream_inference_prompt_cost": 0.00399465,
+            "upstream_inference_completions_cost": 0.000465
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.5775429870000153,
+        "attempts": 1
+      },
+      {
+        "text": "Based on the evidence retrieved from Comcast Corporation's Form 10-K for the fiscal year ended December 31, 2024 (Accession number `0001166691-25-000011` in `/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet`), the search located the Table of Contents and preliminary sections of the report; however, the tool budget was exhausted before the Consolidated Statement of Income or operating results table containing the exact figures for Comcast Corporation's fiscal year 2024 Revenue and Operating Income could be retrieved.\n\nTherefore, the available evidence is insufficient to calculate Comcast Corporation's operating income margin percentage for fiscal year 2024.",
+        "message": {
+          "role": "assistant",
+          "content": "Based on the evidence retrieved from Comcast Corporation's Form 10-K for the fiscal year ended December 31, 2024 (Accession number `0001166691-25-000011` in `/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet`), the search located the Table of Contents and preliminary sections of the report; however, the tool budget was exhausted before the Consolidated Statement of Income or operating results table containing the exact figures for Comcast Corporation's fiscal year 2024 Revenue and Operating Income could be retrieved.\n\nTherefore, the available evidence is insufficient to calculate Comcast Corporation's operating income margin percentage for fiscal year 2024.",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a18luqugQyxzVOJIy2vqXvkhd0pYy1ZNDnkz6d+gSdQQF6SuPElDu+vjRY4mpD337RMiTEwbBY+CofgD6NJF61IHubVduCg8AZMU7lZGJrPbGKEe",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:39:44.583166+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000
+        },
+        "tag": "1ed79d7cbffd84d5acf59c0b:agent:6",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042782-KJoagKzu7c43i0hQGImg",
+        "usage": {
+          "prompt_tokens": 16290,
+          "completion_tokens": 175,
+          "total_tokens": 16465,
+          "cost": 0.01287375,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01287375,
+            "upstream_inference_prompt_cost": 0.0122175,
+            "upstream_inference_completions_cost": 0.00065625
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 4.504599497000527,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_417338",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"form_type\":\"10-K\",\"company\":\"COMCAST\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+          }
+        },
+        "output": {
+          "rows": [
+            {
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+              "file_stem": "0001166691-25-000011",
+              "company": "COMCAST CORP",
+              "form_type": "10-K",
+              "source_row": 27404
+            }
+          ],
+          "scanned": 27405,
+          "next_row": 27405,
+          "complete": false,
+          "resources": {
+            "peak_rss_mib": 1020.1796875,
+            "cpu_seconds": 5.836974,
+            "wall_seconds": 5.868000326000583,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 11.074638950000008
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_39053",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"needle\":\"Consolidated Statement of Income\",\"file_stem\":\"0001166691-25-000011\"}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0001166691-25-000011:440297:452297",
+          "accession": "0001166691-25-000011",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+          "char_start": 440297,
+          "char_end": 452297,
+          "text": "curities collateralize securities of the registrant. |\n| <u>[23](ex23-12312024.htm)</u> | Consent of Deloitte & Touche LLP. |\n| <u>[31](ex31-12312024.htm)</u> | Certification of Chief Executive Officer and Chief Financial Officer pursuant to Section 302 of the Sarbanes-Oxley Act of 2002. |\n| <u>[32](ex32-12312024.htm)</u> | Certification of Chief Executive Officer and Chief Financial Officer pursuant to Section 906 of the Sarbanes-Oxley Act of 2002. |\n| <u>[97](https://www.sec.gov/Archives/edgar/data/1166691/000116669124000011/ex97-12312023.htm)</u> | Comcast Corporation Recoupment Policy (incorporated by reference to Exhibit 97 to Comcast's Annual Report on Form 10-K for the year ended December 31, 2023). |\n| 101 | The following financial statements from Comcast Corporation's Annual Report on Form 10-K for the year ended December 31, 2024, filed with the Securities and Exchange Commission on January 31, 2025, formatted in Inline Extensible Business Reporting Language (iXBRL): (1) the Consolidated Statement of Income; (2) the Consolidated Statement of Comprehensive Income; (3) the Consolidated Statement of Cash Flows; (4) the Consolidated Balance Sheet; (5) the Consolidated Statement of Changes in Equity; and (6) the Notes to Consolidated Financial Statements. |\n| 104 | Cover Page Interactive Data File (embedded within the iXBRL document) |\n| \\* | Constitutes a management contract or compensatory plan or arrangement. |\n\n---\n\n\n\nItem 16: Form 10-K Summary\n\nNone.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **98** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nSignatures\n\nPursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized in Philadelphia, Pennsylvania on January 31, 2025.\n\n---\n\n\n\n| | |\n|:---|:---|\n| By: | /s/ BRIAN L. ROBERTS |\n|  | Brian L. Roberts |\n|  | *Chairman and Chief Executive Officer* |\n\n---\n\n\n\nPursuant to the requirements of the Securities Exchange Act of 1934, this report has been signed below by the following persons on behalf of the Registrant and in the capacities and on the dates indicated.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| Signature | Title | Date |\n| /s/ BRIAN L. ROBERTS | Chairman and Chief Executive Officer; Director <br>(Principal Executive Officer) | January 31, 2025 |\n| Brian L. Roberts | Chairman and Chief Executive Officer; Director <br>(Principal Executive Officer) | January 31, 2025 |\n| /s/ JASON S. ARMSTRONG | Chief Financial Officer<br>(Principal Financial Officer) | January 31, 2025 |\n| Jason S. Armstrong | Chief Financial Officer<br>(Principal Financial Officer) | January 31, 2025 |\n| /s/ DANIEL C. MURDOCK | Executive Vice President, Chief Accounting<br>Officer and Controller<br>(Principal Accounting Officer) | January 31, 2025 |\n| Daniel C. Murdock | Executive Vice President, Chief Accounting<br>Officer and Controller<br>(Principal Accounting Officer) | January 31, 2025 |\n| /s/ KENNETH J. BACON | Director | January 31, 2025 |\n| Kenneth J. Bacon | Director | January 31, 2025 |\n| /s/ THOMAS J. BALTIMORE, JR. | Director | January 31, 2025 |\n| Thomas J. Baltimore, Jr. | Director | January 31, 2025 |\n| /s/ LOUISE F. BRADY | Director | January 31, 2025 |\n| Louise F. Brady | Director | January 31, 2025 |\n| /s/ MADELINE S. BELL | Director | January 31, 2025 |\n| Madeline S. Bell | Director | January 31, 2025 |\n| /s/ EDWARD D. BREEN | Director | January 31, 2025 |\n| Edward D. Breen | Director | January 31, 2025 |\n| /s/ JEFFREY A. HONICKMAN | Director | January 31, 2025 |\n| Jeffrey A. Honickman | Director | January 31, 2025 |\n| /s/ WONYA Y. LUCAS | Director | January 31, 2025 |\n| Wonya Y. Lucas | Director | January 31, 2025 |\n| /s/ ASUKA NAKAHARA | Director | January 31, 2025 |\n| Asuka Nakahara | Director | January 31, 2025 |\n| /s/ DAVID C. NOVAK | Director | January 31, 2025 |\n| David C. Novak | Director | January 31, 2025 |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| **99** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n\n## Exhibit 3.2\n\n\n\n**Exhibit 3.2**\n\n\n**AMENDED AND RESTATED BYLAWS** \n\n**OF**\n\n**COMCAST CORPORATION**\n\n\n\\* \\* \\* \\* \\*\n\nJanuary 28, 2025\n\n\\* \\* \\* \\* \\*\n\n**ARTICLE 1** \n\n**OFFICES**\n\n\nSection 1.01&nbsp;&nbsp;&nbsp;&nbsp;*Registered Office*. The registered office of the Comcast Corporation (the \"**Corporation**\") shall be located within the Commonwealth of Pennsylvania at such place as the Board of Directors (hereinafter referred to as the \"**Board of Directors**\" or the \"**Board**\") shall determine from time to time.\n\n\nSection 1.02&nbsp;&nbsp;&nbsp;&nbsp;*Other Offices*. The Corporation may also have offices at such other places, within or without the Commonwealth of Pennsylvania, as the Board of Directors may determine from time to time.\n\n\n**ARTICLE 2** \n\n**MEETINGS OF SHAREHOLDERS**\n\n\nSection 2.01&nbsp;&nbsp;&nbsp;&nbsp;*Place of Meetings of Shareholders*. Meetings of shareholders may be held at such geographic locations, within or without the Commonwealth of Pennsylvania, as may be fixed from time to time by the Board of Directors. If no such geographic location is so fixed by the Board of Directors or the Board of Directors does not determine to hold a meeting by means of electronic technology (as provided in the next sentence) rather than at a geographic location, meetings of the shareholders shall be held at the executive office of the Corporation. If a meeting of the shareholders is held by means of the Internet or other electronic communications technology in a fashion pursuant to which the shareholders have the opportunity to read or hear the proceedings substantially concurrently with their occurrence, vote on matters submitted to the shareholders, pose questions to the Directors, make appropriate motions and comment on the business of the meeting, the meeting need not be held at a particular geographic location.\n\n\nSection 2.02&nbsp;&nbsp;&nbsp;&nbsp;*Annual Meetings of Shareholders*.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)Time. Subject to Article SIXTH of the Articles of Incorporation, a meeting of the shareholders of the Corporation shall be held in each calendar year, on such date and at such time as the Board of Directors may determine, or if the Board of Directors fails to set a date and time, on the second Thursday of June at 9:00 o'clock a.m., if not a holiday on which national banks are or may elect to be closed (\"**Holiday**\"), and if such day is a Holiday, then such meeting shall be held on the next business day at such time.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)Election of Directors. At each annual meeting, Directors shall be elected to serve for the ensuing year and until their successors shall have been selected and qualified or until their earlier death, resignation or removal.\n\n\nSection 2.03 *Special Meetings of Shareholders*. Special meetings of the shareholders may be called at any time by the Board of Directors. Special meetings of the shareholders may not be called by shareholders. Upon the written instruction of the Board of Directors, which instruction specifies the general nature of the business to be\n\n\n------\n\n\ntransacted at such meeting as well as the date, time and place of such meeting, it shall be the duty of the Secretary to give due notice thereof as required by Section 2.04 hereof.\n\n\nSection 2.04&nbsp;&nbsp;&nbsp;&nbsp;*Notices of Meetings of Shareholders*. Notice complying with Article 6 of these Bylaws of every meeting of the shareholders shall be given to each shareholder of record entitled to vote at the meeting at least: (a) 10 days prior to the day named for a meeting that will consider a transaction under Chapter 3 of Title 15 of the Pennsylvania Consolidated Statutes or Chapter 19 of the Pennsylvania Business Corporation Law of 1988, as\n\namended (the \"**Pennsylvania BCL**\") or (b) five days prior to the day named for the meeting in any other case.\n\n\nSection 2.05&nbsp;&nbsp;&nbsp;&nbsp;*Quorum of and Action by Shareholders*.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)General Rule. A meeting of shareholders duly called shall not be organized for the transaction of business unless a quorum is present as to at least one of the matters to be considered. Except as provided in subsections (c), (d) and (e) of this Section 2.05, the presence of shareholders entitled to cast at least a majority of the votes that all shareholders are entitled to cast on a particular matter to be acted upon at the meeting shall constitute a quorum for the purpose of consideration of and action on the matter. To the extent that a quorum is present with respect to consideration of and action on a particular matter or matters but a quorum is not present as to another matter or matters, consideration of and action on the matter or matters for which a quorum is present may occur, and, after such consideration and action, the meeting may be adjourned for purposes of the consideration of and action on the matter or matters for which a quorum is not present.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)Action by Shareholders. Except as otherwise specifically provided by law, all matters coming before a meeting of shareholders shall be determined by a vote of shares. Except as otherwise provided by a resolution adopted by the Board of Directors, by the Articles of Incorporation, by the Pennsylvania BCL or by these Bylaws, whenever any corporate action is to be taken by vote of the shareholders of the Corporation at a duly organized meeting of shareholders, it shall be authorized by a majority of the votes cast at the meeting by the holders of shares entitled to vote with respect to such matter; *provided* that in no event may the required shareholder vote be reduced below that provided above.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c)Continuing Quorum. The shareholders present at a duly organized meeting can continue to do business until adjournment, notwithstanding the withdrawal of enough shareholders to leave less than a quorum.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d)Election of Directors at Adjourned Meetings. Those shareholders entitled to vote who attend a meeting at which Directors are to be elected that has been previously adjourned for lack of a quorum with respect thereto, although less than a quorum as fixed in subsection (a), shall nevertheless constitute a quorum for the purpose of electing Directors at such reconvened meeting.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(e)Conduct of Other Business at Adjourned Meetings. Those shareholders entitled to vote who attend a meeting at which a matter other than the election of Directors is to be acted upon, that has been previously adjourned for one or more periods aggregating at least 15 days because of an absence of a quorum with respect thereto, although less than a quorum as fixed in subsection (a), shall nevertheless constitute a quorum for the purpose of acting upon such matter if the notice states that those shareholders who attend the adjourned meeting shall nevertheless constitute a quorum for the purpose of acting upon such matter.\n\n\nSection 2.06&nbsp;&nbsp;&nbsp;&nbsp;*Adjournments*.\n\n\n&nbsp;&nbsp;&",
+          "total_chars": 1480506,
+          "next_start": 452297,
+          "resources": {
+            "peak_rss_mib": 504.14453125,
+            "cpu_seconds": 0.56507,
+            "wall_seconds": 0.5336410909994811,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 0.6048093819999849
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_25451",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"needle\":\"Consolidated Statement of Income\",\"file_stem\":\"0001166691-25-000011\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"start\":200000}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0001166691-25-000011:440297:452297",
+          "accession": "0001166691-25-000011",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+          "char_start": 440297,
+          "char_end": 452297,
+          "text": "curities collateralize securities of the registrant. |\n| <u>[23](ex23-12312024.htm)</u> | Consent of Deloitte & Touche LLP. |\n| <u>[31](ex31-12312024.htm)</u> | Certification of Chief Executive Officer and Chief Financial Officer pursuant to Section 302 of the Sarbanes-Oxley Act of 2002. |\n| <u>[32](ex32-12312024.htm)</u> | Certification of Chief Executive Officer and Chief Financial Officer pursuant to Section 906 of the Sarbanes-Oxley Act of 2002. |\n| <u>[97](https://www.sec.gov/Archives/edgar/data/1166691/000116669124000011/ex97-12312023.htm)</u> | Comcast Corporation Recoupment Policy (incorporated by reference to Exhibit 97 to Comcast's Annual Report on Form 10-K for the year ended December 31, 2023). |\n| 101 | The following financial statements from Comcast Corporation's Annual Report on Form 10-K for the year ended December 31, 2024, filed with the Securities and Exchange Commission on January 31, 2025, formatted in Inline Extensible Business Reporting Language (iXBRL): (1) the Consolidated Statement of Income; (2) the Consolidated Statement of Comprehensive Income; (3) the Consolidated Statement of Cash Flows; (4) the Consolidated Balance Sheet; (5) the Consolidated Statement of Changes in Equity; and (6) the Notes to Consolidated Financial Statements. |\n| 104 | Cover Page Interactive Data File (embedded within the iXBRL document) |\n| \\* | Constitutes a management contract or compensatory plan or arrangement. |\n\n---\n\n\n\nItem 16: Form 10-K Summary\n\nNone.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **98** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nSignatures\n\nPursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized in Philadelphia, Pennsylvania on January 31, 2025.\n\n---\n\n\n\n| | |\n|:---|:---|\n| By: | /s/ BRIAN L. ROBERTS |\n|  | Brian L. Roberts |\n|  | *Chairman and Chief Executive Officer* |\n\n---\n\n\n\nPursuant to the requirements of the Securities Exchange Act of 1934, this report has been signed below by the following persons on behalf of the Registrant and in the capacities and on the dates indicated.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| Signature | Title | Date |\n| /s/ BRIAN L. ROBERTS | Chairman and Chief Executive Officer; Director <br>(Principal Executive Officer) | January 31, 2025 |\n| Brian L. Roberts | Chairman and Chief Executive Officer; Director <br>(Principal Executive Officer) | January 31, 2025 |\n| /s/ JASON S. ARMSTRONG | Chief Financial Officer<br>(Principal Financial Officer) | January 31, 2025 |\n| Jason S. Armstrong | Chief Financial Officer<br>(Principal Financial Officer) | January 31, 2025 |\n| /s/ DANIEL C. MURDOCK | Executive Vice President, Chief Accounting<br>Officer and Controller<br>(Principal Accounting Officer) | January 31, 2025 |\n| Daniel C. Murdock | Executive Vice President, Chief Accounting<br>Officer and Controller<br>(Principal Accounting Officer) | January 31, 2025 |\n| /s/ KENNETH J. BACON | Director | January 31, 2025 |\n| Kenneth J. Bacon | Director | January 31, 2025 |\n| /s/ THOMAS J. BALTIMORE, JR. | Director | January 31, 2025 |\n| Thomas J. Baltimore, Jr. | Director | January 31, 2025 |\n| /s/ LOUISE F. BRADY | Director | January 31, 2025 |\n| Louise F. Brady | Director | January 31, 2025 |\n| /s/ MADELINE S. BELL | Director | January 31, 2025 |\n| Madeline S. Bell | Director | January 31, 2025 |\n| /s/ EDWARD D. BREEN | Director | January 31, 2025 |\n| Edward D. Breen | Director | January 31, 2025 |\n| /s/ JEFFREY A. HONICKMAN | Director | January 31, 2025 |\n| Jeffrey A. Honickman | Director | January 31, 2025 |\n| /s/ WONYA Y. LUCAS | Director | January 31, 2025 |\n| Wonya Y. Lucas | Director | January 31, 2025 |\n| /s/ ASUKA NAKAHARA | Director | January 31, 2025 |\n| Asuka Nakahara | Director | January 31, 2025 |\n| /s/ DAVID C. NOVAK | Director | January 31, 2025 |\n| David C. Novak | Director | January 31, 2025 |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| **99** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n\n## Exhibit 3.2\n\n\n\n**Exhibit 3.2**\n\n\n**AMENDED AND RESTATED BYLAWS** \n\n**OF**\n\n**COMCAST CORPORATION**\n\n\n\\* \\* \\* \\* \\*\n\nJanuary 28, 2025\n\n\\* \\* \\* \\* \\*\n\n**ARTICLE 1** \n\n**OFFICES**\n\n\nSection 1.01&nbsp;&nbsp;&nbsp;&nbsp;*Registered Office*. The registered office of the Comcast Corporation (the \"**Corporation**\") shall be located within the Commonwealth of Pennsylvania at such place as the Board of Directors (hereinafter referred to as the \"**Board of Directors**\" or the \"**Board**\") shall determine from time to time.\n\n\nSection 1.02&nbsp;&nbsp;&nbsp;&nbsp;*Other Offices*. The Corporation may also have offices at such other places, within or without the Commonwealth of Pennsylvania, as the Board of Directors may determine from time to time.\n\n\n**ARTICLE 2** \n\n**MEETINGS OF SHAREHOLDERS**\n\n\nSection 2.01&nbsp;&nbsp;&nbsp;&nbsp;*Place of Meetings of Shareholders*. Meetings of shareholders may be held at such geographic locations, within or without the Commonwealth of Pennsylvania, as may be fixed from time to time by the Board of Directors. If no such geographic location is so fixed by the Board of Directors or the Board of Directors does not determine to hold a meeting by means of electronic technology (as provided in the next sentence) rather than at a geographic location, meetings of the shareholders shall be held at the executive office of the Corporation. If a meeting of the shareholders is held by means of the Internet or other electronic communications technology in a fashion pursuant to which the shareholders have the opportunity to read or hear the proceedings substantially concurrently with their occurrence, vote on matters submitted to the shareholders, pose questions to the Directors, make appropriate motions and comment on the business of the meeting, the meeting need not be held at a particular geographic location.\n\n\nSection 2.02&nbsp;&nbsp;&nbsp;&nbsp;*Annual Meetings of Shareholders*.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)Time. Subject to Article SIXTH of the Articles of Incorporation, a meeting of the shareholders of the Corporation shall be held in each calendar year, on such date and at such time as the Board of Directors may determine, or if the Board of Directors fails to set a date and time, on the second Thursday of June at 9:00 o'clock a.m., if not a holiday on which national banks are or may elect to be closed (\"**Holiday**\"), and if such day is a Holiday, then such meeting shall be held on the next business day at such time.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)Election of Directors. At each annual meeting, Directors shall be elected to serve for the ensuing year and until their successors shall have been selected and qualified or until their earlier death, resignation or removal.\n\n\nSection 2.03 *Special Meetings of Shareholders*. Special meetings of the shareholders may be called at any time by the Board of Directors. Special meetings of the shareholders may not be called by shareholders. Upon the written instruction of the Board of Directors, which instruction specifies the general nature of the business to be\n\n\n------\n\n\ntransacted at such meeting as well as the date, time and place of such meeting, it shall be the duty of the Secretary to give due notice thereof as required by Section 2.04 hereof.\n\n\nSection 2.04&nbsp;&nbsp;&nbsp;&nbsp;*Notices of Meetings of Shareholders*. Notice complying with Article 6 of these Bylaws of every meeting of the shareholders shall be given to each shareholder of record entitled to vote at the meeting at least: (a) 10 days prior to the day named for a meeting that will consider a transaction under Chapter 3 of Title 15 of the Pennsylvania Consolidated Statutes or Chapter 19 of the Pennsylvania Business Corporation Law of 1988, as\n\namended (the \"**Pennsylvania BCL**\") or (b) five days prior to the day named for the meeting in any other case.\n\n\nSection 2.05&nbsp;&nbsp;&nbsp;&nbsp;*Quorum of and Action by Shareholders*.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)General Rule. A meeting of shareholders duly called shall not be organized for the transaction of business unless a quorum is present as to at least one of the matters to be considered. Except as provided in subsections (c), (d) and (e) of this Section 2.05, the presence of shareholders entitled to cast at least a majority of the votes that all shareholders are entitled to cast on a particular matter to be acted upon at the meeting shall constitute a quorum for the purpose of consideration of and action on the matter. To the extent that a quorum is present with respect to consideration of and action on a particular matter or matters but a quorum is not present as to another matter or matters, consideration of and action on the matter or matters for which a quorum is present may occur, and, after such consideration and action, the meeting may be adjourned for purposes of the consideration of and action on the matter or matters for which a quorum is not present.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)Action by Shareholders. Except as otherwise specifically provided by law, all matters coming before a meeting of shareholders shall be determined by a vote of shares. Except as otherwise provided by a resolution adopted by the Board of Directors, by the Articles of Incorporation, by the Pennsylvania BCL or by these Bylaws, whenever any corporate action is to be taken by vote of the shareholders of the Corporation at a duly organized meeting of shareholders, it shall be authorized by a majority of the votes cast at the meeting by the holders of shares entitled to vote with respect to such matter; *provided* that in no event may the required shareholder vote be reduced below that provided above.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c)Continuing Quorum. The shareholders present at a duly organized meeting can continue to do business until adjournment, notwithstanding the withdrawal of enough shareholders to leave less than a quorum.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d)Election of Directors at Adjourned Meetings. Those shareholders entitled to vote who attend a meeting at which Directors are to be elected that has been previously adjourned for lack of a quorum with respect thereto, although less than a quorum as fixed in subsection (a), shall nevertheless constitute a quorum for the purpose of electing Directors at such reconvened meeting.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(e)Conduct of Other Business at Adjourned Meetings. Those shareholders entitled to vote who attend a meeting at which a matter other than the election of Directors is to be acted upon, that has been previously adjourned for one or more periods aggregating at least 15 days because of an absence of a quorum with respect thereto, although less than a quorum as fixed in subsection (a), shall nevertheless constitute a quorum for the purpose of acting upon such matter if the notice states that those shareholders who attend the adjourned meeting shall nevertheless constitute a quorum for the purpose of acting upon such matter.\n\n\nSection 2.06&nbsp;&nbsp;&nbsp;&nbsp;*Adjournments*.\n\n\n&nbsp;&nbsp;&",
+          "total_chars": 1480506,
+          "next_start": 452297,
+          "resources": {
+            "peak_rss_mib": 505.76953125,
+            "cpu_seconds": 0.619055,
+            "wall_seconds": 0.5690138589998242,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 0.662815801000761
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_164479",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0001166691-25-000011\",\"start\":0,\"needle\":\"Item 8. Financial Statements\"}"
+          }
+        },
+        "output": {
+          "found": false,
+          "accession": "0001166691-25-000011",
+          "total_chars": 1480506,
+          "needle": "Item 8. Financial Statements",
+          "resources": {
+            "peak_rss_mib": 506.26953125,
+            "cpu_seconds": 0.583899,
+            "wall_seconds": 0.5416007579997313,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 1.089437523000015
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_26826",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"start\":0,\"file_stem\":\"0001166691-25-000011\",\"needle\":\"Item 8\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0001166691-25-000011:7848:19848",
+          "accession": "0001166691-25-000011",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+          "char_start": 7848,
+          "char_end": 19848,
+          "text": " 3 | <u>[Legal Proceedings](#ia8555b4da9c1428ea91f8f8e7517528b_91)</u> | [27](#ia8555b4da9c1428ea91f8f8e7517528b_91) |\n| Item 4 | <u>[Mine Safety Disclosures](#ia8555b4da9c1428ea91f8f8e7517528b_94)</u> | [27](#ia8555b4da9c1428ea91f8f8e7517528b_94) |\n| **PART II** | **PART II** | **PART II** |\n| Item 5 | <u>[Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities](#ia8555b4da9c1428ea91f8f8e7517528b_100)</u> | [28](#ia8555b4da9c1428ea91f8f8e7517528b_100) |\n| Item 6 | <u>[\\[Reserved\\]](#ia8555b4da9c1428ea91f8f8e7517528b_103)</u> | [29](#ia8555b4da9c1428ea91f8f8e7517528b_103) |\n| Item 7 | <u>[Management's Discussion and Analysis of Financial Condition and Results of Operations](#ia8555b4da9c1428ea91f8f8e7517528b_106)</u> | [30](#ia8555b4da9c1428ea91f8f8e7517528b_106) |\n| Item 7A | <u>[Quantitative and Qualitative Disclosures About Market Risk](#ia8555b4da9c1428ea91f8f8e7517528b_178)</u> | [54](#ia8555b4da9c1428ea91f8f8e7517528b_178) |\n| Item 8 | <u>[Comcast Corporation Financial Statements and Supplementary Data](#ia8555b4da9c1428ea91f8f8e7517528b_181)</u> | [56](#ia8555b4da9c1428ea91f8f8e7517528b_181) |\n| Item 9 | <u>[Changes in and Disagreements with Accountants on Accounting and Financial Disclosure](#ia8555b4da9c1428ea91f8f8e7517528b_274)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_274) |\n| Item 9A | <u>[Controls and Procedures](#ia8555b4da9c1428ea91f8f8e7517528b_277)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_277) |\n| Item 9B | <u>[Other Information](#ia8555b4da9c1428ea91f8f8e7517528b_280)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_280) |\n| Item 9C | <u>[Disclosure Regarding Foreign Jurisdictions that Prevent Inspections](#ia8555b4da9c1428ea91f8f8e7517528b_286)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_286) |\n| **PART III** | **PART III** | **PART III** |\n| Item 10 | <u>[Directors, Executive Officers and Corporate Governance](#ia8555b4da9c1428ea91f8f8e7517528b_292)</u> | [93](#ia8555b4da9c1428ea91f8f8e7517528b_292) |\n| Item 11 | <u>[Executive Compensation](#ia8555b4da9c1428ea91f8f8e7517528b_295)</u> | [93](#ia8555b4da9c1428ea91f8f8e7517528b_295) |\n| Item 12 | <u>[Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters](#ia8555b4da9c1428ea91f8f8e7517528b_298)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_298) |\n| Item 13 | <u>[Certain Relationships and Related Transactions, and Director Independence](#ia8555b4da9c1428ea91f8f8e7517528b_301)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_301) |\n| Item 14 | <u>[Principal Accountant Fees and Services](#ia8555b4da9c1428ea91f8f8e7517528b_304)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_304) |\n| **PART IV** | **PART IV** | **PART IV** |\n| Item 15 | <u>[Exhibits and Financial Statement Schedules](#ia8555b4da9c1428ea91f8f8e7517528b_310)</u> | [95](#ia8555b4da9c1428ea91f8f8e7517528b_310) |\n| Item 16 | <u>[Form 10-K Summary](#ia8555b4da9c1428ea91f8f8e7517528b_313)</u> | [98](#ia8555b4da9c1428ea91f8f8e7517528b_313) |\n| <u>[Signatures](#ia8555b4da9c1428ea91f8f8e7517528b_316)</u> | <u>[Signatures](#ia8555b4da9c1428ea91f8f8e7517528b_316)</u> | [99](#ia8555b4da9c1428ea91f8f8e7517528b_316) |\n\n---\n\n\n\n**Explanatory Note**\n\nThis Annual Report on Form 10-K is for the year ended December 31, 2024. This Annual Report on Form 10-K modifies and supersedes documents filed before it. The U.S Securities and Exchange Commission (\"SEC\") allows us to \"incorporate by reference\" information that we file with it, which means that we can disclose important information to you by referring you directly to those documents. Information incorporated by reference is considered to be part of this Annual Report on Form 10-K. In addition, information that we file with the SEC in the future will automatically update and supersede information contained in this Annual Report on Form 10-K. Unless indicated otherwise, throughout this Annual Report on Form 10-K, we refer to Comcast and its consolidated subsidiaries, as \"Comcast,\" \"we,\" \"us\" and \"our.\"\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nThis Annual Report on Form 10-K contains trademarks, service marks and trade names owned by us, as well as those owned by others.\n\nNumerical information in this report is presented on a rounded basis using actual amounts. Minor differences in totals and percentage calculations may exist due to rounding.\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Part I**\n\nItem 1: Business\n\nWe are a global media and technology company that reaches customers, viewers and guests worldwide through the connectivity and platforms services we provide and the content and experiences we create. We deliver broadband, wireless, video and voice services primarily under the Xfinity, Comcast Business, Sky and NOW brands; produce, distribute and stream leading entertainment, sports and news through brands including NBC, Telemundo, Universal, Peacock and Sky; and own and operate Universal theme parks.\n\nWe operate two primary businesses:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 **Connectivity & Platforms:** Contains our broadband, wireless, video and wireline voice businesses in the United States, United Kingdom and Italy (collectively, the \"Connectivity & Platforms markets\"). Also includes the operations of our Sky-branded entertainment television networks in the United Kingdom and Italy. Our Connectivity & Platforms business is reported in two segments, Residential Connectivity & Platforms and Business Services Connectivity.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 **Content & Experiences:** Contains our media and entertainment businesses that produce and distribute entertainment, sports, news and other content for global audiences and that own and operate theme parks and attractions in the United States and Asia. Our Content & Experiences business is reported in three segments, Media, Studios and Theme Parks.\n\nIn November 2024, we announced our intention to create a new independent publicly traded company (\"SpinCo\") comprised primarily of a strong portfolio of domestic cable television networks currently within our Media segment, including USA Network, E!, Syfy, MSNBC, CNBC, Oxygen and the Golf Channel along with complementary digital assets including Fandango, Rotten Tomatoes, GolfNow and SportsEngine, through a tax-free spin-off (the \"Spin-off\"). We are targeting to complete the Spin-off by the end of 2025, subject to the satisfaction of customary conditions, including obtaining final approval from our Board of Directors, satisfactory completion of SpinCo financings, receipt of tax opinions and receipt of any regulatory approvals. There can be no assurance that a separation transaction will occur, or, if one does occur, of its terms or timing.\n\nFor additional information on our businesses and segments, refer to Item 7: Management's Discussion and Analysis of Financial Condition and Results of Operations and Note 2 to the consolidated financial statements included in this Annual Report on Form 10-K.\n\nDescription of Our Businesses\n\n**Connectivity & Platforms Business**<br>\n\n**Residential Connectivity & Platforms Segment**\n\nOur Residential Connectivity & Platforms segment primarily includes:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Residential broadband and wireless services (collectively, \"Residential Connectivity\")\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Residential and business video services, Sky-branded entertainment television networks and advertising\n\nWe offer services to customers individually and as bundled services at a discounted rate.\n\nResidential Connectivity\n\n*Broadband*\n\nWe offer broadband services in the United States over our hybrid fiber-optic and coaxial (\"HFC\") network, as well as through direct fiber-to-the-premises connections for certain customers, and internationally in the United Kingdom and Italy by leveraging networks owned by third-party telecommunications providers.\n\nOur domestic broadband offerings have a range of service levels, including up to gigabit-plus downstream speeds that we offer across nearly our entire footprint. As part of our low-income broadband adoption program, we offer qualifying domestic customers broadband services at discounted rates through our Internet Essentials and Internet Essentials Plus services, with downstream speeds of up to 75 and 100 megabits per second, respectively. In 2024, we began offering prepaid domestic broadband services with downstream speeds of up to 200 megabits per second marketed under the NOW brand. We also offer monthly access to our network of Wi-Fi hotspots.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **1** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nWe continue to evolve and enhance our domestic network capabilities, including deploying technology in select markets that will enable us to deliver multigigabit symmetrical broadband speeds (i.e., comparable upstream and downstream speeds), as described in the Network and Technology discussion below.\n\nWe offer Xumo Stream Box (formerly Flex) devices to our domestic customers. The Xumo Stream Box provides access to and integration of streaming content and music from certain internet-based apps, including direct-to-consumer streaming services (\"DTC streaming services\") such as Peacock, Disney+ and Netflix, and certain pay-per-view and video on demand programming that is available over the internet. We also offer certain bundled DTC streaming services to our broadband customers. We earn commission revenue from the sale of DTC streaming services when sold with our broadband services or through our video platforms, including X1 and Sky Q.\n\nThe map below highlights our domestic network footprint and the markets where we had 250,000 or more domestic residential broadband customers as of December 31, 2024.\n\n![Map Updates v1.16.25.jpg](cmcsa-20241231_g2.jpg)\n\nOur international broadband services primarily include fiber-to-the-cabinet offerings, and increasingly fiber-to-the-premises offerings.\n\nAs part of our domestic and international broadband services, we offer to customers our advanced, proprietary wireless gateways that combine an internet modem with a Wi-Fi router to deliver reliable internet speeds and enhanced coverage through an in-and-out-of-home Wi-Fi network. In addition, customers may personalize and manage their Wi-Fi network and connected devices with our mobile apps and online portal. Broadband customers have access to our expanding network of secure Wi-Fi hotspots.\n\n*Wireless*\n\nWe offer wireless services for wireless handsets, tablets and smart watches (\"wireless devices\") to residential customers in the United States and the United Kingdom using mobile virtual network operator (\"MVNO\") rights. Our domestic wireless services are offered over Verizon's wireless network and our existing network of secure residential, outdoor and business Wi-Fi hotspots, and are offered initially only as part of our bundled service offerings to customers that subscribe to our qualifying broadband services.\n\nWireless customers may activate multiple lines per account. We offer domestic customers services on an unlimited data plan, on shared data plans or per gigabyte of data used. In 2024, we began offering prepaid unlimited data plans marketed under the NOW brand. We offer international customers services on various gigabyte plans or an unlimited data plan. Customers may either bring their own device or purchase devices from us with the option to pay upfront or finance the purchase interest-free over 24 months for domestic customers and over 24 to 48 months for international customers.\n\nComcast 2024 Annual Report on Form 10-K<sub>2</sub>\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nVideo\n\nWe offer video services to residential and business customers primarily thro",
+          "total_chars": 1480506,
+          "next_start": 19848,
+          "resources": {
+            "peak_rss_mib": 507.64453125,
+            "cpu_seconds": 0.502453,
+            "wall_seconds": 0.4733073850002256,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 22.707679223000014
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_2065637",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"needle\":\"ia8555b4da9c1428ea91f8f8e7517528b_181\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0001166691-25-000011\",\"start\":0}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0001166691-25-000011:7927:19927",
+          "accession": "0001166691-25-000011",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+          "char_start": 7927,
+          "char_end": 19927,
+          "text": "ia8555b4da9c1428ea91f8f8e7517528b_91) |\n| Item 4 | <u>[Mine Safety Disclosures](#ia8555b4da9c1428ea91f8f8e7517528b_94)</u> | [27](#ia8555b4da9c1428ea91f8f8e7517528b_94) |\n| **PART II** | **PART II** | **PART II** |\n| Item 5 | <u>[Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities](#ia8555b4da9c1428ea91f8f8e7517528b_100)</u> | [28](#ia8555b4da9c1428ea91f8f8e7517528b_100) |\n| Item 6 | <u>[\\[Reserved\\]](#ia8555b4da9c1428ea91f8f8e7517528b_103)</u> | [29](#ia8555b4da9c1428ea91f8f8e7517528b_103) |\n| Item 7 | <u>[Management's Discussion and Analysis of Financial Condition and Results of Operations](#ia8555b4da9c1428ea91f8f8e7517528b_106)</u> | [30](#ia8555b4da9c1428ea91f8f8e7517528b_106) |\n| Item 7A | <u>[Quantitative and Qualitative Disclosures About Market Risk](#ia8555b4da9c1428ea91f8f8e7517528b_178)</u> | [54](#ia8555b4da9c1428ea91f8f8e7517528b_178) |\n| Item 8 | <u>[Comcast Corporation Financial Statements and Supplementary Data](#ia8555b4da9c1428ea91f8f8e7517528b_181)</u> | [56](#ia8555b4da9c1428ea91f8f8e7517528b_181) |\n| Item 9 | <u>[Changes in and Disagreements with Accountants on Accounting and Financial Disclosure](#ia8555b4da9c1428ea91f8f8e7517528b_274)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_274) |\n| Item 9A | <u>[Controls and Procedures](#ia8555b4da9c1428ea91f8f8e7517528b_277)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_277) |\n| Item 9B | <u>[Other Information](#ia8555b4da9c1428ea91f8f8e7517528b_280)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_280) |\n| Item 9C | <u>[Disclosure Regarding Foreign Jurisdictions that Prevent Inspections](#ia8555b4da9c1428ea91f8f8e7517528b_286)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_286) |\n| **PART III** | **PART III** | **PART III** |\n| Item 10 | <u>[Directors, Executive Officers and Corporate Governance](#ia8555b4da9c1428ea91f8f8e7517528b_292)</u> | [93](#ia8555b4da9c1428ea91f8f8e7517528b_292) |\n| Item 11 | <u>[Executive Compensation](#ia8555b4da9c1428ea91f8f8e7517528b_295)</u> | [93](#ia8555b4da9c1428ea91f8f8e7517528b_295) |\n| Item 12 | <u>[Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters](#ia8555b4da9c1428ea91f8f8e7517528b_298)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_298) |\n| Item 13 | <u>[Certain Relationships and Related Transactions, and Director Independence](#ia8555b4da9c1428ea91f8f8e7517528b_301)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_301) |\n| Item 14 | <u>[Principal Accountant Fees and Services](#ia8555b4da9c1428ea91f8f8e7517528b_304)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_304) |\n| **PART IV** | **PART IV** | **PART IV** |\n| Item 15 | <u>[Exhibits and Financial Statement Schedules](#ia8555b4da9c1428ea91f8f8e7517528b_310)</u> | [95](#ia8555b4da9c1428ea91f8f8e7517528b_310) |\n| Item 16 | <u>[Form 10-K Summary](#ia8555b4da9c1428ea91f8f8e7517528b_313)</u> | [98](#ia8555b4da9c1428ea91f8f8e7517528b_313) |\n| <u>[Signatures](#ia8555b4da9c1428ea91f8f8e7517528b_316)</u> | <u>[Signatures](#ia8555b4da9c1428ea91f8f8e7517528b_316)</u> | [99](#ia8555b4da9c1428ea91f8f8e7517528b_316) |\n\n---\n\n\n\n**Explanatory Note**\n\nThis Annual Report on Form 10-K is for the year ended December 31, 2024. This Annual Report on Form 10-K modifies and supersedes documents filed before it. The U.S Securities and Exchange Commission (\"SEC\") allows us to \"incorporate by reference\" information that we file with it, which means that we can disclose important information to you by referring you directly to those documents. Information incorporated by reference is considered to be part of this Annual Report on Form 10-K. In addition, information that we file with the SEC in the future will automatically update and supersede information contained in this Annual Report on Form 10-K. Unless indicated otherwise, throughout this Annual Report on Form 10-K, we refer to Comcast and its consolidated subsidiaries, as \"Comcast,\" \"we,\" \"us\" and \"our.\"\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nThis Annual Report on Form 10-K contains trademarks, service marks and trade names owned by us, as well as those owned by others.\n\nNumerical information in this report is presented on a rounded basis using actual amounts. Minor differences in totals and percentage calculations may exist due to rounding.\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Part I**\n\nItem 1: Business\n\nWe are a global media and technology company that reaches customers, viewers and guests worldwide through the connectivity and platforms services we provide and the content and experiences we create. We deliver broadband, wireless, video and voice services primarily under the Xfinity, Comcast Business, Sky and NOW brands; produce, distribute and stream leading entertainment, sports and news through brands including NBC, Telemundo, Universal, Peacock and Sky; and own and operate Universal theme parks.\n\nWe operate two primary businesses:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 **Connectivity & Platforms:** Contains our broadband, wireless, video and wireline voice businesses in the United States, United Kingdom and Italy (collectively, the \"Connectivity & Platforms markets\"). Also includes the operations of our Sky-branded entertainment television networks in the United Kingdom and Italy. Our Connectivity & Platforms business is reported in two segments, Residential Connectivity & Platforms and Business Services Connectivity.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 **Content & Experiences:** Contains our media and entertainment businesses that produce and distribute entertainment, sports, news and other content for global audiences and that own and operate theme parks and attractions in the United States and Asia. Our Content & Experiences business is reported in three segments, Media, Studios and Theme Parks.\n\nIn November 2024, we announced our intention to create a new independent publicly traded company (\"SpinCo\") comprised primarily of a strong portfolio of domestic cable television networks currently within our Media segment, including USA Network, E!, Syfy, MSNBC, CNBC, Oxygen and the Golf Channel along with complementary digital assets including Fandango, Rotten Tomatoes, GolfNow and SportsEngine, through a tax-free spin-off (the \"Spin-off\"). We are targeting to complete the Spin-off by the end of 2025, subject to the satisfaction of customary conditions, including obtaining final approval from our Board of Directors, satisfactory completion of SpinCo financings, receipt of tax opinions and receipt of any regulatory approvals. There can be no assurance that a separation transaction will occur, or, if one does occur, of its terms or timing.\n\nFor additional information on our businesses and segments, refer to Item 7: Management's Discussion and Analysis of Financial Condition and Results of Operations and Note 2 to the consolidated financial statements included in this Annual Report on Form 10-K.\n\nDescription of Our Businesses\n\n**Connectivity & Platforms Business**<br>\n\n**Residential Connectivity & Platforms Segment**\n\nOur Residential Connectivity & Platforms segment primarily includes:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Residential broadband and wireless services (collectively, \"Residential Connectivity\")\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Residential and business video services, Sky-branded entertainment television networks and advertising\n\nWe offer services to customers individually and as bundled services at a discounted rate.\n\nResidential Connectivity\n\n*Broadband*\n\nWe offer broadband services in the United States over our hybrid fiber-optic and coaxial (\"HFC\") network, as well as through direct fiber-to-the-premises connections for certain customers, and internationally in the United Kingdom and Italy by leveraging networks owned by third-party telecommunications providers.\n\nOur domestic broadband offerings have a range of service levels, including up to gigabit-plus downstream speeds that we offer across nearly our entire footprint. As part of our low-income broadband adoption program, we offer qualifying domestic customers broadband services at discounted rates through our Internet Essentials and Internet Essentials Plus services, with downstream speeds of up to 75 and 100 megabits per second, respectively. In 2024, we began offering prepaid domestic broadband services with downstream speeds of up to 200 megabits per second marketed under the NOW brand. We also offer monthly access to our network of Wi-Fi hotspots.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **1** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nWe continue to evolve and enhance our domestic network capabilities, including deploying technology in select markets that will enable us to deliver multigigabit symmetrical broadband speeds (i.e., comparable upstream and downstream speeds), as described in the Network and Technology discussion below.\n\nWe offer Xumo Stream Box (formerly Flex) devices to our domestic customers. The Xumo Stream Box provides access to and integration of streaming content and music from certain internet-based apps, including direct-to-consumer streaming services (\"DTC streaming services\") such as Peacock, Disney+ and Netflix, and certain pay-per-view and video on demand programming that is available over the internet. We also offer certain bundled DTC streaming services to our broadband customers. We earn commission revenue from the sale of DTC streaming services when sold with our broadband services or through our video platforms, including X1 and Sky Q.\n\nThe map below highlights our domestic network footprint and the markets where we had 250,000 or more domestic residential broadband customers as of December 31, 2024.\n\n![Map Updates v1.16.25.jpg](cmcsa-20241231_g2.jpg)\n\nOur international broadband services primarily include fiber-to-the-cabinet offerings, and increasingly fiber-to-the-premises offerings.\n\nAs part of our domestic and international broadband services, we offer to customers our advanced, proprietary wireless gateways that combine an internet modem with a Wi-Fi router to deliver reliable internet speeds and enhanced coverage through an in-and-out-of-home Wi-Fi network. In addition, customers may personalize and manage their Wi-Fi network and connected devices with our mobile apps and online portal. Broadband customers have access to our expanding network of secure Wi-Fi hotspots.\n\n*Wireless*\n\nWe offer wireless services for wireless handsets, tablets and smart watches (\"wireless devices\") to residential customers in the United States and the United Kingdom using mobile virtual network operator (\"MVNO\") rights. Our domestic wireless services are offered over Verizon's wireless network and our existing network of secure residential, outdoor and business Wi-Fi hotspots, and are offered initially only as part of our bundled service offerings to customers that subscribe to our qualifying broadband services.\n\nWireless customers may activate multiple lines per account. We offer domestic customers services on an unlimited data plan, on shared data plans or per gigabyte of data used. In 2024, we began offering prepaid unlimited data plans marketed under the NOW brand. We offer international customers services on various gigabyte plans or an unlimited data plan. Customers may either bring their own device or purchase devices from us with the option to pay upfront or finance the purchase interest-free over 24 months for domestic customers and over 24 to 48 months for international customers.\n\nComcast 2024 Annual Report on Form 10-K<sub>2</sub>\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nVideo\n\nWe offer video services to residential and business customers primarily through our X1 platform in the United States over our network, and through our Sky ",
+          "total_chars": 1480506,
+          "next_start": 19927,
+          "resources": {
+            "peak_rss_mib": 508.26953125,
+            "cpu_seconds": 0.530115,
+            "wall_seconds": 0.49973026199950255,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 3.5529280229993674
+      }
+    ],
+    "chunks": [
+      {
+        "found": true,
+        "id": "0001166691-25-000011:440297:452297",
+        "accession": "0001166691-25-000011",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+        "char_start": 440297,
+        "char_end": 452297,
+        "text": "curities collateralize securities of the registrant. |\n| <u>[23](ex23-12312024.htm)</u> | Consent of Deloitte & Touche LLP. |\n| <u>[31](ex31-12312024.htm)</u> | Certification of Chief Executive Officer and Chief Financial Officer pursuant to Section 302 of the Sarbanes-Oxley Act of 2002. |\n| <u>[32](ex32-12312024.htm)</u> | Certification of Chief Executive Officer and Chief Financial Officer pursuant to Section 906 of the Sarbanes-Oxley Act of 2002. |\n| <u>[97](https://www.sec.gov/Archives/edgar/data/1166691/000116669124000011/ex97-12312023.htm)</u> | Comcast Corporation Recoupment Policy (incorporated by reference to Exhibit 97 to Comcast's Annual Report on Form 10-K for the year ended December 31, 2023). |\n| 101 | The following financial statements from Comcast Corporation's Annual Report on Form 10-K for the year ended December 31, 2024, filed with the Securities and Exchange Commission on January 31, 2025, formatted in Inline Extensible Business Reporting Language (iXBRL): (1) the Consolidated Statement of Income; (2) the Consolidated Statement of Comprehensive Income; (3) the Consolidated Statement of Cash Flows; (4) the Consolidated Balance Sheet; (5) the Consolidated Statement of Changes in Equity; and (6) the Notes to Consolidated Financial Statements. |\n| 104 | Cover Page Interactive Data File (embedded within the iXBRL document) |\n| \\* | Constitutes a management contract or compensatory plan or arrangement. |\n\n---\n\n\n\nItem 16: Form 10-K Summary\n\nNone.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **98** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nSignatures\n\nPursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized in Philadelphia, Pennsylvania on January 31, 2025.\n\n---\n\n\n\n| | |\n|:---|:---|\n| By: | /s/ BRIAN L. ROBERTS |\n|  | Brian L. Roberts |\n|  | *Chairman and Chief Executive Officer* |\n\n---\n\n\n\nPursuant to the requirements of the Securities Exchange Act of 1934, this report has been signed below by the following persons on behalf of the Registrant and in the capacities and on the dates indicated.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| Signature | Title | Date |\n| /s/ BRIAN L. ROBERTS | Chairman and Chief Executive Officer; Director <br>(Principal Executive Officer) | January 31, 2025 |\n| Brian L. Roberts | Chairman and Chief Executive Officer; Director <br>(Principal Executive Officer) | January 31, 2025 |\n| /s/ JASON S. ARMSTRONG | Chief Financial Officer<br>(Principal Financial Officer) | January 31, 2025 |\n| Jason S. Armstrong | Chief Financial Officer<br>(Principal Financial Officer) | January 31, 2025 |\n| /s/ DANIEL C. MURDOCK | Executive Vice President, Chief Accounting<br>Officer and Controller<br>(Principal Accounting Officer) | January 31, 2025 |\n| Daniel C. Murdock | Executive Vice President, Chief Accounting<br>Officer and Controller<br>(Principal Accounting Officer) | January 31, 2025 |\n| /s/ KENNETH J. BACON | Director | January 31, 2025 |\n| Kenneth J. Bacon | Director | January 31, 2025 |\n| /s/ THOMAS J. BALTIMORE, JR. | Director | January 31, 2025 |\n| Thomas J. Baltimore, Jr. | Director | January 31, 2025 |\n| /s/ LOUISE F. BRADY | Director | January 31, 2025 |\n| Louise F. Brady | Director | January 31, 2025 |\n| /s/ MADELINE S. BELL | Director | January 31, 2025 |\n| Madeline S. Bell | Director | January 31, 2025 |\n| /s/ EDWARD D. BREEN | Director | January 31, 2025 |\n| Edward D. Breen | Director | January 31, 2025 |\n| /s/ JEFFREY A. HONICKMAN | Director | January 31, 2025 |\n| Jeffrey A. Honickman | Director | January 31, 2025 |\n| /s/ WONYA Y. LUCAS | Director | January 31, 2025 |\n| Wonya Y. Lucas | Director | January 31, 2025 |\n| /s/ ASUKA NAKAHARA | Director | January 31, 2025 |\n| Asuka Nakahara | Director | January 31, 2025 |\n| /s/ DAVID C. NOVAK | Director | January 31, 2025 |\n| David C. Novak | Director | January 31, 2025 |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| **99** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n\n## Exhibit 3.2\n\n\n\n**Exhibit 3.2**\n\n\n**AMENDED AND RESTATED BYLAWS** \n\n**OF**\n\n**COMCAST CORPORATION**\n\n\n\\* \\* \\* \\* \\*\n\nJanuary 28, 2025\n\n\\* \\* \\* \\* \\*\n\n**ARTICLE 1** \n\n**OFFICES**\n\n\nSection 1.01&nbsp;&nbsp;&nbsp;&nbsp;*Registered Office*. The registered office of the Comcast Corporation (the \"**Corporation**\") shall be located within the Commonwealth of Pennsylvania at such place as the Board of Directors (hereinafter referred to as the \"**Board of Directors**\" or the \"**Board**\") shall determine from time to time.\n\n\nSection 1.02&nbsp;&nbsp;&nbsp;&nbsp;*Other Offices*. The Corporation may also have offices at such other places, within or without the Commonwealth of Pennsylvania, as the Board of Directors may determine from time to time.\n\n\n**ARTICLE 2** \n\n**MEETINGS OF SHAREHOLDERS**\n\n\nSection 2.01&nbsp;&nbsp;&nbsp;&nbsp;*Place of Meetings of Shareholders*. Meetings of shareholders may be held at such geographic locations, within or without the Commonwealth of Pennsylvania, as may be fixed from time to time by the Board of Directors. If no such geographic location is so fixed by the Board of Directors or the Board of Directors does not determine to hold a meeting by means of electronic technology (as provided in the next sentence) rather than at a geographic location, meetings of the shareholders shall be held at the executive office of the Corporation. If a meeting of the shareholders is held by means of the Internet or other electronic communications technology in a fashion pursuant to which the shareholders have the opportunity to read or hear the proceedings substantially concurrently with their occurrence, vote on matters submitted to the shareholders, pose questions to the Directors, make appropriate motions and comment on the business of the meeting, the meeting need not be held at a particular geographic location.\n\n\nSection 2.02&nbsp;&nbsp;&nbsp;&nbsp;*Annual Meetings of Shareholders*.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)Time. Subject to Article SIXTH of the Articles of Incorporation, a meeting of the shareholders of the Corporation shall be held in each calendar year, on such date and at such time as the Board of Directors may determine, or if the Board of Directors fails to set a date and time, on the second Thursday of June at 9:00 o'clock a.m., if not a holiday on which national banks are or may elect to be closed (\"**Holiday**\"), and if such day is a Holiday, then such meeting shall be held on the next business day at such time.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)Election of Directors. At each annual meeting, Directors shall be elected to serve for the ensuing year and until their successors shall have been selected and qualified or until their earlier death, resignation or removal.\n\n\nSection 2.03 *Special Meetings of Shareholders*. Special meetings of the shareholders may be called at any time by the Board of Directors. Special meetings of the shareholders may not be called by shareholders. Upon the written instruction of the Board of Directors, which instruction specifies the general nature of the business to be\n\n\n------\n\n\ntransacted at such meeting as well as the date, time and place of such meeting, it shall be the duty of the Secretary to give due notice thereof as required by Section 2.04 hereof.\n\n\nSection 2.04&nbsp;&nbsp;&nbsp;&nbsp;*Notices of Meetings of Shareholders*. Notice complying with Article 6 of these Bylaws of every meeting of the shareholders shall be given to each shareholder of record entitled to vote at the meeting at least: (a) 10 days prior to the day named for a meeting that will consider a transaction under Chapter 3 of Title 15 of the Pennsylvania Consolidated Statutes or Chapter 19 of the Pennsylvania Business Corporation Law of 1988, as\n\namended (the \"**Pennsylvania BCL**\") or (b) five days prior to the day named for the meeting in any other case.\n\n\nSection 2.05&nbsp;&nbsp;&nbsp;&nbsp;*Quorum of and Action by Shareholders*.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)General Rule. A meeting of shareholders duly called shall not be organized for the transaction of business unless a quorum is present as to at least one of the matters to be considered. Except as provided in subsections (c), (d) and (e) of this Section 2.05, the presence of shareholders entitled to cast at least a majority of the votes that all shareholders are entitled to cast on a particular matter to be acted upon at the meeting shall constitute a quorum for the purpose of consideration of and action on the matter. To the extent that a quorum is present with respect to consideration of and action on a particular matter or matters but a quorum is not present as to another matter or matters, consideration of and action on the matter or matters for which a quorum is present may occur, and, after such consideration and action, the meeting may be adjourned for purposes of the consideration of and action on the matter or matters for which a quorum is not present.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)Action by Shareholders. Except as otherwise specifically provided by law, all matters coming before a meeting of shareholders shall be determined by a vote of shares. Except as otherwise provided by a resolution adopted by the Board of Directors, by the Articles of Incorporation, by the Pennsylvania BCL or by these Bylaws, whenever any corporate action is to be taken by vote of the shareholders of the Corporation at a duly organized meeting of shareholders, it shall be authorized by a majority of the votes cast at the meeting by the holders of shares entitled to vote with respect to such matter; *provided* that in no event may the required shareholder vote be reduced below that provided above.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c)Continuing Quorum. The shareholders present at a duly organized meeting can continue to do business until adjournment, notwithstanding the withdrawal of enough shareholders to leave less than a quorum.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d)Election of Directors at Adjourned Meetings. Those shareholders entitled to vote who attend a meeting at which Directors are to be elected that has been previously adjourned for lack of a quorum with respect thereto, although less than a quorum as fixed in subsection (a), shall nevertheless constitute a quorum for the purpose of electing Directors at such reconvened meeting.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(e)Conduct of Other Business at Adjourned Meetings. Those shareholders entitled to vote who attend a meeting at which a matter other than the election of Directors is to be acted upon, that has been previously adjourned for one or more periods aggregating at least 15 days because of an absence of a quorum with respect thereto, although less than a quorum as fixed in subsection (a), shall nevertheless constitute a quorum for the purpose of acting upon such matter if the notice states that those shareholders who attend the adjourned meeting shall nevertheless constitute a quorum for the purpose of acting upon such matter.\n\n\nSection 2.06&nbsp;&nbsp;&nbsp;&nbsp;*Adjournments*.\n\n\n&nbsp;&nbsp;&",
+        "total_chars": 1480506,
+        "next_start": 452297,
+        "resources": {
+          "peak_rss_mib": 504.14453125,
+          "cpu_seconds": 0.56507,
+          "wall_seconds": 0.5336410909994811,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      },
+      {
+        "found": true,
+        "id": "0001166691-25-000011:440297:452297",
+        "accession": "0001166691-25-000011",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+        "char_start": 440297,
+        "char_end": 452297,
+        "text": "curities collateralize securities of the registrant. |\n| <u>[23](ex23-12312024.htm)</u> | Consent of Deloitte & Touche LLP. |\n| <u>[31](ex31-12312024.htm)</u> | Certification of Chief Executive Officer and Chief Financial Officer pursuant to Section 302 of the Sarbanes-Oxley Act of 2002. |\n| <u>[32](ex32-12312024.htm)</u> | Certification of Chief Executive Officer and Chief Financial Officer pursuant to Section 906 of the Sarbanes-Oxley Act of 2002. |\n| <u>[97](https://www.sec.gov/Archives/edgar/data/1166691/000116669124000011/ex97-12312023.htm)</u> | Comcast Corporation Recoupment Policy (incorporated by reference to Exhibit 97 to Comcast's Annual Report on Form 10-K for the year ended December 31, 2023). |\n| 101 | The following financial statements from Comcast Corporation's Annual Report on Form 10-K for the year ended December 31, 2024, filed with the Securities and Exchange Commission on January 31, 2025, formatted in Inline Extensible Business Reporting Language (iXBRL): (1) the Consolidated Statement of Income; (2) the Consolidated Statement of Comprehensive Income; (3) the Consolidated Statement of Cash Flows; (4) the Consolidated Balance Sheet; (5) the Consolidated Statement of Changes in Equity; and (6) the Notes to Consolidated Financial Statements. |\n| 104 | Cover Page Interactive Data File (embedded within the iXBRL document) |\n| \\* | Constitutes a management contract or compensatory plan or arrangement. |\n\n---\n\n\n\nItem 16: Form 10-K Summary\n\nNone.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **98** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nSignatures\n\nPursuant to the requirements of Section 13 or 15(d) of the Securities Exchange Act of 1934, the Registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized in Philadelphia, Pennsylvania on January 31, 2025.\n\n---\n\n\n\n| | |\n|:---|:---|\n| By: | /s/ BRIAN L. ROBERTS |\n|  | Brian L. Roberts |\n|  | *Chairman and Chief Executive Officer* |\n\n---\n\n\n\nPursuant to the requirements of the Securities Exchange Act of 1934, this report has been signed below by the following persons on behalf of the Registrant and in the capacities and on the dates indicated.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| Signature | Title | Date |\n| /s/ BRIAN L. ROBERTS | Chairman and Chief Executive Officer; Director <br>(Principal Executive Officer) | January 31, 2025 |\n| Brian L. Roberts | Chairman and Chief Executive Officer; Director <br>(Principal Executive Officer) | January 31, 2025 |\n| /s/ JASON S. ARMSTRONG | Chief Financial Officer<br>(Principal Financial Officer) | January 31, 2025 |\n| Jason S. Armstrong | Chief Financial Officer<br>(Principal Financial Officer) | January 31, 2025 |\n| /s/ DANIEL C. MURDOCK | Executive Vice President, Chief Accounting<br>Officer and Controller<br>(Principal Accounting Officer) | January 31, 2025 |\n| Daniel C. Murdock | Executive Vice President, Chief Accounting<br>Officer and Controller<br>(Principal Accounting Officer) | January 31, 2025 |\n| /s/ KENNETH J. BACON | Director | January 31, 2025 |\n| Kenneth J. Bacon | Director | January 31, 2025 |\n| /s/ THOMAS J. BALTIMORE, JR. | Director | January 31, 2025 |\n| Thomas J. Baltimore, Jr. | Director | January 31, 2025 |\n| /s/ LOUISE F. BRADY | Director | January 31, 2025 |\n| Louise F. Brady | Director | January 31, 2025 |\n| /s/ MADELINE S. BELL | Director | January 31, 2025 |\n| Madeline S. Bell | Director | January 31, 2025 |\n| /s/ EDWARD D. BREEN | Director | January 31, 2025 |\n| Edward D. Breen | Director | January 31, 2025 |\n| /s/ JEFFREY A. HONICKMAN | Director | January 31, 2025 |\n| Jeffrey A. Honickman | Director | January 31, 2025 |\n| /s/ WONYA Y. LUCAS | Director | January 31, 2025 |\n| Wonya Y. Lucas | Director | January 31, 2025 |\n| /s/ ASUKA NAKAHARA | Director | January 31, 2025 |\n| Asuka Nakahara | Director | January 31, 2025 |\n| /s/ DAVID C. NOVAK | Director | January 31, 2025 |\n| David C. Novak | Director | January 31, 2025 |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| **99** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n\n## Exhibit 3.2\n\n\n\n**Exhibit 3.2**\n\n\n**AMENDED AND RESTATED BYLAWS** \n\n**OF**\n\n**COMCAST CORPORATION**\n\n\n\\* \\* \\* \\* \\*\n\nJanuary 28, 2025\n\n\\* \\* \\* \\* \\*\n\n**ARTICLE 1** \n\n**OFFICES**\n\n\nSection 1.01&nbsp;&nbsp;&nbsp;&nbsp;*Registered Office*. The registered office of the Comcast Corporation (the \"**Corporation**\") shall be located within the Commonwealth of Pennsylvania at such place as the Board of Directors (hereinafter referred to as the \"**Board of Directors**\" or the \"**Board**\") shall determine from time to time.\n\n\nSection 1.02&nbsp;&nbsp;&nbsp;&nbsp;*Other Offices*. The Corporation may also have offices at such other places, within or without the Commonwealth of Pennsylvania, as the Board of Directors may determine from time to time.\n\n\n**ARTICLE 2** \n\n**MEETINGS OF SHAREHOLDERS**\n\n\nSection 2.01&nbsp;&nbsp;&nbsp;&nbsp;*Place of Meetings of Shareholders*. Meetings of shareholders may be held at such geographic locations, within or without the Commonwealth of Pennsylvania, as may be fixed from time to time by the Board of Directors. If no such geographic location is so fixed by the Board of Directors or the Board of Directors does not determine to hold a meeting by means of electronic technology (as provided in the next sentence) rather than at a geographic location, meetings of the shareholders shall be held at the executive office of the Corporation. If a meeting of the shareholders is held by means of the Internet or other electronic communications technology in a fashion pursuant to which the shareholders have the opportunity to read or hear the proceedings substantially concurrently with their occurrence, vote on matters submitted to the shareholders, pose questions to the Directors, make appropriate motions and comment on the business of the meeting, the meeting need not be held at a particular geographic location.\n\n\nSection 2.02&nbsp;&nbsp;&nbsp;&nbsp;*Annual Meetings of Shareholders*.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)Time. Subject to Article SIXTH of the Articles of Incorporation, a meeting of the shareholders of the Corporation shall be held in each calendar year, on such date and at such time as the Board of Directors may determine, or if the Board of Directors fails to set a date and time, on the second Thursday of June at 9:00 o'clock a.m., if not a holiday on which national banks are or may elect to be closed (\"**Holiday**\"), and if such day is a Holiday, then such meeting shall be held on the next business day at such time.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)Election of Directors. At each annual meeting, Directors shall be elected to serve for the ensuing year and until their successors shall have been selected and qualified or until their earlier death, resignation or removal.\n\n\nSection 2.03 *Special Meetings of Shareholders*. Special meetings of the shareholders may be called at any time by the Board of Directors. Special meetings of the shareholders may not be called by shareholders. Upon the written instruction of the Board of Directors, which instruction specifies the general nature of the business to be\n\n\n------\n\n\ntransacted at such meeting as well as the date, time and place of such meeting, it shall be the duty of the Secretary to give due notice thereof as required by Section 2.04 hereof.\n\n\nSection 2.04&nbsp;&nbsp;&nbsp;&nbsp;*Notices of Meetings of Shareholders*. Notice complying with Article 6 of these Bylaws of every meeting of the shareholders shall be given to each shareholder of record entitled to vote at the meeting at least: (a) 10 days prior to the day named for a meeting that will consider a transaction under Chapter 3 of Title 15 of the Pennsylvania Consolidated Statutes or Chapter 19 of the Pennsylvania Business Corporation Law of 1988, as\n\namended (the \"**Pennsylvania BCL**\") or (b) five days prior to the day named for the meeting in any other case.\n\n\nSection 2.05&nbsp;&nbsp;&nbsp;&nbsp;*Quorum of and Action by Shareholders*.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)General Rule. A meeting of shareholders duly called shall not be organized for the transaction of business unless a quorum is present as to at least one of the matters to be considered. Except as provided in subsections (c), (d) and (e) of this Section 2.05, the presence of shareholders entitled to cast at least a majority of the votes that all shareholders are entitled to cast on a particular matter to be acted upon at the meeting shall constitute a quorum for the purpose of consideration of and action on the matter. To the extent that a quorum is present with respect to consideration of and action on a particular matter or matters but a quorum is not present as to another matter or matters, consideration of and action on the matter or matters for which a quorum is present may occur, and, after such consideration and action, the meeting may be adjourned for purposes of the consideration of and action on the matter or matters for which a quorum is not present.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)Action by Shareholders. Except as otherwise specifically provided by law, all matters coming before a meeting of shareholders shall be determined by a vote of shares. Except as otherwise provided by a resolution adopted by the Board of Directors, by the Articles of Incorporation, by the Pennsylvania BCL or by these Bylaws, whenever any corporate action is to be taken by vote of the shareholders of the Corporation at a duly organized meeting of shareholders, it shall be authorized by a majority of the votes cast at the meeting by the holders of shares entitled to vote with respect to such matter; *provided* that in no event may the required shareholder vote be reduced below that provided above.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c)Continuing Quorum. The shareholders present at a duly organized meeting can continue to do business until adjournment, notwithstanding the withdrawal of enough shareholders to leave less than a quorum.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d)Election of Directors at Adjourned Meetings. Those shareholders entitled to vote who attend a meeting at which Directors are to be elected that has been previously adjourned for lack of a quorum with respect thereto, although less than a quorum as fixed in subsection (a), shall nevertheless constitute a quorum for the purpose of electing Directors at such reconvened meeting.\n\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(e)Conduct of Other Business at Adjourned Meetings. Those shareholders entitled to vote who attend a meeting at which a matter other than the election of Directors is to be acted upon, that has been previously adjourned for one or more periods aggregating at least 15 days because of an absence of a quorum with respect thereto, although less than a quorum as fixed in subsection (a), shall nevertheless constitute a quorum for the purpose of acting upon such matter if the notice states that those shareholders who attend the adjourned meeting shall nevertheless constitute a quorum for the purpose of acting upon such matter.\n\n\nSection 2.06&nbsp;&nbsp;&nbsp;&nbsp;*Adjournments*.\n\n\n&nbsp;&nbsp;&",
+        "total_chars": 1480506,
+        "next_start": 452297,
+        "resources": {
+          "peak_rss_mib": 505.76953125,
+          "cpu_seconds": 0.619055,
+          "wall_seconds": 0.5690138589998242,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      },
+      {
+        "found": true,
+        "id": "0001166691-25-000011:7848:19848",
+        "accession": "0001166691-25-000011",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+        "char_start": 7848,
+        "char_end": 19848,
+        "text": " 3 | <u>[Legal Proceedings](#ia8555b4da9c1428ea91f8f8e7517528b_91)</u> | [27](#ia8555b4da9c1428ea91f8f8e7517528b_91) |\n| Item 4 | <u>[Mine Safety Disclosures](#ia8555b4da9c1428ea91f8f8e7517528b_94)</u> | [27](#ia8555b4da9c1428ea91f8f8e7517528b_94) |\n| **PART II** | **PART II** | **PART II** |\n| Item 5 | <u>[Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities](#ia8555b4da9c1428ea91f8f8e7517528b_100)</u> | [28](#ia8555b4da9c1428ea91f8f8e7517528b_100) |\n| Item 6 | <u>[\\[Reserved\\]](#ia8555b4da9c1428ea91f8f8e7517528b_103)</u> | [29](#ia8555b4da9c1428ea91f8f8e7517528b_103) |\n| Item 7 | <u>[Management's Discussion and Analysis of Financial Condition and Results of Operations](#ia8555b4da9c1428ea91f8f8e7517528b_106)</u> | [30](#ia8555b4da9c1428ea91f8f8e7517528b_106) |\n| Item 7A | <u>[Quantitative and Qualitative Disclosures About Market Risk](#ia8555b4da9c1428ea91f8f8e7517528b_178)</u> | [54](#ia8555b4da9c1428ea91f8f8e7517528b_178) |\n| Item 8 | <u>[Comcast Corporation Financial Statements and Supplementary Data](#ia8555b4da9c1428ea91f8f8e7517528b_181)</u> | [56](#ia8555b4da9c1428ea91f8f8e7517528b_181) |\n| Item 9 | <u>[Changes in and Disagreements with Accountants on Accounting and Financial Disclosure](#ia8555b4da9c1428ea91f8f8e7517528b_274)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_274) |\n| Item 9A | <u>[Controls and Procedures](#ia8555b4da9c1428ea91f8f8e7517528b_277)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_277) |\n| Item 9B | <u>[Other Information](#ia8555b4da9c1428ea91f8f8e7517528b_280)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_280) |\n| Item 9C | <u>[Disclosure Regarding Foreign Jurisdictions that Prevent Inspections](#ia8555b4da9c1428ea91f8f8e7517528b_286)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_286) |\n| **PART III** | **PART III** | **PART III** |\n| Item 10 | <u>[Directors, Executive Officers and Corporate Governance](#ia8555b4da9c1428ea91f8f8e7517528b_292)</u> | [93](#ia8555b4da9c1428ea91f8f8e7517528b_292) |\n| Item 11 | <u>[Executive Compensation](#ia8555b4da9c1428ea91f8f8e7517528b_295)</u> | [93](#ia8555b4da9c1428ea91f8f8e7517528b_295) |\n| Item 12 | <u>[Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters](#ia8555b4da9c1428ea91f8f8e7517528b_298)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_298) |\n| Item 13 | <u>[Certain Relationships and Related Transactions, and Director Independence](#ia8555b4da9c1428ea91f8f8e7517528b_301)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_301) |\n| Item 14 | <u>[Principal Accountant Fees and Services](#ia8555b4da9c1428ea91f8f8e7517528b_304)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_304) |\n| **PART IV** | **PART IV** | **PART IV** |\n| Item 15 | <u>[Exhibits and Financial Statement Schedules](#ia8555b4da9c1428ea91f8f8e7517528b_310)</u> | [95](#ia8555b4da9c1428ea91f8f8e7517528b_310) |\n| Item 16 | <u>[Form 10-K Summary](#ia8555b4da9c1428ea91f8f8e7517528b_313)</u> | [98](#ia8555b4da9c1428ea91f8f8e7517528b_313) |\n| <u>[Signatures](#ia8555b4da9c1428ea91f8f8e7517528b_316)</u> | <u>[Signatures](#ia8555b4da9c1428ea91f8f8e7517528b_316)</u> | [99](#ia8555b4da9c1428ea91f8f8e7517528b_316) |\n\n---\n\n\n\n**Explanatory Note**\n\nThis Annual Report on Form 10-K is for the year ended December 31, 2024. This Annual Report on Form 10-K modifies and supersedes documents filed before it. The U.S Securities and Exchange Commission (\"SEC\") allows us to \"incorporate by reference\" information that we file with it, which means that we can disclose important information to you by referring you directly to those documents. Information incorporated by reference is considered to be part of this Annual Report on Form 10-K. In addition, information that we file with the SEC in the future will automatically update and supersede information contained in this Annual Report on Form 10-K. Unless indicated otherwise, throughout this Annual Report on Form 10-K, we refer to Comcast and its consolidated subsidiaries, as \"Comcast,\" \"we,\" \"us\" and \"our.\"\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nThis Annual Report on Form 10-K contains trademarks, service marks and trade names owned by us, as well as those owned by others.\n\nNumerical information in this report is presented on a rounded basis using actual amounts. Minor differences in totals and percentage calculations may exist due to rounding.\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Part I**\n\nItem 1: Business\n\nWe are a global media and technology company that reaches customers, viewers and guests worldwide through the connectivity and platforms services we provide and the content and experiences we create. We deliver broadband, wireless, video and voice services primarily under the Xfinity, Comcast Business, Sky and NOW brands; produce, distribute and stream leading entertainment, sports and news through brands including NBC, Telemundo, Universal, Peacock and Sky; and own and operate Universal theme parks.\n\nWe operate two primary businesses:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 **Connectivity & Platforms:** Contains our broadband, wireless, video and wireline voice businesses in the United States, United Kingdom and Italy (collectively, the \"Connectivity & Platforms markets\"). Also includes the operations of our Sky-branded entertainment television networks in the United Kingdom and Italy. Our Connectivity & Platforms business is reported in two segments, Residential Connectivity & Platforms and Business Services Connectivity.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 **Content & Experiences:** Contains our media and entertainment businesses that produce and distribute entertainment, sports, news and other content for global audiences and that own and operate theme parks and attractions in the United States and Asia. Our Content & Experiences business is reported in three segments, Media, Studios and Theme Parks.\n\nIn November 2024, we announced our intention to create a new independent publicly traded company (\"SpinCo\") comprised primarily of a strong portfolio of domestic cable television networks currently within our Media segment, including USA Network, E!, Syfy, MSNBC, CNBC, Oxygen and the Golf Channel along with complementary digital assets including Fandango, Rotten Tomatoes, GolfNow and SportsEngine, through a tax-free spin-off (the \"Spin-off\"). We are targeting to complete the Spin-off by the end of 2025, subject to the satisfaction of customary conditions, including obtaining final approval from our Board of Directors, satisfactory completion of SpinCo financings, receipt of tax opinions and receipt of any regulatory approvals. There can be no assurance that a separation transaction will occur, or, if one does occur, of its terms or timing.\n\nFor additional information on our businesses and segments, refer to Item 7: Management's Discussion and Analysis of Financial Condition and Results of Operations and Note 2 to the consolidated financial statements included in this Annual Report on Form 10-K.\n\nDescription of Our Businesses\n\n**Connectivity & Platforms Business**<br>\n\n**Residential Connectivity & Platforms Segment**\n\nOur Residential Connectivity & Platforms segment primarily includes:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Residential broadband and wireless services (collectively, \"Residential Connectivity\")\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Residential and business video services, Sky-branded entertainment television networks and advertising\n\nWe offer services to customers individually and as bundled services at a discounted rate.\n\nResidential Connectivity\n\n*Broadband*\n\nWe offer broadband services in the United States over our hybrid fiber-optic and coaxial (\"HFC\") network, as well as through direct fiber-to-the-premises connections for certain customers, and internationally in the United Kingdom and Italy by leveraging networks owned by third-party telecommunications providers.\n\nOur domestic broadband offerings have a range of service levels, including up to gigabit-plus downstream speeds that we offer across nearly our entire footprint. As part of our low-income broadband adoption program, we offer qualifying domestic customers broadband services at discounted rates through our Internet Essentials and Internet Essentials Plus services, with downstream speeds of up to 75 and 100 megabits per second, respectively. In 2024, we began offering prepaid domestic broadband services with downstream speeds of up to 200 megabits per second marketed under the NOW brand. We also offer monthly access to our network of Wi-Fi hotspots.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **1** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nWe continue to evolve and enhance our domestic network capabilities, including deploying technology in select markets that will enable us to deliver multigigabit symmetrical broadband speeds (i.e., comparable upstream and downstream speeds), as described in the Network and Technology discussion below.\n\nWe offer Xumo Stream Box (formerly Flex) devices to our domestic customers. The Xumo Stream Box provides access to and integration of streaming content and music from certain internet-based apps, including direct-to-consumer streaming services (\"DTC streaming services\") such as Peacock, Disney+ and Netflix, and certain pay-per-view and video on demand programming that is available over the internet. We also offer certain bundled DTC streaming services to our broadband customers. We earn commission revenue from the sale of DTC streaming services when sold with our broadband services or through our video platforms, including X1 and Sky Q.\n\nThe map below highlights our domestic network footprint and the markets where we had 250,000 or more domestic residential broadband customers as of December 31, 2024.\n\n![Map Updates v1.16.25.jpg](cmcsa-20241231_g2.jpg)\n\nOur international broadband services primarily include fiber-to-the-cabinet offerings, and increasingly fiber-to-the-premises offerings.\n\nAs part of our domestic and international broadband services, we offer to customers our advanced, proprietary wireless gateways that combine an internet modem with a Wi-Fi router to deliver reliable internet speeds and enhanced coverage through an in-and-out-of-home Wi-Fi network. In addition, customers may personalize and manage their Wi-Fi network and connected devices with our mobile apps and online portal. Broadband customers have access to our expanding network of secure Wi-Fi hotspots.\n\n*Wireless*\n\nWe offer wireless services for wireless handsets, tablets and smart watches (\"wireless devices\") to residential customers in the United States and the United Kingdom using mobile virtual network operator (\"MVNO\") rights. Our domestic wireless services are offered over Verizon's wireless network and our existing network of secure residential, outdoor and business Wi-Fi hotspots, and are offered initially only as part of our bundled service offerings to customers that subscribe to our qualifying broadband services.\n\nWireless customers may activate multiple lines per account. We offer domestic customers services on an unlimited data plan, on shared data plans or per gigabyte of data used. In 2024, we began offering prepaid unlimited data plans marketed under the NOW brand. We offer international customers services on various gigabyte plans or an unlimited data plan. Customers may either bring their own device or purchase devices from us with the option to pay upfront or finance the purchase interest-free over 24 months for domestic customers and over 24 to 48 months for international customers.\n\nComcast 2024 Annual Report on Form 10-K<sub>2</sub>\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nVideo\n\nWe offer video services to residential and business customers primarily thro",
+        "total_chars": 1480506,
+        "next_start": 19848,
+        "resources": {
+          "peak_rss_mib": 507.64453125,
+          "cpu_seconds": 0.502453,
+          "wall_seconds": 0.4733073850002256,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      },
+      {
+        "found": true,
+        "id": "0001166691-25-000011:7927:19927",
+        "accession": "0001166691-25-000011",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+        "char_start": 7927,
+        "char_end": 19927,
+        "text": "ia8555b4da9c1428ea91f8f8e7517528b_91) |\n| Item 4 | <u>[Mine Safety Disclosures](#ia8555b4da9c1428ea91f8f8e7517528b_94)</u> | [27](#ia8555b4da9c1428ea91f8f8e7517528b_94) |\n| **PART II** | **PART II** | **PART II** |\n| Item 5 | <u>[Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities](#ia8555b4da9c1428ea91f8f8e7517528b_100)</u> | [28](#ia8555b4da9c1428ea91f8f8e7517528b_100) |\n| Item 6 | <u>[\\[Reserved\\]](#ia8555b4da9c1428ea91f8f8e7517528b_103)</u> | [29](#ia8555b4da9c1428ea91f8f8e7517528b_103) |\n| Item 7 | <u>[Management's Discussion and Analysis of Financial Condition and Results of Operations](#ia8555b4da9c1428ea91f8f8e7517528b_106)</u> | [30](#ia8555b4da9c1428ea91f8f8e7517528b_106) |\n| Item 7A | <u>[Quantitative and Qualitative Disclosures About Market Risk](#ia8555b4da9c1428ea91f8f8e7517528b_178)</u> | [54](#ia8555b4da9c1428ea91f8f8e7517528b_178) |\n| Item 8 | <u>[Comcast Corporation Financial Statements and Supplementary Data](#ia8555b4da9c1428ea91f8f8e7517528b_181)</u> | [56](#ia8555b4da9c1428ea91f8f8e7517528b_181) |\n| Item 9 | <u>[Changes in and Disagreements with Accountants on Accounting and Financial Disclosure](#ia8555b4da9c1428ea91f8f8e7517528b_274)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_274) |\n| Item 9A | <u>[Controls and Procedures](#ia8555b4da9c1428ea91f8f8e7517528b_277)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_277) |\n| Item 9B | <u>[Other Information](#ia8555b4da9c1428ea91f8f8e7517528b_280)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_280) |\n| Item 9C | <u>[Disclosure Regarding Foreign Jurisdictions that Prevent Inspections](#ia8555b4da9c1428ea91f8f8e7517528b_286)</u> | [92](#ia8555b4da9c1428ea91f8f8e7517528b_286) |\n| **PART III** | **PART III** | **PART III** |\n| Item 10 | <u>[Directors, Executive Officers and Corporate Governance](#ia8555b4da9c1428ea91f8f8e7517528b_292)</u> | [93](#ia8555b4da9c1428ea91f8f8e7517528b_292) |\n| Item 11 | <u>[Executive Compensation](#ia8555b4da9c1428ea91f8f8e7517528b_295)</u> | [93](#ia8555b4da9c1428ea91f8f8e7517528b_295) |\n| Item 12 | <u>[Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters](#ia8555b4da9c1428ea91f8f8e7517528b_298)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_298) |\n| Item 13 | <u>[Certain Relationships and Related Transactions, and Director Independence](#ia8555b4da9c1428ea91f8f8e7517528b_301)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_301) |\n| Item 14 | <u>[Principal Accountant Fees and Services](#ia8555b4da9c1428ea91f8f8e7517528b_304)</u> | [94](#ia8555b4da9c1428ea91f8f8e7517528b_304) |\n| **PART IV** | **PART IV** | **PART IV** |\n| Item 15 | <u>[Exhibits and Financial Statement Schedules](#ia8555b4da9c1428ea91f8f8e7517528b_310)</u> | [95](#ia8555b4da9c1428ea91f8f8e7517528b_310) |\n| Item 16 | <u>[Form 10-K Summary](#ia8555b4da9c1428ea91f8f8e7517528b_313)</u> | [98](#ia8555b4da9c1428ea91f8f8e7517528b_313) |\n| <u>[Signatures](#ia8555b4da9c1428ea91f8f8e7517528b_316)</u> | <u>[Signatures](#ia8555b4da9c1428ea91f8f8e7517528b_316)</u> | [99](#ia8555b4da9c1428ea91f8f8e7517528b_316) |\n\n---\n\n\n\n**Explanatory Note**\n\nThis Annual Report on Form 10-K is for the year ended December 31, 2024. This Annual Report on Form 10-K modifies and supersedes documents filed before it. The U.S Securities and Exchange Commission (\"SEC\") allows us to \"incorporate by reference\" information that we file with it, which means that we can disclose important information to you by referring you directly to those documents. Information incorporated by reference is considered to be part of this Annual Report on Form 10-K. In addition, information that we file with the SEC in the future will automatically update and supersede information contained in this Annual Report on Form 10-K. Unless indicated otherwise, throughout this Annual Report on Form 10-K, we refer to Comcast and its consolidated subsidiaries, as \"Comcast,\" \"we,\" \"us\" and \"our.\"\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nThis Annual Report on Form 10-K contains trademarks, service marks and trade names owned by us, as well as those owned by others.\n\nNumerical information in this report is presented on a rounded basis using actual amounts. Minor differences in totals and percentage calculations may exist due to rounding.\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Part I**\n\nItem 1: Business\n\nWe are a global media and technology company that reaches customers, viewers and guests worldwide through the connectivity and platforms services we provide and the content and experiences we create. We deliver broadband, wireless, video and voice services primarily under the Xfinity, Comcast Business, Sky and NOW brands; produce, distribute and stream leading entertainment, sports and news through brands including NBC, Telemundo, Universal, Peacock and Sky; and own and operate Universal theme parks.\n\nWe operate two primary businesses:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 **Connectivity & Platforms:** Contains our broadband, wireless, video and wireline voice businesses in the United States, United Kingdom and Italy (collectively, the \"Connectivity & Platforms markets\"). Also includes the operations of our Sky-branded entertainment television networks in the United Kingdom and Italy. Our Connectivity & Platforms business is reported in two segments, Residential Connectivity & Platforms and Business Services Connectivity.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 **Content & Experiences:** Contains our media and entertainment businesses that produce and distribute entertainment, sports, news and other content for global audiences and that own and operate theme parks and attractions in the United States and Asia. Our Content & Experiences business is reported in three segments, Media, Studios and Theme Parks.\n\nIn November 2024, we announced our intention to create a new independent publicly traded company (\"SpinCo\") comprised primarily of a strong portfolio of domestic cable television networks currently within our Media segment, including USA Network, E!, Syfy, MSNBC, CNBC, Oxygen and the Golf Channel along with complementary digital assets including Fandango, Rotten Tomatoes, GolfNow and SportsEngine, through a tax-free spin-off (the \"Spin-off\"). We are targeting to complete the Spin-off by the end of 2025, subject to the satisfaction of customary conditions, including obtaining final approval from our Board of Directors, satisfactory completion of SpinCo financings, receipt of tax opinions and receipt of any regulatory approvals. There can be no assurance that a separation transaction will occur, or, if one does occur, of its terms or timing.\n\nFor additional information on our businesses and segments, refer to Item 7: Management's Discussion and Analysis of Financial Condition and Results of Operations and Note 2 to the consolidated financial statements included in this Annual Report on Form 10-K.\n\nDescription of Our Businesses\n\n**Connectivity & Platforms Business**<br>\n\n**Residential Connectivity & Platforms Segment**\n\nOur Residential Connectivity & Platforms segment primarily includes:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Residential broadband and wireless services (collectively, \"Residential Connectivity\")\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Residential and business video services, Sky-branded entertainment television networks and advertising\n\nWe offer services to customers individually and as bundled services at a discounted rate.\n\nResidential Connectivity\n\n*Broadband*\n\nWe offer broadband services in the United States over our hybrid fiber-optic and coaxial (\"HFC\") network, as well as through direct fiber-to-the-premises connections for certain customers, and internationally in the United Kingdom and Italy by leveraging networks owned by third-party telecommunications providers.\n\nOur domestic broadband offerings have a range of service levels, including up to gigabit-plus downstream speeds that we offer across nearly our entire footprint. As part of our low-income broadband adoption program, we offer qualifying domestic customers broadband services at discounted rates through our Internet Essentials and Internet Essentials Plus services, with downstream speeds of up to 75 and 100 megabits per second, respectively. In 2024, we began offering prepaid domestic broadband services with downstream speeds of up to 200 megabits per second marketed under the NOW brand. We also offer monthly access to our network of Wi-Fi hotspots.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **1** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nWe continue to evolve and enhance our domestic network capabilities, including deploying technology in select markets that will enable us to deliver multigigabit symmetrical broadband speeds (i.e., comparable upstream and downstream speeds), as described in the Network and Technology discussion below.\n\nWe offer Xumo Stream Box (formerly Flex) devices to our domestic customers. The Xumo Stream Box provides access to and integration of streaming content and music from certain internet-based apps, including direct-to-consumer streaming services (\"DTC streaming services\") such as Peacock, Disney+ and Netflix, and certain pay-per-view and video on demand programming that is available over the internet. We also offer certain bundled DTC streaming services to our broadband customers. We earn commission revenue from the sale of DTC streaming services when sold with our broadband services or through our video platforms, including X1 and Sky Q.\n\nThe map below highlights our domestic network footprint and the markets where we had 250,000 or more domestic residential broadband customers as of December 31, 2024.\n\n![Map Updates v1.16.25.jpg](cmcsa-20241231_g2.jpg)\n\nOur international broadband services primarily include fiber-to-the-cabinet offerings, and increasingly fiber-to-the-premises offerings.\n\nAs part of our domestic and international broadband services, we offer to customers our advanced, proprietary wireless gateways that combine an internet modem with a Wi-Fi router to deliver reliable internet speeds and enhanced coverage through an in-and-out-of-home Wi-Fi network. In addition, customers may personalize and manage their Wi-Fi network and connected devices with our mobile apps and online portal. Broadband customers have access to our expanding network of secure Wi-Fi hotspots.\n\n*Wireless*\n\nWe offer wireless services for wireless handsets, tablets and smart watches (\"wireless devices\") to residential customers in the United States and the United Kingdom using mobile virtual network operator (\"MVNO\") rights. Our domestic wireless services are offered over Verizon's wireless network and our existing network of secure residential, outdoor and business Wi-Fi hotspots, and are offered initially only as part of our bundled service offerings to customers that subscribe to our qualifying broadband services.\n\nWireless customers may activate multiple lines per account. We offer domestic customers services on an unlimited data plan, on shared data plans or per gigabyte of data used. In 2024, we began offering prepaid unlimited data plans marketed under the NOW brand. We offer international customers services on various gigabyte plans or an unlimited data plan. Customers may either bring their own device or purchase devices from us with the option to pay upfront or finance the purchase interest-free over 24 months for domestic customers and over 24 to 48 months for international customers.\n\nComcast 2024 Annual Report on Form 10-K<sub>2</sub>\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nVideo\n\nWe offer video services to residential and business customers primarily through our X1 platform in the United States over our network, and through our Sky ",
+        "total_chars": 1480506,
+        "next_start": 19927,
+        "resources": {
+          "peak_rss_mib": 508.26953125,
+          "cpu_seconds": 0.530115,
+          "wall_seconds": 0.49973026199950255,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      }
+    ],
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash"
+  },
+  "judge": {
+    "text": "{\"correctness\": 0, \"citation_support\": 5, \"rationale\": \"The reference answer gives an 18.83% margin computed from operating income $23,297M and revenue $123,731M. The candidate did not compute or provide any percentage; it abstained, claiming the tool budget ran out before the income statement was found. The reference is answerable from the gold evidence (operating income 23,297 is quoted), so abstention is not the correct behavior and earns no correctness credit. The candidate's abstention is also not justified by the excerpts it retrieved, which contain only the table of contents, exhibit lists, and business description, not the income statement. Its citation to accession 0001166691-25-000011 and the parquet path is grounded in the retrieved metadata, and it accurately describes that the retrieved text lacked the income statement, so citation support is low but not zero. The candidate also does not state the revenue figure or any operating income figure.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 0, \"citation_support\": 5, \"rationale\": \"The reference answer gives an 18.83% margin computed from operating income $23,297M and revenue $123,731M. The candidate did not compute or provide any percentage; it abstained, claiming the tool budget ran out before the income statement was found. The reference is answerable from the gold evidence (operating income 23,297 is quoted), so abstention is not the correct behavior and earns no correctness credit. The candidate's abstention is also not justified by the excerpts it retrieved, which contain only the table of contents, exhibit lists, and business description, not the income statement. Its citation to accession 0001166691-25-000011 and the parquet path is grounded in the retrieved metadata, and it accurately describes that the retrieved text lacked the income statement, so citation support is low but not zero. The candidate also does not state the revenue figure or any operating income figure.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:39:48.812422+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "1ed79d7cbffd84d5acf59c0b:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042786-ljU8ZDYxhinhTMyNjv84",
+    "usage": {
+      "prompt_tokens": 46856,
+      "completion_tokens": 298,
+      "total_tokens": 47154,
+      "cost": 0.0048346,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0048346,
+        "upstream_inference_prompt_cost": 0.0046856,
+        "upstream_inference_completions_cost": 0.000149
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.21412435899947,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 0,
+    "citation_support": 5,
+    "rationale": "The reference answer gives an 18.83% margin computed from operating income $23,297M and revenue $123,731M. The candidate did not compute or provide any percentage; it abstained, claiming the tool budget ran out before the income statement was found. The reference is answerable from the gold evidence (operating income 23,297 is quoted), so abstention is not the correct behavior and earns no correctness credit. The candidate's abstention is also not justified by the excerpts it retrieved, which contain only the table of contents, exhibit lists, and business description, not the income statement. Its citation to accession 0001166691-25-000011 and the parquet path is grounded in the retrieved metadata, and it accurately describes that the retrieved text lacked the income statement, so citation support is low but not zero. The candidate also does not state the revenue figure or any operating income figure."
+  }
+}

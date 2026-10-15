@@ -1,0 +1,132 @@
+{
+  "question_id": "Q055",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.11714858300001652,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Comcast\u2019s fiscal 2024 operating income margin was **18.83%**.\n\nCalculation: **$23,297 million operating income \u00f7 $123,731 million revenue \u00d7 100 = 18.83%**.  \nSource: accession **0001166691-25-000011**, *Filing Summary*, chunk **b67e26e1-4ed4-5a49-b5f4-8b9cc8923af6**.",
+    "message": {
+      "role": "assistant",
+      "content": "Comcast\u2019s fiscal 2024 operating income margin was **18.83%**.\n\nCalculation: **$23,297 million operating income \u00f7 $123,731 million revenue \u00d7 100 = 18.83%**.  \nSource: accession **0001166691-25-000011**, *Filing Summary*, chunk **b67e26e1-4ed4-5a49-b5f4-8b9cc8923af6**.",
+      "refusal": null,
+      "reasoning": "**Calculating percentage**\n\nI need to calculate a percentage: 23297 divided by 123731, then multiply by 100. Let me break this down step by step. First, I'll get the result of 23297 divided by 123731. Then, I'll multiply that result by 100 to convert it to a percentage. This should give me the value I'm looking for. I\u2019ll go ahead and figure that out now!",
+      "reasoning_details": [
+        {
+          "type": "reasoning.summary",
+          "summary": "**Calculating percentage**\n\nI need to calculate a percentage: 23297 divided by 123731, then multiply by 100. Let me break this down step by step. First, I'll get the result of 23297 divided by 123731. Then, I'll multiply that result by 100 to convert it to a percentage. This should give me the value I'm looking for. I\u2019ll go ahead and figure that out now!",
+          "format": "openai-responses-v1",
+          "index": 0
+        },
+        {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq0GPRi_k34df41UkEdJu26ZLbb99wiWA6CNs-MPbAI8mo5H43dARiqVz0cJk3R-5iHYiCGDxXJ4YkHpfFE0cGLFIuoxfCFGACnwopid8169nc-UPuAeTRu7CN6-ZS_KpIGDT4YxQmwggPxICtwau4xjASuPE-KqobCR-CY6T1guSoasdPoNAZVhQF1Kvl-fK_Uk5Td49F0Eid4rl9WUu29VRRF-naqGo88gTM-FPb8XtuExrc85DhTyEgbuX9NIg9yFyHrJsAJuiSZG6LV_9dhEV7Pqap3LXK68YO5MhVwGxr7bVp_ks9IEMQ7FPX4JkAB4I7n3iwO3OIzKNNpE_4KDDSFrtPTeA5Wq95BMPGgilQjOh05KbJaBuw7qlE_WPtEabIidi98XjSJdJ5UW711UiPpVmKaiWf8kuoH_0ZFdMlGrcAoqALFy2ylotLND7YV3u6li4ZQMdlyqSBnsuVXMn6gbHJ7-utTAjursLvb2uzV__ysu7dMUYNs66F8vf_l6VRCAEgT_K9yQl8xWASrP7I83t5yglAoFkh4Kaiysz3tWje5XXaUo8kGCi932PtCbw1Gkk5fHf3BMrQIyuhVGQNZUWpFFsWdTxgwPXPNSvRifRHQdAhNctVLTIRJGVv_g8nu0AeJ3xulPfJ4-zGoGba_5oVlfI2VYcsKk78TbAHIVhHJaaYf99Ddh_wmd_TtnEkl8JQ2m9yj67PEvKE2Ju_uCbb5I36vDxro5tKPFUb_UrxQSrJ95wC3BP8Vbw7VzRvE7NSPMCsWBbSWmkZpewZV-HFrfZEp2RoJZnUrQTbyo6OSpRQlraIm7rbhpOVjOHOqRKj0F4PWgjuOTMaZGHSFQMnKyZ1tljknEKh8OlGd5ILHLPta1uPNJo2kk9tmE2llYnPvtT5D0nYrwVJJ1zgPn8GJCN9Pad6XO4W0KlCogj1mIpQ9CoE52rD2Iqlx8YD88daX6LBQ6YAP_S80RfQJj8hRsBh3wq1TwLTrt2cDTyZXbCOLDN2_Z-4OGwfvebEldmq3n_2ryJyt_7wX5Dbik6DyDW-GgSGrpebopHkMB7i7pv_jl_qdwJCp3a1AYqc83rMgQCYCK9ctdb_S8ql7Zt7V2U5wdnqiX7FJecPcmH6qMGvmyr8DQffUOA1zCssjypfXPfyq0zFL0PunWqVqLVCrPFL6E_NDmalXetfdJQ4FMtYt2U-F4rUuFu5eh8hQtkEOSW3k8rGxkSUDJVt3a24izcKEBqRMEKefNo9F4VCT6YiSY7S8E5nNmMLhSd_s9-WxQ8xh0Fie83Obr4rM_bSk7_1C6qZi8VwHnLalUwoZHdvMhU88OrVZlp8A2ukCB9RLmpdT1f2kIznBD9BgknQ-b-u6_NC5FVR5yQ88c4tM_AxC_Tx0zkwl4hmTv6aiSeZCjg-fR2C5SZt6tsL_Ox7iRIyv55JtjXDNX8S2FurJPS3p2tWzDLNyttbj_oqlxpGP50NfXyMv_Xf8UzxGayU26UDjpw3fQr35wjaZqWdEmGpNrheNBjcZD1FY_KHVHgPcOgBOWBPBrGeWyuS_wlThRmvhRr3A54X3Hf1yJnk6WRm2FV72OJkZQm4389U7i4G6KpzFW4nnF_ezKhW3RBOMg4dMPeXgT4eYwGIPzFEYNqsgLSF0Za42IXKd8DbrsHM4MZKJ-TlCUF44Q63WN-PdARwcGksOP_VG_6hnjbvaK12wH02O5HGFQKJK--dGUZ79UZhqkj_utrYroJz8w==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+          "format": "openai-responses-v1",
+          "id": "rs_0a8a3652786a3dcd016ad063d0e80487d1871424fcc841566d",
+          "index": 1
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:38.924900+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "6e36ff29b79cb89f4fb7372a:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041935-LCpdb0Ccxk1PswoXEGfU",
+    "usage": {
+      "prompt_tokens": 17303,
+      "completion_tokens": 120,
+      "total_tokens": 17423,
+      "cost": 0.0022228,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 17300,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0022228,
+        "upstream_inference_prompt_cost": 0.0021628,
+        "upstream_inference_completions_cost": 6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 16,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 1.6273350029996436,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 98, \"citation_support\": 95, \"rationale\": \"The candidate's figures match the reference: operating income of $23,297M divided by revenue of $123,731M gives 18.83% (23297/123731 \u2248 0.18827). The cited accession 0001166691-25-000011 and chunk b67e26e1-4ed4-5a49-b5f4-8b9cc8923af6 both appear in the retrieved excerpts, and that chunk contains the Consolidated Operating Results table with both the $23,297M operating income and $123,731M revenue. Minor deduction only because the answer cites a 'Filing Summary' label rather than the more specific Consolidated Statements of Income section given in the gold evidence.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 98, \"citation_support\": 95, \"rationale\": \"The candidate's figures match the reference: operating income of $23,297M divided by revenue of $123,731M gives 18.83% (23297/123731 \u2248 0.18827). The cited accession 0001166691-25-000011 and chunk b67e26e1-4ed4-5a49-b5f4-8b9cc8923af6 both appear in the retrieved excerpts, and that chunk contains the Consolidated Operating Results table with both the $23,297M operating income and $123,731M revenue. Minor deduction only because the answer cites a 'Filing Summary' label rather than the more specific Consolidated Statements of Income section given in the gold evidence.\"}",
+      "refusal": null,
+      "reasoning": "I verify the math: 23297/123731 comes out to 18.83%, matching the candidate's answer, and the cited chunk and accession number align with the retrieved table data. Both support and correctness look solid, so I'd score this around 97.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I verify the math: 23297/123731 comes out to 18.83%, matching the candidate's answer, and the cited chunk and accession number align with the retrieved table data. Both support and correctness look solid, so I'd score this around 97.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQStQgKEAgSGAI4AUIIdGhpbmtpbmcSDPXqH94O7sL1Vm78ZxoMgbXXMdmJHp7o02vuIjDmyy06avdghMl4PVGnlpGF4YyOuwfLMvqO3zSN5WWBUzncNXgTqpgKc2/6uXvO0awq0gduOiLPs2Tl4Y4qe/1NdgzWVTKRuRQWSmwc6dSTj97MBbWTp2rzfu7TLiUjRe+BJWfoweN3ZXGyJ9CkSzTD5EeFLe6JpYyDs0sMksL6NbCDJhAdDqDX7BEJ4Y3nc9fRdCEgM6A+ZMYxg749EXjZEgmud2mI2TlMj0ev4/57fXe03x93dk8GlGkM/UfS85v5X0xQfP/hwo3HBrP0RyhpBoQfEonYzN4+6xmp+0kcFiWD1PW8E4efaaLZOlnJNvsNtFFQqaOxXmLqg1XFP7Nm0Hi5ijYeCFRaPowr0LZ99j8Eb4jEe34EsJ3mS0fPTK/2hANR/tdg+TQxCGjWpvJ8FoIjVgqujA0CqtJGrdmPsTqA13IuSdSqqwg1mXwyvGYqv3/cHbgrtYSe9S3d58a/ii/X9eiw8vl7N9gGlXU07xdTWm7ypl0Cb/o5NA27t6vOOexBjDNVvDzsLpu8UC0CjHT6NYvYfY8P8QOs4LP7bbpbd8ODO1qpFIIOt+RzvAxBRtyA/E0jrwcDqorPZgl43S2IuXmkiN1/9obQXDd3cfQB02q09mhQdqwxTt6egqUHNfFuhOGbERUhG5kkP5hBrdvONXmjP9mmw0CdPRO8obpcOMXuErICSk9Jx9yIVKr69Swud4W0A5aS2k5XQGekiuvz8bIqFB7jgYCxWRSwxVnwzqTKMqj5owDueWUCtwxQFBHxKLvc51EjsMpF8kMM8K2WRJ+tb6Y4ixJiseuhKX78iHjX4j5BnXzoBgZk9c2DUTkc9diJs9dU6hihZWIEvN12QxZ+LjkMvZU0fqg4pEUbXBFjrjxYq5K+mYJhQYFoj0pnAUxQpsBb0sx1kl1liCZuKI0NekNDCXKuerIDFM0L43TjF1AJsTzJ+05RefoSdXCEnuKcQkdfrM0b8H88iQ1vECOCliR8vrqlRE1LYAKDWi2cLX8WgqwLJJGuVfBWZWmbeDlIi/Id+McJfYWTXJZ7AbKCTCwYz9Nr979iuGe9Saw2VuiiWkQBe1UG0XuaVMLQJudHsL5aWs/7cwVIFSRFbcJyPAJKioJEn0ii8bpjCJiG4e9YcMIep8udimsEIQNHORHKtpLBr5vvvHTClyVqBUUyJ/Gj1mANUy9TzsPuIhcFEeB3ICWyEEWmfwmVnhMKqn6GH+kwIb68P2p2qoFQ7d92F2RMGUVeulqvPseldFnXs0qNTFgGmxJ8ON8BUYMWljpHnaoy6wL1HHlq47LT8KvXPAk+8I3nJm9+QFxtSb5DRqoL6ZKJmzY0B/TQcgfp6i5wT3BNTC1g/X9iyZr6eIYYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:06.785711+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "6e36ff29b79cb89f4fb7372a:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042143-Hqa5PoIujMw9is1mwlmt",
+    "usage": {
+      "prompt_tokens": 26450,
+      "completion_tokens": 428,
+      "total_tokens": 26878,
+      "cost": 0.002859,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002859,
+        "upstream_inference_prompt_cost": 0.002645,
+        "upstream_inference_completions_cost": 0.000214
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 187,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.869637612000588,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 95,
+    "rationale": "The candidate's figures match the reference: operating income of $23,297M divided by revenue of $123,731M gives 18.83% (23297/123731 \u2248 0.18827). The cited accession 0001166691-25-000011 and chunk b67e26e1-4ed4-5a49-b5f4-8b9cc8923af6 both appear in the retrieved excerpts, and that chunk contains the Consolidated Operating Results table with both the $23,297M operating income and $123,731M revenue. Minor deduction only because the answer cites a 'Filing Summary' label rather than the more specific Consolidated Statements of Income section given in the gold evidence."
+  },
+  "status": "ok"
+}

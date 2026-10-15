@@ -1,0 +1,108 @@
+{
+  "question_id": "Q057",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.048407354000119085,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Working capital as of December 31, 2024 was **$3,620 million ($3.620 billion)**.\n\n**Calculation:** Total current assets ($24,447 million) \u2212 Total current liabilities ($20,827 million) = **$3,620 million**.\n\n*Source: Marathon Petroleum Corporation, accession 0001510295-25-000012, Item 8, \u201cFinancial Statements and Supplementary Data,\u201d chunk 4.*",
+    "message": {
+      "role": "assistant",
+      "content": "Working capital as of December 31, 2024 was **$3,620 million ($3.620 billion)**.\n\n**Calculation:** Total current assets ($24,447 million) \u2212 Total current liabilities ($20,827 million) = **$3,620 million**.\n\n*Source: Marathon Petroleum Corporation, accession 0001510295-25-000012, Item 8, \u201cFinancial Statements and Supplementary Data,\u201d chunk 4.*",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:48.380946+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "68c32deebe15adb4171ca80b:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041946-leYLoH79QYIh1lS93GFG",
+    "usage": {
+      "prompt_tokens": 17861,
+      "completion_tokens": 95,
+      "total_tokens": 17956,
+      "cost": 0.00022638,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 17858,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00022638,
+        "upstream_inference_prompt_cost": 0.00017888,
+        "upstream_inference_completions_cost": 4.75e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.0641716810005164,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"Candidate's working capital of $3,620 million matches the reference and the retrieved balance sheet (24,447 - 20,827 = 3,620). Units and date are correct. The cited accession and Item 8 section match the retrieved MPC balance sheet chunk, which contains both totals. Minor deduction only because the candidate labels the source as 'chunk 4' while the excerpt is chunk_index 4, which is consistent, so little to deduct.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"Candidate's working capital of $3,620 million matches the reference and the retrieved balance sheet (24,447 - 20,827 = 3,620). Units and date are correct. The cited accession and Item 8 section match the retrieved MPC balance sheet chunk, which contains both totals. Minor deduction only because the candidate labels the source as 'chunk 4' while the excerpt is chunk_index 4, which is consistent, so little to deduct.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:15.196797+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "68c32deebe15adb4171ca80b:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042153-KQic7XHls8BwRajkUryY",
+    "usage": {
+      "prompt_tokens": 27613,
+      "completion_tokens": 173,
+      "total_tokens": 27786,
+      "cost": 0.0028478,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028478,
+        "upstream_inference_prompt_cost": 0.0027613,
+        "upstream_inference_completions_cost": 8.65e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.1668931700005487,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "Candidate's working capital of $3,620 million matches the reference and the retrieved balance sheet (24,447 - 20,827 = 3,620). Units and date are correct. The cited accession and Item 8 section match the retrieved MPC balance sheet chunk, which contains both totals. Minor deduction only because the candidate labels the source as 'chunk 4' while the excerpt is chunk_index 4, which is consistent, so little to deduct."
+  },
+  "status": "ok"
+}

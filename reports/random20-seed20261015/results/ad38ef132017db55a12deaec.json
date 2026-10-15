@@ -1,0 +1,742 @@
+{
+  "question_id": "Q008",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 34.75288458199975,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to Intel Corporation's Annual Report on Form 10-K for the fiscal year ended December 28, 2024:\n\n* **Independent Registered Public Accounting Firm:** **Ernst & Young LLP**\n* **Year Served Since:** **1968**\n\n*(Source: Intel Corporation Form 10-K filed January 31, 2025, Report of Independent Registered Public Accounting Firm, Accession No. `0000050863-25-000009`, characters ~327,499\u2013328,000, page 55: \"/s/ Ernst & Young LLP ... We have served as the Company's auditor since 1968.\")*",
+    "usage": {
+      "prompt_tokens": 29186,
+      "completion_tokens": 386,
+      "total_tokens": 29572,
+      "cost": 0.023337
+    },
+    "seconds": 45.34296626200103,
+    "tool_seconds": 34.75288458199975,
+    "tool_calls": 3,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_325429",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Intel Corporation independent registered public accounting firm auditor since\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1/7Vl/tLUBntJ1Wjx0DdZ9g8RX7ubGOs+y1OvwY4pxwhA6g/vUtWonaN+qsbZozTRt8PHJ47NGeSJxwcoQ7uHljCgCAYIWKds9ZWyJxL8dSlFqB",
+              "format": "google-gemini-v1",
+              "id": "call_325429",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_325429",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Intel Corporation independent registered public accounting firm auditor since\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:24:46.086944+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "ad38ef132017db55a12deaec:agent:0",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792041884-i43W359gTET5wnc6uXzK",
+        "usage": {
+          "prompt_tokens": 905,
+          "completion_tokens": 24,
+          "total_tokens": 929,
+          "cost": 0.00076875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00076875,
+            "upstream_inference_prompt_cost": 0.00067875,
+            "upstream_inference_completions_cost": 9e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 34.09183385100005,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_581474",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"file_stem\":\"0000050863-25-000009\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"needle\":\"served as the Company's auditor since\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1+/CMa7/xrYWbmTMad5xo1y8N2MMT8pEoyGJWy3Epu7ZjfbzgL25NYiFXFdULzLGsq9rOir8hDvczo24UaT92IUw7km4HofWkKoLoJwDSl1lPZA",
+              "format": "google-gemini-v1",
+              "id": "call_581474",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_581474",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"file_stem\":\"0000050863-25-000009\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"needle\":\"served as the Company's auditor since\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:28:00.798054+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "ad38ef132017db55a12deaec:agent:1",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042078-AVwzttpnhFKG9aEB1ug0",
+        "usage": {
+          "prompt_tokens": 5612,
+          "completion_tokens": 94,
+          "total_tokens": 5706,
+          "cost": 0.0045615,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0045615,
+            "upstream_inference_prompt_cost": 0.004209,
+            "upstream_inference_completions_cost": 0.0003525
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.041010032000486,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_494513",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"start\":315000,\"needle\":\"Report of Independent Registered Public Accounting Firm\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0000050863-25-000009\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1+2FOGottXTuyNn1uUAx20EZ3SC9FOz7rr2BLL1lhPW2Tj3DNVFyQD1NhHwI17i429ZSfHDQFgksRuIASh7+k+sRMwv+gdZLfvrzmuvniI1oldF",
+              "format": "google-gemini-v1",
+              "id": "call_494513",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_494513",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"start\":315000,\"needle\":\"Report of Independent Registered Public Accounting Firm\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0000050863-25-000009\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:31:01.861772+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "ad38ef132017db55a12deaec:agent:2",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042259-JAJ9zn1kSvRllLdZLZqR",
+        "usage": {
+          "prompt_tokens": 9784,
+          "completion_tokens": 102,
+          "total_tokens": 9886,
+          "cost": 0.0077205,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0077205,
+            "upstream_inference_prompt_cost": 0.007338,
+            "upstream_inference_completions_cost": 0.0003825
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 5.163133103000291,
+        "attempts": 1
+      },
+      {
+        "text": "According to Intel Corporation's Annual Report on Form 10-K for the fiscal year ended December 28, 2024:\n\n* **Independent Registered Public Accounting Firm:** **Ernst & Young LLP**\n* **Year Served Since:** **1968**\n\n*(Source: Intel Corporation Form 10-K filed January 31, 2025, Report of Independent Registered Public Accounting Firm, Accession No. `0000050863-25-000009`, characters ~327,499\u2013328,000, page 55: \"/s/ Ernst & Young LLP ... We have served as the Company's auditor since 1968.\")*",
+        "message": {
+          "role": "assistant",
+          "content": "According to Intel Corporation's Annual Report on Form 10-K for the fiscal year ended December 28, 2024:\n\n* **Independent Registered Public Accounting Firm:** **Ernst & Young LLP**\n* **Year Served Since:** **1968**\n\n*(Source: Intel Corporation Form 10-K filed January 31, 2025, Report of Independent Registered Public Accounting Firm, Accession No. `0000050863-25-000009`, characters ~327,499\u2013328,000, page 55: \"/s/ Ernst & Young LLP ... We have served as the Company's auditor since 1968.\")*",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a1/jMtt7uqwYxRJaFpAjKG2CXnphSD/d6hZpTyLXOJTZ3o1uIFm8F7YFcwGYA1kk2/BEXVHBlA5zkkXxX490tivFAF/0WAYDitdavEWsY/bpvBoS",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:35:17.832698+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "ad38ef132017db55a12deaec:agent:3",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042515-VBjEMhRK7t7MuApVJ9OM",
+        "usage": {
+          "prompt_tokens": 12885,
+          "completion_tokens": 166,
+          "total_tokens": 13051,
+          "cost": 0.01028625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.01028625,
+            "upstream_inference_prompt_cost": 0.00966375,
+            "upstream_inference_completions_cost": 0.0006225
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.046989276000204,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_325429",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Intel Corporation independent registered public accounting firm auditor since\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000950170-25-009168",
+              "cik": "0001177648",
+              "company": "ENANTA PHARMACEUTICALS INC",
+              "form_type": "DEF 14A",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 818,
+              "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+              "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2aeed529-f68c-5fcc-a395-712a3793656b",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 37,
+              "char_start": 94043,
+              "char_end": 97506,
+              "text": "The firm of PricewaterhouseCoopers LLP, an independent registered public accounting firm, has audited our financial statements for each of the years ended September 30, 2024, 2023 and 2022. Our Audit Committee has appointed them to serve as our auditors for the fiscal year ending September 30, 2025. Detailed disclosure of the audit and tax fees we paid to PricewaterhouseCoopers LLP in 2024 and 2023 may be found in the \"Audit Fees\" section of this proxy statement. Based on these disclosures and information in the Audit Committee Report provided elsewhere in this proxy statement, our Audit Committee is satisfied that PricewaterhouseCoopers LLP is sufficiently independent of management to perform its duties properly. Although not legally required to do so, our Board considers it desirable to seek, and recommends, stockholder ratification of our selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2025. If the stockholders fail to ratify our selection, the Audit Committee will reconsider whether or not to retain that firm. Even if the selection is ratified, the Audit Committee in its discretion may direct the appointment of a different independent registered public accounting firm at any time during the year if the Audit Committee determines that such a change would be in the best interest of Enanta and its stockholders.\n\n**Recommendation** \n\n**We recommend a vote \"FOR\" ratification of the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm.** \n\n------\n\n**CORPORATE GOVERNANCE** \n\n**Board and Committee Matters** \n\n*Board Leadership and Independence.* Our Board of Directors has determined that each of Mark G. Foletta and Lesley Russell, MBChB, MRCP, as well as four of the other directors continuing their terms after the 2025 Annual Meeting, are independent directors as defined by applicable Nasdaq Stock Market standards governing the independence of directors. Jay R. Luly, Ph.D., our President and Chief Executive Officer, is not considered independent.\n\nThe Board of Directors sets company strategy and provides oversight and accountability for our Chief Executive Officer and management. Among the general responsibilities for the direction and management of the business, the Board is expressly designated to have responsibility for reviewing matters related to environmental, social and governance (ESG) issues, as well as adopting appropriate standards and other required metrics used to measure and track ESG performance and progress.\n\nDr. Carter has served as our non-executive Chairman of the Board since December 2015. Dr. Carter presides over meetings of the Board of Directors and provides guidance to our Chief Executive Officer. Dr. Luly is responsible for setting the strategic direction for our Company and the day-to-day leadership and performance of the Company. We believe that separation of our Board of Directors and executive leadership preserves the independence of these roles and maximizes performance.\n\n*Board Meetings and Committees.* Our Board of Directors held eleven meetings during 2024, and the independent directors held executive sessions at four of the meetings of the Board. During 2024, each of the directors then in office attended at least 75% of the aggregate of all meetings of the Board of Directors and all meetings of the committees of the Board of Directors on which such director then served.",
+              "token_count": 673,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-004491",
+              "cik": "0001885461",
+              "company": "ShoulderUP Technology Acquisition Corp.",
+              "form_type": "DEFM14A",
+              "filed_date": "20250117",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 400,
+              "source_md5": "85ff236b3b7c9b6ccd3657857a037585",
+              "content_sha256": "c1b88d3808ea99a01c8e472bf4c859bd2fdc74d2f9daeca128131d2f3339b5b7",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "015c8920-cd7a-5224-8842-b945208484a8",
+              "section": "Audit Committee",
+              "section_index": 272,
+              "chunk_index": 0,
+              "char_start": 822607,
+              "char_end": 826094,
+              "text": "#### Audit Committee\nWe have established an audit committee of the board of directors. Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd serve as members of our audit committee, and Lauren C. Anderson chairs the audit committee. Each of Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd meet the independent director standard under Rule 10A-3(b)(l) under the Exchange Act.\n\nEach member of the audit committee is financially literate and our board of directors has determined that Shawn Henry qualifies as an \"audit committee financial expert\" as defined in applicable SEC rules and has accounting or related financial management expertise.\n\nWe have adopted an audit committee charter, which details the principal functions of the audit committee, including:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 assisting board oversight of (1) the integrity of our financial statements, (2) our compliance with legal and regulatory requirements, (3) our independent registered public accounting firm's qualifications and independence, and (4) the performance of our internal audit function and independent auditors; the appointment, compensation, retention, replacement, and oversight of the work of the independent auditors and any other independent registered public accounting firm engaged by us;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 pre-approving all audit and non-audit services to be provided by the independent auditors or any other registered public accounting firm engaged by us, and establishing pre-approval policies and procedures; reviewing and discussing with the independent auditors all relationships the auditors have with us in order to evaluate their continued independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear policies for audit partner rotation in compliance with applicable laws and regulations; obtaining and reviewing a report, at least annually, from the independent registered public accounting firm describing (1) the independent auditor's internal quality-control procedures and (2) any material issues raised by the most recent internal quality-control review, or peer review, of the audit firm, or by any inquiry or investigation by governmental or professional authorities, within the preceding five years respecting one or more independent audits carried out by the firm and any steps taken to deal with such issues;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 meeting to review and discuss our annual audited financial statements and quarterly financial statements with management and the independent auditor, including reviewing our specific disclosures under \"*Management's Discussion and Analysis of Financial Condition and Results of Operations*\"; reviewing and approving any related party transaction required to be disclosed pursuant to Item 404 of Regulation S-K promulgated by the SEC prior to us entering into such transaction; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing with management, the independent auditors, and our legal advisors, as appropriate, any legal, regulatory or compliance matters, including any correspondence with regulators or government agencies and any employee complaints or published reports that raise material issues regarding our financial statements or accounting policies and any significant changes in accounting standards or rules promulgated by the Financial Accounting Standards Board, the SEC or other regulatory authorities.",
+              "token_count": 647,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000050863-25-000009",
+              "cik": "0000050863",
+              "company": "INTEL CORP",
+              "form_type": "10-K",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 4186,
+              "source_md5": "228c076b20cfc822a46260e874681ea3",
+              "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "a13f6ac3-6919-51dc-a0a1-849811779fbe",
+              "section": "Exhibit 23.1",
+              "section_index": 7,
+              "chunk_index": 0,
+              "char_start": 1204417,
+              "char_end": 1205548,
+              "text": "## Exhibit 23.1\n\n\n\n**Exhibit 23.1** \n\n\n**CONSENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM** \n\n\nWe consent to the incorporation by reference in the following Registration Statements:\n\n(1) Registration Statement (Form S-3 No. 333-252340) of Intel Corporation,\n\n(2) Registration Statement (Form S-4 No. 333-158222) of Intel Corporation, and\n\n(3) Registration Statements (Form S-8 Nos. 333-172024, 333-45395, 333-49696, 333-124805, 333-135178, 333-135177, 333-143932, 333-141905, 333-160272, 333-160824, 333-172454, 333-172937, 333-175123, 333-190236, 333-191956, 333-205904, 333-208920, 333-221555, 333-232093, 333-236046, 333-253077, 333-249614, 333-264554, 333-266386 and 333-274690) of Intel Corporation;\n\nof our reports dated January 31, 2025, with respect to the consolidated financial statements of Intel Corporation and the effectiveness of internal control over financial reporting of Intel Corporation included in this Annual Report (Form 10-K) of Intel Corporation for the year ended December 28, 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n\n/s/ Ernst & Young LLP\n\n\nSan Jose, California\n\nJanuary 31, 2025",
+              "token_count": 352,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001410578-25-000056",
+              "cik": "0001779578",
+              "company": "BGM Group Ltd.",
+              "form_type": "20-F",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 440,
+              "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+              "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "efaeffd8-8d14-5639-80f4-f053f4585862",
+              "section": "Item 3. KEY INFORMATION",
+              "section_index": 3,
+              "chunk_index": 31,
+              "char_start": 110955,
+              "char_end": 114330,
+              "text": "On December 2, 2021, the SEC issued amendments to finalize rules implementing the submission and disclosure requirements in the Holding Foreign Companies Accountable Act. The rules apply to registrants that the SEC identifies as having filed an annual report with an audit report issued by a registered public accounting firm that is located in a foreign jurisdiction and that PCAOB is unable to inspect or investigate completely because of a position taken by an authority in foreign jurisdictions.\n\nOn December 16, 2021, the PCAOB issued a report on its determination that it is unable to inspect or investigate completely PCAOB-registered public accounting firms headquartered in China and in Hong Kong because of positions taken by PRC and Hong Kong authorities in those jurisdictions. The PCAOB has made such determination as mandated under the Holding Foreign Companies Accountable Act. Pursuant to each annual determination by the PCAOB, the SEC will, on an annual basis, identify issuers that have used non-inspected audit firms and thus are at risk of such suspensions in the future. Our auditors, ZH CPA, LLC and Enrome LLP, the independent registered public accounting firms that issue the audit reports included elsewhere in this annual report, as auditors of companies that are traded publicly in the U.S. and a firm registered with the PCAOB, are subject to laws in the U.S., pursuant to which the PCAOB conducts regular inspections to assess their compliance with the applicable professional standards. Our auditors are located in Denver, Colorado and Singapore, and have been inspected by the PCAOB on a regular basis. Our auditors are not subject to the determination issued by the PCAOB on December 16, 2021.\n\nOn June 22, 2021, the U.S. Senate passed the Accelerating Holding Foreign Companies Accountable Act, and on December 29, 2022, the Consolidated Appropriations Act was signed into law by President Biden, which contained, among other things, an identical provision to the Accelerating Holding Foreign Companies Accountable Act and amended the HFCA Act by requiring the SEC to prohibit an issuer's securities from trading on any U.S. stock exchanges if its auditor is not subject to PCAOB inspections for two consecutive years instead of three, thus reducing the time period for triggering the prohibition on trading.\n\nOn August 26, 2022, the CSRC, the MOF, and the PCAOB signed the Protocol governing inspections and investigations of audit firms based in mainland China and Hong Kong, taking the first step toward opening access for the PCAOB to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong. Pursuant to the fact sheet with respect to the Protocol disclosed by the SEC, the PCAOB shall have independent discretion to select any issuer audits for inspection or investigation and has the unfettered ability to transfer information to the SEC. On December 15, 2022, the PCAOB Board determined that the PCAOB was able to secure complete access to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong and voted to vacate its previous determinations to the contrary. However, should PRC authorities obstruct or otherwise fail to facilitate the PCAOB's access in the future, the PCAOB Board will consider the need to issue a new determination.",
+              "token_count": 660,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001410578-25-000056",
+              "cik": "0001779578",
+              "company": "BGM Group Ltd.",
+              "form_type": "20-F",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 440,
+              "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+              "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "73d564de-cdea-5f56-96f9-4a0c73cc51c6",
+              "section": "Each of the VIE Agreements is described in detail below:",
+              "section_index": 6,
+              "chunk_index": 6,
+              "char_start": 283866,
+              "char_end": 287363,
+              "text": "In addition, trading in BGM's securities may be prohibited under the HFCA Act if the PCAOB determines that it cannot inspect the workpapers prepared by our auditor, and that as a result an exchange may determine to delist BGM's securities. On December 16, 2021, the PCAOB issued a report on its determination that it is unable to inspect or investigate completely PCAOB-registered public accounting firms headquartered in China and in Hong Kong because of positions taken by PRC and Hong Kong authorities in those jurisdictions. Our auditors, independent registered public accounting firms that issue the audit reports included elsewhere in this annual report, as auditors of companies that are traded publicly in the U.S. and firms registered with the PCAOB, are subject to laws in the U.S., pursuant to which the PCAOB conducts regular inspections to assess their compliance with the applicable professional standards. Our auditors, ZH CPA, LLC and Enrome LLP, are located in Denver, Colorado and Singapore, and have been inspected by the PCAOB on a regular basis. Our auditors are not subject to the determination issued by the PCAOB on December 16, 2021. On June 22, 2021, the U.S. Senate passed the Accelerating Holding Foreign Companies Accountable Act, and on December 29, 2022, the Consolidated Appropriations Act was signed into law by President Biden, which contained, among other things, an identical provision to the Accelerating Holding Foreign Companies Accountable Act and amended the HFCA Act by requiring the SEC to prohibit an issuer's securities from trading on any U.S. stock exchanges if its auditor is not subject to PCAOB inspections for two consecutive years instead of three, thus reducing the time period for triggering the prohibition on trading. On August 26, 2022, the CSRC, the MOF and the PCAOB signed the Protocol governing inspections and investigations of audit firms based in mainland China and Hong Kong, taking the first step toward opening access for the PCAOB to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong. Pursuant to the fact sheet with respect to the Protocol disclosed by the SEC, the PCAOB shall have independent discretion to select any issuer audits for inspection or investigation and has the unfettered ability to transfer information to the SEC. On December 15, 2022, the PCAOB Board determined that the PCAOB was able to secure complete access to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong and voted to vacate its previous determinations to the contrary. However, should PRC authorities obstruct or otherwise fail to facilitate the PCAOB's access in the future, the PCAOB Board will consider the need to issue a new determination. See \"Item 3. Key Information \u2014 D. Risk Factors \u2014 Risks Related to Doing Business in China \u2014 Our Ordinary Shares may be delisted and prohibited from being traded under the Holding Foreign Companies Accountable Act if the PCAOB is unable to inspect auditors who are located in China. The delisting and the cessation of trading of our Ordinary Shares, or the threat of their being delisted and prohibited from being traded, may materially and adversely affect the value of your investment. Additionally, the inability of the PCAOB to conduct inspections deprives our investors with the benefits of such inspections.\"\n\n[**Table of Contents**](#TOC)\n\n***Cash Transfers and Dividend Distribution***",
+              "token_count": 698,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.021439866999571677
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_581474",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"file_stem\":\"0000050863-25-000009\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"needle\":\"served as the Company's auditor since\"}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0000050863-25-000009:327499:339499",
+          "accession": "0000050863-25-000009",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+          "char_start": 327499,
+          "char_end": 339499,
+          "text": "ow We Addressed* <br>*the Matter in Our Audit* | Our audit procedures included, among others, assessing the suitability and application of the valuation methodology and evaluating the significant assumptions (e.g., revenue terminal growth rate and the weighted average cost of capital) and the underlying data used by the Company in its analysis. We compared the significant assumptions used by management to current industry and economic trends, market information, and other relevant factors. We performed sensitivity analyses of significant assumptions to determine what changes in assumptions are particularly sensitive when assessing the likelihood of impairment, or when calculating the amount of the impairment. We assessed the historical accuracy of management's estimates. In addition, we involved a valuation specialist to assist in the evaluation of the methodology used by the Company and certain significant assumptions. |\n\n---\n\n\n\n/s/ Ernst & Young LLP &nbsp;&nbsp;&nbsp;&nbsp;\n\nWe have served as the Company's auditor since 1968.\n\nSan Jose, California\n\nJanuary 31, 2025\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Auditor's Reports | 55 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nReport of Independent Registered Public Accounting Firm <br>\n\nTo the Stockholders and the Board of Directors of Intel Corporation\n\nOpinion on Internal Control Over Financial Reporting\n\nWe have audited Intel Corporation's internal control over financial reporting as of December 28, 2024, based on criteria established in Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework) (the COSO criteria). In our opinion, Intel Corporation (the Company) maintained, in all material respects, effective internal control over financial reporting as of December 28, 2024, based on the COSO criteria.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (PCAOB), the 2024 consolidated financial statements of the Company and our report dated January 31, 2025 expressed an unqualified opinion thereon.\n\nBasis for Opinion\n\nThe Company's management is responsible for maintaining effective internal control over financial reporting and for its assessment of the effectiveness of internal control over financial reporting included in the accompanying Management Report on Internal Control Over Financial Reporting. Our responsibility is to express an opinion on the Company's internal control over financial reporting based on our audit. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audit in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether effective internal control over financial reporting was maintained in all material respects.\n\nOur audit included obtaining an understanding of internal control over financial reporting, assessing the risk that a material weakness exists, testing and evaluating the design and operating effectiveness of internal control based on the assessed risk, and performing such other procedures as we considered necessary in the circumstances. We believe that our audit provides a reasonable basis for our opinion.\n\nDefinition and Limitations of Internal Control Over Financial Reporting\n\nA company's internal control over financial reporting is a process designed to provide reasonable assurance regarding the reliability of financial reporting and the preparation of financial statements for external purposes in accordance with generally accepted accounting principles. A company's internal control over financial reporting includes those policies and procedures that (1) pertain to the maintenance of records that, in reasonable detail, accurately and fairly reflect the transactions and dispositions of the assets of the company; (2) provide reasonable assurance that transactions are recorded as necessary to permit preparation of financial statements in accordance with generally accepted accounting principles, and that receipts and expenditures of the company are being made only in accordance with authorizations of management and directors of the company; and (3) provide reasonable assurance regarding prevention or timely detection of unauthorized acquisition, use, or disposition of the company's assets that could have a material effect on the financial statements.\n\nBecause of its inherent limitations, internal control over financial reporting may not prevent or detect misstatements. Also, projections of any evaluation of effectiveness to future periods are subject to the risk that controls may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate.\n\n/s/ Ernst & Young LLP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n\nSan Jose, California\n\nJanuary 31, 2025\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Auditor's Reports | 56 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Statements of Operations <br>\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions, Except Per Share Amounts)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Net revenue** | $**53101** | $**54228** | $**63054** |\n| Cost of sales | 35756 | 32517 | 36188 |\n| **Gross margin** | **17345** | **21711** | **26866** |\n| Research and development | 16546 | 16046 | 17528 |\n| Marketing, general, and administrative | 5507 | 5634 | 7002 |\n| Restructuring and other charges | 6970 | (62) | 2 |\n| **Operating expenses** | **29023** | **21618** | **24532** |\n| **Operating income (loss)** | **(11678)** | **93** | **2334** |\n| Gains (losses) on equity investments, net | 242 | 40 | 4268 |\n| Interest and other, net | 226 | 629 | 1166 |\n| **Income (loss) before taxes** | **(11210)** | **762** | **7768** |\n| Provision for (benefit from) taxes | 8023 | (913) | (249) |\n| **Net income (loss)** | **(19233)** | **1675** | **8017** |\n| Less: net income (loss) attributable to non-controlling interests | (477) | (14) | 3 |\n| **Net income (loss) attributable to Intel** | $**(18756)** | $**1689** | $**8014** |\n| **Earnings (loss) per share attributable to Intel\u2014basic** | $**(4.38)** | $**0.40** | $**1.95** |\n| **Earnings (loss) per share attributable to Intel\u2014diluted** | $**(4.38)** | $**0.40** | $**1.94** |\n| Weighted average shares of common stock outstanding: |  |  |  |\n| &nbsp;&nbsp;&nbsp;**Basic** | **4280** | **4190** | **4108** |\n| &nbsp;&nbsp;&nbsp;**Diluted** | **4280** | **4212** | **4123** |\n\n---\n\n\n\n*See accompanying notes.*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Consolidated Statements of Operations | 57 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Statements of Comprehensive Income (Loss) <br>\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Net income (loss)** | $**(19233)** | $**1675** | $**8017** |\n| Changes in other comprehensive income (loss), net of tax: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Net unrealized holding gains (losses) on derivatives | (555) | 272 | (510) |\n| &nbsp;&nbsp;&nbsp;Actuarial valuation and other pension benefits (expenses), net | 60 | 66 | 855 |\n| &nbsp;&nbsp;&nbsp;Translation adjustments and other | (1) | 9 | (27) |\n| **Other comprehensive income (loss)** | **(496)** | **347** | **318** |\n| **Total comprehensive income (loss)** | **(19729)** | **2022** | **8335** |\n| Less: comprehensive income (loss) attributable to non-controlling interests | (477) | (14) | 3 |\n| **Total comprehensive income (loss) attributable to Intel** | $**(19252)** | $**2036** | $**8332** |\n\n---\n\n\n\n*See accompanying notes.*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Consolidated Statements of Comprehensive Income (Loss) | 58 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Balance Sheets <br>\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| **(In Millions, Except Par Value)** | **Dec 28, 2024** | **Dec 30, 2023** |\n| **Assets** | | |\n| Current assets: |  |  |\n| &nbsp;&nbsp;&nbsp;Cash and cash equivalents | $8249 | $7079 |\n| &nbsp;&nbsp;&nbsp;Short-term investments | 13813 | 17955 |\n| &nbsp;&nbsp;&nbsp;Accounts receivable, net | 3478 | 3402 |\n| &nbsp;&nbsp;&nbsp;Inventories | 12198 | 11127 |\n| &nbsp;&nbsp;&nbsp;Other current assets | 9586 | 3706 |\n| **Total current assets** | **47324** | **43269** |\n| **Property, plant, and equipment, net** | **107919** | **96647** |\n| **Equity investments** | **5383** | **5829** |\n| **Goodwill** | **24693** | **27591** |\n| **Identified intangible assets, net** | **3691** | **4589** |\n| **Other long-term assets** | **7475** | **13647** |\n| **Total assets** | $**196485** | $**191572** |\n| **Liabilities and stockholders' equity** |  |  |\n| Current liabilities: |  |  |\n| &nbsp;&nbsp;&nbsp;Accounts payable | $12556 | $8578 |\n| &nbsp;&nbsp;&nbsp;Accrued compensation and benefits | 3343 | 3655 |\n| &nbsp;&nbsp;&nbsp;Short-term debt | 3729 | 2288 |\n| &nbsp;&nbsp;&nbsp;Income taxes payable | 1756 | 1107 |\n| &nbsp;&nbsp;&nbsp;Other accrued liabilities | 14282 | 12425 |\n| **Total current liabilities** | **35666** | **28053** |\n| **Debt** | **46282** | **46978** |\n| **Other long-term liabilities** | **9505** | **6576** |\n| **Commitments and Contingencies (Note 19)** |  |  |\n| Stockholders' equity: |  |  |\n| &nbsp;&nbsp;&nbsp;Preferred stock, $0.001 par value, 50 shares authorized; none issued |  |  |\n| &nbsp;&nbsp;Common stock, $0.001 par value, 10,000 shares authorized; 4,330 shares issued and outstanding (4,228 issued and outstanding in 2023) and capital in excess of par value | 50949 | 36649 |\n| &nbsp;&nbsp;&nbsp;Accumulated other comprehensive income (loss) | (711) | (215) |\n| &nbsp;&nbsp;&nbsp;Retained earnings | 49032 | 69156 |\n| **Total Intel stockholders' equity** | **99270** | **105590** |\n| **Non-controlling interests** | **5762** | **4375** |\n| **Total stockholders' equity** | **105032** | **109965** |\n| **Total liabilities and stockholders' equity** | $**196485** | $**191572** |\n\n---\n\n\n\n*See accompanying notes.*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Consolidated Balance Sheets | 59 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Statements of Cash Flows <br>\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Cash and cash equivalents, beginning of period** | $**7079** | $**11144** | $**4827** |\n| Cash flows provided by (used for) operating activities: |  |  |  |\n| &nbsp;&nbsp;Net income (loss) | (19233) | 1675 | 8017 |\n| &nbsp;&nbsp;Adjustments to reconcile net income (loss) to net cash provided by operating activities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Depreciation | 9951 | 7847 | 11128 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Share-based compensation | 3410 | 3229 | 3128 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Restructuring and other charges | 3491 | (424) | 1074 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Amortization of intangibles | 1428 | 1755 | 1907 |\n| &nbsp;&nbsp;&nbsp;&nbsp;(Gains) losses on equity investments, net | (246) | (42) | (4254) |\n| &nbsp;&nbsp;&nbsp;&nbsp;(Gains) losses on divesti",
+          "total_chars": 1219034,
+          "next_start": 339499,
+          "resources": {
+            "peak_rss_mib": 503.76953125,
+            "cpu_seconds": 0.287092,
+            "wall_seconds": 0.2659678720001466,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 33.84758011899976
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_494513",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"start\":315000,\"needle\":\"Report of Independent Registered Public Accounting Firm\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0000050863-25-000009\"}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0000050863-25-000009:317829:329829",
+          "accession": "0000050863-25-000009",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+          "char_start": 317829,
+          "char_end": 329829,
+          "text": "0a794e31846504f_448) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Note 18: Employee Equity Incentive Plans | &nbsp;&nbsp;&nbsp;&nbsp;Note 18: Employee Equity Incentive Plans | [94](#i52fa34b6ba9248c7a0a794e31846504f_454) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Note 19: Commitments and Contingencies | &nbsp;&nbsp;&nbsp;&nbsp;Note 19: Commitments and Contingencies | [96](#i52fa34b6ba9248c7a0a794e31846504f_460) |\n| Key Terms | Key Terms | [100](#i52fa34b6ba9248c7a0a794e31846504f_466) |\n| Index to Supplemental Details | Index to Supplemental Details |  |\n| Controls and Procedures | Controls and Procedures | [102](#i52fa34b6ba9248c7a0a794e31846504f_475) |\n| Exhibits | Exhibits | [103](#i52fa34b6ba9248c7a0a794e31846504f_478) |\n| Form 10-K Cross-Reference Index | Form 10-K Cross-Reference Index | [108](#i52fa34b6ba9248c7a0a794e31846504f_490) |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | 53 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nReport of Independent Registered Public Accounting Firm <br>\n\nTo the Stockholders and the Board of Directors of Intel Corporation\n\nOpinion on the Financial Statements\n\nWe have audited the accompanying consolidated balance sheets of Intel Corporation (the Company) as of December 28, 2024 and December 30, 2023, the related consolidated statements of operations, comprehensive income (loss), cash flows and stockholders' equity for each of the three years in the period ended December 28, 2024, and the related notes (collectively referred to as the \"consolidated financial statements\"). In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company at December 28, 2024 and December 30, 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 28, 2024, in conformity with U.S. generally accepted accounting principles.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (PCAOB), the Company's internal control over financial reporting as of December 28, 2024, based on criteria established in Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework) and our report dated January 31, 2025 expressed an unqualified opinion thereon.\n\nBasis for Opinion\n\nThese financial statements are the responsibility of the Company's management. Our responsibility is to express an opinion on the Company's financial statements based on our audits. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the US federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audits in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. We believe that our audits provide a reasonable basis for our opinion.\n\nCritical Audit Matters\n\nThe critical audit matters communicated below are matters arising from the current period audit of the financial statements that were communicated or required to be communicated to the audit committee and that: (1) relate to accounts or disclosures that are material to the financial statements and (2) involved our especially challenging, subjective or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the consolidated financial statements, taken as a whole, and we are not, by communicating the critical audit matters below, providing separate opinions on the critical audit matters or on the accounts or disclosures to which they relate.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Auditor's Reports | 54 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\n---\n\n\n\n| | |\n|:---|:---|\n|  | *Inventory Valuation* |\n| *Description of the Matter* | The Company's net inventory totaled $12.2 billion as of December 28, 2024, representing 6.2% of total assets. As explained in \"Note 2: Accounting Policies\" within the consolidated financial statements, the Company computes inventory cost on a first-in, first-out basis, and applies judgment in determining saleability of products and the valuation of inventories. The Company assesses inventory at each reporting date in order to assert that it is recorded at net realizable value, giving consideration to, among other factors: whether the products have achieved the substantive engineering milestones to qualify for sale to customers; the determination of normal capacity levels in its manufacturing process to determine which manufacturing overhead costs can be included in the valuation of inventory; whether the product is valued at the lower of cost or net realizable value; and the estimation of excess and obsolete inventory or that which is not of saleable quality.  |\n| *Description of the Matter* |  |\n| *Description of the Matter* | Auditing management's assessment of net realizable value for inventory was challenging because the determination of excess and obsolete inventory reserves and lower of cost or net realizable value is judgmental and considers a number of factors that are affected by market and economic conditions, such as customer forecasts, dynamic pricing environments, and industry supply and demand. Additionally, for certain new product launches there is limited historical data with which to evaluate forecasts. |\n| *How We Addressed <br>the Matter in Our Audit* | We evaluated the design and tested operating effectiveness of the Company's internal controls over the costing of inventory, the determination of whether inventory is of saleable quality, the determination of demand forecasts and related application against on hand inventory, and the calculation of lower of cost or net realizable value reserves including related estimated costs and selling prices. |\n| *How We Addressed <br>the Matter in Our Audit* |  |\n| *How We Addressed <br>the Matter in Our Audit* | Our audit procedures included, among others, testing the significant assumptions (e.g., estimated product demand forecasts, costs and selling prices) of the underlying data used in management's inventory valuation assessment. We compared the significant assumptions used by management to current industry and economic trends. We assessed whether there were any potential sources of contrary information, including historical forecast accuracy or history of significant revisions to previously recorded inventory valuation adjustments, and performed sensitivity analyses over significant assumptions to evaluate the changes in inventory valuation that would result from changes in the assumptions. |\n|  | *Goodwill Impairment Assessment \u2013 Mobileye Reporting Unit* |\n| *Description of the Matter* | At December 28, 2024, the balance of the Company's goodwill was $24.7 billion. The goodwill attributed to the Mobileye reporting unit was $8.3 billion and represented 4.2% of total assets. As discussed in \"Note 2: Accounting Policies\" within the consolidated financial statements, goodwill is assessed at the reporting unit level in the fourth quarter of each year, or more frequently if indicators of potential impairment exist. The assessment may include both qualitative and quantitative evaluations. If it is determined, based on the qualitative assessment, that it is more likely than not that the fair value of the unit is less than its carrying amount, a quantitative goodwill impairment test is performed. As discussed in \"Note 11: Goodwill\" to the consolidated financial statements, the Company identified certain impairment indicators in the three months ended September 28, 2024 that required an interim goodwill impairment test. As a result of this assessment, the Company recorded an impairment loss of $2.6 billion related to the Mobileye reporting unit.  |\n| *Description of the Matter* |  |\n| *Description of the Matter* | Auditing the Company's Mobileye goodwill impairment evaluation was complex and judgmental due to the significant estimation required in determining the fair value using the income approach. Determining fair value involved assumptions with forward-looking elements that can be affected by future economic and market conditions. In particular, the fair value estimate was sensitive to significant assumptions such as revenue terminal growth rate and the weighted average cost of capital. |\n| *How We Addressed* <br>*the Matter in Our Audit* | We evaluated the design and tested operating effectiveness of the Company's internal controls over the Mobileye reporting unit goodwill impairment review process, including controls over management's review of the valuation model and the significant assumptions mentioned above. |\n| *How We Addressed* <br>*the Matter in Our Audit* |  |\n| *How We Addressed* <br>*the Matter in Our Audit* | Our audit procedures included, among others, assessing the suitability and application of the valuation methodology and evaluating the significant assumptions (e.g., revenue terminal growth rate and the weighted average cost of capital) and the underlying data used by the Company in its analysis. We compared the significant assumptions used by management to current industry and economic trends, market information, and other relevant factors. We performed sensitivity analyses of significant assumptions to determine what changes in assumptions are particularly sensitive when assessing the likelihood of impairment, or when calculating the amount of the impairment. We assessed the historical accuracy of management's estimates. In addition, we involved a valuation specialist to assist in the evaluation of the methodology used by the Company and certain significant assumptions. |\n\n---\n\n\n\n/s/ Ernst & Young LLP &nbsp;&nbsp;&nbsp;&nbsp;\n\nWe have served as the Company's auditor since 1968.\n\nSan Jose, California\n\nJanuary 31, 2025\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Auditor's Reports | 55 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nReport of Independent Registered Public Accounting Firm <br>\n\nTo the Stockholders and the Board of Directors of Intel Corporation\n\nOpinion on Internal Control Over Financial Reporting\n\nWe have audited Intel Corporation's internal control over financial reporting as of December 28, 2024, based on criteria established in Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework) (the COSO criteria). In our opinion, Intel Corporation (the Company) maintained, in all material respects, effective internal control over financial reporting as of December 28, 2024, based on the COSO criteria.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (PCAOB), the 2024 consolidated financial statements of the Company and our report dated January 31, 2025 expressed an unqualified opinion thereon.\n\nBasis for Opinion\n\nThe Company's management is responsible for maintaining effective internal control over fin",
+          "total_chars": 1219034,
+          "next_start": 329829,
+          "resources": {
+            "peak_rss_mib": 505.39453125,
+            "cpu_seconds": 0.41235199999999994,
+            "wall_seconds": 0.36770151400014583,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 0.8838645960004214
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000950170-25-009168",
+        "cik": "0001177648",
+        "company": "ENANTA PHARMACEUTICALS INC",
+        "form_type": "DEF 14A",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 818,
+        "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+        "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2aeed529-f68c-5fcc-a395-712a3793656b",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 37,
+        "char_start": 94043,
+        "char_end": 97506,
+        "text": "The firm of PricewaterhouseCoopers LLP, an independent registered public accounting firm, has audited our financial statements for each of the years ended September 30, 2024, 2023 and 2022. Our Audit Committee has appointed them to serve as our auditors for the fiscal year ending September 30, 2025. Detailed disclosure of the audit and tax fees we paid to PricewaterhouseCoopers LLP in 2024 and 2023 may be found in the \"Audit Fees\" section of this proxy statement. Based on these disclosures and information in the Audit Committee Report provided elsewhere in this proxy statement, our Audit Committee is satisfied that PricewaterhouseCoopers LLP is sufficiently independent of management to perform its duties properly. Although not legally required to do so, our Board considers it desirable to seek, and recommends, stockholder ratification of our selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2025. If the stockholders fail to ratify our selection, the Audit Committee will reconsider whether or not to retain that firm. Even if the selection is ratified, the Audit Committee in its discretion may direct the appointment of a different independent registered public accounting firm at any time during the year if the Audit Committee determines that such a change would be in the best interest of Enanta and its stockholders.\n\n**Recommendation** \n\n**We recommend a vote \"FOR\" ratification of the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm.** \n\n------\n\n**CORPORATE GOVERNANCE** \n\n**Board and Committee Matters** \n\n*Board Leadership and Independence.* Our Board of Directors has determined that each of Mark G. Foletta and Lesley Russell, MBChB, MRCP, as well as four of the other directors continuing their terms after the 2025 Annual Meeting, are independent directors as defined by applicable Nasdaq Stock Market standards governing the independence of directors. Jay R. Luly, Ph.D., our President and Chief Executive Officer, is not considered independent.\n\nThe Board of Directors sets company strategy and provides oversight and accountability for our Chief Executive Officer and management. Among the general responsibilities for the direction and management of the business, the Board is expressly designated to have responsibility for reviewing matters related to environmental, social and governance (ESG) issues, as well as adopting appropriate standards and other required metrics used to measure and track ESG performance and progress.\n\nDr. Carter has served as our non-executive Chairman of the Board since December 2015. Dr. Carter presides over meetings of the Board of Directors and provides guidance to our Chief Executive Officer. Dr. Luly is responsible for setting the strategic direction for our Company and the day-to-day leadership and performance of the Company. We believe that separation of our Board of Directors and executive leadership preserves the independence of these roles and maximizes performance.\n\n*Board Meetings and Committees.* Our Board of Directors held eleven meetings during 2024, and the independent directors held executive sessions at four of the meetings of the Board. During 2024, each of the directors then in office attended at least 75% of the aggregate of all meetings of the Board of Directors and all meetings of the committees of the Board of Directors on which such director then served.",
+        "token_count": 673,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-004491",
+        "cik": "0001885461",
+        "company": "ShoulderUP Technology Acquisition Corp.",
+        "form_type": "DEFM14A",
+        "filed_date": "20250117",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 400,
+        "source_md5": "85ff236b3b7c9b6ccd3657857a037585",
+        "content_sha256": "c1b88d3808ea99a01c8e472bf4c859bd2fdc74d2f9daeca128131d2f3339b5b7",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "015c8920-cd7a-5224-8842-b945208484a8",
+        "section": "Audit Committee",
+        "section_index": 272,
+        "chunk_index": 0,
+        "char_start": 822607,
+        "char_end": 826094,
+        "text": "#### Audit Committee\nWe have established an audit committee of the board of directors. Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd serve as members of our audit committee, and Lauren C. Anderson chairs the audit committee. Each of Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd meet the independent director standard under Rule 10A-3(b)(l) under the Exchange Act.\n\nEach member of the audit committee is financially literate and our board of directors has determined that Shawn Henry qualifies as an \"audit committee financial expert\" as defined in applicable SEC rules and has accounting or related financial management expertise.\n\nWe have adopted an audit committee charter, which details the principal functions of the audit committee, including:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 assisting board oversight of (1) the integrity of our financial statements, (2) our compliance with legal and regulatory requirements, (3) our independent registered public accounting firm's qualifications and independence, and (4) the performance of our internal audit function and independent auditors; the appointment, compensation, retention, replacement, and oversight of the work of the independent auditors and any other independent registered public accounting firm engaged by us;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 pre-approving all audit and non-audit services to be provided by the independent auditors or any other registered public accounting firm engaged by us, and establishing pre-approval policies and procedures; reviewing and discussing with the independent auditors all relationships the auditors have with us in order to evaluate their continued independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear policies for audit partner rotation in compliance with applicable laws and regulations; obtaining and reviewing a report, at least annually, from the independent registered public accounting firm describing (1) the independent auditor's internal quality-control procedures and (2) any material issues raised by the most recent internal quality-control review, or peer review, of the audit firm, or by any inquiry or investigation by governmental or professional authorities, within the preceding five years respecting one or more independent audits carried out by the firm and any steps taken to deal with such issues;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 meeting to review and discuss our annual audited financial statements and quarterly financial statements with management and the independent auditor, including reviewing our specific disclosures under \"*Management's Discussion and Analysis of Financial Condition and Results of Operations*\"; reviewing and approving any related party transaction required to be disclosed pursuant to Item 404 of Regulation S-K promulgated by the SEC prior to us entering into such transaction; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing with management, the independent auditors, and our legal advisors, as appropriate, any legal, regulatory or compliance matters, including any correspondence with regulators or government agencies and any employee complaints or published reports that raise material issues regarding our financial statements or accounting policies and any significant changes in accounting standards or rules promulgated by the Financial Accounting Standards Board, the SEC or other regulatory authorities.",
+        "token_count": 647,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000050863-25-000009",
+        "cik": "0000050863",
+        "company": "INTEL CORP",
+        "form_type": "10-K",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 4186,
+        "source_md5": "228c076b20cfc822a46260e874681ea3",
+        "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "a13f6ac3-6919-51dc-a0a1-849811779fbe",
+        "section": "Exhibit 23.1",
+        "section_index": 7,
+        "chunk_index": 0,
+        "char_start": 1204417,
+        "char_end": 1205548,
+        "text": "## Exhibit 23.1\n\n\n\n**Exhibit 23.1** \n\n\n**CONSENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM** \n\n\nWe consent to the incorporation by reference in the following Registration Statements:\n\n(1) Registration Statement (Form S-3 No. 333-252340) of Intel Corporation,\n\n(2) Registration Statement (Form S-4 No. 333-158222) of Intel Corporation, and\n\n(3) Registration Statements (Form S-8 Nos. 333-172024, 333-45395, 333-49696, 333-124805, 333-135178, 333-135177, 333-143932, 333-141905, 333-160272, 333-160824, 333-172454, 333-172937, 333-175123, 333-190236, 333-191956, 333-205904, 333-208920, 333-221555, 333-232093, 333-236046, 333-253077, 333-249614, 333-264554, 333-266386 and 333-274690) of Intel Corporation;\n\nof our reports dated January 31, 2025, with respect to the consolidated financial statements of Intel Corporation and the effectiveness of internal control over financial reporting of Intel Corporation included in this Annual Report (Form 10-K) of Intel Corporation for the year ended December 28, 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n\n/s/ Ernst & Young LLP\n\n\nSan Jose, California\n\nJanuary 31, 2025",
+        "token_count": 352,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001410578-25-000056",
+        "cik": "0001779578",
+        "company": "BGM Group Ltd.",
+        "form_type": "20-F",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 440,
+        "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+        "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "efaeffd8-8d14-5639-80f4-f053f4585862",
+        "section": "Item 3. KEY INFORMATION",
+        "section_index": 3,
+        "chunk_index": 31,
+        "char_start": 110955,
+        "char_end": 114330,
+        "text": "On December 2, 2021, the SEC issued amendments to finalize rules implementing the submission and disclosure requirements in the Holding Foreign Companies Accountable Act. The rules apply to registrants that the SEC identifies as having filed an annual report with an audit report issued by a registered public accounting firm that is located in a foreign jurisdiction and that PCAOB is unable to inspect or investigate completely because of a position taken by an authority in foreign jurisdictions.\n\nOn December 16, 2021, the PCAOB issued a report on its determination that it is unable to inspect or investigate completely PCAOB-registered public accounting firms headquartered in China and in Hong Kong because of positions taken by PRC and Hong Kong authorities in those jurisdictions. The PCAOB has made such determination as mandated under the Holding Foreign Companies Accountable Act. Pursuant to each annual determination by the PCAOB, the SEC will, on an annual basis, identify issuers that have used non-inspected audit firms and thus are at risk of such suspensions in the future. Our auditors, ZH CPA, LLC and Enrome LLP, the independent registered public accounting firms that issue the audit reports included elsewhere in this annual report, as auditors of companies that are traded publicly in the U.S. and a firm registered with the PCAOB, are subject to laws in the U.S., pursuant to which the PCAOB conducts regular inspections to assess their compliance with the applicable professional standards. Our auditors are located in Denver, Colorado and Singapore, and have been inspected by the PCAOB on a regular basis. Our auditors are not subject to the determination issued by the PCAOB on December 16, 2021.\n\nOn June 22, 2021, the U.S. Senate passed the Accelerating Holding Foreign Companies Accountable Act, and on December 29, 2022, the Consolidated Appropriations Act was signed into law by President Biden, which contained, among other things, an identical provision to the Accelerating Holding Foreign Companies Accountable Act and amended the HFCA Act by requiring the SEC to prohibit an issuer's securities from trading on any U.S. stock exchanges if its auditor is not subject to PCAOB inspections for two consecutive years instead of three, thus reducing the time period for triggering the prohibition on trading.\n\nOn August 26, 2022, the CSRC, the MOF, and the PCAOB signed the Protocol governing inspections and investigations of audit firms based in mainland China and Hong Kong, taking the first step toward opening access for the PCAOB to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong. Pursuant to the fact sheet with respect to the Protocol disclosed by the SEC, the PCAOB shall have independent discretion to select any issuer audits for inspection or investigation and has the unfettered ability to transfer information to the SEC. On December 15, 2022, the PCAOB Board determined that the PCAOB was able to secure complete access to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong and voted to vacate its previous determinations to the contrary. However, should PRC authorities obstruct or otherwise fail to facilitate the PCAOB's access in the future, the PCAOB Board will consider the need to issue a new determination.",
+        "token_count": 660,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001410578-25-000056",
+        "cik": "0001779578",
+        "company": "BGM Group Ltd.",
+        "form_type": "20-F",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 440,
+        "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+        "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "73d564de-cdea-5f56-96f9-4a0c73cc51c6",
+        "section": "Each of the VIE Agreements is described in detail below:",
+        "section_index": 6,
+        "chunk_index": 6,
+        "char_start": 283866,
+        "char_end": 287363,
+        "text": "In addition, trading in BGM's securities may be prohibited under the HFCA Act if the PCAOB determines that it cannot inspect the workpapers prepared by our auditor, and that as a result an exchange may determine to delist BGM's securities. On December 16, 2021, the PCAOB issued a report on its determination that it is unable to inspect or investigate completely PCAOB-registered public accounting firms headquartered in China and in Hong Kong because of positions taken by PRC and Hong Kong authorities in those jurisdictions. Our auditors, independent registered public accounting firms that issue the audit reports included elsewhere in this annual report, as auditors of companies that are traded publicly in the U.S. and firms registered with the PCAOB, are subject to laws in the U.S., pursuant to which the PCAOB conducts regular inspections to assess their compliance with the applicable professional standards. Our auditors, ZH CPA, LLC and Enrome LLP, are located in Denver, Colorado and Singapore, and have been inspected by the PCAOB on a regular basis. Our auditors are not subject to the determination issued by the PCAOB on December 16, 2021. On June 22, 2021, the U.S. Senate passed the Accelerating Holding Foreign Companies Accountable Act, and on December 29, 2022, the Consolidated Appropriations Act was signed into law by President Biden, which contained, among other things, an identical provision to the Accelerating Holding Foreign Companies Accountable Act and amended the HFCA Act by requiring the SEC to prohibit an issuer's securities from trading on any U.S. stock exchanges if its auditor is not subject to PCAOB inspections for two consecutive years instead of three, thus reducing the time period for triggering the prohibition on trading. On August 26, 2022, the CSRC, the MOF and the PCAOB signed the Protocol governing inspections and investigations of audit firms based in mainland China and Hong Kong, taking the first step toward opening access for the PCAOB to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong. Pursuant to the fact sheet with respect to the Protocol disclosed by the SEC, the PCAOB shall have independent discretion to select any issuer audits for inspection or investigation and has the unfettered ability to transfer information to the SEC. On December 15, 2022, the PCAOB Board determined that the PCAOB was able to secure complete access to inspect and investigate registered public accounting firms headquartered in mainland China and Hong Kong and voted to vacate its previous determinations to the contrary. However, should PRC authorities obstruct or otherwise fail to facilitate the PCAOB's access in the future, the PCAOB Board will consider the need to issue a new determination. See \"Item 3. Key Information \u2014 D. Risk Factors \u2014 Risks Related to Doing Business in China \u2014 Our Ordinary Shares may be delisted and prohibited from being traded under the Holding Foreign Companies Accountable Act if the PCAOB is unable to inspect auditors who are located in China. The delisting and the cessation of trading of our Ordinary Shares, or the threat of their being delisted and prohibited from being traded, may materially and adversely affect the value of your investment. Additionally, the inability of the PCAOB to conduct inspections deprives our investors with the benefits of such inspections.\"\n\n[**Table of Contents**](#TOC)\n\n***Cash Transfers and Dividend Distribution***",
+        "token_count": 698,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "found": true,
+        "id": "0000050863-25-000009:327499:339499",
+        "accession": "0000050863-25-000009",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+        "char_start": 327499,
+        "char_end": 339499,
+        "text": "ow We Addressed* <br>*the Matter in Our Audit* | Our audit procedures included, among others, assessing the suitability and application of the valuation methodology and evaluating the significant assumptions (e.g., revenue terminal growth rate and the weighted average cost of capital) and the underlying data used by the Company in its analysis. We compared the significant assumptions used by management to current industry and economic trends, market information, and other relevant factors. We performed sensitivity analyses of significant assumptions to determine what changes in assumptions are particularly sensitive when assessing the likelihood of impairment, or when calculating the amount of the impairment. We assessed the historical accuracy of management's estimates. In addition, we involved a valuation specialist to assist in the evaluation of the methodology used by the Company and certain significant assumptions. |\n\n---\n\n\n\n/s/ Ernst & Young LLP &nbsp;&nbsp;&nbsp;&nbsp;\n\nWe have served as the Company's auditor since 1968.\n\nSan Jose, California\n\nJanuary 31, 2025\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Auditor's Reports | 55 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nReport of Independent Registered Public Accounting Firm <br>\n\nTo the Stockholders and the Board of Directors of Intel Corporation\n\nOpinion on Internal Control Over Financial Reporting\n\nWe have audited Intel Corporation's internal control over financial reporting as of December 28, 2024, based on criteria established in Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework) (the COSO criteria). In our opinion, Intel Corporation (the Company) maintained, in all material respects, effective internal control over financial reporting as of December 28, 2024, based on the COSO criteria.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (PCAOB), the 2024 consolidated financial statements of the Company and our report dated January 31, 2025 expressed an unqualified opinion thereon.\n\nBasis for Opinion\n\nThe Company's management is responsible for maintaining effective internal control over financial reporting and for its assessment of the effectiveness of internal control over financial reporting included in the accompanying Management Report on Internal Control Over Financial Reporting. Our responsibility is to express an opinion on the Company's internal control over financial reporting based on our audit. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audit in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether effective internal control over financial reporting was maintained in all material respects.\n\nOur audit included obtaining an understanding of internal control over financial reporting, assessing the risk that a material weakness exists, testing and evaluating the design and operating effectiveness of internal control based on the assessed risk, and performing such other procedures as we considered necessary in the circumstances. We believe that our audit provides a reasonable basis for our opinion.\n\nDefinition and Limitations of Internal Control Over Financial Reporting\n\nA company's internal control over financial reporting is a process designed to provide reasonable assurance regarding the reliability of financial reporting and the preparation of financial statements for external purposes in accordance with generally accepted accounting principles. A company's internal control over financial reporting includes those policies and procedures that (1) pertain to the maintenance of records that, in reasonable detail, accurately and fairly reflect the transactions and dispositions of the assets of the company; (2) provide reasonable assurance that transactions are recorded as necessary to permit preparation of financial statements in accordance with generally accepted accounting principles, and that receipts and expenditures of the company are being made only in accordance with authorizations of management and directors of the company; and (3) provide reasonable assurance regarding prevention or timely detection of unauthorized acquisition, use, or disposition of the company's assets that could have a material effect on the financial statements.\n\nBecause of its inherent limitations, internal control over financial reporting may not prevent or detect misstatements. Also, projections of any evaluation of effectiveness to future periods are subject to the risk that controls may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate.\n\n/s/ Ernst & Young LLP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n\nSan Jose, California\n\nJanuary 31, 2025\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Auditor's Reports | 56 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Statements of Operations <br>\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions, Except Per Share Amounts)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Net revenue** | $**53101** | $**54228** | $**63054** |\n| Cost of sales | 35756 | 32517 | 36188 |\n| **Gross margin** | **17345** | **21711** | **26866** |\n| Research and development | 16546 | 16046 | 17528 |\n| Marketing, general, and administrative | 5507 | 5634 | 7002 |\n| Restructuring and other charges | 6970 | (62) | 2 |\n| **Operating expenses** | **29023** | **21618** | **24532** |\n| **Operating income (loss)** | **(11678)** | **93** | **2334** |\n| Gains (losses) on equity investments, net | 242 | 40 | 4268 |\n| Interest and other, net | 226 | 629 | 1166 |\n| **Income (loss) before taxes** | **(11210)** | **762** | **7768** |\n| Provision for (benefit from) taxes | 8023 | (913) | (249) |\n| **Net income (loss)** | **(19233)** | **1675** | **8017** |\n| Less: net income (loss) attributable to non-controlling interests | (477) | (14) | 3 |\n| **Net income (loss) attributable to Intel** | $**(18756)** | $**1689** | $**8014** |\n| **Earnings (loss) per share attributable to Intel\u2014basic** | $**(4.38)** | $**0.40** | $**1.95** |\n| **Earnings (loss) per share attributable to Intel\u2014diluted** | $**(4.38)** | $**0.40** | $**1.94** |\n| Weighted average shares of common stock outstanding: |  |  |  |\n| &nbsp;&nbsp;&nbsp;**Basic** | **4280** | **4190** | **4108** |\n| &nbsp;&nbsp;&nbsp;**Diluted** | **4280** | **4212** | **4123** |\n\n---\n\n\n\n*See accompanying notes.*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Consolidated Statements of Operations | 57 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Statements of Comprehensive Income (Loss) <br>\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Net income (loss)** | $**(19233)** | $**1675** | $**8017** |\n| Changes in other comprehensive income (loss), net of tax: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Net unrealized holding gains (losses) on derivatives | (555) | 272 | (510) |\n| &nbsp;&nbsp;&nbsp;Actuarial valuation and other pension benefits (expenses), net | 60 | 66 | 855 |\n| &nbsp;&nbsp;&nbsp;Translation adjustments and other | (1) | 9 | (27) |\n| **Other comprehensive income (loss)** | **(496)** | **347** | **318** |\n| **Total comprehensive income (loss)** | **(19729)** | **2022** | **8335** |\n| Less: comprehensive income (loss) attributable to non-controlling interests | (477) | (14) | 3 |\n| **Total comprehensive income (loss) attributable to Intel** | $**(19252)** | $**2036** | $**8332** |\n\n---\n\n\n\n*See accompanying notes.*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Consolidated Statements of Comprehensive Income (Loss) | 58 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Balance Sheets <br>\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| **(In Millions, Except Par Value)** | **Dec 28, 2024** | **Dec 30, 2023** |\n| **Assets** | | |\n| Current assets: |  |  |\n| &nbsp;&nbsp;&nbsp;Cash and cash equivalents | $8249 | $7079 |\n| &nbsp;&nbsp;&nbsp;Short-term investments | 13813 | 17955 |\n| &nbsp;&nbsp;&nbsp;Accounts receivable, net | 3478 | 3402 |\n| &nbsp;&nbsp;&nbsp;Inventories | 12198 | 11127 |\n| &nbsp;&nbsp;&nbsp;Other current assets | 9586 | 3706 |\n| **Total current assets** | **47324** | **43269** |\n| **Property, plant, and equipment, net** | **107919** | **96647** |\n| **Equity investments** | **5383** | **5829** |\n| **Goodwill** | **24693** | **27591** |\n| **Identified intangible assets, net** | **3691** | **4589** |\n| **Other long-term assets** | **7475** | **13647** |\n| **Total assets** | $**196485** | $**191572** |\n| **Liabilities and stockholders' equity** |  |  |\n| Current liabilities: |  |  |\n| &nbsp;&nbsp;&nbsp;Accounts payable | $12556 | $8578 |\n| &nbsp;&nbsp;&nbsp;Accrued compensation and benefits | 3343 | 3655 |\n| &nbsp;&nbsp;&nbsp;Short-term debt | 3729 | 2288 |\n| &nbsp;&nbsp;&nbsp;Income taxes payable | 1756 | 1107 |\n| &nbsp;&nbsp;&nbsp;Other accrued liabilities | 14282 | 12425 |\n| **Total current liabilities** | **35666** | **28053** |\n| **Debt** | **46282** | **46978** |\n| **Other long-term liabilities** | **9505** | **6576** |\n| **Commitments and Contingencies (Note 19)** |  |  |\n| Stockholders' equity: |  |  |\n| &nbsp;&nbsp;&nbsp;Preferred stock, $0.001 par value, 50 shares authorized; none issued |  |  |\n| &nbsp;&nbsp;Common stock, $0.001 par value, 10,000 shares authorized; 4,330 shares issued and outstanding (4,228 issued and outstanding in 2023) and capital in excess of par value | 50949 | 36649 |\n| &nbsp;&nbsp;&nbsp;Accumulated other comprehensive income (loss) | (711) | (215) |\n| &nbsp;&nbsp;&nbsp;Retained earnings | 49032 | 69156 |\n| **Total Intel stockholders' equity** | **99270** | **105590** |\n| **Non-controlling interests** | **5762** | **4375** |\n| **Total stockholders' equity** | **105032** | **109965** |\n| **Total liabilities and stockholders' equity** | $**196485** | $**191572** |\n\n---\n\n\n\n*See accompanying notes.*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Consolidated Balance Sheets | 59 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Statements of Cash Flows <br>\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Cash and cash equivalents, beginning of period** | $**7079** | $**11144** | $**4827** |\n| Cash flows provided by (used for) operating activities: |  |  |  |\n| &nbsp;&nbsp;Net income (loss) | (19233) | 1675 | 8017 |\n| &nbsp;&nbsp;Adjustments to reconcile net income (loss) to net cash provided by operating activities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Depreciation | 9951 | 7847 | 11128 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Share-based compensation | 3410 | 3229 | 3128 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Restructuring and other charges | 3491 | (424) | 1074 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Amortization of intangibles | 1428 | 1755 | 1907 |\n| &nbsp;&nbsp;&nbsp;&nbsp;(Gains) losses on equity investments, net | (246) | (42) | (4254) |\n| &nbsp;&nbsp;&nbsp;&nbsp;(Gains) losses on divesti",
+        "total_chars": 1219034,
+        "next_start": 339499,
+        "resources": {
+          "peak_rss_mib": 503.76953125,
+          "cpu_seconds": 0.287092,
+          "wall_seconds": 0.2659678720001466,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      },
+      {
+        "found": true,
+        "id": "0000050863-25-000009:317829:329829",
+        "accession": "0000050863-25-000009",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+        "char_start": 317829,
+        "char_end": 329829,
+        "text": "0a794e31846504f_448) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Note 18: Employee Equity Incentive Plans | &nbsp;&nbsp;&nbsp;&nbsp;Note 18: Employee Equity Incentive Plans | [94](#i52fa34b6ba9248c7a0a794e31846504f_454) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Note 19: Commitments and Contingencies | &nbsp;&nbsp;&nbsp;&nbsp;Note 19: Commitments and Contingencies | [96](#i52fa34b6ba9248c7a0a794e31846504f_460) |\n| Key Terms | Key Terms | [100](#i52fa34b6ba9248c7a0a794e31846504f_466) |\n| Index to Supplemental Details | Index to Supplemental Details |  |\n| Controls and Procedures | Controls and Procedures | [102](#i52fa34b6ba9248c7a0a794e31846504f_475) |\n| Exhibits | Exhibits | [103](#i52fa34b6ba9248c7a0a794e31846504f_478) |\n| Form 10-K Cross-Reference Index | Form 10-K Cross-Reference Index | [108](#i52fa34b6ba9248c7a0a794e31846504f_490) |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | 53 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nReport of Independent Registered Public Accounting Firm <br>\n\nTo the Stockholders and the Board of Directors of Intel Corporation\n\nOpinion on the Financial Statements\n\nWe have audited the accompanying consolidated balance sheets of Intel Corporation (the Company) as of December 28, 2024 and December 30, 2023, the related consolidated statements of operations, comprehensive income (loss), cash flows and stockholders' equity for each of the three years in the period ended December 28, 2024, and the related notes (collectively referred to as the \"consolidated financial statements\"). In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company at December 28, 2024 and December 30, 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 28, 2024, in conformity with U.S. generally accepted accounting principles.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (PCAOB), the Company's internal control over financial reporting as of December 28, 2024, based on criteria established in Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework) and our report dated January 31, 2025 expressed an unqualified opinion thereon.\n\nBasis for Opinion\n\nThese financial statements are the responsibility of the Company's management. Our responsibility is to express an opinion on the Company's financial statements based on our audits. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the US federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audits in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. We believe that our audits provide a reasonable basis for our opinion.\n\nCritical Audit Matters\n\nThe critical audit matters communicated below are matters arising from the current period audit of the financial statements that were communicated or required to be communicated to the audit committee and that: (1) relate to accounts or disclosures that are material to the financial statements and (2) involved our especially challenging, subjective or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the consolidated financial statements, taken as a whole, and we are not, by communicating the critical audit matters below, providing separate opinions on the critical audit matters or on the accounts or disclosures to which they relate.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Auditor's Reports | 54 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\n---\n\n\n\n| | |\n|:---|:---|\n|  | *Inventory Valuation* |\n| *Description of the Matter* | The Company's net inventory totaled $12.2 billion as of December 28, 2024, representing 6.2% of total assets. As explained in \"Note 2: Accounting Policies\" within the consolidated financial statements, the Company computes inventory cost on a first-in, first-out basis, and applies judgment in determining saleability of products and the valuation of inventories. The Company assesses inventory at each reporting date in order to assert that it is recorded at net realizable value, giving consideration to, among other factors: whether the products have achieved the substantive engineering milestones to qualify for sale to customers; the determination of normal capacity levels in its manufacturing process to determine which manufacturing overhead costs can be included in the valuation of inventory; whether the product is valued at the lower of cost or net realizable value; and the estimation of excess and obsolete inventory or that which is not of saleable quality.  |\n| *Description of the Matter* |  |\n| *Description of the Matter* | Auditing management's assessment of net realizable value for inventory was challenging because the determination of excess and obsolete inventory reserves and lower of cost or net realizable value is judgmental and considers a number of factors that are affected by market and economic conditions, such as customer forecasts, dynamic pricing environments, and industry supply and demand. Additionally, for certain new product launches there is limited historical data with which to evaluate forecasts. |\n| *How We Addressed <br>the Matter in Our Audit* | We evaluated the design and tested operating effectiveness of the Company's internal controls over the costing of inventory, the determination of whether inventory is of saleable quality, the determination of demand forecasts and related application against on hand inventory, and the calculation of lower of cost or net realizable value reserves including related estimated costs and selling prices. |\n| *How We Addressed <br>the Matter in Our Audit* |  |\n| *How We Addressed <br>the Matter in Our Audit* | Our audit procedures included, among others, testing the significant assumptions (e.g., estimated product demand forecasts, costs and selling prices) of the underlying data used in management's inventory valuation assessment. We compared the significant assumptions used by management to current industry and economic trends. We assessed whether there were any potential sources of contrary information, including historical forecast accuracy or history of significant revisions to previously recorded inventory valuation adjustments, and performed sensitivity analyses over significant assumptions to evaluate the changes in inventory valuation that would result from changes in the assumptions. |\n|  | *Goodwill Impairment Assessment \u2013 Mobileye Reporting Unit* |\n| *Description of the Matter* | At December 28, 2024, the balance of the Company's goodwill was $24.7 billion. The goodwill attributed to the Mobileye reporting unit was $8.3 billion and represented 4.2% of total assets. As discussed in \"Note 2: Accounting Policies\" within the consolidated financial statements, goodwill is assessed at the reporting unit level in the fourth quarter of each year, or more frequently if indicators of potential impairment exist. The assessment may include both qualitative and quantitative evaluations. If it is determined, based on the qualitative assessment, that it is more likely than not that the fair value of the unit is less than its carrying amount, a quantitative goodwill impairment test is performed. As discussed in \"Note 11: Goodwill\" to the consolidated financial statements, the Company identified certain impairment indicators in the three months ended September 28, 2024 that required an interim goodwill impairment test. As a result of this assessment, the Company recorded an impairment loss of $2.6 billion related to the Mobileye reporting unit.  |\n| *Description of the Matter* |  |\n| *Description of the Matter* | Auditing the Company's Mobileye goodwill impairment evaluation was complex and judgmental due to the significant estimation required in determining the fair value using the income approach. Determining fair value involved assumptions with forward-looking elements that can be affected by future economic and market conditions. In particular, the fair value estimate was sensitive to significant assumptions such as revenue terminal growth rate and the weighted average cost of capital. |\n| *How We Addressed* <br>*the Matter in Our Audit* | We evaluated the design and tested operating effectiveness of the Company's internal controls over the Mobileye reporting unit goodwill impairment review process, including controls over management's review of the valuation model and the significant assumptions mentioned above. |\n| *How We Addressed* <br>*the Matter in Our Audit* |  |\n| *How We Addressed* <br>*the Matter in Our Audit* | Our audit procedures included, among others, assessing the suitability and application of the valuation methodology and evaluating the significant assumptions (e.g., revenue terminal growth rate and the weighted average cost of capital) and the underlying data used by the Company in its analysis. We compared the significant assumptions used by management to current industry and economic trends, market information, and other relevant factors. We performed sensitivity analyses of significant assumptions to determine what changes in assumptions are particularly sensitive when assessing the likelihood of impairment, or when calculating the amount of the impairment. We assessed the historical accuracy of management's estimates. In addition, we involved a valuation specialist to assist in the evaluation of the methodology used by the Company and certain significant assumptions. |\n\n---\n\n\n\n/s/ Ernst & Young LLP &nbsp;&nbsp;&nbsp;&nbsp;\n\nWe have served as the Company's auditor since 1968.\n\nSan Jose, California\n\nJanuary 31, 2025\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Auditor's Reports | 55 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nReport of Independent Registered Public Accounting Firm <br>\n\nTo the Stockholders and the Board of Directors of Intel Corporation\n\nOpinion on Internal Control Over Financial Reporting\n\nWe have audited Intel Corporation's internal control over financial reporting as of December 28, 2024, based on criteria established in Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework) (the COSO criteria). In our opinion, Intel Corporation (the Company) maintained, in all material respects, effective internal control over financial reporting as of December 28, 2024, based on the COSO criteria.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (PCAOB), the 2024 consolidated financial statements of the Company and our report dated January 31, 2025 expressed an unqualified opinion thereon.\n\nBasis for Opinion\n\nThe Company's management is responsible for maintaining effective internal control over fin",
+        "total_chars": 1219034,
+        "next_start": 329829,
+        "resources": {
+          "peak_rss_mib": 505.39453125,
+          "cpu_seconds": 0.41235199999999994,
+          "wall_seconds": 0.36770151400014583,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      }
+    ],
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash"
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 92, \"rationale\": \"The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year service began, matching the reference and gold evidence. The quoted sentence 'We have served as the Company's auditor since 1968' appears verbatim in the retrieved excerpts (Auditor's Reports, page 55, accession 0000050863-25-000009), and the Ernst & Young signature and January 31, 2025 date are also supported. Minor deductions: the candidate's character offsets (~327,499\u2013328,000) and fiscal year-end framing are approximate, and the page reference and filing date are extra details not all verified precisely, though they are consistent with the excerpts.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 92, \"rationale\": \"The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year service began, matching the reference and gold evidence. The quoted sentence 'We have served as the Company's auditor since 1968' appears verbatim in the retrieved excerpts (Auditor's Reports, page 55, accession 0000050863-25-000009), and the Ernst & Young signature and January 31, 2025 date are also supported. Minor deductions: the candidate's character offsets (~327,499\u2013328,000) and fiscal year-end framing are approximate, and the page reference and filing date are extra details not all verified precisely, though they are consistent with the excerpts.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:35:33.731509+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "ad38ef132017db55a12deaec:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042531-ekgY3DWP4DPB83KFG99h",
+    "usage": {
+      "prompt_tokens": 35272,
+      "completion_tokens": 247,
+      "total_tokens": 35519,
+      "cost": 0.0036507,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0036507,
+        "upstream_inference_prompt_cost": 0.0035272,
+        "upstream_inference_completions_cost": 0.0001235
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.3963898680003695,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 92,
+    "rationale": "The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year service began, matching the reference and gold evidence. The quoted sentence 'We have served as the Company's auditor since 1968' appears verbatim in the retrieved excerpts (Auditor's Reports, page 55, accession 0000050863-25-000009), and the Ernst & Young signature and January 31, 2025 date are also supported. Minor deductions: the candidate's character offsets (~327,499\u2013328,000) and fiscal year-end framing are approximate, and the page reference and filing date are extra details not all verified precisely, though they are consistent with the excerpts."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,126 @@
+{
+  "question_id": "Q084",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.02945048499987024,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "### Percentage Decline in Intel Foundry External Revenue\n\nAccording to Intel Corporation's 2024 Form 10-K:\n\n* **Stated Percentage:** Intel Foundry external revenue **decreased 60%** from 2023 to 2024.\n* **Underlying Values and Calculation:**\n  * **2023 External Revenue:** $953 million\n  * **2024 External Revenue:** $385 million\n  * **Dollar Change:** Down $568 million ($385 million \u2212 $953 million = \u2212$568 million)\n  * **Percentage Change:** \n    $$\\frac{385 - 953}{953} = \\frac{-568}{953} \\approx -59.60\\% \\text{ (rounded to } 60\\%)$$\n\n*(Sources: accession `0000050863-25-000009`, chunk `d3c83be6-139e-5d68-8f94-47134294ebb5` / `00cec489-cca7-51ce-a50a-2814f0bd9f87` / `e165c6f6-d3cc-50f7-ba46-2514cc990b6e` / `50bd9940-dd58-5593-8ec7-c57ac3dea915`)*\n\n---\n\n### Factors Causing the Decline\n\nThe decline was driven primarily by:\n1. **Lower traditional packaging services**\n2. **Lower equipment sales**\n\n*(Sources: accession `0000050863-25-000009`, chunk `d3c83be6-139e-5d68-8f94-47134294ebb5` and chunk `00cec489-cca7-51ce-a50a-2814f0bd9f87`)*",
+    "message": {
+      "role": "assistant",
+      "content": "### Percentage Decline in Intel Foundry External Revenue\n\nAccording to Intel Corporation's 2024 Form 10-K:\n\n* **Stated Percentage:** Intel Foundry external revenue **decreased 60%** from 2023 to 2024.\n* **Underlying Values and Calculation:**\n  * **2023 External Revenue:** $953 million\n  * **2024 External Revenue:** $385 million\n  * **Dollar Change:** Down $568 million ($385 million \u2212 $953 million = \u2212$568 million)\n  * **Percentage Change:** \n    $$\\frac{385 - 953}{953} = \\frac{-568}{953} \\approx -59.60\\% \\text{ (rounded to } 60\\%)$$\n\n*(Sources: accession `0000050863-25-000009`, chunk `d3c83be6-139e-5d68-8f94-47134294ebb5` / `00cec489-cca7-51ce-a50a-2814f0bd9f87` / `e165c6f6-d3cc-50f7-ba46-2514cc990b6e` / `50bd9940-dd58-5593-8ec7-c57ac3dea915`)*\n\n---\n\n### Factors Causing the Decline\n\nThe decline was driven primarily by:\n1. **Lower traditional packaging services**\n2. **Lower equipment sales**\n\n*(Sources: accession `0000050863-25-000009`, chunk `d3c83be6-139e-5d68-8f94-47134294ebb5` and chunk `00cec489-cca7-51ce-a50a-2814f0bd9f87`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1+p1rrIbxEvEzQ3I0RTSmLL1REJYjHMWXn3gbWnmHEWIegwzqQH/5+iixZkWhgQNHKB76aQuBUAtgzS6dzhct128sMdlW1Xv2itfurYQYEbTiyx",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:51.833321+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "8559347dd2729e1917b0e2ae:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792042007-erp8ohHf29TRl9CLPsgu",
+    "usage": {
+      "prompt_tokens": 20710,
+      "completion_tokens": 489,
+      "total_tokens": 21199,
+      "cost": 0.01736625,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01736625,
+        "upstream_inference_prompt_cost": 0.0155325,
+        "upstream_inference_completions_cost": 0.00183375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.834889800000383,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate matches the reference: Intel Foundry external revenue fell 60% in 2024, driven by lower traditional packaging services and lower equipment sales. Its added figures check out against the excerpts: $953M (2023) and $385M (2024), a $568M decline, and (385-953)/953 \u2248 -59.6%, which rounds to 60%. The cited chunks appear in the retrieved excerpts and support the stated claims: the MD&A 'A Year in Review' text for the 60% and the drivers, and the Intel Foundry segment text for the $385M and $953M values. Minor deduction only for the extra calculation detail beyond what the reference requires.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate matches the reference: Intel Foundry external revenue fell 60% in 2024, driven by lower traditional packaging services and lower equipment sales. Its added figures check out against the excerpts: $953M (2023) and $385M (2024), a $568M decline, and (385-953)/953 \u2248 -59.6%, which rounds to 60%. The cited chunks appear in the retrieved excerpts and support the stated claims: the MD&A 'A Year in Review' text for the 60% and the drivers, and the Intel Foundry segment text for the $385M and $953M values. Minor deduction only for the extra calculation detail beyond what the reference requires.\"}",
+      "refusal": null,
+      "reasoning": "I'm verifying the 60% decline figure matches the calculation of (385-953)/953, confirming the stated factors are accurate, and checking that the cited source chunk actually corresponds to the MD&A \"A Year in Review\" section.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm verifying the 60% decline figure matches the calculation of (385-953)/953, confirming the stated factors are accurate, and checking that the cited source chunk actually corresponds to the MD&A \"A Year in Review\" section.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS2goKEAgSGAI4AUIIdGhpbmtpbmcSDHvXyJcMTW+8+RAVYhoMN5EHhV4V4k2K0NnyIjARKbYlZqhsAtkaWBesDlsui9mfwNa1P+EYMS0yzwzq7heeG5dSyIeHhLorQZHlwqAq9wlUwKNl3md3147ylc1czhY/dOj29mulDPk7EcISOWGHSgtfzQcOvxj2sQmoSf5Vmi3wxtkp0OJF3HBhrhOtMxcSi6sOz5O2EmBpp8HTYZ/pPVS6mWQ14CXF5YwaXskLPauBl7trEL5wtJ1FrMRrcU5gjwA1LH4BVyAaIV7icVVtzvkNo0Trxk2Bs88kVxzWsVfBimqSqTe0yhKhHBDltlkSioFgkhLFN8T2OiMHD2LiEhPpgLeLW/cu8KROLtEID6kstEW71r8NXpk7N49bCC4QJa4/jB/ls+D84ZphVhmFKfbDRqLDGB3yN3aIvUka0cRCWVdZR/e0cjS7HID4F2G45ePhAgp02pCALxbfUBglqJRVR2cpriXvYoOiYzc3RT3g4rL37YrSxkPULBg2UCtzNfik0rEZL7plhyzIPoI2XPiAwz/6qJ+YvJ4YxwUMug+tDrEx9gyxSbBdK/koIkxzdz1Epw4h2utEMBvjMOFEj/lkt40nRc9wuCskNFSN/BbXSX5oMZjDHdlQ4F0UOexLh4hBCpaNMrrODge/sYRqtMPRsd6PoLPdUO31srm4LYkOyKB0Wq5Ds9qlbYBTGkTtchLNMbeDy4E+Pt5vIWcSBX8HsSGSYdYMnYatYedSJXmIfvn2nMY6zWDu9lT3cNHn8ufgOSlBwZky2tDZTXuudXCEf45UXsubffyGZdAb3rL9FE/sqImHdmSfXqvnRgZ5hqi0XWSD9g5YRHntmfgKVBmZNnphHwV2Ja9EIGM0PjlIUnQJ2jOSsaAXAHNvz1mxp9fdp7EJIk4DOtNJEvdxCEigk0svR4T9n8cFNBi9eMZmNtnF9G6HqIrwvn135uUFbYI2MOGeK/B4rvIr1JTzUpC+D4Ja389hEkiUjSe746tIrp2Z8G/ZsI6fHGRK3BdTYG+fMNBT2b149/X8W3r3orO45SORSs21YBLFVMIbqU3t9fTsKZMbKCkwji4AfcLQi4MDq4BSqMTGYRNNOOf11ZWrTagF7ZSqxrgSi0SuBQAxLgfIHDvVnE9jDU49e3/eAw0Ehn5pWJTV4e4XU+JMoMdx3tjBC6rmxzIhOfIPrRHmWMt37yeQNq5BPsO6G2xLzwBR8C6bOVgbS6WtQeO+nxB541OhQHc/PhjrFm7D3ibvh9MmB3VVVlKigb90Q+48KrLNssAOhH/f1QhJDMO6Lawm07NT4lfTgjY5cv2f07cY142kV6VIVLJMf7HknzU3X7fysqbnSFyyaguUzoTZQeLTDLaU4azaFSVAI3hmbwReZbISwV8i994EYapt/pye+o42swjwqnGBgNeAoiVcRYKkKhgsw9nqP+IQgiptb8FIjK/RCugN5y4wMYFJNb0JAnsc2hOG4RfK8+sQeYi61An7enU57qA5r6RngHcC1I6IAd77OZAUUzIinFQCeJNw+6lXJYXCbEVOnZOw5s7gcAbMXb8oAgyRhBecZnYJhnwK3vmTDzHhty3WWLE+gVvWRsZtsgw1qj2AaEn8n8cd9iqWwPdZkSjLvXCLPfLJ5Z9p9FchduWKoUPlkSughsohI+j2O9GvFvoVCixPWLT2HqX+7C73WregjMk1uwORF1JqAtMWcLxszRxNpwZwpKdNOXuZjQBSPysmQRR+RbQmN9FAeYKcyrX87Y7v6WjHViec7YasPx9+65P/gkIJkDUDM93vNdQQhBgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:21.868443+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "8559347dd2729e1917b0e2ae:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042217-p4KwZtJCrzxMwdEbPPLc",
+    "usage": {
+      "prompt_tokens": 28867,
+      "completion_tokens": 562,
+      "total_tokens": 29429,
+      "cost": 0.0031677,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0031677,
+        "upstream_inference_prompt_cost": 0.0028867,
+        "upstream_inference_completions_cost": 0.000281
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 318,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.458817755999917,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 95,
+    "rationale": "The candidate matches the reference: Intel Foundry external revenue fell 60% in 2024, driven by lower traditional packaging services and lower equipment sales. Its added figures check out against the excerpts: $953M (2023) and $385M (2024), a $568M decline, and (385-953)/953 \u2248 -59.6%, which rounds to 60%. The cited chunks appear in the retrieved excerpts and support the stated claims: the MD&A 'A Year in Review' text for the 60% and the drivers, and the Intel Foundry segment text for the $385M and $953M values. Minor deduction only for the extra calculation detail beyond what the reference requires."
+  },
+  "status": "ok"
+}

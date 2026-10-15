@@ -1,0 +1,117 @@
+{
+  "question_id": "Q051",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/bm25",
+  "retrieval": {
+    "seconds": 0.006296839000242471,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Adobe\u2019s fiscal 2024 gross profit margin was **89.0%**.\n\nCalculation from the Consolidated Statements of Income figures: gross profit **$19,147 million** \u00f7 revenue **$21,505 million** \u00d7 100 = **89.04%**, or **89.0%** rounded to one decimal place. (The filing\u2019s segment table also reports total gross profit as 89% of revenue.)\n\n**Source:** Accession **0000796343-25-000004**, *Item 8. Financial Statements and Supplementary Data*, chunk **6**.",
+    "message": {
+      "role": "assistant",
+      "content": "Adobe\u2019s fiscal 2024 gross profit margin was **89.0%**.\n\nCalculation from the Consolidated Statements of Income figures: gross profit **$19,147 million** \u00f7 revenue **$21,505 million** \u00d7 100 = **89.04%**, or **89.0%** rounded to one decimal place. (The filing\u2019s segment table also reports total gross profit as 89% of revenue.)\n\n**Source:** Accession **0000796343-25-000004**, *Item 8. Financial Statements and Supplementary Data*, chunk **6**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:32.167629+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "cc3a1fb138b76d96c8fae2f7:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041929-vAXbHNEI869Hl5oEScU9",
+    "usage": {
+      "prompt_tokens": 12808,
+      "completion_tokens": 124,
+      "total_tokens": 12932,
+      "cost": 0.001662925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 12805,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001662925,
+        "upstream_inference_prompt_cost": 0.001600925,
+        "upstream_inference_completions_cost": 6.2e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.4405086059996393,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 95, \"citation_support\": 80, \"rationale\": \"The candidate's calculation is correct: $19,147M / $21,505M = 89.04%, matching the reference. Presenting 89.0% as the headline rounding is consistent with the 89.04% shown. Minor issue: the candidate attributes the figures to the Consolidated Statements of Income, but the retrieved chunk shows them in the Note 2 segment table, not the income statement itself. The cited accession and chunk 6 do contain the supporting figures and the segment-table 89% note, so the citation is largely supported but slightly misattributed.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 95, \"citation_support\": 80, \"rationale\": \"The candidate's calculation is correct: $19,147M / $21,505M = 89.04%, matching the reference. Presenting 89.0% as the headline rounding is consistent with the 89.04% shown. Minor issue: the candidate attributes the figures to the Consolidated Statements of Income, but the retrieved chunk shows them in the Note 2 segment table, not the income statement itself. The cited accession and chunk 6 do contain the supporting figures and the segment-table 89% note, so the citation is largely supported but slightly misattributed.\"}",
+      "refusal": null,
+      "reasoning": "The gross profit figure checks out at 89.04%, matching the candidate's rounded 89.0%. But I notice the citation issue \u2014 the retrieved chunk is actually from the segment note (Note 2), not the Consolidated Statements of Income as the candidate claims, even though the numbers match.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The gross profit figure checks out at 89.04%, matching the candidate's rounded 89.0%. But I notice the citation issue \u2014 the retrieved chunk is actually from the segment note (Note 2), not the Consolidated Statements of Income as the candidate claims, even though the numbers match.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:01.873031+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "cc3a1fb138b76d96c8fae2f7:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042137-whH2oD1oAhYHOnMSmApZ",
+    "usage": {
+      "prompt_tokens": 20686,
+      "completion_tokens": 578,
+      "total_tokens": 21264,
+      "cost": 0.0023576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0023576,
+        "upstream_inference_prompt_cost": 0.0020686,
+        "upstream_inference_completions_cost": 0.000289
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 374,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.516757811000389,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 95,
+    "citation_support": 80,
+    "rationale": "The candidate's calculation is correct: $19,147M / $21,505M = 89.04%, matching the reference. Presenting 89.0% as the headline rounding is consistent with the 89.04% shown. Minor issue: the candidate attributes the figures to the Consolidated Statements of Income, but the retrieved chunk shows them in the Note 2 segment table, not the income statement itself. The cited accession and chunk 6 do contain the supporting figures and the segment-table 89% note, so the citation is largely supported but slightly misattributed."
+  },
+  "status": "ok"
+}

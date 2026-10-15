@@ -1,0 +1,33 @@
+[project]
+name = "sfd-2025"
+version = "0.1.0"
+description = "Shared financial filing preprocessing and vector database ingestion"
+readme = "README.md"
+authors = [
+    { name = "hrmiitm", email = "hrithik999999@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5.6",
+    "fastembed>=0.9.0",
+    "httpx>=0.28.1",
+    "lancedb>=0.40.0",
+    "pyarrow>=26.0.0",
+    "python-dotenv>=1.2.4",
+    "qdrant-client>=1.19.1",
+    "tiktoken>=0.14.0",
+]
+
+[project.scripts]
+sfd-benchmark = "sfd_2025.benchmark.run:main"
+sfd-pipeline = "sfd_2025.pipeline.run:main"
+sfd-2025 = "sfd_2025:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

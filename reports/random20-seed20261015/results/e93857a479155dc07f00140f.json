@@ -1,0 +1,117 @@
+{
+  "question_id": "Q089",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.02983503399991605,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Operating income margin = **Income from operations \u00f7 Net sales \u00d7 100**\n\n= $58.906 million \u00f7 $1,409.281 million \u00d7 100  \n= **4.18%** (approximately **4.2%**).\n\nBoth figures are for the fiscal year ended December 29, 2024. [Accession 0001739566-25-000053, Item 8. Financial Statements and Supplementary Data, chunk 2]",
+    "message": {
+      "role": "assistant",
+      "content": "Operating income margin = **Income from operations \u00f7 Net sales \u00d7 100**\n\n= $58.906 million \u00f7 $1,409.281 million \u00d7 100  \n= **4.18%** (approximately **4.2%**).\n\nBoth figures are for the fiscal year ended December 29, 2024. [Accession 0001739566-25-000053, Item 8. Financial Statements and Supplementary Data, chunk 2]",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:34.227839+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "e93857a479155dc07f00140f:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042052-MwGLKJTGWjXHrZUdUFrU",
+    "usage": {
+      "prompt_tokens": 15197,
+      "completion_tokens": 100,
+      "total_tokens": 15297,
+      "cost": 0.00194955,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 15194,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00194955,
+        "upstream_inference_prompt_cost": 0.00189955,
+        "upstream_inference_completions_cost": 5e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.4538240680003582,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 98, \"citation_support\": 93, \"rationale\": \"The candidate's arithmetic is correct: $58,906K \u00f7 $1,409,281K = 4.18%, and the unit conversion to millions is handled correctly. The reference and candidate match. The cited accession and Item 8 chunk 2 match the retrieved Consolidated Statements of Operations excerpt, which shows Net sales of 1409281 and Income from operations of 58906. The candidate's citation is supported, though it doesn't quote the specific line figures.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 98, \"citation_support\": 93, \"rationale\": \"The candidate's arithmetic is correct: $58,906K \u00f7 $1,409,281K = 4.18%, and the unit conversion to millions is handled correctly. The reference and candidate match. The cited accession and Item 8 chunk 2 match the retrieved Consolidated Statements of Operations excerpt, which shows Net sales of 1409281 and Income from operations of 58906. The candidate's citation is supported, though it doesn't quote the specific line figures.\"}",
+      "refusal": null,
+      "reasoning": "I verify the math checks out to 4.18%, matching the candidate's figure, and the units align properly in millions. I'm now checking the citation against the retrieved chunk to confirm the income statement data is correctly sourced from Item 8, chunk 2.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I verify the math checks out to 4.18%, matching the candidate's figure, and the units align properly in millions. I'm now checking the citation against the retrieved chunk to confirm the income statement data is correctly sourced from Item 8, chunk 2.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSvAoKEAgSGAI4AUIIdGhpbmtpbmcSDG80J0CKJvyN2xdFohoM7/PN+jXYItSN+d3oIjCD6Ac9n7dwCCaVldXPaJRZsN0N20KFuhxplZVzYpwZbkSCmhHT769EEuT0YYTlYrMq2QnXjGP/AwnLunJIJSkm9nor8xCMavam8jNq8iFPb9I2qjc/UOhyvakGyQYNjJfmHlFYTQQZbpmXyY+DHD6amVTORArOS//zXs7YguUdJSvIkPQobmmvZv9sFiJpJyhXtS5JHyJCsjawG9r3QGgqYihuY2CuTnT7KuvsjhbtsFvHkIM07PKcsExFmzMN9t8DWhZtMAPRybOtb7k0cQrB/Z7vD3oqBgQQctEsfcZRKfGqo3Ghq98n15muN/sM6CW4/iEalRS+zYFzvYH7oIy1+MYicb6t5hR3Dz52aqYf44V1tj1MdMx39U82+o5Q4WIQjtaVKMrUCeR4A/QgxMXgcrqn4Q7c186SU7vD2daigirz0zRcOyK2CW0eXNmy4WOz8vJ+cvFcSAvfJ4c15Wa1rkqAhDEdTE/f+JG0Wn9PJZvlZ0k3xbQjnmMPHmAnuNddJkxp+kDgzRCdIlZmNtOUXZOrTNZaPc9UJ/Mz/q9bQmgRs2LaBaD8fPEFZOJ1dk4TVjaSJGnM+4sZMNOAuBwjda1H2r8Zmt5THtaGRYUVbim82LH9kJVcGMKVi7HpkNHV2BODruGd42p0teiyX1J99CezHILLahiZqdWWBwFF+DCumYO20opt0t+KBV9APuTVjHE4ugPe58pRFI07vMiUGV2HcT6h87ODi/4aaKHzE/GCHfWyHkx0i4DiHsNqkHZNhS6vS/1QNChfEew4SPKyhH6eIYcQv1U/+AEcjDLDXs3xhLWW3topoEw0B0ZRkgLKIc3ZsD6euB4VcSMs9ghNcwqf9UFu5ZMT2hIcLaWSm+0X1rXfp+ItuN31R5Xq1lSdRNZ8jwfyCMyDkUVw/TeTLF79fNGhQ6oEy2XWCmEPjIsgS+xFtfyU4XKrNa0RzYL7J76k1V9owv45JeBhzxybr8l1Pw0lrzLe5YMEIBfxlzt1hbHwVVwo4lAEzDQgzrEbgF1ZiX1o0eKarJ+nGUCae9ZWa104hwzuSFYXGUYkOi6xBNfWXBdGlf+3FjnjH0xXNcIoXMx3uVhucWIKyKkljKPfGuDwBONF3flXfAlXx9gB7cMStqyfPaVnAoVieU8SICiLhKRdKREdv8hnyQsbi4gui+lgn+VwyiPzUO/GW2MQ7in6eVvrDNTvMm+79MPPcpk42qgNFaWiENm9a5NBOKPGUilvZcjPVsOzGEHuNOhp2pRue6TwKxwYRGNVpLMYfwYkLijDDRmT03l7jMh7Un29Wo3DBQsW2ttUyjs4Z19MGV3Le7ShlmdeKbiivfZEl1a4WBTlSSK4vxMVAYipAntbo068unPDvAXIIAY+QLbmDDCcvFloBvzU1raH5gWjDVvDtI2IXw4dR6Q95lNGKmkJDF0Fr1TteF0f1GOGBdm5+EIL+EpaYBvS+YzhqQa5Ap2ELntsbUpBlsGQjlUah6b/JfW3Dt7nYhISYqGeGXlhVQFw/8RUTsqgM4K2RCVzVFwdkqfiEsoZWnjoaQlrVu3Il3i/nVvyjQWohgdMLFF86XWFV7PfEUBKjxqhAWYfQcV2UhX9YX5PzeoDDWU/KlDUIaNEFZ0BlzziGgS3oynIeBS8Why08btsWhHWmpftaApYb5OaYM8BGwjIslpQ+k7337rB7Q2KEvg8EEKNPe4Uwu+utCuvMfr40RgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:46.762902+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "e93857a479155dc07f00140f:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042242-3mt6VN14FcitsvMDnEpO",
+    "usage": {
+      "prompt_tokens": 23755,
+      "completion_tokens": 487,
+      "total_tokens": 24242,
+      "cost": 0.002619,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002619,
+        "upstream_inference_prompt_cost": 0.0023755,
+        "upstream_inference_completions_cost": 0.0002435
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 307,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.340823404999355,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 93,
+    "rationale": "The candidate's arithmetic is correct: $58,906K \u00f7 $1,409,281K = 4.18%, and the unit conversion to millions is handled correctly. The reference and candidate match. The cited accession and Item 8 chunk 2 match the retrieved Consolidated Statements of Operations excerpt, which shows Net sales of 1409281 and Income from operations of 58906. The candidate's citation is supported, though it doesn't quote the specific line figures."
+  },
+  "status": "ok"
+}

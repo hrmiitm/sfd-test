@@ -1,0 +1,108 @@
+{
+  "question_id": "Q088",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/bm25",
+  "retrieval": {
+    "seconds": 0.007153603000006115,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Total gross expenses were **$770,000** for July 23 through December 31, 2024. The filing reports gross expenses of **$770 thousand**; calculation: $770 \u00d7 1,000 = $770,000. This is before the $770,000 Sponsor\u2019s Fee waiver.  \n\n**Source:** Accession 0000950170-25-029407, \u201cStatement of Operations,\u201d chunk 4.",
+    "message": {
+      "role": "assistant",
+      "content": "Total gross expenses were **$770,000** for July 23 through December 31, 2024. The filing reports gross expenses of **$770 thousand**; calculation: $770 \u00d7 1,000 = $770,000. This is before the $770,000 Sponsor\u2019s Fee waiver.  \n\n**Source:** Accession 0000950170-25-029407, \u201cStatement of Operations,\u201d chunk 4.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:24.500908+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "a30d2ebe5ebb98f67ea6ec5b:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042042-IHFVypfutaJZdFsMkPPR",
+    "usage": {
+      "prompt_tokens": 17588,
+      "completion_tokens": 93,
+      "total_tokens": 17681,
+      "cost": 0.002244925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 17585,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002244925,
+        "upstream_inference_prompt_cost": 0.002198425,
+        "upstream_inference_completions_cost": 4.65e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.004185785000118,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 95, \"citation_support\": 90, \"rationale\": \"The candidate correctly states gross expenses of $770 thousand (about $770,000) for July 23 through December 31, 2024, matching the reference and the Statement of Operations in the retrieved excerpts. The statement that this is before the $770 thousand Sponsor's Fee waiver is accurate per the filing. The cited accession and the Statement of Operations are supported by retrieved chunk 4 (accession 0000950170-25-029407). Minor issue: the reference's 'entirely of the related-party Sponsor's Fee' detail is not repeated, and the candidate cites 'chunk 4' loosely, but the cited content is present in retrieved excerpts.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 95, \"citation_support\": 90, \"rationale\": \"The candidate correctly states gross expenses of $770 thousand (about $770,000) for July 23 through December 31, 2024, matching the reference and the Statement of Operations in the retrieved excerpts. The statement that this is before the $770 thousand Sponsor's Fee waiver is accurate per the filing. The cited accession and the Statement of Operations are supported by retrieved chunk 4 (accession 0000950170-25-029407). Minor issue: the reference's 'entirely of the related-party Sponsor's Fee' detail is not repeated, and the candidate cites 'chunk 4' loosely, but the cited content is present in retrieved excerpts.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:36.539955+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "a30d2ebe5ebb98f67ea6ec5b:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042234-cWjdhZ7Zjwg6H2lgiZqz",
+    "usage": {
+      "prompt_tokens": 30254,
+      "completion_tokens": 244,
+      "total_tokens": 30498,
+      "cost": 0.0031474,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0031474,
+        "upstream_inference_prompt_cost": 0.0030254,
+        "upstream_inference_completions_cost": 0.000122
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.920623285000147,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 95,
+    "citation_support": 90,
+    "rationale": "The candidate correctly states gross expenses of $770 thousand (about $770,000) for July 23 through December 31, 2024, matching the reference and the Statement of Operations in the retrieved excerpts. The statement that this is before the $770 thousand Sponsor's Fee waiver is accurate per the filing. The cited accession and the Statement of Operations are supported by retrieved chunk 4 (accession 0000950170-25-029407). Minor issue: the reference's 'entirely of the related-party Sponsor's Fee' detail is not repeated, and the candidate cites 'chunk 4' loosely, but the cited content is present in retrieved excerpts."
+  },
+  "status": "ok"
+}

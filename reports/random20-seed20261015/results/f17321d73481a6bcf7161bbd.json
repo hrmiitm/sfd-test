@@ -1,0 +1,117 @@
+{
+  "question_id": "Q051",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.027086817000053998,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Adobe\u2019s fiscal 2024 gross profit margin was **89.0%**.\n\nCalculation from the Consolidated Statements of Income:  \n**Gross profit \u00f7 Total revenue \u00d7 100 = $19,147 million \u00f7 $21,505 million \u00d7 100 = 89.04%**, or **89.0%** rounded to one decimal place.\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, \u201cCONSOLIDATED STATEMENTS OF INCOME,\u201d chunk **c8e23789-3e5b-5998-a527-7bb13e5d5a92**.",
+    "message": {
+      "role": "assistant",
+      "content": "Adobe\u2019s fiscal 2024 gross profit margin was **89.0%**.\n\nCalculation from the Consolidated Statements of Income:  \n**Gross profit \u00f7 Total revenue \u00d7 100 = $19,147 million \u00f7 $21,505 million \u00d7 100 = 89.04%**, or **89.0%** rounded to one decimal place.\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, \u201cCONSOLIDATED STATEMENTS OF INCOME,\u201d chunk **c8e23789-3e5b-5998-a527-7bb13e5d5a92**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:34.932687+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "f17321d73481a6bcf7161bbd:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041932-6GigEzoUzfYO4KqKSUbf",
+    "usage": {
+      "prompt_tokens": 10409,
+      "completion_tokens": 138,
+      "total_tokens": 10547,
+      "cost": 0.00137005,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10406,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00137005,
+        "upstream_inference_prompt_cost": 0.00130105,
+        "upstream_inference_completions_cost": 6.9e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.603745930000514,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 98, \"rationale\": \"The candidate's arithmetic is correct: $19,147M / $21,505M = 89.04%. Its one-decimal rounding to 89.0% is consistent with the reference's 89.04%, and it uses the right fiscal year and figures. The cited accession 0000796343-25-000004 and the Consolidated Statements of Income chunk c8e23789 both appear in the retrieved excerpts, and the excerpt shows the gross profit ($19,147) and total revenue ($21,505) figures the candidate used. Minor deduction only for presenting the rounded 89.0% as the headline figure rather than the reference's 89.04%.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 98, \"rationale\": \"The candidate's arithmetic is correct: $19,147M / $21,505M = 89.04%. Its one-decimal rounding to 89.0% is consistent with the reference's 89.04%, and it uses the right fiscal year and figures. The cited accession 0000796343-25-000004 and the Consolidated Statements of Income chunk c8e23789 both appear in the retrieved excerpts, and the excerpt shows the gross profit ($19,147) and total revenue ($21,505) figures the candidate used. Minor deduction only for presenting the rounded 89.0% as the headline figure rather than the reference's 89.04%.\"}",
+      "refusal": null,
+      "reasoning": "Checking the math: 19147/21505 = 0.89036, which rounds to 89.04%, matching the candidate's figure and the reference. The citation also checks out\u2014correct accession, section, and chunk id pointing to the Consolidated Statements of Income excerpt. This looks well supported, so I'll score it high.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking the math: 19147/21505 = 0.89036, which rounds to 89.04%, matching the candidate's figure and the reference. The citation also checks out\u2014correct accession, section, and chunk id pointing to the Consolidated Statements of Income excerpt. This looks well supported, so I'll score it high.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSiAgKEAgSGAI4AUIIdGhpbmtpbmcSDKenb9sLk9+a2WP/BBoMeyjmSlq3xqAAU3zdIjAESorlrD4vZMjuBCD2/ted2WXfMl/rnlz4iAHmZZvW808PMuGEYQRnYfC5SyyymKUqpQeSSM41XNtK54W8cwZSMlsdGppomWPZn7ALUlzsnegRC2x+gNquTSDAUrhQb6rnlR7D/yGZJNaZOg7oUYZme8/nV9YHqaPSXLOeoO9tqZdySIlR4XCeZEezuZJdtoZD0moH5QNHQFRNtq5Ai9hBS2qMtteUg9eFynvbcA2ona48EByMpU6MLn3vRJp7VciMZlP1mY4AM6ZNWwbaU/P1MSSXe80yjHsBARomGtizVahtRcD1baOTDEac8JeDqvlEFrJY266vUfIiBIi6r2h23HJU0UluvFgnJktiPYDKXp2HfDLUfV9tzbJ3ygESPMVdS+vdziKsa0rrs0joXFkxSIUQ97aMNTK4uyTlxoGZDoMOygCTk4WBCBQ4vYp0aeFBSxJjNgBhx1QfSBpoN1bhlSv3cL61h9MNEqSGn4UN1q3eTN+429Ue7H5GgiuUm52j0Hx78nI97fIGMzUcvdP15uWi+cUfdpW20Usg7V35qCT/TvE2zMD1WBassoyHv3aH3d4iGpj9rxvP4WQs2X+A2lv5bTLI5EjMJtbc+fCI+XyL2cG8byP+hjB73KpPrUvx9RQDVwRV07co2XWbkao1gmuX+ZsDDzFfiMOtCR+k1abxC1sB0nIONAgKaG4Xssxp0djKeS9rT1FstkDvKnwHDyc5antzisyfc46mtsH/faMTH2jbA/TgfRIfVLbhtqJpobaR2vHsd/zF22Eby2EuzLf3ugn0Uwu7Q45xLBOejaSG+rTTmTTyLF1WtOeOIL4J1qiCVnor611iw0OXUGTC1etFWP8TzJf6MqI2u1oeTA7i3rSGpVKo3aqpsnV444erX5ZRWZQZ/l6iDvFtbxmoezrqHpy49M/1z2HSaJlQzJZ28RbZYCbrxjzh+cdHB+YdE0zoAaaNZMOVp8UdZ8PUEcM1HiF8Gf/y1YvWm5ufxJKYMVIAGrxCkK/TeI9hr5DdVItuk9EEE4UE/mzDwy4WXnYRIUKhbScdS1nWa72Y+96y+2Z3X+9TQLCiGL17mqtR6xlFe4T8vZ8HgkKTOU504NZi5XI/QCBwVg2QaaYWZ7Th9nnHWkFe6ASzOB3c5FvEB9mk49vUEQI4Pv1tXGnrddcFEs+KdCNPM4Qf/NSOAI1kZ20KxB9grxIAxollK6s9rvZZIaanQnbYbIWfIATAUy9PtiSnxz7A3tNKWoSMr9kJq5iW+6SxkPJA+qbgpIrs4wCr4+zg+yQhAuKbMzY/gouBfwzvQmsYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:01.401778+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "f17321d73481a6bcf7161bbd:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042137-XKOab9XLLEepRyY9giOu",
+    "usage": {
+      "prompt_tokens": 16453,
+      "completion_tokens": 424,
+      "total_tokens": 16877,
+      "cost": 0.0018573,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0018573,
+        "upstream_inference_prompt_cost": 0.0016453,
+        "upstream_inference_completions_cost": 0.000212
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 190,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.041274228000475,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 98,
+    "rationale": "The candidate's arithmetic is correct: $19,147M / $21,505M = 89.04%. Its one-decimal rounding to 89.0% is consistent with the reference's 89.04%, and it uses the right fiscal year and figures. The cited accession 0000796343-25-000004 and the Consolidated Statements of Income chunk c8e23789 both appear in the retrieved excerpts, and the excerpt shows the gross profit ($19,147) and total revenue ($21,505) figures the candidate used. Minor deduction only for presenting the rounded 89.0% as the headline figure rather than the reference's 89.04%."
+  },
+  "status": "ok"
+}

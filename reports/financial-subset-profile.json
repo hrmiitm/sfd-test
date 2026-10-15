@@ -1,0 +1,1859 @@
+{
+  "forms": [
+    {
+      "form_type": "4",
+      "filings": 209062,
+      "characters": 1470191423
+    },
+    {
+      "form_type": "424B2",
+      "filings": 69377,
+      "characters": 6310148042
+    },
+    {
+      "form_type": "8-K",
+      "filings": 33904,
+      "characters": 2835398283
+    },
+    {
+      "form_type": "144",
+      "filings": 33182,
+      "characters": 213516034
+    },
+    {
+      "form_type": "NPORT-P",
+      "filings": 22298,
+      "characters": 9872400975
+    },
+    {
+      "form_type": "SCHEDULE 13G/A",
+      "filings": 18090,
+      "characters": 217953543
+    },
+    {
+      "form_type": "13F-HR",
+      "filings": 16846,
+      "characters": 675986445
+    },
+    {
+      "form_type": "D",
+      "filings": 15757,
+      "characters": 162632931
+    },
+    {
+      "form_type": "6-K",
+      "filings": 13016,
+      "characters": 830925143
+    },
+    {
+      "form_type": "3",
+      "filings": 12817,
+      "characters": 95313722
+    },
+    {
+      "form_type": "497K",
+      "filings": 12196,
+      "characters": 362685464
+    },
+    {
+      "form_type": "FWP",
+      "filings": 11230,
+      "characters": 449721649
+    },
+    {
+      "form_type": "D/A",
+      "filings": 11098,
+      "characters": 121889024
+    },
+    {
+      "form_type": "40-APP/A",
+      "filings": 10324,
+      "characters": 3616498210
+    },
+    {
+      "form_type": "SCHEDULE 13G",
+      "filings": 7876,
+      "characters": 96104875
+    },
+    {
+      "form_type": "497",
+      "filings": 6765,
+      "characters": 1266348603
+    },
+    {
+      "form_type": "10-Q",
+      "filings": 6365,
+      "characters": 1401014233
+    },
+    {
+      "form_type": "10-K",
+      "filings": 5870,
+      "characters": 3853186041
+    },
+    {
+      "form_type": "40-APP",
+      "filings": 5538,
+      "characters": 1573493665
+    },
+    {
+      "form_type": "424B3",
+      "filings": 5036,
+      "characters": 1091824671
+    },
+    {
+      "form_type": "10-D",
+      "filings": 4721,
+      "characters": 3431036225
+    },
+    {
+      "form_type": "DEFA14A",
+      "filings": 4649,
+      "characters": 97452207
+    },
+    {
+      "form_type": "SCHEDULE 13D/A",
+      "filings": 4320,
+      "characters": 116055920
+    },
+    {
+      "form_type": "DEF 14A",
+      "filings": 4010,
+      "characters": 1113745220
+    },
+    {
+      "form_type": "ABS-EE",
+      "filings": 3848,
+      "characters": 12270118302
+    },
+    {
+      "form_type": "13F-NT",
+      "filings": 3756,
+      "characters": 12937468
+    },
+    {
+      "form_type": "424B5",
+      "filings": 3637,
+      "characters": 1418105987
+    },
+    {
+      "form_type": "4/A",
+      "filings": 3383,
+      "characters": 23857921
+    },
+    {
+      "form_type": "24F-2NT",
+      "filings": 3042,
+      "characters": 16096877
+    },
+    {
+      "form_type": "497J",
+      "filings": 3032,
+      "characters": 13028096
+    },
+    {
+      "form_type": "485BPOS",
+      "filings": 3009,
+      "characters": 3411467076
+    },
+    {
+      "form_type": "ARS",
+      "filings": 2693,
+      "characters": 823193003
+    },
+    {
+      "form_type": "X-17A-5",
+      "filings": 2536,
+      "characters": 51157513
+    },
+    {
+      "form_type": "EFFECT",
+      "filings": 2312,
+      "characters": 14305181
+    },
+    {
+      "form_type": "N-CEN",
+      "filings": 2295,
+      "characters": 452634914
+    },
+    {
+      "form_type": "CORRESP",
+      "filings": 2276,
+      "characters": 18883314
+    },
+    {
+      "form_type": "5",
+      "filings": 2233,
+      "characters": 14139500
+    },
+    {
+      "form_type": "425",
+      "filings": 2061,
+      "characters": 138307245
+    },
+    {
+      "form_type": "N-CSR",
+      "filings": 1853,
+      "characters": 1035784096
+    },
+    {
+      "form_type": "N-MFP3",
+      "filings": 1849,
+      "characters": 456251904
+    },
+    {
+      "form_type": "ABS-15G",
+      "filings": 1753,
+      "characters": 1299164868
+    },
+    {
+      "form_type": "497VPU",
+      "filings": 1753,
+      "characters": 69347805
+    },
+    {
+      "form_type": "S-8",
+      "filings": 1516,
+      "characters": 81277456
+    },
+    {
+      "form_type": "UPLOAD",
+      "filings": 1347,
+      "characters": 6632419
+    },
+    {
+      "form_type": "N-CSRS",
+      "filings": 1282,
+      "characters": 488183016
+    },
+    {
+      "form_type": "SCHEDULE 13D",
+      "filings": 1046,
+      "characters": 41084487
+    },
+    {
+      "form_type": "SD",
+      "filings": 1026,
+      "characters": 33590586
+    },
+    {
+      "form_type": "PRE 14A",
+      "filings": 971,
+      "characters": 259171430
+    },
+    {
+      "form_type": "485BXT",
+      "filings": 946,
+      "characters": 10030303
+    },
+    {
+      "form_type": "POSASR",
+      "filings": 939,
+      "characters": 270467043
+    },
+    {
+      "form_type": "S-8 POS",
+      "filings": 897,
+      "characters": 18258210
+    },
+    {
+      "form_type": "497VPI",
+      "filings": 895,
+      "characters": 52602068
+    },
+    {
+      "form_type": "40-17G",
+      "filings": 883,
+      "characters": 205733152
+    },
+    {
+      "form_type": "1-U",
+      "filings": 878,
+      "characters": 11801483
+    },
+    {
+      "form_type": "20-F",
+      "filings": 877,
+      "characters": 932531463
+    },
+    {
+      "form_type": "8-A12B",
+      "filings": 781,
+      "characters": 14581685
+    },
+    {
+      "form_type": "S-1/A",
+      "filings": 763,
+      "characters": 622102292
+    },
+    {
+      "form_type": "POS AM",
+      "filings": 759,
+      "characters": 213881442
+    },
+    {
+      "form_type": "DFAN14A",
+      "filings": 728,
+      "characters": 19239656
+    },
+    {
+      "form_type": "25-NSE",
+      "filings": 725,
+      "characters": 3897005
+    },
+    {
+      "form_type": "C-AR",
+      "filings": 705,
+      "characters": 54450388
+    },
+    {
+      "form_type": "8-K/A",
+      "filings": 703,
+      "characters": 105218171
+    },
+    {
+      "form_type": "CERT",
+      "filings": 690,
+      "characters": 1239225
+    },
+    {
+      "form_type": "C/A",
+      "filings": 665,
+      "characters": 91285610
+    },
+    {
+      "form_type": "N-VPFS",
+      "filings": 662,
+      "characters": 236222703
+    },
+    {
+      "form_type": "13F-HR/A",
+      "filings": 649,
+      "characters": 57768707
+    },
+    {
+      "form_type": "MA-I/A",
+      "filings": 616,
+      "characters": 7453825
+    },
+    {
+      "form_type": "NT 10-K",
+      "filings": 584,
+      "characters": 4205703
+    },
+    {
+      "form_type": "10-K/A",
+      "filings": 566,
+      "characters": 93816062
+    },
+    {
+      "form_type": "3/A",
+      "filings": 554,
+      "characters": 5457448
+    },
+    {
+      "form_type": "19B-4E",
+      "filings": 549,
+      "characters": 584355
+    },
+    {
+      "form_type": "485APOS",
+      "filings": 537,
+      "characters": 426060252
+    },
+    {
+      "form_type": "C",
+      "filings": 525,
+      "characters": 80575486
+    },
+    {
+      "form_type": "S-6",
+      "filings": 499,
+      "characters": 32783278
+    },
+    {
+      "form_type": "NT 10-Q",
+      "filings": 496,
+      "characters": 3467494
+    },
+    {
+      "form_type": "S-1",
+      "filings": 477,
+      "characters": 437169409
+    },
+    {
+      "form_type": "S-3",
+      "filings": 469,
+      "characters": 153474357
+    },
+    {
+      "form_type": "S-3ASR",
+      "filings": 468,
+      "characters": 166546850
+    },
+    {
+      "form_type": "F-1/A",
+      "filings": 459,
+      "characters": 351491488
+    },
+    {
+      "form_type": "C-U",
+      "filings": 434,
+      "characters": 1854250
+    },
+    {
+      "form_type": "PX14A6G",
+      "filings": 434,
+      "characters": 8136947
+    },
+    {
+      "form_type": "1-K",
+      "filings": 431,
+      "characters": 53306755
+    },
+    {
+      "form_type": "487",
+      "filings": 414,
+      "characters": 94038616
+    },
+    {
+      "form_type": "N-VP",
+      "filings": 413,
+      "characters": 16139084
+    },
+    {
+      "form_type": "ABS-15G/A",
+      "filings": 408,
+      "characters": 2708321627
+    },
+    {
+      "form_type": "FOCUSN",
+      "filings": 396,
+      "characters": 517602
+    },
+    {
+      "form_type": "11-K",
+      "filings": 351,
+      "characters": 16939654
+    },
+    {
+      "form_type": "MA-A",
+      "filings": 350,
+      "characters": 4181692
+    },
+    {
+      "form_type": "S-4/A",
+      "filings": 349,
+      "characters": 731775288
+    },
+    {
+      "form_type": "SC TO-I/A",
+      "filings": 334,
+      "characters": 4647987
+    },
+    {
+      "form_type": "144/A",
+      "filings": 324,
+      "characters": 2073504
+    },
+    {
+      "form_type": "40-17F2",
+      "filings": 308,
+      "characters": 6508429
+    },
+    {
+      "form_type": "424B4",
+      "filings": 289,
+      "characters": 206878116
+    },
+    {
+      "form_type": "SC TO-I",
+      "filings": 267,
+      "characters": 34787189
+    },
+    {
+      "form_type": "SC TO-T/A",
+      "filings": 264,
+      "characters": 9213494
+    },
+    {
+      "form_type": "NPORT-P/A",
+      "filings": 260,
+      "characters": 153525190
+    },
+    {
+      "form_type": "APP WD",
+      "filings": 256,
+      "characters": 15225983
+    },
+    {
+      "form_type": "POS EX",
+      "filings": 250,
+      "characters": 21812109
+    },
+    {
+      "form_type": "TA-2",
+      "filings": 249,
+      "characters": 1386489
+    },
+    {
+      "form_type": "F-6EF",
+      "filings": 234,
+      "characters": 16221594
+    },
+    {
+      "form_type": "N-23C3A",
+      "filings": 231,
+      "characters": 7008604
+    },
+    {
+      "form_type": "DRS",
+      "filings": 218,
+      "characters": 158628771
+    },
+    {
+      "form_type": "DRS/A",
+      "filings": 209,
+      "characters": 264009166
+    },
+    {
+      "form_type": "15-12G",
+      "filings": 207,
+      "characters": 688626
+    },
+    {
+      "form_type": "253G2",
+      "filings": 200,
+      "characters": 25890381
+    },
+    {
+      "form_type": "1/A",
+      "filings": 199,
+      "characters": 191749
+    },
+    {
+      "form_type": "N-30B-2",
+      "filings": 188,
+      "characters": 1614740
+    },
+    {
+      "form_type": "MA-I",
+      "filings": 178,
+      "characters": 2133594
+    },
+    {
+      "form_type": "RW",
+      "filings": 177,
+      "characters": 633853
+    },
+    {
+      "form_type": "1-A/A",
+      "filings": 175,
+      "characters": 75888721
+    },
+    {
+      "form_type": "S-4",
+      "filings": 164,
+      "characters": 245190706
+    },
+    {
+      "form_type": "F-6 POS",
+      "filings": 164,
+      "characters": 12903320
+    },
+    {
+      "form_type": "F-1",
+      "filings": 164,
+      "characters": 165635080
+    },
+    {
+      "form_type": "N-PX",
+      "filings": 160,
+      "characters": 9021004
+    },
+    {
+      "form_type": "S-3/A",
+      "filings": 160,
+      "characters": 40245923
+    },
+    {
+      "form_type": "N-2/A",
+      "filings": 159,
+      "characters": 129834287
+    },
+    {
+      "form_type": "T-3",
+      "filings": 156,
+      "characters": 859977388
+    },
+    {
+      "form_type": "DEF 14C",
+      "filings": 154,
+      "characters": 18312968
+    },
+    {
+      "form_type": "497AD",
+      "filings": 153,
+      "characters": 2012476
+    },
+    {
+      "form_type": "424H",
+      "filings": 153,
+      "characters": 247282551
+    },
+    {
+      "form_type": "NT 20-F",
+      "filings": 147,
+      "characters": 1037510
+    },
+    {
+      "form_type": "IRANNOTICE",
+      "filings": 141,
+      "characters": 314134
+    },
+    {
+      "form_type": "N-MFP3/A",
+      "filings": 137,
+      "characters": 31396380
+    },
+    {
+      "form_type": "F-4/A",
+      "filings": 137,
+      "characters": 316767617
+    },
+    {
+      "form_type": "6-K/A",
+      "filings": 133,
+      "characters": 11728471
+    },
+    {
+      "form_type": "T-3/A",
+      "filings": 133,
+      "characters": 250395074
+    },
+    {
+      "form_type": "DEFR14A",
+      "filings": 130,
+      "characters": 14312723
+    },
+    {
+      "form_type": "40-17G/A",
+      "filings": 126,
+      "characters": 20688049
+    },
+    {
+      "form_type": "N-CEN/A",
+      "filings": 121,
+      "characters": 61179770
+    },
+    {
+      "form_type": "40-F",
+      "filings": 121,
+      "characters": 96031110
+    },
+    {
+      "form_type": "1-A POS",
+      "filings": 120,
+      "characters": 58940915
+    },
+    {
+      "form_type": "10-Q/A",
+      "filings": 115,
+      "characters": 15064791
+    },
+    {
+      "form_type": "QUALIF",
+      "filings": 112,
+      "characters": 150524
+    },
+    {
+      "form_type": "PREC14A",
+      "filings": 112,
+      "characters": 16816111
+    },
+    {
+      "form_type": "424B8",
+      "filings": 110,
+      "characters": 8586755
+    },
+    {
+      "form_type": "SEC STAFF ACTION",
+      "filings": 109,
+      "characters": 217455
+    },
+    {
+      "form_type": "F-3",
+      "filings": 107,
+      "characters": 34224350
+    },
+    {
+      "form_type": "DEFC14A",
+      "filings": 104,
+      "characters": 15845302
+    },
+    {
+      "form_type": "C-TR",
+      "filings": 104,
+      "characters": 294123
+    },
+    {
+      "form_type": "POS AMI",
+      "filings": 103,
+      "characters": 45540762
+    },
+    {
+      "form_type": "SC 14D9/A",
+      "filings": 100,
+      "characters": 2287431
+    },
+    {
+      "form_type": "TA-1/A",
+      "filings": 99,
+      "characters": 8646145
+    },
+    {
+      "form_type": "PRER14A",
+      "filings": 96,
+      "characters": 43423373
+    },
+    {
+      "form_type": "SC TO-C",
+      "filings": 96,
+      "characters": 7789911
+    },
+    {
+      "form_type": "AW",
+      "filings": 95,
+      "characters": 273382
+    },
+    {
+      "form_type": "486BPOS",
+      "filings": 95,
+      "characters": 90955681
+    },
+    {
+      "form_type": "DEFM14A",
+      "filings": 94,
+      "characters": 159616529
+    },
+    {
+      "form_type": "424B7",
+      "filings": 93,
+      "characters": 15915913
+    },
+    {
+      "form_type": "PRE 14C",
+      "filings": 92,
+      "characters": 7893966
+    },
+    {
+      "form_type": "F-X",
+      "filings": 92,
+      "characters": 753532
+    },
+    {
+      "form_type": "S-6/A",
+      "filings": 91,
+      "characters": 24810864
+    },
+    {
+      "form_type": "X-17A-5/A",
+      "filings": 91,
+      "characters": 2738228
+    },
+    {
+      "form_type": "N-30D",
+      "filings": 89,
+      "characters": 1652529
+    },
+    {
+      "form_type": "N-2",
+      "filings": 88,
+      "characters": 72320834
+    },
+    {
+      "form_type": "497VPSUB",
+      "filings": 88,
+      "characters": 936452
+    },
+    {
+      "form_type": "N-CSR/A",
+      "filings": 85,
+      "characters": 38262516
+    },
+    {
+      "form_type": "15-15D",
+      "filings": 83,
+      "characters": 502566
+    },
+    {
+      "form_type": "DSTRBRPT",
+      "filings": 81,
+      "characters": 3747852
+    },
+    {
+      "form_type": "MA/A",
+      "filings": 80,
+      "characters": 1835892
+    },
+    {
+      "form_type": "1-A",
+      "filings": 76,
+      "characters": 40719284
+    },
+    {
+      "form_type": "CB/A",
+      "filings": 74,
+      "characters": 14145954
+    },
+    {
+      "form_type": "APP NTC",
+      "filings": 73,
+      "characters": 364892
+    },
+    {
+      "form_type": "N-14",
+      "filings": 71,
+      "characters": 51070268
+    },
+    {
+      "form_type": "424I",
+      "filings": 69,
+      "characters": 414854
+    },
+    {
+      "form_type": "20-F/A",
+      "filings": 69,
+      "characters": 22410550
+    },
+    {
+      "form_type": "25",
+      "filings": 67,
+      "characters": 236719
+    },
+    {
+      "form_type": "18-K/A",
+      "filings": 66,
+      "characters": 13530618
+    },
+    {
+      "form_type": "ATS-N/UA",
+      "filings": 66,
+      "characters": 7382089
+    },
+    {
+      "form_type": "SUPPL",
+      "filings": 62,
+      "characters": 18393637
+    },
+    {
+      "form_type": "SC 13E3/A",
+      "filings": 60,
+      "characters": 6420540
+    },
+    {
+      "form_type": "APP ORDR",
+      "filings": 60,
+      "characters": 245326
+    },
+    {
+      "form_type": "N-23C-2",
+      "filings": 59,
+      "characters": 270278
+    },
+    {
+      "form_type": "N-8A",
+      "filings": 59,
+      "characters": 447409
+    },
+    {
+      "form_type": "F-3/A",
+      "filings": 58,
+      "characters": 14835304
+    },
+    {
+      "form_type": "10-D/A",
+      "filings": 58,
+      "characters": 6841625
+    },
+    {
+      "form_type": "305B2",
+      "filings": 57,
+      "characters": 2361622
+    },
+    {
+      "form_type": "NT NPORT-P",
+      "filings": 57,
+      "characters": 3079056
+    },
+    {
+      "form_type": "SBSE-A/A",
+      "filings": 56,
+      "characters": 6456434
+    },
+    {
+      "form_type": "REVOKED",
+      "filings": 54,
+      "characters": 572502
+    },
+    {
+      "form_type": "F-6",
+      "filings": 54,
+      "characters": 14124992
+    },
+    {
+      "form_type": "SC TO-T",
+      "filings": 52,
+      "characters": 24679522
+    },
+    {
+      "form_type": "PRRN14A",
+      "filings": 52,
+      "characters": 6346528
+    },
+    {
+      "form_type": "5/A",
+      "filings": 51,
+      "characters": 317936
+    },
+    {
+      "form_type": "PREM14A",
+      "filings": 51,
+      "characters": 56674124
+    },
+    {
+      "form_type": "SC14D9C",
+      "filings": 50,
+      "characters": 1771659
+    },
+    {
+      "form_type": "10-12G/A",
+      "filings": 49,
+      "characters": 37099413
+    },
+    {
+      "form_type": "F-4",
+      "filings": 47,
+      "characters": 106488596
+    },
+    {
+      "form_type": "F-3ASR",
+      "filings": 46,
+      "characters": 19763542
+    },
+    {
+      "form_type": "DFRN14A",
+      "filings": 46,
+      "characters": 678818
+    },
+    {
+      "form_type": "N-VP/A",
+      "filings": 44,
+      "characters": 218212
+    },
+    {
+      "form_type": "C-W",
+      "filings": 43,
+      "characters": 58631
+    },
+    {
+      "form_type": "S-1MEF",
+      "filings": 40,
+      "characters": 1069361
+    },
+    {
+      "form_type": "40-6B/A",
+      "filings": 38,
+      "characters": 6872235
+    },
+    {
+      "form_type": "SF-3/A",
+      "filings": 38,
+      "characters": 50020854
+    },
+    {
+      "form_type": "40-24B2",
+      "filings": 35,
+      "characters": 225369
+    },
+    {
+      "form_type": "CB",
+      "filings": 35,
+      "characters": 9649288
+    },
+    {
+      "form_type": "F-10",
+      "filings": 35,
+      "characters": 21359193
+    },
+    {
+      "form_type": "8-A12B/A",
+      "filings": 34,
+      "characters": 269193
+    },
+    {
+      "form_type": "10-12G",
+      "filings": 33,
+      "characters": 25439440
+    },
+    {
+      "form_type": "SEC STAFF LETTER",
+      "filings": 31,
+      "characters": 65719
+    },
+    {
+      "form_type": "SF-3",
+      "filings": 28,
+      "characters": 52337328
+    },
+    {
+      "form_type": "SC 14D9",
+      "filings": 28,
+      "characters": 6594644
+    },
+    {
+      "form_type": "N-14 8C/A",
+      "filings": 28,
+      "characters": 22391067
+    },
+    {
+      "form_type": "N-8F",
+      "filings": 27,
+      "characters": 454303
+    },
+    {
+      "form_type": "DEL AM",
+      "filings": 26,
+      "characters": 73989
+    },
+    {
+      "form_type": "40-17F1",
+      "filings": 25,
+      "characters": 507461
+    },
+    {
+      "form_type": "N-8F NTC",
+      "filings": 24,
+      "characters": 153653
+    },
+    {
+      "form_type": "ABS-EE/A",
+      "filings": 24,
+      "characters": 51015560
+    },
+    {
+      "form_type": "N-1A/A",
+      "filings": 24,
+      "characters": 46030715
+    },
+    {
+      "form_type": "486APOS",
+      "filings": 24,
+      "characters": 18536488
+    },
+    {
+      "form_type": "NT-NCSR",
+      "filings": 24,
+      "characters": 167808
+    },
+    {
+      "form_type": "CFPORTAL/A",
+      "filings": 24,
+      "characters": 126950
+    },
+    {
+      "form_type": "1-A-W",
+      "filings": 23,
+      "characters": 61096
+    },
+    {
+      "form_type": "APP WDG",
+      "filings": 22,
+      "characters": 38536
+    },
+    {
+      "form_type": "N-4",
+      "filings": 22,
+      "characters": 9054358
+    },
+    {
+      "form_type": "TA-2/A",
+      "filings": 22,
+      "characters": 125846
+    },
+    {
+      "form_type": "DRSLTR",
+      "filings": 21,
+      "characters": 217638
+    },
+    {
+      "form_type": "N-8F ORDR",
+      "filings": 19,
+      "characters": 47196
+    },
+    {
+      "form_type": "N-14/A",
+      "filings": 19,
+      "characters": 22276867
+    },
+    {
+      "form_type": "8-A12G",
+      "filings": 19,
+      "characters": 346308
+    },
+    {
+      "form_type": "1-SA",
+      "filings": 19,
+      "characters": 4461936
+    },
+    {
+      "form_type": "424B1",
+      "filings": 16,
+      "characters": 14539316
+    },
+    {
+      "form_type": "N-PX/A",
+      "filings": 16,
+      "characters": 15738
+    },
+    {
+      "form_type": "APP WD/A",
+      "filings": 16,
+      "characters": 448896
+    },
+    {
+      "form_type": "C-AR/A",
+      "filings": 16,
+      "characters": 2068153
+    },
+    {
+      "form_type": "N-14 8C",
+      "filings": 16,
+      "characters": 12461533
+    },
+    {
+      "form_type": "ATS-N/MA",
+      "filings": 15,
+      "characters": 928525
+    },
+    {
+      "form_type": "N-2ASR",
+      "filings": 15,
+      "characters": 12935268
+    },
+    {
+      "form_type": "N-8F/A",
+      "filings": 15,
+      "characters": 252565
+    },
+    {
+      "form_type": "ATS-N/CA",
+      "filings": 15,
+      "characters": 1911877
+    },
+    {
+      "form_type": "NRSRO-UPD",
+      "filings": 15,
+      "characters": 1653397
+    },
+    {
+      "form_type": "18-K",
+      "filings": 15,
+      "characters": 38985964
+    },
+    {
+      "form_type": "10-12B/A",
+      "filings": 14,
+      "characters": 15503234
+    },
+    {
+      "form_type": "NT N-CEN",
+      "filings": 14,
+      "characters": 1969501
+    },
+    {
+      "form_type": "ARS/A",
+      "filings": 13,
+      "characters": 3543531
+    },
+    {
+      "form_type": "N-1A",
+      "filings": 13,
+      "characters": 8122750
+    },
+    {
+      "form_type": "F-10/A",
+      "filings": 13,
+      "characters": 3156931
+    },
+    {
+      "form_type": "F-N",
+      "filings": 13,
+      "characters": 106289
+    },
+    {
+      "form_type": "SC 13E3",
+      "filings": 13,
+      "characters": 5835912
+    },
+    {
+      "form_type": "N-VPFS/A",
+      "filings": 13,
+      "characters": 4631901
+    },
+    {
+      "form_type": "MA-W",
+      "filings": 13,
+      "characters": 36060
+    },
+    {
+      "form_type": "253G1",
+      "filings": 12,
+      "characters": 4853776
+    },
+    {
+      "form_type": "1-U/A",
+      "filings": 12,
+      "characters": 553713
+    },
+    {
+      "form_type": "1-Z",
+      "filings": 12,
+      "characters": 25392
+    },
+    {
+      "form_type": "N-CSRS/A",
+      "filings": 12,
+      "characters": 3667725
+    },
+    {
+      "form_type": "40-F/A",
+      "filings": 12,
+      "characters": 3498628
+    },
+    {
+      "form_type": "DEFA14C",
+      "filings": 11,
+      "characters": 48192
+    },
+    {
+      "form_type": "S-11/A",
+      "filings": 11,
+      "characters": 14522538
+    },
+    {
+      "form_type": "N-6",
+      "filings": 11,
+      "characters": 5702198
+    },
+    {
+      "form_type": "DEFM14C",
+      "filings": 11,
+      "characters": 12856589
+    },
+    {
+      "form_type": "S-3DPOS",
+      "filings": 11,
+      "characters": 292915
+    },
+    {
+      "form_type": "CT ORDER",
+      "filings": 11,
+      "characters": 22071
+    },
+    {
+      "form_type": "F-6/A",
+      "filings": 10,
+      "characters": 1653436
+    },
+    {
+      "form_type": "NT-NCEN",
+      "filings": 10,
+      "characters": 79425
+    },
+    {
+      "form_type": "RW WD",
+      "filings": 10,
+      "characters": 26911
+    },
+    {
+      "form_type": "NRSRO-CE",
+      "filings": 10,
+      "characters": 1622593
+    },
+    {
+      "form_type": "PREM14C",
+      "filings": 10,
+      "characters": 8208050
+    },
+    {
+      "form_type": "SF-1/A",
+      "filings": 10,
+      "characters": 13674832
+    },
+    {
+      "form_type": "40-8B25",
+      "filings": 10,
+      "characters": 49206
+    },
+    {
+      "form_type": "N-4/A",
+      "filings": 10,
+      "characters": 8040275
+    },
+    {
+      "form_type": "TA-1",
+      "filings": 10,
+      "characters": 42326
+    },
+    {
+      "form_type": "PRER14C",
+      "filings": 10,
+      "characters": 1315266
+    },
+    {
+      "form_type": "SC 14F1",
+      "filings": 10,
+      "characters": 399740
+    },
+    {
+      "form_type": "F-1MEF",
+      "filings": 9,
+      "characters": 224060
+    },
+    {
+      "form_type": "NT 10-K/A",
+      "filings": 8,
+      "characters": 66349
+    },
+    {
+      "form_type": "G-FIN/A",
+      "filings": 8,
+      "characters": 8709
+    },
+    {
+      "form_type": "24F-2NT/A",
+      "filings": 8,
+      "characters": 52501
+    },
+    {
+      "form_type": "10-KT",
+      "filings": 8,
+      "characters": 4702612
+    },
+    {
+      "form_type": "SBSEF/A",
+      "filings": 8,
+      "characters": 295939
+    },
+    {
+      "form_type": "424H/A",
+      "filings": 8,
+      "characters": 5504246
+    },
+    {
+      "form_type": "20FR12B/A",
+      "filings": 7,
+      "characters": 6119652
+    },
+    {
+      "form_type": "8-K12B",
+      "filings": 7,
+      "characters": 4760311
+    },
+    {
+      "form_type": "TA-W",
+      "filings": 7,
+      "characters": 11387
+    },
+    {
+      "form_type": "1-K/A",
+      "filings": 6,
+      "characters": 1218130
+    },
+    {
+      "form_type": "NTFNCEN",
+      "filings": 6,
+      "characters": 40609
+    },
+    {
+      "form_type": "486BXT",
+      "filings": 6,
+      "characters": 60019
+    },
+    {
+      "form_type": "25-NSE/A",
+      "filings": 6,
+      "characters": 33388
+    },
+    {
+      "form_type": "ATS-N/OFA",
+      "filings": 6,
+      "characters": 262429
+    },
+    {
+      "form_type": "S-B",
+      "filings": 6,
+      "characters": 871746
+    },
+    {
+      "form_type": "N-54A",
+      "filings": 6,
+      "characters": 23547
+    },
+    {
+      "form_type": "S-11",
+      "filings": 6,
+      "characters": 9401612
+    },
+    {
+      "form_type": "QRTLYRPT",
+      "filings": 6,
+      "characters": 1734040
+    },
+    {
+      "form_type": "S-3MEF",
+      "filings": 6,
+      "characters": 225525
+    },
+    {
+      "form_type": "40-17GCS",
+      "filings": 6,
+      "characters": 40548
+    },
+    {
+      "form_type": "40-6B",
+      "filings": 5,
+      "characters": 439477
+    },
+    {
+      "form_type": "C-TR-W",
+      "filings": 5,
+      "characters": 7006
+    },
+    {
+      "form_type": "DOS/A",
+      "filings": 5,
+      "characters": 1761468
+    },
+    {
+      "form_type": "40FR12B",
+      "filings": 5,
+      "characters": 15715561
+    },
+    {
+      "form_type": "20FR12B",
+      "filings": 5,
+      "characters": 7254616
+    },
+    {
+      "form_type": "13F-NT/A",
+      "filings": 5,
+      "characters": 17266
+    },
+    {
+      "form_type": "8-A12G/A",
+      "filings": 5,
+      "characters": 42704
+    },
+    {
+      "form_type": "253G3",
+      "filings": 5,
+      "characters": 1647759
+    },
+    {
+      "form_type": "1-SA/A",
+      "filings": 4,
+      "characters": 392464
+    },
+    {
+      "form_type": "DEFN14A",
+      "filings": 4,
+      "characters": 211900
+    },
+    {
+      "form_type": "15F-12B",
+      "filings": 4,
+      "characters": 33550
+    },
+    {
+      "form_type": "SP 15D2",
+      "filings": 4,
+      "characters": 355635
+    },
+    {
+      "form_type": "PREN14A",
+      "filings": 4,
+      "characters": 253382
+    },
+    {
+      "form_type": "SF-1",
+      "filings": 4,
+      "characters": 6111006
+    },
+    {
+      "form_type": "S-B/A",
+      "filings": 4,
+      "characters": 307445
+    },
+    {
+      "form_type": "N-54C",
+      "filings": 4,
+      "characters": 21497
+    },
+    {
+      "form_type": "10-12B",
+      "filings": 4,
+      "characters": 6758291
+    },
+    {
+      "form_type": "N-6F/A",
+      "filings": 4,
+      "characters": 13687
+    },
+    {
+      "form_type": "N-6/A",
+      "filings": 4,
+      "characters": 4113167
+    },
+    {
+      "form_type": "40FR12B/A",
+      "filings": 4,
+      "characters": 2645609
+    },
+    {
+      "form_type": "NT 10-Q/A",
+      "filings": 4,
+      "characters": 25404
+    },
+    {
+      "form_type": "8-K12G3",
+      "filings": 4,
+      "characters": 1225417
+    },
+    {
+      "form_type": "DOS",
+      "filings": 3,
+      "characters": 3052568
+    },
+    {
+      "form_type": "C/A-W",
+      "filings": 3,
+      "characters": 4289
+    },
+    {
+      "form_type": "T-6/A",
+      "filings": 3,
+      "characters": 14377353
+    },
+    {
+      "form_type": "MSD/A",
+      "filings": 3,
+      "characters": 4008
+    },
+    {
+      "form_type": "F-X/A",
+      "filings": 3,
+      "characters": 24610
+    },
+    {
+      "form_type": "SBSE/A",
+      "filings": 3,
+      "characters": 39411
+    },
+    {
+      "form_type": "N-23C3A/A",
+      "filings": 3,
+      "characters": 84285
+    },
+    {
+      "form_type": "F-10EF",
+      "filings": 3,
+      "characters": 369279
+    },
+    {
+      "form_type": "SBSE-BD/A",
+      "filings": 3,
+      "characters": 3813
+    },
+    {
+      "form_type": "S-4MEF",
+      "filings": 3,
+      "characters": 63996
+    },
+    {
+      "form_type": "ANNLRPT",
+      "filings": 3,
+      "characters": 1260219
+    },
+    {
+      "form_type": "MA",
+      "filings": 3,
+      "characters": 24307
+    },
+    {
+      "form_type": "SC 14F1/A",
+      "filings": 2,
+      "characters": 9988
+    },
+    {
+      "form_type": "SC 14N",
+      "filings": 2,
+      "characters": 40824
+    },
+    {
+      "form_type": "15F-12G",
+      "filings": 2,
+      "characters": 22722
+    },
+    {
+      "form_type": "N-8B-2/A",
+      "filings": 2,
+      "characters": 28036
+    },
+    {
+      "form_type": "C-AR-W",
+      "filings": 2,
+      "characters": 3101
+    },
+    {
+      "form_type": "DSTRBRPT/A",
+      "filings": 2,
+      "characters": 70535
+    },
+    {
+      "form_type": "CFPORTAL-W",
+      "filings": 2,
+      "characters": 10344
+    },
+    {
+      "form_type": "1-A-W/A",
+      "filings": 2,
+      "characters": 4185
+    },
+    {
+      "form_type": "NT-NCEN/A",
+      "filings": 2,
+      "characters": 12465
+    },
+    {
+      "form_type": "F-3MEF",
+      "filings": 2,
+      "characters": 61811
+    },
+    {
+      "form_type": "AW WD",
+      "filings": 2,
+      "characters": 4737
+    },
+    {
+      "form_type": "40-33",
+      "filings": 2,
+      "characters": 143828
+    },
+    {
+      "form_type": "1",
+      "filings": 2,
+      "characters": 1889
+    },
+    {
+      "form_type": "8-K15D5/A",
+      "filings": 2,
+      "characters": 57667
+    },
+    {
+      "form_type": "N-8A/A",
+      "filings": 2,
+      "characters": 231463
+    },
+    {
+      "form_type": "N-18F1",
+      "filings": 2,
+      "characters": 4349
+    },
+    {
+      "form_type": "ANNLRPT/A",
+      "filings": 2,
+      "characters": 1044196
+    },
+    {
+      "form_type": "S-11MEF",
+      "filings": 1,
+      "characters": 30345
+    },
+    {
+      "form_type": "15-15D/A",
+      "filings": 1,
+      "characters": 3301
+    },
+    {
+      "form_type": "6B NTC",
+      "filings": 1,
+      "characters": 4729
+    },
+    {
+      "form_type": "ADV-H-T",
+      "filings": 1,
+      "characters": 1152
+    },
+    {
+      "form_type": "FOCUSN/A",
+      "filings": 1,
+      "characters": 1445
+    },
+    {
+      "form_type": "424A",
+      "filings": 1,
+      "characters": 340616
+    },
+    {
+      "form_type": "N-2MEF",
+      "filings": 1,
+      "characters": 21500
+    },
+    {
+      "form_type": "S-4 POS",
+      "filings": 1,
+      "characters": 30994
+    },
+    {
+      "form_type": "SD/A",
+      "filings": 1,
+      "characters": 57503
+    },
+    {
+      "form_type": "NT-NCSR/A",
+      "filings": 1,
+      "characters": 6573
+    },
+    {
+      "form_type": "305B2/A",
+      "filings": 1,
+      "characters": 44846
+    },
+    {
+      "form_type": "40-17F2/A",
+      "filings": 1,
+      "characters": 211144
+    },
+    {
+      "form_type": "17AD-27",
+      "filings": 1,
+      "characters": 179756
+    },
+    {
+      "form_type": "10-KT/A",
+      "filings": 1,
+      "characters": 68863
+    },
+    {
+      "form_type": "8-K15D5",
+      "filings": 1,
+      "characters": 1930523
+    },
+    {
+      "form_type": "T-6",
+      "filings": 1,
+      "characters": 4792572
+    },
+    {
+      "form_type": "C-U-W",
+      "filings": 1,
+      "characters": 1537
+    },
+    {
+      "form_type": "NT 15D2",
+      "filings": 1,
+      "characters": 8554
+    },
+    {
+      "form_type": "15-12G/A",
+      "filings": 1,
+      "characters": 3639
+    },
+    {
+      "form_type": "DEFR14C",
+      "filings": 1,
+      "characters": 35457
+    },
+    {
+      "form_type": "8-K12B/A",
+      "filings": 1,
+      "characters": 7170
+    },
+    {
+      "form_type": "NTFNCSR",
+      "filings": 1,
+      "characters": 9469
+    },
+    {
+      "form_type": "F-10POS",
+      "filings": 1,
+      "characters": 7589
+    },
+    {
+      "form_type": "15F-15D",
+      "filings": 1,
+      "characters": 3532
+    },
+    {
+      "form_type": "F-3D",
+      "filings": 1,
+      "characters": 148988
+    },
+    {
+      "form_type": "NT 20-F/A",
+      "filings": 1,
+      "characters": 9705
+    },
+    {
+      "form_type": "SBSE-BD",
+      "filings": 1,
+      "characters": 19016
+    },
+    {
+      "form_type": "SBSE-C",
+      "filings": 1,
+      "characters": 1254
+    },
+    {
+      "form_type": "40FR12G",
+      "filings": 1,
+      "characters": 1481955
+    },
+    {
+      "form_type": "F-3DPOS",
+      "filings": 1,
+      "characters": 7099
+    },
+    {
+      "form_type": "11-K/A",
+      "filings": 1,
+      "characters": 41651
+    }
+  ],
+  "selected": [
+    {
+      "form_type": "10-Q",
+      "filings": 6365,
+      "characters": 1401014233
+    },
+    {
+      "form_type": "10-K",
+      "filings": 5870,
+      "characters": 3853186041
+    }
+  ],
+  "amendments": [
+    {
+      "form_type": "10-K/A",
+      "filings": 566,
+      "characters": 93816062
+    },
+    {
+      "form_type": "10-Q/A",
+      "filings": 115,
+      "characters": 15064791
+    }
+  ],
+  "elapsed_seconds": 245.0
+}

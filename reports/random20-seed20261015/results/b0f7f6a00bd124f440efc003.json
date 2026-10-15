@@ -1,0 +1,117 @@
+{
+  "question_id": "Q028",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.05949313100063591,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "For fiscal year 2024, Citigroup reported (in **millions of dollars**):\n\n| Measure | 2024 |\n|---|---:|\n| Net interest income | **$54,095 million** |\n| Non-interest revenue | **$27,044 million** |\n| Revenues net of interest expense | **$81,139 million** |\n\nCalculation: non-interest revenue = total revenues net of interest expense \u2212 net interest income = **$81,139 million \u2212 $54,095 million = $27,044 million**.\n\nSources: Citigroup 2024 Form 10-K, accession **0000831001-25-000067**, \u201cInterest Income and Expense,\u201d chunk **107** (net interest income); \u201cPerformance by Geographic Area,\u201d chunk **106** (total revenues net of interest expense).",
+    "message": {
+      "role": "assistant",
+      "content": "For fiscal year 2024, Citigroup reported (in **millions of dollars**):\n\n| Measure | 2024 |\n|---|---:|\n| Net interest income | **$54,095 million** |\n| Non-interest revenue | **$27,044 million** |\n| Revenues net of interest expense | **$81,139 million** |\n\nCalculation: non-interest revenue = total revenues net of interest expense \u2212 net interest income = **$81,139 million \u2212 $54,095 million = $27,044 million**.\n\nSources: Citigroup 2024 Form 10-K, accession **0000831001-25-000067**, \u201cInterest Income and Expense,\u201d chunk **107** (net interest income); \u201cPerformance by Geographic Area,\u201d chunk **106** (total revenues net of interest expense).",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:18.158056+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "b0f7f6a00bd124f440efc003:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041915-C9Uz5h52c1n5grEqXGLk",
+    "usage": {
+      "prompt_tokens": 17072,
+      "completion_tokens": 172,
+      "total_tokens": 17244,
+      "cost": 0.00025699,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 17069,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00025699,
+        "upstream_inference_prompt_cost": 0.00017099,
+        "upstream_inference_completions_cost": 8.6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.115329334000307,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 85, \"rationale\": \"All three figures match the reference: net interest income $54,095M, total revenues net of interest expense $81,139M, and non-interest revenue $27,044M. The candidate derives non-interest revenue as total revenues minus NII, which is valid because revenues net of interest expense equal NII plus non-interest revenue, and the arithmetic checks out. The cited chunks are present in the retrieved excerpts: chunk 107 shows NII of $54,095M in the Interest Income and Expense note, and chunk 106 shows Total Citi revenues of $81,139M in the Performance by Geographic Area table. The gold evidence points to the Executive Summary table, which is not the source the candidate named, but the $81,139M figure also appears in the retrieved segment revenue table. The retrieved text does not directly show the $27,044M non-interest revenue figure, so that number rests on the derivation rather than a quoted source. Support is therefore strong but not complete.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 85, \"rationale\": \"All three figures match the reference: net interest income $54,095M, total revenues net of interest expense $81,139M, and non-interest revenue $27,044M. The candidate derives non-interest revenue as total revenues minus NII, which is valid because revenues net of interest expense equal NII plus non-interest revenue, and the arithmetic checks out. The cited chunks are present in the retrieved excerpts: chunk 107 shows NII of $54,095M in the Interest Income and Expense note, and chunk 106 shows Total Citi revenues of $81,139M in the Performance by Geographic Area table. The gold evidence points to the Executive Summary table, which is not the source the candidate named, but the $81,139M figure also appears in the retrieved segment revenue table. The retrieved text does not directly show the $27,044M non-interest revenue figure, so that number rests on the derivation rather than a quoted source. Support is therefore strong but not complete.\"}",
+      "refusal": null,
+      "reasoning": "The numbers check out: 81,139 minus 54,095 equals 27,044, so the non-interest revenue derivation is arithmetically valid even though the filing doesn't state it explicitly. The citation for NII traces to the \"Interest Income and Expense\" chunk, while the gold evidence comes from the executive summary table showing total revenues of 81,139.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The numbers check out: 81,139 minus 54,095 equals 27,044, so the non-interest revenue derivation is arithmetically valid even though the filing doesn't state it explicitly. The citation for NII traces to the \"Interest Income and Expense\" chunk, while the gold evidence comes from the executive summary table showing total revenues of 81,139.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:41.236146+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "b0f7f6a00bd124f440efc003:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042114-kZJo0dVsA4JZrGnMsbzR",
+    "usage": {
+      "prompt_tokens": 26161,
+      "completion_tokens": 725,
+      "total_tokens": 26886,
+      "cost": 0.0029786,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029786,
+        "upstream_inference_prompt_cost": 0.0026161,
+        "upstream_inference_completions_cost": 0.0003625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 390,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 7.762126704000366,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 85,
+    "rationale": "All three figures match the reference: net interest income $54,095M, total revenues net of interest expense $81,139M, and non-interest revenue $27,044M. The candidate derives non-interest revenue as total revenues minus NII, which is valid because revenues net of interest expense equal NII plus non-interest revenue, and the arithmetic checks out. The cited chunks are present in the retrieved excerpts: chunk 107 shows NII of $54,095M in the Interest Income and Expense note, and chunk 106 shows Total Citi revenues of $81,139M in the Performance by Geographic Area table. The gold evidence points to the Executive Summary table, which is not the source the candidate named, but the $81,139M figure also appears in the retrieved segment revenue table. The retrieved text does not directly show the $27,044M non-interest revenue figure, so that number rests on the derivation rather than a quoted source. Support is therefore strong but not complete."
+  },
+  "status": "ok"
+}

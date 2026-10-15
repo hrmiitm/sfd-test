@@ -1,0 +1,463 @@
+{
+  "question_id": "Q026",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 0.028807685000174388,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Levi Strauss & Co. reported **SG&A expenses of $3,246.2 million** for fiscal 2024, equal to **51.1% of net revenues**. The 10-K gives net revenues of $6,355.3 million and reports the SG&A percentage directly; the calculation is $3,246.2 million \u00f7 $6,355.3 million \u2248 51.1%.\n\n**Source:** Form 10-K, accession **0000094845-25-000005**, chunk **7800a9af-162a-5e50-b146-b4ba64b4b763**.",
+    "usage": {
+      "prompt_tokens": 11232,
+      "completion_tokens": 173,
+      "total_tokens": 11405,
+      "cost": 0.001470375
+    },
+    "seconds": 5.846194187999572,
+    "tool_seconds": 0.028807685000174388,
+    "tool_calls": 1,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_3IKkme4Vq4tWDovseYVMKw5k",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Levi Strauss & Co fiscal 2024 selling general and administrative expenses net revenues percentage SG&A\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_3IKkme4Vq4tWDovseYVMKw5k",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Levi Strauss & Co fiscal 2024 selling general and administrative expenses net revenues percentage SG&A\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:25:05.458298+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "0e4b53783dd45a17f72d82c8:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041904-9vIlkZdXk9aDRJPm1NPh",
+        "usage": {
+          "prompt_tokens": 802,
+          "completion_tokens": 36,
+          "total_tokens": 838,
+          "cost": 9.82e-05,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 9.82e-05,
+            "upstream_inference_prompt_cost": 8.02e-05,
+            "upstream_inference_completions_cost": 1.8e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.7736818630000926,
+        "attempts": 1
+      },
+      {
+        "text": "Levi Strauss & Co. reported **SG&A expenses of $3,246.2 million** for fiscal 2024, equal to **51.1% of net revenues**. The 10-K gives net revenues of $6,355.3 million and reports the SG&A percentage directly; the calculation is $3,246.2 million \u00f7 $6,355.3 million \u2248 51.1%.\n\n**Source:** Form 10-K, accession **0000094845-25-000005**, chunk **7800a9af-162a-5e50-b146-b4ba64b4b763**.",
+        "message": {
+          "role": "assistant",
+          "content": "Levi Strauss & Co. reported **SG&A expenses of $3,246.2 million** for fiscal 2024, equal to **51.1% of net revenues**. The 10-K gives net revenues of $6,355.3 million and reports the SG&A percentage directly; the calculation is $3,246.2 million \u00f7 $6,355.3 million \u2248 51.1%.\n\n**Source:** Form 10-K, accession **0000094845-25-000005**, chunk **7800a9af-162a-5e50-b146-b4ba64b4b763**.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:28:24.818315+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "0e4b53783dd45a17f72d82c8:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042102-tGhooVD64Rtpf6saxCjp",
+        "usage": {
+          "prompt_tokens": 10430,
+          "completion_tokens": 137,
+          "total_tokens": 10567,
+          "cost": 0.001372175,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 10427,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001372175,
+            "upstream_inference_prompt_cost": 0.001303675,
+            "upstream_inference_completions_cost": 6.85e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.0725123249994795,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_3IKkme4Vq4tWDovseYVMKw5k",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Levi Strauss & Co fiscal 2024 selling general and administrative expenses net revenues percentage SG&A\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000094845-25-000005",
+              "cik": "0000094845",
+              "company": "LEVI STRAUSS & CO",
+              "form_type": "10-K",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 67950,
+              "source_md5": "74e4835ff3e92c25f4c32c4edd415474",
+              "content_sha256": "4a2dd614858cd692cc96fb5946124b43d2f73009193b63c6632e0743695f56f3",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "4fb65daa-9ad1-54b8-8623-119ee7c45444",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 50,
+              "char_start": 431583,
+              "char_end": 439684,
+              "text": "Net sales to the Company's ten largest customers for fiscal year 2024, fiscal year 2023, and fiscal year 2022, totaled 26%, 28% and 31% of net revenues for those fiscal years, respectively. No customer represented 10% or more of net revenues in any of these years.\n\nThe Company treats all shipping to the Company's customers, handling and certain other distribution activities as a fulfillment cost and recognizes these costs as SG&A expenses. Sales and value-added taxes collected from customers and remitted to governmental authorities are presented on a net basis in the consolidated statements of income.\n\n**Cost of Goods Sold**\n\nCost of goods sold includes the expenses incurred to acquire and produce inventory for sale, including product costs, labor and related overhead, inbound freight, internal transfers, and the cost of operating the Company's remaining manufacturing facilities, including the related depreciation expense.\n\n**Selling, General and Administrative Expenses**\n\nSelling, general and administrative (\"SG&A\") expenses consist primarily of costs relating to advertising, marketing, selling, distribution, information technology and other corporate functions. Selling costs include, among other things, all occupancy costs associated with company-operated stores and with the Company's company-operated shop-in-shops located within department stores. The Company expenses advertising costs as incurred. For fiscal years 2024, 2023 and 2022, total advertising expense was $453.4 million, $432.9 million and $463.7 million, respectively. Distribution costs include costs related to receiving and inspection at distribution centers, warehousing, shipping to the Company's customers, handling and certain other activities associated with the Company's distribution network. These expenses totaled $400.2 million, $330.9 million and $304.7 million for fiscal years 2024, 2023 and 2022, respectively.\n\n**Reclassification**\n\nCertain amounts on the consolidated income statements and statements of cash flows have been conformed to the December 1, 2024 presentation.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**LEVI STRAUSS & CO. AND SUBSIDIARIES**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2014 (continued)**\n\n**FOR THE YEARS ENDED DECEMBER 1, 2024, NOVEMBER 26, 2023 AND NOVEMBER 27, 2022**\n\n**Recently Issued Accounting Standards**\n\nThe following recently issued accounting standards, all of which are a Financial Accounting Standards Board (\"FASB\") issued Accounting Standards Update (\"ASU\"), have been grouped by their required effective dates for the Company:\n\n*Fourth Quarter 2025*\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*\u2022* In November 2023, the FASB issued ASU 2023-07, *Improvements to Reportable Segment Disclosures*. This new guidance is designed to improve reportable segment disclosure requirements, primarily through enhanced disclosures about significant segment expenses. ASU 2023-07 is effective for fiscal years beginning after December 15, 2023, and interim periods within fiscal years beginning after December 15, 2024 on a retrospective basis. Early adoption is permitted. The Company is currently assessing the impact that adopting this new accounting standard will have on its consolidated financial statements.\n\n*First Quarter 2026*\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*\u2022* In December 2023, the FASB issued ASU 2023-09, *Improvements to Income Tax Disclosures*. This new guidance is designed to enhance the transparency and decision usefulness of income tax disclosures. The amendments of this update are related to the rate reconciliation and income taxes paid, requiring (1) consistent categories and greater disaggregation of information in the rate reconciliation and (2) income taxes paid disaggregated by jurisdiction. ASU 2023-09 is effective for fiscal years beginning after December 15, 2024. Early adoption is permitted. The Company is currently assessing the impact that adopting this new accounting standard will have on its consolidated financial statements.\n\n*Fourth Quarter 2028*\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*\u2022* In November 2024, the FASB issued ASU 2024-03, *Disaggregation of Income Statement Expenses*. This new guidance is designed to improve the disclosures about the types of expenses, including employee compensation, depreciation, and amortization, and costs incurred related to inventory and manufacturing activities. ASU 2024-03 is effective for fiscal years beginning after December 15, 2026, and interim periods within fiscal years beginning after December 15, 2027 on a prospective basis with optional retrospective application. Early adoption is permitted. The Company is currently assessing the impact that adopting this new accounting standard will have on its consolidated financial statements.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**LEVI STRAUSS & CO. AND SUBSIDIARIES**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2014 (continued)**\n\n**FOR THE YEARS ENDED DECEMBER 1, 2024, NOVEMBER 26, 2023 AND NOVEMBER 27, 2022**\n\n**NOTE 2: PROPERTY, PLANT AND EQUIPMENT**\n\nThe components of property, plant and equipment were as follows:\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **December 1,<br>2024** | **November 26,<br>2023** |\n| | **(Dollars in millions)** | **(Dollars in millions)** |\n| Land | $7.5 | $8.4 |\n| Buildings and leasehold improvements | 568.3 | 551.9 |\n| Machinery and equipment | 633.2 | 551.8 |\n| Capitalized internal-use software | 798.1 | 683.3 |\n| Assets held for sale | 19.7 |  |\n| Construction in progress | 11.9 | 168.0 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Subtotal | 2038.7 | 1963.4 |\n| Accumulated depreciation | (1340.0) | (1282.7) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Property, plant & equipment, net | $698.7 | $680.7 |\n\n---\n\n\n\nDepreciation expense for the years ended December 1, 2024, November 26, 2023, and November 27, 2022, was $188.4 million, $160.9 million and $154.6 million, respectively.\n\nDuring fiscal year 2024 in connection with Project Fuel, the Company recorded $11.1 million in charges related to the impairment of capitalized internal-use software as a result of discontinued technology projects, which was recorded in \"Selling, general and administrative expenses\" in the consolidated statements of income, and $7.6 million in impairment charges related to a distribution center closure, which was recorded in \"Restructuring charges, net\" in the consolidated statements of income. During fiscal year 2023 the Company recorded $49.3 million in charges related to the impairment of other property and equipment, primarily within capitalized internal-use software as a result of the decision to discontinue certain technology projects in connection with the overall restructuring initiative, which was recorded in \"Selling, general and administrative expenses\" in the consolidated statements of income. Additionally, $20.5 million of charges were recognized, related to the impairment of buildings and leasehold improvements and machinery and equipment, of which $14.3 million was due to the impairment of certain store assets primarily driven by lower than average store performance for certain concept stores in the U.S, which was recorded in \"Selling, general and administrative expenses\" in the consolidated statements of income. During fiscal year 2022 the Company recorded $6.4 million in charges primarily related to the impairment of certain long-lived assets as a result of the Russia-Ukraine war, which was recorded in \"Selling, general and administrative expenses\" in the consolidated statements of income.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**LEVI STRAUSS & CO. AND SUBSIDIARIES**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2014 (continued)**\n\n**FOR THE YEARS ENDED DECEMBER 1, 2024, NOVEMBER 26, 2023 AND NOVEMBER 27, 2022**\n\n**NOTE 3: GOODWILL AND OTHER INTANGIBLE ASSETS**\n\nThe changes in the carrying amount of goodwill by business segment for the years ended December 1, 2024 and November 26, 2023, were as follows:\n\n---",
+              "token_count": 1894,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000094845-25-000005",
+              "cik": "0000094845",
+              "company": "LEVI STRAUSS & CO",
+              "form_type": "10-K",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 67950,
+              "source_md5": "74e4835ff3e92c25f4c32c4edd415474",
+              "content_sha256": "4a2dd614858cd692cc96fb5946124b43d2f73009193b63c6632e0743695f56f3",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "7800a9af-162a-5e50-b146-b4ba64b4b763",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 29,
+              "char_start": 273956,
+              "char_end": 281853,
+              "text": "The increase in DTC channel revenues was driven by both strong performance and store expansion in our company-operated stores, due to higher traffic, an increase in units sold, and sales from an additional week in fiscal year 2024. There were 46 more stores in operation as of December 1, 2024, as compared to November 26, 2023. E-commerce revenue increased primarily from higher traffic and conversion. The decrease in wholesale channel revenue was driven by lower units sold and the exit of our Denizen business of $53 million.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n*<u>Europe</u>*. Net revenues in Europe increased on both a reported and organic net revenues basis, with currency translation affecting net revenues favorably by approximately $8 million. Excluding the effects of currency, net revenues increased due to growth in our DTC channel due to expansion in our company-operated stores and higher sales from an additional week in fiscal year 2024. There were 8 more stores in operation as of December 1, 2024, as compared to November 26, 2023. E-commerce revenues increased due to higher online traffic. The increase in DTC channel revenues was partially offset by a decrease in wholesale channel revenues due to lower volumes, as well as the exit from Russia, which included wholesale revenues of approximately $8 million in the prior fiscal year.\n\n*<u>Asia</u>.* Net revenues in Asia increased on both reported and organic net revenues basis, with currency translation affecting net revenues unfavorably by approximately $37 million. Excluding the effects of currency, net revenues increased in 2024 in both our DTC and wholesale channels.\n\nIn our DTC channel, revenues increased due to strong performance in our company-operated stores as a result of higher selling prices, and strong performance in our e-commerce as a result of higher online traffic. Additionally, store expansion attributed to revenue growth, as there were 40 more stores in operation as of December 1, 2024, as compared to November 26, 2023. Weak store performance in China resulting from lower traffic and lower units sold partially offset these increases. Wholesale channel revenues increased due to higher volume and higher average selling prices, particularly in India and Turkey, partially offset by lower units sold in China.\n\n*<u>Other Brands.</u>* \n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *<u>Dockers</u>*<sup>\u00ae</sup>*.* Net revenues in Dockers decreased on a reported and organic net revenues basis, with currency affecting net revenues unfavorably by approximately $4 million. Excluding the effects of currency, net revenues decreased in 2024 primarily due to lower volume in the U.S. wholesale channel, partially offset by expansion in our DTC channel.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *<u>Beyond Yoga</u>*<sup>\u00ae</sup>*.* Net revenues in Beyond Yoga\u00ae increased on a reported and organic net revenues basis. Net revenues increased in 2024 primarily due to growth in e-commerce and store expansion. Wholesale channel growth was primarily due to higher volume.\n\n***Net revenues by channel***\n\n*<u>Wholesale</u>.* On both a reported and organic net revenues basis, net revenues in our wholesale channel decreased, with currency translation affecting net revenues unfavorably by approximately $19 million. The decrease was primarily driven by the exit of the Denizen<sup>\u00ae</sup> brand, which contributed approximately $53 million to the decline, and lower volumes, primarily in the U.S. and Europe. Additionally, the impact of the exit of the Russia business contributed $8 million to the decline.\n\n*<u>DTC (Direct to Consumer)</u>.* Net revenues in our DTC channel increased on both a reported and organic net revenues basis, with currency translation affecting net revenues unfavorably by approximately $28 million. The increase was driven by strong performance and expansion in our company-operated stores, as well as e-commerce, and included more sales at full price without discounts or promotions. Additionally, fiscal year 2024 included a 53rd week which resulted in higher sales compared to 2023. Our U.S. DTC business grew 13%. As a percentage of net revenues, DTC comprised 46% of total net revenues.\n\n***Levi's Brands net revenues***\n\n*<u>Levi's</u>*<sup>\u00ae</sup>*<u>.</u>* Net revenues for the Levi's<sup>\u00ae</sup> brand increased on both a reported and organic net revenues basis, with currency translation affecting net revenues unfavorably by approximately $43 million. The increase was a result of higher revenue in our DTC channel, due to improved store performance and store expansion, and higher e-commerce traffic, partially offset by a decrease in wholesale revenues, primarily in Europe, due to lower volume.\n\n*<u>Levi Strauss Signature\u2122.</u>* Net revenues for the Levi Strauss Signature\u2122 brand decreased on a reported basis. Currency translation did not have a significant impact on net revenues. The decrease is due to lower units sold.\n\n*<u>Denizen</u>*<sup>\u00ae</sup>*<u>.</u>* Net revenues decreased on a reported basis due to the exit of the brand. Currency translation did not have a significant impact on net revenues.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n***Gross profit***\n\nThe following table shows consolidated gross profit and gross margin for the periods indicated and the changes in these items from period to period:\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **December 1,<br>2024** | **November 26,<br>2023** | **%<br>Increase<br>(Decrease)** |\n| | **(Dollars in millions)** | **(Dollars in millions)** | **(Dollars in millions)** |\n| Net revenues | $6355.3 | $6179.0 | 2.9% |\n| &nbsp;&nbsp;&nbsp;Cost of goods sold | 2539.4 | 2663.3 | (4.7)% |\n| Gross profit | $3815.9 | $3515.7 | 8.5% |\n| &nbsp;&nbsp;&nbsp;*Gross margin* | 60.0% | 56.9% |  |\n\n---\n\n\n\nAs compared to the same period in the prior year, currency translation unfavorably impacted gross profit by approximately $27 million. The increase in gross margin was primarily due to lower product costs and favorable channel and brand mix. Additionally currency, including both transaction and translation impacts, unfavorably impacted gross margin by approximately 50 basis points.\n\n***Selling, general and administrative expenses***\n\nThe following table shows SG&A expenses for the periods indicated, the changes in these items from period to period and these items expressed as a percentage of net revenues. Effective in the fourth quarter of 2024, distribution related expenses are included as a separate line item called \"Distribution\" and administrative expenses are included in \"Other\". Prior periods were adjusted to reflect the change:\n\n---\n\n\n\n| | | | | | |\n|:---|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **December 1,<br>2024** | **November 26,<br>2023** | **%<br>Increase <br>(Decrease)** | | |\n| | **December 1,<br>2024** | **November 26,<br>2023** | **%<br>Increase <br>(Decrease)** | **December 1,<br>2024**<br>**% of Net<br>Revenues** | **November 26,<br>2023**<br>**% of Net<br>Revenues** |\n| | **(Dollars in millions)** | **(Dollars in millions)** | **(Dollars in millions)** | **(Dollars in millions)** | **(Dollars in millions)** |\n| Selling | $1411.4 | $1370.4 | 3.0% | 22.2% | 22.2% |\n| Advertising and promotion | 453.4 | 432.9 | 4.7% | 7.1% | 7.0% |\n| Distribution | 400.2 | 330.9 | 20.9% | 6.3% | 5.4% |\n| Other | 981.2 | 917.7 | 6.9% | 15.4% | 14.9% |\n| &nbsp;&nbsp;&nbsp;Total SG&A expenses | $3246.2 | $3051.9 | 6.4% | 51.1% | 49.4% |\n\n---\n\n\n\nCurrency translation affected SG&A expenses favorably by approximately $15 million as compared to the prior fiscal year offset by the impact of additional expenses associated with the 53rd week.",
+              "token_count": 1993,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000094845-25-000005",
+              "cik": "0000094845",
+              "company": "LEVI STRAUSS & CO",
+              "form_type": "10-K",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 67950,
+              "source_md5": "74e4835ff3e92c25f4c32c4edd415474",
+              "content_sha256": "4a2dd614858cd692cc96fb5946124b43d2f73009193b63c6632e0743695f56f3",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "a009b435-c19b-59b2-b24e-2a4db2748520",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 27,
+              "char_start": 261154,
+              "char_end": 269001,
+              "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted net income.* Compared to the fourth quarter of 2023, Adjusted net income of $202.2 million increased from $178.6 million. The increase was primarily due to the higher Adjusted EBIT described above.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Diluted earnings per share.* Compared to the fourth quarter of 2023, diluted earnings per share of $0.46 increased from $0.32 due to higher net income described above.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted diluted earnings per share.* Compared to the fourth quarter of 2023, Adjusted diluted earnings per share of $0.50 increased from $0.44 mainly due to the increase in Adjusted net income described above. Currency translation did not have a significant impact on Adjusted diluted earnings per share.\n\n***Our Fiscal Year 2024 Results***\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Net revenues.* Compared to fiscal year 2023, consolidated net revenues increased 2.9% on a reported basis and 3.2% on an organic net revenues basis. The increase was driven by growth in DTC, which grew across our regions. The growth was partially offset by a decline in wholesale.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Operating income*. Compared to fiscal year 2023, consolidated operating income decreased to $264.1 million from $353.3 million primarily due to higher SG&A expenses, restructuring charges, and goodwill and other intangible impairment charges in the current fiscal year.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Net income.* Compared to fiscal year 2023, consolidated net income decreased to $210.6 million from $249.6 million. The decrease was due to lower operating income described above.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted EBIT.* Compared to fiscal year 2023, Adjusted EBIT of $649.9 million increased from $554.8 million primarily due to higher revenue and gross profit, partially offset by higher Adjusted SG&A expenses, driven by selling expenses in support of our DTC business.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted EBIT margin* was 10.2%, 120 basis points higher than the prior fiscal year on a reported basis and 130 basis points higher on a constant-currency basis.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted net income.* Compared to fiscal year 2023, Adjusted net income increased to $502.7 million from $440.7 million. The increase was primarily due to higher Adjusted EBIT described above.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Diluted earnings per share.* Compared to fiscal year 2023, diluted earnings per share of $0.52 decreased from $0.62 mainly due to the lower net income described above.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted diluted earnings per share.* Compared to fiscal year 2023, Adjusted diluted earnings per share of $1.25 increased from $1.10 due to the lower Adjusted net income described above. Currency translation unfavorably affected Adjusted diluted earnings per share by $0.02.\n\nFor more information on Organic net revenues, Adjusted SG&A, Adjusted EBIT, Adjusted net income and Adjusted diluted earnings per share, measures not prepared in accordance with United States generally accepted accounting principles, and reconciliations of such measures to net income and diluted earnings per share, see \"Non-GAAP Financial Measures.\"\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n***Financial Information Presentation***\n\n*<u>Fiscal year</u>.* We use a 52- or 53-week fiscal year, with each fiscal year ending on the Sunday that is closest to November 30 of that year. Certain of our foreign subsidiaries have fiscal years ending November 30. Each fiscal year generally consists of four 13-week quarters, with each quarter ending on the Sunday that is closest to the last day of the last month of that quarter. Fiscal year 2024 was a 53-week year, ending on December 1, 2024, and 2023 was a 52-week year ending November 26, 2023. Each quarter of fiscal years 2024 and 2023 consisted of 13 weeks with the exception of the fourth quarter of 2024 which consisted of 14 weeks.\n\n*<u>Segments</u>.* Our Levi's Brands business, which includes Levi's<sup>\u00ae</sup>, Levi Strauss Signature\u2122 and Denizen<sup>\u00ae</sup> brands, is defined by geographical regions into three segments: Americas, Europe and Asia. Our Dockers<sup>\u00ae</sup> and Beyond Yoga<sup>\u00ae</sup> businesses are managed separately and do not meet the quantitative thresholds of a reportable operating segment and are reported in our financial statements under the caption of \"Other Brands\". Effective in the second quarter of 2024, Dockers<sup>\u00ae</sup> and Beyond Yoga<sup>\u00ae</sup> businesses are disclosed as separate lines under the caption \"Other Brands\" to increase transparency of performance. Prior periods were adjusted to reflect the change.\n\n*<u>Classification</u>.* Our classification of certain significant revenues and expenses reflects the following:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Net revenues comprise net sales and licensing revenues. Net sales include sales of products to wholesale customers, including franchised stores, and direct sales to consumers at our company-operated stores and shop-in-shops located within department stores and other third-party locations, as well as company-operated e-commerce sites. Net revenues are recorded net of discounts, allowances for estimated returns and retailer promotions and other incentives. Licensing revenues, which include revenues from the use of our trademarks in connection with the manufacturing, advertising and distribution of trademarked products by third-party licensees, are earned and recognized as products are sold by licensees based on royalty rates as set forth in the applicable licensing agreements.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Cost of goods sold primarily comprises product costs, labor and related overhead, sourcing costs, inbound freight, internal transfers and the cost of operating our manufacturing facilities, including the related depreciation expense. On both a reported and constant-currency basis, cost of goods sold reflects the transactional currency impact resulting from the purchase of products in a currency other than the functional currency.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Selling expenses reflected in SG&A expenses include, among other things, all occupancy costs and depreciation associated with our company-operated stores and commissions associated with our company-operated shop-in-shops, as well as costs associated with our e-commerce operations.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 We reflect substantially all distribution costs in SG&A expenses, for both our DTC and wholesale channels, including costs related to receiving and inspection at distribution centers, warehousing, shipping to our customers, handling, and certain other activities associated with our distribution network.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**Results of Operations**\n\nA discussion regarding our results of operations for fiscal year 2024 compared to fiscal year 2023 is presented below. A discussion regarding our results of operations for fiscal year 2023 compared to fiscal year 2022 can be found under Item 7 \u2013 Management's Discussion and Analysis in our Annual Report on Form 10-K for the year ended November 26, 2023, filed with the SEC on January 25, 2024.\n\nThe following table summarizes, for the periods indicated, our consolidated statements of income, the changes in these items from period to period and these items expressed as a percentage of net revenues:\n\n---",
+              "token_count": 1777,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000094845-25-000005",
+              "cik": "0000094845",
+              "company": "LEVI STRAUSS & CO",
+              "form_type": "10-K",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 67950,
+              "source_md5": "74e4835ff3e92c25f4c32c4edd415474",
+              "content_sha256": "4a2dd614858cd692cc96fb5946124b43d2f73009193b63c6632e0743695f56f3",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "7b5bd5d2-b8f0-5756-9b24-ecb408d6abe4",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 70,
+              "char_start": 562059,
+              "char_end": 567992,
+              "text": "**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**LEVI STRAUSS & CO. AND SUBSIDIARIES**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2014 (continued)**\n\n**FOR THE YEARS ENDED DECEMBER 1, 2024, NOVEMBER 26, 2023 AND NOVEMBER 27, 2022**\n\nThe Company files income tax returns in the United States and in various foreign (including Belgium, Hong Kong, India, Mexico and Canada), state and local jurisdictions. With few exceptions, examinations have been completed by tax authorities or the statute of limitations has expired for United States federal, foreign, state and local income tax returns filed by the Company for years through 2014.\n\nOn August 16, 2022, President Biden signed the Inflation Reduction Act of 2022 (\"IRA\") into law. The IRA contains a number of revisions to the Internal Revenue Code, including a 15% corporate minimum income tax for tax years beginning after December 31, 2022. It also assesses a 1% excise tax on repurchases of corporate stock. While these tax law changes have no immediate effect and are not expected to have a material adverse effect on our results of operations going forward, the Company will continue to evaluate their impact as further information becomes available.\n\n**NOTE 18: EARNINGS PER SHARE** \n\nBasic earnings per share is calculated by dividing net income by the weighted-average number of common shares outstanding. Diluted earnings per share adjusts the basic earnings per share and the weighted-average number of common shares outstanding for the potentially dilutive impact of RSUs and stock appreciation rights using the treasury stock method. The following table sets forth the computation of the Company's basic and diluted earnings per share:\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **December 1,<br>2024** | **November 26,<br>2023** | **November 27,<br>2022** |\n| | **(Dollars in millions, except per share amounts)** | **(Dollars in millions, except per share amounts)** | **(Dollars in millions, except per share amounts)** |\n| Numerator: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net income | $210.6 | $249.6 | $569.1 |\n| Denominator: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Weighted-average common shares outstanding - basic | 398233739 | 397208535 | 397341137 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Dilutive effect of stock awards | 4134864 | 4514632 | 6503645 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Weighted-average common shares outstanding - diluted | 402368603 | 401723167 | 403844782 |\n| Earnings per common share: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Basic | $0.53 | $0.63 | $1.43 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Diluted | $0.52 | $0.62 | $1.41 |\n| Anti-dilutive securities excluded from calculation of diluted earnings per share | 4119726 | 5408781 | 2153183 |\n\n---\n\n\n\n**NOTE 19: RELATED PARTIES**\n\nMichelle Gass (President and CEO) and David Jedrzejek (Senior Vice President and General Counsel) are members of the Board of Directors of the Levi Strauss Foundation, which is an independent non-profit entity that is not one of our consolidated entities. Mr. David Jedrzejek also serves as a Vice President of the Levi Strauss Foundation. Ms. Gass and Mr. Jedrzejek began serving on the Board of Directors of the Levi Strauss Foundation on January 24, 2024 and September 26, 2023, respectively. Charles V. Bergh, former President and Chief Executive Officer, was a member of the board of directors of the Levi Strauss Foundation until January 28, 2024. Additionally, Tracy Layney, former Executive Vice President and Chief Human Resources Officer, was a member of the board of directors of the Levi Strauss Foundation until October 11, 2024. During fiscal years 2024, 2023 and 2022, donations to the Levi Strauss Foundation were $6.3 million, $11.3 million and $12.8 million, respectively, and the Company recognized expenses related to their donation commitments of $7.2 million, $2.2 million and $11.4 million, respectively.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**LEVI STRAUSS & CO. AND SUBSIDIARIES**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2014 (continued)**\n\n**FOR THE YEARS ENDED DECEMBER 1, 2024, NOVEMBER 26, 2023 AND NOVEMBER 27, 2022**\n\n **NOTE 20: BUSINESS SEGMENT INFORMATION**\n\nThe Company manages its business according to three reportable segments: Americas, Europe, and Asia, collectively comprising the Company's Levi's Brands business, which includes the Levi's<sup>\u00ae</sup>, Levi Strauss Signature\u2122 and Denizen<sup>\u00ae</sup> brands. Other Brands, which includes Dockers<sup>\u00ae</sup> and Beyond Yoga<sup>\u00ae</sup> businesses do not meet the quantitative thresholds for reportable segments and therefore are presented under the caption of Other Brands. Effective in the second quarter of 2024, Dockers<sup>\u00ae</sup> and Beyond Yoga<sup>\u00ae</sup> businesses are disclosed as separate lines under the caption \"Other Brands\" to increase transparency of performance. Prior periods were adjusted to reflect the change. Corporate expenses are comprised of selling, general and administrative expenses that management does not attribute to any of our operating segments and these expenses primarily relate to corporate administration, information resources, finance and human resources functional and organizational costs.\n\nThe Company considers its chief executive officer to be its chief operating decision maker. The Company's chief operating decision maker manages business operations, evaluates performance and allocates resources based on the segments' net revenues and operating income. The Company reports inventories by segment as that information is used by the chief operating decision maker in assessing segment performance. The Company does not report its other assets by segment as that information is not used by the chief operating decision maker in assessing segment performance.\n\nBusiness segment information for the Company is as follows:\n\n---",
+              "token_count": 1446,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000008858-25-000009",
+              "cik": "0000008858",
+              "company": "AVNET INC",
+              "form_type": "10-Q",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 851,
+              "source_md5": "bb0ae5295b1e95a6e6c11d15214c7d04",
+              "content_sha256": "613f1aa56d7330a7a9abded0030b39b7e51f713ca1b6d1ca87a756c618a5c864",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "dfe9fbd6-9071-5f81-b038-51483ecc80b9",
+              "section": "AVNET , INC.",
+              "section_index": 2,
+              "chunk_index": 26,
+              "char_start": 57440,
+              "char_end": 60630,
+              "text": "EC sales of $5.32 billion in the second quarter of fiscal 2025 decreased $494.3 million, or 8.5%, from the prior year second quarter sales of $5.81 billion, with the Americas and EMEA regions contributing to the decrease offset by sales growth in the Asia region. The decrease in sales is primarily due to sales volume decreases due to the market downturn in the electronic components industry and, to a lesser extent, an unfavorable product mix of lower priced electronic components.\n\nFarnell sales for the second quarter of fiscal 2025 were $345.6 million, reflecting a decrease of $47.2 million, or 12.0%, compared to the same period in the prior year. The decrease in sales in the second quarter of fiscal 2025 is primarily due to lower demand for on-the-board electronic components.\n\n**Gross Profit**\n\nThe Company's gross profit and gross profit margin are primarily affected by sales volume, product mix, and geographic sales mix. Gross profit for the second quarter of fiscal 2025 was $110.1 million, or 15.6% lower than the second quarter of fiscal 2024. This decrease is primarily due to sales volume decreases in both operating groups and to a lesser extent from the decline in gross profit margin in each operating group.\n\nGross profit margin decreased by 86 basis points to 10.5% for the second quarter of fiscal 2025 when compared to the second quarter of fiscal 2024. The decrease in gross profit margin is primarily due to shifts in geographic sales mix, partially offset by increases in gross margin from certain supplier engagements. Sales in the higher gross profit margin western regions represented approximately 52% of sales in the second quarter of fiscal 2025, versus 60% of sales during the second quarter of fiscal 2024.\n\nEC gross profit margin decreased year over year largely due to the change in geographic mix. Farnell gross profit margin decreased year over year, primarily due to lower sales of higher margin on-the-board electronic components.\n\nGross profit and gross profit margin were $1.20 billion and 10.7%, respectively, for the first six months of fiscal 2025 as compared with $1.45 billion and 11.6%, respectively, for the first six months of fiscal 2024.\n\n**Selling, General and Administrative Expenses**\n\nSelling, general, and administrative expenses (\"SG&A expenses\") decreased $27.8 million or 6.0% from the second quarter of fiscal 2024. The decrease in SG&A expenses is primarily due to decreases in variable operating expenses associated with the decrease in sales volumes discussed above and from restructuring actions taken by the Company, slightly offset by the impact of changes in foreign currency translation rates.\n\nManagement monitors SG&A expenses as a percentage of sales and as a percentage of gross profit. In the second quarter of fiscal 2025, SG&A expenses were 7.7% of sales and 73.3% of gross profit, as compared with 7.5% and 65.8%, respectively, in the second quarter of fiscal 2024. The year-over-year increases in SG&A expenses as a percentage of both sales and gross profit are primarily due to the decrease in sales and gross profit without a proportional reduction in SG&A expenses, resulting in lower operating leverage.",
+              "token_count": 684,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.028807685000174388
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000094845-25-000005",
+        "cik": "0000094845",
+        "company": "LEVI STRAUSS & CO",
+        "form_type": "10-K",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 67950,
+        "source_md5": "74e4835ff3e92c25f4c32c4edd415474",
+        "content_sha256": "4a2dd614858cd692cc96fb5946124b43d2f73009193b63c6632e0743695f56f3",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "4fb65daa-9ad1-54b8-8623-119ee7c45444",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 50,
+        "char_start": 431583,
+        "char_end": 439684,
+        "text": "Net sales to the Company's ten largest customers for fiscal year 2024, fiscal year 2023, and fiscal year 2022, totaled 26%, 28% and 31% of net revenues for those fiscal years, respectively. No customer represented 10% or more of net revenues in any of these years.\n\nThe Company treats all shipping to the Company's customers, handling and certain other distribution activities as a fulfillment cost and recognizes these costs as SG&A expenses. Sales and value-added taxes collected from customers and remitted to governmental authorities are presented on a net basis in the consolidated statements of income.\n\n**Cost of Goods Sold**\n\nCost of goods sold includes the expenses incurred to acquire and produce inventory for sale, including product costs, labor and related overhead, inbound freight, internal transfers, and the cost of operating the Company's remaining manufacturing facilities, including the related depreciation expense.\n\n**Selling, General and Administrative Expenses**\n\nSelling, general and administrative (\"SG&A\") expenses consist primarily of costs relating to advertising, marketing, selling, distribution, information technology and other corporate functions. Selling costs include, among other things, all occupancy costs associated with company-operated stores and with the Company's company-operated shop-in-shops located within department stores. The Company expenses advertising costs as incurred. For fiscal years 2024, 2023 and 2022, total advertising expense was $453.4 million, $432.9 million and $463.7 million, respectively. Distribution costs include costs related to receiving and inspection at distribution centers, warehousing, shipping to the Company's customers, handling and certain other activities associated with the Company's distribution network. These expenses totaled $400.2 million, $330.9 million and $304.7 million for fiscal years 2024, 2023 and 2022, respectively.\n\n**Reclassification**\n\nCertain amounts on the consolidated income statements and statements of cash flows have been conformed to the December 1, 2024 presentation.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**LEVI STRAUSS & CO. AND SUBSIDIARIES**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2014 (continued)**\n\n**FOR THE YEARS ENDED DECEMBER 1, 2024, NOVEMBER 26, 2023 AND NOVEMBER 27, 2022**\n\n**Recently Issued Accounting Standards**\n\nThe following recently issued accounting standards, all of which are a Financial Accounting Standards Board (\"FASB\") issued Accounting Standards Update (\"ASU\"), have been grouped by their required effective dates for the Company:\n\n*Fourth Quarter 2025*\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*\u2022* In November 2023, the FASB issued ASU 2023-07, *Improvements to Reportable Segment Disclosures*. This new guidance is designed to improve reportable segment disclosure requirements, primarily through enhanced disclosures about significant segment expenses. ASU 2023-07 is effective for fiscal years beginning after December 15, 2023, and interim periods within fiscal years beginning after December 15, 2024 on a retrospective basis. Early adoption is permitted. The Company is currently assessing the impact that adopting this new accounting standard will have on its consolidated financial statements.\n\n*First Quarter 2026*\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*\u2022* In December 2023, the FASB issued ASU 2023-09, *Improvements to Income Tax Disclosures*. This new guidance is designed to enhance the transparency and decision usefulness of income tax disclosures. The amendments of this update are related to the rate reconciliation and income taxes paid, requiring (1) consistent categories and greater disaggregation of information in the rate reconciliation and (2) income taxes paid disaggregated by jurisdiction. ASU 2023-09 is effective for fiscal years beginning after December 15, 2024. Early adoption is permitted. The Company is currently assessing the impact that adopting this new accounting standard will have on its consolidated financial statements.\n\n*Fourth Quarter 2028*\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*\u2022* In November 2024, the FASB issued ASU 2024-03, *Disaggregation of Income Statement Expenses*. This new guidance is designed to improve the disclosures about the types of expenses, including employee compensation, depreciation, and amortization, and costs incurred related to inventory and manufacturing activities. ASU 2024-03 is effective for fiscal years beginning after December 15, 2026, and interim periods within fiscal years beginning after December 15, 2027 on a prospective basis with optional retrospective application. Early adoption is permitted. The Company is currently assessing the impact that adopting this new accounting standard will have on its consolidated financial statements.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**LEVI STRAUSS & CO. AND SUBSIDIARIES**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2014 (continued)**\n\n**FOR THE YEARS ENDED DECEMBER 1, 2024, NOVEMBER 26, 2023 AND NOVEMBER 27, 2022**\n\n**NOTE 2: PROPERTY, PLANT AND EQUIPMENT**\n\nThe components of property, plant and equipment were as follows:\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **December 1,<br>2024** | **November 26,<br>2023** |\n| | **(Dollars in millions)** | **(Dollars in millions)** |\n| Land | $7.5 | $8.4 |\n| Buildings and leasehold improvements | 568.3 | 551.9 |\n| Machinery and equipment | 633.2 | 551.8 |\n| Capitalized internal-use software | 798.1 | 683.3 |\n| Assets held for sale | 19.7 |  |\n| Construction in progress | 11.9 | 168.0 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Subtotal | 2038.7 | 1963.4 |\n| Accumulated depreciation | (1340.0) | (1282.7) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Property, plant & equipment, net | $698.7 | $680.7 |\n\n---\n\n\n\nDepreciation expense for the years ended December 1, 2024, November 26, 2023, and November 27, 2022, was $188.4 million, $160.9 million and $154.6 million, respectively.\n\nDuring fiscal year 2024 in connection with Project Fuel, the Company recorded $11.1 million in charges related to the impairment of capitalized internal-use software as a result of discontinued technology projects, which was recorded in \"Selling, general and administrative expenses\" in the consolidated statements of income, and $7.6 million in impairment charges related to a distribution center closure, which was recorded in \"Restructuring charges, net\" in the consolidated statements of income. During fiscal year 2023 the Company recorded $49.3 million in charges related to the impairment of other property and equipment, primarily within capitalized internal-use software as a result of the decision to discontinue certain technology projects in connection with the overall restructuring initiative, which was recorded in \"Selling, general and administrative expenses\" in the consolidated statements of income. Additionally, $20.5 million of charges were recognized, related to the impairment of buildings and leasehold improvements and machinery and equipment, of which $14.3 million was due to the impairment of certain store assets primarily driven by lower than average store performance for certain concept stores in the U.S, which was recorded in \"Selling, general and administrative expenses\" in the consolidated statements of income. During fiscal year 2022 the Company recorded $6.4 million in charges primarily related to the impairment of certain long-lived assets as a result of the Russia-Ukraine war, which was recorded in \"Selling, general and administrative expenses\" in the consolidated statements of income.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**LEVI STRAUSS & CO. AND SUBSIDIARIES**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2014 (continued)**\n\n**FOR THE YEARS ENDED DECEMBER 1, 2024, NOVEMBER 26, 2023 AND NOVEMBER 27, 2022**\n\n**NOTE 3: GOODWILL AND OTHER INTANGIBLE ASSETS**\n\nThe changes in the carrying amount of goodwill by business segment for the years ended December 1, 2024 and November 26, 2023, were as follows:\n\n---",
+        "token_count": 1894,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000094845-25-000005",
+        "cik": "0000094845",
+        "company": "LEVI STRAUSS & CO",
+        "form_type": "10-K",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 67950,
+        "source_md5": "74e4835ff3e92c25f4c32c4edd415474",
+        "content_sha256": "4a2dd614858cd692cc96fb5946124b43d2f73009193b63c6632e0743695f56f3",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "7800a9af-162a-5e50-b146-b4ba64b4b763",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 29,
+        "char_start": 273956,
+        "char_end": 281853,
+        "text": "The increase in DTC channel revenues was driven by both strong performance and store expansion in our company-operated stores, due to higher traffic, an increase in units sold, and sales from an additional week in fiscal year 2024. There were 46 more stores in operation as of December 1, 2024, as compared to November 26, 2023. E-commerce revenue increased primarily from higher traffic and conversion. The decrease in wholesale channel revenue was driven by lower units sold and the exit of our Denizen business of $53 million.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n*<u>Europe</u>*. Net revenues in Europe increased on both a reported and organic net revenues basis, with currency translation affecting net revenues favorably by approximately $8 million. Excluding the effects of currency, net revenues increased due to growth in our DTC channel due to expansion in our company-operated stores and higher sales from an additional week in fiscal year 2024. There were 8 more stores in operation as of December 1, 2024, as compared to November 26, 2023. E-commerce revenues increased due to higher online traffic. The increase in DTC channel revenues was partially offset by a decrease in wholesale channel revenues due to lower volumes, as well as the exit from Russia, which included wholesale revenues of approximately $8 million in the prior fiscal year.\n\n*<u>Asia</u>.* Net revenues in Asia increased on both reported and organic net revenues basis, with currency translation affecting net revenues unfavorably by approximately $37 million. Excluding the effects of currency, net revenues increased in 2024 in both our DTC and wholesale channels.\n\nIn our DTC channel, revenues increased due to strong performance in our company-operated stores as a result of higher selling prices, and strong performance in our e-commerce as a result of higher online traffic. Additionally, store expansion attributed to revenue growth, as there were 40 more stores in operation as of December 1, 2024, as compared to November 26, 2023. Weak store performance in China resulting from lower traffic and lower units sold partially offset these increases. Wholesale channel revenues increased due to higher volume and higher average selling prices, particularly in India and Turkey, partially offset by lower units sold in China.\n\n*<u>Other Brands.</u>* \n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *<u>Dockers</u>*<sup>\u00ae</sup>*.* Net revenues in Dockers decreased on a reported and organic net revenues basis, with currency affecting net revenues unfavorably by approximately $4 million. Excluding the effects of currency, net revenues decreased in 2024 primarily due to lower volume in the U.S. wholesale channel, partially offset by expansion in our DTC channel.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 *<u>Beyond Yoga</u>*<sup>\u00ae</sup>*.* Net revenues in Beyond Yoga\u00ae increased on a reported and organic net revenues basis. Net revenues increased in 2024 primarily due to growth in e-commerce and store expansion. Wholesale channel growth was primarily due to higher volume.\n\n***Net revenues by channel***\n\n*<u>Wholesale</u>.* On both a reported and organic net revenues basis, net revenues in our wholesale channel decreased, with currency translation affecting net revenues unfavorably by approximately $19 million. The decrease was primarily driven by the exit of the Denizen<sup>\u00ae</sup> brand, which contributed approximately $53 million to the decline, and lower volumes, primarily in the U.S. and Europe. Additionally, the impact of the exit of the Russia business contributed $8 million to the decline.\n\n*<u>DTC (Direct to Consumer)</u>.* Net revenues in our DTC channel increased on both a reported and organic net revenues basis, with currency translation affecting net revenues unfavorably by approximately $28 million. The increase was driven by strong performance and expansion in our company-operated stores, as well as e-commerce, and included more sales at full price without discounts or promotions. Additionally, fiscal year 2024 included a 53rd week which resulted in higher sales compared to 2023. Our U.S. DTC business grew 13%. As a percentage of net revenues, DTC comprised 46% of total net revenues.\n\n***Levi's Brands net revenues***\n\n*<u>Levi's</u>*<sup>\u00ae</sup>*<u>.</u>* Net revenues for the Levi's<sup>\u00ae</sup> brand increased on both a reported and organic net revenues basis, with currency translation affecting net revenues unfavorably by approximately $43 million. The increase was a result of higher revenue in our DTC channel, due to improved store performance and store expansion, and higher e-commerce traffic, partially offset by a decrease in wholesale revenues, primarily in Europe, due to lower volume.\n\n*<u>Levi Strauss Signature\u2122.</u>* Net revenues for the Levi Strauss Signature\u2122 brand decreased on a reported basis. Currency translation did not have a significant impact on net revenues. The decrease is due to lower units sold.\n\n*<u>Denizen</u>*<sup>\u00ae</sup>*<u>.</u>* Net revenues decreased on a reported basis due to the exit of the brand. Currency translation did not have a significant impact on net revenues.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n***Gross profit***\n\nThe following table shows consolidated gross profit and gross margin for the periods indicated and the changes in these items from period to period:\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **December 1,<br>2024** | **November 26,<br>2023** | **%<br>Increase<br>(Decrease)** |\n| | **(Dollars in millions)** | **(Dollars in millions)** | **(Dollars in millions)** |\n| Net revenues | $6355.3 | $6179.0 | 2.9% |\n| &nbsp;&nbsp;&nbsp;Cost of goods sold | 2539.4 | 2663.3 | (4.7)% |\n| Gross profit | $3815.9 | $3515.7 | 8.5% |\n| &nbsp;&nbsp;&nbsp;*Gross margin* | 60.0% | 56.9% |  |\n\n---\n\n\n\nAs compared to the same period in the prior year, currency translation unfavorably impacted gross profit by approximately $27 million. The increase in gross margin was primarily due to lower product costs and favorable channel and brand mix. Additionally currency, including both transaction and translation impacts, unfavorably impacted gross margin by approximately 50 basis points.\n\n***Selling, general and administrative expenses***\n\nThe following table shows SG&A expenses for the periods indicated, the changes in these items from period to period and these items expressed as a percentage of net revenues. Effective in the fourth quarter of 2024, distribution related expenses are included as a separate line item called \"Distribution\" and administrative expenses are included in \"Other\". Prior periods were adjusted to reflect the change:\n\n---\n\n\n\n| | | | | | |\n|:---|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **December 1,<br>2024** | **November 26,<br>2023** | **%<br>Increase <br>(Decrease)** | | |\n| | **December 1,<br>2024** | **November 26,<br>2023** | **%<br>Increase <br>(Decrease)** | **December 1,<br>2024**<br>**% of Net<br>Revenues** | **November 26,<br>2023**<br>**% of Net<br>Revenues** |\n| | **(Dollars in millions)** | **(Dollars in millions)** | **(Dollars in millions)** | **(Dollars in millions)** | **(Dollars in millions)** |\n| Selling | $1411.4 | $1370.4 | 3.0% | 22.2% | 22.2% |\n| Advertising and promotion | 453.4 | 432.9 | 4.7% | 7.1% | 7.0% |\n| Distribution | 400.2 | 330.9 | 20.9% | 6.3% | 5.4% |\n| Other | 981.2 | 917.7 | 6.9% | 15.4% | 14.9% |\n| &nbsp;&nbsp;&nbsp;Total SG&A expenses | $3246.2 | $3051.9 | 6.4% | 51.1% | 49.4% |\n\n---\n\n\n\nCurrency translation affected SG&A expenses favorably by approximately $15 million as compared to the prior fiscal year offset by the impact of additional expenses associated with the 53rd week.",
+        "token_count": 1993,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000094845-25-000005",
+        "cik": "0000094845",
+        "company": "LEVI STRAUSS & CO",
+        "form_type": "10-K",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 67950,
+        "source_md5": "74e4835ff3e92c25f4c32c4edd415474",
+        "content_sha256": "4a2dd614858cd692cc96fb5946124b43d2f73009193b63c6632e0743695f56f3",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "a009b435-c19b-59b2-b24e-2a4db2748520",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 27,
+        "char_start": 261154,
+        "char_end": 269001,
+        "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted net income.* Compared to the fourth quarter of 2023, Adjusted net income of $202.2 million increased from $178.6 million. The increase was primarily due to the higher Adjusted EBIT described above.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Diluted earnings per share.* Compared to the fourth quarter of 2023, diluted earnings per share of $0.46 increased from $0.32 due to higher net income described above.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted diluted earnings per share.* Compared to the fourth quarter of 2023, Adjusted diluted earnings per share of $0.50 increased from $0.44 mainly due to the increase in Adjusted net income described above. Currency translation did not have a significant impact on Adjusted diluted earnings per share.\n\n***Our Fiscal Year 2024 Results***\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Net revenues.* Compared to fiscal year 2023, consolidated net revenues increased 2.9% on a reported basis and 3.2% on an organic net revenues basis. The increase was driven by growth in DTC, which grew across our regions. The growth was partially offset by a decline in wholesale.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Operating income*. Compared to fiscal year 2023, consolidated operating income decreased to $264.1 million from $353.3 million primarily due to higher SG&A expenses, restructuring charges, and goodwill and other intangible impairment charges in the current fiscal year.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Net income.* Compared to fiscal year 2023, consolidated net income decreased to $210.6 million from $249.6 million. The decrease was due to lower operating income described above.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted EBIT.* Compared to fiscal year 2023, Adjusted EBIT of $649.9 million increased from $554.8 million primarily due to higher revenue and gross profit, partially offset by higher Adjusted SG&A expenses, driven by selling expenses in support of our DTC business.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted EBIT margin* was 10.2%, 120 basis points higher than the prior fiscal year on a reported basis and 130 basis points higher on a constant-currency basis.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted net income.* Compared to fiscal year 2023, Adjusted net income increased to $502.7 million from $440.7 million. The increase was primarily due to higher Adjusted EBIT described above.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Diluted earnings per share.* Compared to fiscal year 2023, diluted earnings per share of $0.52 decreased from $0.62 mainly due to the lower net income described above.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***\u2022*** *Adjusted diluted earnings per share.* Compared to fiscal year 2023, Adjusted diluted earnings per share of $1.25 increased from $1.10 due to the lower Adjusted net income described above. Currency translation unfavorably affected Adjusted diluted earnings per share by $0.02.\n\nFor more information on Organic net revenues, Adjusted SG&A, Adjusted EBIT, Adjusted net income and Adjusted diluted earnings per share, measures not prepared in accordance with United States generally accepted accounting principles, and reconciliations of such measures to net income and diluted earnings per share, see \"Non-GAAP Financial Measures.\"\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n***Financial Information Presentation***\n\n*<u>Fiscal year</u>.* We use a 52- or 53-week fiscal year, with each fiscal year ending on the Sunday that is closest to November 30 of that year. Certain of our foreign subsidiaries have fiscal years ending November 30. Each fiscal year generally consists of four 13-week quarters, with each quarter ending on the Sunday that is closest to the last day of the last month of that quarter. Fiscal year 2024 was a 53-week year, ending on December 1, 2024, and 2023 was a 52-week year ending November 26, 2023. Each quarter of fiscal years 2024 and 2023 consisted of 13 weeks with the exception of the fourth quarter of 2024 which consisted of 14 weeks.\n\n*<u>Segments</u>.* Our Levi's Brands business, which includes Levi's<sup>\u00ae</sup>, Levi Strauss Signature\u2122 and Denizen<sup>\u00ae</sup> brands, is defined by geographical regions into three segments: Americas, Europe and Asia. Our Dockers<sup>\u00ae</sup> and Beyond Yoga<sup>\u00ae</sup> businesses are managed separately and do not meet the quantitative thresholds of a reportable operating segment and are reported in our financial statements under the caption of \"Other Brands\". Effective in the second quarter of 2024, Dockers<sup>\u00ae</sup> and Beyond Yoga<sup>\u00ae</sup> businesses are disclosed as separate lines under the caption \"Other Brands\" to increase transparency of performance. Prior periods were adjusted to reflect the change.\n\n*<u>Classification</u>.* Our classification of certain significant revenues and expenses reflects the following:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Net revenues comprise net sales and licensing revenues. Net sales include sales of products to wholesale customers, including franchised stores, and direct sales to consumers at our company-operated stores and shop-in-shops located within department stores and other third-party locations, as well as company-operated e-commerce sites. Net revenues are recorded net of discounts, allowances for estimated returns and retailer promotions and other incentives. Licensing revenues, which include revenues from the use of our trademarks in connection with the manufacturing, advertising and distribution of trademarked products by third-party licensees, are earned and recognized as products are sold by licensees based on royalty rates as set forth in the applicable licensing agreements.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Cost of goods sold primarily comprises product costs, labor and related overhead, sourcing costs, inbound freight, internal transfers and the cost of operating our manufacturing facilities, including the related depreciation expense. On both a reported and constant-currency basis, cost of goods sold reflects the transactional currency impact resulting from the purchase of products in a currency other than the functional currency.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Selling expenses reflected in SG&A expenses include, among other things, all occupancy costs and depreciation associated with our company-operated stores and commissions associated with our company-operated shop-in-shops, as well as costs associated with our e-commerce operations.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 We reflect substantially all distribution costs in SG&A expenses, for both our DTC and wholesale channels, including costs related to receiving and inspection at distribution centers, warehousing, shipping to our customers, handling, and certain other activities associated with our distribution network.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**Results of Operations**\n\nA discussion regarding our results of operations for fiscal year 2024 compared to fiscal year 2023 is presented below. A discussion regarding our results of operations for fiscal year 2023 compared to fiscal year 2022 can be found under Item 7 \u2013 Management's Discussion and Analysis in our Annual Report on Form 10-K for the year ended November 26, 2023, filed with the SEC on January 25, 2024.\n\nThe following table summarizes, for the periods indicated, our consolidated statements of income, the changes in these items from period to period and these items expressed as a percentage of net revenues:\n\n---",
+        "token_count": 1777,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000094845-25-000005",
+        "cik": "0000094845",
+        "company": "LEVI STRAUSS & CO",
+        "form_type": "10-K",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 67950,
+        "source_md5": "74e4835ff3e92c25f4c32c4edd415474",
+        "content_sha256": "4a2dd614858cd692cc96fb5946124b43d2f73009193b63c6632e0743695f56f3",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "7b5bd5d2-b8f0-5756-9b24-ecb408d6abe4",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 70,
+        "char_start": 562059,
+        "char_end": 567992,
+        "text": "**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**LEVI STRAUSS & CO. AND SUBSIDIARIES**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2014 (continued)**\n\n**FOR THE YEARS ENDED DECEMBER 1, 2024, NOVEMBER 26, 2023 AND NOVEMBER 27, 2022**\n\nThe Company files income tax returns in the United States and in various foreign (including Belgium, Hong Kong, India, Mexico and Canada), state and local jurisdictions. With few exceptions, examinations have been completed by tax authorities or the statute of limitations has expired for United States federal, foreign, state and local income tax returns filed by the Company for years through 2014.\n\nOn August 16, 2022, President Biden signed the Inflation Reduction Act of 2022 (\"IRA\") into law. The IRA contains a number of revisions to the Internal Revenue Code, including a 15% corporate minimum income tax for tax years beginning after December 31, 2022. It also assesses a 1% excise tax on repurchases of corporate stock. While these tax law changes have no immediate effect and are not expected to have a material adverse effect on our results of operations going forward, the Company will continue to evaluate their impact as further information becomes available.\n\n**NOTE 18: EARNINGS PER SHARE** \n\nBasic earnings per share is calculated by dividing net income by the weighted-average number of common shares outstanding. Diluted earnings per share adjusts the basic earnings per share and the weighted-average number of common shares outstanding for the potentially dilutive impact of RSUs and stock appreciation rights using the treasury stock method. The following table sets forth the computation of the Company's basic and diluted earnings per share:\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **December 1,<br>2024** | **November 26,<br>2023** | **November 27,<br>2022** |\n| | **(Dollars in millions, except per share amounts)** | **(Dollars in millions, except per share amounts)** | **(Dollars in millions, except per share amounts)** |\n| Numerator: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net income | $210.6 | $249.6 | $569.1 |\n| Denominator: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Weighted-average common shares outstanding - basic | 398233739 | 397208535 | 397341137 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Dilutive effect of stock awards | 4134864 | 4514632 | 6503645 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Weighted-average common shares outstanding - diluted | 402368603 | 401723167 | 403844782 |\n| Earnings per common share: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Basic | $0.53 | $0.63 | $1.43 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Diluted | $0.52 | $0.62 | $1.41 |\n| Anti-dilutive securities excluded from calculation of diluted earnings per share | 4119726 | 5408781 | 2153183 |\n\n---\n\n\n\n**NOTE 19: RELATED PARTIES**\n\nMichelle Gass (President and CEO) and David Jedrzejek (Senior Vice President and General Counsel) are members of the Board of Directors of the Levi Strauss Foundation, which is an independent non-profit entity that is not one of our consolidated entities. Mr. David Jedrzejek also serves as a Vice President of the Levi Strauss Foundation. Ms. Gass and Mr. Jedrzejek began serving on the Board of Directors of the Levi Strauss Foundation on January 24, 2024 and September 26, 2023, respectively. Charles V. Bergh, former President and Chief Executive Officer, was a member of the board of directors of the Levi Strauss Foundation until January 28, 2024. Additionally, Tracy Layney, former Executive Vice President and Chief Human Resources Officer, was a member of the board of directors of the Levi Strauss Foundation until October 11, 2024. During fiscal years 2024, 2023 and 2022, donations to the Levi Strauss Foundation were $6.3 million, $11.3 million and $12.8 million, respectively, and the Company recognized expenses related to their donation commitments of $7.2 million, $2.2 million and $11.4 million, respectively.\n\n------\n\n**<u>[**Table of Contents**](#ida903244c41848a7ad9c7449b3d49379_7)</u>**\n\n**LEVI STRAUSS & CO. AND SUBSIDIARIES**\n\n**NOTES TO CONSOLIDATED FINANCIAL STATEMENTS \u2014 (continued)**\n\n**FOR THE YEARS ENDED DECEMBER 1, 2024, NOVEMBER 26, 2023 AND NOVEMBER 27, 2022**\n\n **NOTE 20: BUSINESS SEGMENT INFORMATION**\n\nThe Company manages its business according to three reportable segments: Americas, Europe, and Asia, collectively comprising the Company's Levi's Brands business, which includes the Levi's<sup>\u00ae</sup>, Levi Strauss Signature\u2122 and Denizen<sup>\u00ae</sup> brands. Other Brands, which includes Dockers<sup>\u00ae</sup> and Beyond Yoga<sup>\u00ae</sup> businesses do not meet the quantitative thresholds for reportable segments and therefore are presented under the caption of Other Brands. Effective in the second quarter of 2024, Dockers<sup>\u00ae</sup> and Beyond Yoga<sup>\u00ae</sup> businesses are disclosed as separate lines under the caption \"Other Brands\" to increase transparency of performance. Prior periods were adjusted to reflect the change. Corporate expenses are comprised of selling, general and administrative expenses that management does not attribute to any of our operating segments and these expenses primarily relate to corporate administration, information resources, finance and human resources functional and organizational costs.\n\nThe Company considers its chief executive officer to be its chief operating decision maker. The Company's chief operating decision maker manages business operations, evaluates performance and allocates resources based on the segments' net revenues and operating income. The Company reports inventories by segment as that information is used by the chief operating decision maker in assessing segment performance. The Company does not report its other assets by segment as that information is not used by the chief operating decision maker in assessing segment performance.\n\nBusiness segment information for the Company is as follows:\n\n---",
+        "token_count": 1446,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000008858-25-000009",
+        "cik": "0000008858",
+        "company": "AVNET INC",
+        "form_type": "10-Q",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 851,
+        "source_md5": "bb0ae5295b1e95a6e6c11d15214c7d04",
+        "content_sha256": "613f1aa56d7330a7a9abded0030b39b7e51f713ca1b6d1ca87a756c618a5c864",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "dfe9fbd6-9071-5f81-b038-51483ecc80b9",
+        "section": "AVNET , INC.",
+        "section_index": 2,
+        "chunk_index": 26,
+        "char_start": 57440,
+        "char_end": 60630,
+        "text": "EC sales of $5.32 billion in the second quarter of fiscal 2025 decreased $494.3 million, or 8.5%, from the prior year second quarter sales of $5.81 billion, with the Americas and EMEA regions contributing to the decrease offset by sales growth in the Asia region. The decrease in sales is primarily due to sales volume decreases due to the market downturn in the electronic components industry and, to a lesser extent, an unfavorable product mix of lower priced electronic components.\n\nFarnell sales for the second quarter of fiscal 2025 were $345.6 million, reflecting a decrease of $47.2 million, or 12.0%, compared to the same period in the prior year. The decrease in sales in the second quarter of fiscal 2025 is primarily due to lower demand for on-the-board electronic components.\n\n**Gross Profit**\n\nThe Company's gross profit and gross profit margin are primarily affected by sales volume, product mix, and geographic sales mix. Gross profit for the second quarter of fiscal 2025 was $110.1 million, or 15.6% lower than the second quarter of fiscal 2024. This decrease is primarily due to sales volume decreases in both operating groups and to a lesser extent from the decline in gross profit margin in each operating group.\n\nGross profit margin decreased by 86 basis points to 10.5% for the second quarter of fiscal 2025 when compared to the second quarter of fiscal 2024. The decrease in gross profit margin is primarily due to shifts in geographic sales mix, partially offset by increases in gross margin from certain supplier engagements. Sales in the higher gross profit margin western regions represented approximately 52% of sales in the second quarter of fiscal 2025, versus 60% of sales during the second quarter of fiscal 2024.\n\nEC gross profit margin decreased year over year largely due to the change in geographic mix. Farnell gross profit margin decreased year over year, primarily due to lower sales of higher margin on-the-board electronic components.\n\nGross profit and gross profit margin were $1.20 billion and 10.7%, respectively, for the first six months of fiscal 2025 as compared with $1.45 billion and 11.6%, respectively, for the first six months of fiscal 2024.\n\n**Selling, General and Administrative Expenses**\n\nSelling, general, and administrative expenses (\"SG&A expenses\") decreased $27.8 million or 6.0% from the second quarter of fiscal 2024. The decrease in SG&A expenses is primarily due to decreases in variable operating expenses associated with the decrease in sales volumes discussed above and from restructuring actions taken by the Company, slightly offset by the impact of changes in foreign currency translation rates.\n\nManagement monitors SG&A expenses as a percentage of sales and as a percentage of gross profit. In the second quarter of fiscal 2025, SG&A expenses were 7.7% of sales and 73.3% of gross profit, as compared with 7.5% and 65.8%, respectively, in the second quarter of fiscal 2024. The year-over-year increases in SG&A expenses as a percentage of both sales and gross profit are primarily due to the decrease in sales and gross profit without a proportional reduction in SG&A expenses, resulting in lower operating leverage.",
+        "token_count": 684,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 55, \"rationale\": \"The candidate correctly states SG&A of $3,246.2 million and 51.1% of net revenues, matching the reference and the gold table. It omits the prior-year comparison (6.4% increase from $3,051.9 million), a minor omission. The candidate's arithmetic check (3,246.2 / 6,355.3 \u2248 51.1%) is correct. Citation support is partial: the cited chunk 7800a9af... does contain the SG&A table and net revenues, but the gold evidence is from the same filing and the cited section is the Results of Operations table in the retrieved excerpt, so the cited chunk is supportive though it is labeled with a chunk ID that is in the retrieved set. The 'Source' line cites a chunk for the table, which is reasonable, but the candidate did not quote the exact text, so support is moderate.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 55, \"rationale\": \"The candidate correctly states SG&A of $3,246.2 million and 51.1% of net revenues, matching the reference and the gold table. It omits the prior-year comparison (6.4% increase from $3,051.9 million), a minor omission. The candidate's arithmetic check (3,246.2 / 6,355.3 \u2248 51.1%) is correct. Citation support is partial: the cited chunk 7800a9af... does contain the SG&A table and net revenues, but the gold evidence is from the same filing and the cited section is the Results of Operations table in the retrieved excerpt, so the cited chunk is supportive though it is labeled with a chunk ID that is in the retrieved set. The 'Source' line cites a chunk for the table, which is reasonable, but the candidate did not quote the exact text, so support is moderate.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:31:00.319382+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "0e4b53783dd45a17f72d82c8:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042258-xebKMX1nnKqhtEGyJwY0",
+    "usage": {
+      "prompt_tokens": 30935,
+      "completion_tokens": 298,
+      "total_tokens": 31233,
+      "cost": 0.0032425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032425,
+        "upstream_inference_prompt_cost": 0.0030935,
+        "upstream_inference_completions_cost": 0.000149
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.580891333999716,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 55,
+    "rationale": "The candidate correctly states SG&A of $3,246.2 million and 51.1% of net revenues, matching the reference and the gold table. It omits the prior-year comparison (6.4% increase from $3,051.9 million), a minor omission. The candidate's arithmetic check (3,246.2 / 6,355.3 \u2248 51.1%) is correct. Citation support is partial: the cited chunk 7800a9af... does contain the SG&A table and net revenues, but the gold evidence is from the same filing and the cited section is the Results of Operations table in the retrieved excerpt, so the cited chunk is supportive though it is labeled with a chunk ID that is in the retrieved set. The 'Source' line cites a chunk for the table, which is reasonable, but the candidate did not quote the exact text, so support is moderate."
+  },
+  "status": "ok"
+}

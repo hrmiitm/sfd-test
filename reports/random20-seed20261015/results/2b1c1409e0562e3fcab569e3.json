@@ -1,0 +1,117 @@
+{
+  "question_id": "Q057",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.048407354000119085,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to Marathon Petroleum Corporation's Consolidated Balance Sheets in its 2024 Form 10-K, the figures as of December 31, 2024 are as follows:\n\n- **Total current assets:** $24,447 million\n- **Total current liabilities:** $20,827 million\n\n### Calculation:\n$$\\text{Working Capital} = \\text{Total current assets} - \\text{Total current liabilities}$$\n$$\\text{Working Capital} = \\$24,447\\text{ million} - \\$20,827\\text{ million} = \\$3,620\\text{ million}$$\n\nAs of December 31, 2024, Marathon Petroleum Corporation's working capital was **$3,620 million** (or $3.62 billion).\n\n***\n\n**Source:** Marathon Petroleum Corp 10-K (filed 2025-02-27), *Item 8. Financial Statements and Supplementary Data*, Consolidated Balance Sheets (Accession: `0001510295-25-000012`, Chunk ID: `10a4bbf3-55fe-5b56-af25-846272b45340`).",
+    "message": {
+      "role": "assistant",
+      "content": "According to Marathon Petroleum Corporation's Consolidated Balance Sheets in its 2024 Form 10-K, the figures as of December 31, 2024 are as follows:\n\n- **Total current assets:** $24,447 million\n- **Total current liabilities:** $20,827 million\n\n### Calculation:\n$$\\text{Working Capital} = \\text{Total current assets} - \\text{Total current liabilities}$$\n$$\\text{Working Capital} = \\$24,447\\text{ million} - \\$20,827\\text{ million} = \\$3,620\\text{ million}$$\n\nAs of December 31, 2024, Marathon Petroleum Corporation's working capital was **$3,620 million** (or $3.62 billion).\n\n***\n\n**Source:** Marathon Petroleum Corp 10-K (filed 2025-02-27), *Item 8. Financial Statements and Supplementary Data*, Consolidated Balance Sheets (Accession: `0001510295-25-000012`, Chunk ID: `10a4bbf3-55fe-5b56-af25-846272b45340`).",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1+4ZWyUa4t51LUWXAW/WSAXTK9pm1RAa7YR3bo/Oim9ITYaJU3unvATESjrAvJjxGVkS666xfi9xSPyVp5LEU8wXCN1Ty3TKQsE3wvNqIXEEy/e",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:45.315999+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "2b1c1409e0562e3fcab569e3:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041941-It2ar6fJhsNunMM7ll0L",
+    "usage": {
+      "prompt_tokens": 20963,
+      "completion_tokens": 290,
+      "total_tokens": 21253,
+      "cost": 0.01680975,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01680975,
+        "upstream_inference_prompt_cost": 0.01572225,
+        "upstream_inference_completions_cost": 0.0010875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.238142791000428,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate's figures match the reference and the retrieved balance sheet: total current assets $24,447M and total current liabilities $20,827M for December 31, 2024, giving working capital of $3,620M ($3.62B). The arithmetic is correct. The cited accession 0001510295-25-000012 and the Item 8 Consolidated Balance Sheets section match the retrieved Marathon Petroleum chunk, which contains the exact figures. The chunk ID cited is the retrieved chunk for that balance sheet. Citation support is slightly reduced only because the answer cites a chunk ID and filing date that are present in the excerpt metadata, so it is well supported, with no invented sources.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate's figures match the reference and the retrieved balance sheet: total current assets $24,447M and total current liabilities $20,827M for December 31, 2024, giving working capital of $3,620M ($3.62B). The arithmetic is correct. The cited accession 0001510295-25-000012 and the Item 8 Consolidated Balance Sheets section match the retrieved Marathon Petroleum chunk, which contains the exact figures. The chunk ID cited is the retrieved chunk for that balance sheet. Citation support is slightly reduced only because the answer cites a chunk ID and filing date that are present in the excerpt metadata, so it is well supported, with no invented sources.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:13.147141+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "2b1c1409e0562e3fcab569e3:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042151-C83wGITQe1S67oGqHQya",
+    "usage": {
+      "prompt_tokens": 27837,
+      "completion_tokens": 252,
+      "total_tokens": 28089,
+      "cost": 0.0029097,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029097,
+        "upstream_inference_prompt_cost": 0.0027837,
+        "upstream_inference_completions_cost": 0.000126
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.173210523999842,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "The candidate's figures match the reference and the retrieved balance sheet: total current assets $24,447M and total current liabilities $20,827M for December 31, 2024, giving working capital of $3,620M ($3.62B). The arithmetic is correct. The cited accession 0001510295-25-000012 and the Item 8 Consolidated Balance Sheets section match the retrieved Marathon Petroleum chunk, which contains the exact figures. The chunk ID cited is the retrieved chunk for that balance sheet. Citation support is slightly reduced only because the answer cites a chunk ID and filing date that are present in the excerpt metadata, so it is well supported, with no invented sources."
+  },
+  "status": "ok"
+}

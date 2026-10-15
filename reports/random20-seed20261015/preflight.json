@@ -1,0 +1,176 @@
+{
+  "started_utc": "2026-10-15T05:22:57.875824+00:00",
+  "expected_chunks": 48053,
+  "collection": "sfd_355dfd240a653fec",
+  "extensions": {
+    "/home/kit/Documents/sfd-2025/data/pipeline/benchmark-additions/run": {
+      "chunks": 4948,
+      "filings": 52
+    }
+  },
+  "stores_before": {
+    "lancedb": {
+      "version": 36,
+      "count": 48053
+    },
+    "qdrant": {
+      "count": 48053
+    }
+  },
+  "qdrant_status": "green",
+  "indexes": [
+    {
+      "name": "id_idx",
+      "type": "BTree",
+      "columns": [
+        "id"
+      ]
+    },
+    {
+      "name": "text_idx",
+      "type": "FTS",
+      "columns": [
+        "text"
+      ]
+    },
+    {
+      "name": "vector_idx",
+      "type": "IvfFlat",
+      "columns": [
+        "vector"
+      ]
+    }
+  ],
+  "coverage": {
+    "0000050863-25-000009": {
+      "lancedb": 162,
+      "qdrant": 162
+    },
+    "0000078003-25-000017": {
+      "lancedb": 18,
+      "qdrant": 18
+    },
+    "0000094845-25-000005": {
+      "lancedb": 214,
+      "qdrant": 214
+    },
+    "0000796343-25-000004": {
+      "lancedb": 407,
+      "qdrant": 407
+    },
+    "0000831001-25-000067": {
+      "lancedb": 446,
+      "qdrant": 446
+    },
+    "0000950170-25-010491": {
+      "lancedb": 43,
+      "qdrant": 43
+    },
+    "0000950170-25-029407": {
+      "lancedb": 111,
+      "qdrant": 111
+    },
+    "0001018724-25-000004": {
+      "lancedb": 47,
+      "qdrant": 47
+    },
+    "0001045810-25-000023": {
+      "lancedb": 95,
+      "qdrant": 95
+    },
+    "0001104659-25-001594": {
+      "lancedb": 3,
+      "qdrant": 3
+    },
+    "0001163165-25-000012": {
+      "lancedb": 130,
+      "qdrant": 130
+    },
+    "0001166691-25-000011": {
+      "lancedb": 193,
+      "qdrant": 193
+    },
+    "0001510295-25-000012": {
+      "lancedb": 128,
+      "qdrant": 128
+    },
+    "0001652044-25-000014": {
+      "lancedb": 76,
+      "qdrant": 76
+    },
+    "0001739566-25-000053": {
+      "lancedb": 93,
+      "qdrant": 93
+    }
+  },
+  "questions_fully_covered": {
+    "lancedb": 20,
+    "qdrant": 20
+  },
+  "self_match": {
+    "lancedb": true,
+    "qdrant": true
+  },
+  "retrieval_checks": {
+    "lancedb/bm25": {
+      "hits": 3,
+      "seconds": 0.07013367200033827
+    },
+    "lancedb/vector": {
+      "hits": 3,
+      "seconds": 0.06139200699999492
+    },
+    "lancedb/hybrid": {
+      "hits": 3,
+      "seconds": 0.0887543419994472
+    },
+    "qdrant/bm25": {
+      "hits": 3,
+      "seconds": 0.027630620999843813
+    },
+    "qdrant/vector": {
+      "hits": 3,
+      "seconds": 0.24118606800038833
+    },
+    "qdrant/hybrid": {
+      "hits": 3,
+      "seconds": 0.028274106000026222
+    }
+  },
+  "judge_schema": {
+    "correctness": 100,
+    "citation_support": 100,
+    "rationale": "The candidate answer '4' matches the reference exactly and is arithmetically correct. No citations were provided or needed, and the question does not require retrieval, so citation support is scored as full since no unsupported citations were invented."
+  },
+  "model_checks": [
+    {
+      "requested": "google/gemini-3.8-flash",
+      "actual": "google/gemini-3.8-flash",
+      "text": "READY",
+      "seconds": 1.8263811759998134
+    },
+    {
+      "requested": "openai/gpt-6-luna",
+      "actual": "openai/gpt-6-luna",
+      "text": "READY",
+      "seconds": 3.0544801079995523
+    },
+    {
+      "requested": "anthropic/claude-haiku-5.5",
+      "actual": "anthropic/claude-haiku-5.5",
+      "text": "READY",
+      "seconds": 2.0302491950005788
+    }
+  ],
+  "stores_after": {
+    "lancedb": {
+      "version": 36,
+      "count": 48053
+    },
+    "qdrant": {
+      "count": 48053
+    }
+  },
+  "passed": true,
+  "finished_utc": "2026-10-15T05:23:08.008129+00:00"
+}

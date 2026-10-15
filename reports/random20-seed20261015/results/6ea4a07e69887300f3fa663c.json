@@ -1,0 +1,126 @@
+{
+  "question_id": "Q089",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.02983503399991605,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Based on the Consolidated Statements of Operations and the Results of Operations section in Utz Brands, Inc.'s Form 10-K for the fiscal year ended December 29, 2024:\n\n### **1. Financial Data**\n* **Income from operations:** $58,906 thousand (or $58.906 million)\n* **Net sales:** $1,409,281 thousand (or $1,409.281 million)\n\n*(Source: Part II, Item 8, Consolidated Statements of Operations, Chunk ID: `c9f988c9-0c08-55d0-8891-c0f3e4093e75`; also Item 7, Results of Operations table, Chunk ID: `14e6d7a8-d96c-5bc1-a7d5-febc26908e92`)*\n\n---\n\n### **2. Calculation**\n$$\\text{Operating Income Margin} = \\frac{\\text{Income from operations}}{\\text{Net sales}}$$\n\n$$\\text{Operating Income Margin} = \\frac{58,906}{1,409,281} \\approx 0.0417986 \\text{ or } 4.18\\%$$\n\nUtz Brands, Inc.'s operating income margin percentage for the fiscal year ended December 29, 2024, was approximately **4.18%**.",
+    "message": {
+      "role": "assistant",
+      "content": "Based on the Consolidated Statements of Operations and the Results of Operations section in Utz Brands, Inc.'s Form 10-K for the fiscal year ended December 29, 2024:\n\n### **1. Financial Data**\n* **Income from operations:** $58,906 thousand (or $58.906 million)\n* **Net sales:** $1,409,281 thousand (or $1,409.281 million)\n\n*(Source: Part II, Item 8, Consolidated Statements of Operations, Chunk ID: `c9f988c9-0c08-55d0-8891-c0f3e4093e75`; also Item 7, Results of Operations table, Chunk ID: `14e6d7a8-d96c-5bc1-a7d5-febc26908e92`)*\n\n---\n\n### **2. Calculation**\n$$\\text{Operating Income Margin} = \\frac{\\text{Income from operations}}{\\text{Net sales}}$$\n\n$$\\text{Operating Income Margin} = \\frac{58,906}{1,409,281} \\approx 0.0417986 \\text{ or } 4.18\\%$$\n\nUtz Brands, Inc.'s operating income margin percentage for the fiscal year ended December 29, 2024, was approximately **4.18%**.",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1/G/5R5snVhI+6BJ8783MWxN0WJ0w2HYci+i79AQIJcWx1y4cT5Znxc4zcoVX6qQnpkSa0TUJxxe25TumUKeHAq0TR9eKUT+gWExhsltlxZ1E0J",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:34.714646+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "6ea4a07e69887300f3fa663c:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792042047-QsopQkOpbkkrEIc9zNiD",
+    "usage": {
+      "prompt_tokens": 17621,
+      "completion_tokens": 336,
+      "total_tokens": 17957,
+      "cost": 0.01447575,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01447575,
+        "upstream_inference_prompt_cost": 0.01321575,
+        "upstream_inference_completions_cost": 0.00126
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 7.856305624000015,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's answer of 4.18% matches the reference. Income from operations of $58,906 thousand divided by net sales of $1,409,281 thousand gives 0.0417986, or 4.18%, and the units are stated correctly. The cited chunk IDs (c9f988c9 and 14e6d7a8) appear in the retrieved excerpts, and the figures attributed to them match those excerpts. The only deduction is the minor wording of the 'Results of Operations' attribution, which is still supported by the retrieved text.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's answer of 4.18% matches the reference. Income from operations of $58,906 thousand divided by net sales of $1,409,281 thousand gives 0.0417986, or 4.18%, and the units are stated correctly. The cited chunk IDs (c9f988c9 and 14e6d7a8) appear in the retrieved excerpts, and the figures attributed to them match those excerpts. The only deduction is the minor wording of the 'Results of Operations' attribution, which is still supported by the retrieved text.\"}",
+      "refusal": null,
+      "reasoning": "I verify 58906/1409281 \u2248 4.18%, matching the reference exactly, and the candidate's calculation and units are correct. The citations point to chunk IDs that appear in the retrieved excerpts, and the gold evidence quote showing the operating income figures matches what's there, so citation support looks strong.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I verify 58906/1409281 \u2248 4.18%, matching the reference exactly, and the candidate's calculation and units are correct. The citations point to chunk IDs that appear in the retrieved excerpts, and the gold evidence quote showing the operating income figures matches what's there, so citation support looks strong.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS1AgKEAgSGAI4AUIIdGhpbmtpbmcSDHq2J8pIcUF05rL6ehoMkaRWhgrhDmIDQ7XBIjB01zUZUEty87+V2iWF7OXdAscDM9klayb201Nt+gTunaE4YLtIafDYQL+1VFJmX7kq8QcG3JZLWkE1og1btW35R4W+dXpyCqdawZmTYVjXoeIeNzHppcv8GgxSKRhMVO6qqL4OiNL7mIZ63YVKI0QRHjQPlDiEMuFIsLvPvgbaMrMdKnrAQHKYYX1T8tKvP8dQH50d5tVL8pYA9xo+d1HBUk/fniaUX0FPeuVyZ6g2CttPMvX0vCCUuTXLG6Z6a40QM6a3FZyOSnEQn7NtEOwW8rbUomYrFg4ZFdH+Kd6h6wLDFnPcl8sg6kuIZ4QGDwbZHBXqs/akTAh3dIG1ujSP/uycmAtrlIsf4JPIz8BufbLKvqNoF+Byn0K20aWRUGwUV4RNw76sMXcnYt2RieLCJDZ/d4Wyo0q3gtNkTbQ/FjiESPLZWIewSu+97GeWxBl/YiICKJPXgne0rJgQtRaYe3hkCSH8tXYRHn6g5iWhMdxoJCGyhWViv2eW8V7d3snP4fyx6dpJUIZtwGWC6J/YQ2CE19y70rJymnWLf5PAW2YH2C3Ur1hPIQ3IX4w4lRRJUH4ykel6+L+05qLBrVWIeTFt88tnkLlRysrDjYg6EERM3RkMBUDWsHEUt1rxUAchPnM9c3ua3qZsJkniFvTaRZQFQAoXODs0FSBCdR5tb27KAd1Itc6oOrmDRH47cPEIReJbObXOw6cFpi+Dct0yVRIGAM6hEt8g9aaqYe9O4b8ku8RhQXQFU5IviVJe9h916SMmoflWn7FlZD0K/fZN0htv93o5QkplcbbYHNg8nZxGU+8/1n9iB6FRNTYoB9UB8VNdw1oa5U5wK46wvvIq+TL8Sti8nCn54E6ypQPDwN4RBYoC8/k28CaKp4bwjZrxHKV2jItOB9kxXkrOMx01naGzEtctIC1zTkl8ME4zsI1Jb9fLuddb6cuGCwbWZwW/PTDprkpEVWx81EX1n0fy4WB9gCjxk6Eh0mZrlFdjV5aflsE2frprV911J/9kNZZnSv1hRGP5MxRXeuHdaC/44DmeiVm6D1P9dYk0CxV+xvoRHDgYqFTElOTCiFKaKlrDcW/pbmBvXLkyPt8Yqwb45g6iybCkI9untpPMs8rYZc4Tk3ph9bCSYg7gHsFDX6dr4OdXyOLJcJZC8tBCSYhX6aEdLrOZG8fUo+xwRcSZnW/yX7XUszB3E8Wm/XxkIlcWuB6pHLv4UXdOIESunvMC8+paxNOTY6pKR+tt3+428IWgZL6FMBdkqdoUo9/BpUkbgGvY/8+1oH6rxK1J71GD8pHWOS9sJt9FDCZ95GnD76aE1ZcCdjRZeQr3+Vu4pbFUJWIKvGp56CEGf90Gmt9FfkMsb7EOsyT5GODmqf4Dfa8uAaheQzh0da1VWtsP5HQQy6aaGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:49.945978+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "6ea4a07e69887300f3fa663c:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042245-IfIsM7TC2SPdSRa9KA1H",
+    "usage": {
+      "prompt_tokens": 24040,
+      "completion_tokens": 418,
+      "total_tokens": 24458,
+      "cost": 0.002613,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002613,
+        "upstream_inference_prompt_cost": 0.002404,
+        "upstream_inference_completions_cost": 0.000209
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 220,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.655402859999413,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 95,
+    "rationale": "The candidate's answer of 4.18% matches the reference. Income from operations of $58,906 thousand divided by net sales of $1,409,281 thousand gives 0.0417986, or 4.18%, and the units are stated correctly. The cited chunk IDs (c9f988c9 and 14e6d7a8) appear in the retrieved excerpts, and the figures attributed to them match those excerpts. The only deduction is the minor wording of the 'Results of Operations' attribution, which is still supported by the retrieved text."
+  },
+  "status": "ok"
+}

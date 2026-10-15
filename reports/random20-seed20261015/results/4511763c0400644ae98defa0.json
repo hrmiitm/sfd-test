@@ -1,0 +1,463 @@
+{
+  "question_id": "Q079",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 14.405819053999949,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Ford Motor Credit Company LLC issued two tranches:\n\n- **5.875% senior notes due November 7, 2029:** **$1.25 billion** principal.\n- **6.500% senior notes due February 7, 2035:** **$1.25 billion** principal.\n\n**Combined principal: $2.50 billion** ($1.25 billion + $1.25 billion).\n\nSource: Form 8-K filed January 7, 2025, accession **0001104659-25-001594**, Filing Summary, chunk **774b96ac-63fc-5a4d-b3bd-fa2381fe6581**.",
+    "usage": {
+      "prompt_tokens": 10152,
+      "completion_tokens": 181,
+      "total_tokens": 10333,
+      "cost": 0.001338925
+    },
+    "seconds": 5.140420124999764,
+    "tool_seconds": 14.405819053999949,
+    "tool_calls": 1,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_ojlgYPFQHzQq4ig7hmGF1UGU",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Ford Motor Credit Company LLC Form 8-K January 7 2025 senior notes interest rate maturity principal\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_ojlgYPFQHzQq4ig7hmGF1UGU",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Ford Motor Credit Company LLC Form 8-K January 7 2025 senior notes interest rate maturity principal\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:26:35.041480+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "4511763c0400644ae98defa0:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041993-IuyUa6zCzi9tKXTarppp",
+        "usage": {
+          "prompt_tokens": 820,
+          "completion_tokens": 38,
+          "total_tokens": 858,
+          "cost": 0.000101,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000101,
+            "upstream_inference_prompt_cost": 8.2e-05,
+            "upstream_inference_completions_cost": 1.9e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 1.8423760830000901,
+        "attempts": 1
+      },
+      {
+        "text": "Ford Motor Credit Company LLC issued two tranches:\n\n- **5.875% senior notes due November 7, 2029:** **$1.25 billion** principal.\n- **6.500% senior notes due February 7, 2035:** **$1.25 billion** principal.\n\n**Combined principal: $2.50 billion** ($1.25 billion + $1.25 billion).\n\nSource: Form 8-K filed January 7, 2025, accession **0001104659-25-001594**, Filing Summary, chunk **774b96ac-63fc-5a4d-b3bd-fa2381fe6581**.",
+        "message": {
+          "role": "assistant",
+          "content": "Ford Motor Credit Company LLC issued two tranches:\n\n- **5.875% senior notes due November 7, 2029:** **$1.25 billion** principal.\n- **6.500% senior notes due February 7, 2035:** **$1.25 billion** principal.\n\n**Combined principal: $2.50 billion** ($1.25 billion + $1.25 billion).\n\nSource: Form 8-K filed January 7, 2025, accession **0001104659-25-001594**, Filing Summary, chunk **774b96ac-63fc-5a4d-b3bd-fa2381fe6581**.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:30:16.684250+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "4511763c0400644ae98defa0:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042214-dk5u2khIhEJ7FIAwl0VN",
+        "usage": {
+          "prompt_tokens": 9332,
+          "completion_tokens": 143,
+          "total_tokens": 9475,
+          "cost": 0.001237925,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 9329,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001237925,
+            "upstream_inference_prompt_cost": 0.001166425,
+            "upstream_inference_completions_cost": 7.15e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.298044041999674,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_ojlgYPFQHzQq4ig7hmGF1UGU",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Ford Motor Credit Company LLC Form 8-K January 7 2025 senior notes interest rate maturity principal\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0001104659-25-001594",
+              "cik": "0000038009",
+              "company": "FORD MOTOR CREDIT CO LLC",
+              "form_type": "8-K",
+              "filed_date": "20250107",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 44684,
+              "source_md5": "7fa11f65078f63de1b97b37d649ccae9",
+              "content_sha256": "a7e83361a37325044505f829ceb0fdc86e0ac68ce90f5def077a26cfbfc484c9",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "774b96ac-63fc-5a4d-b3bd-fa2381fe6581",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 0,
+              "char_start": 0,
+              "char_end": 6279,
+              "text": "## Filing Summary\n**0001104659-25-001594.hdr.sgml**: 20250107\n\n**ACCESSION NUMBER**: 0001104659-25-001594\n\n**CONFORMED SUBMISSION TYPE**: 8-K\n\n**PUBLIC DOCUMENT COUNT**: 15\n\n**CONFORMED PERIOD OF REPORT**: 20250107\n\n**ITEM INFORMATION**: Other Events\n\n**ITEM INFORMATION**: Financial Statements and Exhibits\n\n**FILED AS OF DATE**: 20250107\n\n**DATE AS OF CHANGE**: 20250107\n\n**FILER**: \n\n\n**COMPANY DATA:**\n- **COMPANY CONFORMED NAME:** FORD MOTOR CREDIT CO LLC\n- **CENTRAL INDEX KEY:** 0000038009\n- **STANDARD INDUSTRIAL CLASSIFICATION:** MISCELLANEOUS BUSINESS CREDIT INSTITUTION [6159]\n- **ORGANIZATION NAME:** 02 Finance\n- **IRS NUMBER:** 381612444\n- **STATE OF INCORPORATION:** DE\n- **FISCAL YEAR END:** 1231\n\n**FILING VALUES:**\n- **FORM TYPE:** 8-K\n- **SEC ACT:** 1934 Act\n- **SEC FILE NUMBER:** 001-06368\n- **FILM NUMBER:** 25513796\n\n**BUSINESS ADDRESS:**\n- **STREET 1:** ONE AMERICAN ROAD\n- **CITY:** DEARBORN\n- **STATE:** MI\n- **ZIP:** 48126\n- **BUSINESS PHONE:** 313-322-3000\n\n**MAIL ADDRESS:**\n- **STREET 1:** ONE AMERICAN ROAD\n- **CITY:** DEARBORN\n- **STATE:** MI\n- **ZIP:** 48126\n\n**FORMER COMPANY:**\n- **FORMER CONFORMED NAME:** FORD MOTOR CREDIT CO\n- **DATE OF NAME CHANGE:** 19920703\n\n?xml version='1.0' encoding='ASCII'?\n\n**UNITED STATES**\n\n**SECURITIES AND EXCHANGE COMMISSION**\n\n**Washington, D. C. 20549**\n\n**FORM 8-K**\n\n**CURRENT REPORT**\n\n**Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934**\n\n**Date of Report: <u>January 7, 2025</u>**\n\n(Date of earliest event reported)\n\n**<u>FORD MOTOR CREDIT COMPANY LLC</u>**\n\n(Exact name of registrant as specified in its charter)\n\n**<u>Delaware</u>**\n\n(State or other jurisdiction of organization)\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| 1-6368 | 1-6368 | 38-1612444 |\n| (Commission File Number) | (Commission File Number) | (IRS Employer Identification No.) |\n| One American Road | One American Road |  |\n| Dearborn, | Michigan | 48126 |\n| (Address of principal executive <br> offices) | (Address of principal executive <br> offices) | (Zip Code) |\n\n---\n\n\n\nRegistrant's telephone number, including area code **<u>313</u>**<u>-**322-3000**</u>\n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions:\n\n\u00a8 Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)\n\n\u25fb Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)\n\n\u25fb Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))\n\n\u25fb Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))\n\n**Securities registered pursuant to Section 12(b) of the Act:**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| **Title of each class** | **Trading Symbol(s)** | **Name of each exchange on which<br> registered** |\n| 1.355% Notes due February 7, 2025\\* | F/25I | New York Stock Exchange |\n| 4.535% Notes due March 6, 2025\\* | F/25K | New York Stock Exchange |\n| 3.250% Notes due September 15, 2025\\* | F/25M | New York Stock Exchange |\n| 2.330% Notes due November 25, 2025\\* | F/25L | New York Stock Exchange |\n| 2.386% Notes due February 17, 2026\\* | F/26AB | New York Stock Exchange |\n| 6.860% Notes due June 5, 2026\\* | F/26A | New York Stock Exchange |\n| 3.350% Notes due Nine Months or More from the Date of Issue due August 20, 2026 | F/26N | New York Stock Exchange |\n| 4.867% Notes due August 3, 2027\\* | F/27A | New York Stock Exchange |\n| 6.125% Notes due May 15, 2028\\* | F/28B | New York Stock Exchange |\n| 5.625% Notes due October 9, 2028\\* | F/28D | New York Stock Exchange |\n| 4.165% Notes due November 21, 2028\\* | F/28E | New York Stock Exchange |\n| 5.125% Notes due February 20, 2029\\* | F/29B | New York Stock Exchange |\n| 4.445% Notes due February 14, 2030\\* | F/30D | New York Stock Exchange |\n| 5.780% Notes due April 30, 2030\\* | F/30A | New York Stock Exchange |\n\n---\n\n\n\n\\*Issued under Euro Medium-Term Notes due Nine Months or More from The Date of Issue Program\n\nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (\u00a7230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (\u00a7240.12b-2 of this chapter).\n\nEmerging growth company \u25fb\n\nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u25fb\n\n**<u>Item 8.01. Other Events</u>** **.**\n\nOn January 7, 2025, Ford Motor Credit Company LLC (the \"Company\") issued and sold (1) $1,250,000,000 aggregate principal amount of 5.875% Notes due November 7, 2029 (the \"2029 Notes\") and (2) $1,250,000,000 aggregate principal amount of 6.500% Notes due February 7, 2035 (the \"2035 Notes\"), pursuant to the Company's effective registration statement on Form S-3 (Registration Statement No. 333-276916) previously filed with the Securities and Exchange Commission (the \"Registration Statement\"). A copy of the opinion of David J. Witten, an Attorney to the Company, relating to the legality of the 2029 Notes and the 2035 Notes is filed as Exhibit 5 to this Report.\n\nThe Company incorporates by reference the exhibits filed herewith into the Registration Statement pursuant to which the 2029 Notes and 2035 Notes were registered.\n\n**<u>Item 9.01. Financial Statements and Exhibits</u>** **.**\n\n**<u>EXHIBITS</u>**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| <u>Designation</u> | <u>Description</u> | <u>Method of Filing</u> |\n| [Exhibit 5](tm252023d1_ex5-1.htm) | [Opinion of David J. Witten, Attorney to the Company](tm252023d1_ex5-1.htm) | [Filed with this Report](tm252023d1_ex5-1.htm) |\n| [Exhibit 23.1](tm252023d1_ex5-1.htm) | [Consent of David J. Witten (included in Exhibit 5)](tm252023d1_ex5-1.htm) | [Filed with this Report](tm252023d1_ex5-1.htm) |\n| Exhibit 104 | Cover Page Interactive Data File | \\* |\n|  | (formatted in Inline XBRL) |  |\n\n---\n\n\n\n<u>SIGNATURE</u>\n\nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.\n\n---",
+              "token_count": 1943,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001104659-25-001594",
+              "cik": "0000038009",
+              "company": "FORD MOTOR CREDIT CO LLC",
+              "form_type": "8-K",
+              "filed_date": "20250107",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 44684,
+              "source_md5": "7fa11f65078f63de1b97b37d649ccae9",
+              "content_sha256": "a7e83361a37325044505f829ceb0fdc86e0ac68ce90f5def077a26cfbfc484c9",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "eb9d2e78-d876-566e-b828-f13e26e229bc",
+              "section": "Exhibit 5.1",
+              "section_index": 1,
+              "chunk_index": 0,
+              "char_start": 6753,
+              "char_end": 10032,
+              "text": "## Exhibit 5.1\n\n\n**Exhibits 5 and 23.1**\n\n**Ford Motor Credit Company LLC**\n\nDavid J. Witten Assistant Secretary One American Road Dearborn, Michigan 48126 <br>January 7, 2025\n\nFord Motor Credit Company LLC\n\nOne American Road\n\nDearborn, MI, 48126\n\nRe: <u>Registration Statement</u>\n\nLadies and Gentlemen:\n\nReference is made to the Registration Statement on Form S-3 (the \"Registration Statement\") filed with the Securities and Exchange Commission (the \"Commission\") on February 7, 2024 by Ford Motor Credit Company LLC (the \"Company\") for the registration of debt securities (\"Debt Securities\"). The Debt Securities are to be issued pursuant to the provisions of an Indenture dated as of March 16, 2015 (the \"Indenture\"), between the Company and The Bank of New York Mellon, as Trustee (the \"Trustee\"). Pursuant to the terms of the Indenture, the Company has created as a series of Debt Securities its (1) 5.875% Notes due November 7, 2029 in the aggregate principal amount of $1,250,000,000 (the \"2029 Notes\") and (2) 6.500% Notes due February 7, 2035 in the aggregate principal amount of $1,250,000,000 (the \"2035 Notes\").\n\nAs Assistant Secretary of the Company, I am familiar with the Certificate of Formation and the Limited Liability Company Agreement of the Company and with the affairs of the Company. I also am familiar with the Company's action taken pursuant to Sections 2.01 and 3.01 of the Indenture to establish the 2029 Notes and the 2035 Notes each as a series of Debt Securities under the Indenture. I have also examined such other documents and instruments and have made such further investigation as I have deemed necessary or appropriate in connection with this opinion.\n\nBased on the foregoing, it is my opinion that the 2029 Notes and the 2035 Notes constitute legal, valid and binding obligations of the Company.\n\nMy opinion expressed herein is subject to the qualification that I express no opinion as to the applicability of, compliance with, or effect of (i) any bankruptcy, reorganization, insolvency, fraudulent transfer, fraudulent conveyance, moratorium or other similar law or judicially developed doctrine in this area (such as substantive consolidation or equitable subordination) affecting the enforcement of creditors' rights generally, (ii) general principles of equity (regardless of whether enforcement is considered in a proceeding in equity or at law), and (iii) public policy considerations which may limit the rights of parties to obtain certain remedies.\n\nI wish to point out that I am a member of the Bar of the State of Michigan. I have made, or caused to be made, such investigation as I have deemed appropriate with respect to the laws of other jurisdictions in connection with the opinion expressed herein, and nothing has come to my attention in the course of such investigation which would lead me to question the correctness of such opinion.\n\nI hereby consent to the filing of this opinion as Exhibit 5 to the Registration Statement. In giving this consent, I do not admit that I am in the category of persons whose consent is required under Section 7 of the Securities Act or the rules and regulations of the Commission issued thereunder.\n\n Very truly yours,<br>/s/ David J. Witten<br>David J. Witten<br> Assistant Secretary<br>",
+              "token_count": 729,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001104659-25-001594",
+              "cik": "0000038009",
+              "company": "FORD MOTOR CREDIT CO LLC",
+              "form_type": "8-K",
+              "filed_date": "20250107",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 44684,
+              "source_md5": "7fa11f65078f63de1b97b37d649ccae9",
+              "content_sha256": "a7e83361a37325044505f829ceb0fdc86e0ac68ce90f5def077a26cfbfc484c9",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "738f6278-f504-5ab6-a812-1a239fd9820c",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 1,
+              "char_start": 6283,
+              "char_end": 6750,
+              "text": "| | | |\n|:---|:---|:---|\n|  |  | FORD MOTOR CREDIT COMPANY LLC |\n|  |  | (Registrant) |\n| &nbsp;&nbsp;&nbsp; Date: January 7, 2025 | By: | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /s/ David J. Witten&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |\n|  |  | David J. Witten |\n|  |  | Assistant Secretary |\n\n---\n\n\n\n\\* Submitted electronically with this Report in accordance with the provisions of Regulation S-T.",
+              "token_count": 154,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001510295-25-000012",
+              "cik": "0001510295",
+              "company": "Marathon Petroleum Corp",
+              "form_type": "10-K",
+              "filed_date": "20250227",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 121777,
+              "source_md5": "dbc331eedc34da0ae438e15884138d48",
+              "content_sha256": "a3f82014c43b91db617edbc0db25de00f5f62c534b2a17c233f03f60db5021a2",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "33b88e4e-7997-5784-a225-807ca5864d51",
+              "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+              "section_index": 9,
+              "chunk_index": 10,
+              "char_start": 298610,
+              "char_end": 307276,
+              "text": "On February 10, 2025, MPC issued $2.0 billion aggregate principal amount of senior notes in an underwritten public offering consisting of $1.1 billion aggregate principal amount of 5.150 percent senior notes due March 2030 and $900 million aggregate principal amount of 5.700 percent senior notes due March 2035. We intend to use the net proceeds from this offering to repay, redeem or otherwise retire our outstanding $1.250 billion aggregate principal amount of 4.700 percent senior notes due May 2025 and for general corporate purposes.\n\nBecause of the alternatives available to us, including internally generated cash flow and access to capital markets and a commercial paper program, we believe that our short-term and long-term liquidity is adequate to fund not only our current operations, but also our near-term (less than twelve months) and long-term funding requirements, including capital spending programs, the repurchase of shares of our common stock, dividend payments, defined benefit plan contributions, repayment of debt maturities and other amounts that may ultimately be paid in connection with contingencies.\n\nWe have a commercial paper program that allows us to have a maximum of $2.0 billion in commercial paper outstanding, with maturities up to 397 days from the date of issuance. We do not intend to have outstanding commercial paper borrowings in excess of available capacity under our bank revolving credit facility. At December 31, 2024, we had no borrowings outstanding under the commercial paper program.\n\nMPC's bank revolving credit facility and trade receivables facility contain representations and warranties, affirmative and negative covenants and restrictions, including financial covenants, and events of default that we consider usual and customary for agreements of a similar type and nature. As of December 31, 2024, we were in compliance with such covenants and restrictions. See Item 8. Financial Statements and Supplementary Data \u2013 Note 19 for further discussion of MPC's revolving bank credit facility, trade receivables facility and related covenants and restrictions.\n\nOur intention is to maintain an investment-grade credit profile. As of January 31, 2025, the credit ratings on our senior unsecured debt are as follows.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| <u>Company</u> | <u>Rating Agency</u> | <u>Rating</u> |\n| MPC | Moody's | Baa2 (stable outlook) |\n| | Standard & Poor's | BBB (stable outlook) |\n| | Fitch | BBB (stable outlook) |\n\n---\n\n\n\nThe ratings reflect the respective views of the rating agencies and should not be interpreted as a recommendation to buy, sell or hold our securities. Although it is our intention to maintain a credit profile that supports an investment-grade rating, there is no assurance that these ratings will continue for any given period of time. The ratings may be revised or withdrawn entirely by the rating agencies if, in their respective judgments, circumstances so warrant. A rating from one rating agency should be evaluated independently of ratings from other rating agencies.\n\nThe agreements governing MPC's debt obligations do not contain credit rating triggers that would result in the acceleration of interest, principal or other payments in the event that our credit ratings are downgraded. However, any downgrades of our senior\n\n------\n\n<u>[T](#i2d76ef0e09c34cd785d4626a5126e3d7_7)[able](#i2d76ef0e09c34cd785d4626a5126e3d7_7)[of Contents](#i2d76ef0e09c34cd785d4626a5126e3d7_7)</u>\n\nunsecured debt could increase the applicable interest rates, yields and other fees payable under such agreements and may limit our flexibility to obtain financing in the future, including to refinance existing indebtedness. In addition, a downgrade of our senior unsecured debt rating to below investment-grade levels could, under certain circumstances, impact our ability to purchase crude oil on an unsecured basis and could result in us having to post letters of credit under existing transportation services or other agreements.\n\nSee Item 8. Financial Statements and Supplementary Data \u2013 Note 19 for further discussion of our debt.\n\n**MPLX** \n\nMPLX's liquidity totaled $5.02 billion at December 31, 2024 consisting of:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | December 31, 2024 | December 31, 2024 | December 31, 2024 | December 31, 2024 |\n| *(Millions of dollars)* | Total Capacity | Outstanding Borrowings | Outstanding Letters <br>of Credit | Available<br>Capacity |\n| MPLX bank revolving credit facility | $2000 | $\u2014 | $\u2014 | $2000 |\n| MPC intercompany loan agreement | 1500 |  |  | 1500 |\n| &nbsp;&nbsp;Total | $3500 | $\u2014 | $\u2014 | $3500 |\n| Cash and cash equivalents |  |  |  | 1519 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total liquidity |  |  |  | $5019 |\n\n---\n\n\n\nOn May 20, 2024, MPLX issued $1.65 billion aggregate principal amount of 5.50 percent senior notes due June 2034 (the \"2034 Senior Notes\") in an underwritten public offering. On December 1, 2024, MPLX used $1,150 million of the net proceeds from the issuance of the 2034 Senior Notes to repay all of (i) MPLX's outstanding $1,149 million aggregate principal amount of 4.875 percent senior notes due December 2024 and (ii) MarkWest's outstanding $1 million aggregate principal amount of 4.875 percent senior notes due December 2024. On February 18, 2025, MPLX used the remaining net proceeds from the issuance of the 2034 Senior Notes to repay all of MPLX's outstanding $500 million aggregate principal amount of 4.000 percent senior notes due February 2025.\n\nMPLX's bank revolving credit facility contains representations and warranties, covenants and restrictions, including financial covenants, and events of default that we consider usual and customary for agreements of a similar type and nature. As of December 31, 2024, we were in compliance with such covenants and restrictions. See Item 8. Financial Statements and Supplementary Data \u2013 Note 19 for further discussion of MPLX's bank revolving credit facility and related covenants and restrictions.\n\nOur intention is to maintain an investment-grade credit profile for MPLX. As of January 31, 2025, the credit ratings on MPLX's senior unsecured debt are as follows.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| <u>Company</u> | <u>Rating Agency</u> | <u>Rating</u> |\n| MPLX | Moody's | Baa2 (stable outlook) |\n| | Standard & Poor's | BBB (stable outlook) |\n| | Fitch | BBB (stable outlook) |\n\n---\n\n\n\nThe ratings reflect the respective views of the rating agencies and should not be interpreted as a recommendation to buy, sell or hold MPLX securities. Although it is our intention to maintain a credit profile that supports an investment-grade rating for MPLX, there is no assurance that these ratings will continue for any given period of time. The ratings may be revised or withdrawn entirely by the rating agencies if, in their respective judgments, circumstances so warrant. A rating from one rating agency should be evaluated independently of ratings from other rating agencies.\n\nThe agreements governing MPLX's debt obligations do not contain credit rating triggers that would result in the acceleration of interest, principal or other payments in the event that MPLX credit ratings are downgraded. However, any downgrades of MPLX senior unsecured debt to below investment grade ratings could increase the applicable interest rates, yields and other fees payable under such agreements. In addition, a downgrade of MPLX senior unsecured debt ratings to below investment-grade levels may limit MPLX's ability to obtain future financing, including to refinance existing indebtedness.\n\nSee Item 8. Financial Statements and Supplementary Data \u2013 Note 19 for further discussion of MPLX's debt.\n\n**Capital Requirements**\n\n**Capital Spending**\n\nMPC's capital investment outlook for 2025 totals approximately $1.25 billion for capital projects and investments, excluding capitalized interest, potential acquisitions, if any, and MPLX's capital investment plan. MPC's 2025 capital investment outlook\n\n------\n\n<u>[T](#i2d76ef0e09c34cd785d4626a5126e3d7_7)[able](#i2d76ef0e09c34cd785d4626a5126e3d7_7)[of Contents](#i2d76ef0e09c34cd785d4626a5126e3d7_7)</u>\n\nincludes all of the planned capital spending for Refining & Marketing, Renewable Diesel and Corporate as well as a portion of the planned capital investments for Midstream. The remainder of the planned capital spending for Midstream reflects the capital investment plan for MPLX. We continuously evaluate our capital plan and make changes as conditions warrant. The 2025 capital investment outlook for MPC and MPLX and capital expenditures and investments for each of the last three years are summarized by segment below.\n\n---",
+              "token_count": 1992,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001166691-25-000011",
+              "cik": "0001166691",
+              "company": "COMCAST CORP",
+              "form_type": "10-K",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 27404,
+              "source_md5": "876b0690491e2f38a18edd9f6133aeb3",
+              "content_sha256": "46376de4dc10f9ab29ba99f02adf5c003b4e9bb4d5c22c0e8ebbc72133fac589",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "f915def5-cbb8-529a-8f46-f6122f7aeaa2",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 24,
+              "char_start": 219957,
+              "char_end": 228775,
+              "text": "The variance in changes in operating assets and liabilities in 2024 was primarily related to the timing of amortization and related payments for our film and television costs, including the timing of sports, which was partially offset by reduced spending in the prior year due to the work stoppages.\n\nThe decrease in payments of interest in 2024 was primarily due to the payments of interest in the prior year associated with our collateralized obligation which was repaid in the fourth quarter of 2023, partially offset by increased debt balances following debt issuances in the current year and higher weighted-average interest rates.\n\nPayments of income taxes increased in 2024 and included higher payments in the current year related to the 2023 tax year, primarily driven by the taxable gain recognized on our investment in Hulu. Payments of income taxes in 2024 were favorably impacted by the timing of transferable tax credit purchases, as payments for certain tax credits used in 2024 will be made in 2025. Additionally, we expect to receive a federal income tax refund in 2025 as a result of carrying back a capital loss created primarily as part of a 2024 internal corporate reorganization to offset capital gains recognized in our federal income tax returns for 2021 through 2023 (see Note 5).\n\n**Investing Activities**\n\nNet cash used in investing activities increased in 2024 primarily due to net proceeds received as an advance on the sale of our interest in Hulu in the prior year (see Note 7), partially offset by decreased cash paid for intangible assets related to software development in the current year and decreased purchases of investments.\n\nWe expect to receive additional proceeds for the sale of our interest in Hulu following the finalization of the third-party appraisal process, at which time we will recognize the sale of our interest. See Note 7.\n\nIn September 2023, we entered into an agreement with T-Mobile to sell certain of our spectrum licenses. The agreement provides us with a right to remove certain licenses from the transaction, which will result in total cash consideration between $1.2 billion and $3.3 billion. The sale is expected to close in 2028 subject to various conditions and approvals.\n\nCapital Expenditures\n\nCapital expenditures remained consistent in 2024 compared to 2023. Spending on theme park attractions increased in 2024, and included costs associated with the construction of Epic Universe. 2023 expenditures included the acquisition of land for potential theme park expansion opportunities. The costs associated with the construction of Universal Beijing Resort are presented separately in our consolidated statements of cash flows. See Note 7.\n\nOur most significant capital expenditures are within the Connectivity & Platforms business, and we expect that this will continue in the future. Connectivity & Platforms' capital expenditures remained consistent in 2024 compared to 2023 primarily due to increased spending on line extensions and support capital, offset by decreased spending on customer premise equipment and scalable infrastructure. The table below summarizes the capital expenditures we incurred in our segments in the Connectivity & Platforms business in 2024 and 2023.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **47** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| Year ended December 31 (in millions) | **2024** | 2023 |\n| Customer premise equipment | $**2013** | $2234 |\n| Scalable infrastructure | **3024** | 3161 |\n| Line extensions | **2691** | 2333 |\n| Support capital | **557** | 514 |\n| Total | $**8286** | $8241 |\n\n---\n\n\n\nWe expect our capital expenditures in 2025 will continue to be focused on investments in the Connectivity & Platforms business in scalable infrastructure as we increase capacity and continue to execute our plans to upgrade our network to deliver multigigabit symmetrical speeds, in line extensions for the expansion of homes and businesses passed, and in the continued deployment of wireless gateways. In addition, we expect to continue investment in existing and new attractions at our Universal theme parks, including Epic Universe. Capital expenditures for subsequent years will depend on numerous factors, including competition, changes in technology, regulatory changes, the timing and rate of deployment of new services, the capacity required for existing services, the timing of new attractions at our theme parks and potential acquisitions.\n\n**Financing Activities**\n\nNet cash used in financing activities decreased in 2024 primarily due to repayment of a collateralized obligation in the prior year (see Note 7), a decrease in repurchases of common stock under our share repurchase program and employee plans, lower repurchases and repayments of debt in the current year, repayments of short-term borrowings, net in the prior year and higher proceeds from borrowings in the current year.\n\nIn September 2024, we issued \u20ac1.8 billion aggregate principal amount of fixed-rate euro senior notes maturing in 2032 and 2036 and entered into a corresponding cross-currency swap, effectively converting the debt to an aggregate U.S. dollar principal amount of $2.0 billion with a weighted-average interest rate of 4.72%. We also issued \u00a3750 million ($1.0 billion using exchange rates on the date of issuance) principal amount of fixed rate sterling senior notes maturing in 2040 with an interest rate of 5.25%. The net proceeds from this issuance were intended for working capital and general corporate purposes, including the early redemption of $725 million of our outstanding 5.25% Notes due 2025, which was completed in October 2024, and the repayment of certain of our other outstanding debt with near-term maturities. In May 2024, we issued $3.3 billion aggregate principal amount of fixed-rate senior notes, which have maturities ranging between 2029 and 2054 and a weighted-average interest rate of 5.38%. The net proceeds from this issuance were used for the repayment of our outstanding commercial paper, and for working capital and general corporate purposes.\n\nIn 2024, we made debt repayments of $3.6 billion, including $1.9 billion principal amount of notes due at maturity and $750 million of 5.250% Notes due 2025, $391 million of 3.950% Notes due 2025, $256 million of 3.375% Notes due 2025, and $104 million of 3.150% Notes due 2026.\n\nWe have made, and may from time to time in the future make, optional repayments on our debt obligations, which may include repurchases or exchanges of our outstanding public notes and debentures, depending on various factors, such as market conditions. Any such repurchases may be effected through privately negotiated transactions, market transactions, tender offers, redemptions or otherwise. In particular, we may repurchase varying amounts of our outstanding public notes and debentures with short to medium term maturities through privately negotiated or market transactions. See Notes 6 and 7 for additional information on our financing activities.\n\nShare Repurchases and Dividends\n\nIn the second quarter of 2021, we restarted our share repurchase program, which had been paused since the beginning of 2019. In January 2024, our Board of Directors terminated our existing program and approved a new share repurchase program authorization of $15 billion effective as of January 26, 2024, which had no expiration date. In 2024, we repurchased a total of 212 million shares of our Class A common stock for $8.6 billion under our authorization programs. We did not purchase any shares outside of these programs. As of December 31, 2024, we had $7.0 billion remaining under the authorization, and in January 2025, our Board of Directors terminated the existing program and approved a new share repurchase program authorization of $15 billion, which has no expiration date. We expect to repurchase additional shares of our Class A common stock under this new authorization in the open market or in private transactions, subject to market and other conditions.\n\nIn 2024, our Board of Directors declared quarterly dividends of $0.31 per share, including our fourth quarter dividend payable in January 2025 and we made dividend payments of $4.8 billion. In January 2025, our Board of Directors approved a 6.5% increase in our dividend to $1.32 per share on an annualized basis and approved our first quarter dividend of $0.33 per share, to be paid in April 2025. We expect to continue to pay quarterly dividends, although each dividend is subject to approval by our Board of Directors.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **48** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**",
+              "token_count": 1901,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 14.405819053999949
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0001104659-25-001594",
+        "cik": "0000038009",
+        "company": "FORD MOTOR CREDIT CO LLC",
+        "form_type": "8-K",
+        "filed_date": "20250107",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 44684,
+        "source_md5": "7fa11f65078f63de1b97b37d649ccae9",
+        "content_sha256": "a7e83361a37325044505f829ceb0fdc86e0ac68ce90f5def077a26cfbfc484c9",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "774b96ac-63fc-5a4d-b3bd-fa2381fe6581",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 0,
+        "char_start": 0,
+        "char_end": 6279,
+        "text": "## Filing Summary\n**0001104659-25-001594.hdr.sgml**: 20250107\n\n**ACCESSION NUMBER**: 0001104659-25-001594\n\n**CONFORMED SUBMISSION TYPE**: 8-K\n\n**PUBLIC DOCUMENT COUNT**: 15\n\n**CONFORMED PERIOD OF REPORT**: 20250107\n\n**ITEM INFORMATION**: Other Events\n\n**ITEM INFORMATION**: Financial Statements and Exhibits\n\n**FILED AS OF DATE**: 20250107\n\n**DATE AS OF CHANGE**: 20250107\n\n**FILER**: \n\n\n**COMPANY DATA:**\n- **COMPANY CONFORMED NAME:** FORD MOTOR CREDIT CO LLC\n- **CENTRAL INDEX KEY:** 0000038009\n- **STANDARD INDUSTRIAL CLASSIFICATION:** MISCELLANEOUS BUSINESS CREDIT INSTITUTION [6159]\n- **ORGANIZATION NAME:** 02 Finance\n- **IRS NUMBER:** 381612444\n- **STATE OF INCORPORATION:** DE\n- **FISCAL YEAR END:** 1231\n\n**FILING VALUES:**\n- **FORM TYPE:** 8-K\n- **SEC ACT:** 1934 Act\n- **SEC FILE NUMBER:** 001-06368\n- **FILM NUMBER:** 25513796\n\n**BUSINESS ADDRESS:**\n- **STREET 1:** ONE AMERICAN ROAD\n- **CITY:** DEARBORN\n- **STATE:** MI\n- **ZIP:** 48126\n- **BUSINESS PHONE:** 313-322-3000\n\n**MAIL ADDRESS:**\n- **STREET 1:** ONE AMERICAN ROAD\n- **CITY:** DEARBORN\n- **STATE:** MI\n- **ZIP:** 48126\n\n**FORMER COMPANY:**\n- **FORMER CONFORMED NAME:** FORD MOTOR CREDIT CO\n- **DATE OF NAME CHANGE:** 19920703\n\n?xml version='1.0' encoding='ASCII'?\n\n**UNITED STATES**\n\n**SECURITIES AND EXCHANGE COMMISSION**\n\n**Washington, D. C. 20549**\n\n**FORM 8-K**\n\n**CURRENT REPORT**\n\n**Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934**\n\n**Date of Report: <u>January 7, 2025</u>**\n\n(Date of earliest event reported)\n\n**<u>FORD MOTOR CREDIT COMPANY LLC</u>**\n\n(Exact name of registrant as specified in its charter)\n\n**<u>Delaware</u>**\n\n(State or other jurisdiction of organization)\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| 1-6368 | 1-6368 | 38-1612444 |\n| (Commission File Number) | (Commission File Number) | (IRS Employer Identification No.) |\n| One American Road | One American Road |  |\n| Dearborn, | Michigan | 48126 |\n| (Address of principal executive <br> offices) | (Address of principal executive <br> offices) | (Zip Code) |\n\n---\n\n\n\nRegistrant's telephone number, including area code **<u>313</u>**<u>-**322-3000**</u>\n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions:\n\n\u00a8 Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)\n\n\u25fb Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)\n\n\u25fb Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b))\n\n\u25fb Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))\n\n**Securities registered pursuant to Section 12(b) of the Act:**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| **Title of each class** | **Trading Symbol(s)** | **Name of each exchange on which<br> registered** |\n| 1.355% Notes due February 7, 2025\\* | F/25I | New York Stock Exchange |\n| 4.535% Notes due March 6, 2025\\* | F/25K | New York Stock Exchange |\n| 3.250% Notes due September 15, 2025\\* | F/25M | New York Stock Exchange |\n| 2.330% Notes due November 25, 2025\\* | F/25L | New York Stock Exchange |\n| 2.386% Notes due February 17, 2026\\* | F/26AB | New York Stock Exchange |\n| 6.860% Notes due June 5, 2026\\* | F/26A | New York Stock Exchange |\n| 3.350% Notes due Nine Months or More from the Date of Issue due August 20, 2026 | F/26N | New York Stock Exchange |\n| 4.867% Notes due August 3, 2027\\* | F/27A | New York Stock Exchange |\n| 6.125% Notes due May 15, 2028\\* | F/28B | New York Stock Exchange |\n| 5.625% Notes due October 9, 2028\\* | F/28D | New York Stock Exchange |\n| 4.165% Notes due November 21, 2028\\* | F/28E | New York Stock Exchange |\n| 5.125% Notes due February 20, 2029\\* | F/29B | New York Stock Exchange |\n| 4.445% Notes due February 14, 2030\\* | F/30D | New York Stock Exchange |\n| 5.780% Notes due April 30, 2030\\* | F/30A | New York Stock Exchange |\n\n---\n\n\n\n\\*Issued under Euro Medium-Term Notes due Nine Months or More from The Date of Issue Program\n\nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (\u00a7230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (\u00a7240.12b-2 of this chapter).\n\nEmerging growth company \u25fb\n\nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u25fb\n\n**<u>Item 8.01. Other Events</u>** **.**\n\nOn January 7, 2025, Ford Motor Credit Company LLC (the \"Company\") issued and sold (1) $1,250,000,000 aggregate principal amount of 5.875% Notes due November 7, 2029 (the \"2029 Notes\") and (2) $1,250,000,000 aggregate principal amount of 6.500% Notes due February 7, 2035 (the \"2035 Notes\"), pursuant to the Company's effective registration statement on Form S-3 (Registration Statement No. 333-276916) previously filed with the Securities and Exchange Commission (the \"Registration Statement\"). A copy of the opinion of David J. Witten, an Attorney to the Company, relating to the legality of the 2029 Notes and the 2035 Notes is filed as Exhibit 5 to this Report.\n\nThe Company incorporates by reference the exhibits filed herewith into the Registration Statement pursuant to which the 2029 Notes and 2035 Notes were registered.\n\n**<u>Item 9.01. Financial Statements and Exhibits</u>** **.**\n\n**<u>EXHIBITS</u>**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| <u>Designation</u> | <u>Description</u> | <u>Method of Filing</u> |\n| [Exhibit 5](tm252023d1_ex5-1.htm) | [Opinion of David J. Witten, Attorney to the Company](tm252023d1_ex5-1.htm) | [Filed with this Report](tm252023d1_ex5-1.htm) |\n| [Exhibit 23.1](tm252023d1_ex5-1.htm) | [Consent of David J. Witten (included in Exhibit 5)](tm252023d1_ex5-1.htm) | [Filed with this Report](tm252023d1_ex5-1.htm) |\n| Exhibit 104 | Cover Page Interactive Data File | \\* |\n|  | (formatted in Inline XBRL) |  |\n\n---\n\n\n\n<u>SIGNATURE</u>\n\nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.\n\n---",
+        "token_count": 1943,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001104659-25-001594",
+        "cik": "0000038009",
+        "company": "FORD MOTOR CREDIT CO LLC",
+        "form_type": "8-K",
+        "filed_date": "20250107",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 44684,
+        "source_md5": "7fa11f65078f63de1b97b37d649ccae9",
+        "content_sha256": "a7e83361a37325044505f829ceb0fdc86e0ac68ce90f5def077a26cfbfc484c9",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "eb9d2e78-d876-566e-b828-f13e26e229bc",
+        "section": "Exhibit 5.1",
+        "section_index": 1,
+        "chunk_index": 0,
+        "char_start": 6753,
+        "char_end": 10032,
+        "text": "## Exhibit 5.1\n\n\n**Exhibits 5 and 23.1**\n\n**Ford Motor Credit Company LLC**\n\nDavid J. Witten Assistant Secretary One American Road Dearborn, Michigan 48126 <br>January 7, 2025\n\nFord Motor Credit Company LLC\n\nOne American Road\n\nDearborn, MI, 48126\n\nRe: <u>Registration Statement</u>\n\nLadies and Gentlemen:\n\nReference is made to the Registration Statement on Form S-3 (the \"Registration Statement\") filed with the Securities and Exchange Commission (the \"Commission\") on February 7, 2024 by Ford Motor Credit Company LLC (the \"Company\") for the registration of debt securities (\"Debt Securities\"). The Debt Securities are to be issued pursuant to the provisions of an Indenture dated as of March 16, 2015 (the \"Indenture\"), between the Company and The Bank of New York Mellon, as Trustee (the \"Trustee\"). Pursuant to the terms of the Indenture, the Company has created as a series of Debt Securities its (1) 5.875% Notes due November 7, 2029 in the aggregate principal amount of $1,250,000,000 (the \"2029 Notes\") and (2) 6.500% Notes due February 7, 2035 in the aggregate principal amount of $1,250,000,000 (the \"2035 Notes\").\n\nAs Assistant Secretary of the Company, I am familiar with the Certificate of Formation and the Limited Liability Company Agreement of the Company and with the affairs of the Company. I also am familiar with the Company's action taken pursuant to Sections 2.01 and 3.01 of the Indenture to establish the 2029 Notes and the 2035 Notes each as a series of Debt Securities under the Indenture. I have also examined such other documents and instruments and have made such further investigation as I have deemed necessary or appropriate in connection with this opinion.\n\nBased on the foregoing, it is my opinion that the 2029 Notes and the 2035 Notes constitute legal, valid and binding obligations of the Company.\n\nMy opinion expressed herein is subject to the qualification that I express no opinion as to the applicability of, compliance with, or effect of (i) any bankruptcy, reorganization, insolvency, fraudulent transfer, fraudulent conveyance, moratorium or other similar law or judicially developed doctrine in this area (such as substantive consolidation or equitable subordination) affecting the enforcement of creditors' rights generally, (ii) general principles of equity (regardless of whether enforcement is considered in a proceeding in equity or at law), and (iii) public policy considerations which may limit the rights of parties to obtain certain remedies.\n\nI wish to point out that I am a member of the Bar of the State of Michigan. I have made, or caused to be made, such investigation as I have deemed appropriate with respect to the laws of other jurisdictions in connection with the opinion expressed herein, and nothing has come to my attention in the course of such investigation which would lead me to question the correctness of such opinion.\n\nI hereby consent to the filing of this opinion as Exhibit 5 to the Registration Statement. In giving this consent, I do not admit that I am in the category of persons whose consent is required under Section 7 of the Securities Act or the rules and regulations of the Commission issued thereunder.\n\n Very truly yours,<br>/s/ David J. Witten<br>David J. Witten<br> Assistant Secretary<br>",
+        "token_count": 729,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001104659-25-001594",
+        "cik": "0000038009",
+        "company": "FORD MOTOR CREDIT CO LLC",
+        "form_type": "8-K",
+        "filed_date": "20250107",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 44684,
+        "source_md5": "7fa11f65078f63de1b97b37d649ccae9",
+        "content_sha256": "a7e83361a37325044505f829ceb0fdc86e0ac68ce90f5def077a26cfbfc484c9",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "738f6278-f504-5ab6-a812-1a239fd9820c",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 1,
+        "char_start": 6283,
+        "char_end": 6750,
+        "text": "| | | |\n|:---|:---|:---|\n|  |  | FORD MOTOR CREDIT COMPANY LLC |\n|  |  | (Registrant) |\n| &nbsp;&nbsp;&nbsp; Date: January 7, 2025 | By: | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /s/ David J. Witten&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |\n|  |  | David J. Witten |\n|  |  | Assistant Secretary |\n\n---\n\n\n\n\\* Submitted electronically with this Report in accordance with the provisions of Regulation S-T.",
+        "token_count": 154,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001510295-25-000012",
+        "cik": "0001510295",
+        "company": "Marathon Petroleum Corp",
+        "form_type": "10-K",
+        "filed_date": "20250227",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 121777,
+        "source_md5": "dbc331eedc34da0ae438e15884138d48",
+        "content_sha256": "a3f82014c43b91db617edbc0db25de00f5f62c534b2a17c233f03f60db5021a2",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "33b88e4e-7997-5784-a225-807ca5864d51",
+        "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "section_index": 9,
+        "chunk_index": 10,
+        "char_start": 298610,
+        "char_end": 307276,
+        "text": "On February 10, 2025, MPC issued $2.0 billion aggregate principal amount of senior notes in an underwritten public offering consisting of $1.1 billion aggregate principal amount of 5.150 percent senior notes due March 2030 and $900 million aggregate principal amount of 5.700 percent senior notes due March 2035. We intend to use the net proceeds from this offering to repay, redeem or otherwise retire our outstanding $1.250 billion aggregate principal amount of 4.700 percent senior notes due May 2025 and for general corporate purposes.\n\nBecause of the alternatives available to us, including internally generated cash flow and access to capital markets and a commercial paper program, we believe that our short-term and long-term liquidity is adequate to fund not only our current operations, but also our near-term (less than twelve months) and long-term funding requirements, including capital spending programs, the repurchase of shares of our common stock, dividend payments, defined benefit plan contributions, repayment of debt maturities and other amounts that may ultimately be paid in connection with contingencies.\n\nWe have a commercial paper program that allows us to have a maximum of $2.0 billion in commercial paper outstanding, with maturities up to 397 days from the date of issuance. We do not intend to have outstanding commercial paper borrowings in excess of available capacity under our bank revolving credit facility. At December 31, 2024, we had no borrowings outstanding under the commercial paper program.\n\nMPC's bank revolving credit facility and trade receivables facility contain representations and warranties, affirmative and negative covenants and restrictions, including financial covenants, and events of default that we consider usual and customary for agreements of a similar type and nature. As of December 31, 2024, we were in compliance with such covenants and restrictions. See Item 8. Financial Statements and Supplementary Data \u2013 Note 19 for further discussion of MPC's revolving bank credit facility, trade receivables facility and related covenants and restrictions.\n\nOur intention is to maintain an investment-grade credit profile. As of January 31, 2025, the credit ratings on our senior unsecured debt are as follows.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| <u>Company</u> | <u>Rating Agency</u> | <u>Rating</u> |\n| MPC | Moody's | Baa2 (stable outlook) |\n| | Standard & Poor's | BBB (stable outlook) |\n| | Fitch | BBB (stable outlook) |\n\n---\n\n\n\nThe ratings reflect the respective views of the rating agencies and should not be interpreted as a recommendation to buy, sell or hold our securities. Although it is our intention to maintain a credit profile that supports an investment-grade rating, there is no assurance that these ratings will continue for any given period of time. The ratings may be revised or withdrawn entirely by the rating agencies if, in their respective judgments, circumstances so warrant. A rating from one rating agency should be evaluated independently of ratings from other rating agencies.\n\nThe agreements governing MPC's debt obligations do not contain credit rating triggers that would result in the acceleration of interest, principal or other payments in the event that our credit ratings are downgraded. However, any downgrades of our senior\n\n------\n\n<u>[T](#i2d76ef0e09c34cd785d4626a5126e3d7_7)[able](#i2d76ef0e09c34cd785d4626a5126e3d7_7)[of Contents](#i2d76ef0e09c34cd785d4626a5126e3d7_7)</u>\n\nunsecured debt could increase the applicable interest rates, yields and other fees payable under such agreements and may limit our flexibility to obtain financing in the future, including to refinance existing indebtedness. In addition, a downgrade of our senior unsecured debt rating to below investment-grade levels could, under certain circumstances, impact our ability to purchase crude oil on an unsecured basis and could result in us having to post letters of credit under existing transportation services or other agreements.\n\nSee Item 8. Financial Statements and Supplementary Data \u2013 Note 19 for further discussion of our debt.\n\n**MPLX** \n\nMPLX's liquidity totaled $5.02 billion at December 31, 2024 consisting of:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | December 31, 2024 | December 31, 2024 | December 31, 2024 | December 31, 2024 |\n| *(Millions of dollars)* | Total Capacity | Outstanding Borrowings | Outstanding Letters <br>of Credit | Available<br>Capacity |\n| MPLX bank revolving credit facility | $2000 | $\u2014 | $\u2014 | $2000 |\n| MPC intercompany loan agreement | 1500 |  |  | 1500 |\n| &nbsp;&nbsp;Total | $3500 | $\u2014 | $\u2014 | $3500 |\n| Cash and cash equivalents |  |  |  | 1519 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total liquidity |  |  |  | $5019 |\n\n---\n\n\n\nOn May 20, 2024, MPLX issued $1.65 billion aggregate principal amount of 5.50 percent senior notes due June 2034 (the \"2034 Senior Notes\") in an underwritten public offering. On December 1, 2024, MPLX used $1,150 million of the net proceeds from the issuance of the 2034 Senior Notes to repay all of (i) MPLX's outstanding $1,149 million aggregate principal amount of 4.875 percent senior notes due December 2024 and (ii) MarkWest's outstanding $1 million aggregate principal amount of 4.875 percent senior notes due December 2024. On February 18, 2025, MPLX used the remaining net proceeds from the issuance of the 2034 Senior Notes to repay all of MPLX's outstanding $500 million aggregate principal amount of 4.000 percent senior notes due February 2025.\n\nMPLX's bank revolving credit facility contains representations and warranties, covenants and restrictions, including financial covenants, and events of default that we consider usual and customary for agreements of a similar type and nature. As of December 31, 2024, we were in compliance with such covenants and restrictions. See Item 8. Financial Statements and Supplementary Data \u2013 Note 19 for further discussion of MPLX's bank revolving credit facility and related covenants and restrictions.\n\nOur intention is to maintain an investment-grade credit profile for MPLX. As of January 31, 2025, the credit ratings on MPLX's senior unsecured debt are as follows.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| <u>Company</u> | <u>Rating Agency</u> | <u>Rating</u> |\n| MPLX | Moody's | Baa2 (stable outlook) |\n| | Standard & Poor's | BBB (stable outlook) |\n| | Fitch | BBB (stable outlook) |\n\n---\n\n\n\nThe ratings reflect the respective views of the rating agencies and should not be interpreted as a recommendation to buy, sell or hold MPLX securities. Although it is our intention to maintain a credit profile that supports an investment-grade rating for MPLX, there is no assurance that these ratings will continue for any given period of time. The ratings may be revised or withdrawn entirely by the rating agencies if, in their respective judgments, circumstances so warrant. A rating from one rating agency should be evaluated independently of ratings from other rating agencies.\n\nThe agreements governing MPLX's debt obligations do not contain credit rating triggers that would result in the acceleration of interest, principal or other payments in the event that MPLX credit ratings are downgraded. However, any downgrades of MPLX senior unsecured debt to below investment grade ratings could increase the applicable interest rates, yields and other fees payable under such agreements. In addition, a downgrade of MPLX senior unsecured debt ratings to below investment-grade levels may limit MPLX's ability to obtain future financing, including to refinance existing indebtedness.\n\nSee Item 8. Financial Statements and Supplementary Data \u2013 Note 19 for further discussion of MPLX's debt.\n\n**Capital Requirements**\n\n**Capital Spending**\n\nMPC's capital investment outlook for 2025 totals approximately $1.25 billion for capital projects and investments, excluding capitalized interest, potential acquisitions, if any, and MPLX's capital investment plan. MPC's 2025 capital investment outlook\n\n------\n\n<u>[T](#i2d76ef0e09c34cd785d4626a5126e3d7_7)[able](#i2d76ef0e09c34cd785d4626a5126e3d7_7)[of Contents](#i2d76ef0e09c34cd785d4626a5126e3d7_7)</u>\n\nincludes all of the planned capital spending for Refining & Marketing, Renewable Diesel and Corporate as well as a portion of the planned capital investments for Midstream. The remainder of the planned capital spending for Midstream reflects the capital investment plan for MPLX. We continuously evaluate our capital plan and make changes as conditions warrant. The 2025 capital investment outlook for MPC and MPLX and capital expenditures and investments for each of the last three years are summarized by segment below.\n\n---",
+        "token_count": 1992,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001166691-25-000011",
+        "cik": "0001166691",
+        "company": "COMCAST CORP",
+        "form_type": "10-K",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 27404,
+        "source_md5": "876b0690491e2f38a18edd9f6133aeb3",
+        "content_sha256": "46376de4dc10f9ab29ba99f02adf5c003b4e9bb4d5c22c0e8ebbc72133fac589",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "f915def5-cbb8-529a-8f46-f6122f7aeaa2",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 24,
+        "char_start": 219957,
+        "char_end": 228775,
+        "text": "The variance in changes in operating assets and liabilities in 2024 was primarily related to the timing of amortization and related payments for our film and television costs, including the timing of sports, which was partially offset by reduced spending in the prior year due to the work stoppages.\n\nThe decrease in payments of interest in 2024 was primarily due to the payments of interest in the prior year associated with our collateralized obligation which was repaid in the fourth quarter of 2023, partially offset by increased debt balances following debt issuances in the current year and higher weighted-average interest rates.\n\nPayments of income taxes increased in 2024 and included higher payments in the current year related to the 2023 tax year, primarily driven by the taxable gain recognized on our investment in Hulu. Payments of income taxes in 2024 were favorably impacted by the timing of transferable tax credit purchases, as payments for certain tax credits used in 2024 will be made in 2025. Additionally, we expect to receive a federal income tax refund in 2025 as a result of carrying back a capital loss created primarily as part of a 2024 internal corporate reorganization to offset capital gains recognized in our federal income tax returns for 2021 through 2023 (see Note 5).\n\n**Investing Activities**\n\nNet cash used in investing activities increased in 2024 primarily due to net proceeds received as an advance on the sale of our interest in Hulu in the prior year (see Note 7), partially offset by decreased cash paid for intangible assets related to software development in the current year and decreased purchases of investments.\n\nWe expect to receive additional proceeds for the sale of our interest in Hulu following the finalization of the third-party appraisal process, at which time we will recognize the sale of our interest. See Note 7.\n\nIn September 2023, we entered into an agreement with T-Mobile to sell certain of our spectrum licenses. The agreement provides us with a right to remove certain licenses from the transaction, which will result in total cash consideration between $1.2 billion and $3.3 billion. The sale is expected to close in 2028 subject to various conditions and approvals.\n\nCapital Expenditures\n\nCapital expenditures remained consistent in 2024 compared to 2023. Spending on theme park attractions increased in 2024, and included costs associated with the construction of Epic Universe. 2023 expenditures included the acquisition of land for potential theme park expansion opportunities. The costs associated with the construction of Universal Beijing Resort are presented separately in our consolidated statements of cash flows. See Note 7.\n\nOur most significant capital expenditures are within the Connectivity & Platforms business, and we expect that this will continue in the future. Connectivity & Platforms' capital expenditures remained consistent in 2024 compared to 2023 primarily due to increased spending on line extensions and support capital, offset by decreased spending on customer premise equipment and scalable infrastructure. The table below summarizes the capital expenditures we incurred in our segments in the Connectivity & Platforms business in 2024 and 2023.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **47** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| Year ended December 31 (in millions) | **2024** | 2023 |\n| Customer premise equipment | $**2013** | $2234 |\n| Scalable infrastructure | **3024** | 3161 |\n| Line extensions | **2691** | 2333 |\n| Support capital | **557** | 514 |\n| Total | $**8286** | $8241 |\n\n---\n\n\n\nWe expect our capital expenditures in 2025 will continue to be focused on investments in the Connectivity & Platforms business in scalable infrastructure as we increase capacity and continue to execute our plans to upgrade our network to deliver multigigabit symmetrical speeds, in line extensions for the expansion of homes and businesses passed, and in the continued deployment of wireless gateways. In addition, we expect to continue investment in existing and new attractions at our Universal theme parks, including Epic Universe. Capital expenditures for subsequent years will depend on numerous factors, including competition, changes in technology, regulatory changes, the timing and rate of deployment of new services, the capacity required for existing services, the timing of new attractions at our theme parks and potential acquisitions.\n\n**Financing Activities**\n\nNet cash used in financing activities decreased in 2024 primarily due to repayment of a collateralized obligation in the prior year (see Note 7), a decrease in repurchases of common stock under our share repurchase program and employee plans, lower repurchases and repayments of debt in the current year, repayments of short-term borrowings, net in the prior year and higher proceeds from borrowings in the current year.\n\nIn September 2024, we issued \u20ac1.8 billion aggregate principal amount of fixed-rate euro senior notes maturing in 2032 and 2036 and entered into a corresponding cross-currency swap, effectively converting the debt to an aggregate U.S. dollar principal amount of $2.0 billion with a weighted-average interest rate of 4.72%. We also issued \u00a3750 million ($1.0 billion using exchange rates on the date of issuance) principal amount of fixed rate sterling senior notes maturing in 2040 with an interest rate of 5.25%. The net proceeds from this issuance were intended for working capital and general corporate purposes, including the early redemption of $725 million of our outstanding 5.25% Notes due 2025, which was completed in October 2024, and the repayment of certain of our other outstanding debt with near-term maturities. In May 2024, we issued $3.3 billion aggregate principal amount of fixed-rate senior notes, which have maturities ranging between 2029 and 2054 and a weighted-average interest rate of 5.38%. The net proceeds from this issuance were used for the repayment of our outstanding commercial paper, and for working capital and general corporate purposes.\n\nIn 2024, we made debt repayments of $3.6 billion, including $1.9 billion principal amount of notes due at maturity and $750 million of 5.250% Notes due 2025, $391 million of 3.950% Notes due 2025, $256 million of 3.375% Notes due 2025, and $104 million of 3.150% Notes due 2026.\n\nWe have made, and may from time to time in the future make, optional repayments on our debt obligations, which may include repurchases or exchanges of our outstanding public notes and debentures, depending on various factors, such as market conditions. Any such repurchases may be effected through privately negotiated transactions, market transactions, tender offers, redemptions or otherwise. In particular, we may repurchase varying amounts of our outstanding public notes and debentures with short to medium term maturities through privately negotiated or market transactions. See Notes 6 and 7 for additional information on our financing activities.\n\nShare Repurchases and Dividends\n\nIn the second quarter of 2021, we restarted our share repurchase program, which had been paused since the beginning of 2019. In January 2024, our Board of Directors terminated our existing program and approved a new share repurchase program authorization of $15 billion effective as of January 26, 2024, which had no expiration date. In 2024, we repurchased a total of 212 million shares of our Class A common stock for $8.6 billion under our authorization programs. We did not purchase any shares outside of these programs. As of December 31, 2024, we had $7.0 billion remaining under the authorization, and in January 2025, our Board of Directors terminated the existing program and approved a new share repurchase program authorization of $15 billion, which has no expiration date. We expect to repurchase additional shares of our Class A common stock under this new authorization in the open market or in private transactions, subject to market and other conditions.\n\nIn 2024, our Board of Directors declared quarterly dividends of $0.31 per share, including our fourth quarter dividend payable in January 2025 and we made dividend payments of $4.8 billion. In January 2025, our Board of Directors approved a 6.5% increase in our dividend to $1.32 per share on an annualized basis and approved our first quarter dividend of $0.33 per share, to be paid in April 2025. We expect to continue to pay quarterly dividends, although each dividend is subject to approval by our Board of Directors.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **48** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**",
+        "token_count": 1901,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 92, \"rationale\": \"The candidate correctly identifies both tranches: $1.25 billion of 5.875% Notes due November 7, 2029 and $1.25 billion of 6.500% Notes due February 7, 2035, with the correct combined total of $2.50 billion. The accession number matches the retrieved 8-K. The response is accurate and complete, though it cites a chunk ID rather than the Item 8.01 section, and the Filing Summary chunk does not itself contain the note terms (the Item 8.01 text is in the same filing's main chunk and the Exhibit 5.1 opinion confirms the amounts), so citation support is strong but not perfectly pinpointed.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 92, \"rationale\": \"The candidate correctly identifies both tranches: $1.25 billion of 5.875% Notes due November 7, 2029 and $1.25 billion of 6.500% Notes due February 7, 2035, with the correct combined total of $2.50 billion. The accession number matches the retrieved 8-K. The response is accurate and complete, though it cites a chunk ID rather than the Item 8.01 section, and the Filing Summary chunk does not itself contain the note terms (the Item 8.01 text is in the same filing's main chunk and the Exhibit 5.1 opinion confirms the amounts), so citation support is strong but not perfectly pinpointed.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:34:32.070106+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "4511763c0400644ae98defa0:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042469-A4HOrCIJkYU0ykmDDNSY",
+    "usage": {
+      "prompt_tokens": 26530,
+      "completion_tokens": 242,
+      "total_tokens": 26772,
+      "cost": 0.002774,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002774,
+        "upstream_inference_prompt_cost": 0.002653,
+        "upstream_inference_completions_cost": 0.000121
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.2026916940003503,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 92,
+    "rationale": "The candidate correctly identifies both tranches: $1.25 billion of 5.875% Notes due November 7, 2029 and $1.25 billion of 6.500% Notes due February 7, 2035, with the correct combined total of $2.50 billion. The accession number matches the retrieved 8-K. The response is accurate and complete, though it cites a chunk ID rather than the Item 8.01 section, and the Filing Summary chunk does not itself contain the note terms (the Item 8.01 text is in the same filing's main chunk and the Exhibit 5.1 opinion confirms the amounts), so citation support is strong but not perfectly pinpointed."
+  },
+  "status": "ok"
+}

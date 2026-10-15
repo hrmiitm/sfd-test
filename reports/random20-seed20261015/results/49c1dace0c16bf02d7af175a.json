@@ -1,0 +1,482 @@
+{
+  "question_id": "Q002",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 0.05728380900018237,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to the cover page of Alphabet Inc.'s 2024 Form 10-K (filed on February 5, 2025; Accession Number: `0001652044-25-000014`, chunk ID `efeb3fc9-e011-5db2-acff-afb499f7d4d4`), the number of shares outstanding as of **January 28, 2025** was:\n\n* **Class A stock:** 5,833 million shares (or 5,833,000,000 shares)\n* **Class B stock:** 860 million shares (or 860,000,000 shares)\n* **Class C stock:** 5,497 million shares (or 5,497,000,000 shares)",
+    "usage": {
+      "prompt_tokens": 10269,
+      "completion_tokens": 244,
+      "total_tokens": 10513,
+      "cost": 0.00861675
+    },
+    "seconds": 6.698903384999539,
+    "tool_seconds": 0.05728380900018237,
+    "tool_calls": 1,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_323905",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Alphabet Class A Class B Class C January 28 2025 shares outstanding cover page\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a19FBvg6UnHs/7tKkGChAz0e6gkilgwLdnBbg38CjDEwv4NgovVPEHYeRj56xB13I1XeVf6adsYiJb+4SfHqwQkgNBIcoRf6G4CAHxDLvWK8hb05",
+              "format": "google-gemini-v1",
+              "id": "call_323905",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_323905",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Alphabet Class A Class B Class C January 28 2025 shares outstanding cover page\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:23:55.053836+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "49c1dace0c16bf02d7af175a:agent:0",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792041833-w61TOPWlzjNfuTT5nFnJ",
+        "usage": {
+          "prompt_tokens": 929,
+          "completion_tokens": 35,
+          "total_tokens": 964,
+          "cost": 0.000828,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000828,
+            "upstream_inference_prompt_cost": 0.00069675,
+            "upstream_inference_completions_cost": 0.00013125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.765164640999501,
+        "attempts": 1
+      },
+      {
+        "text": "According to the cover page of Alphabet Inc.'s 2024 Form 10-K (filed on February 5, 2025; Accession Number: `0001652044-25-000014`, chunk ID `efeb3fc9-e011-5db2-acff-afb499f7d4d4`), the number of shares outstanding as of **January 28, 2025** was:\n\n* **Class A stock:** 5,833 million shares (or 5,833,000,000 shares)\n* **Class B stock:** 860 million shares (or 860,000,000 shares)\n* **Class C stock:** 5,497 million shares (or 5,497,000,000 shares)",
+        "message": {
+          "role": "assistant",
+          "content": "According to the cover page of Alphabet Inc.'s 2024 Form 10-K (filed on February 5, 2025; Accession Number: `0001652044-25-000014`, chunk ID `efeb3fc9-e011-5db2-acff-afb499f7d4d4`), the number of shares outstanding as of **January 28, 2025** was:\n\n* **Class A stock:** 5,833 million shares (or 5,833,000,000 shares)\n* **Class B stock:** 860 million shares (or 860,000,000 shares)\n* **Class C stock:** 5,497 million shares (or 5,497,000,000 shares)",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a19zA6smGkGNI3wAfH9ONe0FakLtqprLRZNnuZtHeMBpg7J6XDha9rgOQ0oVqiqxUQSjFO63Ol4Ef52SD5dxupD8mkUNs4f5UjapwEVelwPCX4BZ",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:27:36.686398+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "49c1dace0c16bf02d7af175a:agent:1",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042053-xLxJf7ykNR0RrbyCmKjs",
+        "usage": {
+          "prompt_tokens": 9340,
+          "completion_tokens": 209,
+          "total_tokens": 9549,
+          "cost": 0.00778875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00778875,
+            "upstream_inference_prompt_cost": 0.007005,
+            "upstream_inference_completions_cost": 0.00078375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.9337387440000384,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_323905",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Alphabet Class A Class B Class C January 28 2025 shares outstanding cover page\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000921895-25-000112",
+              "cik": "0001084869",
+              "company": "1 800 FLOWERS COM INC",
+              "form_type": "SCHEDULE 13G/A",
+              "filed_date": "20250116",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 773,
+              "source_md5": "35826364f6a79a6981aa2dc7fd067b45",
+              "content_sha256": "c6d7263ff428c27c2a7bf3cf70a4737ffa7fbc6a496199dcc822761d2a9fbbf9",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "20a6bc70-83a8-59ed-b67c-e7d21ed6eae7",
+              "section": "Item 4. Ownership:",
+              "section_index": 5,
+              "chunk_index": 0,
+              "char_start": 5470,
+              "char_end": 7166,
+              "text": "**Item 4. Ownership:**\n\n\n**(a) Amount beneficially owned:**\n\nThe information set forth in Row 9 on the Cover Page is hereby incorporated by reference into this Item 4(a).\nShares reported herein for Fund 1 Investments, LLC are held for the benefit of private investment vehicles for which Pleasant Lake Partners LLC serves as investment adviser. Fund 1 Investments, LLC serves as managing member of Pleasant Lake Partners LLC. Jonathan Lennon serves as managing member of Fund 1 Investments, LLC. Each of Fund 1 Investments, LLC, Pleasant Lake Partners LLC and Mr. Lennon disclaims beneficial ownership of the shares reported herein except to the extent of its or his pecuniary interest therein.\nAll percentages reported herein with respect to the Reporting Person's holdings are calculated based upon a statement in the Issuer's Quarterly Report on Form 10-Q, as filed with the Securities and Exchange Commission on November 1, 2024, that there were 36,782,727 shares of Class A Common Stock of the Issuer outstanding as of October 28, 2024.\n\n\n**(b) Percent of class:**\n\nThe information set forth in Row 11 on the Cover Page is hereby incorporated by reference into this Item 4(b).\n\n\n\n**(c) Number of shares as to which the person has:**\n\n\n**(i) Sole power to vote or to direct the vote:**\n\nSee Cover Page Rows 5-9.\n\n\n**(ii) Shared power to vote or to direct the vote:**\n\nSee Cover Page Rows 5-9.\n\n\n**(iii) Sole power to dispose or to direct the disposition of:**\n\nSee Cover Page Rows 5-9.\n\n\n**(iv) Shared power to dispose or to direct the disposition of:**\n\nSee Cover Page Rows 5-9.\nThe information set forth in Rows 5-9 on the Cover Page is hereby incorporated by reference into this Item 4(c).",
+              "token_count": 385,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001652044-25-000014",
+              "cik": "0001652044",
+              "company": "Alphabet Inc.",
+              "form_type": "10-K",
+              "filed_date": "20250205",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 15674,
+              "source_md5": "8429d7c7e5e5edbff1ad966c20e78d68",
+              "content_sha256": "c35081ab5ae0f83b5ebd00aa095df9baf079a755e733a472d9f42550d6a5c30b",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "ded76103-1810-5310-9e2d-0ecc9c52a0bc",
+              "section": "ITEM 5. MARKET FOR REGISTRANT'S COMMON EQUITY, RELATED STOCKHOLDER MATTERS, AND ISSUER PURCHASES OF EQUITY SECURITIES",
+              "section_index": 8,
+              "chunk_index": 0,
+              "char_start": 143264,
+              "char_end": 148773,
+              "text": "**ITEM 5. MARKET FOR REGISTRANT'S COMMON EQUITY, RELATED STOCKHOLDER MATTERS, AND ISSUER PURCHASES OF EQUITY SECURITIES**\n\nAs of October 2, 2015, Alphabet Inc. became the successor issuer of Google Inc. pursuant to Rule 12g-3(a) under the Exchange Act. Our Class A stock has been listed on the Nasdaq Global Select Market under the symbol \"GOOG\" since August 19, 2004, and under the symbol \"GOOGL\" since April 3, 2014. Prior to August 19, 2004, there was no public market for our stock. Our Class B stock is neither listed nor traded. Our Class C stock has been listed on the Nasdaq Global Select Market under the symbol \"GOOG\" since April 3, 2014.\n\n**Holders of Record**\n\nAs of December 31, 2024, there were approximately 7,743 and 1,671 stockholders of record of our Class A stock and Class C stock, respectively. Because many of our shares of Class A stock and Class C stock are held by brokers and other institutions on behalf of stockholders, we are unable to estimate the total number of stockholders represented by these record holders. As of December 31, 2024, there were approximately 57 stockholders of record of our Class B stock.\n\n**Dividend Program**\n\nDividend payments to stockholders of Class A, Class B, and Class C shares were $3.5 billion, $519 million, and $3.3 billion, respectively, for the year ended December 31, 2024. The company intends to pay quarterly cash dividends in the future, subject to review and approval by the company's Board of Directors in its sole discretion. We regularly evaluate our cash and capital structure, including the size, pace, and form of capital return to stockholders.\n\n**Issuer Purchases of Equity Securities**\n\nThe following table presents information with respect to Alphabet's repurchases of Class A and Class C stock during the quarter ended December 31, 2024:\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| **Period** | **Total Number of Class A Shares Purchased** <br>**(in thousands)**<sup>(1)</sup> | **Total Number of Class C Shares Purchased** <br>**(in thousands)**<sup>(1)</sup> | **Average Price Paid per Class A Share**<sup>(2)</sup> | **Average Price Paid per Class C Share**<sup>(2)</sup> | **Total Number of Shares Purchased as Part of Publicly Announced Programs**<br>**(in thousands)**<sup>(1)</sup> | **Approximate Dollar Value of Shares that May Yet Be Purchased Under the Program <br>(in millions)** |\n| October 1 - 31 | 5792 | 30080 | $167.66 | $168.84 | 35872 | $53699 |\n| November 1 - 30 | 4325 | 22450 | $174.97 | $175.98 | 26775 | $49023 |\n| December 1 - 31 | 3559 | 19572 | $187.07 | $187.52 | 23131 | $44704 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total | 13676 | 72102 |  |  | 85778 |  |\n\n---\n\n\n\n<sup>(1)</sup> &nbsp;&nbsp;&nbsp;&nbsp;Repurchases are being executed from time to time, subject to general business and market conditions and other investment opportunities, through open market purchases or privately negotiated transactions, including through Rule 10b5-1 plans. The repurchase program does not have an expiration date. For additional information related to share repurchases, see Note 11 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\n<sup>(2)</sup> &nbsp;&nbsp;&nbsp;&nbsp;Average price paid per share includes costs associated with the repurchases.\n\n27. ------\n\n---\n\n\n\n| | |\n|:---|:---|\n| <u>[**Table of Contents**](#iceb58926ff9849d5be7614e3b0f8e836_7)</u> | **Alphabet Inc.** |\n\n---\n\n\n\n**Stock Performance Graphs**\n\nThe graph below matches Alphabet Inc. Class A's cumulative five-year total stockholder return on common stock with the cumulative total returns of the S&P 500 index, the NASDAQ Composite index, and the RDG Internet Composite index. The graph tracks the performance of a $100 investment in our common stock and in each index (with the reinvestment of all dividends) from December 31, 2019, to December 31, 2024. The returns shown are based on historical results and are not intended to suggest future performance.\n\n**COMPARISON OF CUMULATIVE 5-YEAR TOTAL RETURN\\***\n\n**ALPHABET INC. CLASS A COMMON STOCK**\n\nAmong Alphabet Inc., the S&P 500 Index, the\n\nNASDAQ Composite Index, and the RDG Internet Composite Index\n\n![2834](goog-20241231_g1.jpg)\n\n\\*$100 invested on December 31, 2019, in stock or index, including reinvestment of dividends.\n\nCopyright<sup>\u00a9</sup> 2025 S&P, a division of The McGraw-Hill Companies Inc. All rights reserved.\n\n28. ------\n\n---\n\n\n\n| | |\n|:---|:---|\n| <u>[**Table of Contents**](#iceb58926ff9849d5be7614e3b0f8e836_7)</u> | **Alphabet Inc.** |\n\n---\n\n\n\nThe graph below matches Alphabet Inc. Class C's cumulative five-year total stockholder return on capital stock with the cumulative total returns of the S&P 500 index, the NASDAQ Composite index, and the RDG Internet Composite index. The graph tracks the performance of a $100 investment in our Class C capital stock and in each index (with the reinvestment of all dividends) from December 31, 2019, to December 31, 2024. The returns shown are based on historical results and are not intended to suggest future performance.\n\n**COMPARISON OF CUMULATIVE 5-YEAR TOTAL RETURN\\***\n\n**ALPHABET INC. CLASS C CAPITAL STOCK**\n\nAmong Alphabet Inc., the S&P 500 Index, the\n\nNASDAQ Composite Index, and the RDG Internet Composite Index\n\n![3680](goog-20241231_g2.jpg)\n\n\\*$100 invested on December 31, 2019, in stock or in index, including reinvestment of dividends.\n\nCopyright<sup>\u00a9</sup> 2025 S&P, a division of The McGraw-Hill Companies Inc. All rights reserved.",
+              "token_count": 1473,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001652044-25-000014",
+              "cik": "0001652044",
+              "company": "Alphabet Inc.",
+              "form_type": "10-K",
+              "filed_date": "20250205",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 15674,
+              "source_md5": "8429d7c7e5e5edbff1ad966c20e78d68",
+              "content_sha256": "c35081ab5ae0f83b5ebd00aa095df9baf079a755e733a472d9f42550d6a5c30b",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "efeb3fc9-e011-5db2-acff-afb499f7d4d4",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 0,
+              "char_start": 0,
+              "char_end": 7622,
+              "text": "## Filing Summary\n**0001652044-25-000014.hdr.sgml**: 20250205\n\n**ACCESSION NUMBER**: 0001652044-25-000014\n\n**CONFORMED SUBMISSION TYPE**: 10-K\n\n**PUBLIC DOCUMENT COUNT**: 115\n\n**CONFORMED PERIOD OF REPORT**: 20241231\n\n**FILED AS OF DATE**: 20250205\n\n**DATE AS OF CHANGE**: 20250204\n\n**FILER**: \n\n\n**COMPANY DATA:**\n- **COMPANY CONFORMED NAME:** Alphabet Inc.\n- **CENTRAL INDEX KEY:** 0001652044\n- **STANDARD INDUSTRIAL CLASSIFICATION:** SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC. [7370]\n- **ORGANIZATION NAME:** 06 Technology\n- **IRS NUMBER:** 611767919\n- **STATE OF INCORPORATION:** DE\n- **FISCAL YEAR END:** 1231\n\n**FILING VALUES:**\n- **FORM TYPE:** 10-K\n- **SEC ACT:** 1934 Act\n- **SEC FILE NUMBER:** 001-37580\n- **FILM NUMBER:** 25590440\n\n**BUSINESS ADDRESS:**\n- **STREET 1:** 1600 AMPHITHEATRE PARKWAY\n- **CITY:** MOUNTAIN VIEW\n- **STATE:** CA\n- **ZIP:** 94043\n- **BUSINESS PHONE:** 650-253-0000\n\n**MAIL ADDRESS:**\n- **STREET 1:** 1600 AMPHITHEATRE PARKWAY\n- **CITY:** MOUNTAIN VIEW\n- **STATE:** CA\n- **ZIP:** 94043\n\n?xml version='1.0' encoding='ASCII'? goog-20241231\n\n\n\n\n\n**UNITED STATES**\n\n**SECURITIES AND EXCHANGE COMMISSION**\n\n**Washington, D.C. 20549**\n\n___________________________________________\n\n**FORM 10-K** \n\n___________________________________________\n\n**(Mark One)**\n\n\u2612 **ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934**\n\nFor the fiscal year ended December 31, 2024\n\n**OR**\n\n\u2610 **TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934**\n\nFor the transition period from <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> to <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>.\n\nCommission file number: **001-37580** \n\n___________________________________________\n\n**Alphabet Inc.** \n\n**(Exact name of registrant as specified in its charter)**\n\n___________________________________________\n\n---\n\n\n\n| | |\n|:---|:---|\n| **Delaware** | **61-1767919** |\n| (State or other jurisdiction of incorporation or organization) | (I.R.S. Employer Identification No.) |\n\n---\n\n\n\n**1600 Amphitheatre Parkway** \n\n**Mountain View, CA 94043** \n\n(Address of principal executive offices, including zip code)\n\n**(650) 253-0000** \n\n(Registrant's telephone number, including area code)\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| **Securities registered pursuant to Section 12(b) of the Act:** | **Securities registered pursuant to Section 12(b) of the Act:** | **Securities registered pursuant to Section 12(b) of the Act:** |\n| **<u>Title of each class</u>** | **<u>Trading Symbol(s)</u>** | **<u>Name of each exchange on which registered</u>** |\n| **Class A Common Stock, $0.001 par value** | **GOOGL** | **Nasdaq Stock Market LLC** |\n|  |  | **(Nasdaq Global Select Market)** |\n| **Class C Capital Stock, $0.001 par value** | **GOOG** | **Nasdaq Stock Market LLC** |\n|  |  | **(Nasdaq Global Select Market)** |\n\n---\n\n\n\nSecurities registered pursuant to Section 12(g) of the Act:\n\n---\n\n\n\n| |\n|:---|\n| **<u>Title of each class</u>** |\n| **None** |\n\n---\n\n\n\n___________________________________________\n\nIndicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2612&nbsp;&nbsp;&nbsp;&nbsp;No \u2610\n\nIndicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act.&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2610 No \u2612\n\nIndicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days.&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2612&nbsp;&nbsp;&nbsp;&nbsp;No \u2610\n\nIndicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (\u00a7232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files).&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2612&nbsp;&nbsp;&nbsp;&nbsp;No \u2610\n\nIndicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of \"large accelerated filer,\" \"accelerated filer,\" \"smaller reporting company,\" and \"emerging growth company\" in Rule 12b-2 of the Exchange Act.\n\n------\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| Large accelerated filer | \u2612 | Accelerated filer | \u2610 |\n| Non-accelerated filer | \u2610 | Smaller reporting company | \u2610 |\n| Emerging growth company | \u2610 | | |\n\n---\n\n\n\nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u2610\n\nIndicate by check mark whether the registrant has filed a report on and attestation to its management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C.7262(b)) by the registered public accounting firm that prepared or issued its audit report. \u2612\n\nIf securities are registered pursuant to Section 12(b) of the Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. \u2610\n\nIndicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant's executive officers during the relevant recovery period pursuant to \u00a7240.10D-1(b). \u2610\n\nIndicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2610&nbsp;&nbsp;&nbsp;&nbsp;No \u2612\n\nAs of June 28, 2024, the aggregate market value of shares held by non-affiliates of the registrant (based upon the closing sale prices of such shares on the Nasdaq Global Select Market on June 28, 2024) was approximately $2.0 trillion. For purposes of calculating the aggregate market value of shares held by non-affiliates, we have assumed that all outstanding shares are held by non-affiliates, except for shares held by each of our executive officers, directors, and 5% or greater stockholders. In the case of 5% or greater stockholders, we have not deemed such stockholders to be affiliates unless there are facts and circumstances which would indicate that such stockholders exercise any control over our company, or unless they hold 10% or more of our outstanding common stock. These assumptions should not be deemed to constitute an admission that all executive officers, directors, and 5% or greater stockholders are, in fact, affiliates of our company, or that there are not other persons who may be deemed to be affiliates of our company. Further information concerning shareholdings of our officers, directors, and principal stockholders is included or incorporated by reference in Part III, Item 12 of this Annual Report on Form 10-K.\n\nAs of January 28, 2025, there were 5,833 million shares of Alphabet's Class A stock outstanding, 860 million shares of Alphabet's Class B stock outstanding, and 5,497 million shares of the Alphabet's Class C stock outstanding.\n\n___________________________________________\n\n**DOCUMENTS INCORPORATED BY REFERENCE**",
+              "token_count": 1995,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001999371-25-000236",
+              "cik": "0000816153",
+              "company": "THORNBURG INVESTMENT TRUST",
+              "form_type": "40-APP",
+              "filed_date": "20250108",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 27362,
+              "source_md5": "8a75475001931a7882147eba63e1e4c5",
+              "content_sha256": "4953228f35fecce2d74b4ac6db62fbf35fc7b1c848e667cffe76686bacf8d465",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "0b82c347-cd35-52bc-922b-e75f6cc85b16",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 9,
+              "char_start": 75171,
+              "char_end": 83528,
+              "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Each Fund that issues an ETF Class and one or more Mutual Fund Classes will include appropriate disclosure\nin its registration statement regarding the key characteristics of, and any risks associated with, the multi-class structure, including\nthe potential that transactions through one class could generate portfolio transaction costs and tax consequences for shareholders in\nother classes.\n\nVIII. PROCEDURAL MATTERS\n\nApplicants file this Application in accordance with Rule 0-2 under the 1940 Act. Pursuant to Rule 0-2(f) under the 1940 Act, Applicants state that their address is indicated on the cover page of this Application. Applicants further request that all communications concerning this Application should be directed and copied to the persons listed on the cover page of the Application.\n\nIn accordance with Rule 0-2(c) under the 1940 Act, Applicants state that all actions necessary to authorize the execution and filing of this Application have been taken, and the persons signing and filing this document are authorized to do so on behalf of Applicants. Applicants have attached copies of the resolutions relating to the respective authorizations. Applicants also have attached the verifications required by Rule 0-2(d) under the 1940 Act.\n\nIn accordance with Rule 0-5 under the 1940 Act, Applicants request that the Commission issue the Order without holding a hearing.\n\nIX. CONCLUSION\n\nBased on the facts, analysis and conditions in the Application, Applicants respectfully request that the Commission issue an Order under Sections 6(c) and 17(b) of the 1940 Act granting the relief requested by Applicants. Applicants submit that the requested exemptions are necessary or appropriate in the public interest, consistent with the protection of investors and consistent with the purposes fairly intended by the policy and provisions of the 1940 Act. In addition, Applicants submit that the terms of the proposed transactions are reasonable and fair, including the consideration to be paid or received, and do not involve overreaching on the part of any person concerned, that the proposed transactions are consistent with the policy of each registered investment company concerned, and that the proposed transactions are consistent with the general purposes of the 1940 Act.\n\nApplicants have caused this Application to be duly signed on their behalf on January 8, 2025.\n\n[*Signatures Appear on the Following Page*]\n\n**SIGNATURES**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **THORNBURG INVESTMENT TRUST** | **THORNBURG INVESTMENT TRUST** | **THORNBURG ETF TRUST** | **THORNBURG ETF TRUST** |\n| /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt |\n| Name: | Nimish S. Bhatt | Name: | Nimish S. Bhatt |\n| Title: | President and Principal Executive Officer | Title: | President and Principal Executive Officer |\n| Date: | January 8, 2025 | Date: | January 8, 2025 |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| <br> **THORNBURG INVESTMENT MANAGEMENT, INC.** | <br> **THORNBURG INVESTMENT MANAGEMENT, INC.** |\n| /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt |\n| Name: | Nimish S. Bhatt |\n| Title: | Chief Financial Officer and Treasurer |\n| Date: | January 8, 2025 |\n\n---\n\n\n\n**AUTHORIZATIONS**\n\nTHORNBURG INVESTMENT TRUST\n\nIn accordance with Rule 0-2(c) under the Investment Company Act of 1940, as amended, Nimish S. Bhatt, in his capacity as President and Principal Executive Officer of Thornburg Investment Trust (the \"Applicant\"), states that all actions necessary to authorize the execution and filing of this Application by the Applicant have been taken, and that he is authorized to sign and file this Application on behalf of the Applicant pursuant to his general authority as President and Principal Executive Officer of the Applicant and pursuant to the following resolutions adopted by the Board of Trustees of Thornburg Investment Trust on December 11, 2024:\n\n---\n\n\n\n| | |\n|:---|:---|\n| WHEREAS: | based on information provided by Thornburg Investment Management, Inc. (the \"Adviser\"), the Board of Trustees (the \"Board\") of Thornburg Investment Trust (the \"Trust\") deems it appropriate to seek exemptive relief from the Securities and Exchange Commission (\"SEC\") that would allow series of the Trust to offer a class of exchange-traded shares in addition to classes of shares that are not exchange-traded. |\n\n---\n\n\n\nNOW, THEREFORE, BE IT:\n\n---\n\n\n\n| | |\n|:---|:---|\n| RESOLVED: | that the officers of the Trust be, and they hereby are, authorized to prepare or cause to be prepared, execute, and file with the SEC, an application, and any amendments thereto (the \"Exemptive Application\"), for an order pursuant to Sections 6(c) and 17(b) of the Investment Company Act of 1940, as amended (the \"1940 Act\"), exempting the Trust from certain provisions of the 1940 Act as described in the Exemptive Application, to permit certain existing and future series of the Trust (and affiliated investment companies) to offer a class of exchange-traded fund shares in addition to classes of shares that are not exchange-traded; and |\n\n---\n\n\n\nRESOLVED: that the officers of the Trust be, and they hereby are, authorized to take any and all actions that each of them, in his or her sole discretion, deems necessary and appropriate to carry out the intent and accomplish the purpose of the foregoing resolution.\n\n---\n\n\n\n| | |\n|:---|:---|\n| /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt |\n| Name: | Nimish S. Bhatt |\n| Date: | January 8, 2025 |\n\n---\n\n\n\nTHORNBURG ETF TRUST\n\nIn accordance with Rule 0-2(c) under the Investment Company Act of 1940, as amended, Nimish S. Bhatt, in his capacity as President and Principal Executive Officer of Thornburg ETF Trust (the \"Trust\"), states that all actions necessary to authorize the execution and filing of this Application by the Trust have been taken, and that he is authorized to sign and file this Application on behalf of the Trust pursuant to his general authority as President and Principal Executive Officer of the Trust and pursuant to the following resolutions adopted by the Board of Trustees of the Trust on December 11, 2024:\n\n---\n\n\n\n| | |\n|:---|:---|\n| WHEREAS: | based on information provided by Thornburg Investment Management, Inc. (the \"Adviser\"), the Board of Trustees (the \"Board\") of Thornburg ETF Trust (the \"Trust\") deems it appropriate to seek exemptive relief from the Securities and Exchange Commission (\"SEC\") that would allow series of the Trust to offer one or more classes of non-exchange-traded mutual fund shares in addition to a class of shares that are exchange traded. |\n\n---\n\n\n\nNOW, THEREFORE, BE IT:\n\n---\n\n\n\n| | |\n|:---|:---|\n| RESOLVED: | that the officers of the Trust be, and they hereby are, authorized to prepare or cause to be prepared, execute, and file with the SEC, an application, and any amendments thereto (the \"Exemptive Application\"), for an order pursuant to Sections 6(c) and 17(b) of the Investment Company Act of 1940, as amended (the \"1940 Act\"), exempting the Trust from certain provisions of the 1940 Act as described in the Exemptive Application, to permit certain existing and future series of the Trust (and affiliated investment companies) to offer one or more classes of mutual fund shares in addition to a class of exchange-traded fund shares; and |\n\n---\n\n\n\nRESOLVED: that the officers of the Trust be, and they hereby are, authorized to take any and all actions that each of them, in his or her sole discretion, deems necessary and appropriate to carry out the intent and accomplish the purpose of the foregoing resolution.\n\n---\n\n\n\n| | |\n|:---|:---|\n| /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt |\n| Name: | Nimish S. Bhatt |\n| Date: | January 8, 2025 |\n\n---\n\n\n\nTHORNBURG INVESTMENT MANAGEMENT, INC.<br>\n\nIn accordance with Rule 0-2(c) under the Investment Company Act of 1940, as amended, Nimish S. Bhatt states that all actions necessary to authorize the execution and filing of this Application by Thornburg Investment Management, Inc. (the \"Applicant\") have been taken and that, as Chief Financial Officer and Treasurer of the Applicant, he is authorized to execute and file this Application on behalf of the Applicant.\n\n---\n\n\n\n| | |\n|:---|:---|\n| /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt |\n| Name: | Nimish S. Bhatt |\n| Date: | January 8, 2025 |\n\n---\n\n\n\n**VERIFICATION**",
+              "token_count": 1993,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000950170-25-010189",
+              "cik": "0001068851",
+              "company": "PROSPERITY BANCSHARES INC",
+              "form_type": "8-K",
+              "filed_date": "20250129",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 196,
+              "source_md5": "b551ec35b50372a48fbb24912e2c2dbf",
+              "content_sha256": "ce9c6bf83b9a5a7ac1ad820594a763847ae63a760214c18c49780b7100afd3c1",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "4d8f9c1c-9574-574a-b9b8-4d93f800de3d",
+              "section": "Exhibit 99.1",
+              "section_index": 3,
+              "chunk_index": 9,
+              "char_start": 25117,
+              "char_end": 27966,
+              "text": "During the second quarter 2024, Prosperity tendered all of its shares of Visa, Inc. (\"Visa\") Class B-1 common stock in exchange for a combination of Visa Class B-2 common stock and Visa Class C common stock, pursuant to the terms and subject to the conditions of the public offering of Visa to exchange its Class B-1 common stock for a combination of shares of its Class B-2 common stock and Class C common stock, which expired on May 3, 2024. Prosperity recorded an unrealized gain of $20.6 million during the second quarter 2024 based on the conversion privilege of the Class C common stock and the closing price of Visa Class A common stock. In the exchange, Prosperity received 48,492 shares of Class B-2 stock, recorded at zero cost basis, and 19,245 shares of Class C common stock and has subsequently sold all shares of Class C stock.\n\n**Dividend**\n\nProsperity Bancshares declared a first quarter 2025 cash dividend of $0.58 per share to be paid on April 1, 2025, to all shareholders of record as of March 14, 2025.\n\n**Stock Repurchase Program**\n\nOn January 21, 2025, Prosperity Bancshares announced a stock repurchase program under which up to 5%, or approximately 4.8 million shares, of its outstanding common stock may be acquired over a one-year period expiring on January 21, 2026, at the discretion of management. Under its 2024 stock repurchase program, Prosperity Bancshares repurchased zero shares of its common stock during the three months ended December 31, 2024, and approximately 1.2 million shares of its common stock at an average weighted price of $60.35 per share during the year ended December 31, 2024.\n\n**Merger of Lone Star State Bancshares, Inc.**\n\nOn April 1, 2024, Prosperity completed the merger of Lone Star and its wholly owned subsidiary Lone Star Bank, headquartered in Lubbock, Texas. Lone Star Bank operated 5 full-service banking offices in the West Texas area, including its main office in Lubbock, and 1 banking center in each of Brownfield, Midland, Odessa and Big Spring, Texas.\n\nPursuant to the terms of the definitive agreement, Prosperity issued 2,376,182 shares of Prosperity common stock plus approximately $64.1 million in cash for all outstanding shares of Lone Star in the second quarter of 2024. This resulted in goodwill of $106.7 million as of December 31, 2024, which does not include all the subsequent fair value adjustments that have not yet been finalized.\n\n**Conference Call**\n\nProsperity's management team will host a conference call on Wednesday, January 29, 2025, at 11:30 a.m. Eastern Time (10:30 a.m. Central Time) to discuss Prosperity's fourth quarter 2024 earnings. Individuals and investment professionals may participate in the call by dialing 877-883-0383 for domestic participants, or 412-902-6506 for international participants. The participant elite entry number is 7777695.",
+              "token_count": 674,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.05728380900018237
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000921895-25-000112",
+        "cik": "0001084869",
+        "company": "1 800 FLOWERS COM INC",
+        "form_type": "SCHEDULE 13G/A",
+        "filed_date": "20250116",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 773,
+        "source_md5": "35826364f6a79a6981aa2dc7fd067b45",
+        "content_sha256": "c6d7263ff428c27c2a7bf3cf70a4737ffa7fbc6a496199dcc822761d2a9fbbf9",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "20a6bc70-83a8-59ed-b67c-e7d21ed6eae7",
+        "section": "Item 4. Ownership:",
+        "section_index": 5,
+        "chunk_index": 0,
+        "char_start": 5470,
+        "char_end": 7166,
+        "text": "**Item 4. Ownership:**\n\n\n**(a) Amount beneficially owned:**\n\nThe information set forth in Row 9 on the Cover Page is hereby incorporated by reference into this Item 4(a).\nShares reported herein for Fund 1 Investments, LLC are held for the benefit of private investment vehicles for which Pleasant Lake Partners LLC serves as investment adviser. Fund 1 Investments, LLC serves as managing member of Pleasant Lake Partners LLC. Jonathan Lennon serves as managing member of Fund 1 Investments, LLC. Each of Fund 1 Investments, LLC, Pleasant Lake Partners LLC and Mr. Lennon disclaims beneficial ownership of the shares reported herein except to the extent of its or his pecuniary interest therein.\nAll percentages reported herein with respect to the Reporting Person's holdings are calculated based upon a statement in the Issuer's Quarterly Report on Form 10-Q, as filed with the Securities and Exchange Commission on November 1, 2024, that there were 36,782,727 shares of Class A Common Stock of the Issuer outstanding as of October 28, 2024.\n\n\n**(b) Percent of class:**\n\nThe information set forth in Row 11 on the Cover Page is hereby incorporated by reference into this Item 4(b).\n\n\n\n**(c) Number of shares as to which the person has:**\n\n\n**(i) Sole power to vote or to direct the vote:**\n\nSee Cover Page Rows 5-9.\n\n\n**(ii) Shared power to vote or to direct the vote:**\n\nSee Cover Page Rows 5-9.\n\n\n**(iii) Sole power to dispose or to direct the disposition of:**\n\nSee Cover Page Rows 5-9.\n\n\n**(iv) Shared power to dispose or to direct the disposition of:**\n\nSee Cover Page Rows 5-9.\nThe information set forth in Rows 5-9 on the Cover Page is hereby incorporated by reference into this Item 4(c).",
+        "token_count": 385,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001652044-25-000014",
+        "cik": "0001652044",
+        "company": "Alphabet Inc.",
+        "form_type": "10-K",
+        "filed_date": "20250205",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 15674,
+        "source_md5": "8429d7c7e5e5edbff1ad966c20e78d68",
+        "content_sha256": "c35081ab5ae0f83b5ebd00aa095df9baf079a755e733a472d9f42550d6a5c30b",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "ded76103-1810-5310-9e2d-0ecc9c52a0bc",
+        "section": "ITEM 5. MARKET FOR REGISTRANT'S COMMON EQUITY, RELATED STOCKHOLDER MATTERS, AND ISSUER PURCHASES OF EQUITY SECURITIES",
+        "section_index": 8,
+        "chunk_index": 0,
+        "char_start": 143264,
+        "char_end": 148773,
+        "text": "**ITEM 5. MARKET FOR REGISTRANT'S COMMON EQUITY, RELATED STOCKHOLDER MATTERS, AND ISSUER PURCHASES OF EQUITY SECURITIES**\n\nAs of October 2, 2015, Alphabet Inc. became the successor issuer of Google Inc. pursuant to Rule 12g-3(a) under the Exchange Act. Our Class A stock has been listed on the Nasdaq Global Select Market under the symbol \"GOOG\" since August 19, 2004, and under the symbol \"GOOGL\" since April 3, 2014. Prior to August 19, 2004, there was no public market for our stock. Our Class B stock is neither listed nor traded. Our Class C stock has been listed on the Nasdaq Global Select Market under the symbol \"GOOG\" since April 3, 2014.\n\n**Holders of Record**\n\nAs of December 31, 2024, there were approximately 7,743 and 1,671 stockholders of record of our Class A stock and Class C stock, respectively. Because many of our shares of Class A stock and Class C stock are held by brokers and other institutions on behalf of stockholders, we are unable to estimate the total number of stockholders represented by these record holders. As of December 31, 2024, there were approximately 57 stockholders of record of our Class B stock.\n\n**Dividend Program**\n\nDividend payments to stockholders of Class A, Class B, and Class C shares were $3.5 billion, $519 million, and $3.3 billion, respectively, for the year ended December 31, 2024. The company intends to pay quarterly cash dividends in the future, subject to review and approval by the company's Board of Directors in its sole discretion. We regularly evaluate our cash and capital structure, including the size, pace, and form of capital return to stockholders.\n\n**Issuer Purchases of Equity Securities**\n\nThe following table presents information with respect to Alphabet's repurchases of Class A and Class C stock during the quarter ended December 31, 2024:\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| **Period** | **Total Number of Class A Shares Purchased** <br>**(in thousands)**<sup>(1)</sup> | **Total Number of Class C Shares Purchased** <br>**(in thousands)**<sup>(1)</sup> | **Average Price Paid per Class A Share**<sup>(2)</sup> | **Average Price Paid per Class C Share**<sup>(2)</sup> | **Total Number of Shares Purchased as Part of Publicly Announced Programs**<br>**(in thousands)**<sup>(1)</sup> | **Approximate Dollar Value of Shares that May Yet Be Purchased Under the Program <br>(in millions)** |\n| October 1 - 31 | 5792 | 30080 | $167.66 | $168.84 | 35872 | $53699 |\n| November 1 - 30 | 4325 | 22450 | $174.97 | $175.98 | 26775 | $49023 |\n| December 1 - 31 | 3559 | 19572 | $187.07 | $187.52 | 23131 | $44704 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total | 13676 | 72102 |  |  | 85778 |  |\n\n---\n\n\n\n<sup>(1)</sup> &nbsp;&nbsp;&nbsp;&nbsp;Repurchases are being executed from time to time, subject to general business and market conditions and other investment opportunities, through open market purchases or privately negotiated transactions, including through Rule 10b5-1 plans. The repurchase program does not have an expiration date. For additional information related to share repurchases, see Note 11 of the Notes to Consolidated Financial Statements included in Item 8 of this Annual Report on Form 10-K.\n\n<sup>(2)</sup> &nbsp;&nbsp;&nbsp;&nbsp;Average price paid per share includes costs associated with the repurchases.\n\n27. ------\n\n---\n\n\n\n| | |\n|:---|:---|\n| <u>[**Table of Contents**](#iceb58926ff9849d5be7614e3b0f8e836_7)</u> | **Alphabet Inc.** |\n\n---\n\n\n\n**Stock Performance Graphs**\n\nThe graph below matches Alphabet Inc. Class A's cumulative five-year total stockholder return on common stock with the cumulative total returns of the S&P 500 index, the NASDAQ Composite index, and the RDG Internet Composite index. The graph tracks the performance of a $100 investment in our common stock and in each index (with the reinvestment of all dividends) from December 31, 2019, to December 31, 2024. The returns shown are based on historical results and are not intended to suggest future performance.\n\n**COMPARISON OF CUMULATIVE 5-YEAR TOTAL RETURN\\***\n\n**ALPHABET INC. CLASS A COMMON STOCK**\n\nAmong Alphabet Inc., the S&P 500 Index, the\n\nNASDAQ Composite Index, and the RDG Internet Composite Index\n\n![2834](goog-20241231_g1.jpg)\n\n\\*$100 invested on December 31, 2019, in stock or index, including reinvestment of dividends.\n\nCopyright<sup>\u00a9</sup> 2025 S&P, a division of The McGraw-Hill Companies Inc. All rights reserved.\n\n28. ------\n\n---\n\n\n\n| | |\n|:---|:---|\n| <u>[**Table of Contents**](#iceb58926ff9849d5be7614e3b0f8e836_7)</u> | **Alphabet Inc.** |\n\n---\n\n\n\nThe graph below matches Alphabet Inc. Class C's cumulative five-year total stockholder return on capital stock with the cumulative total returns of the S&P 500 index, the NASDAQ Composite index, and the RDG Internet Composite index. The graph tracks the performance of a $100 investment in our Class C capital stock and in each index (with the reinvestment of all dividends) from December 31, 2019, to December 31, 2024. The returns shown are based on historical results and are not intended to suggest future performance.\n\n**COMPARISON OF CUMULATIVE 5-YEAR TOTAL RETURN\\***\n\n**ALPHABET INC. CLASS C CAPITAL STOCK**\n\nAmong Alphabet Inc., the S&P 500 Index, the\n\nNASDAQ Composite Index, and the RDG Internet Composite Index\n\n![3680](goog-20241231_g2.jpg)\n\n\\*$100 invested on December 31, 2019, in stock or in index, including reinvestment of dividends.\n\nCopyright<sup>\u00a9</sup> 2025 S&P, a division of The McGraw-Hill Companies Inc. All rights reserved.",
+        "token_count": 1473,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001652044-25-000014",
+        "cik": "0001652044",
+        "company": "Alphabet Inc.",
+        "form_type": "10-K",
+        "filed_date": "20250205",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 15674,
+        "source_md5": "8429d7c7e5e5edbff1ad966c20e78d68",
+        "content_sha256": "c35081ab5ae0f83b5ebd00aa095df9baf079a755e733a472d9f42550d6a5c30b",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "efeb3fc9-e011-5db2-acff-afb499f7d4d4",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 0,
+        "char_start": 0,
+        "char_end": 7622,
+        "text": "## Filing Summary\n**0001652044-25-000014.hdr.sgml**: 20250205\n\n**ACCESSION NUMBER**: 0001652044-25-000014\n\n**CONFORMED SUBMISSION TYPE**: 10-K\n\n**PUBLIC DOCUMENT COUNT**: 115\n\n**CONFORMED PERIOD OF REPORT**: 20241231\n\n**FILED AS OF DATE**: 20250205\n\n**DATE AS OF CHANGE**: 20250204\n\n**FILER**: \n\n\n**COMPANY DATA:**\n- **COMPANY CONFORMED NAME:** Alphabet Inc.\n- **CENTRAL INDEX KEY:** 0001652044\n- **STANDARD INDUSTRIAL CLASSIFICATION:** SERVICES-COMPUTER PROGRAMMING, DATA PROCESSING, ETC. [7370]\n- **ORGANIZATION NAME:** 06 Technology\n- **IRS NUMBER:** 611767919\n- **STATE OF INCORPORATION:** DE\n- **FISCAL YEAR END:** 1231\n\n**FILING VALUES:**\n- **FORM TYPE:** 10-K\n- **SEC ACT:** 1934 Act\n- **SEC FILE NUMBER:** 001-37580\n- **FILM NUMBER:** 25590440\n\n**BUSINESS ADDRESS:**\n- **STREET 1:** 1600 AMPHITHEATRE PARKWAY\n- **CITY:** MOUNTAIN VIEW\n- **STATE:** CA\n- **ZIP:** 94043\n- **BUSINESS PHONE:** 650-253-0000\n\n**MAIL ADDRESS:**\n- **STREET 1:** 1600 AMPHITHEATRE PARKWAY\n- **CITY:** MOUNTAIN VIEW\n- **STATE:** CA\n- **ZIP:** 94043\n\n?xml version='1.0' encoding='ASCII'? goog-20241231\n\n\n\n\n\n**UNITED STATES**\n\n**SECURITIES AND EXCHANGE COMMISSION**\n\n**Washington, D.C. 20549**\n\n___________________________________________\n\n**FORM 10-K** \n\n___________________________________________\n\n**(Mark One)**\n\n\u2612 **ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934**\n\nFor the fiscal year ended December 31, 2024\n\n**OR**\n\n\u2610 **TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934**\n\nFor the transition period from <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> to <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>.\n\nCommission file number: **001-37580** \n\n___________________________________________\n\n**Alphabet Inc.** \n\n**(Exact name of registrant as specified in its charter)**\n\n___________________________________________\n\n---\n\n\n\n| | |\n|:---|:---|\n| **Delaware** | **61-1767919** |\n| (State or other jurisdiction of incorporation or organization) | (I.R.S. Employer Identification No.) |\n\n---\n\n\n\n**1600 Amphitheatre Parkway** \n\n**Mountain View, CA 94043** \n\n(Address of principal executive offices, including zip code)\n\n**(650) 253-0000** \n\n(Registrant's telephone number, including area code)\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| **Securities registered pursuant to Section 12(b) of the Act:** | **Securities registered pursuant to Section 12(b) of the Act:** | **Securities registered pursuant to Section 12(b) of the Act:** |\n| **<u>Title of each class</u>** | **<u>Trading Symbol(s)</u>** | **<u>Name of each exchange on which registered</u>** |\n| **Class A Common Stock, $0.001 par value** | **GOOGL** | **Nasdaq Stock Market LLC** |\n|  |  | **(Nasdaq Global Select Market)** |\n| **Class C Capital Stock, $0.001 par value** | **GOOG** | **Nasdaq Stock Market LLC** |\n|  |  | **(Nasdaq Global Select Market)** |\n\n---\n\n\n\nSecurities registered pursuant to Section 12(g) of the Act:\n\n---\n\n\n\n| |\n|:---|\n| **<u>Title of each class</u>** |\n| **None** |\n\n---\n\n\n\n___________________________________________\n\nIndicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2612&nbsp;&nbsp;&nbsp;&nbsp;No \u2610\n\nIndicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act.&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2610 No \u2612\n\nIndicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days.&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2612&nbsp;&nbsp;&nbsp;&nbsp;No \u2610\n\nIndicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (\u00a7232.405 of this chapter) during the preceding 12 months (or for such shorter period that the registrant was required to submit such files).&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2612&nbsp;&nbsp;&nbsp;&nbsp;No \u2610\n\nIndicate by check mark whether the registrant is a large accelerated filer, an accelerated filer, a non-accelerated filer, a smaller reporting company, or an emerging growth company. See the definitions of \"large accelerated filer,\" \"accelerated filer,\" \"smaller reporting company,\" and \"emerging growth company\" in Rule 12b-2 of the Exchange Act.\n\n------\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| Large accelerated filer | \u2612 | Accelerated filer | \u2610 |\n| Non-accelerated filer | \u2610 | Smaller reporting company | \u2610 |\n| Emerging growth company | \u2610 | | |\n\n---\n\n\n\nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u2610\n\nIndicate by check mark whether the registrant has filed a report on and attestation to its management's assessment of the effectiveness of its internal control over financial reporting under Section 404(b) of the Sarbanes-Oxley Act (15 U.S.C.7262(b)) by the registered public accounting firm that prepared or issued its audit report. \u2612\n\nIf securities are registered pursuant to Section 12(b) of the Act, indicate by check mark whether the financial statements of the registrant included in the filing reflect the correction of an error to previously issued financial statements. \u2610\n\nIndicate by check mark whether any of those error corrections are restatements that required a recovery analysis of incentive-based compensation received by any of the registrant's executive officers during the relevant recovery period pursuant to \u00a7240.10D-1(b). \u2610\n\nIndicate by check mark whether the registrant is a shell company (as defined in Rule 12b-2 of the Exchange Act).&nbsp;&nbsp;&nbsp;&nbsp;Yes \u2610&nbsp;&nbsp;&nbsp;&nbsp;No \u2612\n\nAs of June 28, 2024, the aggregate market value of shares held by non-affiliates of the registrant (based upon the closing sale prices of such shares on the Nasdaq Global Select Market on June 28, 2024) was approximately $2.0 trillion. For purposes of calculating the aggregate market value of shares held by non-affiliates, we have assumed that all outstanding shares are held by non-affiliates, except for shares held by each of our executive officers, directors, and 5% or greater stockholders. In the case of 5% or greater stockholders, we have not deemed such stockholders to be affiliates unless there are facts and circumstances which would indicate that such stockholders exercise any control over our company, or unless they hold 10% or more of our outstanding common stock. These assumptions should not be deemed to constitute an admission that all executive officers, directors, and 5% or greater stockholders are, in fact, affiliates of our company, or that there are not other persons who may be deemed to be affiliates of our company. Further information concerning shareholdings of our officers, directors, and principal stockholders is included or incorporated by reference in Part III, Item 12 of this Annual Report on Form 10-K.\n\nAs of January 28, 2025, there were 5,833 million shares of Alphabet's Class A stock outstanding, 860 million shares of Alphabet's Class B stock outstanding, and 5,497 million shares of the Alphabet's Class C stock outstanding.\n\n___________________________________________\n\n**DOCUMENTS INCORPORATED BY REFERENCE**",
+        "token_count": 1995,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001999371-25-000236",
+        "cik": "0000816153",
+        "company": "THORNBURG INVESTMENT TRUST",
+        "form_type": "40-APP",
+        "filed_date": "20250108",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 27362,
+        "source_md5": "8a75475001931a7882147eba63e1e4c5",
+        "content_sha256": "4953228f35fecce2d74b4ac6db62fbf35fc7b1c848e667cffe76686bacf8d465",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "0b82c347-cd35-52bc-922b-e75f6cc85b16",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 9,
+        "char_start": 75171,
+        "char_end": 83528,
+        "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Each Fund that issues an ETF Class and one or more Mutual Fund Classes will include appropriate disclosure\nin its registration statement regarding the key characteristics of, and any risks associated with, the multi-class structure, including\nthe potential that transactions through one class could generate portfolio transaction costs and tax consequences for shareholders in\nother classes.\n\nVIII. PROCEDURAL MATTERS\n\nApplicants file this Application in accordance with Rule 0-2 under the 1940 Act. Pursuant to Rule 0-2(f) under the 1940 Act, Applicants state that their address is indicated on the cover page of this Application. Applicants further request that all communications concerning this Application should be directed and copied to the persons listed on the cover page of the Application.\n\nIn accordance with Rule 0-2(c) under the 1940 Act, Applicants state that all actions necessary to authorize the execution and filing of this Application have been taken, and the persons signing and filing this document are authorized to do so on behalf of Applicants. Applicants have attached copies of the resolutions relating to the respective authorizations. Applicants also have attached the verifications required by Rule 0-2(d) under the 1940 Act.\n\nIn accordance with Rule 0-5 under the 1940 Act, Applicants request that the Commission issue the Order without holding a hearing.\n\nIX. CONCLUSION\n\nBased on the facts, analysis and conditions in the Application, Applicants respectfully request that the Commission issue an Order under Sections 6(c) and 17(b) of the 1940 Act granting the relief requested by Applicants. Applicants submit that the requested exemptions are necessary or appropriate in the public interest, consistent with the protection of investors and consistent with the purposes fairly intended by the policy and provisions of the 1940 Act. In addition, Applicants submit that the terms of the proposed transactions are reasonable and fair, including the consideration to be paid or received, and do not involve overreaching on the part of any person concerned, that the proposed transactions are consistent with the policy of each registered investment company concerned, and that the proposed transactions are consistent with the general purposes of the 1940 Act.\n\nApplicants have caused this Application to be duly signed on their behalf on January 8, 2025.\n\n[*Signatures Appear on the Following Page*]\n\n**SIGNATURES**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **THORNBURG INVESTMENT TRUST** | **THORNBURG INVESTMENT TRUST** | **THORNBURG ETF TRUST** | **THORNBURG ETF TRUST** |\n| /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt |\n| Name: | Nimish S. Bhatt | Name: | Nimish S. Bhatt |\n| Title: | President and Principal Executive Officer | Title: | President and Principal Executive Officer |\n| Date: | January 8, 2025 | Date: | January 8, 2025 |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| <br> **THORNBURG INVESTMENT MANAGEMENT, INC.** | <br> **THORNBURG INVESTMENT MANAGEMENT, INC.** |\n| /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt |\n| Name: | Nimish S. Bhatt |\n| Title: | Chief Financial Officer and Treasurer |\n| Date: | January 8, 2025 |\n\n---\n\n\n\n**AUTHORIZATIONS**\n\nTHORNBURG INVESTMENT TRUST\n\nIn accordance with Rule 0-2(c) under the Investment Company Act of 1940, as amended, Nimish S. Bhatt, in his capacity as President and Principal Executive Officer of Thornburg Investment Trust (the \"Applicant\"), states that all actions necessary to authorize the execution and filing of this Application by the Applicant have been taken, and that he is authorized to sign and file this Application on behalf of the Applicant pursuant to his general authority as President and Principal Executive Officer of the Applicant and pursuant to the following resolutions adopted by the Board of Trustees of Thornburg Investment Trust on December 11, 2024:\n\n---\n\n\n\n| | |\n|:---|:---|\n| WHEREAS: | based on information provided by Thornburg Investment Management, Inc. (the \"Adviser\"), the Board of Trustees (the \"Board\") of Thornburg Investment Trust (the \"Trust\") deems it appropriate to seek exemptive relief from the Securities and Exchange Commission (\"SEC\") that would allow series of the Trust to offer a class of exchange-traded shares in addition to classes of shares that are not exchange-traded. |\n\n---\n\n\n\nNOW, THEREFORE, BE IT:\n\n---\n\n\n\n| | |\n|:---|:---|\n| RESOLVED: | that the officers of the Trust be, and they hereby are, authorized to prepare or cause to be prepared, execute, and file with the SEC, an application, and any amendments thereto (the \"Exemptive Application\"), for an order pursuant to Sections 6(c) and 17(b) of the Investment Company Act of 1940, as amended (the \"1940 Act\"), exempting the Trust from certain provisions of the 1940 Act as described in the Exemptive Application, to permit certain existing and future series of the Trust (and affiliated investment companies) to offer a class of exchange-traded fund shares in addition to classes of shares that are not exchange-traded; and |\n\n---\n\n\n\nRESOLVED: that the officers of the Trust be, and they hereby are, authorized to take any and all actions that each of them, in his or her sole discretion, deems necessary and appropriate to carry out the intent and accomplish the purpose of the foregoing resolution.\n\n---\n\n\n\n| | |\n|:---|:---|\n| /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt |\n| Name: | Nimish S. Bhatt |\n| Date: | January 8, 2025 |\n\n---\n\n\n\nTHORNBURG ETF TRUST\n\nIn accordance with Rule 0-2(c) under the Investment Company Act of 1940, as amended, Nimish S. Bhatt, in his capacity as President and Principal Executive Officer of Thornburg ETF Trust (the \"Trust\"), states that all actions necessary to authorize the execution and filing of this Application by the Trust have been taken, and that he is authorized to sign and file this Application on behalf of the Trust pursuant to his general authority as President and Principal Executive Officer of the Trust and pursuant to the following resolutions adopted by the Board of Trustees of the Trust on December 11, 2024:\n\n---\n\n\n\n| | |\n|:---|:---|\n| WHEREAS: | based on information provided by Thornburg Investment Management, Inc. (the \"Adviser\"), the Board of Trustees (the \"Board\") of Thornburg ETF Trust (the \"Trust\") deems it appropriate to seek exemptive relief from the Securities and Exchange Commission (\"SEC\") that would allow series of the Trust to offer one or more classes of non-exchange-traded mutual fund shares in addition to a class of shares that are exchange traded. |\n\n---\n\n\n\nNOW, THEREFORE, BE IT:\n\n---\n\n\n\n| | |\n|:---|:---|\n| RESOLVED: | that the officers of the Trust be, and they hereby are, authorized to prepare or cause to be prepared, execute, and file with the SEC, an application, and any amendments thereto (the \"Exemptive Application\"), for an order pursuant to Sections 6(c) and 17(b) of the Investment Company Act of 1940, as amended (the \"1940 Act\"), exempting the Trust from certain provisions of the 1940 Act as described in the Exemptive Application, to permit certain existing and future series of the Trust (and affiliated investment companies) to offer one or more classes of mutual fund shares in addition to a class of exchange-traded fund shares; and |\n\n---\n\n\n\nRESOLVED: that the officers of the Trust be, and they hereby are, authorized to take any and all actions that each of them, in his or her sole discretion, deems necessary and appropriate to carry out the intent and accomplish the purpose of the foregoing resolution.\n\n---\n\n\n\n| | |\n|:---|:---|\n| /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt |\n| Name: | Nimish S. Bhatt |\n| Date: | January 8, 2025 |\n\n---\n\n\n\nTHORNBURG INVESTMENT MANAGEMENT, INC.<br>\n\nIn accordance with Rule 0-2(c) under the Investment Company Act of 1940, as amended, Nimish S. Bhatt states that all actions necessary to authorize the execution and filing of this Application by Thornburg Investment Management, Inc. (the \"Applicant\") have been taken and that, as Chief Financial Officer and Treasurer of the Applicant, he is authorized to execute and file this Application on behalf of the Applicant.\n\n---\n\n\n\n| | |\n|:---|:---|\n| /s/ Nimish S. Bhatt | /s/ Nimish S. Bhatt |\n| Name: | Nimish S. Bhatt |\n| Date: | January 8, 2025 |\n\n---\n\n\n\n**VERIFICATION**",
+        "token_count": 1993,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-010189",
+        "cik": "0001068851",
+        "company": "PROSPERITY BANCSHARES INC",
+        "form_type": "8-K",
+        "filed_date": "20250129",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 196,
+        "source_md5": "b551ec35b50372a48fbb24912e2c2dbf",
+        "content_sha256": "ce9c6bf83b9a5a7ac1ad820594a763847ae63a760214c18c49780b7100afd3c1",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "4d8f9c1c-9574-574a-b9b8-4d93f800de3d",
+        "section": "Exhibit 99.1",
+        "section_index": 3,
+        "chunk_index": 9,
+        "char_start": 25117,
+        "char_end": 27966,
+        "text": "During the second quarter 2024, Prosperity tendered all of its shares of Visa, Inc. (\"Visa\") Class B-1 common stock in exchange for a combination of Visa Class B-2 common stock and Visa Class C common stock, pursuant to the terms and subject to the conditions of the public offering of Visa to exchange its Class B-1 common stock for a combination of shares of its Class B-2 common stock and Class C common stock, which expired on May 3, 2024. Prosperity recorded an unrealized gain of $20.6 million during the second quarter 2024 based on the conversion privilege of the Class C common stock and the closing price of Visa Class A common stock. In the exchange, Prosperity received 48,492 shares of Class B-2 stock, recorded at zero cost basis, and 19,245 shares of Class C common stock and has subsequently sold all shares of Class C stock.\n\n**Dividend**\n\nProsperity Bancshares declared a first quarter 2025 cash dividend of $0.58 per share to be paid on April 1, 2025, to all shareholders of record as of March 14, 2025.\n\n**Stock Repurchase Program**\n\nOn January 21, 2025, Prosperity Bancshares announced a stock repurchase program under which up to 5%, or approximately 4.8 million shares, of its outstanding common stock may be acquired over a one-year period expiring on January 21, 2026, at the discretion of management. Under its 2024 stock repurchase program, Prosperity Bancshares repurchased zero shares of its common stock during the three months ended December 31, 2024, and approximately 1.2 million shares of its common stock at an average weighted price of $60.35 per share during the year ended December 31, 2024.\n\n**Merger of Lone Star State Bancshares, Inc.**\n\nOn April 1, 2024, Prosperity completed the merger of Lone Star and its wholly owned subsidiary Lone Star Bank, headquartered in Lubbock, Texas. Lone Star Bank operated 5 full-service banking offices in the West Texas area, including its main office in Lubbock, and 1 banking center in each of Brownfield, Midland, Odessa and Big Spring, Texas.\n\nPursuant to the terms of the definitive agreement, Prosperity issued 2,376,182 shares of Prosperity common stock plus approximately $64.1 million in cash for all outstanding shares of Lone Star in the second quarter of 2024. This resulted in goodwill of $106.7 million as of December 31, 2024, which does not include all the subsequent fair value adjustments that have not yet been finalized.\n\n**Conference Call**\n\nProsperity's management team will host a conference call on Wednesday, January 29, 2025, at 11:30 a.m. Eastern Time (10:30 a.m. Central Time) to discuss Prosperity's fourth quarter 2024 earnings. Individuals and investment professionals may participate in the call by dialing 877-883-0383 for domestic participants, or 412-902-6506 for international participants. The participant elite entry number is 7777695.",
+        "token_count": 674,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash"
+  },
+  "judge": {
+    "text": "```json\n{\"correctness\": 98, \"citation_support\": 95, \"rationale\": \"The candidate reports 5,833 million Class A, 860 million Class B, and 5,497 million Class C shares outstanding as of January 28, 2025, matching the reference and the gold evidence quote exactly. Unit conversions to full shares (5,833,000,000 etc.) are arithmetically correct. The accession number 0001652044-25-000014 and filing date of February 5, 2025 match the retrieved Filing Summary. The chunk ID efeb3fc9-e011-5db2-acff-afb499f7d4d4 matches the retrieved cover-page chunk. Minor deduction: the candidate says 'Class C stock' while the cover page says 'Class C Capital Stock' in the registration table, a trivial wording point. Citation support is strong because the cited accession and chunk are present in the retrieved excerpts and contain the stated figures.\"}\n```",
+    "message": {
+      "role": "assistant",
+      "content": "```json\n{\"correctness\": 98, \"citation_support\": 95, \"rationale\": \"The candidate reports 5,833 million Class A, 860 million Class B, and 5,497 million Class C shares outstanding as of January 28, 2025, matching the reference and the gold evidence quote exactly. Unit conversions to full shares (5,833,000,000 etc.) are arithmetically correct. The accession number 0001652044-25-000014 and filing date of February 5, 2025 match the retrieved Filing Summary. The chunk ID efeb3fc9-e011-5db2-acff-afb499f7d4d4 matches the retrieved cover-page chunk. Minor deduction: the candidate says 'Class C stock' while the cover page says 'Class C Capital Stock' in the registration table, a trivial wording point. Citation support is strong because the cited accession and chunk are present in the retrieved excerpts and contain the stated figures.\"}\n```",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:49.283893+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "49c1dace0c16bf02d7af175a:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042246-Pr4XxRkQhAjfmpVxnAyI",
+    "usage": {
+      "prompt_tokens": 26995,
+      "completion_tokens": 312,
+      "total_tokens": 27307,
+      "cost": 0.0028555,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028555,
+        "upstream_inference_prompt_cost": 0.0026995,
+        "upstream_inference_completions_cost": 0.000156
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.7631081899999117,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 95,
+    "rationale": "The candidate reports 5,833 million Class A, 860 million Class B, and 5,497 million Class C shares outstanding as of January 28, 2025, matching the reference and the gold evidence quote exactly. Unit conversions to full shares (5,833,000,000 etc.) are arithmetically correct. The accession number 0001652044-25-000014 and filing date of February 5, 2025 match the retrieved Filing Summary. The chunk ID efeb3fc9-e011-5db2-acff-afb499f7d4d4 matches the retrieved cover-page chunk. Minor deduction: the candidate says 'Class C stock' while the cover page says 'Class C Capital Stock' in the registration table, a trivial wording point. Citation support is strong because the cited accession and chunk are present in the retrieved excerpts and contain the stated figures."
+  },
+  "status": "ok"
+}

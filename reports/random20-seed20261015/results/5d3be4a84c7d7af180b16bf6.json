@@ -1,0 +1,117 @@
+{
+  "question_id": "Q074",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.04369978100021399,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "**Adobe recorded the higher gross profit margin.**\n\n- Adobe FY2024: **89%** (gross profit $19,147 million \u00f7 revenue $21,505 million; reported as 89%).\n- NVIDIA FY2025: **75.0%**.\n- Difference: **89% \u2212 75.0% = 14.0 percentage points**.\n\nSources: Adobe, accession **0000796343-25-000004**, Item 8, chunk **6**; NVIDIA, accession **0001045810-25-000023**, Item 7, chunk **2**.",
+    "message": {
+      "role": "assistant",
+      "content": "**Adobe recorded the higher gross profit margin.**\n\n- Adobe FY2024: **89%** (gross profit $19,147 million \u00f7 revenue $21,505 million; reported as 89%).\n- NVIDIA FY2025: **75.0%**.\n- Difference: **89% \u2212 75.0% = 14.0 percentage points**.\n\nSources: Adobe, accession **0000796343-25-000004**, Item 8, chunk **6**; NVIDIA, accession **0001045810-25-000023**, Item 7, chunk **2**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:28.489075+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "5d3be4a84c7d7af180b16bf6:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041984-4SMnssLHz9vB9Xw67neF",
+    "usage": {
+      "prompt_tokens": 14586,
+      "completion_tokens": 129,
+      "total_tokens": 14715,
+      "cost": 0.001887675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 14583,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001887675,
+        "upstream_inference_prompt_cost": 0.001823175,
+        "upstream_inference_completions_cost": 6.45e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.71829908699965,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 75, \"citation_support\": 90, \"rationale\": \"The candidate correctly identifies Adobe as the higher-margin firm and gets the direction right. Its figures match the reference's underlying data: Adobe FY2024 gross profit of $19,147M on $21,505M revenue, and NVIDIA's reported 75.0% gross margin. The deduction is precision. The candidate uses Adobe's rounded 89% and NVIDIA's rounded 75.0%, giving 14.0 points, while the unrounded values (89.04% and 74.99%) give 14.05 points. The candidate also does not state the unrounded Adobe margin. Citations are supported by the retrieved excerpts: the Adobe segment table (accession 0000796343-25-000004) contains the cited figures, and the NVIDIA Item 7 percentage table (accession 0001045810-25-000023) shows the 75.0 gross profit line.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 75, \"citation_support\": 90, \"rationale\": \"The candidate correctly identifies Adobe as the higher-margin firm and gets the direction right. Its figures match the reference's underlying data: Adobe FY2024 gross profit of $19,147M on $21,505M revenue, and NVIDIA's reported 75.0% gross margin. The deduction is precision. The candidate uses Adobe's rounded 89% and NVIDIA's rounded 75.0%, giving 14.0 points, while the unrounded values (89.04% and 74.99%) give 14.05 points. The candidate also does not state the unrounded Adobe margin. Citations are supported by the retrieved excerpts: the Adobe segment table (accession 0000796343-25-000004) contains the cited figures, and the NVIDIA Item 7 percentage table (accession 0001045810-25-000023) shows the 75.0 gross profit line.\"}",
+      "refusal": null,
+      "reasoning": "Checking the numbers: Adobe comes out to 19147/21505 \u2248 89.04%, and NVIDIA is 97858/130497 \u2248 74.99%, giving a gap of about 14.05 percentage points between them.\n\nThe candidate's rounded figures (89% vs 75.0%) produce 14.0 pp instead of 14.05, a minor precision slip but the right company and roughly the right gap. Both citations check out against the retrieved excerpts \u2014 NVIDIA's Item 7 chunk 2 table and Adobe's Item 8 chunk 6 segment table both support the figures used. I'd put correctness around 75-78 given the rounding issue, and citation support high, around 90.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking the numbers: Adobe comes out to 19147/21505 \u2248 89.04%, and NVIDIA is 97858/130497 \u2248 74.99%, giving a gap of about 14.05 percentage points between them.\n\nThe candidate's rounded figures (89% vs 75.0%) produce 14.0 pp instead of 14.05, a minor precision slip but the right company and roughly the right gap. Both citations check out against the retrieved excerpts \u2014 NVIDIA's Item 7 chunk 2 table and Adobe's Item 8 chunk 6 segment table both support the figures used. I'd put correctness around 75-78 given the rounding issue, and citation support high, around 90.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:01.089388+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "5d3be4a84c7d7af180b16bf6:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042195-d1BuzjFVjItvemoFLya5",
+    "usage": {
+      "prompt_tokens": 23717,
+      "completion_tokens": 873,
+      "total_tokens": 24590,
+      "cost": 0.0028082,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028082,
+        "upstream_inference_prompt_cost": 0.0023717,
+        "upstream_inference_completions_cost": 0.0004365
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 562,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 7.251478791000409,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 75,
+    "citation_support": 90,
+    "rationale": "The candidate correctly identifies Adobe as the higher-margin firm and gets the direction right. Its figures match the reference's underlying data: Adobe FY2024 gross profit of $19,147M on $21,505M revenue, and NVIDIA's reported 75.0% gross margin. The deduction is precision. The candidate uses Adobe's rounded 89% and NVIDIA's rounded 75.0%, giving 14.0 points, while the unrounded values (89.04% and 74.99%) give 14.05 points. The candidate also does not state the unrounded Adobe margin. Citations are supported by the retrieved excerpts: the Adobe segment table (accession 0000796343-25-000004) contains the cited figures, and the NVIDIA Item 7 percentage table (accession 0001045810-25-000023) shows the 75.0 gross profit line."
+  },
+  "status": "ok"
+}

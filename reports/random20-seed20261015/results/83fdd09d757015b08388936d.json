@@ -1,0 +1,117 @@
+{
+  "question_id": "Q051",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/vector",
+  "retrieval": {
+    "seconds": 0.011172574000738678,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Adobe\u2019s fiscal 2024 gross profit margin was **89.0%**.\n\nCalculation: gross profit \u00f7 total revenue \u00d7 100 = **$19,147 million \u00f7 $21,505 million \u00d7 100 = 89.04%**, or **89.0%** rounded to one decimal place.\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, **Consolidated Statements of Income**, chunk **c8e23789-3e5b-5998-a527-7bb13e5d5a92**.",
+    "message": {
+      "role": "assistant",
+      "content": "Adobe\u2019s fiscal 2024 gross profit margin was **89.0%**.\n\nCalculation: gross profit \u00f7 total revenue \u00d7 100 = **$19,147 million \u00f7 $21,505 million \u00d7 100 = 89.04%**, or **89.0%** rounded to one decimal place.\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, **Consolidated Statements of Income**, chunk **c8e23789-3e5b-5998-a527-7bb13e5d5a92**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:30.330591+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "83fdd09d757015b08388936d:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041928-U05izS2rQWlMqykKGgfk",
+    "usage": {
+      "prompt_tokens": 16179,
+      "completion_tokens": 127,
+      "total_tokens": 16306,
+      "cost": 0.0020858,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 16176,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0020858,
+        "upstream_inference_prompt_cost": 0.0020223,
+        "upstream_inference_completions_cost": 6.35e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.48099931500019,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 92, \"citation_support\": 96, \"rationale\": \"The candidate's arithmetic is right: $19,147M \u00f7 $21,505M = 89.04%. It headlines 89.0% (one decimal), which is consistent with the reference's 89.04% and does not change the answer. Inputs match the income statement. The cited chunk c8e23789 is the Consolidated Statements of Income and contains the gross profit (19,147) and total revenue (21,505) figures, and it was in the retrieved excerpts with the correct accession number. Deducted a few points only for the headline rounding differing from the reference's stated precision.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 92, \"citation_support\": 96, \"rationale\": \"The candidate's arithmetic is right: $19,147M \u00f7 $21,505M = 89.04%. It headlines 89.0% (one decimal), which is consistent with the reference's 89.04% and does not change the answer. Inputs match the income statement. The cited chunk c8e23789 is the Consolidated Statements of Income and contains the gross profit (19,147) and total revenue (21,505) figures, and it was in the retrieved excerpts with the correct accession number. Deducted a few points only for the headline rounding differing from the reference's stated precision.\"}",
+      "refusal": null,
+      "reasoning": "The candidate's 89.0% matches the reference 89.04% when rounded, and the calculation shown explicitly states 89.04%, so this looks correct with maybe a slight deduction for presentation differences. Checking citations, the gold evidence accession matches and the retrieved chunk is indeed the income statement containing the gross profit line.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The candidate's 89.0% matches the reference 89.04% when rounded, and the calculation shown explicitly states 89.04%, so this looks correct with maybe a slight deduction for presentation differences. Checking citations, the gold evidence accession matches and the retrieved chunk is indeed the income statement containing the gross profit line.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSoQkKEAgSGAI4AUIIdGhpbmtpbmcSDKpdHqNJsZMvcm4rZxoMQ3m4KEkindHacRA9IjAFBDlgJhhrcH/26qC+mVWjZsj/hZcLA96iXfaM/kyxbCS5jUjCvNQ75iTECgT+ZDAqvgiVOe07X9bA3SWvfkjc9obySVp/WyGuGBpaFwavNfGmXn+f+u2xAdxLAikMvhpvuNz2QZmeJO3QdvbEsmTcWqtIzjScZhyfHBshHqDREkCpbrvFjUvMf37jVfBxYh1BhlHaw8+9vIsD3wvD81UryRKuah2ZOpWqyfoCj0yPMVtVCCWaIPbxWTW54S+T1hBkogmp89IytwDtQvQcGTdUXOsBOn6jVRA4lt1hLBRFo+VOUhyrrvuGBgghqx08ryaTh890JLZ7rm4WrPrOtpThFYUy8XD+dFjNNxwQ7j6fWUkXZKXYeVlAJifPes0aTZnRLnhQWm3GVvTl2dTEiIm/YjIUB3lnrHu3OkUWrPzk9n+Mnw/tEq6nIE72LtSNU/g5Du4spm9VxeEd1P7w4+zgGANQ3qVKoOPzzW/EE9X9jDDSoyxKsgZcjKw/b7BXKB/3YCMAvDBOospv0kKvbOK83cQ/TckcLlAmYMvOWYNJHVCFxD8L//iASYp6497QpZmPpp35l00MvIiwAxRu5aDwEXw4KNxq5wkypE5EJL+OAliMW1KjyHFcVOVodk2aipwdlXVXHONk+nm06l0EmJT6AB+yzlAUsDN1b/u786OuqKgpRFiplZJ6F71gZDzmLqp0tBYncOveREQV67II+deaWLQohQg1WwNrYetMVlISHMe6exTmNRqw7uNVWio5NwfnX4emD2YdQf8zb3P1ZJ/8tS3caL2GkRpcvFDdWpDLs02pwx4Kp6GLublSbkzFtBXcKv4RYMecUoNWzEmtRpARmXVIkP6GUSiwQym/iNA6AbK7lIqt51Mc7KTHVam5cXJBnbbFGCghjaep4JssXJ7ZFON1dJTOyuTZOE8DsOSS2CoaIBTN9MmoxOBzh7jdrX58UGLs4kAOSpVuw6y4zL1YMk8YTNMlFNoFY77Lu0DZxUCn0j1a9vnuZl0y+8BQBj8Qv3i2AkLQ6nkKBhexGbvbjE/qHr+nJdd6NXGAs5v4HJxSKJJQYnJ8DtxPP2tIuwNkcPPDrf4dhMyUhQGNdjy9HbkD4AoyNrABXx6SHyeBJ+yiTVjrCre1aozfzvnpt/uISxJdhlTZtawrWDm6GvHgiMf6z/VuLV8vogaf/cKpzq0T6Qh/QS4jO2nskO5AHiipIPrdWRGouzOKOI7dFXT0HNi4OfPdUlHS4oWsoKhorWRU6uu9XNhx1/iia1l+FY66FEnREUha0/Vlmk3h/KnDvkwQFmmbER8yo6njQVQ24Wi1vo+U4dGSdFEmwJ9vBWKEIS/8DFsGKSEeWL5xuPVb1W+LHbbIWXbyntsY6p8b/Zf0nDIPi5nEQo6+D4wHlc6gOM9t1iQU1mI6VigJT62uo7K8lDQVD5qXj6Vtlq6Y4cYz5FxFKlxgOHZSAjf7eeznaLQKcnyvBCtxMIS6x+XK20nC6fweabIG7Z1zwiyVUewYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:55.552668+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "83fdd09d757015b08388936d:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042131-E3XUZz8ZSEmF9KrAzW2H",
+    "usage": {
+      "prompt_tokens": 25475,
+      "completion_tokens": 443,
+      "total_tokens": 25918,
+      "cost": 0.002769,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002769,
+        "upstream_inference_prompt_cost": 0.0025475,
+        "upstream_inference_completions_cost": 0.0002215
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 235,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.749880362000113,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 92,
+    "citation_support": 96,
+    "rationale": "The candidate's arithmetic is right: $19,147M \u00f7 $21,505M = 89.04%. It headlines 89.0% (one decimal), which is consistent with the reference's 89.04% and does not change the answer. Inputs match the income statement. The cited chunk c8e23789 is the Consolidated Statements of Income and contains the gross profit (19,147) and total revenue (21,505) figures, and it was in the retrieved excerpts with the correct accession number. Deducted a few points only for the headline rounding differing from the reference's stated precision."
+  },
+  "status": "ok"
+}

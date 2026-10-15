@@ -1,0 +1,117 @@
+{
+  "question_id": "Q068",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.03507149399956688,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Intel dedicated the higher percentage of revenue to R&D.\n\n- **Intel FY2024:** $16.546 billion R&D \u00f7 $53.101 billion net revenue = **31.2%** (reported).\n- **NVIDIA FY2025:** R&D was **9.9%** of revenue (reported).\n- **Difference:** 31.2% \u2212 9.9% = **21.3 percentage points**.\n\nSources: Intel 10-K, accession **0000050863-25-000009**, *Filing Summary*, chunk **13**; NVIDIA 10-K, accession **0001045810-25-000023**, *Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations*, chunk **2**.",
+    "message": {
+      "role": "assistant",
+      "content": "Intel dedicated the higher percentage of revenue to R&D.\n\n- **Intel FY2024:** $16.546 billion R&D \u00f7 $53.101 billion net revenue = **31.2%** (reported).\n- **NVIDIA FY2025:** R&D was **9.9%** of revenue (reported).\n- **Difference:** 31.2% \u2212 9.9% = **21.3 percentage points**.\n\nSources: Intel 10-K, accession **0000050863-25-000009**, *Filing Summary*, chunk **13**; NVIDIA 10-K, accession **0001045810-25-000023**, *Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations*, chunk **2**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:14.560327+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "c16b0957b8eab3ba1a6035e9:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041972-UsPJWjrqyKv4SsAzz5B1",
+    "usage": {
+      "prompt_tokens": 15935,
+      "completion_tokens": 163,
+      "total_tokens": 16098,
+      "cost": 0.0020733,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 15932,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0020733,
+        "upstream_inference_prompt_cost": 0.0019918,
+        "upstream_inference_completions_cost": 8.15e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.886432235999564,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 80, \"citation_support\": 90, \"rationale\": \"The candidate correctly identifies Intel as the company with the higher R&D intensity and uses the right inputs: Intel R&D of $16,546M on $53,101M revenue (31.2%) and NVIDIA's reported 9.9%. Its 21.3 percentage-point gap is the more precise figure. The reference's 31.07% and 21.17 pp come from rounding Intel's R&D to $16.5B, while the filing's $16,546M gives about 31.16% and a gap of about 21.27 pp. The candidate's answer is therefore arguably more accurate than the reference, though it does not match the reference's exact figures. Citation support is strong: the Intel consolidated results table with 16546 and 31.2% appears in the Intel chunk cited (chunk 13), and the NVIDIA 9.9% R&D figure appears in the cited NVIDIA Item 7 chunk (chunk 2). The gold-evidence quote for NVIDIA's $12,914M R&D is not in the candidate's text, but the 9.9% it cites is supported by the retrieved excerpts.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 80, \"citation_support\": 90, \"rationale\": \"The candidate correctly identifies Intel as the company with the higher R&D intensity and uses the right inputs: Intel R&D of $16,546M on $53,101M revenue (31.2%) and NVIDIA's reported 9.9%. Its 21.3 percentage-point gap is the more precise figure. The reference's 31.07% and 21.17 pp come from rounding Intel's R&D to $16.5B, while the filing's $16,546M gives about 31.16% and a gap of about 21.27 pp. The candidate's answer is therefore arguably more accurate than the reference, though it does not match the reference's exact figures. Citation support is strong: the Intel consolidated results table with 16546 and 31.2% appears in the Intel chunk cited (chunk 13), and the NVIDIA 9.9% R&D figure appears in the cited NVIDIA Item 7 chunk (chunk 2). The gold-evidence quote for NVIDIA's $12,914M R&D is not in the candidate's text, but the 9.9% it cites is supported by the retrieved excerpts.\"}",
+      "refusal": null,
+      "reasoning": "Checking the margin figures: Intel's gross margin comes to 31.2% and NVIDIA's to 9.9%, giving roughly a 21.3 percentage point gap, matching what's reported directly in the filings.\n\nCitations look solid\u2014the Intel consolidated results table lives in chunk 13 with the R&D figures, and NVIDIA's chunk 2 supports the 9.9%. Given how close the computed difference is to the reference and the strong citation support, I'd rate this around 78.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking the margin figures: Intel's gross margin comes to 31.2% and NVIDIA's to 9.9%, giving roughly a 21.3 percentage point gap, matching what's reported directly in the filings.\n\nCitations look solid\u2014the Intel consolidated results table lives in chunk 13 with the R&D figures, and NVIDIA's chunk 2 supports the 9.9%. Given how close the computed difference is to the reference and the strong citation support, I'd rate this around 78.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:42.795614+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "c16b0957b8eab3ba1a6035e9:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042177-3y6t5zLxFrFUnMSxqt57",
+    "usage": {
+      "prompt_tokens": 24333,
+      "completion_tokens": 948,
+      "total_tokens": 25281,
+      "cost": 0.0029073,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029073,
+        "upstream_inference_prompt_cost": 0.0024333,
+        "upstream_inference_completions_cost": 0.000474
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 564,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.603023611999561,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 80,
+    "citation_support": 90,
+    "rationale": "The candidate correctly identifies Intel as the company with the higher R&D intensity and uses the right inputs: Intel R&D of $16,546M on $53,101M revenue (31.2%) and NVIDIA's reported 9.9%. Its 21.3 percentage-point gap is the more precise figure. The reference's 31.07% and 21.17 pp come from rounding Intel's R&D to $16.5B, while the filing's $16,546M gives about 31.16% and a gap of about 21.27 pp. The candidate's answer is therefore arguably more accurate than the reference, though it does not match the reference's exact figures. Citation support is strong: the Intel consolidated results table with 16546 and 31.2% appears in the Intel chunk cited (chunk 13), and the NVIDIA 9.9% R&D figure appears in the cited NVIDIA Item 7 chunk (chunk 2). The gold-evidence quote for NVIDIA's $12,914M R&D is not in the candidate's text, but the 9.9% it cites is supported by the retrieved excerpts."
+  },
+  "status": "ok"
+}

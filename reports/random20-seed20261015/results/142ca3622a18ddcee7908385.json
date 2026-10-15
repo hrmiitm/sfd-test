@@ -1,0 +1,108 @@
+{
+  "question_id": "Q002",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.021717231000366155,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "As of January 28, 2025, Alphabet had **5,833 million Class A shares**, **860 million Class B shares**, and **5,497 million Class C shares** outstanding.\n\n**Source:** Accession 0001652044-25-000014, \u201cFiling Summary\u201d (cover page), chunk `efeb3fc9-e011-5db2-acff-afb499f7d4d4`.",
+    "message": {
+      "role": "assistant",
+      "content": "As of January 28, 2025, Alphabet had **5,833 million Class A shares**, **860 million Class B shares**, and **5,497 million Class C shares** outstanding.\n\n**Source:** Accession 0001652044-25-000014, \u201cFiling Summary\u201d (cover page), chunk `efeb3fc9-e011-5db2-acff-afb499f7d4d4`.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:01.943634+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "142ca3622a18ddcee7908385:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041839-2GtvpWR1bVPqpoyPwruv",
+    "usage": {
+      "prompt_tokens": 13906,
+      "completion_tokens": 94,
+      "total_tokens": 14000,
+      "cost": 0.001785175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 13903,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001785175,
+        "upstream_inference_prompt_cost": 0.001738175,
+        "upstream_inference_completions_cost": 4.7e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.06497219800076,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate's figures (5,833M Class A, 860M Class B, 5,497M Class C as of January 28, 2025) match the reference and the cover-page excerpt exactly. The candidate cites accession 0001652044-25-000014 and the cover page, which is supported by the retrieved Filing Summary chunk that contains the verbatim sentence. The section label 'Filing Summary' is the chunk's section header, and the sentence sits in that chunk's text, so the citation is accurate, though the cover-page content is embedded in the Filing Summary chunk rather than a separately labeled cover section. Minor deduction only for the slightly loose section label.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate's figures (5,833M Class A, 860M Class B, 5,497M Class C as of January 28, 2025) match the reference and the cover-page excerpt exactly. The candidate cites accession 0001652044-25-000014 and the cover page, which is supported by the retrieved Filing Summary chunk that contains the verbatim sentence. The section label 'Filing Summary' is the chunk's section header, and the sentence sits in that chunk's text, so the citation is accurate, though the cover-page content is embedded in the Filing Summary chunk rather than a separately labeled cover section. Minor deduction only for the slightly loose section label.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:44.058308+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "142ca3622a18ddcee7908385:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042062-K9PeSgreNZTcJc5JHTp7",
+    "usage": {
+      "prompt_tokens": 21890,
+      "completion_tokens": 239,
+      "total_tokens": 22129,
+      "cost": 0.0023085,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0023085,
+        "upstream_inference_prompt_cost": 0.002189,
+        "upstream_inference_completions_cost": 0.0001195
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.8467175579999093,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "The candidate's figures (5,833M Class A, 860M Class B, 5,497M Class C as of January 28, 2025) match the reference and the cover-page excerpt exactly. The candidate cites accession 0001652044-25-000014 and the cover page, which is supported by the retrieved Filing Summary chunk that contains the verbatim sentence. The section label 'Filing Summary' is the chunk's section header, and the sentence sits in that chunk's text, so the citation is accurate, though the cover-page content is embedded in the Filing Summary chunk rather than a separately labeled cover section. Minor deduction only for the slightly loose section label."
+  },
+  "status": "ok"
+}

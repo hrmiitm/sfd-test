@@ -1,0 +1,117 @@
+{
+  "measured": {
+    "chunks": 43105,
+    "tokens": 20605765,
+    "text_characters": 96404896,
+    "filings": 1000,
+    "timings": {
+      "prepare": 83.28978043200004,
+      "embed": 1102.788241147995,
+      "ingest": 129.19957104400055
+    },
+    "database_timings": {
+      "lancedb_write_seconds": 13.484980966999956,
+      "qdrant_write_seconds": 100.96261335899999,
+      "lancedb_index_seconds": 10.90423968899995
+    },
+    "api_requests": 410,
+    "api_input_tokens": 20605765,
+    "api_reported_cost_usd": 0.4121153,
+    "retried_requests": 7,
+    "request_latency_median_seconds": 6.277034873000048,
+    "request_latency_p95_seconds": 18.670068824999817,
+    "storage_bytes": {
+      "chunks": 18497536,
+      "embeddings": 163307520,
+      "lancedb": 591904768,
+      "qdrant_server": 460623872
+    },
+    "embedding_wall_time_includes_recovery_and_pause": true
+  },
+  "scenarios": [
+    {
+      "filings": 1000,
+      "chunks": 43105,
+      "embedding_tokens": 20605765,
+      "text_counts": "measured",
+      "embedding_cost_usd": 0.4121153,
+      "cost_kind": "API-reported",
+      "stage_seconds": {
+        "prepare": 83.28978043200004,
+        "embed": 1102.788241147995,
+        "ingest": 129.19957104400055
+      },
+      "total_seconds": 1315.2775926239956,
+      "planning_range_seconds": [
+        1315.2775926239956,
+        1315.2775926239956
+      ],
+      "storage_bytes_projected": 1234333696.0,
+      "raw_float32_vector_bytes_per_copy": 264837120
+    },
+    {
+      "filings": 10000,
+      "chunks": 406987,
+      "embedding_tokens": 194845149,
+      "text_counts": "measured",
+      "embedding_cost_usd": 3.89690298,
+      "cost_kind": "projected at observed API rate",
+      "stage_seconds": {
+        "prepare": 1181.8155435919998,
+        "embed": 10427.80693470633,
+        "ingest": 1219.8711476739277
+      },
+      "total_seconds": 12829.493625972258,
+      "planning_range_seconds": [
+        9622.120219479193,
+        25658.987251944516
+      ],
+      "storage_bytes_projected": 11654280661.963856,
+      "raw_float32_vector_bytes_per_copy": 2500528128
+    },
+    {
+      "filings": 638067,
+      "chunks": 43252085,
+      "embedding_tokens": 20706948883,
+      "text_counts": "estimated from characters using 10k sample when available",
+      "embedding_cost_usd": 414.13897766,
+      "cost_kind": "projected at observed API rate",
+      "stage_seconds": {
+        "prepare": 125596.11658881056,
+        "embed": 1108203.443950031,
+        "ingest": 129640.4321716425
+      },
+      "total_seconds": 1363439.992710484,
+      "planning_range_seconds": [
+        1022579.9945328629,
+        4090319.9781314516
+      ],
+      "storage_bytes_projected": 1238545550116.1387,
+      "raw_float32_vector_bytes_per_copy": 265740810240
+    }
+  ],
+  "usd_per_million_tokens": 0.02,
+  "machine": {
+    "logical_cpus": 12,
+    "ram_bytes": 16433893376,
+    "python": "3.12.14",
+    "packages": {
+      "lancedb": "0.40.0",
+      "qdrant-client": "1.19.1",
+      "duckdb": "1.5.6",
+      "pyarrow": "26.0.0"
+    }
+  },
+  "local_free_disk_bytes": 321891786752,
+  "collection": "sfd_355dfd240a653fec",
+  "lancedb_path": "/home/kit/Documents/sfd-2025/data/pipeline/sample-1000/lancedb",
+  "qdrant_url": "http://localhost:6333",
+  "caveats": [
+    "API usage cost is upstream/provider-reported; any separate Foundry billing markup is unknown.",
+    "Larger runs are projections, not measured end-to-end runs; full corpus has not been embedded.",
+    "Time ranges are planning allowances, not statistical confidence intervals. Rate limits and index growth can increase time.",
+    "Storage scales from one observed run, includes indexes; compaction and backups need additional space.",
+    "Two connection probes (15 tokens total) cost $0.00000030 in addition to the recorded corpus run.",
+    "Embedding uses four concurrent workers, batches up to 128 (automatically split), 700-token chunks, 1536 dimensions. Observed wall time includes debugging/recovery pauses; future base64 transfers avoid float-JSON overhead."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "question_id": "Q084",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.034683277000112867,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Intel Foundry external revenue fell **about 59.6%**, or **60%**, in 2024 versus 2023:\n\n\\[\n\\frac{\\$953\\text{ million}-\\$385\\text{ million}}{\\$953\\text{ million}}\\times100\n=\\frac{\\$568\\text{ million}}{\\$953\\text{ million}}\\times100\n\\approx59.6\\%.\n\\]\n\nThe filing attributes the decline primarily to **lower traditional packaging services revenue and lower equipment sales**. (Accession **0000050863-25-000009**, *Filing Summary*, chunk **12**.)",
+    "message": {
+      "role": "assistant",
+      "content": "Intel Foundry external revenue fell **about 59.6%**, or **60%**, in 2024 versus 2023:\n\n\\[\n\\frac{\\$953\\text{ million}-\\$385\\text{ million}}{\\$953\\text{ million}}\\times100\n=\\frac{\\$568\\text{ million}}{\\$953\\text{ million}}\\times100\n\\approx59.6\\%.\n\\]\n\nThe filing attributes the decline primarily to **lower traditional packaging services revenue and lower equipment sales**. (Accession **0000050863-25-000009**, *Filing Summary*, chunk **12**.)",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:13.574870+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "3b2ce1047edd4484e21dcd56:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042031-CYaeZqonsjlxEM20KSAL",
+    "usage": {
+      "prompt_tokens": 18278,
+      "completion_tokens": 135,
+      "total_tokens": 18413,
+      "cost": 0.002352175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 18275,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002352175,
+        "upstream_inference_prompt_cost": 0.002284675,
+        "upstream_inference_completions_cost": 6.75e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 17.411887272999593,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 90, \"citation_support\": 88, \"rationale\": \"The candidate gives 60% as the filing's stated figure and shows the calculation from the retrieved external revenue numbers ($953M in 2023 to $385M in 2024), which yields about 59.6%. Both figures are consistent with the reference's 60%, and the causes (lower traditional packaging services and lower equipment sales) match. The bolded headline 'about 59.6%' slightly departs from the filing's rounded 60% wording, which keeps it from full marks. The cited chunk 12 contains the $385M/$953M figures and the causal language, so the citation is supported. The exact 60% sentence sits in a different excerpt, and the candidate does not quote it, so the citation is not fully precise.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 90, \"citation_support\": 88, \"rationale\": \"The candidate gives 60% as the filing's stated figure and shows the calculation from the retrieved external revenue numbers ($953M in 2023 to $385M in 2024), which yields about 59.6%. Both figures are consistent with the reference's 60%, and the causes (lower traditional packaging services and lower equipment sales) match. The bolded headline 'about 59.6%' slightly departs from the filing's rounded 60% wording, which keeps it from full marks. The cited chunk 12 contains the $385M/$953M figures and the causal language, so the citation is supported. The exact 60% sentence sits in a different excerpt, and the candidate does not quote it, so the citation is not fully precise.\"}",
+      "refusal": null,
+      "reasoning": "Checking the math: (953-385)/953 \u2248 59.6%, which rounds to 60% as stated in the MD&A, so the candidate's figures and calculation line up with the reference. The citation for the chunk number might be slightly off, but the core numbers and conclusion are accurate.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking the math: (953-385)/953 \u2248 59.6%, which rounds to 60% as stated in the MD&A, so the candidate's figures and calculation line up with the reference. The citation for the chunk number might be slightly off, but the core numbers and conclusion are accurate.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:33.634127+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "3b2ce1047edd4484e21dcd56:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042229-jFL2jQqPTWRPPigKN4Cp",
+    "usage": {
+      "prompt_tokens": 29017,
+      "completion_tokens": 767,
+      "total_tokens": 29784,
+      "cost": 0.0032852,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032852,
+        "upstream_inference_prompt_cost": 0.0029017,
+        "upstream_inference_completions_cost": 0.0003835
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 512,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.749407660000543,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 90,
+    "citation_support": 88,
+    "rationale": "The candidate gives 60% as the filing's stated figure and shows the calculation from the retrieved external revenue numbers ($953M in 2023 to $385M in 2024), which yields about 59.6%. Both figures are consistent with the reference's 60%, and the causes (lower traditional packaging services and lower equipment sales) match. The bolded headline 'about 59.6%' slightly departs from the filing's rounded 60% wording, which keeps it from full marks. The cited chunk 12 contains the $385M/$953M figures and the causal language, so the citation is supported. The exact 60% sentence sits in a different excerpt, and the candidate does not quote it, so the citation is not fully precise."
+  },
+  "status": "ok"
+}

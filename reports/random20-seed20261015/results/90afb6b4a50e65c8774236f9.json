@@ -1,0 +1,117 @@
+{
+  "question_id": "Q057",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.03405785599989031,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "From Marathon Petroleum Corporation's Consolidated Balance Sheets in the 2024 Form 10-K (Item 8, chunk `10a4bbf3-55fe-5b56-af25-846272b45340`):\n\n* **Total current assets** (as of December 31, 2024): **$24,447 million**\n* **Total current liabilities** (as of December 31, 2024): **$20,827 million**\n\n### **Working Capital Calculation:**\n$$\\text{Working Capital} = \\text{Total current assets} - \\text{Total current liabilities}$$\n$$\\text{Working Capital} = \\$24,447\\text{ million} - \\$20,827\\text{ million} = \\$3,620\\text{ million}$$\n\nMarathon Petroleum Corporation's working capital as of December 31, 2024, was **$3,620 million**.",
+    "message": {
+      "role": "assistant",
+      "content": "From Marathon Petroleum Corporation's Consolidated Balance Sheets in the 2024 Form 10-K (Item 8, chunk `10a4bbf3-55fe-5b56-af25-846272b45340`):\n\n* **Total current assets** (as of December 31, 2024): **$24,447 million**\n* **Total current liabilities** (as of December 31, 2024): **$20,827 million**\n\n### **Working Capital Calculation:**\n$$\\text{Working Capital} = \\text{Total current assets} - \\text{Total current liabilities}$$\n$$\\text{Working Capital} = \\$24,447\\text{ million} - \\$20,827\\text{ million} = \\$3,620\\text{ million}$$\n\nMarathon Petroleum Corporation's working capital as of December 31, 2024, was **$3,620 million**.",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1914U8YtNVriI2bGKZOEK0OJPY+eCkwVkBbLACn6s7aSJyMTlr92pQ+q88OJLtskxS1LYrMDir8xqA8XDSpPyE1aISF6HSrS1h7rp1Dy9Y+RC0t",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:43.635072+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "90afb6b4a50e65c8774236f9:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041940-xJkaKvZ0Q61NqJAM0R5L",
+    "usage": {
+      "prompt_tokens": 18879,
+      "completion_tokens": 233,
+      "total_tokens": 19112,
+      "cost": 0.015033,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.015033,
+        "upstream_inference_prompt_cost": 0.01415925,
+        "upstream_inference_completions_cost": 0.00087375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.112954608000109,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate correctly reports Total current assets of $24,447 million and Total current liabilities of $20,827 million as of December 31, 2024, both matching the balance sheet excerpt in the retrieved Marathon Petroleum chunk. The arithmetic (24,447 - 20,827 = 3,620) is correct and units are stated properly in millions. The cited chunk ID and Item 8 section match the retrieved excerpt. Minor deduction only because the candidate cites a chunk ID but the gold evidence accession is the same and the figures are directly supported; citation support is near-complete.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate correctly reports Total current assets of $24,447 million and Total current liabilities of $20,827 million as of December 31, 2024, both matching the balance sheet excerpt in the retrieved Marathon Petroleum chunk. The arithmetic (24,447 - 20,827 = 3,620) is correct and units are stated properly in millions. The cited chunk ID and Item 8 section match the retrieved excerpt. Minor deduction only because the candidate cites a chunk ID but the gold evidence accession is the same and the figures are directly supported; citation support is near-complete.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:09.571653+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "90afb6b4a50e65c8774236f9:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042147-EwOVcXM9ZUGAoCJVPm6E",
+    "usage": {
+      "prompt_tokens": 24868,
+      "completion_tokens": 219,
+      "total_tokens": 25087,
+      "cost": 0.0025963,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0025963,
+        "upstream_inference_prompt_cost": 0.0024868,
+        "upstream_inference_completions_cost": 0.0001095
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.1794015300001774,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 96,
+    "rationale": "The candidate correctly reports Total current assets of $24,447 million and Total current liabilities of $20,827 million as of December 31, 2024, both matching the balance sheet excerpt in the retrieved Marathon Petroleum chunk. The arithmetic (24,447 - 20,827 = 3,620) is correct and units are stated properly in millions. The cited chunk ID and Item 8 section match the retrieved excerpt. Minor deduction only because the candidate cites a chunk ID but the gold evidence accession is the same and the figures are directly supported; citation support is near-complete."
+  },
+  "status": "ok"
+}

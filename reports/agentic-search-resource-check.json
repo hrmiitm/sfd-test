@@ -1,0 +1,14 @@
+{
+  "rows": [],
+  "scanned": 5000,
+  "next_row": 5000,
+  "complete": false,
+  "resources": {
+    "peak_rss_mib": 981.796875,
+    "cpu_seconds": 1.591265,
+    "wall_seconds": 1.579106232000413,
+    "address_space_limit_mib": 1536,
+    "cpu_limit_seconds": 20,
+    "cpu_cores": 1
+  }
+}

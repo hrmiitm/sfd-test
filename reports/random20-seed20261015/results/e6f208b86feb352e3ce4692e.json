@@ -1,0 +1,117 @@
+{
+  "question_id": "Q008",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/bm25",
+  "retrieval": {
+    "seconds": 0.01473851500031742,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "The supplied excerpts do not identify Intel Corporation\u2019s independent registered public accounting firm or state since what year it has served. **The information is insufficient to answer from these excerpts.**",
+    "message": {
+      "role": "assistant",
+      "content": "The supplied excerpts do not identify Intel Corporation\u2019s independent registered public accounting firm or state since what year it has served. **The information is insufficient to answer from these excerpts.**",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:48.959386+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "e6f208b86feb352e3ce4692e:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041887-M0tAmkj9a9mQUCIM9ySo",
+    "usage": {
+      "prompt_tokens": 8755,
+      "completion_tokens": 39,
+      "total_tokens": 8794,
+      "cost": 0.0011138,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 8752,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0011138,
+        "upstream_inference_prompt_cost": 0.0010943,
+        "upstream_inference_completions_cost": 1.95e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.8713842289998865,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 5, \"citation_support\": 0, \"rationale\": \"The reference answer is answerable: the gold evidence states that Ernst & Young LLP has served as Intel's auditor since 1968. The candidate abstained, saying the excerpts do not identify the auditor or the start year. That is accurate about the retrieved excerpts, which include no Intel auditor statement, but abstention earns full credit only when the reference is unanswerable, and it is not here. The candidate therefore fails both parts of the question. It gives no citation, so nothing in the response is supported by the retrieved excerpts.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 5, \"citation_support\": 0, \"rationale\": \"The reference answer is answerable: the gold evidence states that Ernst & Young LLP has served as Intel's auditor since 1968. The candidate abstained, saying the excerpts do not identify the auditor or the start year. That is accurate about the retrieved excerpts, which include no Intel auditor statement, but abstention earns full credit only when the reference is unanswerable, and it is not here. The candidate therefore fails both parts of the question. It gives no citation, so nothing in the response is supported by the retrieved excerpts.\"}",
+      "refusal": null,
+      "reasoning": "The candidate abstained citing insufficient information, but the reference answer (EY since 1968) is actually answerable from the corpus via an Intel 10-K quote that simply wasn't in the retrieved excerpts. Since abstention only earns full credit when the reference itself is unanswerable, and this reference is answerable, the abstention shouldn't get full marks here.\n\nCorrectness should be low, maybe around 5, since abstaining on an answerable question is wrong even though the candidate's claim about the excerpts is technically accurate. For citation support, there are no citations at all to evaluate, so I'll score that at 0 rather than crediting it for avoiding fabrication.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The candidate abstained citing insufficient information, but the reference answer (EY since 1968) is actually answerable from the corpus via an Intel 10-K quote that simply wasn't in the retrieved excerpts. Since abstention only earns full credit when the reference itself is unanswerable, and this reference is answerable, the abstention shouldn't get full marks here.\n\nCorrectness should be low, maybe around 5, since abstaining on an answerable question is wrong even though the candidate's claim about the excerpts is technically accurate. For citation support, there are no citations at all to evaluate, so I'll score that at 0 rather than crediting it for avoiding fabrication.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:08.432390+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "e6f208b86feb352e3ce4692e:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042083-dml9cCQ7z67PK5IcXML2",
+    "usage": {
+      "prompt_tokens": 14085,
+      "completion_tokens": 608,
+      "total_tokens": 14693,
+      "cost": 0.0017125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0017125,
+        "upstream_inference_prompt_cost": 0.0014085,
+        "upstream_inference_completions_cost": 0.000304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 411,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.78619491399968,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 5,
+    "citation_support": 0,
+    "rationale": "The reference answer is answerable: the gold evidence states that Ernst & Young LLP has served as Intel's auditor since 1968. The candidate abstained, saying the excerpts do not identify the auditor or the start year. That is accurate about the retrieved excerpts, which include no Intel auditor statement, but abstention earns full credit only when the reference is unanswerable, and it is not here. The candidate therefore fails both parts of the question. It gives no citation, so nothing in the response is supported by the retrieved excerpts."
+  },
+  "status": "ok"
+}

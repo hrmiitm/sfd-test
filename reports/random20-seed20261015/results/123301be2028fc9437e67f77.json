@@ -1,0 +1,108 @@
+{
+  "question_id": "Q025",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.030101925000053598,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Adobe\u2019s Digital Media segment revenue in fiscal 2024 was **$15,864 million ($15.864 billion)**, up **12%** year over year from **$14,216 million** in fiscal 2023.\n\nCalculation: \\((15{,}864 - 14{,}216) \\div 14{,}216 \\times 100 \\approx 11.6\\%\\), which rounds to **12%**.\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, **Segments**, chunk **839ad4e2-d434-562b-b699-c27185c0972b**.",
+    "message": {
+      "role": "assistant",
+      "content": "Adobe\u2019s Digital Media segment revenue in fiscal 2024 was **$15,864 million ($15.864 billion)**, up **12%** year over year from **$14,216 million** in fiscal 2023.\n\nCalculation: \\((15{,}864 - 14{,}216) \\div 14{,}216 \\times 100 \\approx 11.6\\%\\), which rounds to **12%**.\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, **Segments**, chunk **839ad4e2-d434-562b-b699-c27185c0972b**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:57.160603+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "123301be2028fc9437e67f77:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041894-JKJTf3Y6Yw9AVAUlMnGE",
+    "usage": {
+      "prompt_tokens": 12347,
+      "completion_tokens": 144,
+      "total_tokens": 12491,
+      "cost": 0.0016153,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 12344,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0016153,
+        "upstream_inference_prompt_cost": 0.0015433,
+        "upstream_inference_completions_cost": 7.2e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.6658141609996164,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "```json\n{\"correctness\": 95, \"citation_support\": 96, \"rationale\": \"The reference states $15.86B in FY2024, up from $14.22B in FY2023, a 12% increase. The candidate gives $15,864M vs $14,216M, which matches the 10-K segment table exactly and is consistent with the reference at the stated precision. Its own arithmetic is correct: (15,864-14,216)/14,216 = 11.59%, which rounds to 12%, and the 10-K reports 12%. Minor deduction because the candidate's 11.6% computed figure differs slightly from the stated 12% and it does not explicitly reconcile that difference beyond rounding, though it does note the rounding. The cited accession matches the retrieved excerpts and the Segments chunk ID is present in the retrieval. The quoted figures are directly supported by the Segments section table and the Item 7 narrative.\"}\n```",
+    "message": {
+      "role": "assistant",
+      "content": "```json\n{\"correctness\": 95, \"citation_support\": 96, \"rationale\": \"The reference states $15.86B in FY2024, up from $14.22B in FY2023, a 12% increase. The candidate gives $15,864M vs $14,216M, which matches the 10-K segment table exactly and is consistent with the reference at the stated precision. Its own arithmetic is correct: (15,864-14,216)/14,216 = 11.59%, which rounds to 12%, and the 10-K reports 12%. Minor deduction because the candidate's 11.6% computed figure differs slightly from the stated 12% and it does not explicitly reconcile that difference beyond rounding, though it does note the rounding. The cited accession matches the retrieved excerpts and the Segments chunk ID is present in the retrieval. The quoted figures are directly supported by the Segments section table and the Item 7 narrative.\"}\n```",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:17.967620+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "123301be2028fc9437e67f77:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042095-JkccQ6SxKOVbZzNotZPh",
+    "usage": {
+      "prompt_tokens": 20117,
+      "completion_tokens": 298,
+      "total_tokens": 20415,
+      "cost": 0.0021607,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0021607,
+        "upstream_inference_prompt_cost": 0.0020117,
+        "upstream_inference_completions_cost": 0.000149
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.389844254000309,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 95,
+    "citation_support": 96,
+    "rationale": "The reference states $15.86B in FY2024, up from $14.22B in FY2023, a 12% increase. The candidate gives $15,864M vs $14,216M, which matches the 10-K segment table exactly and is consistent with the reference at the stated precision. Its own arithmetic is correct: (15,864-14,216)/14,216 = 11.59%, which rounds to 12%, and the 10-K reports 12%. Minor deduction because the candidate's 11.6% computed figure differs slightly from the stated 12% and it does not explicitly reconcile that difference beyond rounding, though it does note the rounding. The cited accession matches the retrieved excerpts and the Segments chunk ID is present in the retrieval. The quoted figures are directly supported by the Segments section table and the Item 7 narrative."
+  },
+  "status": "ok"
+}

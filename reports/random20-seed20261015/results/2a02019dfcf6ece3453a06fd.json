@@ -1,0 +1,117 @@
+{
+  "question_id": "Q025",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.03005406000011135,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Adobe\u2019s Digital Media segment generated **$15,864 million ($15.864 billion)** in fiscal 2024, up **12%** year over year from **$14,216 million** in fiscal 2023.\n\nCalculation: \\((15{,}864 - 14{,}216) / 14{,}216 \\times 100 \\approx 11.6\\%\\), reported as **12%**.\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, \u201cSegments,\u201d chunk **839ad4e2-d434-562b-b699-c27185c0972b**.",
+    "message": {
+      "role": "assistant",
+      "content": "Adobe\u2019s Digital Media segment generated **$15,864 million ($15.864 billion)** in fiscal 2024, up **12%** year over year from **$14,216 million** in fiscal 2023.\n\nCalculation: \\((15{,}864 - 14{,}216) / 14{,}216 \\times 100 \\approx 11.6\\%\\), reported as **12%**.\n\nSource: Adobe Inc. 10-K, accession **0000796343-25-000004**, \u201cSegments,\u201d chunk **839ad4e2-d434-562b-b699-c27185c0972b**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:58.622223+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "2a02019dfcf6ece3453a06fd:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041895-F1Ap4NO3kALfMPgR604w",
+    "usage": {
+      "prompt_tokens": 12347,
+      "completion_tokens": 141,
+      "total_tokens": 12488,
+      "cost": 0.0016138,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 12344,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0016138,
+        "upstream_inference_prompt_cost": 0.0015433,
+        "upstream_inference_completions_cost": 7.05e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.5971981809998397,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate matches the reference: Digital Media revenue of $15.86B (given as $15,864M) in fiscal 2024, up from $14.22B ($14,216M) in fiscal 2023, with 12% year-over-year growth. The arithmetic checks out: (15,864 - 14,216) / 14,216 = 11.6%, which rounds to the reported 12%. Units and dates are correct. The cited accession 0000796343-25-000004 and chunk ID 839ad4e2-d434-562b-b699-c27185c0972b match a retrieved excerpt, whose table contains the $15,864 / $14,216 figures and the 12% change. The exact gold quote appears in a different chunk (the Digital Media MD&A section), which the candidate does not cite, so citation support is slightly below full.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate matches the reference: Digital Media revenue of $15.86B (given as $15,864M) in fiscal 2024, up from $14.22B ($14,216M) in fiscal 2023, with 12% year-over-year growth. The arithmetic checks out: (15,864 - 14,216) / 14,216 = 11.6%, which rounds to the reported 12%. Units and dates are correct. The cited accession 0000796343-25-000004 and chunk ID 839ad4e2-d434-562b-b699-c27185c0972b match a retrieved excerpt, whose table contains the $15,864 / $14,216 figures and the 12% change. The exact gold quote appears in a different chunk (the Digital Media MD&A section), which the candidate does not cite, so citation support is slightly below full.\"}",
+      "refusal": null,
+      "reasoning": "The revenue figures check out: $15.86B vs $14.22B is roughly 12% growth as reported, and my own calculation confirms about 11.6%, rounding to 12%. The citation details also match\u2014accession number, chunk ID, and section heading all line up correctly with the source excerpt.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The revenue figures check out: $15.86B vs $14.22B is roughly 12% growth as reported, and my own calculation confirms about 11.6%, rounding to 12%. The citation details also match\u2014accession number, chunk ID, and section heading all line up correctly with the source excerpt.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS5woKEAgSGAI4AUIIdGhpbmtpbmcSDFSFqRW9rpl3TVjdEhoMtrvoMBaBjRoyzhvnIjBcTSRgMAQNSCCaEAjKFEdlaZ2E8lBPAiX1acAqARVrMznikwBq5o5+ZHPawHpRWdYqhAobVjgX1GzdMsmDxKG2o9FsaqrEz6Z6bQ6hPxq671IyIVVRqYJ80l0pRhhKIrxsamprGeb3cfrtjfCrOG5FD3HMTvXzHI7amOK2ULQZSw8yQTVkafJxTRk8QR+CRUr/YFtbnzgUtBqifAM+oxxv3cOFyvjtUiVTNlMpMHW8tHfFM/lFdqXdvRfWB+gFmv/Wq4OTbH2ybo/Qvcft9Oix6RX1kTJ1hBipJqxAkQLRVoP6tEJpgODeHlmgSZ8dLxWR/5fp9e4/79U/ARzL9EueS3rdeF6gyFfH0RU/VN/72LpxVq74cf/EsOYbEgzHl6Tu0ogPGTQ6rZlEIv7amJhVg4EWVKLc2Tf8Ony86phcHyCq9p6zzdRAX30oxdAvvNqRv5CqcxarKcwAqlaC+h2qwVUaMXyBF3qj0+JjCcV4Kq4GOLi1uJG70qTaoKq/SYcbZy+b41xql+N1BTWIfR3ojiMUiAF/uSZ4ODJgVFXdw90Td1vdROHSBOrympS1ZLkiE8MLaEK1M9zSp9oocNrz9i++7iMj9pwWcJLmoiGUg5zZ6gFAp8tTCWtgq/9GFJRfrPrgM6pbqOgMQRyP3iBDrSATWHX0ZvlP450XMUf1sFhqlLzOSzMvvEwwdM9zO4SRZNfA29OJD6iViwwHZtoC132Z7iVSb8W/618lZNvjehfkBtuzBV8EaNzwppeZcMPy6ZrV04IlwEjGfgRzdayA5KfQj0g+RyFgK/j4KOsHzrhTQa5nNdhlQZOKqWcHZ4mU+LAeoJOfsG7LhqPRBZtMbTphblvZEBh7ZPrEX5SlFGyI47tKlA+NuBLJ0Yh8u42PWSyP/gU8yj19ATeU2m/u0B/Nr0wrZ4qLrH5fs0lwF7uv6qYgw8haTgqEAQNlmLqwTkkF+zeTyScliT+JEvCTMOEPYxdLi1soJscgcp2jYWlpqehUb/+0KmzeeWoFBFpUvrFJ4J/DmgCpJzeR1J9hOkEtheoLECzIf4dxKmPbx70+cY9odGuh+EgFU7Y7PY6w1EspP4kJUYknBxXuJad3R+hTLgCySwsawEl/kquNLnf2eHkbgc5Ia3qoVe3ZeScECKsTP1yh1GjmbEwtjwZhK5WakX8VsfWdILrEHq8uruSpAq7SR9qge54ZUbLM7vD1aVzEsHyzEozeKJYEWSs/266s69xzlXa/c3Ibzaay6yHIpn+/tOjr+aKyMs4iHhet2ZaJ7VVJrrJP9AzdWFf8beLgF4injkYkWDZ2k5Ko+rb0a2B+ng3jNJAbp4EUg1YgHNJDQJQ+8IcKqwvrkM71AD/S2onHXtV2PvAd75w2YRYWU29Bs5u2LLF7EAK4nNOMioQrY1hXG5MZlKfMPwcmEZJGa79V8y8Vrk5/BuWayIbQ56lkuqvUxD0ZpBpyW+fSHfAhpU92ttP5SFxiznbKrU3Hgw0nrhrkT7wuBJRi1c6tUIYIumsGXVQMHXcX5bkEAn37rX/b2NiroBRaO2AiYxKWU3NnfbwLxmUscQSJdE8D0nY5W5RRfYUtZ7oVZ0+ZaMHqSdS8pqC4hlFNssLA6wd9hHDDaQsjj4DQWReFp2CRpqh6EDvPaadZ0c2z064P/7d1r+LblivfXlDVJuua+tRmkFl0MbQVP1slZqWnKVcNkeSr928n4sM79szUbH7KDpezR0KQBUgQlqDe07vXBjAXxDPozcHV8jxCk6tVHWwMxfeWbX8YAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:21.744487+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "2a02019dfcf6ece3453a06fd:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042097-UrWqNPI37IO5tozCc3e8",
+    "usage": {
+      "prompt_tokens": 20116,
+      "completion_tokens": 604,
+      "total_tokens": 20720,
+      "cost": 0.0023136,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0023136,
+        "upstream_inference_prompt_cost": 0.0020116,
+        "upstream_inference_completions_cost": 0.000302
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 313,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.5310966349998125,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 95,
+    "rationale": "The candidate matches the reference: Digital Media revenue of $15.86B (given as $15,864M) in fiscal 2024, up from $14.22B ($14,216M) in fiscal 2023, with 12% year-over-year growth. The arithmetic checks out: (15,864 - 14,216) / 14,216 = 11.6%, which rounds to the reported 12%. Units and dates are correct. The cited accession 0000796343-25-000004 and chunk ID 839ad4e2-d434-562b-b699-c27185c0972b match a retrieved excerpt, whose table contains the $15,864 / $14,216 figures and the 12% change. The exact gold quote appears in a different chunk (the Digital Media MD&A section), which the candidate does not cite, so citation support is slightly below full."
+  },
+  "status": "ok"
+}

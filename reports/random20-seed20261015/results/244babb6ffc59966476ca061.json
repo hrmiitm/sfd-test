@@ -1,0 +1,117 @@
+{
+  "question_id": "Q008",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.05265449099988473,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Based on Intel Corporation's Form 10-K for the fiscal year ended December 28, 2024:\n\n* **Independent Registered Public Accounting Firm:** **Ernst & Young LLP**\n* **Year Serving Since:** **1968** (\"We have served as the Company's auditor since 1968.\")\n\n*(Sources: Accession 0000050863-25-000009, Filing Summary, Chunk ID: `fe5cd02b-718d-5953-a8d6-004cb72ea177`; Exhibit 23.1, Chunk ID: `a13f6ac3-6919-51dc-a0a1-849811779fbe`)*",
+    "message": {
+      "role": "assistant",
+      "content": "Based on Intel Corporation's Form 10-K for the fiscal year ended December 28, 2024:\n\n* **Independent Registered Public Accounting Firm:** **Ernst & Young LLP**\n* **Year Serving Since:** **1968** (\"We have served as the Company's auditor since 1968.\")\n\n*(Sources: Accession 0000050863-25-000009, Filing Summary, Chunk ID: `fe5cd02b-718d-5953-a8d6-004cb72ea177`; Exhibit 23.1, Chunk ID: `a13f6ac3-6919-51dc-a0a1-849811779fbe`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a18A/rI96Ef6hzeJTNnwL00RdO50He40bqksrAc3TkYMG27IBxNcPcmVeRF9OYZZegYqhjjctoUK/WNksbyyq3JZdEvOM2YXtYL9eBB0/vTlXxiK",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:48.462662+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "244babb6ffc59966476ca061:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041886-roqmcry99dwBRNDu3Npu",
+    "usage": {
+      "prompt_tokens": 13406,
+      "completion_tokens": 188,
+      "total_tokens": 13594,
+      "cost": 0.0107595,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0107595,
+        "upstream_inference_prompt_cost": 0.0100545,
+        "upstream_inference_completions_cost": 0.000705
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.589561155999945,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year they began serving as auditor, matching the reference and gold quote 'We have served as the Company's auditor since 1968.' The quote appears verbatim in the retrieved Filing Summary chunk (chunk 35), and the Exhibit 23.1 consent supports Ernst & Young LLP. The fiscal year end date of December 28, 2024 is also supported by the excerpts. The citation cites the Filing Summary chunk ID fe5cd02b, which is among the retrieved excerpts, so support is strong; minor deduction because the Filing Summary chunk ID cited is the one containing the quote while the section label in gold is 'Item 8', a labeling difference only.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year they began serving as auditor, matching the reference and gold quote 'We have served as the Company's auditor since 1968.' The quote appears verbatim in the retrieved Filing Summary chunk (chunk 35), and the Exhibit 23.1 consent supports Ernst & Young LLP. The fiscal year end date of December 28, 2024 is also supported by the excerpts. The citation cites the Filing Summary chunk ID fe5cd02b, which is among the retrieved excerpts, so support is strong; minor deduction because the Filing Summary chunk ID cited is the one containing the quote while the section label in gold is 'Item 8', a labeling difference only.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:05.565153+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "244babb6ffc59966476ca061:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042083-6CPp0FDFP8Bv4T2HSh5t",
+    "usage": {
+      "prompt_tokens": 19178,
+      "completion_tokens": 282,
+      "total_tokens": 19460,
+      "cost": 0.0020588,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0020588,
+        "upstream_inference_prompt_cost": 0.0019178,
+        "upstream_inference_completions_cost": 0.000141
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.2770744869994815,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year they began serving as auditor, matching the reference and gold quote 'We have served as the Company's auditor since 1968.' The quote appears verbatim in the retrieved Filing Summary chunk (chunk 35), and the Exhibit 23.1 consent supports Ernst & Young LLP. The fiscal year end date of December 28, 2024 is also supported by the excerpts. The citation cites the Filing Summary chunk ID fe5cd02b, which is among the retrieved excerpts, so support is strong; minor deduction because the Filing Summary chunk ID cited is the one containing the quote while the section label in gold is 'Item 8', a labeling difference only."
+  },
+  "status": "ok"
+}

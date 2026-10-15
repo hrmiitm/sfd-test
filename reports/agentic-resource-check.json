@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "rows": [
+      {
+        "file_stem": "0001839882-25-003273"
+      }
+    ],
+    "truncated": false,
+    "resources": {
+      "peak_rss_mib": 143.09765625,
+      "cpu_seconds": 0.48098599999999997,
+      "wall_seconds": 0.4501354040003207,
+      "address_space_limit_mib": 1536,
+      "cpu_limit_seconds": 20,
+      "cpu_cores": 1
+    }
+  },
+  "search": {
+    "error": "",
+    "error_type": "MemoryError",
+    "resources": {
+      "peak_rss_mib": 1040.88671875,
+      "cpu_seconds": 0.8557039999999999,
+      "wall_seconds": 0.8300086730005205,
+      "address_space_limit_mib": 1536,
+      "cpu_limit_seconds": 20,
+      "cpu_cores": 1
+    }
+  }
+}

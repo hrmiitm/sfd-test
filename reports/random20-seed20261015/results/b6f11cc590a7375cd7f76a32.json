@@ -1,0 +1,472 @@
+{
+  "question_id": "Q081",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/agentic",
+  "retrieval": {
+    "seconds": 13.670676972000365,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Pfizer disclosed that on **February 4, 2025, it issued a press release announcing its financial results for the fourth quarter and full year of 2024**. The release was furnished as Exhibit 99. (Form 8-K, accession **0000078003-25-000017**, Item 2.02, chunk **22cfadc5-7bea-534b-a941-af3f32745495**.)",
+    "usage": {
+      "prompt_tokens": 7025,
+      "completion_tokens": 129,
+      "total_tokens": 7154,
+      "cost": 0.0009226
+    },
+    "seconds": 16.612651489999735,
+    "tool_seconds": 13.670676972000365,
+    "tool_calls": 1,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_iO8EBksuNYMFb91VuGkqssip",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Pfizer Inc Form 8-K February 2025 Item 2.02 event\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_iO8EBksuNYMFb91VuGkqssip",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Pfizer Inc Form 8-K February 2025 Item 2.02 event\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:26:56.162102+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "b6f11cc590a7375cd7f76a32:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042003-EWjgcTO7UMAMwC9iqStg",
+        "usage": {
+          "prompt_tokens": 798,
+          "completion_tokens": 34,
+          "total_tokens": 832,
+          "cost": 9.68e-05,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 9.68e-05,
+            "upstream_inference_prompt_cost": 7.98e-05,
+            "upstream_inference_completions_cost": 1.7e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 12.519257253999967,
+        "attempts": 1
+      },
+      {
+        "text": "Pfizer disclosed that on **February 4, 2025, it issued a press release announcing its financial results for the fourth quarter and full year of 2024**. The release was furnished as Exhibit 99. (Form 8-K, accession **0000078003-25-000017**, Item 2.02, chunk **22cfadc5-7bea-534b-a941-af3f32745495**.)",
+        "message": {
+          "role": "assistant",
+          "content": "Pfizer disclosed that on **February 4, 2025, it issued a press release announcing its financial results for the fourth quarter and full year of 2024**. The release was furnished as Exhibit 99. (Form 8-K, accession **0000078003-25-000017**, Item 2.02, chunk **22cfadc5-7bea-534b-a941-af3f32745495**.)",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:30:29.552429+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "b6f11cc590a7375cd7f76a32:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042225-ZfX3STgPo2KXf8VRW51A",
+        "usage": {
+          "prompt_tokens": 6227,
+          "completion_tokens": 95,
+          "total_tokens": 6322,
+          "cost": 0.0008258,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 6224,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0008258,
+            "upstream_inference_prompt_cost": 0.0007783,
+            "upstream_inference_completions_cost": 4.75e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 4.093394235999767,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_iO8EBksuNYMFb91VuGkqssip",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Pfizer Inc Form 8-K February 2025 Item 2.02 event\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000078003-25-000017",
+              "cik": "0000078003",
+              "company": "PFIZER INC",
+              "form_type": "8-K",
+              "filed_date": "20250204",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 31332,
+              "source_md5": "b4aeb54c88c397e85a934c78678671df",
+              "content_sha256": "0f1ff60dd4a57bccf6efcda4090605b7eee952423ab55d15b62caf6a1d53724d",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "ef6db7c4-9b21-54c1-b048-00636f4c23ca",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 0,
+              "char_start": 0,
+              "char_end": 3719,
+              "text": "## Filing Summary\n**0000078003-25-000017.hdr.sgml**: 20250204\n\n**ACCESSION NUMBER**: 0000078003-25-000017\n\n**CONFORMED SUBMISSION TYPE**: 8-K\n\n**PUBLIC DOCUMENT COUNT**: 16\n\n**CONFORMED PERIOD OF REPORT**: 20250204\n\n**ITEM INFORMATION**: Results of Operations and Financial Condition\n\n**ITEM INFORMATION**: Financial Statements and Exhibits\n\n**FILED AS OF DATE**: 20250204\n\n**DATE AS OF CHANGE**: 20250204\n\n**FILER**: \n\n\n**COMPANY DATA:**\n- **COMPANY CONFORMED NAME:** PFIZER INC\n- **CENTRAL INDEX KEY:** 0000078003\n- **STANDARD INDUSTRIAL CLASSIFICATION:** PHARMACEUTICAL PREPARATIONS [2834]\n- **ORGANIZATION NAME:** 03 Life Sciences\n- **IRS NUMBER:** 135315170\n- **STATE OF INCORPORATION:** DE\n- **FISCAL YEAR END:** 1231\n\n**FILING VALUES:**\n- **FORM TYPE:** 8-K\n- **SEC ACT:** 1934 Act\n- **SEC FILE NUMBER:** 001-03619\n- **FILM NUMBER:** 25585428\n\n**BUSINESS ADDRESS:**\n- **STREET 1:** 66 HUDSON BOULEVARD EAST\n- **CITY:** NEW YORK\n- **STATE:** NY\n- **ZIP:** 10001-2192\n- **BUSINESS PHONE:** 2127332323\n\n**MAIL ADDRESS:**\n- **STREET 1:** 66 HUDSON BOULEVARD EAST\n- **CITY:** NEW YORK\n- **STATE:** NY\n- **ZIP:** 10001-2192\n\n**FORMER COMPANY:**\n- **FORMER CONFORMED NAME:** PFIZER CHARLES & CO INC\n- **DATE OF NAME CHANGE:** 19710908\n\n?xml version='1.0' encoding='ASCII'? pfe-20250204\n\n **UNITED STATES**\n\n**SECURITIES AND EXCHANGE COMMISSION**\n\nWashington, D.C. 20549\n\n**FORM 8-K** \n\nCURRENT REPORT\n\nPURSUANT TO SECTION 13 OR 15(d) OF THE\n\nSECURITIES EXCHANGE ACT OF 1934\n\nDate of Report (Date of earliest event reported): February 4, 2025\n\n**PFIZER INC.**\n\n(Exact name of registrant as specified in its charter)\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| Delaware | 1-3619 | 13-5315170 |\n| (State or other | (Commission File | (I.R.S. Employer |\n| jurisdiction of | Number) | Identification No.) |\n| incorporation) | | |\n\n---\n\n\n\n66 Hudson Boulevard East 10001-2192 <br> New York, New York (Zip Code)\n\n(Address of principal executive offices)\n\nRegistrant's telephone number, including area code:\n\n(212) 733-2323\n\n(Former name or former address, if changed since last report)\n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instruction A.2. below):\n\n\u2610 Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)\n\n\u2610 Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)\n\n\u2610 Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2 (b))\n\n\u2610 Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| **<u>Securities registered pursuant to Section 12(b) of the Act:</u>** | **<u>Securities registered pursuant to Section 12(b) of the Act:</u>** | **<u>Securities registered pursuant to Section 12(b) of the Act:</u>** |\n| <u>Title of each class</u> | <u>Trading Symbol(s)</u> | <u>Name of each exchange on which registered</u> |\n| Common Stock, $0.05 par value | PFE | New York Stock Exchange |\n| 1.000% Notes due 2027 | PFE27 | New York Stock Exchange |\n\n---\n\n\n\nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (\u00a7230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (\u00a7240.12b-2 of this chapter).\n\nEmerging growth company \u2610\n\nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &nbsp;&nbsp;&nbsp;&nbsp;\u2610\n\n------",
+              "token_count": 1105,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000078003-25-000017",
+              "cik": "0000078003",
+              "company": "PFIZER INC",
+              "form_type": "8-K",
+              "filed_date": "20250204",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 31332,
+              "source_md5": "b4aeb54c88c397e85a934c78678671df",
+              "content_sha256": "0f1ff60dd4a57bccf6efcda4090605b7eee952423ab55d15b62caf6a1d53724d",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "22cfadc5-7bea-534b-a941-af3f32745495",
+              "section": "Item 2.02 Results of Operations and Financial Condition",
+              "section_index": 1,
+              "chunk_index": 0,
+              "char_start": 3721,
+              "char_end": 4637,
+              "text": "**Item 2.02 Results of Operations and Financial Condition**\n\nOn February 4, 2025, Pfizer Inc. (\"Pfizer\") issued a press release announcing its financial results for fourth-quarter and full-year 2024. A copy of the press release is furnished herewith as Exhibit 99 and is incorporated by reference herein.\n\nThe information furnished pursuant to this \"Item 2.02 - Results of Operations and Financial Condition\", including Exhibit 99, shall not be deemed to be \"filed\" for the purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the \"Exchange Act\") or otherwise subject to the liabilities of that section, and shall not be deemed to be incorporated by reference into any filing made by us under the Exchange Act or Securities Act of 1933, as amended, regardless of any general incorporation language in any such filing, except as shall be expressly set forth by specific reference in such filing.",
+              "token_count": 195,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000078003-25-000017",
+              "cik": "0000078003",
+              "company": "PFIZER INC",
+              "form_type": "8-K",
+              "filed_date": "20250204",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 31332,
+              "source_md5": "b4aeb54c88c397e85a934c78678671df",
+              "content_sha256": "0f1ff60dd4a57bccf6efcda4090605b7eee952423ab55d15b62caf6a1d53724d",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "63550b4a-3755-5d16-8645-6f4df3f55d68",
+              "section": "Ex-99",
+              "section_index": 3,
+              "chunk_index": 12,
+              "char_start": 86871,
+              "char_end": 92942,
+              "text": "| &nbsp;&nbsp;&nbsp;&nbsp;Braftovi/Mektovi | 607 | 477 | 27% | 27% | 580 | 465 | 25% | 27 | 13 | \\* | \\* |\n| &nbsp;&nbsp;&nbsp;&nbsp;Tukysa | 480 | 18 | \\* | \\* | 389 | 18 | \\* | 91 |  | \\* | \\* |\n| &nbsp;&nbsp;&nbsp;&nbsp;Elrexfio | 133 | 10 | \\* | \\* | 88 | 7 | \\* | 45 | 2 | \\* | \\* |\n| &nbsp;&nbsp;&nbsp;&nbsp;Tivdak | 131 | 4 | \\* | \\* | 126 | 4 | \\* | 5 |  | \\* | \\* |\n| &nbsp;&nbsp;&nbsp;&nbsp;Talzenna | 117 | 64 | 83% | 83% | 88 | 40 | \\* | 30 | 24 | 23% | 25% |\n| &nbsp;&nbsp;&nbsp;&nbsp;All other Oncology | 1670 | 1729 | (3%) | (2%) | 806 | 720 | 12% | 864 | 1009 | (14%) | (12%) |\n| &nbsp;&nbsp;**PFIZER CENTREONE**<sup>(k)</sup> | $**1146** | $**1272** | **(10%)** | **(10%)** | $**278** | $**352** | **(21%)** | $**868** | $**920** | **(6%)** | **(5%)** |\n| &nbsp;&nbsp;**PFIZER IGNITE** | $**82** | $**44** | **85%** | **85%** | $**82** | $**44** | **85%** | $**\u2014** | $**\u2014** | **\u2014** | **\u2014** |\n| **BIOPHARMA** | $**62400** | $**58237** | **7%** | **8%** | $**38332** | $**27749** | **38%** | $**24068** | $**30488** | **(21%)** | **(20%)** |\n| &nbsp;&nbsp;PFIZER U.S. COMMERCIAL DIVISION<sup>(l)</sup> (U.S. Primary Care and U.S. Specialty Care) |  |  |  |  | $26765 | $19299 | 39% |  |  |  |  |\n| &nbsp;&nbsp;PFIZER ONCOLOGY DIVISION<sup>(l)</sup> |  |  |  |  | $11567 | $8450 | 37% |  |  |  |  |\n| &nbsp;&nbsp;PFIZER INTERNATIONAL COMMERCIAL DIVISION<sup>(l)</sup> |  |  |  |  |  |  |  | $24068 | $30488 | (21%) | (20%) |\n| **Total Alliance revenues included above** | $**8388** | $**7582** | **11%** | **11%** | $**6575** | $**5628** | **17%** | $**1813** | $**1955** | **(7%)** | **(7%)** |\n| **Total Royalty revenues included above** | $**1423** | $**1058** | **35%** | **35%** | $**1418** | $**1058** | **34%** | $**6** | $**\u2014** | **\\*** | **\\*** |\n\n---\n\n\n\n------\n\n\nPFIZER INC.\n\nNOTES TO REVENUES TABLE INFORMATION\n\n(UNAUDITED)\n\n---\n\n\n\n| | |\n|:---|:---|\n| (a) | In the first quarter of 2024, we reclassified royalty income (substantially all of which related to our Biopharma segment) from *Other (income)/deductions\u2013\u2013net* and began presenting *Royalty revenues* as a separate line item within *Total revenues* in our consolidated statements of operations. Prior-period amounts have been recast to conform to the current period presentation. |\n| (b) | Reflects alliance revenues and product revenues. |\n| (c) | The amount for full-year 2024 includes (i) a $771 million favorable final adjustment recorded in the first quarter to the estimated non-cash revenue reversal of $3.5 billion recorded in the fourth quarter of 2023, reflecting 5.1 million EUA-labeled treatment courses returned by the U.S. government through February 29, 2024 versus the estimated 6.5 million treatment courses that were expected to be returned as of December 31, 2023 and (ii) $442 million of revenue recorded in the third quarter in connection with the creation of a U.S. Strategic National Stockpile of 1.0 million treatment courses, which we supplied at no cost to the U.S. government or taxpayers. 2023 amounts include a non-cash revenue reversal of $3.5 billion recorded in the fourth quarter, of which a portion was associated with sales recorded in 2022, related to the expected return of an estimated 6.5 million treatment courses of EUA-labeled U.S. government inventory. |\n| (d) | Prevnar family includes revenues from Prevnar 20/Apexxnar (pediatric and adult) and Prevnar 13/Prevenar 13 (pediatric and adult). |\n| (e) | Vyndaqel family includes global revenues from Vyndaqel, as well as revenues for Vyndamax in the U.S. and Vynmac in Japan. |\n| (f) | In September 2024, we announced our voluntary withdrawal of all lots of Oxbryta for the treatment of sickle cell disease in all markets where it is approved. as well as the discontinuation of expanded access programs worldwide, based on the totality of clinical data that indicated at that time the overall benefit of Oxbryta no longer outweighs the risk in the approved sickle cell patient population. The data suggest an imbalance in vaso-occlusive crises and fatal events, which requires further assessment that remains ongoing. |\n| (g) | Includes, among other Hospital products, amounts previously presented as All other Anti-infectives and Ig Portfolio. |\n| (h) | Primarily reflects alliance revenues and royalty revenues. |\n| (i) | Biosimilars are highly similar versions of approved and authorized biological medicines. Oncology biosimilars primarily include Retacrit, Ruxience, Zirabev, Trazimera and Nivestym. |\n| (j) | Reflects product revenues and royalty revenues.  |\n| (k) | Pfizer CentreOne (PC1) includes revenues from our contract manufacturing and our active pharmaceutical ingredient sales operation, as well as revenues related to our manufacturing and supply agreements with legacy Pfizer businesses/partnerships. |\n| (l) | At the beginning of 2024, we made changes in our commercial organization to incorporate Seagen Inc. and improve focus, speed and execution. Specifically, within our Biopharma reportable segment we created the Pfizer Oncology Division, the Pfizer U.S. Commercial Division, and the Pfizer International Commercial Division. For additional information regarding the changes in our commercial organizational structure, see the *Item 1. Business\u2013\u2013Commercial Operations* section of our 2023 Annual Report on Form 10-K (available at www.pfizer.com). |\n| (m) | Full-year 2024 includes $129 million recorded in the third quarter related to a one-time sales true-up settlement agreement with our commercialization partner. |\n| \\* | Indicates calculation not meaningful or results are greater than 100%. |\n|  | Amounts may not add due to rounding. All percentages have been calculated using unrounded amounts. |\n\n---\n\n\n\n------\n\n\n\nDISCLOSURE NOTICE: Except where otherwise noted, the information contained in this earnings release and the related attachments is as of February 4, 2025. We assume no obligation to update any forward-looking statements contained in this earnings release and the related attachments as a result of new information or future events or developments.",
+              "token_count": 1797,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000078003-25-000017",
+              "cik": "0000078003",
+              "company": "PFIZER INC",
+              "form_type": "8-K",
+              "filed_date": "20250204",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 31332,
+              "source_md5": "b4aeb54c88c397e85a934c78678671df",
+              "content_sha256": "0f1ff60dd4a57bccf6efcda4090605b7eee952423ab55d15b62caf6a1d53724d",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "6eeb522a-07e0-58dd-b626-37bc8cd10d37",
+              "section": "Item 9.01 Financial Statements and Exhibits",
+              "section_index": 2,
+              "chunk_index": 0,
+              "char_start": 4639,
+              "char_end": 5927,
+              "text": "**Item 9.01 Financial Statements and Exhibits**\n\n(d) Exhibits\n\n---\n\n\n\n| | |\n|:---|:---|\n| Exhibit Number | Exhibit Description |\n| <u>[Exhibit 99](pfe-12312024xex99.htm)</u> | Press Release of Pfizer Inc. dated February 4, 2025, reporting Pfizer's financial results for fourth-quarter and full-year 2024. |\n| 104 | Cover Page Interactive Data File--the cover page XBRL tags are embedded within the Inline XBRL document. |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | |\n|:---|:---|\n| **<u>EXHIBIT INDEX</u>** | **<u>EXHIBIT INDEX</u>** |\n| Exhibit No. | Description |\n| <u>[99](pfe-12312024xex99.htm)</u> | Press Release of Pfizer Inc. dated February 4, 2025, reporting Pfizer's financial results for fourth-quarter and full-year 2024. |\n| 104 | Cover Page Interactive Data File--the cover page XBRL tags are embedded within the Inline XBRL document. |\n\n---\n\n\n\n------\n\n**SIGNATURES**\n\nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.\n\n---\n\n\n\n| | |\n|:---|:---|\n| PFIZER INC. | PFIZER INC. |\n| By: | <u>/s/ Margaret M. Madden</u> |\n|  | Margaret M. Madden |\n|  | Senior Vice President and Corporate Secretary |\n|  | Chief Governance Counsel |\n\n---\n\n\n\nDated: February 4, 2025",
+              "token_count": 368,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000950170-25-008373",
+              "cik": "0001538849",
+              "company": "CrossAmerica Partners LP",
+              "form_type": "8-K",
+              "filed_date": "20250123",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 418,
+              "source_md5": "0f5d07476346bd7284944f6baeee7972",
+              "content_sha256": "6efd23e42e802a3572657a6e99ad9a70fb3b19ac696b4a4a2fa0a029286daca6",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "09c4493d-df16-5632-9f45-8fd98311c306",
+              "section": "Item 7.01 Regulation FD Disclosure",
+              "section_index": 1,
+              "chunk_index": 0,
+              "char_start": 3434,
+              "char_end": 4867,
+              "text": "**Item 7.01 Regulation FD Disclosure**\n\nOn January 22, 2025, CrossAmerica Partners LP (the \"Partnership\") issued a press release announcing that the Board of Directors of CrossAmerica GP LLC, the general partner of the Partnership, approved a quarterly distribution of $0.5250 per unit attributable to the fourth quarter of 2024 (annualized $2.10 per unit), consistent with the third quarter of 2024. The distribution attributable to the fourth quarter is payable on February 13, 2025 to all unitholders of record on February 3, 2025. A copy of the press release is furnished as Exhibit 99.1 to this Current Report on Form 8-K.\n\nThe information in this Current Report on Form 8-K is being furnished pursuant to Regulation FD. The information in Item 7.01 and Exhibit 99.1 of Item 9.01 of this report, according to general instruction B.2. of Form 8-K, shall not be deemed \"filed\" for the purposes of Section 18 of the Securities Exchange Act of 1934, as amended, or otherwise subject to the liabilities of that Section. The information in this Current Report on Form 8-K shall not be incorporated by reference into any registration statement pursuant to the Securities Act of 1933, as amended. By filing this Current Report on Form 8-K and furnishing this information, the Partnership makes no admission as to the materiality of any information in this report that the Partnership chooses to disclose solely because of Regulation FD.",
+              "token_count": 324,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 13.670676972000365
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000078003-25-000017",
+        "cik": "0000078003",
+        "company": "PFIZER INC",
+        "form_type": "8-K",
+        "filed_date": "20250204",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 31332,
+        "source_md5": "b4aeb54c88c397e85a934c78678671df",
+        "content_sha256": "0f1ff60dd4a57bccf6efcda4090605b7eee952423ab55d15b62caf6a1d53724d",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "ef6db7c4-9b21-54c1-b048-00636f4c23ca",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 0,
+        "char_start": 0,
+        "char_end": 3719,
+        "text": "## Filing Summary\n**0000078003-25-000017.hdr.sgml**: 20250204\n\n**ACCESSION NUMBER**: 0000078003-25-000017\n\n**CONFORMED SUBMISSION TYPE**: 8-K\n\n**PUBLIC DOCUMENT COUNT**: 16\n\n**CONFORMED PERIOD OF REPORT**: 20250204\n\n**ITEM INFORMATION**: Results of Operations and Financial Condition\n\n**ITEM INFORMATION**: Financial Statements and Exhibits\n\n**FILED AS OF DATE**: 20250204\n\n**DATE AS OF CHANGE**: 20250204\n\n**FILER**: \n\n\n**COMPANY DATA:**\n- **COMPANY CONFORMED NAME:** PFIZER INC\n- **CENTRAL INDEX KEY:** 0000078003\n- **STANDARD INDUSTRIAL CLASSIFICATION:** PHARMACEUTICAL PREPARATIONS [2834]\n- **ORGANIZATION NAME:** 03 Life Sciences\n- **IRS NUMBER:** 135315170\n- **STATE OF INCORPORATION:** DE\n- **FISCAL YEAR END:** 1231\n\n**FILING VALUES:**\n- **FORM TYPE:** 8-K\n- **SEC ACT:** 1934 Act\n- **SEC FILE NUMBER:** 001-03619\n- **FILM NUMBER:** 25585428\n\n**BUSINESS ADDRESS:**\n- **STREET 1:** 66 HUDSON BOULEVARD EAST\n- **CITY:** NEW YORK\n- **STATE:** NY\n- **ZIP:** 10001-2192\n- **BUSINESS PHONE:** 2127332323\n\n**MAIL ADDRESS:**\n- **STREET 1:** 66 HUDSON BOULEVARD EAST\n- **CITY:** NEW YORK\n- **STATE:** NY\n- **ZIP:** 10001-2192\n\n**FORMER COMPANY:**\n- **FORMER CONFORMED NAME:** PFIZER CHARLES & CO INC\n- **DATE OF NAME CHANGE:** 19710908\n\n?xml version='1.0' encoding='ASCII'? pfe-20250204\n\n **UNITED STATES**\n\n**SECURITIES AND EXCHANGE COMMISSION**\n\nWashington, D.C. 20549\n\n**FORM 8-K** \n\nCURRENT REPORT\n\nPURSUANT TO SECTION 13 OR 15(d) OF THE\n\nSECURITIES EXCHANGE ACT OF 1934\n\nDate of Report (Date of earliest event reported): February 4, 2025\n\n**PFIZER INC.**\n\n(Exact name of registrant as specified in its charter)\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| Delaware | 1-3619 | 13-5315170 |\n| (State or other | (Commission File | (I.R.S. Employer |\n| jurisdiction of | Number) | Identification No.) |\n| incorporation) | | |\n\n---\n\n\n\n66 Hudson Boulevard East 10001-2192 <br> New York, New York (Zip Code)\n\n(Address of principal executive offices)\n\nRegistrant's telephone number, including area code:\n\n(212) 733-2323\n\n(Former name or former address, if changed since last report)\n\nCheck the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instruction A.2. below):\n\n\u2610 Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425)\n\n\u2610 Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12)\n\n\u2610 Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2 (b))\n\n\u2610 Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c))\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| **<u>Securities registered pursuant to Section 12(b) of the Act:</u>** | **<u>Securities registered pursuant to Section 12(b) of the Act:</u>** | **<u>Securities registered pursuant to Section 12(b) of the Act:</u>** |\n| <u>Title of each class</u> | <u>Trading Symbol(s)</u> | <u>Name of each exchange on which registered</u> |\n| Common Stock, $0.05 par value | PFE | New York Stock Exchange |\n| 1.000% Notes due 2027 | PFE27 | New York Stock Exchange |\n\n---\n\n\n\nIndicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (\u00a7230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (\u00a7240.12b-2 of this chapter).\n\nEmerging growth company \u2610\n\nIf an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. &nbsp;&nbsp;&nbsp;&nbsp;\u2610\n\n------",
+        "token_count": 1105,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000078003-25-000017",
+        "cik": "0000078003",
+        "company": "PFIZER INC",
+        "form_type": "8-K",
+        "filed_date": "20250204",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 31332,
+        "source_md5": "b4aeb54c88c397e85a934c78678671df",
+        "content_sha256": "0f1ff60dd4a57bccf6efcda4090605b7eee952423ab55d15b62caf6a1d53724d",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "22cfadc5-7bea-534b-a941-af3f32745495",
+        "section": "Item 2.02 Results of Operations and Financial Condition",
+        "section_index": 1,
+        "chunk_index": 0,
+        "char_start": 3721,
+        "char_end": 4637,
+        "text": "**Item 2.02 Results of Operations and Financial Condition**\n\nOn February 4, 2025, Pfizer Inc. (\"Pfizer\") issued a press release announcing its financial results for fourth-quarter and full-year 2024. A copy of the press release is furnished herewith as Exhibit 99 and is incorporated by reference herein.\n\nThe information furnished pursuant to this \"Item 2.02 - Results of Operations and Financial Condition\", including Exhibit 99, shall not be deemed to be \"filed\" for the purposes of Section 18 of the Securities Exchange Act of 1934, as amended (the \"Exchange Act\") or otherwise subject to the liabilities of that section, and shall not be deemed to be incorporated by reference into any filing made by us under the Exchange Act or Securities Act of 1933, as amended, regardless of any general incorporation language in any such filing, except as shall be expressly set forth by specific reference in such filing.",
+        "token_count": 195,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000078003-25-000017",
+        "cik": "0000078003",
+        "company": "PFIZER INC",
+        "form_type": "8-K",
+        "filed_date": "20250204",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 31332,
+        "source_md5": "b4aeb54c88c397e85a934c78678671df",
+        "content_sha256": "0f1ff60dd4a57bccf6efcda4090605b7eee952423ab55d15b62caf6a1d53724d",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "63550b4a-3755-5d16-8645-6f4df3f55d68",
+        "section": "Ex-99",
+        "section_index": 3,
+        "chunk_index": 12,
+        "char_start": 86871,
+        "char_end": 92942,
+        "text": "| &nbsp;&nbsp;&nbsp;&nbsp;Braftovi/Mektovi | 607 | 477 | 27% | 27% | 580 | 465 | 25% | 27 | 13 | \\* | \\* |\n| &nbsp;&nbsp;&nbsp;&nbsp;Tukysa | 480 | 18 | \\* | \\* | 389 | 18 | \\* | 91 |  | \\* | \\* |\n| &nbsp;&nbsp;&nbsp;&nbsp;Elrexfio | 133 | 10 | \\* | \\* | 88 | 7 | \\* | 45 | 2 | \\* | \\* |\n| &nbsp;&nbsp;&nbsp;&nbsp;Tivdak | 131 | 4 | \\* | \\* | 126 | 4 | \\* | 5 |  | \\* | \\* |\n| &nbsp;&nbsp;&nbsp;&nbsp;Talzenna | 117 | 64 | 83% | 83% | 88 | 40 | \\* | 30 | 24 | 23% | 25% |\n| &nbsp;&nbsp;&nbsp;&nbsp;All other Oncology | 1670 | 1729 | (3%) | (2%) | 806 | 720 | 12% | 864 | 1009 | (14%) | (12%) |\n| &nbsp;&nbsp;**PFIZER CENTREONE**<sup>(k)</sup> | $**1146** | $**1272** | **(10%)** | **(10%)** | $**278** | $**352** | **(21%)** | $**868** | $**920** | **(6%)** | **(5%)** |\n| &nbsp;&nbsp;**PFIZER IGNITE** | $**82** | $**44** | **85%** | **85%** | $**82** | $**44** | **85%** | $**\u2014** | $**\u2014** | **\u2014** | **\u2014** |\n| **BIOPHARMA** | $**62400** | $**58237** | **7%** | **8%** | $**38332** | $**27749** | **38%** | $**24068** | $**30488** | **(21%)** | **(20%)** |\n| &nbsp;&nbsp;PFIZER U.S. COMMERCIAL DIVISION<sup>(l)</sup> (U.S. Primary Care and U.S. Specialty Care) |  |  |  |  | $26765 | $19299 | 39% |  |  |  |  |\n| &nbsp;&nbsp;PFIZER ONCOLOGY DIVISION<sup>(l)</sup> |  |  |  |  | $11567 | $8450 | 37% |  |  |  |  |\n| &nbsp;&nbsp;PFIZER INTERNATIONAL COMMERCIAL DIVISION<sup>(l)</sup> |  |  |  |  |  |  |  | $24068 | $30488 | (21%) | (20%) |\n| **Total Alliance revenues included above** | $**8388** | $**7582** | **11%** | **11%** | $**6575** | $**5628** | **17%** | $**1813** | $**1955** | **(7%)** | **(7%)** |\n| **Total Royalty revenues included above** | $**1423** | $**1058** | **35%** | **35%** | $**1418** | $**1058** | **34%** | $**6** | $**\u2014** | **\\*** | **\\*** |\n\n---\n\n\n\n------\n\n\nPFIZER INC.\n\nNOTES TO REVENUES TABLE INFORMATION\n\n(UNAUDITED)\n\n---\n\n\n\n| | |\n|:---|:---|\n| (a) | In the first quarter of 2024, we reclassified royalty income (substantially all of which related to our Biopharma segment) from *Other (income)/deductions\u2013\u2013net* and began presenting *Royalty revenues* as a separate line item within *Total revenues* in our consolidated statements of operations. Prior-period amounts have been recast to conform to the current period presentation. |\n| (b) | Reflects alliance revenues and product revenues. |\n| (c) | The amount for full-year 2024 includes (i) a $771 million favorable final adjustment recorded in the first quarter to the estimated non-cash revenue reversal of $3.5 billion recorded in the fourth quarter of 2023, reflecting 5.1 million EUA-labeled treatment courses returned by the U.S. government through February 29, 2024 versus the estimated 6.5 million treatment courses that were expected to be returned as of December 31, 2023 and (ii) $442 million of revenue recorded in the third quarter in connection with the creation of a U.S. Strategic National Stockpile of 1.0 million treatment courses, which we supplied at no cost to the U.S. government or taxpayers. 2023 amounts include a non-cash revenue reversal of $3.5 billion recorded in the fourth quarter, of which a portion was associated with sales recorded in 2022, related to the expected return of an estimated 6.5 million treatment courses of EUA-labeled U.S. government inventory. |\n| (d) | Prevnar family includes revenues from Prevnar 20/Apexxnar (pediatric and adult) and Prevnar 13/Prevenar 13 (pediatric and adult). |\n| (e) | Vyndaqel family includes global revenues from Vyndaqel, as well as revenues for Vyndamax in the U.S. and Vynmac in Japan. |\n| (f) | In September 2024, we announced our voluntary withdrawal of all lots of Oxbryta for the treatment of sickle cell disease in all markets where it is approved. as well as the discontinuation of expanded access programs worldwide, based on the totality of clinical data that indicated at that time the overall benefit of Oxbryta no longer outweighs the risk in the approved sickle cell patient population. The data suggest an imbalance in vaso-occlusive crises and fatal events, which requires further assessment that remains ongoing. |\n| (g) | Includes, among other Hospital products, amounts previously presented as All other Anti-infectives and Ig Portfolio. |\n| (h) | Primarily reflects alliance revenues and royalty revenues. |\n| (i) | Biosimilars are highly similar versions of approved and authorized biological medicines. Oncology biosimilars primarily include Retacrit, Ruxience, Zirabev, Trazimera and Nivestym. |\n| (j) | Reflects product revenues and royalty revenues.  |\n| (k) | Pfizer CentreOne (PC1) includes revenues from our contract manufacturing and our active pharmaceutical ingredient sales operation, as well as revenues related to our manufacturing and supply agreements with legacy Pfizer businesses/partnerships. |\n| (l) | At the beginning of 2024, we made changes in our commercial organization to incorporate Seagen Inc. and improve focus, speed and execution. Specifically, within our Biopharma reportable segment we created the Pfizer Oncology Division, the Pfizer U.S. Commercial Division, and the Pfizer International Commercial Division. For additional information regarding the changes in our commercial organizational structure, see the *Item 1. Business\u2013\u2013Commercial Operations* section of our 2023 Annual Report on Form 10-K (available at www.pfizer.com). |\n| (m) | Full-year 2024 includes $129 million recorded in the third quarter related to a one-time sales true-up settlement agreement with our commercialization partner. |\n| \\* | Indicates calculation not meaningful or results are greater than 100%. |\n|  | Amounts may not add due to rounding. All percentages have been calculated using unrounded amounts. |\n\n---\n\n\n\n------\n\n\n\nDISCLOSURE NOTICE: Except where otherwise noted, the information contained in this earnings release and the related attachments is as of February 4, 2025. We assume no obligation to update any forward-looking statements contained in this earnings release and the related attachments as a result of new information or future events or developments.",
+        "token_count": 1797,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000078003-25-000017",
+        "cik": "0000078003",
+        "company": "PFIZER INC",
+        "form_type": "8-K",
+        "filed_date": "20250204",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 31332,
+        "source_md5": "b4aeb54c88c397e85a934c78678671df",
+        "content_sha256": "0f1ff60dd4a57bccf6efcda4090605b7eee952423ab55d15b62caf6a1d53724d",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "6eeb522a-07e0-58dd-b626-37bc8cd10d37",
+        "section": "Item 9.01 Financial Statements and Exhibits",
+        "section_index": 2,
+        "chunk_index": 0,
+        "char_start": 4639,
+        "char_end": 5927,
+        "text": "**Item 9.01 Financial Statements and Exhibits**\n\n(d) Exhibits\n\n---\n\n\n\n| | |\n|:---|:---|\n| Exhibit Number | Exhibit Description |\n| <u>[Exhibit 99](pfe-12312024xex99.htm)</u> | Press Release of Pfizer Inc. dated February 4, 2025, reporting Pfizer's financial results for fourth-quarter and full-year 2024. |\n| 104 | Cover Page Interactive Data File--the cover page XBRL tags are embedded within the Inline XBRL document. |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | |\n|:---|:---|\n| **<u>EXHIBIT INDEX</u>** | **<u>EXHIBIT INDEX</u>** |\n| Exhibit No. | Description |\n| <u>[99](pfe-12312024xex99.htm)</u> | Press Release of Pfizer Inc. dated February 4, 2025, reporting Pfizer's financial results for fourth-quarter and full-year 2024. |\n| 104 | Cover Page Interactive Data File--the cover page XBRL tags are embedded within the Inline XBRL document. |\n\n---\n\n\n\n------\n\n**SIGNATURES**\n\nPursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned hereunto duly authorized.\n\n---\n\n\n\n| | |\n|:---|:---|\n| PFIZER INC. | PFIZER INC. |\n| By: | <u>/s/ Margaret M. Madden</u> |\n|  | Margaret M. Madden |\n|  | Senior Vice President and Corporate Secretary |\n|  | Chief Governance Counsel |\n\n---\n\n\n\nDated: February 4, 2025",
+        "token_count": 368,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-008373",
+        "cik": "0001538849",
+        "company": "CrossAmerica Partners LP",
+        "form_type": "8-K",
+        "filed_date": "20250123",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 418,
+        "source_md5": "0f5d07476346bd7284944f6baeee7972",
+        "content_sha256": "6efd23e42e802a3572657a6e99ad9a70fb3b19ac696b4a4a2fa0a029286daca6",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "09c4493d-df16-5632-9f45-8fd98311c306",
+        "section": "Item 7.01 Regulation FD Disclosure",
+        "section_index": 1,
+        "chunk_index": 0,
+        "char_start": 3434,
+        "char_end": 4867,
+        "text": "**Item 7.01 Regulation FD Disclosure**\n\nOn January 22, 2025, CrossAmerica Partners LP (the \"Partnership\") issued a press release announcing that the Board of Directors of CrossAmerica GP LLC, the general partner of the Partnership, approved a quarterly distribution of $0.5250 per unit attributable to the fourth quarter of 2024 (annualized $2.10 per unit), consistent with the third quarter of 2024. The distribution attributable to the fourth quarter is payable on February 13, 2025 to all unitholders of record on February 3, 2025. A copy of the press release is furnished as Exhibit 99.1 to this Current Report on Form 8-K.\n\nThe information in this Current Report on Form 8-K is being furnished pursuant to Regulation FD. The information in Item 7.01 and Exhibit 99.1 of Item 9.01 of this report, according to general instruction B.2. of Form 8-K, shall not be deemed \"filed\" for the purposes of Section 18 of the Securities Exchange Act of 1934, as amended, or otherwise subject to the liabilities of that Section. The information in this Current Report on Form 8-K shall not be incorporated by reference into any registration statement pursuant to the Securities Act of 1933, as amended. By filing this Current Report on Form 8-K and furnishing this information, the Partnership makes no admission as to the materiality of any information in this report that the Partnership chooses to disclose solely because of Regulation FD.",
+        "token_count": 324,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 72, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies the core event: Pfizer issued a press release on February 4, 2025 reporting fourth-quarter and full-year 2024 financial results, furnished as Exhibit 99 under Item 2.02. The date, exhibit number, accession 0000078003-25-000017, and chunk ID all match the retrieved excerpts. It omits the reference's claim about 2025 financial guidance, which the retrieved excerpts do not show, so the candidate is mostly correct but incomplete relative to the reference. Citations are accurate and traceable to the retrieved Item 2.02 chunk and the filing header.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 72, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies the core event: Pfizer issued a press release on February 4, 2025 reporting fourth-quarter and full-year 2024 financial results, furnished as Exhibit 99 under Item 2.02. The date, exhibit number, accession 0000078003-25-000017, and chunk ID all match the retrieved excerpts. It omits the reference's claim about 2025 financial guidance, which the retrieved excerpts do not show, so the candidate is mostly correct but incomplete relative to the reference. Citations are accurate and traceable to the retrieved Item 2.02 chunk and the filing header.\"}",
+      "refusal": null,
+      "reasoning": "The reference mentions 2025 financial guidance being included, but the source excerpts only show Q4/FY2024 results with no guidance mentioned \u2014 so the candidate's omission of guidance seems accurate while the reference's claim is unsupported. The core event, the earnings release for Q4/FY2024, checks out correctly in the candidate.\n\nCorrectness score should land around 72 given the missing guidance element. The citation support is strong though \u2014 accession, chunk ID, Item 2.02 text, the February 4, 2025 date, and Exhibit 99 all match the retrieved excerpts, so that score should be around 95. Now I'll format this as the final JSON output.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The reference mentions 2025 financial guidance being included, but the source excerpts only show Q4/FY2024 results with no guidance mentioned \u2014 so the candidate's omission of guidance seems accurate while the reference's claim is unsupported. The core event, the earnings release for Q4/FY2024, checks out correctly in the candidate.\n\nCorrectness score should land around 72 given the missing guidance element. The citation support is strong though \u2014 accession, chunk ID, Item 2.02 text, the February 4, 2025 date, and Exhibit 99 all match the retrieved excerpts, so that score should be around 95. Now I'll format this as the final JSON output.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSiQwKEAgSGAI4AUIIdGhpbmtpbmcSDCdQR6umDgvaoHAbOhoMRoS26N4YqPfypqtvIjAMI/Ox1+M24Oo8TTcMujGTO9Z2m00ktYY8mlEe5dXCOPSBAHeFxmtn8icwa+MdijQqpgtyGyviYo6oFii+pyR2EEDhDF4W/VuxsMv4wHTVUiId8cthSY+U1LPTb7Tb4vlXoWn6MVNAOjBCcPrQYdVD7Nbjb+1BgC93yxR6k/uceaukEanNqN9AkFX9hHF294jSz2kzrUPad449aKsHahHluBC9l50ZcWAW1OrncqDn7GkAn1A1iZC+FbKaNQcRMpg8feq4T9TIZVonq1lhwkr2qSMeNzkQO92S5zFUbv8PMt524dt2VPMXfmdPoyZHZjE8g/6x6b4ALSdqBLXOThdKuFB9AHuaYtp1EZAlIRET4TYWW3FI9QCTaxPGtm6vzCTMSJrrghiXZi3494g4OADIYje9hT36OmHEGvrnpCxtfKM9mvMEDA+j73e2D0omNpsFIGftoLPyk2AFeZR3pkHbuUDk8ncBW+H5TmXwrCLEuztb4Fn/xGbxMWo/ELk5hKoDXtG3F9+IewxSzslDf/acCq5uaZt5AsAIqXpit1eMFlt3NT4BlkgOqUPTgluvmyqcWpIauX/qvherxXWMyAKewbUG7yUccO15NAjqSXuLy4WPOHJJ5lbHBPxDp/O/mAoNUiEbRuj0HpUgWTAfR72Hoy/U0r/qD3RPg/np/mwfjVv+S64LL8AzwNXi2gCUkJXUtABbDbP0UPHxJk73oScMw0O3uD1RznZwKxzH5M+uNrGGSKVU5B/m1cYUOCEbf/88t64TxWf+rjRNQp/sgnCERVLf6P9hc2f2xw+SrTxqSjR1dAjiz/xNCKYKtp1IXT9/5wBdRvStsTAjE/64QZ/Z+4NdTZRHrYuRqlosQHVXJsI892sXc7a8/RKyePd7Fy2ij+D3cPeqLskucctjsvbuQyHXQMEiMxbA/1ukO6E0212LcgJdS402BRoNZrazDmIZEE6RRoiIfBfEP5NYD2WIIQMegEubYVWdDCqFLWmWktPaInYjOtboE4R4IbTokMt4Q+zIWALY+GyR1p+GM7njIQ5LJJzK5S//cJhp//eRJVsbc3rYsQyipXFjBdGKOxVGmGEXbCgHalLRZxuTaalF73IQAveGtUosI0SRcOKDCXAN2NzADFj2dqbUsB8NCWirXFpLLm6rhf4yBXTMenRD0ww10s9Pq4EqToq45ZB6UdDq7IIZ/8AU0VVdgnFqYgjsLUpY971H/tXLbgCgUiiCYoHfy7KncENPwkDwAlZHDJApOHCxy692NmeqIj0NeeUMlaFyHZPpTo6wCPAsTC/YU++2MJjtG2D1h2cfpMvxiAwGIn7R4qCmZZYlDlue+YGbxSWdqNc+CW7uSTb0Q/tM9SiU0syq/lHSOj+5lr7gZV8/IHhSdffHhQqCeAzhpp/9G/sJwaB2ASX/7BAKdoAzfn26L+EYGQJUJBcc6Hb2bQT8x2W+csOcpAw+yE+fKUGF8d19Zk+4/xZiO5WoUnvfnL8d/fERqsmGWe3Datnz0PaVgkAFCn/BGppnDNoHfcO82K3VR4nYyLUPmXdsLMw7gUEwKte8mlikUfUNO5t6cZPEGi/aWhiDL2qursTrhKPT1WrUFPsH7k3LtfXutoveh7Ok/AE6fOW5kSD6sl+DbQVccQizhQsJZXkqguBJ5R39k8tkoNQKO+tHt5gVJ6V3NuQSKreRgZJ19jFFc9xVUzV7W6AgjUlwJ2YGkhjD/T7IYacLN9GLBa3Zd4QXvA89Tbm/R2JofmQDceaOQ4zkVnBByWo6k0XkIRop70FrqXzdre2oF35vhNPihlykYAPDq7KdaszHiB7TYAi+5bDi5I0Kuii9xOCydbHQlNJpZb2/H/KIZHYXL+aviW1LGiS7xe3xa+Cer1EWpBEuivvw+q2EdDzuxGZsLwQhCiLBnZ/ERTVl7YWQ1jICk4DGWXLckye+I/L8OzAO4ZKpTZekhPD3rF9OWIgW+YBpnlK429aBXvwN6RZEMqkYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:35:09.830759+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "b6f11cc590a7375cd7f76a32:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042473-Lp8NMG6KrbKeZVRXs3nx",
+    "usage": {
+      "prompt_tokens": 16628,
+      "completion_tokens": 594,
+      "total_tokens": 17222,
+      "cost": 0.0019598,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019598,
+        "upstream_inference_prompt_cost": 0.0016628,
+        "upstream_inference_completions_cost": 0.000297
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 362,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 37.15312842599997,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 72,
+    "citation_support": 95,
+    "rationale": "The candidate correctly identifies the core event: Pfizer issued a press release on February 4, 2025 reporting fourth-quarter and full-year 2024 financial results, furnished as Exhibit 99 under Item 2.02. The date, exhibit number, accession 0000078003-25-000017, and chunk ID all match the retrieved excerpts. It omits the reference's claim about 2025 financial guidance, which the retrieved excerpts do not show, so the candidate is mostly correct but incomplete relative to the reference. Citations are accurate and traceable to the retrieved Item 2.02 chunk and the filing header."
+  },
+  "status": "ok"
+}

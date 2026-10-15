@@ -1,0 +1,126 @@
+{
+  "question_id": "Q081",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.04808006499933981,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Under **Item 2.02 (Results of Operations and Financial Condition)** of its Form 8-K filed on February 4, 2025, Pfizer Inc. disclosed that on **February 4, 2025**, it issued a press release announcing its **financial results for the fourth-quarter and full-year 2024** (furnished as Exhibit 99).\n\n*(Source: Accession `0000078003-25-000017`, Section: `Item 2.02 Results of Operations and Financial Condition`, Chunk ID: `22cfadc5-7bea-534b-a941-af3f32745495`)*",
+    "message": {
+      "role": "assistant",
+      "content": "Under **Item 2.02 (Results of Operations and Financial Condition)** of its Form 8-K filed on February 4, 2025, Pfizer Inc. disclosed that on **February 4, 2025**, it issued a press release announcing its **financial results for the fourth-quarter and full-year 2024** (furnished as Exhibit 99).\n\n*(Source: Accession `0000078003-25-000017`, Section: `Item 2.02 Results of Operations and Financial Condition`, Chunk ID: `22cfadc5-7bea-534b-a941-af3f32745495`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "EmkKZwFpFH0TheqTkqPmfm29tJmf0zrZaGH8XATPz/99wUjIrZgMU7Onj0JMPyhRy9DOLkdjNEw5a06Yp7LlUOfLwUVvAMyB8F/bZ6Hre80H+U7mmvcYSbbefCdelGr9QHSeI5YNr6+FST8=",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:56.222691+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "9ed4c7a149df87d53ae0f6b9:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041998-LPmMUtG7BJokZcRsj7JS",
+    "usage": {
+      "prompt_tokens": 8076,
+      "completion_tokens": 165,
+      "total_tokens": 8241,
+      "cost": 0.00667575,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00667575,
+        "upstream_inference_prompt_cost": 0.006057,
+        "upstream_inference_completions_cost": 0.00061875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 18.354510582999865,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 75, \"citation_support\": 92, \"rationale\": \"The candidate correctly identifies the core Item 2.02 disclosure: a February 4, 2025 press release reporting Q4 and full-year 2024 results, furnished as Exhibit 99. This matches the retrieved Item 2.02 chunk and the Exhibit 99 description. It omits the reference's claim about 2025 financial guidance, which the retrieved Item 2.02 text does not support, so that gap is a minor issue rather than an error. The accession number, section, and chunk ID cited all appear in the retrieved excerpts.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 75, \"citation_support\": 92, \"rationale\": \"The candidate correctly identifies the core Item 2.02 disclosure: a February 4, 2025 press release reporting Q4 and full-year 2024 results, furnished as Exhibit 99. This matches the retrieved Item 2.02 chunk and the Exhibit 99 description. It omits the reference's claim about 2025 financial guidance, which the retrieved Item 2.02 text does not support, so that gap is a minor issue rather than an error. The accession number, section, and chunk ID cited all appear in the retrieved excerpts.\"}",
+      "refusal": null,
+      "reasoning": "The reference mentions \"2025 financial guidance,\" but the gold evidence only references \"Results of Operations and Financial Condition\" \u2014 the retrieved Item 2.02 text covers Q4 and full-year 2024 results only, not 2025 guidance. The candidate correctly notes the filing date of February 4, 2025, and describes the press release announcing Q4/FY2024 results furnished as Exhibit 99.\n\nThe candidate's omission of guidance is only a minor issue since the excerpt doesn't substantiate that claim either, so the core event is accurate \u2014 I'd put the score around 75. The citation matches the retrieved chunk ID accurately, with a slightly different section name but otherwise strong support, so citation accuracy lands around 92.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The reference mentions \"2025 financial guidance,\" but the gold evidence only references \"Results of Operations and Financial Condition\" \u2014 the retrieved Item 2.02 text covers Q4 and full-year 2024 results only, not 2025 guidance. The candidate correctly notes the filing date of February 4, 2025, and describes the press release announcing Q4/FY2024 results furnished as Exhibit 99.\n\nThe candidate's omission of guidance is only a minor issue since the excerpt doesn't substantiate that claim either, so the core event is accurate \u2014 I'd put the score around 75. The citation matches the retrieved chunk ID accurately, with a slightly different section name but otherwise strong support, so citation accuracy lands around 92.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:24.185145+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "9ed4c7a149df87d53ae0f6b9:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042219-iXd2tgcMaZRuZWenJQyo",
+    "usage": {
+      "prompt_tokens": 10317,
+      "completion_tokens": 570,
+      "total_tokens": 10887,
+      "cost": 0.0013167,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013167,
+        "upstream_inference_prompt_cost": 0.0010317,
+        "upstream_inference_completions_cost": 0.000285
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 366,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.903039576999618,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 75,
+    "citation_support": 92,
+    "rationale": "The candidate correctly identifies the core Item 2.02 disclosure: a February 4, 2025 press release reporting Q4 and full-year 2024 results, furnished as Exhibit 99. This matches the retrieved Item 2.02 chunk and the Exhibit 99 description. It omits the reference's claim about 2025 financial guidance, which the retrieved Item 2.02 text does not support, so that gap is a minor issue rather than an error. The accession number, section, and chunk ID cited all appear in the retrieved excerpts."
+  },
+  "status": "ok"
+}

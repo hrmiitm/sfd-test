@@ -1,0 +1,593 @@
+{
+  "question_id": "Q028",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/agentic",
+  "retrieval": {
+    "seconds": 29.218840065000222,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "According to Citigroup Inc.'s Consolidated Statement of Income in its 2024 Form 10-K (for the year ended December 31, 2024):\n\n* **Net interest income:** **$54,095 million** ($143,713 million interest income less $89,618 million interest expense)\n* **Non-interest revenue (Total non-interest revenues):** **$27,044 million**\n* **Revenues net of interest expense (Total revenues, net of interest expense):** **$81,139 million** ($54,095 million + $27,044 million)\n\n*(Source: Citigroup Inc. 2024 Form 10-K, Consolidated Statement of Income, chunk ID `efe0d2ed-b1ce-51fa-8514-80597e1dab5c` / accession `0000831001-25-000067`).*",
+    "usage": {
+      "prompt_tokens": 14936,
+      "completion_tokens": 340,
+      "total_tokens": 15276,
+      "cost": 0.012477
+    },
+    "seconds": 6.818422154000473,
+    "tool_seconds": 29.218840065000222,
+    "tool_calls": 2,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_1474995",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"company\":\"Citigroup\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"form_type\":\"10-K\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1+D/dJPC2z2Fv1MSCjibBEZpMS+F5CgVbNNibK23N2o3FZ6mJU92Q6rsjPeWeoa6Jxwspp7vkAzsTIgbfpVj3w1Sya/0MvzXcz2xGT3uSR/S50p",
+              "format": "google-gemini-v1",
+              "id": "call_1474995",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_1474995",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"company\":\"Citigroup\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"form_type\":\"10-K\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:25:11.110460+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "6c25af27563a7699cafe1ee5:agent:0",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792041908-wfOo5BbSpdDVdddf2zOB",
+        "usage": {
+          "prompt_tokens": 910,
+          "completion_tokens": 71,
+          "total_tokens": 981,
+          "cost": 0.00094875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00094875,
+            "upstream_inference_prompt_cost": 0.0006825,
+            "upstream_inference_completions_cost": 0.00026625
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 0.47707015099967975,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_43620",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Citigroup Net interest income Non-interest revenue Revenues net of interest expense 2024\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1+hArxEGRdP1xjRq9/mYurIW/872BIAFKiZY7hLKujXIjjLGwFU0NzrQNeNQmX6pYDXm7LkfTk6KAI8xBDnjdBtLo2mXNJbztN5tK6GVdmygiU+",
+              "format": "google-gemini-v1",
+              "id": "call_43620",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_43620",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Citigroup Net interest income Non-interest revenue Revenues net of interest expense 2024\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:28:44.486033+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "6c25af27563a7699cafe1ee5:agent:1",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042122-RzEzoJGil0nJ4Xfn7yql",
+        "usage": {
+          "prompt_tokens": 1067,
+          "completion_tokens": 34,
+          "total_tokens": 1101,
+          "cost": 0.00092775,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00092775,
+            "upstream_inference_prompt_cost": 0.00080025,
+            "upstream_inference_completions_cost": 0.0001275
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.46751060600036,
+        "attempts": 1
+      },
+      {
+        "text": "According to Citigroup Inc.'s Consolidated Statement of Income in its 2024 Form 10-K (for the year ended December 31, 2024):\n\n* **Net interest income:** **$54,095 million** ($143,713 million interest income less $89,618 million interest expense)\n* **Non-interest revenue (Total non-interest revenues):** **$27,044 million**\n* **Revenues net of interest expense (Total revenues, net of interest expense):** **$81,139 million** ($54,095 million + $27,044 million)\n\n*(Source: Citigroup Inc. 2024 Form 10-K, Consolidated Statement of Income, chunk ID `efe0d2ed-b1ce-51fa-8514-80597e1dab5c` / accession `0000831001-25-000067`).*",
+        "message": {
+          "role": "assistant",
+          "content": "According to Citigroup Inc.'s Consolidated Statement of Income in its 2024 Form 10-K (for the year ended December 31, 2024):\n\n* **Net interest income:** **$54,095 million** ($143,713 million interest income less $89,618 million interest expense)\n* **Non-interest revenue (Total non-interest revenues):** **$27,044 million**\n* **Revenues net of interest expense (Total revenues, net of interest expense):** **$81,139 million** ($54,095 million + $27,044 million)\n\n*(Source: Citigroup Inc. 2024 Form 10-K, Consolidated Statement of Income, chunk ID `efe0d2ed-b1ce-51fa-8514-80597e1dab5c` / accession `0000831001-25-000067`).*",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a18sN5pVpetQggcQHG07y5zamIZrS9Iz0U4qGT1uD3sTvLp5/73bUIYf8oyH5e5OEIUJKSFi05fv9PmQHfLe+O71roEBCWvjHmlJk0uymxLofHsI",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:31:10.878486+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "6c25af27563a7699cafe1ee5:agent:2",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042267-LId4XPTej8iqSK8e2fwM",
+        "usage": {
+          "prompt_tokens": 12959,
+          "completion_tokens": 235,
+          "total_tokens": 13194,
+          "cost": 0.0106005,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0106005,
+            "upstream_inference_prompt_cost": 0.00971925,
+            "upstream_inference_completions_cost": 0.00088125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.873841397000433,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_1474995",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"company\":\"Citigroup\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"form_type\":\"10-K\"}"
+          }
+        },
+        "output": {
+          "error": "malloc of size 1182595840 failed",
+          "error_type": "ArrowMemoryError",
+          "resources": {
+            "peak_rss_mib": 981.73828125,
+            "cpu_seconds": 6.594621999999999,
+            "wall_seconds": 6.651013018999947,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 13.263391946999946
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_43620",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Citigroup Net interest income Non-interest revenue Revenues net of interest expense 2024\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000831001-25-000067",
+              "cik": "0000831001",
+              "company": "CITIGROUP INC",
+              "form_type": "10-K",
+              "filed_date": "20250221",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 89702,
+              "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+              "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "f5014461-55d2-564c-a953-797c742d26a0",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 4,
+              "char_start": 24533,
+              "char_end": 33793,
+              "text": "\u2022 Citi returned $6.7 billion to common shareholders in the form of dividends ($4.2 billion) and share repurchases ($2.5 billion) in 2024. As previously disclosed, on January 13, 2025, Citigroup's Board of Directors authorized a new, multiyear $20 billion common stock repurchase program, with planned repurchases of $1.5 billion during the first quarter of 2025, subject to market conditions and other factors. After the first quarter of 2025, Citi will continue to assess the level of common share repurchases on a quarter-by-quarter basis given uncertainty regarding regulatory capital requirements, among other factors.\n\n**2024 Results Summary**\n\n***Citigroup***\n\nCitigroup reported net income of $12.7 billion, or $5.94 per share. This compared to net income of $9.2 billion, or $4.04 per share in the prior year, which included larger impacts from certain notable items, including an Argentina currency devaluation, an FDIC special assessment, restructuring charges related to Citi's organizational simplification and an ACL build for transfer risk (see \"Cost of Credit\" below).\n\nNet income increased 37% versus the prior year, driven by the higher revenues, lower expenses and a lower effective tax rate, partially offset by higher cost of credit. Citigroup's effective tax rate was 25% in 2024 versus 27% in the prior year, largely driven by the geographic mix of earnings (see Note 10).\n\nCitigroup revenues of $81.1 billion in 2024 increased 3% on a reported basis. This increase in revenues largely reflected an increase in non-interest revenue (up 15%), including the benefit of a smaller impact from the Argentina currency devaluation ($(253) million in 2024 versus approximately $(1.9) billion in 2023) as well as strength in underlying fee drivers in each of Citi's reportable operating segments. The increase in non-interest revenue was partially offset by a decline in net interest income (down 1%). The decrease in net interest income primarily reflected lower revenues in *All Other* (managed basis), partially offset by higher interest-earning balance growth in *U.S. Personal Banking (USPB)*. Excluding divestiture-related impacts, primarily related to gains on the sales of Citi's India and Taiwan consumer banking businesses in the prior year, as well as the Argentina currency devaluation, revenues of $81.4 billion in 2024 also increased 3% versus the prior year.\n\nCitigroup's end-of-period loans were $694 billion, up 1% versus the prior year, largely driven by loan growth in *USPB*.\n\nCitigroup's end-of-period deposits were approximately $1.3 trillion, down 2% versus the prior year, largely due to a decrease in *All Other* (managed basis). For additional information about Citi's deposits by business, including drivers and deposit trends, see each respective business's results of operations and \"Liquidity Risk\u2014 Deposits\" below.\n\n***Expenses***\n\nCitigroup's operating expenses of $54.0 billion decreased 4% from the prior year. Excluding the FDIC special assessment ($203 million in 2024 versus approximately $1.7 billion in the prior year), expenses of $53.8 billion decreased 2%, driven by savings related to Citi's organizational simplification and stranded cost reduction, as well as the lower restructuring charges ($259 million in 2024 versus $781 million in the prior year) and repositioning costs. The decrease was partially offset by higher volume-related expenses, investments in Citi's transformation and other risk and controls initiatives, as well as the costs of the July 2024 Civil Money Penalty Consent Orders entered into with the Federal Reserve Board (FRB) and the Office of the Comptroller of the Currency (OCC).\n\n------\n\nExcluding the FDIC special assessment and divestiture-related impacts, expenses of $53.5 billion also decreased 2%.\n\n***Cost of Credit***\n\nCiti's total provisions for credit losses and for benefits and claims was $10.1 billion, compared to $9.2 billion in the prior year. The increase was driven by higher net credit losses in Branded Cards and Retail Services in *USPB*, reflecting the continued maturation of multiple cards loan vintages originated in recent years. The maturation was delayed by unprecedented levels of government stimulus during the pandemic. In addition, the increase was due to macroeconomic pressures related to the elevated inflationary and interest rate environment impacting both card portfolios, with lower FICO band customers primarily driving the increase. The higher net credit losses were partially offset by a lower net build in the allowance for credit losses (ACL), primarily due to a smaller build related to transfer risk associated with exposures outside the U.S. (approximately $0.2 billion in 2024 versus $1.9 billion in 2023), driven by safety and soundness considerations under U.S. banking law. For additional information on Citi's ACL, see \"Significant Accounting Policies and Significant Estimates\u2014Citi's Allowance for Credit Losses (ACL)\" below.\n\nNet credit losses of $9.0 billion increased 40% from the prior year. Consumer net credit losses of $8.6 billion increased 39%, largely reflecting the continued rise in net credit loss rates in Branded Cards and Retail Services. Corporate net credit losses increased to $397 million from $250 million in the prior year.\n\nSubject to evolving macroeconomic conditions, Citi expects to continue to experience an elevated net credit loss rate for full-year 2025 in line with 2024, with higher loss rates in the first half of the year in Branded Cards and Retail Services consistent with seasonal patterns. Citi also expects that its future ACL builds will be driven by both the macroeconomic environment and business volumes, among other factors. For additional information on Citi's consumer and corporate credit costs, see each respective business's results of operations and \"Credit Risk\" below.\n\nIn January 2025, a series of wildfires affected the Los Angeles metropolitan area and surrounding regions, causing loss of life and the destruction of more than 16,000 structures. While Citi continues to assess the wildfires' impact on its customers and clients in the affected areas, Citi does not currently expect the wildfires to have a direct material impact to its consumer or corporate credit portfolios or its overall results of operations.\n\n***Capital***\n\nCitigroup's CET1 Capital ratio was 13.6% as of December 31, 2024, compared to 13.4% as of December 31, 2023, based on the Basel III Standardized Approach for determining risk weighted assets (RWA). The increase was primarily driven by net income and a decrease in RWA, partially offset by the payment of common and preferred dividends, as well as common share repurchases and net adverse movements in *Accumulated other comprehensive income (AOCI)*.\n\nIn 2024, Citi repurchased $2.5 billion of common shares and paid $4.2 billion of common dividends (see \"Unregistered\n\nSales of Equity Securities, Repurchases of Equity Securities and Dividends\" below).\n\nFor additional information on capital-related risks, trends and uncertainties, see \"Capital Resources\u2014Regulatory Capital Standards and Developments\" and \"Risk Factors\u2014Strategic Risks,\" \"\u2014Operational Risks\" and \"\u2014Compliance Risks\" below.\n\nCitigroup's Supplementary Leverage ratio as of\n\nDecember 31, 2024 was 5.8%, largely unchanged from December 31, 2023, as higher Tier 1 Capital was offset by an increase in Total Leverage Exposure. For additional information on Citi's capital ratios and related components, see \"Capital Resources\" below.\n\n***Services***\n\n*Services* net income of $6.5 billion increased 40%, as higher revenue and lower cost of credit were partially offset by higher expenses.\n\n*Services* revenues of $19.6 billion increased 9%, largely driven by a 28% increase in non-interest revenue and higher net interest income (up 1%). Excluding the impact of the Argentina currency devaluation ($(178) million in 2024 versus approximately $(1.2) billion in 2023), *Services* revenues increased 3% and its non-interest revenue increased 5%. The increase in net interest income reflected the benefit of higher deposit and loan volumes, largely offset by a decline in interest rates in Argentina.\n\nTTS revenues of $14.5 billion increased 6% on a reported basis, driven by a 37% increase in non-interest revenue, partially offset by a 1% decrease in net interest income. Excluding the impact of the Argentina currency devaluation (approximately $(164) million in 2024 and approximately $(1.0) billion in 2023), non-interest revenue increased 3%, driven by an increase in cross-border transaction value, as well as an increase in U.S. dollar clearing and commercial card spend volume. The decrease in TTS net interest income was primarily driven by the decline in interest rates in Argentina.\n\nSecurities Services revenues of $5.1 billion increased 17%, driven by an 18% increase in non-interest revenue and a 15% increase in net interest income. The growth in non-interest revenue was primarily due to increased fees from higher AUC/AUA balances and continued elevated levels of corporate activity in Issuer Services, as well as the smaller impact from the currency devaluation in Argentina. The increase in net interest income was primarily due to higher spreads and volumes.",
+              "token_count": 1981,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000831001-25-000067",
+              "cik": "0000831001",
+              "company": "CITIGROUP INC",
+              "form_type": "10-K",
+              "filed_date": "20250221",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 89702,
+              "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+              "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "32b983ac-1834-54c2-860a-48db30f3a514",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 191,
+              "char_start": 1348937,
+              "char_end": 1354788,
+              "text": "| | | | | |\n|:---|:---|:---|:---|:---|\n| | **December 31, 2024** | **December 31, 2024** | December 31, 2023 | December 31, 2023 |\n| *In millions of dollars* | **Citigroup parent company** | **CGMHI** | Citigroup parent company | CGMHI |\n| Cash and deposits with banks | $**4014** | $**19464** | $3011 | $23756 |\n| Securities borrowed and purchased under resale agreements | **\u2014** | **215995** |  | 283174 |\n| Trading account assets | **203** | **294396** | 461 | 273379 |\n| Advances to subsidiaries | **150790** | **\u2014** | 150845 |  |\n| Investments in subsidiary bank holding company | **179253** | **\u2014** | 172125 |  |\n| Investments in non-bank subsidiaries | **46549** | **\u2014** | 46870 |  |\n| Other assets | **14642** | **158080** | 14202 | 167609 |\n| **Total assets** | $**395451** | $**687935** | $387514 | $747918 |\n| Securities loaned and sold under agreements to repurchase | $**\u2014** | $**268178** | $\u2014 | $309862 |\n| Trading account liabilities | **69** | **89146** | 300 | 111233 |\n| Short-term borrowings | **\u2014** | **29410** |  | 20481 |\n| Long-term debt | **164024** | **184516** | 162309 | 184083 |\n| Advances from subsidiaries | **19974** | **\u2014** | 16724 |  |\n| Other liabilities | **2786** | **80486** | 2728 | 85079 |\n| Stockholders' equity | **208598** | **36199** | 205453 | 37180 |\n| **Total liabilities and equity** | $**395451** | $**687935** | $387514 | $747918 |\n\n---\n\n\n\n------\n\n**32. CONDENSED PARENT COMPANY FINANCIAL STATEMENTS**\n\nThe following are the Condensed Statements of Income and Comprehensive Income for the years ended December 31, 2024, 2023 and 2022, Condensed Balance Sheet as of December 31, 2024 and 2023 and Condensed Statement of Cash Flows for the years ended December 31, 2024, 2023 and 2022 for Citigroup Inc., the parent holding company.\n\n**Condensed Statements of Income and Comprehensive Income&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year ended December 31,** | **Year ended December 31,** | **Year ended December 31,** |\n| *In millions of dollars* | **2024** | 2023 | 2022 |\n| **Revenues** |  |  |  |\n| Dividends from subsidiaries | $**5549** | $16811 | $8992 |\n| Interest revenue\u2014intercompany | $**7523** | $6955 | $4628 |\n| Interest expense | **6680** | 6339 | 5250 |\n| Interest expense\u2014intercompany | **1518** | 1460 | 715 |\n| **Net interest income** | $**(675)** | $(844) | $(1337) |\n| Commissions and fees | $**\u2014** | $\u2014 | $\u2014 |\n| Commissions and fees\u2014intercompany | **(57)** | (31) | (1) |\n| Principal transactions | **691** | (928) | 5147 |\n| Principal transactions\u2014intercompany | **(2590)** | (771) | (5686) |\n| Other revenue | **147** | (23) | 210 |\n| Other revenue\u2014intercompany | **(175)** | (135) | (220) |\n| **Total non-interest revenues** | $**(1984)** | $(1888) | $(550) |\n| **Total revenues, net of interest expense** | $**2890** | $14079 | $7105 |\n| **Operating expenses** |  |  |  |\n| Compensation and benefits | $**14** | $9 | $9 |\n| Compensation and benefits\u2014intercompany | **23** | 18 | 12 |\n| Other operating | **207** | 160 | 85 |\n| Other operating\u2014intercompany | **30** | 15 | 15 |\n| **Total operating expenses** | $**274** | $202 | $121 |\n| Equity in undistributed income of subsidiaries | $**9300** | $(5572) | $6173 |\n| **Income from continuing operations before income taxes** | $**11916** | $8305 | $13157 |\n| Provision (benefit) for income taxes | **(766)** | (923) | (1688) |\n| **Net income** | $**12682** | $9228 | $14845 |\n| **Comprehensive income** |  |  |  |\n| Add: Other comprehensive income (loss) | **(3052)** | 2235 | (8297) |\n| **Total Citigroup comprehensive income** | $**9630** | $11463 | $6548 |\n\n---\n\n\n\n------\n\n**Condensed Balance Sheet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **December 31,** | **December 31,** |\n| *In millions of dollars* | **2024** | 2023 |\n| **Assets** |  |  |\n| Cash and due from banks | $**\u2014** | $\u2014 |\n| Cash and due from banks\u2014intercompany | **14** | 11 |\n| Deposits with banks\u2014intercompany | **4000** | 3000 |\n| Trading account assets | **(164)** | 113 |\n| Trading account assets\u2014intercompany | **367** | 348 |\n| Investments, net of allowance | **1** | 1 |\n| Advances to subsidiaries | $**150790** | $150845 |\n| Investments in subsidiary bank holding company | **179253** | 172125 |\n| Investments in non-bank subsidiaries | **46549** | 46870 |\n| Other assets, net of allowance<sup>(1)</sup> | **10255** | 10031 |\n| Other assets\u2014intercompany | **4386** | 4170 |\n| **Total assets** | $**395451** | $387514 |\n| **Liabilities and equity** |  |  |\n| Trading account liabilities | $**(159)** | $34 |\n| Trading account liabilities\u2014intercompany | **228** | 266 |\n| Long-term debt | **164024** | 162309 |\n| Advances from subsidiary bank holding company | **10948** | 8677 |\n| Advances from non-bank subsidiaries | **9026** | 8047 |\n| Other liabilities | **2719** | 2560 |\n| Other liabilities\u2014intercompany | **67** | 168 |\n| Stockholders' equity | **208598** | 205453 |\n| **Total liabilities and equity** | $**395451** | $387514 |\n\n---\n\n\n\n(1)Citigroup parent company at December 31, 2024 and 2023 included $75.4 billion and $56.9 billion, respectively, of placements to Citibank and its branches, of which $71.6 billion and $33.8 billion, respectively, had a remaining term of less than 30 days.\n\n------\n\n**Condensed Statement of Cash Flows&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---",
+              "token_count": 1852,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000831001-25-000067",
+              "cik": "0000831001",
+              "company": "CITIGROUP INC",
+              "form_type": "10-K",
+              "filed_date": "20250221",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 89702,
+              "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+              "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "b649eeb5-1b87-5936-99e0-2e0278d6835c",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 106,
+              "char_start": 790005,
+              "char_end": 796696,
+              "text": "| | | | |\n|:---|:---|:---|:---|\n| The following table presents a reconciliation of total Citigroup income from continuing operations as reported: | The following table presents a reconciliation of total Citigroup income from continuing operations as reported: | The following table presents a reconciliation of total Citigroup income from continuing operations as reported: | The following table presents a reconciliation of total Citigroup income from continuing operations as reported: |\n|  | **2024**<sup>(5)</sup> | 2023<sup>(6)</sup> | 2022<sup>(7)</sup> |\n| Total segments and *All Other*\u2014Income from continuing operations<sup>(4)</sup> | $**13042** | $8723 | $15349 |\n| **<u>Divestiture-related impact on:</u>** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Total revenues, net of interest expense | **26** | 1346 | 854 |\n| &nbsp;&nbsp;&nbsp;Total operating expenses | **318** | 372 | 696 |\n| &nbsp;&nbsp;&nbsp;Provision (release) for credit losses | **7** | (67) | 76 |\n| &nbsp;&nbsp;&nbsp;Provision (benefits) for income taxes | **(92)** | 382 | 266 |\n| **Income from continuing operations** | $**12835** | $9382 | $15165 |\n\n---\n\n\n\n(1)&nbsp;&nbsp;&nbsp;&nbsp;See \"Performance by Geographic Area\" below.\n\n(2)&nbsp;&nbsp;&nbsp;&nbsp;Excludes allocations of *Compensation and benefits* expense related to services provided by Corporate/Other within *All Other*, which are allocated from *All Other* to each respective reportable segment, as applicable, through the non-compensation expense line.\n\n(3)&nbsp;&nbsp;&nbsp;&nbsp;Non-compensation expense for each reportable segment includes allocated compensation and benefits-related costs from Corporate/Other within *All Other* to the respective reportable business segments, and expenses related to *Technology/communication*, *Transactional and tax charges*, *Premises and equipment*, *Professional services*, *Advertising and marketing* and *Other operating* (all of which include certain overhead expenses).\n\n(4)&nbsp;&nbsp;&nbsp;&nbsp;Segment results are presented on a managed basis that excludes divestiture-related impacts related to (i) Citi's divestitures of its Asia consumer banking businesses and (ii) the planned IPO of Mexico Consumer/SBMM within *All Other*\u2014Legacy Franchises. Adjustments are included in Legacy Franchises within *All Other* and are reflected in the reconciliations above to arrive at Citi's reported results in the Consolidated Statement of Income.\n\n(5)&nbsp;&nbsp;&nbsp;&nbsp;2024 includes $318 million (approximately $220 million after-tax) in operating expenses primarily related to separation costs in Mexico and severance costs in the Asia exit markets.\n\n(6)&nbsp;&nbsp;&nbsp;&nbsp;2023 includes (i) an approximate $1.059 billion gain on sale recorded in revenue (approximately $727 million after-tax) related to the India consumer banking business sale; (ii) an approximate $403 million gain on sale recorded in revenue (approximately $284 million after-tax) related to the Taiwan consumer banking business sale; and (iii) approximately $372 million (approximately $263 million after-tax) in operating expenses primarily related to separation costs in Mexico and severance costs in the Asia exit markets.\n\n(7)&nbsp;&nbsp;&nbsp;&nbsp;2022 includes (i) an approximate $535 million (approximately $489 million after-tax) goodwill write-down due to resegmentation and the timing of Asia consumer banking business divestitures, (ii) an approximate $616 million gain on sale recorded in revenue (approximately $290 million after-tax) related to the Philippines consumer banking business sale, (iii) an approximate $209 million gain on sale recorded in revenue (approximately $115 million after-tax) related to the Thailand consumer banking business sale and (iv) approximately $161 million (approximately $108 million after-tax) in operating expenses primarily related to separation costs in Mexico and severance costs in the Asia exit markets.\n\n------\n\n**Performance by Geographic Area**\n\nCiti's operations are highly integrated, and estimates and subjective assumptions have been made to apportion revenue between North America and international operations. These estimates and assumptions are consistent with the allocations used for the Company's segment reporting.\n\nThe Company defines international activities for purposes of this footnote presentation as business transactions that\n\ninvolve clients that reside outside of North America, and the information presented below is based on managed geography (the booking location that manages the client relationship), which is predominantly the domicile of the client. However, many of the Company's North America operations serve international businesses. The managed geography can be periodically reorganized (and thus the balances in North America and Corporate/Other).\n\nThe following tables present revenues net of interest expense and identifiable assets between North America and international areas:\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| *In millions of dollars* | **Revenues, net of interest expense** | **Revenues, net of interest expense** | **Revenues, net of interest expense** |\n| *In millions of dollars* | **2024** | 2023 | 2022 |\n| North America<sup>(1)</sup> | $**40079** | $36707 | $34917 |\n| International<sup>(2)(3)</sup> | **40392** | 39640 | 38911 |\n| Corporate/Other<sup>(4)</sup> | **668** | 2115 | 1510 |\n| **Total Citi** | $**81139** | $78462 | $75338 |\n| *In millions of dollars at December 31,* | **Identifiable assets**<sup>(5)</sup> | **Identifiable assets**<sup>(5)</sup> |  |\n| *In millions of dollars at December 31,* | **2024** | 2023 |  |\n| North America<sup>(1)</sup> | $**1326443** | $1350212 |  |\n| International | **899972** | 940416 |  |\n| Corporate/Other | **126530** | 121206 |  |\n| **Total Citi** | $**2352945** | $2411834 |  |\n\n---\n\n\n\n(1)&nbsp;&nbsp;&nbsp;&nbsp;Primarily reflects the U.S.\n\n(2)&nbsp;&nbsp;&nbsp;&nbsp;International represents the summation of international revenues in *Services*, *Markets*, *Banking*, *Wealth* and *All Other*\u2014Legacy Franchises, primarily Asia Consumer and Mexico Consumer/SBMM.\n\n(3)&nbsp;&nbsp;&nbsp;&nbsp;Total revenues for the U.K. were approximately $6.7 billion, $6.9 billion and $7.9 billion for 2024, 2023 and 2022, respectively.\n\n(4)&nbsp;&nbsp;&nbsp;&nbsp;Corporate/Other revenues, net of interest expense largely reflects U.S. activities, as well as intersegment eliminations.\n\n(5)&nbsp;&nbsp;&nbsp;&nbsp;The Company's long-lived assets (*Premises and equipment*) for the periods presented are not considered significant in relation to its total assets.\n\n------\n\n**4. INTEREST INCOME AND EXPENSE**\n\n*Interest income* and *Interest expense* consisted of the following:\n\n---",
+              "token_count": 1597,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000831001-25-000067",
+              "cik": "0000831001",
+              "company": "CITIGROUP INC",
+              "form_type": "10-K",
+              "filed_date": "20250221",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 89702,
+              "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+              "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "efe0d2ed-b1ce-51fa-8514-80597e1dab5c",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 88,
+              "char_start": 646307,
+              "char_end": 652216,
+              "text": "| | | | |\n|:---|:---|:---|:---|\n| | **Years ended December 31,** | **Years ended December 31,** | **Years ended December 31,** |\n| *In millions of dollars, except per share amounts* | **2024** | 2023 | 2022 |\n| **Revenues** |  |  |  |\n| Interest income | $**143713** | $133258 | $74408 |\n| Interest expense | **89618** | 78358 | 25740 |\n| **Net interest income** | $**54095** | $54900 | $48668 |\n| Commissions and fees | $**10653** | $8905 | $9175 |\n| Principal transactions | **11653** | 10948 | 14159 |\n| Administration and other fiduciary fees | **4134** | 3781 | 3784 |\n| Realized gains on sales of investments, net | **328** | 188 | 67 |\n| Impairment losses on investments: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Impairment losses on investments | **(431)** | (323) | (499) |\n| &nbsp;&nbsp;&nbsp;&nbsp;(Provision) releases for credit losses on AFS debt securities<sup>(1)</sup> | **1** | (4) | 5 |\n| Net impairment losses recognized in earnings | $**(430)** | $(327) | $(494) |\n| Other revenue | $**706** | $67 | $(21) |\n| **Total non-interest revenues** | $**27044** | $23562 | $26670 |\n| **Total revenues, net of interest expense** | $**81139** | $78462 | $75338 |\n| **Provisions for credit losses and for benefits and claims** |  |  |  |\n| Provision for credit losses on loans | $**9726** | $7786 | $4745 |\n| Provision (release) for credit losses on HTM debt securities | **50** | (24) | 33 |\n| Provision for credit losses on other assets | **362** | 1762 | 76 |\n| Policyholder benefits and claims | **90** | 87 | 94 |\n| Provision (release) for credit losses on unfunded lending commitments | **(119)** | (425) | 291 |\n| **Total provisions for credit losses and for benefits and claims**<sup>(1)</sup> | $**10109** | $9186 | $5239 |\n| **Operating expenses** |  |  |  |\n| Compensation and benefits | $**28542** | $29232 | $26655 |\n| Technology/communication | **9035** | 9106 | 8587 |\n| Transactional and tax charges | **3574** | 3218 | 2848 |\n| Premises and equipment | **2438** | 2508 | 2320 |\n| Professional services | **2016** | 2078 | 2481 |\n| Advertising and marketing | **1113** | 1393 | 1556 |\n| Restructuring | **259** | 781 |  |\n| Other operating | **7007** | 8050 | 6845 |\n| **Total operating expenses** | $**53984** | $56366 | $51292 |\n| **Income from continuing operations before income taxes** | $**17046** | $12910 | $18807 |\n| Provision for income taxes | **4211** | 3528 | 3642 |\n| **Income from continuing operations** | $**12835** | $9382 | $15165 |\n| **Discontinued operations** |  |  |  |\n| Income (loss) from discontinued operations | $**(2)** | $(1) | $(272) |\n| Benefit for income taxes | **\u2014** |  | (41) |\n| **Income (loss) from discontinued operations, net of taxes** | $**(2)** | $(1) | $(231) |\n| **Net income before attribution to noncontrolling interests** | $**12833** | $9381 | $14934 |\n| Noncontrolling interests | **151** | 153 | 89 |\n| **Citigroup's net income** | $**12682** | $9228 | $14845 |\n| **Basic earnings per share**<sup>(2)</sup> |  |  |  |\n| Income from continuing operations | $**6.03** | $4.07 | $7.16 |\n| Income from discontinued operations, net of taxes | **\u2014** |  | (0.12) |\n| **Net income** | $**6.03** | $4.07 | $7.04 |\n| **Weighted-average common shares outstanding** *(in millions)* | **1901.4** | 1930.1 | 1946.7 |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Diluted earnings per share**<sup>(2)</sup> | | | |\n| Income from continuing operations | $**5.95** | $4.04 | $7.11 |\n| Income (loss) from discontinued operations, net of taxes | **\u2014** |  | (0.12) |\n| **Net income** | $**5.94** | $4.04 | $7.00 |\n| **Adjusted weighted-average diluted common shares outstanding** <br>*(in millions)* | **1940.1** | 1955.8 | 1964.3 |\n\n---\n\n\n\n(1)&nbsp;&nbsp;&nbsp;&nbsp;In accordance with ASC 326, which requires the provision for credit losses on AFS debt securities to be included in revenue. The Total provisions for credit losses and for benefits and claims excludes the provision for credit losses on AFS debt securities, which is disclosed separately above.\n\n(2)&nbsp;&nbsp;&nbsp;&nbsp;Due to rounding, earnings per share on continuing operations and discontinued operations may not sum to earnings per share on net income.\n\nThe Notes to the Consolidated Financial Statements are an integral part of these Consolidated Financial Statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME** | *Citigroup Inc. and Subsidiaries* |\n\n---\n\n\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Years ended December 31,** | **Years ended December 31,** | **Years ended December 31,** |\n| *In millions of dollars* | **2024** | 2023 | 2022 |\n| **Citigroup's net income** | $**12682** | $9228 | $14845 |\n| **Net changes, net of taxes in Citigroup's other comprehensive income (loss)** |  |  |  |\n| Unrealized gains and losses on AFS debt securities | $**907** | $2254 | $(5384) |\n| Debt valuation adjustment (DVA) | **(412)** | (1551) | 2029 |\n| Cash flow hedges | **1186** | 1116 | (2623) |\n| Benefit plans liability adjustment | **423** | (295) | 97 |\n| Currency translation adjustments (CTA), net of hedges | **(5162)** | 752 | (2471) |\n| Excluded component of fair value hedges | **(12)** | (48) | 55 |\n| Long-duration insurance contracts | **18** | 7 |  |\n| **Citigroup's total other comprehensive income (loss)** | $**(3052)** | $2235 | $(8297) |\n| **Citigroup's total comprehensive income** | $**9630** | $11463 | $6548 |\n| Add: Other comprehensive income (loss) attributable to noncontrolling interests | $**(61)** | $84 | $(58) |\n| Add: Net income (loss) attributable to noncontrolling interests | **151** | 153 | 89 |\n| **Total comprehensive income** | $**9720** | $11700 | $6579 |\n\n---\n\n\n\nThe Notes to the Consolidated Financial Statements are an integral part of these Consolidated Financial Statements.\n\n------\n\n---\n\n\n\n| | |\n|:---|:---|\n| **CONSOLIDATED BALANCE SHEET** | *Citigroup Inc. and Subsidiaries* |\n\n---\n\n\n\n---",
+              "token_count": 1825,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000831001-25-000067",
+              "cik": "0000831001",
+              "company": "CITIGROUP INC",
+              "form_type": "10-K",
+              "filed_date": "20250221",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 89702,
+              "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+              "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "d8a6605b-e064-59b1-b07d-f297db5c0a8e",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 3,
+              "char_start": 14590,
+              "char_end": 24531,
+              "text": "Additional information about Citigroup is available on Citi's website at www.citigroup.com. Citigroup's annual reports on Form 10-K, quarterly reports on Form 10-Q, current reports on Form 8-K and proxy statements, as well as other filings with the U.S. Securities and Exchange Commission (SEC) are available free of charge through Citi's website by clicking on \"SEC Filings\" under the \"Investors\" tab. The SEC's website also contains these filings and other information regarding Citi at www.sec.gov.\n\nFor a discussion of 2023 versus 2022 results of operations of *Services*, *Markets*, *Banking*, *Wealth*, *U.S. Personal Banking* and *All Other*, see each respective business's results of operations in Citigroup's Annual Report on Form 10-K for the year ended December 31, 2023 (Citigroup's 2023 Annual Report on Form 10-K).\n\nCertain reclassifications have been made to the prior periods' financial statements and disclosures to conform to the current period's presentation, including certain reclassifications to align with Citi's organizational simplification and strategy, for all periods presented.\n\n\n\n**Please see \"Risk Factors\" below for a discussion of material risks and uncertainties that could impact Citigroup's businesses, results of operations and financial condition.**\n\n\n\n**Non-GAAP Financial Measures** \n\nCiti prepares its financial statements in accordance with U.S. generally accepted accounting principles (GAAP) and also presents certain non-GAAP financial measures (non-GAAP measures) that exclude certain items or otherwise include components that differ from the most directly comparable measures calculated in accordance with U.S. GAAP. These non-GAAP financial measures are not intended to be a substitute for GAAP financial measures and may not be defined or calculated the same way as non-GAAP measures with similar names used by other companies.\n\nCiti's non-GAAP financial measures in this Form 10-K include:\n\n\u2022 Revenues excluding the Argentina currency devaluation and/or divestiture-related impacts\n\n\u2022 Expenses excluding the Federal Deposit Insurance Corporation (FDIC) special assessment and/or divestiture-related impacts\n\n\u2022 *Services* and Treasury and Trade Solutions (TTS) revenues and/or non-interest revenues excluding the impact of the Argentina currency devaluation\n\n\u2022 *Banking* and Corporate Lending revenues excluding gain (loss) on loan hedges\n\n\u2022 *All Other* (managed basis), which excludes divestiture-related impacts\n\n\u2022 Tangible common equity (TCE), return on tangible common equity (RoTCE) and tangible book value per share (TBVPS)\n\n\u2022 Non-*Markets* net interest income\n\nFor more information on the Argentina currency devaluation and/or the FDIC special assessment, see \"Executive Summary\" below. Citi believes its results excluding the Argentina currency devaluation and the FDIC special assessment are useful to investors, industry analysts and others in evaluating Citi's results of operations and comparing its operational performance between periods, by providing a meaningful depiction of the underlying fundamentals of period-to-period operating results, particularly given the outsized impacts of these items, as well as additional comparability to peer companies.\n\nCiti's results excluding divestiture-related impacts represent as reported, or GAAP, financial results adjusted for items that are incurred and recognized, which are wholly and necessarily a consequence of actions taken to sell (including through a public offering), dispose of or wind down business activities associated with Citi's previously announced exit markets within *All Other*\u2014Legacy Franchises. Citi's Chief Executive Officer, its chief operating decision maker, regularly reviews financial information for *All Other* on a managed basis that excludes these divestiture-related impacts. For more information on Citi's results excluding divestiture- related impacts, see \"Executive Summary\" and \"*All Other*\u2014 Divestiture-Related Impacts (Reconciling Items)\" below.\n\nCiti believes its results excluding divestiture-related impacts are useful to investors, industry analysts and others in evaluating Citi's results of operations and comparing its operational performance between periods, by providing a meaningful depiction of the underlying fundamentals of\n\n------\n\nperiod-to-period operating results, particularly given the outsized impacts of the divestiture-related impacts; improved visibility into management decisions and their impacts on operational performance; and additional comparability to peer companies.\n\nFor more information on *Services* and TTS revenues and/or non-interest revenues excluding the impact of the Argentina currency devaluation, see \"Executive Summary\" and \"*Services*\" below.\n\nFor more information on *Banking* and Corporate Lending revenues excluding gain (loss) on loan hedges, see \"Executive Summary\" and \"Banking\" below. Citi believes that *Banking* and Corporate Lending revenues excluding gain (loss) on loan hedges are useful to investors, industry analysts and others because the gain (loss) on loan hedges are independent of *Banking* and Corporate Lending's core operations and not indicative of the performance of the business operations.\n\nFor more information on TCE, RoTCE and TBVPS, see \"Capital Resources\u2014Tangible Common Equity, Book Value Per Share, Tangible Book Value Per Share and Return on Equity\" below. TCE, RoTCE and TBVPS are used by management, as well as investors, industry analysts and others, in assessing Citi's use of equity. Citi believes TCE and RoTCE are useful to investors, industry analysts and others by providing alternative measures of capital strength and performance. Citi believes TBVPS provides additional useful information about the level of tangible assets in relation to Citi's outstanding shares of common stock.\n\nFor more information on non-*Markets* net interest income, see \"Market Risk\u2014Non-*Markets* Net Interest Income\" below. Management uses non-*Markets* net interest income to assess the performance of Citi's lending, investing (including asset-liability management) and deposit-raising activities, apart from any volatility associated with *Markets* activities. Citi believes the use of this non-GAAP measure provides investors, industry analysts and others with an alternative measure to analyze the net interest income trends of Citi's lending, investing and deposit-raising activities, by providing a meaningful depiction of the underlying fundamentals of period-to-period operating results of those activities; improved visibility into management decisions and their impacts on operational performance; and additional comparability to peer companies.\n\n------\n\nCitigroup is managed pursuant to five operating segments: *Services*, *Markets*, *Banking*, *Wealth* and *U.S. Personal Banking.* Activities not assigned to the operating segments are included in *All Other*. For additional information, see the results of operations for each of the operating segments and *All Other* within \"Management's Discussion and Analysis of Financial Condition and Results of Operations\" below.\n\n![Updated financial reporting structure - FOR 10-K 2024.jpg](c-20241231_g1.jpg)\n\nNote: Mexico is included in LATAM within International.\n\n(1)&nbsp;&nbsp;&nbsp;&nbsp;Within International, Citi is organized into six clusters: United Kingdom; Japan, Asia North and Australia (JANA); Latin America (LATAM); Asia South; Europe; and Middle East and Africa (MEA). Although the chief operating decision maker (CODM) does not manage Citi's reportable operating segments by cluster, Citi provides additional selected financial information (revenue and certain corporate credit metrics) below for the six clusters within International.\n\n------\n\n**MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION** \n\n**AND RESULTS OF OPERATIONS**\n\n**EXECUTIVE SUMMARY**\n\nAs described further throughout this Executive Summary, Citi demonstrated improved overall business performance and continued progress on its strategic priorities in 2024:\n\n\u2022 Citi and its five reportable operating segments each achieved positive operating leverage for 2024. Citi's positive operating leverage in 2024 was driven by revenue growth of 3%, with record revenues in *Services*, *Wealth* and *USPB*, and disciplined expense management (down 4%), despite higher volume- and transformation-related expenses and other investments in risk and control initiatives. Excluding the impact of the FDIC special assessment in both 2024 and the prior year, expenses decreased 2%.\n\n\u2022 Citi continued to advance its transformation, including its efforts to improve risk management, modernize technology and infrastructure and improve resiliency across the organization. Simultaneously, as a result of the July 2024 Civil Money Penalty Consent Orders and Consent Order Amendment, Citi recognized the need to accelerate progress in certain areas, particularly with regard to data quality management related to governance and regulatory reporting. (See \"Citi's Multiyear Transformation\" below).\n\n\u2022 Citi completed its organizational simplification announced in September 2023, resulting in a simpler management structure that aligns to and facilitates Citi's strategy, while improving accountability and decision-making and advancing the execution of Citi's transformation.\n\n\u2022 As part of its strategic refresh, Citi continued to make progress on its remaining divestitures, including exits of its consumer banking operations in Korea and Poland and its overall operations in Russia. Additionally, Citi completed the separation of its *Services*, *Markets*, *Banking* and *Wealth* businesses in Mexico from its consumer banking and small business and middle-market banking operations in Mexico (Mexico Consumer/SBMM) in December 2024, an important milestone toward the planned initial public offering (IPO) of Citi's Mexico Consumer/SBMM business. (See \"*All Other* (Managed Basis)\" below.)",
+              "token_count": 1973,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 15.955448118000277
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000831001-25-000067",
+        "cik": "0000831001",
+        "company": "CITIGROUP INC",
+        "form_type": "10-K",
+        "filed_date": "20250221",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 89702,
+        "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+        "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "f5014461-55d2-564c-a953-797c742d26a0",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 4,
+        "char_start": 24533,
+        "char_end": 33793,
+        "text": "\u2022 Citi returned $6.7 billion to common shareholders in the form of dividends ($4.2 billion) and share repurchases ($2.5 billion) in 2024. As previously disclosed, on January 13, 2025, Citigroup's Board of Directors authorized a new, multiyear $20 billion common stock repurchase program, with planned repurchases of $1.5 billion during the first quarter of 2025, subject to market conditions and other factors. After the first quarter of 2025, Citi will continue to assess the level of common share repurchases on a quarter-by-quarter basis given uncertainty regarding regulatory capital requirements, among other factors.\n\n**2024 Results Summary**\n\n***Citigroup***\n\nCitigroup reported net income of $12.7 billion, or $5.94 per share. This compared to net income of $9.2 billion, or $4.04 per share in the prior year, which included larger impacts from certain notable items, including an Argentina currency devaluation, an FDIC special assessment, restructuring charges related to Citi's organizational simplification and an ACL build for transfer risk (see \"Cost of Credit\" below).\n\nNet income increased 37% versus the prior year, driven by the higher revenues, lower expenses and a lower effective tax rate, partially offset by higher cost of credit. Citigroup's effective tax rate was 25% in 2024 versus 27% in the prior year, largely driven by the geographic mix of earnings (see Note 10).\n\nCitigroup revenues of $81.1 billion in 2024 increased 3% on a reported basis. This increase in revenues largely reflected an increase in non-interest revenue (up 15%), including the benefit of a smaller impact from the Argentina currency devaluation ($(253) million in 2024 versus approximately $(1.9) billion in 2023) as well as strength in underlying fee drivers in each of Citi's reportable operating segments. The increase in non-interest revenue was partially offset by a decline in net interest income (down 1%). The decrease in net interest income primarily reflected lower revenues in *All Other* (managed basis), partially offset by higher interest-earning balance growth in *U.S. Personal Banking (USPB)*. Excluding divestiture-related impacts, primarily related to gains on the sales of Citi's India and Taiwan consumer banking businesses in the prior year, as well as the Argentina currency devaluation, revenues of $81.4 billion in 2024 also increased 3% versus the prior year.\n\nCitigroup's end-of-period loans were $694 billion, up 1% versus the prior year, largely driven by loan growth in *USPB*.\n\nCitigroup's end-of-period deposits were approximately $1.3 trillion, down 2% versus the prior year, largely due to a decrease in *All Other* (managed basis). For additional information about Citi's deposits by business, including drivers and deposit trends, see each respective business's results of operations and \"Liquidity Risk\u2014 Deposits\" below.\n\n***Expenses***\n\nCitigroup's operating expenses of $54.0 billion decreased 4% from the prior year. Excluding the FDIC special assessment ($203 million in 2024 versus approximately $1.7 billion in the prior year), expenses of $53.8 billion decreased 2%, driven by savings related to Citi's organizational simplification and stranded cost reduction, as well as the lower restructuring charges ($259 million in 2024 versus $781 million in the prior year) and repositioning costs. The decrease was partially offset by higher volume-related expenses, investments in Citi's transformation and other risk and controls initiatives, as well as the costs of the July 2024 Civil Money Penalty Consent Orders entered into with the Federal Reserve Board (FRB) and the Office of the Comptroller of the Currency (OCC).\n\n------\n\nExcluding the FDIC special assessment and divestiture-related impacts, expenses of $53.5 billion also decreased 2%.\n\n***Cost of Credit***\n\nCiti's total provisions for credit losses and for benefits and claims was $10.1 billion, compared to $9.2 billion in the prior year. The increase was driven by higher net credit losses in Branded Cards and Retail Services in *USPB*, reflecting the continued maturation of multiple cards loan vintages originated in recent years. The maturation was delayed by unprecedented levels of government stimulus during the pandemic. In addition, the increase was due to macroeconomic pressures related to the elevated inflationary and interest rate environment impacting both card portfolios, with lower FICO band customers primarily driving the increase. The higher net credit losses were partially offset by a lower net build in the allowance for credit losses (ACL), primarily due to a smaller build related to transfer risk associated with exposures outside the U.S. (approximately $0.2 billion in 2024 versus $1.9 billion in 2023), driven by safety and soundness considerations under U.S. banking law. For additional information on Citi's ACL, see \"Significant Accounting Policies and Significant Estimates\u2014Citi's Allowance for Credit Losses (ACL)\" below.\n\nNet credit losses of $9.0 billion increased 40% from the prior year. Consumer net credit losses of $8.6 billion increased 39%, largely reflecting the continued rise in net credit loss rates in Branded Cards and Retail Services. Corporate net credit losses increased to $397 million from $250 million in the prior year.\n\nSubject to evolving macroeconomic conditions, Citi expects to continue to experience an elevated net credit loss rate for full-year 2025 in line with 2024, with higher loss rates in the first half of the year in Branded Cards and Retail Services consistent with seasonal patterns. Citi also expects that its future ACL builds will be driven by both the macroeconomic environment and business volumes, among other factors. For additional information on Citi's consumer and corporate credit costs, see each respective business's results of operations and \"Credit Risk\" below.\n\nIn January 2025, a series of wildfires affected the Los Angeles metropolitan area and surrounding regions, causing loss of life and the destruction of more than 16,000 structures. While Citi continues to assess the wildfires' impact on its customers and clients in the affected areas, Citi does not currently expect the wildfires to have a direct material impact to its consumer or corporate credit portfolios or its overall results of operations.\n\n***Capital***\n\nCitigroup's CET1 Capital ratio was 13.6% as of December 31, 2024, compared to 13.4% as of December 31, 2023, based on the Basel III Standardized Approach for determining risk weighted assets (RWA). The increase was primarily driven by net income and a decrease in RWA, partially offset by the payment of common and preferred dividends, as well as common share repurchases and net adverse movements in *Accumulated other comprehensive income (AOCI)*.\n\nIn 2024, Citi repurchased $2.5 billion of common shares and paid $4.2 billion of common dividends (see \"Unregistered\n\nSales of Equity Securities, Repurchases of Equity Securities and Dividends\" below).\n\nFor additional information on capital-related risks, trends and uncertainties, see \"Capital Resources\u2014Regulatory Capital Standards and Developments\" and \"Risk Factors\u2014Strategic Risks,\" \"\u2014Operational Risks\" and \"\u2014Compliance Risks\" below.\n\nCitigroup's Supplementary Leverage ratio as of\n\nDecember 31, 2024 was 5.8%, largely unchanged from December 31, 2023, as higher Tier 1 Capital was offset by an increase in Total Leverage Exposure. For additional information on Citi's capital ratios and related components, see \"Capital Resources\" below.\n\n***Services***\n\n*Services* net income of $6.5 billion increased 40%, as higher revenue and lower cost of credit were partially offset by higher expenses.\n\n*Services* revenues of $19.6 billion increased 9%, largely driven by a 28% increase in non-interest revenue and higher net interest income (up 1%). Excluding the impact of the Argentina currency devaluation ($(178) million in 2024 versus approximately $(1.2) billion in 2023), *Services* revenues increased 3% and its non-interest revenue increased 5%. The increase in net interest income reflected the benefit of higher deposit and loan volumes, largely offset by a decline in interest rates in Argentina.\n\nTTS revenues of $14.5 billion increased 6% on a reported basis, driven by a 37% increase in non-interest revenue, partially offset by a 1% decrease in net interest income. Excluding the impact of the Argentina currency devaluation (approximately $(164) million in 2024 and approximately $(1.0) billion in 2023), non-interest revenue increased 3%, driven by an increase in cross-border transaction value, as well as an increase in U.S. dollar clearing and commercial card spend volume. The decrease in TTS net interest income was primarily driven by the decline in interest rates in Argentina.\n\nSecurities Services revenues of $5.1 billion increased 17%, driven by an 18% increase in non-interest revenue and a 15% increase in net interest income. The growth in non-interest revenue was primarily due to increased fees from higher AUC/AUA balances and continued elevated levels of corporate activity in Issuer Services, as well as the smaller impact from the currency devaluation in Argentina. The increase in net interest income was primarily due to higher spreads and volumes.",
+        "token_count": 1981,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000831001-25-000067",
+        "cik": "0000831001",
+        "company": "CITIGROUP INC",
+        "form_type": "10-K",
+        "filed_date": "20250221",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 89702,
+        "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+        "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "32b983ac-1834-54c2-860a-48db30f3a514",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 191,
+        "char_start": 1348937,
+        "char_end": 1354788,
+        "text": "| | | | | |\n|:---|:---|:---|:---|:---|\n| | **December 31, 2024** | **December 31, 2024** | December 31, 2023 | December 31, 2023 |\n| *In millions of dollars* | **Citigroup parent company** | **CGMHI** | Citigroup parent company | CGMHI |\n| Cash and deposits with banks | $**4014** | $**19464** | $3011 | $23756 |\n| Securities borrowed and purchased under resale agreements | **\u2014** | **215995** |  | 283174 |\n| Trading account assets | **203** | **294396** | 461 | 273379 |\n| Advances to subsidiaries | **150790** | **\u2014** | 150845 |  |\n| Investments in subsidiary bank holding company | **179253** | **\u2014** | 172125 |  |\n| Investments in non-bank subsidiaries | **46549** | **\u2014** | 46870 |  |\n| Other assets | **14642** | **158080** | 14202 | 167609 |\n| **Total assets** | $**395451** | $**687935** | $387514 | $747918 |\n| Securities loaned and sold under agreements to repurchase | $**\u2014** | $**268178** | $\u2014 | $309862 |\n| Trading account liabilities | **69** | **89146** | 300 | 111233 |\n| Short-term borrowings | **\u2014** | **29410** |  | 20481 |\n| Long-term debt | **164024** | **184516** | 162309 | 184083 |\n| Advances from subsidiaries | **19974** | **\u2014** | 16724 |  |\n| Other liabilities | **2786** | **80486** | 2728 | 85079 |\n| Stockholders' equity | **208598** | **36199** | 205453 | 37180 |\n| **Total liabilities and equity** | $**395451** | $**687935** | $387514 | $747918 |\n\n---\n\n\n\n------\n\n**32. CONDENSED PARENT COMPANY FINANCIAL STATEMENTS**\n\nThe following are the Condensed Statements of Income and Comprehensive Income for the years ended December 31, 2024, 2023 and 2022, Condensed Balance Sheet as of December 31, 2024 and 2023 and Condensed Statement of Cash Flows for the years ended December 31, 2024, 2023 and 2022 for Citigroup Inc., the parent holding company.\n\n**Condensed Statements of Income and Comprehensive Income&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year ended December 31,** | **Year ended December 31,** | **Year ended December 31,** |\n| *In millions of dollars* | **2024** | 2023 | 2022 |\n| **Revenues** |  |  |  |\n| Dividends from subsidiaries | $**5549** | $16811 | $8992 |\n| Interest revenue\u2014intercompany | $**7523** | $6955 | $4628 |\n| Interest expense | **6680** | 6339 | 5250 |\n| Interest expense\u2014intercompany | **1518** | 1460 | 715 |\n| **Net interest income** | $**(675)** | $(844) | $(1337) |\n| Commissions and fees | $**\u2014** | $\u2014 | $\u2014 |\n| Commissions and fees\u2014intercompany | **(57)** | (31) | (1) |\n| Principal transactions | **691** | (928) | 5147 |\n| Principal transactions\u2014intercompany | **(2590)** | (771) | (5686) |\n| Other revenue | **147** | (23) | 210 |\n| Other revenue\u2014intercompany | **(175)** | (135) | (220) |\n| **Total non-interest revenues** | $**(1984)** | $(1888) | $(550) |\n| **Total revenues, net of interest expense** | $**2890** | $14079 | $7105 |\n| **Operating expenses** |  |  |  |\n| Compensation and benefits | $**14** | $9 | $9 |\n| Compensation and benefits\u2014intercompany | **23** | 18 | 12 |\n| Other operating | **207** | 160 | 85 |\n| Other operating\u2014intercompany | **30** | 15 | 15 |\n| **Total operating expenses** | $**274** | $202 | $121 |\n| Equity in undistributed income of subsidiaries | $**9300** | $(5572) | $6173 |\n| **Income from continuing operations before income taxes** | $**11916** | $8305 | $13157 |\n| Provision (benefit) for income taxes | **(766)** | (923) | (1688) |\n| **Net income** | $**12682** | $9228 | $14845 |\n| **Comprehensive income** |  |  |  |\n| Add: Other comprehensive income (loss) | **(3052)** | 2235 | (8297) |\n| **Total Citigroup comprehensive income** | $**9630** | $11463 | $6548 |\n\n---\n\n\n\n------\n\n**Condensed Balance Sheet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **December 31,** | **December 31,** |\n| *In millions of dollars* | **2024** | 2023 |\n| **Assets** |  |  |\n| Cash and due from banks | $**\u2014** | $\u2014 |\n| Cash and due from banks\u2014intercompany | **14** | 11 |\n| Deposits with banks\u2014intercompany | **4000** | 3000 |\n| Trading account assets | **(164)** | 113 |\n| Trading account assets\u2014intercompany | **367** | 348 |\n| Investments, net of allowance | **1** | 1 |\n| Advances to subsidiaries | $**150790** | $150845 |\n| Investments in subsidiary bank holding company | **179253** | 172125 |\n| Investments in non-bank subsidiaries | **46549** | 46870 |\n| Other assets, net of allowance<sup>(1)</sup> | **10255** | 10031 |\n| Other assets\u2014intercompany | **4386** | 4170 |\n| **Total assets** | $**395451** | $387514 |\n| **Liabilities and equity** |  |  |\n| Trading account liabilities | $**(159)** | $34 |\n| Trading account liabilities\u2014intercompany | **228** | 266 |\n| Long-term debt | **164024** | 162309 |\n| Advances from subsidiary bank holding company | **10948** | 8677 |\n| Advances from non-bank subsidiaries | **9026** | 8047 |\n| Other liabilities | **2719** | 2560 |\n| Other liabilities\u2014intercompany | **67** | 168 |\n| Stockholders' equity | **208598** | 205453 |\n| **Total liabilities and equity** | $**395451** | $387514 |\n\n---\n\n\n\n(1)Citigroup parent company at December 31, 2024 and 2023 included $75.4 billion and $56.9 billion, respectively, of placements to Citibank and its branches, of which $71.6 billion and $33.8 billion, respectively, had a remaining term of less than 30 days.\n\n------\n\n**Condensed Statement of Cash Flows&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** *Parent Company Only*\n\n---",
+        "token_count": 1852,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000831001-25-000067",
+        "cik": "0000831001",
+        "company": "CITIGROUP INC",
+        "form_type": "10-K",
+        "filed_date": "20250221",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 89702,
+        "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+        "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "b649eeb5-1b87-5936-99e0-2e0278d6835c",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 106,
+        "char_start": 790005,
+        "char_end": 796696,
+        "text": "| | | | |\n|:---|:---|:---|:---|\n| The following table presents a reconciliation of total Citigroup income from continuing operations as reported: | The following table presents a reconciliation of total Citigroup income from continuing operations as reported: | The following table presents a reconciliation of total Citigroup income from continuing operations as reported: | The following table presents a reconciliation of total Citigroup income from continuing operations as reported: |\n|  | **2024**<sup>(5)</sup> | 2023<sup>(6)</sup> | 2022<sup>(7)</sup> |\n| Total segments and *All Other*\u2014Income from continuing operations<sup>(4)</sup> | $**13042** | $8723 | $15349 |\n| **<u>Divestiture-related impact on:</u>** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Total revenues, net of interest expense | **26** | 1346 | 854 |\n| &nbsp;&nbsp;&nbsp;Total operating expenses | **318** | 372 | 696 |\n| &nbsp;&nbsp;&nbsp;Provision (release) for credit losses | **7** | (67) | 76 |\n| &nbsp;&nbsp;&nbsp;Provision (benefits) for income taxes | **(92)** | 382 | 266 |\n| **Income from continuing operations** | $**12835** | $9382 | $15165 |\n\n---\n\n\n\n(1)&nbsp;&nbsp;&nbsp;&nbsp;See \"Performance by Geographic Area\" below.\n\n(2)&nbsp;&nbsp;&nbsp;&nbsp;Excludes allocations of *Compensation and benefits* expense related to services provided by Corporate/Other within *All Other*, which are allocated from *All Other* to each respective reportable segment, as applicable, through the non-compensation expense line.\n\n(3)&nbsp;&nbsp;&nbsp;&nbsp;Non-compensation expense for each reportable segment includes allocated compensation and benefits-related costs from Corporate/Other within *All Other* to the respective reportable business segments, and expenses related to *Technology/communication*, *Transactional and tax charges*, *Premises and equipment*, *Professional services*, *Advertising and marketing* and *Other operating* (all of which include certain overhead expenses).\n\n(4)&nbsp;&nbsp;&nbsp;&nbsp;Segment results are presented on a managed basis that excludes divestiture-related impacts related to (i) Citi's divestitures of its Asia consumer banking businesses and (ii) the planned IPO of Mexico Consumer/SBMM within *All Other*\u2014Legacy Franchises. Adjustments are included in Legacy Franchises within *All Other* and are reflected in the reconciliations above to arrive at Citi's reported results in the Consolidated Statement of Income.\n\n(5)&nbsp;&nbsp;&nbsp;&nbsp;2024 includes $318 million (approximately $220 million after-tax) in operating expenses primarily related to separation costs in Mexico and severance costs in the Asia exit markets.\n\n(6)&nbsp;&nbsp;&nbsp;&nbsp;2023 includes (i) an approximate $1.059 billion gain on sale recorded in revenue (approximately $727 million after-tax) related to the India consumer banking business sale; (ii) an approximate $403 million gain on sale recorded in revenue (approximately $284 million after-tax) related to the Taiwan consumer banking business sale; and (iii) approximately $372 million (approximately $263 million after-tax) in operating expenses primarily related to separation costs in Mexico and severance costs in the Asia exit markets.\n\n(7)&nbsp;&nbsp;&nbsp;&nbsp;2022 includes (i) an approximate $535 million (approximately $489 million after-tax) goodwill write-down due to resegmentation and the timing of Asia consumer banking business divestitures, (ii) an approximate $616 million gain on sale recorded in revenue (approximately $290 million after-tax) related to the Philippines consumer banking business sale, (iii) an approximate $209 million gain on sale recorded in revenue (approximately $115 million after-tax) related to the Thailand consumer banking business sale and (iv) approximately $161 million (approximately $108 million after-tax) in operating expenses primarily related to separation costs in Mexico and severance costs in the Asia exit markets.\n\n------\n\n**Performance by Geographic Area**\n\nCiti's operations are highly integrated, and estimates and subjective assumptions have been made to apportion revenue between North America and international operations. These estimates and assumptions are consistent with the allocations used for the Company's segment reporting.\n\nThe Company defines international activities for purposes of this footnote presentation as business transactions that\n\ninvolve clients that reside outside of North America, and the information presented below is based on managed geography (the booking location that manages the client relationship), which is predominantly the domicile of the client. However, many of the Company's North America operations serve international businesses. The managed geography can be periodically reorganized (and thus the balances in North America and Corporate/Other).\n\nThe following tables present revenues net of interest expense and identifiable assets between North America and international areas:\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| *In millions of dollars* | **Revenues, net of interest expense** | **Revenues, net of interest expense** | **Revenues, net of interest expense** |\n| *In millions of dollars* | **2024** | 2023 | 2022 |\n| North America<sup>(1)</sup> | $**40079** | $36707 | $34917 |\n| International<sup>(2)(3)</sup> | **40392** | 39640 | 38911 |\n| Corporate/Other<sup>(4)</sup> | **668** | 2115 | 1510 |\n| **Total Citi** | $**81139** | $78462 | $75338 |\n| *In millions of dollars at December 31,* | **Identifiable assets**<sup>(5)</sup> | **Identifiable assets**<sup>(5)</sup> |  |\n| *In millions of dollars at December 31,* | **2024** | 2023 |  |\n| North America<sup>(1)</sup> | $**1326443** | $1350212 |  |\n| International | **899972** | 940416 |  |\n| Corporate/Other | **126530** | 121206 |  |\n| **Total Citi** | $**2352945** | $2411834 |  |\n\n---\n\n\n\n(1)&nbsp;&nbsp;&nbsp;&nbsp;Primarily reflects the U.S.\n\n(2)&nbsp;&nbsp;&nbsp;&nbsp;International represents the summation of international revenues in *Services*, *Markets*, *Banking*, *Wealth* and *All Other*\u2014Legacy Franchises, primarily Asia Consumer and Mexico Consumer/SBMM.\n\n(3)&nbsp;&nbsp;&nbsp;&nbsp;Total revenues for the U.K. were approximately $6.7 billion, $6.9 billion and $7.9 billion for 2024, 2023 and 2022, respectively.\n\n(4)&nbsp;&nbsp;&nbsp;&nbsp;Corporate/Other revenues, net of interest expense largely reflects U.S. activities, as well as intersegment eliminations.\n\n(5)&nbsp;&nbsp;&nbsp;&nbsp;The Company's long-lived assets (*Premises and equipment*) for the periods presented are not considered significant in relation to its total assets.\n\n------\n\n**4. INTEREST INCOME AND EXPENSE**\n\n*Interest income* and *Interest expense* consisted of the following:\n\n---",
+        "token_count": 1597,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000831001-25-000067",
+        "cik": "0000831001",
+        "company": "CITIGROUP INC",
+        "form_type": "10-K",
+        "filed_date": "20250221",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 89702,
+        "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+        "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "efe0d2ed-b1ce-51fa-8514-80597e1dab5c",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 88,
+        "char_start": 646307,
+        "char_end": 652216,
+        "text": "| | | | |\n|:---|:---|:---|:---|\n| | **Years ended December 31,** | **Years ended December 31,** | **Years ended December 31,** |\n| *In millions of dollars, except per share amounts* | **2024** | 2023 | 2022 |\n| **Revenues** |  |  |  |\n| Interest income | $**143713** | $133258 | $74408 |\n| Interest expense | **89618** | 78358 | 25740 |\n| **Net interest income** | $**54095** | $54900 | $48668 |\n| Commissions and fees | $**10653** | $8905 | $9175 |\n| Principal transactions | **11653** | 10948 | 14159 |\n| Administration and other fiduciary fees | **4134** | 3781 | 3784 |\n| Realized gains on sales of investments, net | **328** | 188 | 67 |\n| Impairment losses on investments: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Impairment losses on investments | **(431)** | (323) | (499) |\n| &nbsp;&nbsp;&nbsp;&nbsp;(Provision) releases for credit losses on AFS debt securities<sup>(1)</sup> | **1** | (4) | 5 |\n| Net impairment losses recognized in earnings | $**(430)** | $(327) | $(494) |\n| Other revenue | $**706** | $67 | $(21) |\n| **Total non-interest revenues** | $**27044** | $23562 | $26670 |\n| **Total revenues, net of interest expense** | $**81139** | $78462 | $75338 |\n| **Provisions for credit losses and for benefits and claims** |  |  |  |\n| Provision for credit losses on loans | $**9726** | $7786 | $4745 |\n| Provision (release) for credit losses on HTM debt securities | **50** | (24) | 33 |\n| Provision for credit losses on other assets | **362** | 1762 | 76 |\n| Policyholder benefits and claims | **90** | 87 | 94 |\n| Provision (release) for credit losses on unfunded lending commitments | **(119)** | (425) | 291 |\n| **Total provisions for credit losses and for benefits and claims**<sup>(1)</sup> | $**10109** | $9186 | $5239 |\n| **Operating expenses** |  |  |  |\n| Compensation and benefits | $**28542** | $29232 | $26655 |\n| Technology/communication | **9035** | 9106 | 8587 |\n| Transactional and tax charges | **3574** | 3218 | 2848 |\n| Premises and equipment | **2438** | 2508 | 2320 |\n| Professional services | **2016** | 2078 | 2481 |\n| Advertising and marketing | **1113** | 1393 | 1556 |\n| Restructuring | **259** | 781 |  |\n| Other operating | **7007** | 8050 | 6845 |\n| **Total operating expenses** | $**53984** | $56366 | $51292 |\n| **Income from continuing operations before income taxes** | $**17046** | $12910 | $18807 |\n| Provision for income taxes | **4211** | 3528 | 3642 |\n| **Income from continuing operations** | $**12835** | $9382 | $15165 |\n| **Discontinued operations** |  |  |  |\n| Income (loss) from discontinued operations | $**(2)** | $(1) | $(272) |\n| Benefit for income taxes | **\u2014** |  | (41) |\n| **Income (loss) from discontinued operations, net of taxes** | $**(2)** | $(1) | $(231) |\n| **Net income before attribution to noncontrolling interests** | $**12833** | $9381 | $14934 |\n| Noncontrolling interests | **151** | 153 | 89 |\n| **Citigroup's net income** | $**12682** | $9228 | $14845 |\n| **Basic earnings per share**<sup>(2)</sup> |  |  |  |\n| Income from continuing operations | $**6.03** | $4.07 | $7.16 |\n| Income from discontinued operations, net of taxes | **\u2014** |  | (0.12) |\n| **Net income** | $**6.03** | $4.07 | $7.04 |\n| **Weighted-average common shares outstanding** *(in millions)* | **1901.4** | 1930.1 | 1946.7 |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Diluted earnings per share**<sup>(2)</sup> | | | |\n| Income from continuing operations | $**5.95** | $4.04 | $7.11 |\n| Income (loss) from discontinued operations, net of taxes | **\u2014** |  | (0.12) |\n| **Net income** | $**5.94** | $4.04 | $7.00 |\n| **Adjusted weighted-average diluted common shares outstanding** <br>*(in millions)* | **1940.1** | 1955.8 | 1964.3 |\n\n---\n\n\n\n(1)&nbsp;&nbsp;&nbsp;&nbsp;In accordance with ASC 326, which requires the provision for credit losses on AFS debt securities to be included in revenue. The Total provisions for credit losses and for benefits and claims excludes the provision for credit losses on AFS debt securities, which is disclosed separately above.\n\n(2)&nbsp;&nbsp;&nbsp;&nbsp;Due to rounding, earnings per share on continuing operations and discontinued operations may not sum to earnings per share on net income.\n\nThe Notes to the Consolidated Financial Statements are an integral part of these Consolidated Financial Statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME** | *Citigroup Inc. and Subsidiaries* |\n\n---\n\n\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Years ended December 31,** | **Years ended December 31,** | **Years ended December 31,** |\n| *In millions of dollars* | **2024** | 2023 | 2022 |\n| **Citigroup's net income** | $**12682** | $9228 | $14845 |\n| **Net changes, net of taxes in Citigroup's other comprehensive income (loss)** |  |  |  |\n| Unrealized gains and losses on AFS debt securities | $**907** | $2254 | $(5384) |\n| Debt valuation adjustment (DVA) | **(412)** | (1551) | 2029 |\n| Cash flow hedges | **1186** | 1116 | (2623) |\n| Benefit plans liability adjustment | **423** | (295) | 97 |\n| Currency translation adjustments (CTA), net of hedges | **(5162)** | 752 | (2471) |\n| Excluded component of fair value hedges | **(12)** | (48) | 55 |\n| Long-duration insurance contracts | **18** | 7 |  |\n| **Citigroup's total other comprehensive income (loss)** | $**(3052)** | $2235 | $(8297) |\n| **Citigroup's total comprehensive income** | $**9630** | $11463 | $6548 |\n| Add: Other comprehensive income (loss) attributable to noncontrolling interests | $**(61)** | $84 | $(58) |\n| Add: Net income (loss) attributable to noncontrolling interests | **151** | 153 | 89 |\n| **Total comprehensive income** | $**9720** | $11700 | $6579 |\n\n---\n\n\n\nThe Notes to the Consolidated Financial Statements are an integral part of these Consolidated Financial Statements.\n\n------\n\n---\n\n\n\n| | |\n|:---|:---|\n| **CONSOLIDATED BALANCE SHEET** | *Citigroup Inc. and Subsidiaries* |\n\n---\n\n\n\n---",
+        "token_count": 1825,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000831001-25-000067",
+        "cik": "0000831001",
+        "company": "CITIGROUP INC",
+        "form_type": "10-K",
+        "filed_date": "20250221",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 89702,
+        "source_md5": "1433b2e05f9cc3662049a079eb0905ea",
+        "content_sha256": "3ce9602f00c556279b5af869b9724bc6271ed52d4ff18471f0a3532f553d027f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "d8a6605b-e064-59b1-b07d-f297db5c0a8e",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 3,
+        "char_start": 14590,
+        "char_end": 24531,
+        "text": "Additional information about Citigroup is available on Citi's website at www.citigroup.com. Citigroup's annual reports on Form 10-K, quarterly reports on Form 10-Q, current reports on Form 8-K and proxy statements, as well as other filings with the U.S. Securities and Exchange Commission (SEC) are available free of charge through Citi's website by clicking on \"SEC Filings\" under the \"Investors\" tab. The SEC's website also contains these filings and other information regarding Citi at www.sec.gov.\n\nFor a discussion of 2023 versus 2022 results of operations of *Services*, *Markets*, *Banking*, *Wealth*, *U.S. Personal Banking* and *All Other*, see each respective business's results of operations in Citigroup's Annual Report on Form 10-K for the year ended December 31, 2023 (Citigroup's 2023 Annual Report on Form 10-K).\n\nCertain reclassifications have been made to the prior periods' financial statements and disclosures to conform to the current period's presentation, including certain reclassifications to align with Citi's organizational simplification and strategy, for all periods presented.\n\n\n\n**Please see \"Risk Factors\" below for a discussion of material risks and uncertainties that could impact Citigroup's businesses, results of operations and financial condition.**\n\n\n\n**Non-GAAP Financial Measures** \n\nCiti prepares its financial statements in accordance with U.S. generally accepted accounting principles (GAAP) and also presents certain non-GAAP financial measures (non-GAAP measures) that exclude certain items or otherwise include components that differ from the most directly comparable measures calculated in accordance with U.S. GAAP. These non-GAAP financial measures are not intended to be a substitute for GAAP financial measures and may not be defined or calculated the same way as non-GAAP measures with similar names used by other companies.\n\nCiti's non-GAAP financial measures in this Form 10-K include:\n\n\u2022 Revenues excluding the Argentina currency devaluation and/or divestiture-related impacts\n\n\u2022 Expenses excluding the Federal Deposit Insurance Corporation (FDIC) special assessment and/or divestiture-related impacts\n\n\u2022 *Services* and Treasury and Trade Solutions (TTS) revenues and/or non-interest revenues excluding the impact of the Argentina currency devaluation\n\n\u2022 *Banking* and Corporate Lending revenues excluding gain (loss) on loan hedges\n\n\u2022 *All Other* (managed basis), which excludes divestiture-related impacts\n\n\u2022 Tangible common equity (TCE), return on tangible common equity (RoTCE) and tangible book value per share (TBVPS)\n\n\u2022 Non-*Markets* net interest income\n\nFor more information on the Argentina currency devaluation and/or the FDIC special assessment, see \"Executive Summary\" below. Citi believes its results excluding the Argentina currency devaluation and the FDIC special assessment are useful to investors, industry analysts and others in evaluating Citi's results of operations and comparing its operational performance between periods, by providing a meaningful depiction of the underlying fundamentals of period-to-period operating results, particularly given the outsized impacts of these items, as well as additional comparability to peer companies.\n\nCiti's results excluding divestiture-related impacts represent as reported, or GAAP, financial results adjusted for items that are incurred and recognized, which are wholly and necessarily a consequence of actions taken to sell (including through a public offering), dispose of or wind down business activities associated with Citi's previously announced exit markets within *All Other*\u2014Legacy Franchises. Citi's Chief Executive Officer, its chief operating decision maker, regularly reviews financial information for *All Other* on a managed basis that excludes these divestiture-related impacts. For more information on Citi's results excluding divestiture- related impacts, see \"Executive Summary\" and \"*All Other*\u2014 Divestiture-Related Impacts (Reconciling Items)\" below.\n\nCiti believes its results excluding divestiture-related impacts are useful to investors, industry analysts and others in evaluating Citi's results of operations and comparing its operational performance between periods, by providing a meaningful depiction of the underlying fundamentals of\n\n------\n\nperiod-to-period operating results, particularly given the outsized impacts of the divestiture-related impacts; improved visibility into management decisions and their impacts on operational performance; and additional comparability to peer companies.\n\nFor more information on *Services* and TTS revenues and/or non-interest revenues excluding the impact of the Argentina currency devaluation, see \"Executive Summary\" and \"*Services*\" below.\n\nFor more information on *Banking* and Corporate Lending revenues excluding gain (loss) on loan hedges, see \"Executive Summary\" and \"Banking\" below. Citi believes that *Banking* and Corporate Lending revenues excluding gain (loss) on loan hedges are useful to investors, industry analysts and others because the gain (loss) on loan hedges are independent of *Banking* and Corporate Lending's core operations and not indicative of the performance of the business operations.\n\nFor more information on TCE, RoTCE and TBVPS, see \"Capital Resources\u2014Tangible Common Equity, Book Value Per Share, Tangible Book Value Per Share and Return on Equity\" below. TCE, RoTCE and TBVPS are used by management, as well as investors, industry analysts and others, in assessing Citi's use of equity. Citi believes TCE and RoTCE are useful to investors, industry analysts and others by providing alternative measures of capital strength and performance. Citi believes TBVPS provides additional useful information about the level of tangible assets in relation to Citi's outstanding shares of common stock.\n\nFor more information on non-*Markets* net interest income, see \"Market Risk\u2014Non-*Markets* Net Interest Income\" below. Management uses non-*Markets* net interest income to assess the performance of Citi's lending, investing (including asset-liability management) and deposit-raising activities, apart from any volatility associated with *Markets* activities. Citi believes the use of this non-GAAP measure provides investors, industry analysts and others with an alternative measure to analyze the net interest income trends of Citi's lending, investing and deposit-raising activities, by providing a meaningful depiction of the underlying fundamentals of period-to-period operating results of those activities; improved visibility into management decisions and their impacts on operational performance; and additional comparability to peer companies.\n\n------\n\nCitigroup is managed pursuant to five operating segments: *Services*, *Markets*, *Banking*, *Wealth* and *U.S. Personal Banking.* Activities not assigned to the operating segments are included in *All Other*. For additional information, see the results of operations for each of the operating segments and *All Other* within \"Management's Discussion and Analysis of Financial Condition and Results of Operations\" below.\n\n![Updated financial reporting structure - FOR 10-K 2024.jpg](c-20241231_g1.jpg)\n\nNote: Mexico is included in LATAM within International.\n\n(1)&nbsp;&nbsp;&nbsp;&nbsp;Within International, Citi is organized into six clusters: United Kingdom; Japan, Asia North and Australia (JANA); Latin America (LATAM); Asia South; Europe; and Middle East and Africa (MEA). Although the chief operating decision maker (CODM) does not manage Citi's reportable operating segments by cluster, Citi provides additional selected financial information (revenue and certain corporate credit metrics) below for the six clusters within International.\n\n------\n\n**MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION** \n\n**AND RESULTS OF OPERATIONS**\n\n**EXECUTIVE SUMMARY**\n\nAs described further throughout this Executive Summary, Citi demonstrated improved overall business performance and continued progress on its strategic priorities in 2024:\n\n\u2022 Citi and its five reportable operating segments each achieved positive operating leverage for 2024. Citi's positive operating leverage in 2024 was driven by revenue growth of 3%, with record revenues in *Services*, *Wealth* and *USPB*, and disciplined expense management (down 4%), despite higher volume- and transformation-related expenses and other investments in risk and control initiatives. Excluding the impact of the FDIC special assessment in both 2024 and the prior year, expenses decreased 2%.\n\n\u2022 Citi continued to advance its transformation, including its efforts to improve risk management, modernize technology and infrastructure and improve resiliency across the organization. Simultaneously, as a result of the July 2024 Civil Money Penalty Consent Orders and Consent Order Amendment, Citi recognized the need to accelerate progress in certain areas, particularly with regard to data quality management related to governance and regulatory reporting. (See \"Citi's Multiyear Transformation\" below).\n\n\u2022 Citi completed its organizational simplification announced in September 2023, resulting in a simpler management structure that aligns to and facilitates Citi's strategy, while improving accountability and decision-making and advancing the execution of Citi's transformation.\n\n\u2022 As part of its strategic refresh, Citi continued to make progress on its remaining divestitures, including exits of its consumer banking operations in Korea and Poland and its overall operations in Russia. Additionally, Citi completed the separation of its *Services*, *Markets*, *Banking* and *Wealth* businesses in Mexico from its consumer banking and small business and middle-market banking operations in Mexico (Mexico Consumer/SBMM) in December 2024, an important milestone toward the planned initial public offering (IPO) of Citi's Mexico Consumer/SBMM business. (See \"*All Other* (Managed Basis)\" below.)",
+        "token_count": 1973,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash"
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"All three figures match the reference: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. The arithmetic checks out ($143,713M - $89,618M = $54,095M; $54,095M + $27,044M = $81,139M). The cited chunk efe0d2ed-b1ce-51fa-8514-80597e1dab5c is among the retrieved excerpts, carries accession 0000831001-25-000067, and its text contains these exact values in the Consolidated Statement of Income. The candidate cites that statement rather than the gold's Executive Summary table, but the cited excerpt directly supports every figure, so support is high. Minor deduction because the gold evidence location differs.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"All three figures match the reference: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. The arithmetic checks out ($143,713M - $89,618M = $54,095M; $54,095M + $27,044M = $81,139M). The cited chunk efe0d2ed-b1ce-51fa-8514-80597e1dab5c is among the retrieved excerpts, carries accession 0000831001-25-000067, and its text contains these exact values in the Consolidated Statement of Income. The candidate cites that statement rather than the gold's Executive Summary table, but the cited excerpt directly supports every figure, so support is high. Minor deduction because the gold evidence location differs.\"}",
+      "refusal": null,
+      "reasoning": "I verify the math checks out: 143,713 minus 89,618 equals 54,095, and adding non-interest revenue of 27,044 gives 81,139, matching the reference exactly. The candidate's cited chunk is confirmed to be in the retrieved excerpts and supports the figures, so citation support is high even though the gold evidence points to a different table.\n\nCorrectness scores 100, citation scores 95.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I verify the math checks out: 143,713 minus 89,618 equals 54,095, and adding non-interest revenue of 27,044 gives 81,139, matching the reference exactly. The candidate's cited chunk is confirmed to be in the retrieved excerpts and supports the figures, so citation support is high even though the gold evidence points to a different table.\n\nCorrectness scores 100, citation scores 95.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSswoKEAgSGAI4AUIIdGhpbmtpbmcSDPVwMoAeWE3JiK/FkRoMjA40anleyGJ66m+aIjCIlzj0Bt7pFZ9s2PfujDBQ/9fZNyArua/Cg3cIsHVgYsVY+YFJ7gVjf96t1pJVd0gq0Al3Xebftc+cq8fncNTpKzVE/XCMATk+CLwzDDhErWVe72qCAHTkxw0vh0QE0vcjH0oLL3aNM3N0aPRwCikSJFb4tX4w5rF0RRWOtQfuIyIZH0S8/GkQx6foy6p+n/RVU/3+3DsrkfM47NakP1qOCzaa1TWWywEzF33eRjTc6iJSQX8TwTfRSDWR74ntw0sEoVWruJzIMVy881UEcc2jwijueDSCfyYu7DnogZHczDamIC4iLgmMJgcMVpLZ/8YYQ3QLec/xznU+e2Zx31XZoeIkxB5SPxvN5A/eHGTdeWU65dCjc++j0ZS2DJwBA7p5dxtGk6RlumRRz5UBaFshazH893rhS3FlTP2xWx9fUxguU6Wwzh/PfnthMxx5ibzcURLyDIfKOSyr6aLBBxxUveNfJsvy1RJa1cfYliGyspSVq7955vj+ghGDKNCAv3gJYIlgyz+00xuyWdtGVRuesQ0oIH8kSvVzMyNZpnkhedWEuindVYlUcHghZTRQqlArmgUJSdaksIywvIcDMEoSmIYWGergYttwL5NBUY7NsHFviUyXoLyE4wCuBe77VC5moff1XPrDIkKwzDZpIBlHl3p+BFKcfgRq292dKcPVaWwKWrV2DTnCUjtitqOo8nL3z4hQOlx0yIqZub0ZrJrxozBy4xvXtZ/EgIlkqr4N9PIOtG+sPGZlOYOn3qqwl+j3nnrqTtNPgox//sRK12uDwHkae5GRb2pPWvZo3xOeLl55DpxGt/Bv8ugw7MbinOuQHbdV3TvDLlgH8lABzjxRbqMBaaG1c6MatkRX0v1c+WKVig+hvqoUXpaKE9p7rmfoG/7g4z9NYWYLZAbHxOmXi8eRO85w9+9561n+GH4YmFl5K3NkIces2SNfOHuZtanTMOiX52BsdRJ7LAjEPnwJJOLODxIy8ryruPD95jTq2mFTYLEt1yD2DTQSDDOtkpjK9crgsTmbkylMSlnSk33sG8DN04UIUulLy8podYewsG+dz8D3M1ZyJutgOKselAzrOl58p0TenxiaYw6D2VnO6E+7newNUqRlXzTMrsi2BNP+qs6frvvNROy0NZg4fev3Al6tm0KrGTfZi/leESD2ZTDIDUVCcnbbHAveqSlgP0yfDQqj5XxSFSWdIzQ6Xa9ERAfRJgdFvTauVkjgRSgjIGykhVmkEgpqZ0cY3CzUxbv497exQMG8VlXjJL8v2oDyw3y332VNLd0WMuv0LnL6o/SfzcLaJH9ccDUPAy6Sdy3Lp5ASGA7JmwlWqwekLdFwCrvWA1GRFoyIU1C81Fx/a6SxlU7GBvRDhv2z0wGFu+ap1MSpbdLm1gg9s/SsBAltlN0HIIvKbxvd3RNPuEwNN5j0HRIc6FPg0+/d7Nm/9vH7jXzIXyxtNr7yQHyFjcGZY4wxCPgmUheMW8xYAK0F0e093IoJkHdLstZcMvttKeO3xjVGXYLaT1mrfJh4EehXyNsp1GN8tn2cOmyWhF21sTqxhcVM563sRWQ8+MUSgxFoyXhVBWazXAnGVx8ZTCGVC9+U+2Ax+ia4HoUykq5Y8RYGcgqEPpIhN4nQdlp1hP0ljxCMXVlPp3GpB3gVkI5vWyNR63KBT/ei0JjvAQYTFCiWsQiZKp5k+puvlglPsDbgYxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:35:22.719289+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "6c25af27563a7699cafe1ee5:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042517-l1ARgFXuyQHq1q9jSrTf",
+    "usage": {
+      "prompt_tokens": 35090,
+      "completion_tokens": 546,
+      "total_tokens": 35636,
+      "cost": 0.003782,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003782,
+        "upstream_inference_prompt_cost": 0.003509,
+        "upstream_inference_completions_cost": 0.000273
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 274,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.198888263000299,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "All three figures match the reference: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. The arithmetic checks out ($143,713M - $89,618M = $54,095M; $54,095M + $27,044M = $81,139M). The cited chunk efe0d2ed-b1ce-51fa-8514-80597e1dab5c is among the retrieved excerpts, carries accession 0000831001-25-000067, and its text contains these exact values in the Consolidated Statement of Income. The candidate cites that statement rather than the gold's Executive Summary table, but the cited excerpt directly supports every figure, so support is high. Minor deduction because the gold evidence location differs."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,117 @@
+{
+  "question_id": "Q028",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.029599501000120654,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "For fiscal year 2024, Citigroup Inc. reported (in **millions of dollars**):\n\n- **Net interest income:** **$54,095 million**\n- **Non-interest revenue:** **$27,044 million**\n- **Revenues, net of interest expense:** **$81,139 million**\n\nCheck: $54,095 million + $27,044 million = $81,139 million.\n\nSource: Citigroup Inc. 2024 Form 10-K, accession **0000831001-25-000067**, *Filing Summary*, chunk **88** (2024 consolidated statement of income).",
+    "message": {
+      "role": "assistant",
+      "content": "For fiscal year 2024, Citigroup Inc. reported (in **millions of dollars**):\n\n- **Net interest income:** **$54,095 million**\n- **Non-interest revenue:** **$27,044 million**\n- **Revenues, net of interest expense:** **$81,139 million**\n\nCheck: $54,095 million + $27,044 million = $81,139 million.\n\nSource: Citigroup Inc. 2024 Form 10-K, accession **0000831001-25-000067**, *Filing Summary*, chunk **88** (2024 consolidated statement of income).",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:14.977675+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "9e878475878075f327f7fbea:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041912-ueOxNWm2B5G04RcPCCEx",
+    "usage": {
+      "prompt_tokens": 16310,
+      "completion_tokens": 131,
+      "total_tokens": 16441,
+      "cost": 0.002104175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 16307,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002104175,
+        "upstream_inference_prompt_cost": 0.002038675,
+        "upstream_inference_completions_cost": 6.55e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.2905309030002172,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 98, \"citation_support\": 92, \"rationale\": \"All three figures match the reference and the filing: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. The arithmetic check is also correct. The cited accession 0000831001-25-000067 and chunk 88 correspond to a retrieved excerpt (chunk_index 88) containing the 2024 consolidated statement of income with these exact values, so the citation is supported. The gold evidence points to the Executive Summary table, which also shows $81,139M, so the figures are corroborated. Minor deduction because the candidate's section label ('Filing Summary') is generic and the gold evidence cites a different section.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 98, \"citation_support\": 92, \"rationale\": \"All three figures match the reference and the filing: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. The arithmetic check is also correct. The cited accession 0000831001-25-000067 and chunk 88 correspond to a retrieved excerpt (chunk_index 88) containing the 2024 consolidated statement of income with these exact values, so the citation is supported. The gold evidence points to the Executive Summary table, which also shows $81,139M, so the figures are corroborated. Minor deduction because the candidate's section label ('Filing Summary') is generic and the gold evidence cites a different section.\"}",
+      "refusal": null,
+      "reasoning": "The numbers check out against chunk 88's income statement data. The candidate cites it under \"Filing Summary\" rather than \"Executive Summary Table\" as the gold evidence does, but the actual excerpt still supports the NII, non-interest revenue, and total revenue figures, so citation support looks solid despite the section label mismatch.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The numbers check out against chunk 88's income statement data. The candidate cites it under \"Filing Summary\" rather than \"Executive Summary Table\" as the gold evidence does, but the actual excerpt still supports the NII, non-interest revenue, and total revenue figures, so citation support looks solid despite the section label mismatch.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS3QkKEAgSGAI4AUIIdGhpbmtpbmcSDHTQwjHz+mOo8f7nuBoMJ2CquOwCkkKD2RGmIjB/JqJdex01tpT2Fw+3C4NJqdZ+gdCI8SdF09vkteE38RZiit5Ad12fDvJE7z2lrk0q+ghD9+vBsTVlE5f00yYezEs4GSLcBW+iPJvb7vnBUINYj9S0pWkTiwJmJPoeVrQtkwlO5i7bZP7Ba/40anBHNJGW2y1cL4UTYf5LdOhD4EoNw34Qlj3i9h03uDLAmim6knrj8xhIMika9TtY6ZoT/H3T/SSySAQ1I+bt8xVrcZhZuBIgEPZbpUDYJWR6dq0Y05y+5pxD1v3y6Rr9Be3Kim/RT22SZ61lmNHgjsY/KrAb+j5TJ/6S5k1NdQTbW9mO4hhFRU+pK8Kaa9y3EqQgtDuudzWGLSgGCQaMKz97+jbgKuPO4WtCghrRQu3q61tTFEq+/iMfrsbIvoyo5XXAh5FcD1td6QQnRgxGE1bxBsEOeesgN5Butbcul1if+v7Haw3j8ZHsx2wvcw/x84VOh/eNNIbyhk+z9yMzlSv6gcRX5YHhEeUMTHOiR43nbrko8UWjLhXDrHcUUAXSKraNg4UXwlNsfu1qlq3AMMNE76PQX9/1JfXlA/jc9OGAgpyq2d/YvPOgxo7QQ4MR5pslwgQrXi0xNmrMIGlYwJ2c1zj1gJz8a+4Zevz1dBifrmO0e3f6w6VON9h3LSA6nA61j55SwbSacOWrM3ujULnI4lmR03U0iEOLWRNQ1DdXLVXaVZF2vyRfj82jRq+XocfgVh3zydK1g/z9upNzR15JP/jho0J5e07lkbiKFBzyUOhpNJGg3BZ40HGuxBPaRjIQxB/c6+zFRmix0sfVNLMOuapUSRGPevXNy1b+QaOPC+8TBYH+YiSABW0XFQfZuH8FYyE6VIIIyHJkxWh7DHwa+jBIljxQnWl0kh95u1yiV9YeBCB+LsYV6OPW+Dczf6O3ImJSp6Ue5LDNnaiQS2DI2uVK+fE5Fj3O1AlfyTGgq6zwfrHSjlwWam+otrbcIcVJvW6zfISndCZ43OT8uHJywme7d4FGF+dtins3obWeuruazm3i08kH9vPJ2zA6c/kTKe+kpiQ2NID5hxqfbHdirrRB4E8Qv65Nin3NIZKAboGffEtvdpyN1+iEUYzD20xd1hGhfOvBd4GTuK4KphW3dtc+9eAzeCNHft7i6y88E7tj01KYd8axt2rljxc39Al7Vcwff6YIyYbBfsfhCT85p0KgY/YefwZQIQSaI1TrrOVF70OYofJvf03IZ1s/I2biJTG6YAkGNQ4ukrEUeE3sULMu9ThHqhP/S9KiBIO8j2VGYiDyU9zJxdgGxYVaR03Gzo0aBYG6wfcXR6MvQdlJfEjgih/fCmiYBGk1i3wSCM45YTjK8FVGI67TpmVFQgLPrYBNAqtDZLr1D2cRBir9F5DBFMpzONjNtzqBE3XV1ZB+2GYMgS8K2nJx9xWNYppLyu55PCRKPev0mkzrJ6Fxx20Ekqo3lD/WIQ+UVV2me+u7EvCSuuMvrlnczPvHx3ISadhfN+ZDo7Z7m180TxD5kwHfNpQ1be7hT2vQ6+ei6q6BabESJ6hOUzdgUZyjlY03tR7kP+zEWi/6Fdq7Dr89gGmOskrH0RwCqxQViXAYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:38.609916+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "9e878475878075f327f7fbea:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042113-AUzh64nv0VCINrcBuf65",
+    "usage": {
+      "prompt_tokens": 24857,
+      "completion_tokens": 496,
+      "total_tokens": 25353,
+      "cost": 0.0027337,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0027337,
+        "upstream_inference_prompt_cost": 0.0024857,
+        "upstream_inference_completions_cost": 0.000248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 250,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.21371439900031,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 92,
+    "rationale": "All three figures match the reference and the filing: Net interest income $54,095M, Total non-interest revenues $27,044M, and Total revenues net of interest expense $81,139M. The arithmetic check is also correct. The cited accession 0000831001-25-000067 and chunk 88 correspond to a retrieved excerpt (chunk_index 88) containing the 2024 consolidated statement of income with these exact values, so the citation is supported. The gold evidence points to the Executive Summary table, which also shows $81,139M, so the figures are corroborated. Minor deduction because the candidate's section label ('Filing Summary') is generic and the gold evidence cites a different section."
+  },
+  "status": "ok"
+}

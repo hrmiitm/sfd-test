@@ -1,0 +1,126 @@
+{
+  "question_id": "Q051",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.027086817000053998,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "According to Adobe Inc.'s Consolidated Statements of Income for the fiscal year ended November 29, 2024 (accession: `0000796343-25-000004`, section: `CONSOLIDATED STATEMENTS OF INCOME`, chunk ID: `c8e23789-3e5b-5998-a527-7bb13e5d5a92`):\n\n- **Total revenue:** $21,505 million\n- **Gross profit:** $19,147 million\n\n### Calculation:\n$$\\text{Gross Profit Margin} = \\frac{\\text{Gross Profit}}{\\text{Total Revenue}} \\times 100$$\n\n$$\\text{Gross Profit Margin} = \\frac{\\$19,147\\text{ million}}{\\$21,505\\text{ million}} \\times 100 \\approx 89.0351\\% \\text{ (or } 89.04\\%)$$\n\n*(Note: In Note 2 (Revenue) of the Notes to Consolidated Financial Statements, chunk ID: `b8fa3362-a910-51b7-aebe-a44fa81085a4`, \"Gross profit as a percentage of revenue\" is also reported as rounded to **89%**).*",
+    "message": {
+      "role": "assistant",
+      "content": "According to Adobe Inc.'s Consolidated Statements of Income for the fiscal year ended November 29, 2024 (accession: `0000796343-25-000004`, section: `CONSOLIDATED STATEMENTS OF INCOME`, chunk ID: `c8e23789-3e5b-5998-a527-7bb13e5d5a92`):\n\n- **Total revenue:** $21,505 million\n- **Gross profit:** $19,147 million\n\n### Calculation:\n$$\\text{Gross Profit Margin} = \\frac{\\text{Gross Profit}}{\\text{Total Revenue}} \\times 100$$\n\n$$\\text{Gross Profit Margin} = \\frac{\\$19,147\\text{ million}}{\\$21,505\\text{ million}} \\times 100 \\approx 89.0351\\% \\text{ (or } 89.04\\%)$$\n\n*(Note: In Note 2 (Revenue) of the Notes to Consolidated Financial Statements, chunk ID: `b8fa3362-a910-51b7-aebe-a44fa81085a4`, \"Gross profit as a percentage of revenue\" is also reported as rounded to **89%**).*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a19ncfMImUXPZ3aI+DYEdxmo5iVAOUASEvdJZ1m+wAkQScaaik8Kez2FCAuijVrn0nkWVL7GcVBHdB4gvMYClJw7d4j/NRyOvsheeT3ylTjSOzFM",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:30.353675+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "6ecb495bcbaff5b2dddb98e8:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041927-Klb8kTuDKVg91BFATAik",
+    "usage": {
+      "prompt_tokens": 12162,
+      "completion_tokens": 307,
+      "total_tokens": 12469,
+      "cost": 0.01027275,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01027275,
+        "upstream_inference_prompt_cost": 0.0091215,
+        "upstream_inference_completions_cost": 0.00115125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.243062821999956,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate's figures match the reference and the retrieved income statement: total revenue $21,505M and gross profit $19,147M. 19,147 / 21,505 = 89.035%, which rounds to 89.04%, so the answer is correct. The stated chunk ID c8e23789 corresponds to the retrieved Consolidated Statements of Income chunk, and chunk b8fa3362 (Note 2) does report 89% gross profit as a percentage of revenue, so the side note is supported. Minor deduction only for the extra, slightly redundant 89% note and the '\u224889.0351%' phrasing.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate's figures match the reference and the retrieved income statement: total revenue $21,505M and gross profit $19,147M. 19,147 / 21,505 = 89.035%, which rounds to 89.04%, so the answer is correct. The stated chunk ID c8e23789 corresponds to the retrieved Consolidated Statements of Income chunk, and chunk b8fa3362 (Note 2) does report 89% gross profit as a percentage of revenue, so the side note is supported. Minor deduction only for the extra, slightly redundant 89% note and the '\u224889.0351%' phrasing.\"}",
+      "refusal": null,
+      "reasoning": "Checking the math: 19147/21505 comes out to 89.035%, which rounds to 89.04%, matching the candidate's figure. The 89% rounding noted in Note 2 is also consistent with the source excerpt, and the cited chunk aligns with the income statement data.\n\nThe candidate's citation checks out too \u2014 chunk c8e23789 is in the retrieved excerpts, and Note 2's chunk b8fa3362 confirms the 89% figure. Citation support looks strong here, so I'd put correctness around 95 and citation accuracy similarly high, with the gross profit percentage statement correctly quoted.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking the math: 19147/21505 comes out to 89.035%, which rounds to 89.04%, matching the candidate's figure. The 89% rounding noted in Note 2 is also consistent with the source excerpt, and the cited chunk aligns with the income statement data.\n\nThe candidate's citation checks out too \u2014 chunk c8e23789 is in the retrieved excerpts, and Note 2's chunk b8fa3362 confirms the 89% figure. Citation support looks strong here, so I'd put correctness around 95 and citation accuracy similarly high, with the gross profit percentage statement correctly quoted.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSnwoKEAgSGAI4AUIIdGhpbmtpbmcSDEFM+vZt4ogDBdjsyBoMf0UeJdfOR5VIz3RqIjBC9PsY8xImEz+qcOzRRjaG/ywAzNqei+AF2CFoImfp+kLzdyS0um/MFJOz2XIuhtwqvAl4CVqx4bvsD/8YAkC0PKoEBIQfaXxV4w55CQEFwGGCG5wGCzexll+Fb2lPVzEGP4JnzTDs0oPxI/zxIznT42hMtkgdvWCDGBOj17NH2O5uxlcfeuQjQSl606MUFyncMkiVygwgEc//nfEE0nr6tr7Gmg/OmEeJzPdcQ7ArmA+XzK37q8OmsmEE0+8MnH+JjJbyVcdFWd98WO9PgFTomiCzvyrD4gkwfPWgKQ6tLuNe+LLTGwJ/LPJLlcZ7VQYZ+b3EIPN8g1m6y7DXoDuxkRWn+lDAc43P5EKVlSMfEziOfizDl/H4L9uTiLve8Vh0a23vSwDpVdfTt0DwbRKRgb2yozzBlJPDOATYwQvD7tX1c906zpP2soxFqpWQhyxIqcFEjE3RRzP8X1mvrUdjcF+lAl/gIoFslgoVurExkHLNSpUO1DeJ3aGtJwgUOItJpBOBsl7CXEIjPBviFwrFkPBGo0cRBOhMQQczCCRYSimG8+jV2nYZUB0vli/XxcDVsfFTnyMehz76PBY0iCyMZWP+6VeBk76WlWSuOWftUMnA5y5GoolVairXIBhjjXqhc4W++fmdfOW3ES2qDM8vp6bH6xazgkpdE2fSTaG9e19sXtkroEVcrSwyzvv6PpQZthEbyP0GvP8osqG79ejlRizU2SqQjGdLAYl0D+wmCyCGbAdopAy8Y+Nt9/rBE8sW+yXQcfW4H2anS+/mj3chU2Pt4sFQLew/jrciIGT/+sZ5bpU6If94vmVlKOr7EhHtpQqpp9z3nlV1bDLlG+fbMQ/3RTLkKVto4H8qhm3/FRpTVHOlBOCQ7YGSfinmpafQ9rMlQpLfTJW/36xI7i6UEg+s14lbN8HpepoGNhML3shKYu4HULjU/EqBlX8PzuD2R5mTbzBSlPf9cvupyy035sxez8cRQAyZJeqJfEc0NhhNQjg+dbomlkeUkTiO141ckUEnt/kol2H/8zLm5L6i9lQ7RNp0XFZXhedTWJazVPE2j0bMfGwctWemieqPIGG3o+bZA4lZ3HVFoU9lWyN56SBRDSvIdr3oENpzGWhgBqpAdegiAXnT9EhyjSa0XkMxjoDZJYYSLnQnqO9wZ0LSlBggXyeAvV1T524Q5G5joH+0IGOIHguFDWsuLLDSOmsthfyq1FCaA+flZ9SbcGJUtTJQL0gqigUmG/V01lgiBs1wnFnEDXSlvzG2JjK883gAqi+hdyA9bAZK/BVoa9Hdube4MRMtsLaY0xAtm0HvElKcdZ6xeUd3gUSDui0W3FbBmMx7GWeiLQub4GzP31q1nrszBbHmcvZ1nBkEfS1ucjXQutHptQQP0eSvTZgNrescNDTuQyrT2VI6H7OHhSI8B8bcb7mR6wjqQd/jqEd32aJnq9xmeTWQaL6/Cx6uRflYU+kJQAdI/L0Hzt45NkMTwA0EDfMkBZh/uj1FpUN32KV+JvE10VL8fAnbq5Cf04lQ5ZGXtFf5RMJ77TuTq+djjsc5aARynyvNveSibTgZVE3gpQya961jYsszkcy+6VNGw4YctY+Zl7/ILEV80TmK5o13Z2rX+3L2oozDxJxLq6obN83kvZYxxlhZPIyJRbkGv23FIIPNidiOjUWlDEYYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:59.516535+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "6ecb495bcbaff5b2dddb98e8:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042133-uYFShY1JTzo3qvo8dEer",
+    "usage": {
+      "prompt_tokens": 16641,
+      "completion_tokens": 530,
+      "total_tokens": 17171,
+      "cost": 0.0019291,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019291,
+        "upstream_inference_prompt_cost": 0.0016641,
+        "upstream_inference_completions_cost": 0.000265
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 304,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 7.460861030999695,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 95,
+    "rationale": "The candidate's figures match the reference and the retrieved income statement: total revenue $21,505M and gross profit $19,147M. 19,147 / 21,505 = 89.035%, which rounds to 89.04%, so the answer is correct. The stated chunk ID c8e23789 corresponds to the retrieved Consolidated Statements of Income chunk, and chunk b8fa3362 (Note 2) does report 89% gross profit as a percentage of revenue, so the side note is supported. Minor deduction only for the extra, slightly redundant 89% note and the '\u224889.0351%' phrasing."
+  },
+  "status": "ok"
+}

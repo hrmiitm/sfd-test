@@ -1,0 +1,117 @@
+{
+  "question_id": "Q025",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.06632999300018128,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Adobe\u2019s total Digital Media segment revenue in fiscal 2024 was **$15,864 million ($15.864 billion)**, up **12% year over year** from $14,216 million in fiscal 2023. The change was $1,648 million, and $1,648 million \u00f7 $14,216 million \u2248 **11.6%**, reported rounded to 12%.\n\n**Source:** Accession 0000796343-25-000004, \u201cSegments,\u201d chunk `839ad4e2-d434-562b-b699-c27185c0972b`.",
+    "message": {
+      "role": "assistant",
+      "content": "Adobe\u2019s total Digital Media segment revenue in fiscal 2024 was **$15,864 million ($15.864 billion)**, up **12% year over year** from $14,216 million in fiscal 2023. The change was $1,648 million, and $1,648 million \u00f7 $14,216 million \u2248 **11.6%**, reported rounded to 12%.\n\n**Source:** Accession 0000796343-25-000004, \u201cSegments,\u201d chunk `839ad4e2-d434-562b-b699-c27185c0972b`.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:58.170127+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "8a11240fab55411af964d29e:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041895-UKO9skVHVHzLort7FpUq",
+    "usage": {
+      "prompt_tokens": 12467,
+      "completion_tokens": 127,
+      "total_tokens": 12594,
+      "cost": 0.00018844,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 12464,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00018844,
+        "upstream_inference_prompt_cost": 0.00012494,
+        "upstream_inference_completions_cost": 6.35e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.383166583000275,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 92, \"rationale\": \"The candidate matches the reference: Digital Media revenue was $15.864B (about $15.86B) in FY2024, up from $14.216B in FY2023, with 12% growth. The arithmetic checks out: $1,648M / $14,216M \u2248 11.6%, which rounds to the reported 12%. Figures are in millions with correct units. The cited chunk (Segments, 839ad4e2) is in the retrieved excerpts and contains the segment table with these exact values and the 12% change, so the citation is supported. It cites a different section than the gold evidence (MD&A Overview), but that chunk also appears in the retrieval and supports the same figures. Minor deduction for not quoting the gold MD&A sentence.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 92, \"rationale\": \"The candidate matches the reference: Digital Media revenue was $15.864B (about $15.86B) in FY2024, up from $14.216B in FY2023, with 12% growth. The arithmetic checks out: $1,648M / $14,216M \u2248 11.6%, which rounds to the reported 12%. Figures are in millions with correct units. The cited chunk (Segments, 839ad4e2) is in the retrieved excerpts and contains the segment table with these exact values and the 12% change, so the citation is supported. It cites a different section than the gold evidence (MD&A Overview), but that chunk also appears in the retrieval and supports the same figures. Minor deduction for not quoting the gold MD&A sentence.\"}",
+      "refusal": null,
+      "reasoning": "The figures check out: $15,864M vs $14,216M gives roughly 11.6%, which rounds to the stated 12% growth, matching the reference. The citation also holds up since the \"Segments\" chunk (839ad4e2) does contain these numbers, though I notice the gold evidence quote references a different source.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The figures check out: $15,864M vs $14,216M gives roughly 11.6%, which rounds to the stated 12% growth, matching the reference. The citation also holds up since the \"Segments\" chunk (839ad4e2) does contain these numbers, though I notice the gold evidence quote references a different source.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSkAkKEAgSGAI4AUIIdGhpbmtpbmcSDPEIQ/HvZTb1U/V3rxoM6D7Pvi/ylbpjoFT6IjARlq7naTeq/LiecJ8m6LF61VcstfAkEKqwFlD+ncPOTYXGBS0Q5FSrmerJ/LFQoR8qrQgRDpJrmFyDDftfmTuhZKnRTgZUF/YvR3rgAyNVauYCSW8QPdw0gBBue0dp0JgN6Gq55mIrw5Dd7ZBXGJzUp1rWGbNrzhovD5ybeUQrFop4GJWGZSTtJVbfaOLaiYurc1W5BkmQv8ZnTCXSGOuVPCiVkx65NdMd1S9RExiETYm5GP9f/A0NCe4uVmHlSPiYa+DM0CMR6YQUfOX52csvFDVj8JETJ286eMdSNNtPH//5JtWuzR0qP2755UA3WGJVIDF/FaQqfTc4F1AGDBCQbBeqVAXkid6mPhl0AM7qkQDJm8HWk28jTEwJS/FI+Zf98i4UqjXHZQX203V/HM1S5QDgyOcUW4Dn6GGcg0Ej5Ht+ABwQM2H90a+BaIzcPeuWakW+xNsXfbsF9iSv/XySPKywXd7ejZOzrU4PxCOKBuhi5mJFh0x61Xcn/e1yn50aQfLGkHTdVen6TZ+t/vPKKleNzeaSllmfNMS4XEIfImKPAbGxN+s2KXXn1Ejc3vxWZvdW9ZGo8Q3BXQa7NFyMym/nEnbVevUEE29qMi0RlK/lojl+HIN+nH6urqT8qnqmY3nwcjIGO/n2FfA9FbJfnEbWnlADXjIiXhzbzvmB+n8OICGSaIFnzn3h9zuqsH74TZJzTgprP27nidr/6Aky+4nyzJZqdEWM2t+tUzkpeqYtMTokmR/PWlzIcwXhEq69fNMWoARG7VMhCplVLwKZO15emzGfXy3sjzdLDP1dnHeg6JlNSkaVvQ3Ih5O5g4cYv2//Tiln63tFnh5h5GXnPFsUgBDKG78+XdQT4fz7VJQl+dmOOuWPWdYX2h1D+lypgYpHoP1Mb4Jd8mx1F3tMNhllqBoNorWU0U18ctsNwjBA+FtHM0ZZ8uYn3IyuJMvm6JbNbZVY7mCo2kEi3aA2FJD5UHZGBOPe/MiQ0dxoMBpnwA42rnku/O3u04UT2slY+OWfCRC11k5RrHPQeYuRXMI65NrdsGdsqrCT0ARY/ZCEqusaXzyejfOQQku4Ju/gLsrHtH8bAzb6ezGLIAOQh7tLx7sV7etRKc6reiimb9p4UgARSrva/+Tn2giZEcJ+PrTJpetRmPSCdhUDBgLgTdIXYy1qO74JHi6sC4jEYp1CYDve8RScDGukwlyuTGeIi7FR53VHtWiqh5fHXtVwcndCG1IJhYG+V5I+Jay12QXdYhqi3Cv2mG/eiCnGcffq4AhWvuhUo8S4U5MCHZMNILsLzq+TU5Db2n6RKN+ll8boTDoFyqKOunADKGQaqWR/5o2jxsljYBBZn6P8ae95WJld4bMj9dPdLuJiFpwekWZO6kHz3WfyxGz1FfIAB2aI88nmdWq3xc+ViHb198u6JRvifDQF8+2jwMukeL+zCG1Q4TJ1fCg0esaQC5a/wKWAv0dGdWbhMOvYOZQYdwkzGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:20.308091+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "8a11240fab55411af964d29e:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042095-IPcyYqOagqvDFox6yRjW",
+    "usage": {
+      "prompt_tokens": 20257,
+      "completion_tokens": 495,
+      "total_tokens": 20752,
+      "cost": 0.0022732,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0022732,
+        "upstream_inference_prompt_cost": 0.0020257,
+        "upstream_inference_completions_cost": 0.0002475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 232,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.676777402999505,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 92,
+    "rationale": "The candidate matches the reference: Digital Media revenue was $15.864B (about $15.86B) in FY2024, up from $14.216B in FY2023, with 12% growth. The arithmetic checks out: $1,648M / $14,216M \u2248 11.6%, which rounds to the reported 12%. Figures are in millions with correct units. The cited chunk (Segments, 839ad4e2) is in the retrieved excerpts and contains the segment table with these exact values and the 12% change, so the citation is supported. It cites a different section than the gold evidence (MD&A Overview), but that chunk also appears in the retrieval and supports the same figures. Minor deduction for not quoting the gold MD&A sentence."
+  },
+  "status": "ok"
+}

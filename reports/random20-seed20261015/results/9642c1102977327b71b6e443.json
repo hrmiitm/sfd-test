@@ -1,0 +1,117 @@
+{
+  "question_id": "Q030",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.027879297999788832,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to ConocoPhillips's Form 10-K for the fiscal year ended December 31, 2024, the expenses were:\n\n* **Purchased commodities:** **$20,012 million** (or approximately **$20.012 billion**)\n* **Production and operating expenses:** **$8,751 million** (or approximately **$8.751 billion**)\n\n*(Source: 10-K filed February 18, 2025; Accession: `0001163165-25-000012`, Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations, Chunk ID: `60c96100-be72-5594-b30e-5f7ac572a516`)*",
+    "message": {
+      "role": "assistant",
+      "content": "According to ConocoPhillips's Form 10-K for the fiscal year ended December 31, 2024, the expenses were:\n\n* **Purchased commodities:** **$20,012 million** (or approximately **$20.012 billion**)\n* **Production and operating expenses:** **$8,751 million** (or approximately **$8.751 billion**)\n\n*(Source: 10-K filed February 18, 2025; Accession: `0001163165-25-000012`, Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations, Chunk ID: `60c96100-be72-5594-b30e-5f7ac572a516`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1/7xhMLw6owaZf1Eyy0cT0ytxzctATG65MI7Fn9xLqSIFZnUEB0cKr3Qb+i2nkZm2/A80+SZi0b3zxlPsxFfczTiHPzzXLnH7BlrOGEYq2/oYW6",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:20.700315+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "9642c1102977327b71b6e443:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041917-P3QH2RRN90SbtPUmZuB2",
+    "usage": {
+      "prompt_tokens": 18670,
+      "completion_tokens": 196,
+      "total_tokens": 18866,
+      "cost": 0.0147375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0147375,
+        "upstream_inference_prompt_cost": 0.0140025,
+        "upstream_inference_completions_cost": 0.000735
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.523712214000625,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 90, \"rationale\": \"The candidate's figures match the reference and the retrieved 10-K income-statement table: Purchased commodities $20,012 million and Production and operating expenses $8,751 million for 2024. The units and the fiscal year are correct. The candidate cites Item 7 MD&A with the matching accession 0001163165-25-000012, and the retrieved excerpt does contain the Item 7 table with these values, so the citation is well supported. Minor deduction because the chunk ID cited is from the Item 7 excerpt, which is supported, but the filing date and section label are slightly embellished relative to the excerpt metadata.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 90, \"rationale\": \"The candidate's figures match the reference and the retrieved 10-K income-statement table: Purchased commodities $20,012 million and Production and operating expenses $8,751 million for 2024. The units and the fiscal year are correct. The candidate cites Item 7 MD&A with the matching accession 0001163165-25-000012, and the retrieved excerpt does contain the Item 7 table with these values, so the citation is well supported. Minor deduction because the chunk ID cited is from the Item 7 excerpt, which is supported, but the filing date and section label are slightly embellished relative to the excerpt metadata.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:42.255177+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "9642c1102977327b71b6e443:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042120-43ehrfz1VpsRpJbsrPAX",
+    "usage": {
+      "prompt_tokens": 25387,
+      "completion_tokens": 225,
+      "total_tokens": 25612,
+      "cost": 0.0026512,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0026512,
+        "upstream_inference_prompt_cost": 0.0025387,
+        "upstream_inference_completions_cost": 0.0001125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.30266815899995,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 90,
+    "rationale": "The candidate's figures match the reference and the retrieved 10-K income-statement table: Purchased commodities $20,012 million and Production and operating expenses $8,751 million for 2024. The units and the fiscal year are correct. The candidate cites Item 7 MD&A with the matching accession 0001163165-25-000012, and the retrieved excerpt does contain the Item 7 table with these values, so the citation is well supported. Minor deduction because the chunk ID cited is from the Item 7 excerpt, which is supported, but the filing date and section label are slightly embellished relative to the excerpt metadata."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,117 @@
+{
+  "question_id": "Q030",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/bm25",
+  "retrieval": {
+    "seconds": 0.006814311999733036,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "For fiscal year 2024, ConocoPhillips reported:\n\n- **Purchased commodities:** **$20,012 million**\n- **Production and operating expenses:** **$8,751 million**\n\nThe filing presents these figures in millions of dollars. *(Accession 0001163165-25-000012, Item 7, \u201cIncome Statement Analysis,\u201d chunk 3.)*",
+    "message": {
+      "role": "assistant",
+      "content": "For fiscal year 2024, ConocoPhillips reported:\n\n- **Purchased commodities:** **$20,012 million**\n- **Production and operating expenses:** **$8,751 million**\n\nThe filing presents these figures in millions of dollars. *(Accession 0001163165-25-000012, Item 7, \u201cIncome Statement Analysis,\u201d chunk 3.)*",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:23.793901+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d5af1cd0935936c2b3da31f3:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041921-n8RurBLeUP5d7mF9O24S",
+    "usage": {
+      "prompt_tokens": 15748,
+      "completion_tokens": 81,
+      "total_tokens": 15829,
+      "cost": 0.002008925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 15745,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002008925,
+        "upstream_inference_prompt_cost": 0.001968425,
+        "upstream_inference_completions_cost": 4.05e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.0924931850004214,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 98, \"citation_support\": 92, \"rationale\": \"The candidate gives Purchased commodities of $20,012 million and Production and operating expenses of $8,751 million for 2024, matching the reference and the figures in the retrieved ConocoPhillips Income Statement Analysis table. Units (millions) are correctly stated. The citation (accession 0001163165-25-000012, Item 7, Income Statement Analysis, chunk 3) matches a retrieved excerpt that contains these exact values, so it is well supported. Minor deduction: the gold evidence labels the source as Item 8 Consolidated Statements of Income, while the candidate cites the Item 7 MD&A table, which does contain the same figures.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 98, \"citation_support\": 92, \"rationale\": \"The candidate gives Purchased commodities of $20,012 million and Production and operating expenses of $8,751 million for 2024, matching the reference and the figures in the retrieved ConocoPhillips Income Statement Analysis table. Units (millions) are correctly stated. The citation (accession 0001163165-25-000012, Item 7, Income Statement Analysis, chunk 3) matches a retrieved excerpt that contains these exact values, so it is well supported. Minor deduction: the gold evidence labels the source as Item 8 Consolidated Statements of Income, while the candidate cites the Item 7 MD&A table, which does contain the same figures.\"}",
+      "refusal": null,
+      "reasoning": "I'm checking the figures for purchased commodities ($20,012M) and P&O ($8,751M) in 2024 against the candidate citation, trying to pin down exactly which chunk of the Income Statement Analysis section contains that table based on character offsets.\n\nThe candidate's section label is close enough \u2014 Item 7 is correct even if the gold evidence pointed to a different consolidated statement. The figures check out against the retrieved excerpt, so citation support lands around 90 and correctness around 95-100.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm checking the figures for purchased commodities ($20,012M) and P&O ($8,751M) in 2024 against the candidate citation, trying to pin down exactly which chunk of the Income Statement Analysis section contains that table based on character offsets.\n\nThe candidate's section label is close enough \u2014 Item 7 is correct even if the gold evidence pointed to a different consolidated statement. The figures check out against the retrieved excerpt, so citation support lands around 90 and correctness around 95-100.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:48.788519+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d5af1cd0935936c2b3da31f3:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042122-fJbN2b9Ukbk7tEQzCG8c",
+    "usage": {
+      "prompt_tokens": 24570,
+      "completion_tokens": 903,
+      "total_tokens": 25473,
+      "cost": 0.0029085,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029085,
+        "upstream_inference_prompt_cost": 0.002457,
+        "upstream_inference_completions_cost": 0.0004515
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 661,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 7.550452910000786,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 92,
+    "rationale": "The candidate gives Purchased commodities of $20,012 million and Production and operating expenses of $8,751 million for 2024, matching the reference and the figures in the retrieved ConocoPhillips Income Statement Analysis table. Units (millions) are correctly stated. The citation (accession 0001163165-25-000012, Item 7, Income Statement Analysis, chunk 3) matches a retrieved excerpt that contains these exact values, so it is well supported. Minor deduction: the gold evidence labels the source as Item 8 Consolidated Statements of Income, while the candidate cites the Item 7 MD&A table, which does contain the same figures."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,117 @@
+{
+  "question_id": "Q084",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/bm25",
+  "retrieval": {
+    "seconds": 0.014015905999258393,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Intel Foundry\u2019s external revenue fell from **$953 million in 2023 to $385 million in 2024**, a decline of **$568 million**.\n\nCalculation: \\((953 - 385) / 953 \\times 100 \\approx 59.6\\%\\), or **about 60%**.\n\nIntel attributed the decline primarily to **lower traditional packaging services revenue and lower equipment sales**. (Accession **0000050863-25-000009**, \u201cOperating Segment Revenue Summary,\u201d chunk **12**; \u201cA Year in Review,\u201d chunk **7**.)",
+    "message": {
+      "role": "assistant",
+      "content": "Intel Foundry\u2019s external revenue fell from **$953 million in 2023 to $385 million in 2024**, a decline of **$568 million**.\n\nCalculation: \\((953 - 385) / 953 \\times 100 \\approx 59.6\\%\\), or **about 60%**.\n\nIntel attributed the decline primarily to **lower traditional packaging services revenue and lower equipment sales**. (Accession **0000050863-25-000009**, \u201cOperating Segment Revenue Summary,\u201d chunk **12**; \u201cA Year in Review,\u201d chunk **7**.)",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:57.186112+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "8c8b6d6c4d8742839aadfc07:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042014-nxV5HZQ229LvmaSGDOyA",
+    "usage": {
+      "prompt_tokens": 18611,
+      "completion_tokens": 125,
+      "total_tokens": 18736,
+      "cost": 0.0023888,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 18608,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0023888,
+        "upstream_inference_prompt_cost": 0.0023263,
+        "upstream_inference_completions_cost": 6.25e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.351676768000289,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "```json\n{\"correctness\": 93, \"citation_support\": 96, \"rationale\": \"The candidate matches the reference: Intel Foundry external revenue fell about 60%, driven by lower traditional packaging services and lower equipment sales. The dollar figures ($953M to $385M, down $568M) and the computed 59.6% are consistent with the filing excerpts, and the candidate reports the rounded 60% alongside the exact calculation. The cited accession and the 'Operating Segment Revenue Summary' and 'A Year in Review' sections, with chunks 12 and 7, match the retrieved excerpts. Minor deduction: the reference's 60% is the filing's stated figure, and the candidate leads with the computed 59.6% before rounding.\"}\n```",
+    "message": {
+      "role": "assistant",
+      "content": "```json\n{\"correctness\": 93, \"citation_support\": 96, \"rationale\": \"The candidate matches the reference: Intel Foundry external revenue fell about 60%, driven by lower traditional packaging services and lower equipment sales. The dollar figures ($953M to $385M, down $568M) and the computed 59.6% are consistent with the filing excerpts, and the candidate reports the rounded 60% alongside the exact calculation. The cited accession and the 'Operating Segment Revenue Summary' and 'A Year in Review' sections, with chunks 12 and 7, match the retrieved excerpts. Minor deduction: the reference's 60% is the filing's stated figure, and the candidate leads with the computed 59.6% before rounding.\"}\n```",
+      "refusal": null,
+      "reasoning": "The candidate's 60% decline figure checks out against the filing's $953M to $385M numbers, giving 59.6% which rounds correctly, and the causes cited (lower traditional packaging services and equipment sales) match. I'm verifying the citation now, checking that chunk 12 is indeed where the \"Operating Segment Revenue Summary\" text appears.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The candidate's 60% decline figure checks out against the filing's $953M to $385M numbers, giving 59.6% which rounds correctly, and the causes cited (lower traditional packaging services and equipment sales) match. I'm verifying the citation now, checking that chunk 12 is indeed where the \"Operating Segment Revenue Summary\" text appears.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS8QoKEAgSGAI4AUIIdGhpbmtpbmcSDBYPpWe8ERs1ujP3nRoM1+IcFP/VrEGvOakkIjC/ThGYKSptPNqsDVwwV3Wq1dcTie2kjb1/oB5X9ApFaiCdQntgArYSJnxKaKL3A5oqjgoy3IgVwOi6Yu3HucWgFIClifd4Mcmlj2XS/Dys9t9p/ZmKkNQMoySpnvGCFzWXvFyoVHi5MrOt1Bgw9tTGS1Sz7/tZoQBZfQagCH8Me5gMUVtaVM6Bg78hygCw9N3qthbI93ZIVsXyVj4sdhO11xmWnPjn9+TJ+daPw/hiBqkHR/Oen2jRXRoFdW8nOq12VcGSnyeG94VHNVj9gQcz8ikkZOSUsAQ782kOviyAVbwG7jYxxUEma8cOH872czjHn1qDNgs6Qfy2HEzA541ooWP5QfNc9Xd0qyrIO31JUgKxde6dZtYwDmbDPCT0AhxyZ0rbBs7l3nvQCpfRsXZU0lr8HohcljvE+d9l00fvt57gq6KU0plDjeVYuFOgUXvZ4x203LlUkRdMU/HAef+9JDug4WYAhMwwuE7jwlHW5yixw1xpfqn74OHhU0PUvVCl8V2BGRCtpP+IWCUT3wCG9mFXU+EPWLP1kSdnSvZRMOXP5i/1xGEUjsxG61gfhEEllL8Ax+s2Pnv3rhj6gpfSbSZV1w/CtN9DSK5f9Ua7YFqMH31eL1KZsqlHTMZVSeA6punt4Rjjv0oItWXEdxHnt0FcWzFrLCyixDeXnD4HBn7ai+Y3G44ZxgLsuAr21jNWJRgKDW/k7PRYaJj64hMe4JHFbGaAsKoi1rPBstPsc3H9qrGCj9QpREBqhBqEHyNoIl16HYOUxwowcRnB2Egai/jwLMR1UJpdZBrtqjLYQTkjkNKfgZ5N0iqO+XU9MivnWRGOQ2nTHABu7FaIYnS3/wtcg1a1OG8BNXakkHMJkzQCJ0t2bm/BErJ0K9QGYWC+ANK5ObIRs4HJpv2M+/OS3CIm8suWVImp1ulwpz0mslQWuON3LYJELq0cDXilj6+aHSEHe+xHxxHr6ZwkXzguvuB6UgY7xvdmhJdRKSdBUc8IHrUyc2vLXn0i9Jem/+Z5hwkoJ41fG5vtltAFzMmVMkW7YFDFq0SQxxbg8PUaLA3+AHVAOJgmkqGzaCDdLr1dTdTUKBoZvUKLtTLmBF8cg/qdWKm4P5NFkF9q1zeAYyey2Q0e2ZZ/3AbEsWX8Mfw9R3AnxAcw5ULWxYa5TRAsxr9DyfRdkK34IrZhn7kDkae+0RWTpQc4VttZijUwxY7eVHutqDM5CPAvWo6DPjNCKK1qrF/XDIuvD2VIQwq4gM05qaSRdcv+xN6Ygt/gVFCWE/G9WSsLiMOofJIIJ67FlE5zAAKAM0nXz0h1pUC9ebVyoQjdENQBWEYCpCetZnH+jJOMyu7BfruTehH0xjfI+L7VgW9jJPxJSpVOwhsI26ekbDEU2LLPslCBe8JgxdXV93HqP4Zd+hgzmZ9qf7lbQdERRr4iZOI4D2WrpHhLYoK5bONrQYFxugNq0RSkaPkuUnnnQsjVP/myCxyCfX64/bMIXHIxTqImol8BDRVDe5izMURKAJorW+05eWvf1Ge7n+rVEgY9oTCWfqjmENbo7iiyLuuwDArAIDUVdrLicqa6K+w1yJ/skgFwJp65OPePxxnN8SlYpxIHWsKgEFjwHp5BFJt7xnZ2VPCnQCA+ERbJly6GWrEVTPgaI5VZ/6S6UNYmzTAWpX/BPxK1DIyGWkzCeEVZ78hIs+qx5B3TP1dbb9dv0XlpTFM98QorokXY8Bv9EJsc9UhMRGFLgtKCrbo+nnpzrQkX/63+sS+zgUrwblwFSHFi9cXEUt5IxLTfGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:24.668789+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "8c8b6d6c4d8742839aadfc07:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042219-2xt2Hntqy2Fn6BhQtatE",
+    "usage": {
+      "prompt_tokens": 29127,
+      "completion_tokens": 576,
+      "total_tokens": 29703,
+      "cost": 0.0032007,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032007,
+        "upstream_inference_prompt_cost": 0.0029127,
+        "upstream_inference_completions_cost": 0.000288
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 326,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.373917969000104,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 93,
+    "citation_support": 96,
+    "rationale": "The candidate matches the reference: Intel Foundry external revenue fell about 60%, driven by lower traditional packaging services and lower equipment sales. The dollar figures ($953M to $385M, down $568M) and the computed 59.6% are consistent with the filing excerpts, and the candidate reports the rounded 60% alongside the exact calculation. The cited accession and the 'Operating Segment Revenue Summary' and 'A Year in Review' sections, with chunks 12 and 7, match the retrieved excerpts. Minor deduction: the reference's 60% is the filing's stated figure, and the candidate leads with the computed 59.6% before rounding."
+  },
+  "status": "ok"
+}

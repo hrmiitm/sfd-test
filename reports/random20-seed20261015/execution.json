@@ -1,0 +1,23 @@
+{
+  "started_utc": "2026-10-15T05:39:33.909275+00:00",
+  "command": [
+    "/home/kit/Documents/sfd-2025/.venv/bin/python",
+    "-m",
+    "sfd_2025.benchmark.run",
+    "--questions",
+    "reports/random20-seed20261015/questions.jsonl",
+    "--output",
+    "reports/random20-seed20261015",
+    "--concurrency",
+    "8"
+  ],
+  "concurrency": 8,
+  "limits": {
+    "memory_gib": 2,
+    "swap_bytes": 0,
+    "cpu_cores_equivalent": 1
+  },
+  "status": "complete",
+  "finished_utc": "2026-10-15T05:39:58.919809+00:00",
+  "returncode": 0
+}

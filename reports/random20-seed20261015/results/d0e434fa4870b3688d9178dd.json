@@ -1,0 +1,1405 @@
+{
+  "question_id": "Q068",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 49.078444416999446,
+    "accession_recall": 0.5,
+    "exact_quote_recall": 0.0
+  },
+  "status": "ok",
+  "answer": {
+    "text": "### **Intel Corporation (FY2024)**\n\nFrom Intel Corporation\u2019s Form 10-K for the fiscal year ended December 28, 2024 (Accession: `0000050863-25-000009`, Chunk ID: `be2e53ce-fab5-5648-8b8a-fc290c950582`, Consolidated Statements of Operations):\n* **Net Revenue:** $53,101 million\n* **Research and Development (R&D) Expense:** $16,546 million\n* **R&D Intensity:** \n  $$\\frac{16,546}{53,101} \\approx 31.1595\\% \\text{ (or approximately } 31.16\\%)$$\n\n---\n\n### **NVIDIA Corporation (FY2025)**\n\nWhile filing records for NVIDIA Corporation (CIK: `0001045810`) were identified in the filing metadata (e.g., potential annual report filings in `sfd-v1-2025-02.parquet` and `sfd-v1-2025-05.parquet`), the tool budget was exhausted before NVIDIA's FY2025 Form 10-K Consolidated Statements of Operations could be retrieved and inspected. \n\n---\n\n### **Conclusion / Limitation**\nBecause the evidence retrieved before tool budget exhaustion does not contain NVIDIA Corporation's FY2025 revenue and R&D expense figures, the available evidence is **insufficient** to complete the comparison and determine the exact difference in percentage points between the two companies.",
+    "usage": {
+      "prompt_tokens": 110149,
+      "completion_tokens": 696,
+      "total_tokens": 110845,
+      "cost": 0.059052
+    },
+    "seconds": 202.9161966239999,
+    "tool_seconds": 49.078444416999446,
+    "tool_calls": 6,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_594110",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Intel Corporation FY2024 revenue Research and Development R&D\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1/UMAGG5SoASZMpimVjQ7K2NInZVpEyk+TCe9zsp30yDj7jWNZViLYXm/TbMBP6JfL81k95EKfGrk3BwtX/3mzPgWm74Zz1BuPRB1YisGs4wu1W",
+              "format": "google-gemini-v1",
+              "id": "call_594110",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_594110",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Intel Corporation FY2024 revenue Research and Development R&D\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:26:05.251306+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "d0e434fa4870b3688d9178dd:agent:0",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792041963-c9Mec3qDa7wMtgVi3RKe",
+        "usage": {
+          "prompt_tokens": 926,
+          "completion_tokens": 29,
+          "total_tokens": 955,
+          "cost": 0.00080325,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00080325,
+            "upstream_inference_prompt_cost": 0.0006945,
+            "upstream_inference_completions_cost": 0.00010875
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.1555580070007636,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_131434",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"\\\"Consolidated Statements of Income\\\" OR \\\"Consolidated Statements of Operations\\\" \\\"Research and development\\\" Intel 2024\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1+NsN+Y1j4n784xO4PwEA5ovOAFFPmGmH3TMcAb895wmyobH4Z56Y3xjBj5mAOzlqt57bNS7390ycK1JRCxV1oOI6vyiZ2RyelXJsQ5Wzym5AYH",
+              "format": "google-gemini-v1",
+              "id": "call_131434",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_131434",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"\\\"Consolidated Statements of Income\\\" OR \\\"Consolidated Statements of Operations\\\" \\\"Research and development\\\" Intel 2024\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:29:41.523278+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "d0e434fa4870b3688d9178dd:agent:1",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042179-HK0WMnmTV1jryjlys0s7",
+        "usage": {
+          "prompt_tokens": 9981,
+          "completion_tokens": 41,
+          "total_tokens": 10022,
+          "cost": 0.0076395,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0076395,
+            "upstream_inference_prompt_cost": 0.00748575,
+            "upstream_inference_completions_cost": 0.00015375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.7704029309998077,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_208914",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"form_type\":\"10-K\",\"company\":\"NVIDIA\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a18zfh9EXptTOzmFKAnPTiSVHLWy8M6d/a0IaX1tUn3akvzL3Cj0AvGWPODTDSV0jg984XU51XCYYrFxaLGqGPFijWPZM37vfuVKvoU2pvyUQeXW",
+              "format": "google-gemini-v1",
+              "id": "call_208914",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_208914",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"form_type\":\"10-K\",\"company\":\"NVIDIA\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:34:27.667230+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "d0e434fa4870b3688d9178dd:agent:2",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042286-p5WbBFoUpcNyV5cc4CEx",
+        "usage": {
+          "prompt_tokens": 18920,
+          "completion_tokens": 71,
+          "total_tokens": 18991,
+          "cost": 0.0091872,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 7806,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0091872,
+            "upstream_inference_prompt_cost": 0.00892095,
+            "upstream_inference_completions_cost": 0.00026625
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 183.12187490500037,
+        "attempts": 2
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_32155",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"form_type\":\"10-K\",\"company\":\"NVIDIA\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a19I8N+8tODhpoEJKnrv1pMIed1fIaYUJXHWo9MMMtpbpE3deOD3UNP38/scz9H+hWbX4d4SkAO0s8ToMf7XaP/ZGwqOaVvCSUc+E+wcjV9asELV",
+              "format": "google-gemini-v1",
+              "id": "call_32155",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_32155",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"form_type\":\"10-K\",\"company\":\"NVIDIA\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:35:28.346902+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "d0e434fa4870b3688d9178dd:agent:3",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042526-rZ7Jh9GpCyYzG4azq7Au",
+        "usage": {
+          "prompt_tokens": 19077,
+          "completion_tokens": 71,
+          "total_tokens": 19148,
+          "cost": 0.014574,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.014574,
+            "upstream_inference_prompt_cost": 0.01430775,
+            "upstream_inference_completions_cost": 0.00026625
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.788766496999415,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_46586",
+              "function": {
+                "name": "duckdb_query",
+                "arguments": "{\"sql\":\"SELECT file_stem, source_path, month, year FROM filings WHERE accession LIKE '%1045810%' OR accession LIKE '%NVDA%' LIMIT 20\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1+fL7SuEkDKmD9JGxDmKZsjswt8P0KitnJ77Sk2OTfrf1ONkd+qjp6utkxsZLHVUeJGIl/RqTcV18L6ypxniibeRd2xDpY6PuzAWxXpWT6GQs1S",
+              "format": "google-gemini-v1",
+              "id": "call_46586",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_46586",
+            "function": {
+              "name": "duckdb_query",
+              "arguments": "{\"sql\":\"SELECT file_stem, source_path, month, year FROM filings WHERE accession LIKE '%1045810%' OR accession LIKE '%NVDA%' LIMIT 20\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:35:45.102084+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "d0e434fa4870b3688d9178dd:agent:4",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042543-J4CxrTHqs0sc06eOOcYO",
+        "usage": {
+          "prompt_tokens": 19233,
+          "completion_tokens": 53,
+          "total_tokens": 19286,
+          "cost": 0.004126575,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 15551,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004126575,
+            "upstream_inference_prompt_cost": 0.003927825,
+            "upstream_inference_completions_cost": 0.00019875
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.6817585029994007,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_1951899",
+              "function": {
+                "name": "duckdb_query",
+                "arguments": "{\"sql\":\"SELECT file_stem, source_path, char_count FROM filings WHERE accession='0001045810' ORDER BY char_count DESC LIMIT 10\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1+VN3FNxFIrZ7K57EIjLPWp9mebXdmxWkG3i37yXawWdMIww+LpXNasQMot01DAw+zL2ERVe8NJNI+oFd0+9iV23FrJYd0oVnbUfiL+FfsDMOzz",
+              "format": "google-gemini-v1",
+              "id": "call_1951899",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_1951899",
+            "function": {
+              "name": "duckdb_query",
+              "arguments": "{\"sql\":\"SELECT file_stem, source_path, char_count FROM filings WHERE accession='0001045810' ORDER BY char_count DESC LIMIT 10\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:36:04.831528+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "d0e434fa4870b3688d9178dd:agent:5",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042562-6BYii3HUQf4EVV0NGIwm",
+        "usage": {
+          "prompt_tokens": 20701,
+          "completion_tokens": 54,
+          "total_tokens": 20755,
+          "cost": 0.005324475,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 15413,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.005324475,
+            "upstream_inference_prompt_cost": 0.005121975,
+            "upstream_inference_completions_cost": 0.0002025
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.8842247989996395,
+        "attempts": 1
+      },
+      {
+        "text": "### **Intel Corporation (FY2024)**\n\nFrom Intel Corporation\u2019s Form 10-K for the fiscal year ended December 28, 2024 (Accession: `0000050863-25-000009`, Chunk ID: `be2e53ce-fab5-5648-8b8a-fc290c950582`, Consolidated Statements of Operations):\n* **Net Revenue:** $53,101 million\n* **Research and Development (R&D) Expense:** $16,546 million\n* **R&D Intensity:** \n  $$\\frac{16,546}{53,101} \\approx 31.1595\\% \\text{ (or approximately } 31.16\\%)$$\n\n---\n\n### **NVIDIA Corporation (FY2025)**\n\nWhile filing records for NVIDIA Corporation (CIK: `0001045810`) were identified in the filing metadata (e.g., potential annual report filings in `sfd-v1-2025-02.parquet` and `sfd-v1-2025-05.parquet`), the tool budget was exhausted before NVIDIA's FY2025 Form 10-K Consolidated Statements of Operations could be retrieved and inspected. \n\n---\n\n### **Conclusion / Limitation**\nBecause the evidence retrieved before tool budget exhaustion does not contain NVIDIA Corporation's FY2025 revenue and R&D expense figures, the available evidence is **insufficient** to complete the comparison and determine the exact difference in percentage points between the two companies.",
+        "message": {
+          "role": "assistant",
+          "content": "### **Intel Corporation (FY2024)**\n\nFrom Intel Corporation\u2019s Form 10-K for the fiscal year ended December 28, 2024 (Accession: `0000050863-25-000009`, Chunk ID: `be2e53ce-fab5-5648-8b8a-fc290c950582`, Consolidated Statements of Operations):\n* **Net Revenue:** $53,101 million\n* **Research and Development (R&D) Expense:** $16,546 million\n* **R&D Intensity:** \n  $$\\frac{16,546}{53,101} \\approx 31.1595\\% \\text{ (or approximately } 31.16\\%)$$\n\n---\n\n### **NVIDIA Corporation (FY2025)**\n\nWhile filing records for NVIDIA Corporation (CIK: `0001045810`) were identified in the filing metadata (e.g., potential annual report filings in `sfd-v1-2025-02.parquet` and `sfd-v1-2025-05.parquet`), the tool budget was exhausted before NVIDIA's FY2025 Form 10-K Consolidated Statements of Operations could be retrieved and inspected. \n\n---\n\n### **Conclusion / Limitation**\nBecause the evidence retrieved before tool budget exhaustion does not contain NVIDIA Corporation's FY2025 revenue and R&D expense figures, the available evidence is **insufficient** to complete the comparison and determine the exact difference in percentage points between the two companies.",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a1+wpEh3y0qZXwP/0L4A6RQdmMe2JE0Vz5J2hudX7b3Z+KAnEUDIbUQr1w+4VaILIbsq7Hyc4eyIfgEvtxBsUanymQKA0JstfTi3a2xDlOYzLCKA",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:39:45.829659+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000
+        },
+        "tag": "d0e434fa4870b3688d9178dd:agent:6",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042782-KKx3IQUTOXkteHlWGTNI",
+        "usage": {
+          "prompt_tokens": 21311,
+          "completion_tokens": 377,
+          "total_tokens": 21688,
+          "cost": 0.017397,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.017397,
+            "upstream_inference_prompt_cost": 0.01598325,
+            "upstream_inference_completions_cost": 0.00141375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 5.5136109820005,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_594110",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Intel Corporation FY2024 revenue Research and Development R&D\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "8ca22342-c0cd-574c-8339-81fb466a0dfb",
+              "section": "Projected Income Statements",
+              "section_index": 755,
+              "chunk_index": 0,
+              "char_start": 2711713,
+              "char_end": 2713839,
+              "text": "#### Projected Income Statements\nManagement provided financial projections for the years ending June 30, 2024 through June 30, 2027. We assessed the reasonability of these financial projections by reviewing the projected financial performance of Scage's competitors, as available, for 2023 through 2025. Ultimately, we relied upon Management's projections for the valuation.\n\nThe following chart presents unit sales by product throughout the forecast period.\n\n![](tbarchart_003.jpg)\n\nPrices for each product are presented in the following table. Prices were projected to remain constant throughout the forecast.\n\n![](ttable_001.jpg)\n\nAnnex D-1-15\n\n[**Table of Contents**](#TOC001)\n\nBased on these assumptions, we projected revenue to grow from \u00a5778.1 million in FY2024 to \u00a513,384.1 million in FY2027. The following chart presents Scage's projected revenue throughout the forecast.\n\n![](tbarchart_004.jpg)\n\nCost of goods sold (COGS) varied by product and was projected to decrease as a percentage of revenue over time. The following table presents the projected gross margins for FY2027.\n\n![](ttable_002.jpg)\n\nScage's gross margin was projected to be 17.2% in FY2024, growing each year thereafter to 22.2% in FY2027. The following chart presents the projected gross profit and margin.\n\n![](tbarchart_005.jpg)\n\nAnnex D-1-16\n\n[**Table of Contents**](#TOC001)\n\nOperating expenses were segregated into four categories: (1) taxes & fees, (2) sales cost, (3) general & administrative, (4) research & development. Operating expenses were projected based on a percentage of revenue. In aggregate, operating expenses were projected to decrease from 36.4% of revenue in FY2024, to 11.6% of revenue in FY2027.\n\nThese projections resulted in an EBITDA margin of -19.2% in FY2024, increasing to 10.6% in FY2027. This is consistent with industry data reviewed and the guideline companies. Projected EBITDA and EBITDA margins are presented in the following chart.\n\n![](tbarchart_006.jpg)\n\nProjected revenue is presented in Schedule B.1 and projected expenses in Schedule B.2. Scage's projected income statements are presented in Schedule B.3.",
+              "token_count": 503,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "1bd0123a-1a39-5a18-b36e-ba8d85942b52",
+              "section": "Appendix E: Scage International Limited (\"Scage\") Valuation",
+              "section_index": 784,
+              "chunk_index": 0,
+              "char_start": 2793937,
+              "char_end": 2796959,
+              "text": "#### Appendix E: Scage International Limited (\"Scage\") Valuation\n**Income Approach\u2014Discounted Cash Flow Method**\n\nWe developed a DCF model to arrive at Scage's market value of invested capital (MVIC) as of the Valuation Date. The DCF method first projects the cash flow the business is expected to produce over a discrete period. Then, each discrete cash flow is discounted to present value at a rate that reflects the risk of receiving that amount at the time anticipated in the projection. To better reflect these projections, items such as revenue, operating costs, capital expenses, and working capital were forecasted. These projections were used to determine the net cash flow generated by the business, which was then discounted to the present value, using an appropriate discount rate. Total outstanding debt, if any, was then subtracted from the MVIC to arrive at the value of equity.\n\n***Projected Income Statements***\n\nManagement provided financial projections for the years ending June 30, 2024 through June 30, 2027. We assessed the reasonability of these financial projections by reviewing the projected financial performance of Scage's competitors, as available, for 2023 through 2025. Ultimately, we relied upon Management's projections for the valuation.\n\nThe following chart presents unit sales by product throughout the forecast period.\n\n![](tbarchart_007.jpg)\n\nPrices for each product are presented in the following table. Prices were projected to remain constant throughout the forecast.\n\n![](ttable_001.jpg)\n\nAnnex D-2-16\n\n[**Table of Contents**](#TOC001)\n\nBased on these assumptions, we projected revenue to grow from \u00a570.7 million in FY2024 to \u00a56,779.5 million in FY2027. The following chart presents Scage's projected revenue throughout the forecast.\n\n![](tbarchart_008.jpg)\n\nCost of goods sold (COGS) varied by product and was projected to decrease as a percentage of revenue over time. The following table presents the projected gross margins for FY2027.\n\n![](timage_009.jpg)\n\nScage's gross margin was projected to be 29.8% in FY2024, declining each year thereafter to 21.7% in FY2026. The following chart presents the projected gross profit and margin.\n\n![](tbarchart_009.jpg)\n\nAnnex D-2-17\n\n[**Table of Contents**](#TOC001)\n\nOperating expenses were segregated into four categories: (1) taxes & fees, (2) sales cost, (3) general & administrative, (4) research & development. Operating expenses were projected based on a percentage of revenue. In aggregate, operating expenses were projected to decrease from 70.9% of revenue in FY2024, to 14.7% of revenue in FY2027.\n\nThese projections resulted in an EBITDA margin of -41.0% in FY2024, increasing to 7.0% in FY2027. This is consistent with industry data reviewed and the guideline companies. Projected EBITDA and EBITDA margins are presented in the following chart.\n\n![](tbarchart_010.jpg)\n\nProjected revenue is presented in Schedule B.1 and projected expenses in Schedule B.2. Scage's projected income statements are presented in Schedule B.3.",
+              "token_count": 682,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000050863-25-000009",
+              "cik": "0000050863",
+              "company": "INTEL CORP",
+              "form_type": "10-K",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 4186,
+              "source_md5": "228c076b20cfc822a46260e874681ea3",
+              "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "f2fda69e-9869-5891-9f60-2bea6d55ec24",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 14,
+              "char_start": 124465,
+              "char_end": 132774,
+              "text": "| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 23 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Gross Margin\n\nWe derived a majority of our consolidated gross margin in 2024, and 2023 from our Intel Products business sales through our CCG, DCAI, and NEX operating segments.\n\n---\n\n\n\n| |\n|:---|\n| Gross Margin $B |\n| (Percentages in chart indicate gross margin as a percentage of total revenue) |\n\n---\n\n\n\n![249](intc-20241228_g19.jpg)\n\n2024 vs. 2023\n\nOur consolidated gross margin in 2024 decreased by $4.4 billion, or 20%, compared to 2023 due primarily to higher 2024 impairment charges and accelerated depreciation. During Q3 2024, we concluded that our manufacturing asset portfolio, primarily for our Intel 7 process node, exceeded manufacturing capacity requirements. Upon completing an asset re-use assessment, we impaired certain construction-in-progress assets and accelerated depreciation for certain in-use manufacturing assets that resulted in $3.3 billion of charges in 2024. Our 2024 gross margin also decreased due to lower revenue, higher unit cost primarily from an increased mix of Intel 4 and Intel 7 products, higher period charges due to $922 million in Gaudi AI accelerator inventory-related charges recognized in 2024, and higher factory start-up costs. These 2024 unfavorable gross margin impacts were partially offset by certain favorable gross margin movements in 2024, including lower period charges driven by the sell-through of previously reserved inventory and lower non-accelerator reserves taken, lower period charges related to excess capacity charges, and a benefit recognized for government incentives received under the CHIPS Act.\n\nWe are making capital investments in furtherance of our strategy. As of December 28, 2024, our capital investments classified as construction in progress totaled $50.4 billion ($43.4 billion as of December 30, 2023). These assets have not yet been placed into service and have not yet begun depreciating. As these construction-in-progress assets are placed into service, we expect to incur depreciation expense that impacts future production costs and, ultimately, cost of sales. To the extent we are unable to grow our revenues to offset these production costs, our gross margin and operating income will be unfavorably affected. Additionally, we could incur asset impairments on property, plant, and equipment assets if our strategy is not successful.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 24 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nOperating Expenses\n\nTotal R&D and MG&A expenses for 2024 were $22.1 billion, up 2% compared to 2023. These expenses represent 41.5% of revenue for 2024 and 40.0% of revenue for 2023. In support of our strategy, we continue to make significant investments to accelerate our process technology roadmap. As a result of our 2024 Restructuring Plan and related cost-reduction measures, we expect a decrease in total R&D and MG&A expenses in future periods as we focus investments in R&D and create capacity for sustained investment in technology and manufacturing.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Research and Development $B | Marketing, General, and Administrative $B |\n| (Percentages indicate expenses as a percentage of total revenue) | (Percentages indicate expenses as a percentage of total revenue) |\n\n---\n\n\n\n![2327](intc-20241228_g20.jpg)![2328](intc-20241228_g21.jpg)\n\n<u>Research and Development</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| R&D increased by $500 million, or 3%, primarily driven by investments in our process technology and products, and higher share-based compensation, partially offset by lower incentive-based compensation and the effects of various cost-reduction measures. |\n\n---\n\n\n\n<u>Marketing, General, and Administrative</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| MG&A decreased by $127 million, or 2%, primarily driven by lower incentive-based compensation, share-based compensation, and the effects of various cost-reduction measures, partially offset by higher corporate spending to drive business transformation.  |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 25 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nRestructuring and Other Charges\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| Employee severance and benefit arrangements | $2481 | $222 | $1038 |\n| Litigation charges and other | 858 | (329) | (1187) |\n| Asset impairment charges | 3631 | 45 | 151 |\n| **Total restructuring and other charges** | $**6970** | $**(62)** | $**2** |\n\n---\n\n\n\nIn Q3 2024, the 2024 Restructuring Plan was announced, subsequently approved and committed to by our management team, and initiated to implement cost-reduction measures, including reductions in employee headcount, other operating expenditures, and capital expenditures (see \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements). We expect that our 2024 Restructuring Plan, in conjunction with other initiatives, will reduce our cost structure while we continue our investments to develop, manufacture, market, sell, and deliver product and process initiatives in furtherance of our strategy. We expect actions pursuant to the 2024 Restructuring Plan to be substantially completed by the fourth quarter of 2025, which is subject to change. Any changes to the estimates or timing will be reflected in our results of operations.\n\n*Employee severance and benefit arrangements* includes net charges relating to the 2024 Restructuring Plan of $2.2 billion in 2024. Charges relating to other actions taken to streamline operations and to reduce costs were $294 million in 2024. The charges in 2023 and 2022 primarily related to the 2022 Restructuring Program, which was approved to rebalance our workforce and operations in alignment with our strategy and was completed in Q1 2024. The 2022 Restructuring Program, in conjunction with other initiatives, reduced our cost structure and allowed us to reinvest certain of these cost savings in resources and capacity to develop, manufacture, market, sell, and deliver our products in furtherance of our strategy.\n\n*Litigation charges and other* includes a charge of $780 million that we recorded in 2024 arising out of the R2 litigation. In 2023, a $1.2 billion benefit was recorded due to the reduction in the previously accrued charge as a result of developments in the VLSI litigation. 2023 charges also included a $401 million charge for an EC-imposed fine and a $353 million termination fee in connection with our inability to timely obtain required regulatory approvals needed to acquire Tower Semiconductor Ltd. Refer to \"Note 19: Commitments and Contingencies\" within Notes to Consolidated Financial Statements for information about litigation related items.\n\n*Asset impairment charges* in 2024 includes non-cash charges associated with the 2024 Restructuring Plan, including $442 million of non-cash impairments of construction-in-progress assets associated with our decision to exit and outsource manufacturing capabilities for certain internal test hardware; and $103 million of non-cash impairments of operating leased assets and related leasehold improvements resulting from real estate consolidations and exits. Real estate consolidations and exits did not significantly change our operating lease liabilities and may result in future cash outlays for facility restoration or the relocation of operations. In addition, we incurred non-cash impairments relating to goodwill and acquired intangible assets of $3.1 billion in 2024. Refer to \"Note 11: Goodwill\" and \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements for further information about these items.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 26 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nGains (Losses) on Equity Investments and Interest and Other, Net\n\n---",
+              "token_count": 1973,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000050863-25-000009",
+              "cik": "0000050863",
+              "company": "INTEL CORP",
+              "form_type": "10-K",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 4186,
+              "source_md5": "228c076b20cfc822a46260e874681ea3",
+              "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "d3c83be6-139e-5d68-8f94-47134294ebb5",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 7,
+              "char_start": 64406,
+              "char_end": 74742,
+              "text": "| | |\n|:---|:---|\n| ![social-icons-rgb-boxed.jpg](intc-20241228_g16.jpg) | Social and Relationship Capital |\n\n---\n\n\n\nWe are committed to engaging in initiatives that support our communities and help us develop trusted relationships with our stakeholders. Proactive engagement with our stakeholders and investments in social impact initiatives, including those aligned with the United Nations Sustainable Development Goals, advance our position as a leading corporate citizen and create shared value for Intel, our global supply chain, and our communities.\n\nEconomic and social. The health of our business and local economies depends in part on continued investments in innovation. We provide high-skill, high-paying jobs around the world, many of which are manufacturing and R&D jobs located in our factories. As we expand operations in both existing and new locations, we are building a pipeline of qualified workers through our talent strategy and the many investments we are making in education. We also benefit economies through our R&D ecosystem spending, sourcing activities, employee spending, and tax payments.\n\nHuman rights commitment. We are committed to maintaining and improving systems and processes to avoid causing or contributing to adverse impacts on human rights in our operations, products, and supply chain. We have established an integrated approach to managing human rights across our business, including senior-level management involvement and board-level oversight. We also meet throughout the year with external stakeholders and experts on human rights to continue to inform and evolve our human rights policies and oversight processes. While we do not always know nor can we control what products our customers create or the applications end users may develop, we do not support or tolerate our products being used to adversely impact human rights. Where we become aware of a concern that Intel products are being used by a business partner in connection with abuses of human rights, we intend to evaluate and restrict or cease business with the third party unless and until we have high confidence that Intel's products are not being used to adversely impact human rights.\n\nSupply Chain Responsibility\n\nWe actively manage our supply chain to help reduce risk, improve product quality, achieve environmental and social goals, and improve overall performance and value creation for Intel, our customers, and our suppliers. To drive responsible and sustainable practices throughout our supply chain, we have robust programs to educate and engage suppliers that support our global manufacturing operations. We actively collaborate with other companies and lead industry initiatives on key issues such as improving transparency around climate and water impacts in the global electronics supply chain, and we are advancing collaboration across our industry on responsible minerals sourcing. Through these efforts, we help set electronics industry-wide standards, develop audit processes, and conduct training.\n\nOver the past decade, we have directly engaged with suppliers to verify compliance and build operational capacity to address risks of forced and bonded labor and other human rights issues. We perform periodic audits and identify critical direct suppliers to engage through capability-building programs, which help suppliers build sustainability acumen and verify compliance with the Responsible Business Alliance and the Intel Code of Conduct. We also engage with indirect suppliers through our programs on forced and bonded labor, responsible minerals, and supplier diversity.\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Our Capital<sub>11</sub> |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![natural-icons-rgb-boxed.jpg](intc-20241228_g17.jpg) | Natural Capital |\n\n---\n\n\n\nReducing our environmental footprint as we grow helps us create efficiencies, support our communities, and respond to the needs of our stakeholders. We invest in environmental projects and set company-wide environmental goals to drive reductions in greenhouse gas emissions, energy and water use, and waste to landfills. We build energy efficiency into our products to help our customers lower their own emissions, energy usage, and costs, and we collaborate with policymakers and other stakeholders to use technology to address environmental challenges.\n\nWe continue to take action on emissions reduction strategies focused on emissions abatement, and to make additional investments in renewable electricity, process and equipment optimization, and energy conservation. In 2024, we linked a portion of the executive and employee performance bonus to our goal to reduce our 2024 Scope 1 and 2 greenhouse gas emissions by 25,000 metric tons of carbon dioxide equivalent, compared to 2023. We also focus on addressing climate change impacts upstream and downstream in the value chain. This includes improving product energy efficiency and increasing the positive impact of our products by leveraging opportunities for Intel technologies to enable other sectors of the economy to reduce their climate and energy footprints.\n\nEnergy\n\nWe focus on reducing our own climate change impact, and over the past two decades have reduced our direct and indirect greenhouse gas emissions associated with energy consumption and invested in renewable electricity and on-site alternative energy projects. In 2024, continuing our practice of linking a portion of our executive and employee performance bonus to our corporate sustainability metrics, we linked a portion of the performance bonus to our 2024 target to reach 95% renewable electricity use globally.\n\nWater Stewardship\n\nWater is essential to the semiconductor manufacturing process. We use ultrapure water to remove impurities from our silicon wafers, and we use fresh and reclaimed water to run our manufacturing facility systems. Our water strategy illustrates our commitment to manage water resources efficiently. In 2024, we linked a portion of our executive and employee performance bonus to our target to conserve and restore 13.5 billion gallons of water during the year.\n\nCircular Economy and Waste Management\n\nWe have long been committed to waste management, recycling, and circular economy strategies that enable the recovery and productive re-use of waste streams. We continue to focus on opportunities to upcycle waste by improving waste segregation practices and collaborating with our suppliers to evaluate new technologies for waste recovery. In 2024, we linked a portion of our executive and employee performance bonus to our interim target to achieve a greater than 90% recycling rate of construction waste.\n\nGovernance and Disclosure\n\nWe are committed to transparency around our carbon footprint and climate risk, and use the framework developed by the TCFD to inform our disclosure on climate governance, strategy, risk management, and metrics and targets. For governance and strategy, we follow an integrated approach to address climate change, with multiple teams responsible for managing climate-related activities, initiatives, and policies, with senior-level management involvement and board-level oversight, including the Corporate Governance and Nominating Committee. We describe our overall risk management processes in our proxy statement, and describe climate-related risks and opportunities in our annual Corporate Responsibility Report, the Intel Climate Change Policy, the Intel Climate Transition Action Plan, and \"Risk Factors\" within this Form 10-K. In addition, our Corporate Responsibility Report includes a mapping of our disclosure to the TCFD, GRI, and SASB frameworks. The Corporate Responsibility Report and our CDP Climate Change and Water Surveys are available on our website and are published annually.<sup>1</sup>\n\n<sup>1</sup> *The contents of our website and our Corporate Responsibility Report, Climate Change Policy, Climate Transition Action Plan, and CDP Climate Change and Water Surveys are referenced for general information only and are not incorporated by reference in this Form 10-K.*\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Our Capital<sub>12</sub> |\n\n---\n\n\n\n------\n\nManagement's Discussion and Analysis <br>\n\nOverview\n\nWe are a global designer and manufacturer of semiconductor products, including CPUs and other solutions, primarily marketed and sold through our Intel Products business and manufactured via our Intel Foundry operations and other suppliers. Our customers primarily include OEMs, ODMs, cloud service providers, and other manufacturers and service providers, such as industrial and communication equipment manufacturers and other cloud service providers who buy our products through distributor, reseller, retail, and OEM channels throughout the world. We market and sell these products directly through our global sales and marketing organizations and indirectly through channel partners. We manufacture our products at our fabrication and assembly and test facilities located throughout the world. We seek to expand our Intel Foundry business as a third-party foundry for external customers.\n\nA Year in Review\n\n2024 revenue was $53.1 billion, down $1.1 billion, or 2%, from 2023 due to lower all other revenue and lower Intel Foundry revenue, partially offset by higher Intel Products revenue. All other revenue decreased 32% from 2023, driven by lower Altera revenue due to customers tempering purchases to reduce existing inventories across all product lines and lower Mobileye revenue as customers tempered purchases to reduce existing inventories of EyeQ products. Intel Foundry external revenue decreased 60% from 2023 due to lower traditional packaging services and lower equipment sales. Intel Products revenue increased 3% from 2023 due primarily to higher CCG and DCAI revenue. CCG revenue increased 4% from 2023 primarily due to higher notebook volume compared to 2023 and was partially offset by lower other CCG revenue, which decreased from 2023 due to the exit of legacy businesses, and lower desktop revenue, which decreased on lower demand compared to 2023. DCAI revenue increased 1% from 2023 driven by higher server revenue primarily from high core count products, which increased ASPs and lowered volume compared to 2023.",
+              "token_count": 1919,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000050863-25-000009",
+              "cik": "0000050863",
+              "company": "INTEL CORP",
+              "form_type": "10-K",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 4186,
+              "source_md5": "228c076b20cfc822a46260e874681ea3",
+              "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "e94f3ea0-ae87-595e-834d-bad863e00d6f",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 4,
+              "char_start": 35191,
+              "char_end": 44294,
+              "text": "![840](intc-20241228_g10.jpg)\n\n \u25a0 Cash from Operating Activities \u25a0 Adjusted Free Cash Flow<sup>1</sup>\n\nOur Financial Capital Allocation Strategy\n\nInvest in the Business\n\nOur first allocation priority is to invest in R&D and capital spending to capitalize on the opportunity presented by the world's demand for semiconductors. In 2024, we continued our focus on capital investment and the deployment of our Smart Capital strategy.\n\nReturn Excess Cash to Stockholders\n\nOur capital allocation strategy historically included returning excess cash to stockholders through dividends and stock repurchases. Our most recent stock repurchase was in the first quarter of 2021 and we suspended the declaration of quarterly dividends starting with the fourth quarter of 2024. We agreed under our commercial CHIPS Act agreement to forgo paying dividends for the next two years, and agreed to limitations on the payment of dividends for the three years thereafter. Further, we do not expect to pay dividends or make stock repurchases until our cash flows improve as we focus on the critical investments needed to execute our business strategy and create long-term value.\n\n---\n\n\n\n| | |\n|:---|:---|\n| R&D and Capital Investments $B | Cash to Stockholders $B |\n\n---\n\n\n\n![1786](intc-20241228_g11.jpg)&nbsp;&nbsp;&nbsp;&nbsp;\n\n&nbsp;&nbsp;&nbsp;&nbsp;![1790](intc-20241228_g12.jpg)\n\n \u25a0 R&D \u25a0 Logic \u25a0 Memory<sup>2</sup> \u25a0 Repurchases \u25a0 Dividend\n\nOptimize our Portfolio and Unlock Value\n\nWe seek to drive value creation through transactions such as the 2022 IPO and 2023 secondary offering of Mobileye stock, the 2023 minority stake sales in IMS, and the 2023 announcement of our intent to operate Altera as a standalone business, which we expect to enable potential private and public equity investments. Transactions like these provide additional capital to support the critical investments needed to advance our business strategy.\n\nOur capital allocation strategy also includes opportunistic investment in and acquisition of companies that complement our strategic objectives. We look for acquisitions that supplement and strengthen our capital and R&D investments.\n\nLastly, we take action when investments do not strategically align to our key priorities or provide adequate returns to our stakeholders. In the last few years, we exited numerous businesses, including our NAND Memory business (first closing in 2021 and second closing expected in March 2025) and our Intel<sup>\u00ae</sup> Optane\u2122 memory business (2022).\n\n<sup>1</sup> *See \"Non-GAAP Financial Measures\" within MD&A.*\n\n<sup>2</sup> *2021-2024 capital investments in Memory are not presented due to the divestiture of the NAND memory business which we deconsolidated upon closing the first phase of the transaction on December 29, 2021. 2020 capital investments presented include Memory.* \n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Our Capital<sub>6</sub> |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intellectual-icons-rgb-boxed.jpg](intc-20241228_g13.jpg) | Intellectual Capital |\n\n---\n\n\n\nResearch and Development\n\nR&D investment is critical to enable us to deliver on our technology roadmap, introduce leading products, and develop new businesses and capabilities in the future. We seek to protect our R&D efforts through our IP rights and may augment R&D initiatives by, from time-to-time, acquiring or investing in companies, entering into R&D agreements, and directly purchasing or licensing technology.\n\nAreas Key to Product Competitiveness\n\nWe have intensified our focus and investment on areas key to product competitiveness. Our objective with each new generation of products is to improve user experiences and value through advances in performance, power, cost, connectivity, security, form factor, and other features. We also focus on reducing our design complexity, re-using IP, and increasing ecosystem collaboration to improve our efficiency.\n\nxPU. We believe the future is with xPU across a diverse mix of scalar, vector, matrix, and spatial architectures deployed in CPU, GPU, NPU, IPU, accelerators, and FPGA sockets, enabled by a scalable software stack and integrated into systems by advanced packaging technology. We are building processors that span several major computing architectures, moving toward an era of heterogeneous computing:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Client CPUs. In 2024, we ramped sales of the Intel<sup>\u00ae</sup> Core\u2122 Ultra Series 1, our first product with an integrated neural processing unit for efficient processing of AI workload. The Intel Core Ultra Series 1, manufactured on the Intel 4 process, introduced the first AI PCs to the market. We also launched the Intel Core Ultra 200V Series, showcasing power efficiency and long-lasting battery life. The 200V Series, manufactured by an external foundry, leverages our Xe2 GPU architecture, bringing improved efficiency, second-generation ray tracing units and XMX AI acceleration to thin and light notebooks. During 2024, a significant majority of our client sales consisted of our 13th and 14th Gen Intel Core processors, manufactured on Intel 7, which allow us to serve the breadth of customer and computing needs in the client market.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Data center CPUs. We launched our Intel<sup>\u00ae</sup> Xeon<sup>\u00ae</sup> 6 processors for the data center, utilizing the Intel 3 process, including our first Intel Xeon processor using Efficient cores (E-cores). The Intel Xeon 6 family is designed to address the growing diversity in workloads and deployments in the data center environments. Our 5th Gen Intel Xeon Scalable processors, based on Intel 7, were launched in 2023, and continued to ramp throughout 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Discrete client GPUs. The Intel<sup>\u00ae</sup> Arc\u2122 graphics family offers modern GPU features to power immersive games, creator applications, and AI workloads. In 2024, we launched the Intel Arc B-Series based on the latest Xe2 GPU architecture. The compute engine of the Intel Arc B-Series is our second-generation X<sup>e</sup>-core, which delivers 70% more performance per core and is 50% more power efficient than the Intel Arc A750.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Edge computing. We recently launched a suite of processors for edge computing. This includes the Intel Core Ultra 200S Series, bringing the NPU IP to desktops and reducing package power. These hybrid designs utilize our most advanced performance cores and power-efficient cores, as well as the latest packaging technology.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Datacenter AI accelerators and GPUs. In 2024, we launched the Intel<sup>\u00ae</sup> Gaudi<sup>\u00ae</sup> 3 AI accelerators offering significant price-performance advantages for AI inference applications.\n\nSoftware. Software unleashes the potential of our hardware platforms across all workloads, domains, and architectures.\n\nWe aim to optimize AI frameworks and middleware, such as PyTorch, TensorFlow, vLLM, Hugging Face and WebNN to run efficiently on our hardware. Our OpenVINO\u2122 toolkit is an open source toolkit that accelerates deep learning inference on our processors across various use cases, such as generative AI, computer vision, audio, and language with industry standard models. It is used in domains from edge to AI PC to cloud and is the leading inferencing library on our silicon.\n\nIn 2024 we launched the Open Platform for Enterprise AI under the Linux Foundation to accelerate deployment of generative AI use cases through industry standard modular microservice architecture. Since launch, the ecosystem has been actively engaged, with an expanding network of partners enhancing features and developing new capabilities.\n\nMost of these frameworks and middleware are built from our oneAPI, which enables developers to create performant cross-architecture applications using a single code base across CPUs, GPUs, and other accelerators. We contributed our oneAPI specifications and implementations to the UXL Foundation under the Linux Foundation. By doing so, oneAPI delivers an open and multi-vendor programming model enabling choice and code re-use across the accelerator hardware ecosystem.\n\nThis software stack is designed to preserve the usability of existing tools and software while accommodating future developments, enabling continuity for users and developers.\n\nAreas Key to Process and Packaging Competitiveness\n\nOur leading-edge process and packaging technology continues to be key to the success of our strategy.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Intel 7 process node continues in production for our 13th and 14th Gen Intel Core processors. Intel 7 was utilized for a significant majority of our processor production and products in 2024, and is expected to continue to be utilized for a significant portion of our processor production and products in 2025.\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Our Capital<sub>7</sub> |\n\n---\n\n\n\n------",
+              "token_count": 1973,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 10.59319990899985
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_131434",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"\\\"Consolidated Statements of Income\\\" OR \\\"Consolidated Statements of Operations\\\" \\\"Research and development\\\" Intel 2024\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000050863-25-000009",
+              "cik": "0000050863",
+              "company": "INTEL CORP",
+              "form_type": "10-K",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 4186,
+              "source_md5": "228c076b20cfc822a46260e874681ea3",
+              "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "50bd9940-dd58-5593-8ec7-c57ac3dea915",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 43,
+              "char_start": 383082,
+              "char_end": 391942,
+              "text": "We previously announced the implementation of our internal foundry operating model, which took effect in the first quarter of 2024, and creates a foundry relationship between our Intel Products business (collectively CCG, DCAI, and NEX) and our Intel Foundry business. Intel Products consists substantially of design and development of CPUs and related solutions for external customers. Intel Foundry consists substantially of process engineering, manufacturing, and foundry services groups that provide manufacturing, test, and assembly services to our Intel Products business and to external customers. Both businesses utilize marketing, sales, and other support functions.\n\nOur internal foundry model is a key component of our strategy and is designed to reshape our operational dynamics and drive greater transparency, accountability, and focus on costs and efficiency. We also previously announced our intent to operate Altera as a standalone business. Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\" As a result of these changes, we modified our segment reporting in the first quarter of 2024 to align to this new operating model. All prior period segment data has been retrospectively adjusted to reflect the way our CODMs internally receive information and manage and monitor our operating segment performance. There are no changes to our Consolidated Financial Statements for any prior periods.\n\nWe organize our business as follows:\n\n**\u25aa** Intel Products:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Client Computing Group (CCG)\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Data Center and AI (DCAI)\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Network and Edge (NEX)\n\n**\u25aa** Intel Foundry\n\n**\u25aa** All other:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Altera\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Mobileye\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Other\n\nCCG, DCAI, and Intel Foundry qualify as reportable operating segments. NEX, Altera, and Mobileye do not qualify as reportable operating segments; however, we have elected to disclose certain of their results. When we enter into federal contracts, they are aligned to the sponsoring operating segment.\n\nThe accounting policies applied to our segments follow those applied to Intel as a whole. A summary of the basis for which we report our operating segment revenues and operating margin is as follows:\n\nIntel Products: CCG, DCAI, and NEX\n\n**\u25aa** Segment revenue: Consists of revenues from external customers. Our Intel Products operating segments represent most of Intel consolidated revenue and are derived from our principal products that incorporate various components and technologies, including a microprocessor and chipset, a stand-alone SoC, or a multichip package, which are based on Intel architecture.\n\n**\u25aa** Segment expenses: Consists of intersegment charges for product manufacturing and related services from Intel Foundry, external foundry and other manufacturing expenses, product development costs, allocated expenses as described below, and direct operating expenses.\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Notes to Consolidated Financial Statements | 68 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nIntel Foundry\n\n**\u25aa** Segment revenue: Consists substantially of intersegment product and services revenue for wafer fabrication, substrates and other related products, and services sold to Intel Products, Altera, and certain other Intel internal businesses. We recognize intersegment revenue based on the completion of performance obligations. Product revenue is recognized upon transfer of ownership, which is generally at the completion of wafer sorting. Backend service revenue is recognized upon the completion of assembly and test milestones, which approximates the recognition of revenue over the service period. Intersegment sales are recorded at prices that are intended to approximate market pricing. Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024, $953 million in 2023, and $474 million in 2022.\n\n**\u25aa** Segment expenses: Consists of direct expenses for technology development, product manufacturing and services provided by Intel Foundry to internal and external customers, allocated expenses as described below, and direct operating expenses. Direct expenses for product manufacturing include excess capacity charges.\n\nAll Other\n\nOur \"all other\" category includes the results of operations from other non-reportable segments not otherwise presented, including our Altera and Mobileye businesses, start-up businesses that support our initiatives, and historical results of operations from divested businesses. The financial results of our all other category include intersegment product and services revenue and intersegment expenses.\n\nWe allocate operating expenses from our sales and marketing group to the Intel Products operating segments and allocate operating expenses from our finance and administration groups to all of our operating segments, except Mobileye.\n\nWe estimate that the substantial majority of our consolidated depreciation expense was incurred by Intel Foundry in 2024, 2023, and 2022. Intel Foundry depreciation expense is substantially included in overhead cost pools and then combined with other costs, and subsequently absorbed into inventory as each product passes through the manufacturing process and is sold to Intel Products or other customers. As a result, it is impracticable to determine the total depreciation expense included as a component of each Intel Products operating segment's operating income (loss).\n\nWe do not allocate to our operating segments corporate operating expenses that primarily consist of:\n\n**\u25aa** restructuring and other charges;\n\n**\u25aa** share-based compensation;\n\n**\u25aa** certain impairment charges; and\n\n**\u25aa** certain acquisition-related adjustments, including amortization and any impairment of acquisition-related intangibles and goodwill.\n\nWe do not allocate to our operating segments non-operating items such as:\n\n**\u25aa** gains and losses from equity investments;\n\n**\u25aa** interest and other income; and\n\n**\u25aa** income taxes.\n\nOur interim Co-Chief Executive Officers are our CODMs. The CODMs primarily use operating income (loss) to evaluate each segment's performance and allocate resources. This measure is utilized during our budgeting and forecasting process to assess profitability and enable decision making regarding strategic initiatives, capital investments, and personnel across all operating segments. While operating income (loss) is the primary measure used by our CODMs to allocate resources, they often review materials that present operating segment gross margin. Accordingly, we have included gross margin as a secondary measure within the accompanying reconciliation of our operating segment and consolidated results. The measures regularly provided to and used by our CODMs under our new operating model continue to evolve; currently, our CODMs do not regularly review or receive discrete asset information by operating segment.\n\nIntersegment eliminations: Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes. The Intel Products operating segments and Intel Foundry are meant to reflect separate fabless semiconductor and foundry companies, respectively. Thus, certain intersegment activity is captured within the intersegment eliminations upon consolidation and presented at the Intel consolidated level. This activity primarily relates to inventory reserves, which are determined and recorded based on our accounting policies for Intel as a whole, but are only recorded by the Intel Products operating segments upon transfer of inventory from Intel Foundry. If a reserve is identified that relates to neither Intel Products operating segments nor Intel Foundry, the reserve is recognized as activity within the intersegment eliminations for Intel on a consolidated basis.\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Notes to Consolidated Financial Statements | 69 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nNet revenue, cost of sales, gross margin, operating expenses, and operating income (loss) for each period were as follows:\n\n---",
+              "token_count": 1800,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000050863-25-000009",
+              "cik": "0000050863",
+              "company": "INTEL CORP",
+              "form_type": "10-K",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 4186,
+              "source_md5": "228c076b20cfc822a46260e874681ea3",
+              "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "be2e53ce-fab5-5648-8b8a-fc290c950582",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 36,
+              "char_start": 328968,
+              "char_end": 336134,
+              "text": "We have audited Intel Corporation's internal control over financial reporting as of December 28, 2024, based on criteria established in Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework) (the COSO criteria). In our opinion, Intel Corporation (the Company) maintained, in all material respects, effective internal control over financial reporting as of December 28, 2024, based on the COSO criteria.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (PCAOB), the 2024 consolidated financial statements of the Company and our report dated January 31, 2025 expressed an unqualified opinion thereon.\n\nBasis for Opinion\n\nThe Company's management is responsible for maintaining effective internal control over financial reporting and for its assessment of the effectiveness of internal control over financial reporting included in the accompanying Management Report on Internal Control Over Financial Reporting. Our responsibility is to express an opinion on the Company's internal control over financial reporting based on our audit. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audit in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether effective internal control over financial reporting was maintained in all material respects.\n\nOur audit included obtaining an understanding of internal control over financial reporting, assessing the risk that a material weakness exists, testing and evaluating the design and operating effectiveness of internal control based on the assessed risk, and performing such other procedures as we considered necessary in the circumstances. We believe that our audit provides a reasonable basis for our opinion.\n\nDefinition and Limitations of Internal Control Over Financial Reporting\n\nA company's internal control over financial reporting is a process designed to provide reasonable assurance regarding the reliability of financial reporting and the preparation of financial statements for external purposes in accordance with generally accepted accounting principles. A company's internal control over financial reporting includes those policies and procedures that (1) pertain to the maintenance of records that, in reasonable detail, accurately and fairly reflect the transactions and dispositions of the assets of the company; (2) provide reasonable assurance that transactions are recorded as necessary to permit preparation of financial statements in accordance with generally accepted accounting principles, and that receipts and expenditures of the company are being made only in accordance with authorizations of management and directors of the company; and (3) provide reasonable assurance regarding prevention or timely detection of unauthorized acquisition, use, or disposition of the company's assets that could have a material effect on the financial statements.\n\nBecause of its inherent limitations, internal control over financial reporting may not prevent or detect misstatements. Also, projections of any evaluation of effectiveness to future periods are subject to the risk that controls may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate.\n\n/s/ Ernst & Young LLP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n\nSan Jose, California\n\nJanuary 31, 2025\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Auditor's Reports | 56 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Statements of Operations <br>\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions, Except Per Share Amounts)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Net revenue** | $**53101** | $**54228** | $**63054** |\n| Cost of sales | 35756 | 32517 | 36188 |\n| **Gross margin** | **17345** | **21711** | **26866** |\n| Research and development | 16546 | 16046 | 17528 |\n| Marketing, general, and administrative | 5507 | 5634 | 7002 |\n| Restructuring and other charges | 6970 | (62) | 2 |\n| **Operating expenses** | **29023** | **21618** | **24532** |\n| **Operating income (loss)** | **(11678)** | **93** | **2334** |\n| Gains (losses) on equity investments, net | 242 | 40 | 4268 |\n| Interest and other, net | 226 | 629 | 1166 |\n| **Income (loss) before taxes** | **(11210)** | **762** | **7768** |\n| Provision for (benefit from) taxes | 8023 | (913) | (249) |\n| **Net income (loss)** | **(19233)** | **1675** | **8017** |\n| Less: net income (loss) attributable to non-controlling interests | (477) | (14) | 3 |\n| **Net income (loss) attributable to Intel** | $**(18756)** | $**1689** | $**8014** |\n| **Earnings (loss) per share attributable to Intel\u2014basic** | $**(4.38)** | $**0.40** | $**1.95** |\n| **Earnings (loss) per share attributable to Intel\u2014diluted** | $**(4.38)** | $**0.40** | $**1.94** |\n| Weighted average shares of common stock outstanding: |  |  |  |\n| &nbsp;&nbsp;&nbsp;**Basic** | **4280** | **4190** | **4108** |\n| &nbsp;&nbsp;&nbsp;**Diluted** | **4280** | **4212** | **4123** |\n\n---\n\n\n\n*See accompanying notes.*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Consolidated Statements of Operations | 57 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Statements of Comprehensive Income (Loss) <br>\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Net income (loss)** | $**(19233)** | $**1675** | $**8017** |\n| Changes in other comprehensive income (loss), net of tax: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Net unrealized holding gains (losses) on derivatives | (555) | 272 | (510) |\n| &nbsp;&nbsp;&nbsp;Actuarial valuation and other pension benefits (expenses), net | 60 | 66 | 855 |\n| &nbsp;&nbsp;&nbsp;Translation adjustments and other | (1) | 9 | (27) |\n| **Other comprehensive income (loss)** | **(496)** | **347** | **318** |\n| **Total comprehensive income (loss)** | **(19729)** | **2022** | **8335** |\n| Less: comprehensive income (loss) attributable to non-controlling interests | (477) | (14) | 3 |\n| **Total comprehensive income (loss) attributable to Intel** | $**(19252)** | $**2036** | $**8332** |\n\n---\n\n\n\n*See accompanying notes.*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Consolidated Statements of Comprehensive Income (Loss) | 58 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Balance Sheets <br>\n\n---",
+              "token_count": 1830,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000050863-25-000009",
+              "cik": "0000050863",
+              "company": "INTEL CORP",
+              "form_type": "10-K",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 4186,
+              "source_md5": "228c076b20cfc822a46260e874681ea3",
+              "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "f2fda69e-9869-5891-9f60-2bea6d55ec24",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 14,
+              "char_start": 124465,
+              "char_end": 132774,
+              "text": "| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 23 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Gross Margin\n\nWe derived a majority of our consolidated gross margin in 2024, and 2023 from our Intel Products business sales through our CCG, DCAI, and NEX operating segments.\n\n---\n\n\n\n| |\n|:---|\n| Gross Margin $B |\n| (Percentages in chart indicate gross margin as a percentage of total revenue) |\n\n---\n\n\n\n![249](intc-20241228_g19.jpg)\n\n2024 vs. 2023\n\nOur consolidated gross margin in 2024 decreased by $4.4 billion, or 20%, compared to 2023 due primarily to higher 2024 impairment charges and accelerated depreciation. During Q3 2024, we concluded that our manufacturing asset portfolio, primarily for our Intel 7 process node, exceeded manufacturing capacity requirements. Upon completing an asset re-use assessment, we impaired certain construction-in-progress assets and accelerated depreciation for certain in-use manufacturing assets that resulted in $3.3 billion of charges in 2024. Our 2024 gross margin also decreased due to lower revenue, higher unit cost primarily from an increased mix of Intel 4 and Intel 7 products, higher period charges due to $922 million in Gaudi AI accelerator inventory-related charges recognized in 2024, and higher factory start-up costs. These 2024 unfavorable gross margin impacts were partially offset by certain favorable gross margin movements in 2024, including lower period charges driven by the sell-through of previously reserved inventory and lower non-accelerator reserves taken, lower period charges related to excess capacity charges, and a benefit recognized for government incentives received under the CHIPS Act.\n\nWe are making capital investments in furtherance of our strategy. As of December 28, 2024, our capital investments classified as construction in progress totaled $50.4 billion ($43.4 billion as of December 30, 2023). These assets have not yet been placed into service and have not yet begun depreciating. As these construction-in-progress assets are placed into service, we expect to incur depreciation expense that impacts future production costs and, ultimately, cost of sales. To the extent we are unable to grow our revenues to offset these production costs, our gross margin and operating income will be unfavorably affected. Additionally, we could incur asset impairments on property, plant, and equipment assets if our strategy is not successful.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 24 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nOperating Expenses\n\nTotal R&D and MG&A expenses for 2024 were $22.1 billion, up 2% compared to 2023. These expenses represent 41.5% of revenue for 2024 and 40.0% of revenue for 2023. In support of our strategy, we continue to make significant investments to accelerate our process technology roadmap. As a result of our 2024 Restructuring Plan and related cost-reduction measures, we expect a decrease in total R&D and MG&A expenses in future periods as we focus investments in R&D and create capacity for sustained investment in technology and manufacturing.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Research and Development $B | Marketing, General, and Administrative $B |\n| (Percentages indicate expenses as a percentage of total revenue) | (Percentages indicate expenses as a percentage of total revenue) |\n\n---\n\n\n\n![2327](intc-20241228_g20.jpg)![2328](intc-20241228_g21.jpg)\n\n<u>Research and Development</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| R&D increased by $500 million, or 3%, primarily driven by investments in our process technology and products, and higher share-based compensation, partially offset by lower incentive-based compensation and the effects of various cost-reduction measures. |\n\n---\n\n\n\n<u>Marketing, General, and Administrative</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| MG&A decreased by $127 million, or 2%, primarily driven by lower incentive-based compensation, share-based compensation, and the effects of various cost-reduction measures, partially offset by higher corporate spending to drive business transformation.  |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 25 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nRestructuring and Other Charges\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| Employee severance and benefit arrangements | $2481 | $222 | $1038 |\n| Litigation charges and other | 858 | (329) | (1187) |\n| Asset impairment charges | 3631 | 45 | 151 |\n| **Total restructuring and other charges** | $**6970** | $**(62)** | $**2** |\n\n---\n\n\n\nIn Q3 2024, the 2024 Restructuring Plan was announced, subsequently approved and committed to by our management team, and initiated to implement cost-reduction measures, including reductions in employee headcount, other operating expenditures, and capital expenditures (see \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements). We expect that our 2024 Restructuring Plan, in conjunction with other initiatives, will reduce our cost structure while we continue our investments to develop, manufacture, market, sell, and deliver product and process initiatives in furtherance of our strategy. We expect actions pursuant to the 2024 Restructuring Plan to be substantially completed by the fourth quarter of 2025, which is subject to change. Any changes to the estimates or timing will be reflected in our results of operations.\n\n*Employee severance and benefit arrangements* includes net charges relating to the 2024 Restructuring Plan of $2.2 billion in 2024. Charges relating to other actions taken to streamline operations and to reduce costs were $294 million in 2024. The charges in 2023 and 2022 primarily related to the 2022 Restructuring Program, which was approved to rebalance our workforce and operations in alignment with our strategy and was completed in Q1 2024. The 2022 Restructuring Program, in conjunction with other initiatives, reduced our cost structure and allowed us to reinvest certain of these cost savings in resources and capacity to develop, manufacture, market, sell, and deliver our products in furtherance of our strategy.\n\n*Litigation charges and other* includes a charge of $780 million that we recorded in 2024 arising out of the R2 litigation. In 2023, a $1.2 billion benefit was recorded due to the reduction in the previously accrued charge as a result of developments in the VLSI litigation. 2023 charges also included a $401 million charge for an EC-imposed fine and a $353 million termination fee in connection with our inability to timely obtain required regulatory approvals needed to acquire Tower Semiconductor Ltd. Refer to \"Note 19: Commitments and Contingencies\" within Notes to Consolidated Financial Statements for information about litigation related items.\n\n*Asset impairment charges* in 2024 includes non-cash charges associated with the 2024 Restructuring Plan, including $442 million of non-cash impairments of construction-in-progress assets associated with our decision to exit and outsource manufacturing capabilities for certain internal test hardware; and $103 million of non-cash impairments of operating leased assets and related leasehold improvements resulting from real estate consolidations and exits. Real estate consolidations and exits did not significantly change our operating lease liabilities and may result in future cash outlays for facility restoration or the relocation of operations. In addition, we incurred non-cash impairments relating to goodwill and acquired intangible assets of $3.1 billion in 2024. Refer to \"Note 11: Goodwill\" and \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements for further information about these items.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 26 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nGains (Losses) on Equity Investments and Interest and Other, Net\n\n---",
+              "token_count": 1973,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001665160-25-000017",
+              "cik": "0002002943",
+              "company": "Mother Road Brewing Co",
+              "form_type": "C",
+              "filed_date": "20250108",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 622,
+              "source_md5": "1913053f245f6ccabcd165e6ea81f3f5",
+              "content_sha256": "7bc5bfca54c6446c8e551acf91ba9c7f72c149e7416d859bc50cbdb3b97b642e",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "d187c0ee-5420-5c46-a5aa-7734400cc5d1",
+              "section": "Notes to Consolidated Financial Statements (continued)",
+              "section_index": 153,
+              "chunk_index": 0,
+              "char_start": 137247,
+              "char_end": 139445,
+              "text": "## Notes to Consolidated Financial Statements (continued)\n\nYear Ended December 31, 2022\n(See Independent Auditors\u2019 Report)\n\n1. Description of business and summary of significant accounting policies (continued):\n\nResearch and development:\nResearch and development costs are charged to expense as incurred. Research and development expenses were $664 for the year ended December 31, 2022.\n\nIncome taxes:\nMother Road files corporate income tax returns for federal and state purposes. H66 is a disregarded entity for income tax purposes, as such its activity is included in the tax returns of Mother Road.\n\nDeferred income taxes are provided for temporary differences arising primarily from straight-line depreciation in the consolidated financial statements and accelerated depreciation for income taxes. Deferred income taxes are also recognized for net operating losses that are available to offset future taxable income and general business tax credits that are available to offset future federal income taxes.\n\nThe tax provision differs from the expense that would result from applying statutory rates to income before income taxes because of permanent differences such as officers\u2019 life insurance and meals and entertainment which are not fully deductible for tax purposes. In addition, a portion of payroll taxes paid on employee tips is claimed as an income tax credit in lieu of a deduction.\n\nFrom time to time, the Company may be subject to interest and penalties assessed by various taxing authorities, which have historically been insignificant. Penalties will be classified as general and administrative expenses and interest as other expense, if they occur.\n\nSubsequent events:\nThe Company\u2019s management has evaluated the events that have occurred subsequent to December 31, 2022 through January 23, 2024, the date that the consolidated financial statements were available to be issued. Management has no responsibility to update these consolidated financial statements for events and circumstances occurring after this date.\n\n2. Inventory:\n\n| Raw materials | $707,100 |\n| --- | --- |\n| Work in process | 206,921 |\n| Finished goods | 72,344 |\n| Merchandise | 74,563 |\n|  | $1,060,928 |\n\n12",
+              "token_count": 412,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "104b12c6-20f6-50b2-b497-3a08db47bb41",
+              "section": "SUMMARY HISTORICAL FINANCIAL INFORMATION OF SCAGE INTERNATIONAL",
+              "section_index": 72,
+              "chunk_index": 0,
+              "char_start": 358430,
+              "char_end": 360971,
+              "text": "#### SUMMARY HISTORICAL FINANCIAL INFORMATION OF SCAGE INTERNATIONAL\nThe following selected consolidated statements of operations and comprehensive loss data and selected consolidated statements of cash flows data for the fiscal years ended June 30, 2024 and 2023, and the selected consolidated balance sheets data as of June 30, 2024 and 2023 have been derived from the audited consolidated financial statements of Scage International included elsewhere in this proxy statement/prospectus. The consolidated financial statements of Scage International are prepared and presented in accordance with U.S. GAAP. Scage International's historical results are not necessarily indicative of results expected for future periods. The financial data set forth below should be read in conjunction with and is qualified by reference to \"Management's Discussion and Analysis of Financial Condition and Results of Operations of Scage International\" and the consolidated financial statements and notes thereto included elsewhere in this proxy statement/prospectus.\n\nThe following table presents Scage International's summary of consolidated statements of operations and comprehensive loss for the fiscal years ended June 30, 2024 and 2023.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n|  | **For the Year Ended <br>June 30,** | **For the Year Ended <br>June 30,** |\n|  | **2024** | **2023** |\n|  Revenues \u2013 third parties | $6111141  | $421680 |\n|  Revenues \u2013 a related party | \u2014  | 16290 |\n|  **Total revenues** | **6111141**  | **437970** |\n|  **Cost of revenues** | **(5574685)** | **(795286)** |\n|  **Gross (loss)/profit** | **536456**  | **(357316)** |\n|  **Operating expenses:** |  |  |\n| &nbsp;&nbsp;&nbsp; Selling and marketing expenses | (648301) | (1138183) |\n| &nbsp;&nbsp;&nbsp; Research and development expenses | (1698494) | (2297474) |\n| &nbsp;&nbsp;&nbsp; General and administrative expenses | (3863434) | (2926280) |\n| &nbsp;&nbsp;&nbsp; Impairment of long-lived assets | (200841) |  |\n|  **Total operating expenses** | **(6411070)** | **(6361937)** |\n|  **Loss from operations** | **(5874614)** | **(6719253**) |\n| &nbsp;&nbsp;&nbsp; Interest expense, net | (369847) | (151492) |\n| &nbsp;&nbsp;&nbsp; Investment income from short-term investments | \u2014  |  |\n| &nbsp;&nbsp;&nbsp; Other income, net | 263685  | 252536 |\n|  **Total other (loss)/income, net** | **(106162)** | **101044** |\n|  **Loss before income taxes** | **(5980776)** | **(6618209)** |\n| &nbsp;&nbsp;&nbsp; Income tax benefit | \u2014  |  |\n|  **Net loss** | **(5980776)** | **(6618209)** |\n",
+              "token_count": 679,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.017685568000160856
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_208914",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"form_type\":\"10-K\",\"company\":\"NVIDIA\"}"
+          }
+        },
+        "output": {
+          "error": "malloc of size 1182595840 failed",
+          "error_type": "ArrowMemoryError",
+          "resources": {
+            "peak_rss_mib": 981.52734375,
+            "cpu_seconds": 7.298342,
+            "wall_seconds": 7.433285025999794,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 7.5206307230000675
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_32155",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"form_type\":\"10-K\",\"company\":\"NVIDIA\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet\"}"
+          }
+        },
+        "output": {
+          "error": "malloc of size 85060544 failed",
+          "error_type": "ArrowMemoryError",
+          "resources": {
+            "peak_rss_mib": 1043.71484375,
+            "cpu_seconds": 9.937158,
+            "wall_seconds": 10.16295419800008,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 14.065367136999157
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_46586",
+          "function": {
+            "name": "duckdb_query",
+            "arguments": "{\"sql\":\"SELECT file_stem, source_path, month, year FROM filings WHERE accession LIKE '%1045810%' OR accession LIKE '%NVDA%' LIMIT 20\"}"
+          }
+        },
+        "output": {
+          "rows": [
+            {
+              "file_stem": "0001045810-25-000007",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+              "month": 1,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001921094-25-000014",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+              "month": 1,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000002",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+              "month": 1,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000023",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "month": 2,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000014",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "month": 2,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000013",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "month": 2,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000021",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "month": 2,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000072",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000056",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001921094-25-000334",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000066",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000069",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000054",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000049",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000027",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000047",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000035",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000070",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000071",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            },
+            {
+              "file_stem": "0001045810-25-000068",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-03.parquet",
+              "month": 3,
+              "year": 2025
+            }
+          ],
+          "truncated": false,
+          "resources": {
+            "peak_rss_mib": 507.64453125,
+            "cpu_seconds": 0.5024419999999999,
+            "wall_seconds": 0.47845509800026775,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 15.834409674999733
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_1951899",
+          "function": {
+            "name": "duckdb_query",
+            "arguments": "{\"sql\":\"SELECT file_stem, source_path, char_count FROM filings WHERE accession='0001045810' ORDER BY char_count DESC LIMIT 10\"}"
+          }
+        },
+        "output": {
+          "rows": [
+            {
+              "file_stem": "0001045810-25-000098",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-05.parquet",
+              "char_count": 647812
+            },
+            {
+              "file_stem": "0001045810-25-000023",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "char_count": 580846
+            },
+            {
+              "file_stem": "0001045810-25-000086",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-05.parquet",
+              "char_count": 452467
+            },
+            {
+              "file_stem": "0001045810-25-000095",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-05.parquet",
+              "char_count": 445100
+            },
+            {
+              "file_stem": "0001045810-25-000116",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-05.parquet",
+              "char_count": 159368
+            },
+            {
+              "file_stem": "0001045810-25-000118",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-05.parquet",
+              "char_count": 142561
+            },
+            {
+              "file_stem": "0001045810-25-000021",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet",
+              "char_count": 67790
+            },
+            {
+              "file_stem": "0001045810-25-000115",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-05.parquet",
+              "char_count": 57453
+            },
+            {
+              "file_stem": "0001045810-25-000120",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-06.parquet",
+              "char_count": 39487
+            },
+            {
+              "file_stem": "0001214659-25-008150",
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-05.parquet",
+              "char_count": 16000
+            }
+          ],
+          "truncated": false,
+          "resources": {
+            "peak_rss_mib": 508.39453125,
+            "cpu_seconds": 0.5539339999999999,
+            "wall_seconds": 0.5861633590002384,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 1.047151405000477
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "8ca22342-c0cd-574c-8339-81fb466a0dfb",
+        "section": "Projected Income Statements",
+        "section_index": 755,
+        "chunk_index": 0,
+        "char_start": 2711713,
+        "char_end": 2713839,
+        "text": "#### Projected Income Statements\nManagement provided financial projections for the years ending June 30, 2024 through June 30, 2027. We assessed the reasonability of these financial projections by reviewing the projected financial performance of Scage's competitors, as available, for 2023 through 2025. Ultimately, we relied upon Management's projections for the valuation.\n\nThe following chart presents unit sales by product throughout the forecast period.\n\n![](tbarchart_003.jpg)\n\nPrices for each product are presented in the following table. Prices were projected to remain constant throughout the forecast.\n\n![](ttable_001.jpg)\n\nAnnex D-1-15\n\n[**Table of Contents**](#TOC001)\n\nBased on these assumptions, we projected revenue to grow from \u00a5778.1 million in FY2024 to \u00a513,384.1 million in FY2027. The following chart presents Scage's projected revenue throughout the forecast.\n\n![](tbarchart_004.jpg)\n\nCost of goods sold (COGS) varied by product and was projected to decrease as a percentage of revenue over time. The following table presents the projected gross margins for FY2027.\n\n![](ttable_002.jpg)\n\nScage's gross margin was projected to be 17.2% in FY2024, growing each year thereafter to 22.2% in FY2027. The following chart presents the projected gross profit and margin.\n\n![](tbarchart_005.jpg)\n\nAnnex D-1-16\n\n[**Table of Contents**](#TOC001)\n\nOperating expenses were segregated into four categories: (1) taxes & fees, (2) sales cost, (3) general & administrative, (4) research & development. Operating expenses were projected based on a percentage of revenue. In aggregate, operating expenses were projected to decrease from 36.4% of revenue in FY2024, to 11.6% of revenue in FY2027.\n\nThese projections resulted in an EBITDA margin of -19.2% in FY2024, increasing to 10.6% in FY2027. This is consistent with industry data reviewed and the guideline companies. Projected EBITDA and EBITDA margins are presented in the following chart.\n\n![](tbarchart_006.jpg)\n\nProjected revenue is presented in Schedule B.1 and projected expenses in Schedule B.2. Scage's projected income statements are presented in Schedule B.3.",
+        "token_count": 503,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "1bd0123a-1a39-5a18-b36e-ba8d85942b52",
+        "section": "Appendix E: Scage International Limited (\"Scage\") Valuation",
+        "section_index": 784,
+        "chunk_index": 0,
+        "char_start": 2793937,
+        "char_end": 2796959,
+        "text": "#### Appendix E: Scage International Limited (\"Scage\") Valuation\n**Income Approach\u2014Discounted Cash Flow Method**\n\nWe developed a DCF model to arrive at Scage's market value of invested capital (MVIC) as of the Valuation Date. The DCF method first projects the cash flow the business is expected to produce over a discrete period. Then, each discrete cash flow is discounted to present value at a rate that reflects the risk of receiving that amount at the time anticipated in the projection. To better reflect these projections, items such as revenue, operating costs, capital expenses, and working capital were forecasted. These projections were used to determine the net cash flow generated by the business, which was then discounted to the present value, using an appropriate discount rate. Total outstanding debt, if any, was then subtracted from the MVIC to arrive at the value of equity.\n\n***Projected Income Statements***\n\nManagement provided financial projections for the years ending June 30, 2024 through June 30, 2027. We assessed the reasonability of these financial projections by reviewing the projected financial performance of Scage's competitors, as available, for 2023 through 2025. Ultimately, we relied upon Management's projections for the valuation.\n\nThe following chart presents unit sales by product throughout the forecast period.\n\n![](tbarchart_007.jpg)\n\nPrices for each product are presented in the following table. Prices were projected to remain constant throughout the forecast.\n\n![](ttable_001.jpg)\n\nAnnex D-2-16\n\n[**Table of Contents**](#TOC001)\n\nBased on these assumptions, we projected revenue to grow from \u00a570.7 million in FY2024 to \u00a56,779.5 million in FY2027. The following chart presents Scage's projected revenue throughout the forecast.\n\n![](tbarchart_008.jpg)\n\nCost of goods sold (COGS) varied by product and was projected to decrease as a percentage of revenue over time. The following table presents the projected gross margins for FY2027.\n\n![](timage_009.jpg)\n\nScage's gross margin was projected to be 29.8% in FY2024, declining each year thereafter to 21.7% in FY2026. The following chart presents the projected gross profit and margin.\n\n![](tbarchart_009.jpg)\n\nAnnex D-2-17\n\n[**Table of Contents**](#TOC001)\n\nOperating expenses were segregated into four categories: (1) taxes & fees, (2) sales cost, (3) general & administrative, (4) research & development. Operating expenses were projected based on a percentage of revenue. In aggregate, operating expenses were projected to decrease from 70.9% of revenue in FY2024, to 14.7% of revenue in FY2027.\n\nThese projections resulted in an EBITDA margin of -41.0% in FY2024, increasing to 7.0% in FY2027. This is consistent with industry data reviewed and the guideline companies. Projected EBITDA and EBITDA margins are presented in the following chart.\n\n![](tbarchart_010.jpg)\n\nProjected revenue is presented in Schedule B.1 and projected expenses in Schedule B.2. Scage's projected income statements are presented in Schedule B.3.",
+        "token_count": 682,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000050863-25-000009",
+        "cik": "0000050863",
+        "company": "INTEL CORP",
+        "form_type": "10-K",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 4186,
+        "source_md5": "228c076b20cfc822a46260e874681ea3",
+        "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "f2fda69e-9869-5891-9f60-2bea6d55ec24",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 14,
+        "char_start": 124465,
+        "char_end": 132774,
+        "text": "| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 23 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Gross Margin\n\nWe derived a majority of our consolidated gross margin in 2024, and 2023 from our Intel Products business sales through our CCG, DCAI, and NEX operating segments.\n\n---\n\n\n\n| |\n|:---|\n| Gross Margin $B |\n| (Percentages in chart indicate gross margin as a percentage of total revenue) |\n\n---\n\n\n\n![249](intc-20241228_g19.jpg)\n\n2024 vs. 2023\n\nOur consolidated gross margin in 2024 decreased by $4.4 billion, or 20%, compared to 2023 due primarily to higher 2024 impairment charges and accelerated depreciation. During Q3 2024, we concluded that our manufacturing asset portfolio, primarily for our Intel 7 process node, exceeded manufacturing capacity requirements. Upon completing an asset re-use assessment, we impaired certain construction-in-progress assets and accelerated depreciation for certain in-use manufacturing assets that resulted in $3.3 billion of charges in 2024. Our 2024 gross margin also decreased due to lower revenue, higher unit cost primarily from an increased mix of Intel 4 and Intel 7 products, higher period charges due to $922 million in Gaudi AI accelerator inventory-related charges recognized in 2024, and higher factory start-up costs. These 2024 unfavorable gross margin impacts were partially offset by certain favorable gross margin movements in 2024, including lower period charges driven by the sell-through of previously reserved inventory and lower non-accelerator reserves taken, lower period charges related to excess capacity charges, and a benefit recognized for government incentives received under the CHIPS Act.\n\nWe are making capital investments in furtherance of our strategy. As of December 28, 2024, our capital investments classified as construction in progress totaled $50.4 billion ($43.4 billion as of December 30, 2023). These assets have not yet been placed into service and have not yet begun depreciating. As these construction-in-progress assets are placed into service, we expect to incur depreciation expense that impacts future production costs and, ultimately, cost of sales. To the extent we are unable to grow our revenues to offset these production costs, our gross margin and operating income will be unfavorably affected. Additionally, we could incur asset impairments on property, plant, and equipment assets if our strategy is not successful.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 24 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nOperating Expenses\n\nTotal R&D and MG&A expenses for 2024 were $22.1 billion, up 2% compared to 2023. These expenses represent 41.5% of revenue for 2024 and 40.0% of revenue for 2023. In support of our strategy, we continue to make significant investments to accelerate our process technology roadmap. As a result of our 2024 Restructuring Plan and related cost-reduction measures, we expect a decrease in total R&D and MG&A expenses in future periods as we focus investments in R&D and create capacity for sustained investment in technology and manufacturing.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Research and Development $B | Marketing, General, and Administrative $B |\n| (Percentages indicate expenses as a percentage of total revenue) | (Percentages indicate expenses as a percentage of total revenue) |\n\n---\n\n\n\n![2327](intc-20241228_g20.jpg)![2328](intc-20241228_g21.jpg)\n\n<u>Research and Development</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| R&D increased by $500 million, or 3%, primarily driven by investments in our process technology and products, and higher share-based compensation, partially offset by lower incentive-based compensation and the effects of various cost-reduction measures. |\n\n---\n\n\n\n<u>Marketing, General, and Administrative</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| MG&A decreased by $127 million, or 2%, primarily driven by lower incentive-based compensation, share-based compensation, and the effects of various cost-reduction measures, partially offset by higher corporate spending to drive business transformation.  |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 25 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nRestructuring and Other Charges\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| Employee severance and benefit arrangements | $2481 | $222 | $1038 |\n| Litigation charges and other | 858 | (329) | (1187) |\n| Asset impairment charges | 3631 | 45 | 151 |\n| **Total restructuring and other charges** | $**6970** | $**(62)** | $**2** |\n\n---\n\n\n\nIn Q3 2024, the 2024 Restructuring Plan was announced, subsequently approved and committed to by our management team, and initiated to implement cost-reduction measures, including reductions in employee headcount, other operating expenditures, and capital expenditures (see \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements). We expect that our 2024 Restructuring Plan, in conjunction with other initiatives, will reduce our cost structure while we continue our investments to develop, manufacture, market, sell, and deliver product and process initiatives in furtherance of our strategy. We expect actions pursuant to the 2024 Restructuring Plan to be substantially completed by the fourth quarter of 2025, which is subject to change. Any changes to the estimates or timing will be reflected in our results of operations.\n\n*Employee severance and benefit arrangements* includes net charges relating to the 2024 Restructuring Plan of $2.2 billion in 2024. Charges relating to other actions taken to streamline operations and to reduce costs were $294 million in 2024. The charges in 2023 and 2022 primarily related to the 2022 Restructuring Program, which was approved to rebalance our workforce and operations in alignment with our strategy and was completed in Q1 2024. The 2022 Restructuring Program, in conjunction with other initiatives, reduced our cost structure and allowed us to reinvest certain of these cost savings in resources and capacity to develop, manufacture, market, sell, and deliver our products in furtherance of our strategy.\n\n*Litigation charges and other* includes a charge of $780 million that we recorded in 2024 arising out of the R2 litigation. In 2023, a $1.2 billion benefit was recorded due to the reduction in the previously accrued charge as a result of developments in the VLSI litigation. 2023 charges also included a $401 million charge for an EC-imposed fine and a $353 million termination fee in connection with our inability to timely obtain required regulatory approvals needed to acquire Tower Semiconductor Ltd. Refer to \"Note 19: Commitments and Contingencies\" within Notes to Consolidated Financial Statements for information about litigation related items.\n\n*Asset impairment charges* in 2024 includes non-cash charges associated with the 2024 Restructuring Plan, including $442 million of non-cash impairments of construction-in-progress assets associated with our decision to exit and outsource manufacturing capabilities for certain internal test hardware; and $103 million of non-cash impairments of operating leased assets and related leasehold improvements resulting from real estate consolidations and exits. Real estate consolidations and exits did not significantly change our operating lease liabilities and may result in future cash outlays for facility restoration or the relocation of operations. In addition, we incurred non-cash impairments relating to goodwill and acquired intangible assets of $3.1 billion in 2024. Refer to \"Note 11: Goodwill\" and \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements for further information about these items.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 26 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nGains (Losses) on Equity Investments and Interest and Other, Net\n\n---",
+        "token_count": 1973,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000050863-25-000009",
+        "cik": "0000050863",
+        "company": "INTEL CORP",
+        "form_type": "10-K",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 4186,
+        "source_md5": "228c076b20cfc822a46260e874681ea3",
+        "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "d3c83be6-139e-5d68-8f94-47134294ebb5",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 7,
+        "char_start": 64406,
+        "char_end": 74742,
+        "text": "| | |\n|:---|:---|\n| ![social-icons-rgb-boxed.jpg](intc-20241228_g16.jpg) | Social and Relationship Capital |\n\n---\n\n\n\nWe are committed to engaging in initiatives that support our communities and help us develop trusted relationships with our stakeholders. Proactive engagement with our stakeholders and investments in social impact initiatives, including those aligned with the United Nations Sustainable Development Goals, advance our position as a leading corporate citizen and create shared value for Intel, our global supply chain, and our communities.\n\nEconomic and social. The health of our business and local economies depends in part on continued investments in innovation. We provide high-skill, high-paying jobs around the world, many of which are manufacturing and R&D jobs located in our factories. As we expand operations in both existing and new locations, we are building a pipeline of qualified workers through our talent strategy and the many investments we are making in education. We also benefit economies through our R&D ecosystem spending, sourcing activities, employee spending, and tax payments.\n\nHuman rights commitment. We are committed to maintaining and improving systems and processes to avoid causing or contributing to adverse impacts on human rights in our operations, products, and supply chain. We have established an integrated approach to managing human rights across our business, including senior-level management involvement and board-level oversight. We also meet throughout the year with external stakeholders and experts on human rights to continue to inform and evolve our human rights policies and oversight processes. While we do not always know nor can we control what products our customers create or the applications end users may develop, we do not support or tolerate our products being used to adversely impact human rights. Where we become aware of a concern that Intel products are being used by a business partner in connection with abuses of human rights, we intend to evaluate and restrict or cease business with the third party unless and until we have high confidence that Intel's products are not being used to adversely impact human rights.\n\nSupply Chain Responsibility\n\nWe actively manage our supply chain to help reduce risk, improve product quality, achieve environmental and social goals, and improve overall performance and value creation for Intel, our customers, and our suppliers. To drive responsible and sustainable practices throughout our supply chain, we have robust programs to educate and engage suppliers that support our global manufacturing operations. We actively collaborate with other companies and lead industry initiatives on key issues such as improving transparency around climate and water impacts in the global electronics supply chain, and we are advancing collaboration across our industry on responsible minerals sourcing. Through these efforts, we help set electronics industry-wide standards, develop audit processes, and conduct training.\n\nOver the past decade, we have directly engaged with suppliers to verify compliance and build operational capacity to address risks of forced and bonded labor and other human rights issues. We perform periodic audits and identify critical direct suppliers to engage through capability-building programs, which help suppliers build sustainability acumen and verify compliance with the Responsible Business Alliance and the Intel Code of Conduct. We also engage with indirect suppliers through our programs on forced and bonded labor, responsible minerals, and supplier diversity.\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Our Capital<sub>11</sub> |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![natural-icons-rgb-boxed.jpg](intc-20241228_g17.jpg) | Natural Capital |\n\n---\n\n\n\nReducing our environmental footprint as we grow helps us create efficiencies, support our communities, and respond to the needs of our stakeholders. We invest in environmental projects and set company-wide environmental goals to drive reductions in greenhouse gas emissions, energy and water use, and waste to landfills. We build energy efficiency into our products to help our customers lower their own emissions, energy usage, and costs, and we collaborate with policymakers and other stakeholders to use technology to address environmental challenges.\n\nWe continue to take action on emissions reduction strategies focused on emissions abatement, and to make additional investments in renewable electricity, process and equipment optimization, and energy conservation. In 2024, we linked a portion of the executive and employee performance bonus to our goal to reduce our 2024 Scope 1 and 2 greenhouse gas emissions by 25,000 metric tons of carbon dioxide equivalent, compared to 2023. We also focus on addressing climate change impacts upstream and downstream in the value chain. This includes improving product energy efficiency and increasing the positive impact of our products by leveraging opportunities for Intel technologies to enable other sectors of the economy to reduce their climate and energy footprints.\n\nEnergy\n\nWe focus on reducing our own climate change impact, and over the past two decades have reduced our direct and indirect greenhouse gas emissions associated with energy consumption and invested in renewable electricity and on-site alternative energy projects. In 2024, continuing our practice of linking a portion of our executive and employee performance bonus to our corporate sustainability metrics, we linked a portion of the performance bonus to our 2024 target to reach 95% renewable electricity use globally.\n\nWater Stewardship\n\nWater is essential to the semiconductor manufacturing process. We use ultrapure water to remove impurities from our silicon wafers, and we use fresh and reclaimed water to run our manufacturing facility systems. Our water strategy illustrates our commitment to manage water resources efficiently. In 2024, we linked a portion of our executive and employee performance bonus to our target to conserve and restore 13.5 billion gallons of water during the year.\n\nCircular Economy and Waste Management\n\nWe have long been committed to waste management, recycling, and circular economy strategies that enable the recovery and productive re-use of waste streams. We continue to focus on opportunities to upcycle waste by improving waste segregation practices and collaborating with our suppliers to evaluate new technologies for waste recovery. In 2024, we linked a portion of our executive and employee performance bonus to our interim target to achieve a greater than 90% recycling rate of construction waste.\n\nGovernance and Disclosure\n\nWe are committed to transparency around our carbon footprint and climate risk, and use the framework developed by the TCFD to inform our disclosure on climate governance, strategy, risk management, and metrics and targets. For governance and strategy, we follow an integrated approach to address climate change, with multiple teams responsible for managing climate-related activities, initiatives, and policies, with senior-level management involvement and board-level oversight, including the Corporate Governance and Nominating Committee. We describe our overall risk management processes in our proxy statement, and describe climate-related risks and opportunities in our annual Corporate Responsibility Report, the Intel Climate Change Policy, the Intel Climate Transition Action Plan, and \"Risk Factors\" within this Form 10-K. In addition, our Corporate Responsibility Report includes a mapping of our disclosure to the TCFD, GRI, and SASB frameworks. The Corporate Responsibility Report and our CDP Climate Change and Water Surveys are available on our website and are published annually.<sup>1</sup>\n\n<sup>1</sup> *The contents of our website and our Corporate Responsibility Report, Climate Change Policy, Climate Transition Action Plan, and CDP Climate Change and Water Surveys are referenced for general information only and are not incorporated by reference in this Form 10-K.*\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Our Capital<sub>12</sub> |\n\n---\n\n\n\n------\n\nManagement's Discussion and Analysis <br>\n\nOverview\n\nWe are a global designer and manufacturer of semiconductor products, including CPUs and other solutions, primarily marketed and sold through our Intel Products business and manufactured via our Intel Foundry operations and other suppliers. Our customers primarily include OEMs, ODMs, cloud service providers, and other manufacturers and service providers, such as industrial and communication equipment manufacturers and other cloud service providers who buy our products through distributor, reseller, retail, and OEM channels throughout the world. We market and sell these products directly through our global sales and marketing organizations and indirectly through channel partners. We manufacture our products at our fabrication and assembly and test facilities located throughout the world. We seek to expand our Intel Foundry business as a third-party foundry for external customers.\n\nA Year in Review\n\n2024 revenue was $53.1 billion, down $1.1 billion, or 2%, from 2023 due to lower all other revenue and lower Intel Foundry revenue, partially offset by higher Intel Products revenue. All other revenue decreased 32% from 2023, driven by lower Altera revenue due to customers tempering purchases to reduce existing inventories across all product lines and lower Mobileye revenue as customers tempered purchases to reduce existing inventories of EyeQ products. Intel Foundry external revenue decreased 60% from 2023 due to lower traditional packaging services and lower equipment sales. Intel Products revenue increased 3% from 2023 due primarily to higher CCG and DCAI revenue. CCG revenue increased 4% from 2023 primarily due to higher notebook volume compared to 2023 and was partially offset by lower other CCG revenue, which decreased from 2023 due to the exit of legacy businesses, and lower desktop revenue, which decreased on lower demand compared to 2023. DCAI revenue increased 1% from 2023 driven by higher server revenue primarily from high core count products, which increased ASPs and lowered volume compared to 2023.",
+        "token_count": 1919,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000050863-25-000009",
+        "cik": "0000050863",
+        "company": "INTEL CORP",
+        "form_type": "10-K",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 4186,
+        "source_md5": "228c076b20cfc822a46260e874681ea3",
+        "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "e94f3ea0-ae87-595e-834d-bad863e00d6f",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 4,
+        "char_start": 35191,
+        "char_end": 44294,
+        "text": "![840](intc-20241228_g10.jpg)\n\n \u25a0 Cash from Operating Activities \u25a0 Adjusted Free Cash Flow<sup>1</sup>\n\nOur Financial Capital Allocation Strategy\n\nInvest in the Business\n\nOur first allocation priority is to invest in R&D and capital spending to capitalize on the opportunity presented by the world's demand for semiconductors. In 2024, we continued our focus on capital investment and the deployment of our Smart Capital strategy.\n\nReturn Excess Cash to Stockholders\n\nOur capital allocation strategy historically included returning excess cash to stockholders through dividends and stock repurchases. Our most recent stock repurchase was in the first quarter of 2021 and we suspended the declaration of quarterly dividends starting with the fourth quarter of 2024. We agreed under our commercial CHIPS Act agreement to forgo paying dividends for the next two years, and agreed to limitations on the payment of dividends for the three years thereafter. Further, we do not expect to pay dividends or make stock repurchases until our cash flows improve as we focus on the critical investments needed to execute our business strategy and create long-term value.\n\n---\n\n\n\n| | |\n|:---|:---|\n| R&D and Capital Investments $B | Cash to Stockholders $B |\n\n---\n\n\n\n![1786](intc-20241228_g11.jpg)&nbsp;&nbsp;&nbsp;&nbsp;\n\n&nbsp;&nbsp;&nbsp;&nbsp;![1790](intc-20241228_g12.jpg)\n\n \u25a0 R&D \u25a0 Logic \u25a0 Memory<sup>2</sup> \u25a0 Repurchases \u25a0 Dividend\n\nOptimize our Portfolio and Unlock Value\n\nWe seek to drive value creation through transactions such as the 2022 IPO and 2023 secondary offering of Mobileye stock, the 2023 minority stake sales in IMS, and the 2023 announcement of our intent to operate Altera as a standalone business, which we expect to enable potential private and public equity investments. Transactions like these provide additional capital to support the critical investments needed to advance our business strategy.\n\nOur capital allocation strategy also includes opportunistic investment in and acquisition of companies that complement our strategic objectives. We look for acquisitions that supplement and strengthen our capital and R&D investments.\n\nLastly, we take action when investments do not strategically align to our key priorities or provide adequate returns to our stakeholders. In the last few years, we exited numerous businesses, including our NAND Memory business (first closing in 2021 and second closing expected in March 2025) and our Intel<sup>\u00ae</sup> Optane\u2122 memory business (2022).\n\n<sup>1</sup> *See \"Non-GAAP Financial Measures\" within MD&A.*\n\n<sup>2</sup> *2021-2024 capital investments in Memory are not presented due to the divestiture of the NAND memory business which we deconsolidated upon closing the first phase of the transaction on December 29, 2021. 2020 capital investments presented include Memory.* \n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Our Capital<sub>6</sub> |\n\n---\n\n\n\n------\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intellectual-icons-rgb-boxed.jpg](intc-20241228_g13.jpg) | Intellectual Capital |\n\n---\n\n\n\nResearch and Development\n\nR&D investment is critical to enable us to deliver on our technology roadmap, introduce leading products, and develop new businesses and capabilities in the future. We seek to protect our R&D efforts through our IP rights and may augment R&D initiatives by, from time-to-time, acquiring or investing in companies, entering into R&D agreements, and directly purchasing or licensing technology.\n\nAreas Key to Product Competitiveness\n\nWe have intensified our focus and investment on areas key to product competitiveness. Our objective with each new generation of products is to improve user experiences and value through advances in performance, power, cost, connectivity, security, form factor, and other features. We also focus on reducing our design complexity, re-using IP, and increasing ecosystem collaboration to improve our efficiency.\n\nxPU. We believe the future is with xPU across a diverse mix of scalar, vector, matrix, and spatial architectures deployed in CPU, GPU, NPU, IPU, accelerators, and FPGA sockets, enabled by a scalable software stack and integrated into systems by advanced packaging technology. We are building processors that span several major computing architectures, moving toward an era of heterogeneous computing:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Client CPUs. In 2024, we ramped sales of the Intel<sup>\u00ae</sup> Core\u2122 Ultra Series 1, our first product with an integrated neural processing unit for efficient processing of AI workload. The Intel Core Ultra Series 1, manufactured on the Intel 4 process, introduced the first AI PCs to the market. We also launched the Intel Core Ultra 200V Series, showcasing power efficiency and long-lasting battery life. The 200V Series, manufactured by an external foundry, leverages our Xe2 GPU architecture, bringing improved efficiency, second-generation ray tracing units and XMX AI acceleration to thin and light notebooks. During 2024, a significant majority of our client sales consisted of our 13th and 14th Gen Intel Core processors, manufactured on Intel 7, which allow us to serve the breadth of customer and computing needs in the client market.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Data center CPUs. We launched our Intel<sup>\u00ae</sup> Xeon<sup>\u00ae</sup> 6 processors for the data center, utilizing the Intel 3 process, including our first Intel Xeon processor using Efficient cores (E-cores). The Intel Xeon 6 family is designed to address the growing diversity in workloads and deployments in the data center environments. Our 5th Gen Intel Xeon Scalable processors, based on Intel 7, were launched in 2023, and continued to ramp throughout 2024.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Discrete client GPUs. The Intel<sup>\u00ae</sup> Arc\u2122 graphics family offers modern GPU features to power immersive games, creator applications, and AI workloads. In 2024, we launched the Intel Arc B-Series based on the latest Xe2 GPU architecture. The compute engine of the Intel Arc B-Series is our second-generation X<sup>e</sup>-core, which delivers 70% more performance per core and is 50% more power efficient than the Intel Arc A750.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Edge computing. We recently launched a suite of processors for edge computing. This includes the Intel Core Ultra 200S Series, bringing the NPU IP to desktops and reducing package power. These hybrid designs utilize our most advanced performance cores and power-efficient cores, as well as the latest packaging technology.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Datacenter AI accelerators and GPUs. In 2024, we launched the Intel<sup>\u00ae</sup> Gaudi<sup>\u00ae</sup> 3 AI accelerators offering significant price-performance advantages for AI inference applications.\n\nSoftware. Software unleashes the potential of our hardware platforms across all workloads, domains, and architectures.\n\nWe aim to optimize AI frameworks and middleware, such as PyTorch, TensorFlow, vLLM, Hugging Face and WebNN to run efficiently on our hardware. Our OpenVINO\u2122 toolkit is an open source toolkit that accelerates deep learning inference on our processors across various use cases, such as generative AI, computer vision, audio, and language with industry standard models. It is used in domains from edge to AI PC to cloud and is the leading inferencing library on our silicon.\n\nIn 2024 we launched the Open Platform for Enterprise AI under the Linux Foundation to accelerate deployment of generative AI use cases through industry standard modular microservice architecture. Since launch, the ecosystem has been actively engaged, with an expanding network of partners enhancing features and developing new capabilities.\n\nMost of these frameworks and middleware are built from our oneAPI, which enables developers to create performant cross-architecture applications using a single code base across CPUs, GPUs, and other accelerators. We contributed our oneAPI specifications and implementations to the UXL Foundation under the Linux Foundation. By doing so, oneAPI delivers an open and multi-vendor programming model enabling choice and code re-use across the accelerator hardware ecosystem.\n\nThis software stack is designed to preserve the usability of existing tools and software while accommodating future developments, enabling continuity for users and developers.\n\nAreas Key to Process and Packaging Competitiveness\n\nOur leading-edge process and packaging technology continues to be key to the success of our strategy.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Intel 7 process node continues in production for our 13th and 14th Gen Intel Core processors. Intel 7 was utilized for a significant majority of our processor production and products in 2024, and is expected to continue to be utilized for a significant portion of our processor production and products in 2025.\n\n---\n\n\n\n| | |\n|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Our Capital<sub>7</sub> |\n\n---\n\n\n\n------",
+        "token_count": 1973,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000050863-25-000009",
+        "cik": "0000050863",
+        "company": "INTEL CORP",
+        "form_type": "10-K",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 4186,
+        "source_md5": "228c076b20cfc822a46260e874681ea3",
+        "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "50bd9940-dd58-5593-8ec7-c57ac3dea915",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 43,
+        "char_start": 383082,
+        "char_end": 391942,
+        "text": "We previously announced the implementation of our internal foundry operating model, which took effect in the first quarter of 2024, and creates a foundry relationship between our Intel Products business (collectively CCG, DCAI, and NEX) and our Intel Foundry business. Intel Products consists substantially of design and development of CPUs and related solutions for external customers. Intel Foundry consists substantially of process engineering, manufacturing, and foundry services groups that provide manufacturing, test, and assembly services to our Intel Products business and to external customers. Both businesses utilize marketing, sales, and other support functions.\n\nOur internal foundry model is a key component of our strategy and is designed to reshape our operational dynamics and drive greater transparency, accountability, and focus on costs and efficiency. We also previously announced our intent to operate Altera as a standalone business. Altera was previously included in our DCAI segment results and, beginning in the first quarter of 2024, is included in \"all other.\" As a result of these changes, we modified our segment reporting in the first quarter of 2024 to align to this new operating model. All prior period segment data has been retrospectively adjusted to reflect the way our CODMs internally receive information and manage and monitor our operating segment performance. There are no changes to our Consolidated Financial Statements for any prior periods.\n\nWe organize our business as follows:\n\n**\u25aa** Intel Products:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Client Computing Group (CCG)\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Data Center and AI (DCAI)\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Network and Edge (NEX)\n\n**\u25aa** Intel Foundry\n\n**\u25aa** All other:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Altera\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Mobileye\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\u25aa** Other\n\nCCG, DCAI, and Intel Foundry qualify as reportable operating segments. NEX, Altera, and Mobileye do not qualify as reportable operating segments; however, we have elected to disclose certain of their results. When we enter into federal contracts, they are aligned to the sponsoring operating segment.\n\nThe accounting policies applied to our segments follow those applied to Intel as a whole. A summary of the basis for which we report our operating segment revenues and operating margin is as follows:\n\nIntel Products: CCG, DCAI, and NEX\n\n**\u25aa** Segment revenue: Consists of revenues from external customers. Our Intel Products operating segments represent most of Intel consolidated revenue and are derived from our principal products that incorporate various components and technologies, including a microprocessor and chipset, a stand-alone SoC, or a multichip package, which are based on Intel architecture.\n\n**\u25aa** Segment expenses: Consists of intersegment charges for product manufacturing and related services from Intel Foundry, external foundry and other manufacturing expenses, product development costs, allocated expenses as described below, and direct operating expenses.\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Notes to Consolidated Financial Statements | 68 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nIntel Foundry\n\n**\u25aa** Segment revenue: Consists substantially of intersegment product and services revenue for wafer fabrication, substrates and other related products, and services sold to Intel Products, Altera, and certain other Intel internal businesses. We recognize intersegment revenue based on the completion of performance obligations. Product revenue is recognized upon transfer of ownership, which is generally at the completion of wafer sorting. Backend service revenue is recognized upon the completion of assembly and test milestones, which approximates the recognition of revenue over the service period. Intersegment sales are recorded at prices that are intended to approximate market pricing. Intel Foundry also includes certain third-party foundry and assembly and test revenue from external customers that totaled $385 million in 2024, $953 million in 2023, and $474 million in 2022.\n\n**\u25aa** Segment expenses: Consists of direct expenses for technology development, product manufacturing and services provided by Intel Foundry to internal and external customers, allocated expenses as described below, and direct operating expenses. Direct expenses for product manufacturing include excess capacity charges.\n\nAll Other\n\nOur \"all other\" category includes the results of operations from other non-reportable segments not otherwise presented, including our Altera and Mobileye businesses, start-up businesses that support our initiatives, and historical results of operations from divested businesses. The financial results of our all other category include intersegment product and services revenue and intersegment expenses.\n\nWe allocate operating expenses from our sales and marketing group to the Intel Products operating segments and allocate operating expenses from our finance and administration groups to all of our operating segments, except Mobileye.\n\nWe estimate that the substantial majority of our consolidated depreciation expense was incurred by Intel Foundry in 2024, 2023, and 2022. Intel Foundry depreciation expense is substantially included in overhead cost pools and then combined with other costs, and subsequently absorbed into inventory as each product passes through the manufacturing process and is sold to Intel Products or other customers. As a result, it is impracticable to determine the total depreciation expense included as a component of each Intel Products operating segment's operating income (loss).\n\nWe do not allocate to our operating segments corporate operating expenses that primarily consist of:\n\n**\u25aa** restructuring and other charges;\n\n**\u25aa** share-based compensation;\n\n**\u25aa** certain impairment charges; and\n\n**\u25aa** certain acquisition-related adjustments, including amortization and any impairment of acquisition-related intangibles and goodwill.\n\nWe do not allocate to our operating segments non-operating items such as:\n\n**\u25aa** gains and losses from equity investments;\n\n**\u25aa** interest and other income; and\n\n**\u25aa** income taxes.\n\nOur interim Co-Chief Executive Officers are our CODMs. The CODMs primarily use operating income (loss) to evaluate each segment's performance and allocate resources. This measure is utilized during our budgeting and forecasting process to assess profitability and enable decision making regarding strategic initiatives, capital investments, and personnel across all operating segments. While operating income (loss) is the primary measure used by our CODMs to allocate resources, they often review materials that present operating segment gross margin. Accordingly, we have included gross margin as a secondary measure within the accompanying reconciliation of our operating segment and consolidated results. The measures regularly provided to and used by our CODMs under our new operating model continue to evolve; currently, our CODMs do not regularly review or receive discrete asset information by operating segment.\n\nIntersegment eliminations: Intersegment sales and related gross margin on inventory recorded at the end of the period or sold through to third-party customers is eliminated for consolidation purposes. The Intel Products operating segments and Intel Foundry are meant to reflect separate fabless semiconductor and foundry companies, respectively. Thus, certain intersegment activity is captured within the intersegment eliminations upon consolidation and presented at the Intel consolidated level. This activity primarily relates to inventory reserves, which are determined and recorded based on our accounting policies for Intel as a whole, but are only recorded by the Intel Products operating segments upon transfer of inventory from Intel Foundry. If a reserve is identified that relates to neither Intel Products operating segments nor Intel Foundry, the reserve is recognized as activity within the intersegment eliminations for Intel on a consolidated basis.\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Notes to Consolidated Financial Statements | 69 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nNet revenue, cost of sales, gross margin, operating expenses, and operating income (loss) for each period were as follows:\n\n---",
+        "token_count": 1800,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000050863-25-000009",
+        "cik": "0000050863",
+        "company": "INTEL CORP",
+        "form_type": "10-K",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 4186,
+        "source_md5": "228c076b20cfc822a46260e874681ea3",
+        "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "be2e53ce-fab5-5648-8b8a-fc290c950582",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 36,
+        "char_start": 328968,
+        "char_end": 336134,
+        "text": "We have audited Intel Corporation's internal control over financial reporting as of December 28, 2024, based on criteria established in Internal Control\u2014Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework) (the COSO criteria). In our opinion, Intel Corporation (the Company) maintained, in all material respects, effective internal control over financial reporting as of December 28, 2024, based on the COSO criteria.\n\nWe also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (PCAOB), the 2024 consolidated financial statements of the Company and our report dated January 31, 2025 expressed an unqualified opinion thereon.\n\nBasis for Opinion\n\nThe Company's management is responsible for maintaining effective internal control over financial reporting and for its assessment of the effectiveness of internal control over financial reporting included in the accompanying Management Report on Internal Control Over Financial Reporting. Our responsibility is to express an opinion on the Company's internal control over financial reporting based on our audit. We are a public accounting firm registered with the PCAOB and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audit in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether effective internal control over financial reporting was maintained in all material respects.\n\nOur audit included obtaining an understanding of internal control over financial reporting, assessing the risk that a material weakness exists, testing and evaluating the design and operating effectiveness of internal control based on the assessed risk, and performing such other procedures as we considered necessary in the circumstances. We believe that our audit provides a reasonable basis for our opinion.\n\nDefinition and Limitations of Internal Control Over Financial Reporting\n\nA company's internal control over financial reporting is a process designed to provide reasonable assurance regarding the reliability of financial reporting and the preparation of financial statements for external purposes in accordance with generally accepted accounting principles. A company's internal control over financial reporting includes those policies and procedures that (1) pertain to the maintenance of records that, in reasonable detail, accurately and fairly reflect the transactions and dispositions of the assets of the company; (2) provide reasonable assurance that transactions are recorded as necessary to permit preparation of financial statements in accordance with generally accepted accounting principles, and that receipts and expenditures of the company are being made only in accordance with authorizations of management and directors of the company; and (3) provide reasonable assurance regarding prevention or timely detection of unauthorized acquisition, use, or disposition of the company's assets that could have a material effect on the financial statements.\n\nBecause of its inherent limitations, internal control over financial reporting may not prevent or detect misstatements. Also, projections of any evaluation of effectiveness to future periods are subject to the risk that controls may become inadequate because of changes in conditions, or that the degree of compliance with the policies or procedures may deteriorate.\n\n/s/ Ernst & Young LLP &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n\nSan Jose, California\n\nJanuary 31, 2025\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Auditor's Reports | 56 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Statements of Operations <br>\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions, Except Per Share Amounts)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Net revenue** | $**53101** | $**54228** | $**63054** |\n| Cost of sales | 35756 | 32517 | 36188 |\n| **Gross margin** | **17345** | **21711** | **26866** |\n| Research and development | 16546 | 16046 | 17528 |\n| Marketing, general, and administrative | 5507 | 5634 | 7002 |\n| Restructuring and other charges | 6970 | (62) | 2 |\n| **Operating expenses** | **29023** | **21618** | **24532** |\n| **Operating income (loss)** | **(11678)** | **93** | **2334** |\n| Gains (losses) on equity investments, net | 242 | 40 | 4268 |\n| Interest and other, net | 226 | 629 | 1166 |\n| **Income (loss) before taxes** | **(11210)** | **762** | **7768** |\n| Provision for (benefit from) taxes | 8023 | (913) | (249) |\n| **Net income (loss)** | **(19233)** | **1675** | **8017** |\n| Less: net income (loss) attributable to non-controlling interests | (477) | (14) | 3 |\n| **Net income (loss) attributable to Intel** | $**(18756)** | $**1689** | $**8014** |\n| **Earnings (loss) per share attributable to Intel\u2014basic** | $**(4.38)** | $**0.40** | $**1.95** |\n| **Earnings (loss) per share attributable to Intel\u2014diluted** | $**(4.38)** | $**0.40** | $**1.94** |\n| Weighted average shares of common stock outstanding: |  |  |  |\n| &nbsp;&nbsp;&nbsp;**Basic** | **4280** | **4190** | **4108** |\n| &nbsp;&nbsp;&nbsp;**Diluted** | **4280** | **4212** | **4123** |\n\n---\n\n\n\n*See accompanying notes.*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Consolidated Statements of Operations | 57 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Statements of Comprehensive Income (Loss) <br>\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Net income (loss)** | $**(19233)** | $**1675** | $**8017** |\n| Changes in other comprehensive income (loss), net of tax: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Net unrealized holding gains (losses) on derivatives | (555) | 272 | (510) |\n| &nbsp;&nbsp;&nbsp;Actuarial valuation and other pension benefits (expenses), net | 60 | 66 | 855 |\n| &nbsp;&nbsp;&nbsp;Translation adjustments and other | (1) | 9 | (27) |\n| **Other comprehensive income (loss)** | **(496)** | **347** | **318** |\n| **Total comprehensive income (loss)** | **(19729)** | **2022** | **8335** |\n| Less: comprehensive income (loss) attributable to non-controlling interests | (477) | (14) | 3 |\n| **Total comprehensive income (loss) attributable to Intel** | $**(19252)** | $**2036** | $**8332** |\n\n---\n\n\n\n*See accompanying notes.*\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | Financial Statements | Consolidated Statements of Comprehensive Income (Loss) | 58 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Balance Sheets <br>\n\n---",
+        "token_count": 1830,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000050863-25-000009",
+        "cik": "0000050863",
+        "company": "INTEL CORP",
+        "form_type": "10-K",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 4186,
+        "source_md5": "228c076b20cfc822a46260e874681ea3",
+        "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "f2fda69e-9869-5891-9f60-2bea6d55ec24",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 14,
+        "char_start": 124465,
+        "char_end": 132774,
+        "text": "| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 23 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Gross Margin\n\nWe derived a majority of our consolidated gross margin in 2024, and 2023 from our Intel Products business sales through our CCG, DCAI, and NEX operating segments.\n\n---\n\n\n\n| |\n|:---|\n| Gross Margin $B |\n| (Percentages in chart indicate gross margin as a percentage of total revenue) |\n\n---\n\n\n\n![249](intc-20241228_g19.jpg)\n\n2024 vs. 2023\n\nOur consolidated gross margin in 2024 decreased by $4.4 billion, or 20%, compared to 2023 due primarily to higher 2024 impairment charges and accelerated depreciation. During Q3 2024, we concluded that our manufacturing asset portfolio, primarily for our Intel 7 process node, exceeded manufacturing capacity requirements. Upon completing an asset re-use assessment, we impaired certain construction-in-progress assets and accelerated depreciation for certain in-use manufacturing assets that resulted in $3.3 billion of charges in 2024. Our 2024 gross margin also decreased due to lower revenue, higher unit cost primarily from an increased mix of Intel 4 and Intel 7 products, higher period charges due to $922 million in Gaudi AI accelerator inventory-related charges recognized in 2024, and higher factory start-up costs. These 2024 unfavorable gross margin impacts were partially offset by certain favorable gross margin movements in 2024, including lower period charges driven by the sell-through of previously reserved inventory and lower non-accelerator reserves taken, lower period charges related to excess capacity charges, and a benefit recognized for government incentives received under the CHIPS Act.\n\nWe are making capital investments in furtherance of our strategy. As of December 28, 2024, our capital investments classified as construction in progress totaled $50.4 billion ($43.4 billion as of December 30, 2023). These assets have not yet been placed into service and have not yet begun depreciating. As these construction-in-progress assets are placed into service, we expect to incur depreciation expense that impacts future production costs and, ultimately, cost of sales. To the extent we are unable to grow our revenues to offset these production costs, our gross margin and operating income will be unfavorably affected. Additionally, we could incur asset impairments on property, plant, and equipment assets if our strategy is not successful.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 24 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nOperating Expenses\n\nTotal R&D and MG&A expenses for 2024 were $22.1 billion, up 2% compared to 2023. These expenses represent 41.5% of revenue for 2024 and 40.0% of revenue for 2023. In support of our strategy, we continue to make significant investments to accelerate our process technology roadmap. As a result of our 2024 Restructuring Plan and related cost-reduction measures, we expect a decrease in total R&D and MG&A expenses in future periods as we focus investments in R&D and create capacity for sustained investment in technology and manufacturing.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Research and Development $B | Marketing, General, and Administrative $B |\n| (Percentages indicate expenses as a percentage of total revenue) | (Percentages indicate expenses as a percentage of total revenue) |\n\n---\n\n\n\n![2327](intc-20241228_g20.jpg)![2328](intc-20241228_g21.jpg)\n\n<u>Research and Development</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| R&D increased by $500 million, or 3%, primarily driven by investments in our process technology and products, and higher share-based compensation, partially offset by lower incentive-based compensation and the effects of various cost-reduction measures. |\n\n---\n\n\n\n<u>Marketing, General, and Administrative</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| MG&A decreased by $127 million, or 2%, primarily driven by lower incentive-based compensation, share-based compensation, and the effects of various cost-reduction measures, partially offset by higher corporate spending to drive business transformation.  |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 25 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nRestructuring and Other Charges\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| Employee severance and benefit arrangements | $2481 | $222 | $1038 |\n| Litigation charges and other | 858 | (329) | (1187) |\n| Asset impairment charges | 3631 | 45 | 151 |\n| **Total restructuring and other charges** | $**6970** | $**(62)** | $**2** |\n\n---\n\n\n\nIn Q3 2024, the 2024 Restructuring Plan was announced, subsequently approved and committed to by our management team, and initiated to implement cost-reduction measures, including reductions in employee headcount, other operating expenditures, and capital expenditures (see \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements). We expect that our 2024 Restructuring Plan, in conjunction with other initiatives, will reduce our cost structure while we continue our investments to develop, manufacture, market, sell, and deliver product and process initiatives in furtherance of our strategy. We expect actions pursuant to the 2024 Restructuring Plan to be substantially completed by the fourth quarter of 2025, which is subject to change. Any changes to the estimates or timing will be reflected in our results of operations.\n\n*Employee severance and benefit arrangements* includes net charges relating to the 2024 Restructuring Plan of $2.2 billion in 2024. Charges relating to other actions taken to streamline operations and to reduce costs were $294 million in 2024. The charges in 2023 and 2022 primarily related to the 2022 Restructuring Program, which was approved to rebalance our workforce and operations in alignment with our strategy and was completed in Q1 2024. The 2022 Restructuring Program, in conjunction with other initiatives, reduced our cost structure and allowed us to reinvest certain of these cost savings in resources and capacity to develop, manufacture, market, sell, and deliver our products in furtherance of our strategy.\n\n*Litigation charges and other* includes a charge of $780 million that we recorded in 2024 arising out of the R2 litigation. In 2023, a $1.2 billion benefit was recorded due to the reduction in the previously accrued charge as a result of developments in the VLSI litigation. 2023 charges also included a $401 million charge for an EC-imposed fine and a $353 million termination fee in connection with our inability to timely obtain required regulatory approvals needed to acquire Tower Semiconductor Ltd. Refer to \"Note 19: Commitments and Contingencies\" within Notes to Consolidated Financial Statements for information about litigation related items.\n\n*Asset impairment charges* in 2024 includes non-cash charges associated with the 2024 Restructuring Plan, including $442 million of non-cash impairments of construction-in-progress assets associated with our decision to exit and outsource manufacturing capabilities for certain internal test hardware; and $103 million of non-cash impairments of operating leased assets and related leasehold improvements resulting from real estate consolidations and exits. Real estate consolidations and exits did not significantly change our operating lease liabilities and may result in future cash outlays for facility restoration or the relocation of operations. In addition, we incurred non-cash impairments relating to goodwill and acquired intangible assets of $3.1 billion in 2024. Refer to \"Note 11: Goodwill\" and \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements for further information about these items.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 26 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nGains (Losses) on Equity Investments and Interest and Other, Net\n\n---",
+        "token_count": 1973,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001665160-25-000017",
+        "cik": "0002002943",
+        "company": "Mother Road Brewing Co",
+        "form_type": "C",
+        "filed_date": "20250108",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 622,
+        "source_md5": "1913053f245f6ccabcd165e6ea81f3f5",
+        "content_sha256": "7bc5bfca54c6446c8e551acf91ba9c7f72c149e7416d859bc50cbdb3b97b642e",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "d187c0ee-5420-5c46-a5aa-7734400cc5d1",
+        "section": "Notes to Consolidated Financial Statements (continued)",
+        "section_index": 153,
+        "chunk_index": 0,
+        "char_start": 137247,
+        "char_end": 139445,
+        "text": "## Notes to Consolidated Financial Statements (continued)\n\nYear Ended December 31, 2022\n(See Independent Auditors\u2019 Report)\n\n1. Description of business and summary of significant accounting policies (continued):\n\nResearch and development:\nResearch and development costs are charged to expense as incurred. Research and development expenses were $664 for the year ended December 31, 2022.\n\nIncome taxes:\nMother Road files corporate income tax returns for federal and state purposes. H66 is a disregarded entity for income tax purposes, as such its activity is included in the tax returns of Mother Road.\n\nDeferred income taxes are provided for temporary differences arising primarily from straight-line depreciation in the consolidated financial statements and accelerated depreciation for income taxes. Deferred income taxes are also recognized for net operating losses that are available to offset future taxable income and general business tax credits that are available to offset future federal income taxes.\n\nThe tax provision differs from the expense that would result from applying statutory rates to income before income taxes because of permanent differences such as officers\u2019 life insurance and meals and entertainment which are not fully deductible for tax purposes. In addition, a portion of payroll taxes paid on employee tips is claimed as an income tax credit in lieu of a deduction.\n\nFrom time to time, the Company may be subject to interest and penalties assessed by various taxing authorities, which have historically been insignificant. Penalties will be classified as general and administrative expenses and interest as other expense, if they occur.\n\nSubsequent events:\nThe Company\u2019s management has evaluated the events that have occurred subsequent to December 31, 2022 through January 23, 2024, the date that the consolidated financial statements were available to be issued. Management has no responsibility to update these consolidated financial statements for events and circumstances occurring after this date.\n\n2. Inventory:\n\n| Raw materials | $707,100 |\n| --- | --- |\n| Work in process | 206,921 |\n| Finished goods | 72,344 |\n| Merchandise | 74,563 |\n|  | $1,060,928 |\n\n12",
+        "token_count": 412,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "104b12c6-20f6-50b2-b497-3a08db47bb41",
+        "section": "SUMMARY HISTORICAL FINANCIAL INFORMATION OF SCAGE INTERNATIONAL",
+        "section_index": 72,
+        "chunk_index": 0,
+        "char_start": 358430,
+        "char_end": 360971,
+        "text": "#### SUMMARY HISTORICAL FINANCIAL INFORMATION OF SCAGE INTERNATIONAL\nThe following selected consolidated statements of operations and comprehensive loss data and selected consolidated statements of cash flows data for the fiscal years ended June 30, 2024 and 2023, and the selected consolidated balance sheets data as of June 30, 2024 and 2023 have been derived from the audited consolidated financial statements of Scage International included elsewhere in this proxy statement/prospectus. The consolidated financial statements of Scage International are prepared and presented in accordance with U.S. GAAP. Scage International's historical results are not necessarily indicative of results expected for future periods. The financial data set forth below should be read in conjunction with and is qualified by reference to \"Management's Discussion and Analysis of Financial Condition and Results of Operations of Scage International\" and the consolidated financial statements and notes thereto included elsewhere in this proxy statement/prospectus.\n\nThe following table presents Scage International's summary of consolidated statements of operations and comprehensive loss for the fiscal years ended June 30, 2024 and 2023.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n|  | **For the Year Ended <br>June 30,** | **For the Year Ended <br>June 30,** |\n|  | **2024** | **2023** |\n|  Revenues \u2013 third parties | $6111141  | $421680 |\n|  Revenues \u2013 a related party | \u2014  | 16290 |\n|  **Total revenues** | **6111141**  | **437970** |\n|  **Cost of revenues** | **(5574685)** | **(795286)** |\n|  **Gross (loss)/profit** | **536456**  | **(357316)** |\n|  **Operating expenses:** |  |  |\n| &nbsp;&nbsp;&nbsp; Selling and marketing expenses | (648301) | (1138183) |\n| &nbsp;&nbsp;&nbsp; Research and development expenses | (1698494) | (2297474) |\n| &nbsp;&nbsp;&nbsp; General and administrative expenses | (3863434) | (2926280) |\n| &nbsp;&nbsp;&nbsp; Impairment of long-lived assets | (200841) |  |\n|  **Total operating expenses** | **(6411070)** | **(6361937)** |\n|  **Loss from operations** | **(5874614)** | **(6719253**) |\n| &nbsp;&nbsp;&nbsp; Interest expense, net | (369847) | (151492) |\n| &nbsp;&nbsp;&nbsp; Investment income from short-term investments | \u2014  |  |\n| &nbsp;&nbsp;&nbsp; Other income, net | 263685  | 252536 |\n|  **Total other (loss)/income, net** | **(106162)** | **101044** |\n|  **Loss before income taxes** | **(5980776)** | **(6618209)** |\n| &nbsp;&nbsp;&nbsp; Income tax benefit | \u2014  |  |\n|  **Net loss** | **(5980776)** | **(6618209)** |\n",
+        "token_count": 679,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash"
+  },
+  "judge": {
+    "text": "{\"correctness\": 12, \"citation_support\": 55, \"rationale\": \"The reference answers the comparison: Intel R&D intensity ~31.07% (16.5B/53.1B) vs NVIDIA ~9.90% (12,914M/130,497M), difference ~21.17 pp. The candidate correctly computed Intel's intensity (~31.16% using exact 16,546/53,101, which is a valid refinement of the reference's 31.07% based on rounded $16.5B figure) but failed to retrieve NVIDIA's FY2025 revenue and R&D, and explicitly abstained from the comparison. Since the reference is answerable and the candidate did not provide the percentage-point difference or identify the higher company, correctness is low, though the abstention is transparent and the Intel figure is essentially right. Citations: the Intel income statement excerpt supports the 53,101 and 16,546 figures, and the NVIDIA R&D figure 12914 appears in the gold evidence but was not in the candidate's retrieved excerpts, so the NVIDIA-related claims have no retrieved support; the candidate's Intel citation is accurate to the retrieved chunk.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 12, \"citation_support\": 55, \"rationale\": \"The reference answers the comparison: Intel R&D intensity ~31.07% (16.5B/53.1B) vs NVIDIA ~9.90% (12,914M/130,497M), difference ~21.17 pp. The candidate correctly computed Intel's intensity (~31.16% using exact 16,546/53,101, which is a valid refinement of the reference's 31.07% based on rounded $16.5B figure) but failed to retrieve NVIDIA's FY2025 revenue and R&D, and explicitly abstained from the comparison. Since the reference is answerable and the candidate did not provide the percentage-point difference or identify the higher company, correctness is low, though the abstention is transparent and the Intel figure is essentially right. Citations: the Intel income statement excerpt supports the 53,101 and 16,546 figures, and the NVIDIA R&D figure 12914 appears in the gold evidence but was not in the candidate's retrieved excerpts, so the NVIDIA-related claims have no retrieved support; the candidate's Intel citation is accurate to the retrieved chunk.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:39:50.576235+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d0e434fa4870b3688d9178dd:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042787-j2HYxvtIUGXiuFlWUiUZ",
+    "usage": {
+      "prompt_tokens": 58703,
+      "completion_tokens": 388,
+      "total_tokens": 59091,
+      "cost": 0.0060643,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0060643,
+        "upstream_inference_prompt_cost": 0.0058703,
+        "upstream_inference_completions_cost": 0.000194
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.730322784999771,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 12,
+    "citation_support": 55,
+    "rationale": "The reference answers the comparison: Intel R&D intensity ~31.07% (16.5B/53.1B) vs NVIDIA ~9.90% (12,914M/130,497M), difference ~21.17 pp. The candidate correctly computed Intel's intensity (~31.16% using exact 16,546/53,101, which is a valid refinement of the reference's 31.07% based on rounded $16.5B figure) but failed to retrieve NVIDIA's FY2025 revenue and R&D, and explicitly abstained from the comparison. Since the reference is answerable and the candidate did not provide the percentage-point difference or identify the higher company, correctness is low, though the abstention is transparent and the Intel figure is essentially right. Citations: the Intel income statement excerpt supports the 53,101 and 16,546 figures, and the NVIDIA R&D figure 12914 appears in the gold evidence but was not in the candidate's retrieved excerpts, so the NVIDIA-related claims have no retrieved support; the candidate's Intel citation is accurate to the retrieved chunk."
+  }
+}

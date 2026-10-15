@@ -1,0 +1,35 @@
+{
+  "seed": 20261015,
+  "algorithm": "Python random.Random(seed).sample without replacement; sort by ID",
+  "population": 100,
+  "sample_size": 20,
+  "source_sha256": "d03843d98fa767ba5b38d4680f2ca9e50c50b43ee4fdefb0a6cef5818d26a4ff",
+  "ids": [
+    "Q002",
+    "Q004",
+    "Q006",
+    "Q008",
+    "Q025",
+    "Q026",
+    "Q028",
+    "Q030",
+    "Q051",
+    "Q055",
+    "Q057",
+    "Q062",
+    "Q064",
+    "Q068",
+    "Q074",
+    "Q079",
+    "Q081",
+    "Q084",
+    "Q088",
+    "Q089"
+  ],
+  "difficulty_counts": {
+    "easy": 4,
+    "medium": 4,
+    "hard": 5,
+    "very_hard": 7
+  }
+}

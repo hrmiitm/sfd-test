@@ -1,0 +1,806 @@
+{
+  "question_id": "Q068",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 1.556796347999807,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "**Intel dedicated the higher share of revenue to R&D.** Intel\u2019s FY2024 R&D intensity was **31.2%** ($16.546 billion R&D / $53.101 billion net revenue); NVIDIA\u2019s FY2025 was **9.9%**. The difference is **21.3 percentage points** (31.2% \u2212 9.9%).\n\nSources: Intel FY2024 10-K, accession **0000050863-25-000009**, chunk **e165c6f6-d3cc-50f7-ba46-2514cc990b6e**; NVIDIA FY2025 10-K, accession **0001045810-25-000023**, chunk **2d4cee94-0f7b-599b-aa19-f5ffe2997e11**.",
+    "usage": {
+      "prompt_tokens": 30583,
+      "completion_tokens": 262,
+      "total_tokens": 30845,
+      "cost": 0.0028121
+    },
+    "seconds": 186.93758306400014,
+    "tool_seconds": 1.556796347999807,
+    "tool_calls": 2,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_Bwz9vOYxFbNImHA4S9n8QRyL",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Intel Corporation 2024 annual report research and development expense total net revenue FY 2024 NVIDIA Corporation fiscal 2025 research development expense revenue R&D\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_Bwz9vOYxFbNImHA4S9n8QRyL",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Intel Corporation 2024 annual report research and development expense total net revenue FY 2024 NVIDIA Corporation fiscal 2025 research development expense revenue R&D\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:26:14.355794+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "918f519c74e11e7fb8f0676c:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041972-xYRms1cWeMkJLGoMrxEJ",
+        "usage": {
+          "prompt_tokens": 815,
+          "completion_tokens": 47,
+          "total_tokens": 862,
+          "cost": 0.000105,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000105,
+            "upstream_inference_prompt_cost": 8.15e-05,
+            "upstream_inference_completions_cost": 2.35e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 1.6368015240004752,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_qCTj4lltpdfh4O0pJ2z64qtn",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Intel Corporation 10-K FY 2024 research and development expenses percentage of revenue 2024 net revenue\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_qCTj4lltpdfh4O0pJ2z64qtn",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Intel Corporation 10-K FY 2024 research and development expenses percentage of revenue 2024 net revenue\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:29:43.852812+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "918f519c74e11e7fb8f0676c:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042182-JNQu6dS9N6ycKcEWsJw1",
+        "usage": {
+          "prompt_tokens": 9753,
+          "completion_tokens": 38,
+          "total_tokens": 9791,
+          "cost": 0.00123805,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 9750,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00123805,
+            "upstream_inference_prompt_cost": 0.00121905,
+            "upstream_inference_completions_cost": 1.9e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.6423444319998453,
+        "attempts": 1
+      },
+      {
+        "text": "**Intel dedicated the higher share of revenue to R&D.** Intel\u2019s FY2024 R&D intensity was **31.2%** ($16.546 billion R&D / $53.101 billion net revenue); NVIDIA\u2019s FY2025 was **9.9%**. The difference is **21.3 percentage points** (31.2% \u2212 9.9%).\n\nSources: Intel FY2024 10-K, accession **0000050863-25-000009**, chunk **e165c6f6-d3cc-50f7-ba46-2514cc990b6e**; NVIDIA FY2025 10-K, accession **0001045810-25-000023**, chunk **2d4cee94-0f7b-599b-aa19-f5ffe2997e11**.",
+        "message": {
+          "role": "assistant",
+          "content": "**Intel dedicated the higher share of revenue to R&D.** Intel\u2019s FY2024 R&D intensity was **31.2%** ($16.546 billion R&D / $53.101 billion net revenue); NVIDIA\u2019s FY2025 was **9.9%**. The difference is **21.3 percentage points** (31.2% \u2212 9.9%).\n\nSources: Intel FY2024 10-K, accession **0000050863-25-000009**, chunk **e165c6f6-d3cc-50f7-ba46-2514cc990b6e**; NVIDIA FY2025 10-K, accession **0001045810-25-000023**, chunk **2d4cee94-0f7b-599b-aa19-f5ffe2997e11**.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:34:30.305142+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "918f519c74e11e7fb8f0676c:agent:2",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042288-TOutRHEiUAendQy511yk",
+        "usage": {
+          "prompt_tokens": 20015,
+          "completion_tokens": 177,
+          "total_tokens": 20192,
+          "cost": 0.00146905,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 9750,
+            "cache_write_tokens": 10262,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00146905,
+            "upstream_inference_prompt_cost": 0.00138055,
+            "upstream_inference_completions_cost": 8.85e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 182.65843710799982,
+        "attempts": 2
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_Bwz9vOYxFbNImHA4S9n8QRyL",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Intel Corporation 2024 annual report research and development expense total net revenue FY 2024 NVIDIA Corporation fiscal 2025 research development expense revenue R&D\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0001045810-25-000023",
+              "cik": "0001045810",
+              "company": "NVIDIA CORP",
+              "form_type": "10-K",
+              "filed_date": "20250226",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 59611,
+              "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+              "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2d4cee94-0f7b-599b-aa19-f5ffe2997e11",
+              "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+              "section_index": 10,
+              "chunk_index": 3,
+              "char_start": 228847,
+              "char_end": 237114,
+              "text": "Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location. Revenue from sales to customers outside of the United States accounted for 53% and 56% of total revenue for fiscal years 2025 and 2024, respectively.\n\n**Gross Profit and Gross Margin**\n\nGross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.\n\nGross margins increased to 75.0% in fiscal year 2025 from 72.7% in fiscal year 2024. The year over year increase was primarily driven by a higher mix of Data Center revenue.\n\nProvisions for inventory and excess inventory purchase obligations totaled $3.7 billion and $2.2 billion for fiscal years 2025 and 2024, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $689 million and $540 million for fiscal years 2025 and 2024, respectively. The net effect on our gross margin was an unfavorable impact of 2.3% and 2.7% in fiscal years 2025 and 2024, respectively.\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Research and development expenses | $12914 | $8675 | $4239 | 49% |\n| *% of net revenue* | *9.9 %* | *14.2 %* |  |  |\n| Sales, general and administrative expenses | 3491 | 2654 | 837 | 32% |\n| *% of net revenue* | *2.7 %* | *4.4 %* |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | $16405 | $11329 | $5076 | 45% |\n| &nbsp;&nbsp;&nbsp;&nbsp;*% of net revenue* | *12.6 %* | *18.6 %* |  |  |\n\n---\n\n\n\nThe increases in research and development expenses for fiscal year 2025 were driven by a 32% increase in compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases, a 100% increase in compute and infrastructure, and a 234% increase in engineering development costs for new product introductions.\n\nThe increases in sales, general and administrative expenses for fiscal year 2025 were primarily driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Other Income (Expense), Net**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Interest income | $1786 | $866 | $920 |\n| Interest expense | (247) | (257) | 10 |\n| Other, net | 1034 | 237 | 797 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | $2573 | $846 | $1727 |\n\n---\n\n\n\nThe increase in interest income was primarily due to growth in cash, cash equivalents, and marketable securities.\n\nInterest expense is comprised of coupon interest and debt discount amortization related to our notes.\n\nOther, net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. The change in Other, net, compared to fiscal year 2024, was primarily driven by an increase in fair value of our non-marketable equity securities and publicly-held equity securities. Refer to Note 8 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information regarding our non-marketable equity securities.\n\n**Income Taxes**\n\nIncome tax expense was $11.1 billion and $4.1 billion for fiscal years 2025 and 2024, respectively. Income tax as a percentage of income before income tax was an expense of 13.3% and 12.0% for fiscal years 2025 and 2024, respectively.\n\nThe effective tax rate increased primarily due to higher pre-tax income and a prior year discrete benefit due to an audit resolution.\n\nOur effective tax rates for fiscal years 2025 and 2024 were lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, stock-based compensation, the U.S. federal research tax credit, and income earned in jurisdictions that are subject to taxes at rates lower than the U.S. federal statutory tax rate. Our effective tax rate for fiscal year 2024 was additionally benefited by the audit resolution.\n\nGiven our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could vary based on our assessment of all available information.\n\nRefer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.\n\n**Liquidity and Capital Resources**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Cash and cash equivalents | $8589 | $7280 |\n| Marketable securities | 34621 | 18704 |\n| Cash, cash equivalents, and marketable securities | $43210 | $25984 |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Net cash provided by operating activities | $64089 | $28090 |\n| Net cash used in investing activities | $(20421) | $(10566) |\n| Net cash used in financing activities | $(42359) | $(13633) |\n\n---\n\n\n\nOur investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain maturity limits on our portfolio.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\nCash provided by operating activities increased in fiscal year 2025 compared to fiscal year 2024, due to growth in revenue.\n\nCash used in investing activities increased in fiscal year 2025 compared to fiscal year 2024, primarily driven by net purchases of marketable securities, and purchase of land, property and equipment.\n\nCash used in financing activities increased in fiscal year 2025 compared to fiscal year 2024, mainly due to higher share repurchases and higher tax payments related to RSUs.\n\n**Liquidity**\n\nOur primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of January 26, 2025, we had $43.2 billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.\n\nOur marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly rated financial institutions. These marketable securities are primarily denominated in U.S. dollars. Refer to Note 7 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+              "token_count": 1944,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "f46eed27-3f6e-527f-ade3-1fe70730993d",
+              "section": "Operating expenses",
+              "section_index": 295,
+              "chunk_index": 0,
+              "char_start": 1077472,
+              "char_end": 1079335,
+              "text": "#### Operating expenses\nOur operating expenses include general and administrative expenses, research and development expenses and selling and marketing expenses. The following table sets forth our operating expenses, in absolute amounts and as a percentage of our total revenues for the periods indicated.\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n|  | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** |\n|  | **2024** | **2024** | **2023** | **2023** |\n|  | **US$** | **%** | **US$** | **%** |\n|  **Operating expenses:** |  |  |  |  |\n|  General and administrative expenses | 3863434 | 63.2 | 2926280 | 668.1 |\n|  Research and development expenses | 1698494 | 27.8 | 2297474 | 524.6 |\n|  Selling and marketing expenses | 648301 | 10.6 | 1138183 | 259.9 |\n|  Impairment of long-lived assets | 200841 | 3.3 |  |  |\n|  **Total operating expenses** | **6411070** | **104.9** | **6361937** | **1452.6** |\n\n---\n\n\n\n*General and administrative expense*\n\nOur general and administrative expenses mainly consist of (1) employee compensation, (2) professional service fees, (3) business development expenses, (4) provision for credit losses of financial assets, and (5) other expenses related to general and administrative personnel.\n\n*Research and development expenses*\n\nOur research and development (\"R&D\") expenses mainly consist of (1) employee compensation, (2) materials and supplies expenses related to our R&D functions, and (3) depreciation and rental expenses related to our R&D functions.\n\n*Selling and marketing expenses*\n\nOur selling and marketing expenses mainly consist of (1) employee compensation, (2) marketing and advertising expenses, and (3) depreciation and rental expenses for leased properties related to our marketing functions.",
+              "token_count": 472,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001193125-25-013335",
+              "cik": "0001177648",
+              "company": "ENANTA PHARMACEUTICALS INC",
+              "form_type": "ARS",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 820,
+              "source_md5": "496bc96fc98d636e4c07fd4389766b92",
+              "content_sha256": "a22d3b8ab95be96c936414be5db19c92c2a32cf9c1e280aa701fc694730c3d0e",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "c439c0df-6c0b-57c4-aef5-74650c7bc1bb",
+              "section": "Revenue",
+              "section_index": 112,
+              "chunk_index": 0,
+              "char_start": 324084,
+              "char_end": 326199,
+              "text": "## Revenue\n\nWe recognized revenue of $67.6 million and $79.2 million during the years ended September 30, 2024 and 2023, respectively. The decrease in revenue year-over-year was primarily due to AbbVie\u2019s lower reported HCV sales as compared to the comparable period in 2023.\n\nOur royalty revenues eligible to be earned in the future will depend on AbbVie\u2019s HCV market share, the pricing of the MAVYRET/MAVIRET regimen and the number of patients treated. In addition, at the beginning of each calendar year (the second quarter of our fiscal year), our royalty rate resets to the lowest tier for each of our royalty-bearing products licensed to AbbVie.\n\nBeginning with the quarter ended September 30, 2023, 54.5% of our quarterly royalty payments on net sales of MAVYRET/MAVIRET that are included in our total revenue are paid to OMERS through June 30, 2032, subject to a cap on aggregate payments equal to 1.42 times the purchase price. The $200.0 million received in April 2023 was recognized on our consolidated balance sheets as a liability which will be reduced by the payments made to OMERS over the term of the royalty sale agreement. We will continue to record 100% of HCV royalties earned under the AbbVie Agreement as royalty revenue in our consolidated statements of operations since the AbbVie Agreement has not been amended and is independent of our agreement with OMERS.\n\nResearch and development expenses\n\n|  | Years Ended September 30, |  |\n| --- | --- | --- |\n|  | 2024 | 2023 |\n|  | (in thousands) |  |\n| R&D programs: |  |  |\n| Virology |  |  |\n| RSV | $86,367 | $78,120 |\n| COVID-19 | 4,625 | 66,082 |\n| HBV | 371 | 6,974 |\n| Total Virology | $91,363 | $151,176 |\n| Immunology |  |  |\n| KIT | 19,822 | - |\n| STAT6 | 4,691 | - |\n| Total Immunology | $24,513 | $ - |\n| Other Programs |  |  |\n| NASH | 605 | 4,095 |\n| Early discovery | 14,995 | 8,253 |\n| Total Other Programs | $15,600 | $12,348 |\n| Total research and development expenses | $131,476 | $163,524 |\n\nResearch and development expenses for the year ended September 30, 2024 decreased by $32.0 million compared to the same period in 2023.",
+              "token_count": 575,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001045810-25-000023",
+              "cik": "0001045810",
+              "company": "NVIDIA CORP",
+              "form_type": "10-K",
+              "filed_date": "20250226",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 59611,
+              "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+              "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "93aeffcc-2941-55ff-b45d-98f673c12e6c",
+              "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+              "section_index": 10,
+              "chunk_index": 2,
+              "char_start": 220817,
+              "char_end": 228845,
+              "text": "We account for customer programs, which involve rebates and marketing development funds, or MDFs, as a reduction in revenue and accrue for such programs based on the amount we expect to be claimed by customers. Certain customer programs include distributor price incentives or other channel programs for specific products and customer classes which require judgement as to whether the applicable incentives will be attained. Estimates for customer program accruals include a combination of historical attainment and claim rates and may be adjusted based on relevant internal and external factors.\n\n**License and Development Arrangements**\n\nRevenue from License and Development Arrangements is recognized over the period in which the development services are performed. Each fiscal reporting period, we measure progress to completion based on actual cost incurred to date as a percentage of the estimated total cost required to complete each project. Estimated total cost for each project includes a forecast of internal engineer personnel time expected to be incurred and other third-party costs as applicable.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Contracts with Multiple Performance Obligations**\n\nOur contracts may contain more than one performance obligation. Judgement is required in determining whether each performance obligation within a customer contract is distinct. Except for License and Development Arrangements, NVIDIA products and services function on a standalone basis and do not require a significant amount of integration or interdependency. Therefore, multiple performance obligations contained within a customer contract are considered distinct and are not combined for revenue recognition purposes.\n\nWe allocate the total transaction price to each distinct performance obligation in an arrangement with multiple performance obligations on a relative standalone selling price basis. In certain cases, we can establish standalone selling price based on directly observable prices of products or services sold separately in comparable circumstances to similar customers. If standalone selling price is not directly observable, such as when we do not sell a product or service separately, we determine standalone selling price based on market data and other observable inputs.\n\n**Results of Operations**\n\nA discussion regarding our financial condition and results of operations for fiscal year 2025 compared to fiscal year 2024 is presented below. A discussion regarding our financial condition and results of operations for fiscal year 2024 compared to fiscal year 2023 can be found under Item 7 in our Annual Report on Form 10-K for the fiscal year ended January 28, 2024, filed with the SEC on February 21, 2024, which is available free of charge on the SEC's website at http://www.sec.gov and at our investor relations website, http://investor.nvidia.com.\n\nThe following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Income expressed as a percentage of revenue.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n| Revenue | 100.0% | 100.0% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Cost of revenue | 25.0 | 27.3 |\n| Gross profit | 75.0 | 72.7 |\n| Operating expenses |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Research and development | 9.9 | 14.2 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Sales, general and administrative | 2.7 | 4.4 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | 12.6 | 18.6 |\n| Operating income | 62.4 | 54.1 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Interest income | 1.4 | 1.4 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Interest expense | (0.2) | (0.4) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other, net | 0.8 | 0.4 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | 2.0 | 1.4 |\n| Income before income tax | 64.4 | 55.5 |\n| Income tax expense | 8.6 | 6.6 |\n| Net income | 55.8% | 48.9% |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Reportable Segments**\n\n**Revenue by Reportable Segments**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Compute & Networking | $116193 | $47405 | $68788 | 145% |\n| Graphics | 14304 | 13517 | 787 | 6% |\n| Total | $130497 | $60922 | $69575 | 114% |\n\n---\n\n\n\n**Operating Income by Reportable Segments**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Compute & Networking | $82875 | $32016 | $50859 | 159% |\n| Graphics | 5085 | 5846 | (761) | (13)% |\n| All Other | (6507) | (4890) | (1617) | 33% |\n| Total | $81453 | $32972 | $48481 | 147% |\n\n---\n\n\n\n*Compute & Networking revenue* \u2013 The year over year increase was due to strong demand for our accelerated computing and AI solutions. Revenue from Data Center computing grew 162% driven primarily by demand for our Hopper computing platform used for large language models, recommendation engines, and generative AI applications. Revenue from Data Center networking grew 51% driven by Ethernet for AI revenue, which includes Spectrum-X end-to-end ethernet platform.\n\n*Graphics revenue* \u2013 The year over year increase was driven by sales of our GeForce RTX 40 Series GPUs.\n\n*Reportable segment operating income* \u2013 The year over year increase in Compute & Networking segment operating income was driven by growth in revenue. The year over year decrease in Graphics segment operating income was driven by an increase of 44% in segment operating expenses, partially offset by growth in revenue.\n\n*All Other operating loss* \u2013 The year over year increase was due to an increase in stock-based compensation expense reflecting employee growth and compensation increases.\n\n**Concentration of Revenue**\n\nWe refer to customers who purchase products directly from NVIDIA as direct customers, such as AIBs, distributors, ODMs, OEMs, and system integrators. We have certain customers that may purchase products directly from NVIDIA and may use either internal resources or third-party system integrators to complete their build. We also have indirect customers, who purchase products through our direct customers; indirect customers include CSPs, consumer internet companies, enterprises, and public sector entities.\n\n*Direct Customers* \u2013 Sales to direct customers which represented 10% or more of total revenue, all of which were primarily attributable to the Compute & Networking segment, are presented in the following table:\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n| Direct Customer A | 12% | \\* |\n| Direct Customer B | 11% | 13% |\n| Direct Customer C | 11% | \\* |\n\n---\n\n\n\n\\* Less than 10% of total revenue.\n\nNo customer represented 10% or more of total revenue for fiscal year 2023.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n*Indirect Customers* \u2013 Indirect customer revenue is an estimation based upon multiple factors including customer purchase order information, product specifications, internal sales data, and other sources. Actual indirect customer revenue may differ from our estimates. For fiscal year 2025, an indirect customer which primarily purchases our products through system integrators and distributors, including through Direct Customer B, is estimated to represent 10% or more of total revenue, attributable to the Compute & Networking segment.\n\nWe have experienced periods where we receive a significant amount of our revenue from a limited number of customers, and this trend may continue.",
+              "token_count": 1946,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "af56c899-7406-5486-84f1-574a89e78c45",
+              "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 10,
+              "chunk_index": 3,
+              "char_start": 217193,
+              "char_end": 224994,
+              "text": "*[See Note 2 of our Notes to Consolidated Financial Statements for additional details of revenue by geography.](#i74cf9d38730645a2be94739e148c270a_139)*\n\n**Cost of Revenue**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Subscription | $1799 | $1822 | $1646 | (1)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 8% | 9% | 9% |  |\n| Product | 25 | 29 | 35 | (14)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | \\* | \\* | \\* |  |\n| Services and other | 534 | 503 | 484 | 6% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 2% | 3% | 3% |  |\n| Total cost of revenue | $2358 | $2354 | $2165 | \\* |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n*Subscription*\n\nCost of subscription revenue consists of third-party hosting services and data center costs, including expenses related to operating our network infrastructure and AI inferencing costs. Cost of subscription revenue also includes compensation costs associated with network operations, implementation, account management and technical support personnel, royalty fees, software costs and amortization of certain intangible assets.\n\nCost of subscription revenue decreased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Loss contingency | (5)% |\n| Amortization of intangibles | (2) |\n| Hosting services and data center costs | 4 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | (1)% |\n\n---\n\n\n\nCost of subscription revenue during fiscal 2024 included the reversal of a loss contingency incurred in fiscal 2023 associated with an IP litigation matter.\n\n*Product*&nbsp;&nbsp;&nbsp;&nbsp;\n\nCost of product revenue is primarily comprised of third-party royalties, localization costs and costs associated with the manufacturing of our products.\n\n*Services and Other*\n\nCost of services and other revenue is primarily comprised of compensation and contracted costs incurred to provide consulting services, training and product support, and hosting services and data center costs.\n\nCost of services and other revenue increased during fiscal 2024 as compared to fiscal 2023 primarily due to increases in compensation costs and professional fees.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Research and development | $3944 | $3473 | $2987 | 14% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 18% | 18% | 17% |  |\n| Sales and marketing | 5764 | 5351 | 4968 | 8% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 27% | 28% | 28% |  |\n| General and administrative | 1529 | 1413 | 1219 | 8% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 7% | 7% | 7% |  |\n| Acquisition termination fee | 1000 |  |  | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 5% | \\* | \\* |  |\n| Amortization of intangibles | 169 | 168 | 169 | 1% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 1% | 1% | 1% |  |\n| Total operating expenses | $12406 | $10405 | $9343 | 19% |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n<sup>(\\*\\*)</sup>&nbsp;&nbsp;&nbsp;&nbsp;Percentage is not meaningful.\n\n*Research and Development* \n\nResearch and development expenses consist primarily of compensation and contracted costs associated with software development, third-party hosting services and data center costs including AI training costs, related facilities costs and expenses associated with computer equipment and software used in development activities.\n\nResearch and development expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Compensation costs | 7% |\n| Hosting services and data center costs | 5 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 14% |\n\n---\n\n\n\nInvestments in research and development, including the recruiting and hiring of software developers, are critical to remain competitive in the marketplace and are directly related to continued timely development of new and enhanced offerings and solutions. We will continue to focus on long-term opportunities available in our end markets and make significant investments in the development of our subscription and service offerings, apps and tools.\n\n*Sales and Marketing*\n\nSales and marketing expenses consist primarily of compensation costs, amortization of contract acquisition costs, including sales commissions, travel expenses and related facilities costs for our sales, marketing, order management and global supply chain management personnel. Sales and marketing expenses also include the costs of programs aimed at increasing revenue, such as advertising, trade shows and events, public relations and other market development programs.\n\nSales and marketing expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Compensation costs | 4% |\n| Marketing spend related to campaigns, events and overall marketing efforts | 2 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 8% |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n*General and Administrative*\n\nGeneral and administrative expenses consist primarily of compensation and contracted costs, travel expenses and related facilities costs for our finance, facilities, human resources, legal, information services and executive personnel. General and administrative expenses also include outside legal and accounting fees, provision for bad debts, expenses associated with computer equipment and software used in the administration of the business, charitable contributions and various forms of insurance.\n\nGeneral and administrative expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Lease-related asset impairments and other charges | 7% |\n| Compensation costs | 4 |\n| Professional and consulting fees | (5) |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 8% |\n\n---\n\n\n\nGeneral and administrative expenses during fiscal 2024 included costs associated with the optimization of our leased facilities, primarily consisting of impairment charges for certain operating lease right-of-use assets and leasehold improvements.\n\n*Acquisition Termination Fee*\n\nDuring fiscal 2024, we incurred a $1 billion termination fee which resulted from termination of the Figma transaction.\n\n**Non-Operating Income (Expense), Net**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Interest expense | $(169) | $(113) | $(112) | 50% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | (1)% | (1)% | (1)% |  |\n| Investment gains (losses), net | 48 | 16 | (19) | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | \\* | \\* | \\* |  |\n| Other income (expense), net | 311 | 246 | 41 | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 1% | 1% | \\* |  |\n| Total non-operating income (expense), net | $190 | $149 | $(90) | \\*\\* |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n<sup>(\\*\\*)</sup>&nbsp;&nbsp;&nbsp;&nbsp;Percentage is not meaningful.\n\n*Interest Expense*\n\nInterest expense represents interest associated with our debt instruments. Interest on our senior notes is payable semi-annually, in arrears.",
+              "token_count": 1968,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 1.5249835320000784
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_qCTj4lltpdfh4O0pJ2z64qtn",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Intel Corporation 10-K FY 2024 research and development expenses percentage of revenue 2024 net revenue\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000050863-25-000009",
+              "cik": "0000050863",
+              "company": "INTEL CORP",
+              "form_type": "10-K",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 4186,
+              "source_md5": "228c076b20cfc822a46260e874681ea3",
+              "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "e165c6f6-d3cc-50f7-ba46-2514cc990b6e",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 13,
+              "char_start": 118142,
+              "char_end": 124461,
+              "text": "| | | | |\n|:---|:---|:---|:---|\n| **Years Ended ($ In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Revenue** | $**3824** | $**5608** | $**5530** |\n| Cost of sales | 1831 | 2475 | 2425 |\n| **Gross margin** | **1993** | **3133** | **3105** |\n| Operating expenses | **2077** | **2054** | **1931** |\n| **Operating income (loss)** | $**(84)** | $**1079** | $**1174** |\n| Gross margin % | 52% | 56% | 56% |\n| Operating margin (loss) % | (2)% | 19% | 21% |\n\n---\n\n\n\n<sup>1</sup> *Operating segment results include intersegment financial activity; refer to \"Note 3: Operating Segments\" for a reconciliation between our operating segment and consolidated financial results for the periods presented.*\n\n<u>Operating Segments Revenue Summary</u>\n\n2024 vs. 2023\n\nAll other revenue was $3.8 billion, down $1.8 billion from 2023. Altera revenue was $1.5 billion, down $1.3 billion from 2023 as customers tempered purchases to reduce existing inventories across all product lines. Mobileye revenue was $1.7 billion, down $425 million from 2023 as customers tempered purchases to reduce existing inventories of EyeQ products.\n\n2023 vs. 2022\n\nAll other revenue was $5.6 billion, up $78 million from 2022. Altera revenue was $2.9 billion, up $314 million from 2022, driven by improved external supply, which enabled the fulfillment of customer backlog. Mobileye revenue was $2.1 billion, up $210 million from 2022, due to higher demand for EyeQ products. These 2023 increases were partially offset by a decrease in revenue from our remaining non-reportable segments and start-up businesses.\n\n<u>Operating Segments Cost of Sales and Operating Expenses Summary</u>\n\n2024 vs. 2023\n\nCost of Sales\n\nTotal all other cost of sales was $1.8 billion, down $644 million from 2023 primarily driven by lower 2024 revenue from Altera and Mobileye.\n\nOperating Expenses\n\nAll other operating expenses were $2.1 billion, roughly flat with 2023.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 21 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\n2023 vs. 2022\n\nCost of Sales\n\nAll other cost of sales was $2.5 billion, up $50 million from 2022 primarily driven by higher 2023 revenue from Altera and Mobileye.\n\nOperating Expenses\n\nAll other operating expenses were $2.1 billion, up $123 million from 2022 primarily driven by higher Mobileye research and development expenditures and operating costs from our remaining non-reportable segments and start-up businesses.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 22 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Results of Operations <br>\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| **Years Ended <br>(In Millions, Except Per Share Amounts)** | **December 28, 2024** | **December 28, 2024** | **December 30, 2023** | **December 30, 2023** | **December 31, 2022** | **December 31, 2022** |\n| **Years Ended <br>(In Millions, Except Per Share Amounts)** | **Amount** | **% of Net<br>Revenue** | **Amount** | **% of Net<br>Revenue** | **Amount** | **% of Net<br>Revenue** |\n| **Net revenue** | $**53101** | **100.0%** | $**54228** | **100.0%** | $**63054** | **100.0%** |\n| Cost of sales | 35756 | 67.3% | 32517 | 60.0% | 36188 | 57.4% |\n| **Gross margin** | **17345** | **32.7%** | **21711** | **40.0%** | **26866** | **42.6%** |\n| Research and development | 16546 | 31.2% | 16046 | 29.6% | 17528 | 27.8% |\n| Marketing, general, and administrative | 5507 | 10.4% | 5634 | 10.4% | 7002 | 11.1% |\n| Restructuring and other charges | 6970 | 13.1% | (62) | (0.1)% | 2 | \u2014% |\n| **Operating income (loss)** | **(11678)** | **(22.0)%** | **93** | **0.2%** | **2334** | **3.7%** |\n| Gains (losses) on equity investments, net | 242 | 0.5% | 40 | 0.1% | 4268 | 6.8% |\n| Interest and other, net | 226 | 0.4% | 629 | 1.2% | 1166 | 1.8% |\n| **Income (loss) before taxes** | **(11210)** | **(21.1)%** | **762** | **1.4%** | **7768** | **12.3%** |\n| Provision for (benefit from) taxes | 8023 | 15.1% | (913) | (1.7)% | (249) | (0.4)% |\n| **Net income (loss)** | **(19233)** | **(36.2)%** | **1675** | **3.1%** | **8017** | **12.7%** |\n| Less: net income (loss) attributable to non-controlling interests | (477) | (0.9)% | (14) | \u2014% | 3 | \u2014% |\n| **Net income (loss) attributable to Intel** | $**(18756)** | **(35.3)%** | $**1689** | **3.1%** | $**8014** | **12.7%** |\n| **Earnings (loss) per share attributable to Intel\u2014diluted** | $**(4.38)** |  | $**0.40** |  | $**1.94** |  |\n\n---\n\n\n\nThe following discussion includes the 2024, 2023, and 2022 consolidated financial results and related discussion of our consolidated results of operations for 2024 relative to 2023. A discussion regarding our consolidated results of operations for 2023 relative to 2022 is included in our 2023 Form 10-K. Our consolidated results exclude all intersegment transactions.\n\nConsolidated Revenue\n\nConsolidated Revenue Walk $B<sup>1</sup><br>\n\n![14](intc-20241228_g18.jpg)\n\n2024 vs. 2023\n\n2024 revenue was $53.1 billion, down $1.1 billion, or 2%, from 2023 due to lower all other revenue and lower Intel Foundry revenue, partially offset by higher Intel Products revenue. All other revenue decreased 32% from 2023, driven by lower Altera revenue due to customers tempering purchases to reduce existing inventories across all product lines and lower Mobileye revenue as customers tempered purchases to reduce existing inventories of EyeQ products. Intel Foundry external revenue decreased 60% from 2023 due to lower traditional packaging services and lower equipment sales. Intel Products revenue increased 3% from 2023 due primarily to higher CCG and DCAI revenue. CCG revenue increased 4% from 2023 primarily due to higher notebook volume compared to 2023 and was partially offset by lower other CCG revenue, which decreased from 2023 due to the exit of legacy businesses, and lower desktop revenue, which decreased on lower demand compared to 2023. DCAI revenue increased 1% from 2023 driven by higher server revenue primarily from high core count products, which increased ASPs and lowered volume compared to 2023.\n\n<sup>1</sup> *Excludes intersegment revenue; totals may not sum due to rounding*\n\n---",
+              "token_count": 1984,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000050863-25-000009",
+              "cik": "0000050863",
+              "company": "INTEL CORP",
+              "form_type": "10-K",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 4186,
+              "source_md5": "228c076b20cfc822a46260e874681ea3",
+              "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "f2fda69e-9869-5891-9f60-2bea6d55ec24",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 14,
+              "char_start": 124465,
+              "char_end": 132774,
+              "text": "| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 23 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Gross Margin\n\nWe derived a majority of our consolidated gross margin in 2024, and 2023 from our Intel Products business sales through our CCG, DCAI, and NEX operating segments.\n\n---\n\n\n\n| |\n|:---|\n| Gross Margin $B |\n| (Percentages in chart indicate gross margin as a percentage of total revenue) |\n\n---\n\n\n\n![249](intc-20241228_g19.jpg)\n\n2024 vs. 2023\n\nOur consolidated gross margin in 2024 decreased by $4.4 billion, or 20%, compared to 2023 due primarily to higher 2024 impairment charges and accelerated depreciation. During Q3 2024, we concluded that our manufacturing asset portfolio, primarily for our Intel 7 process node, exceeded manufacturing capacity requirements. Upon completing an asset re-use assessment, we impaired certain construction-in-progress assets and accelerated depreciation for certain in-use manufacturing assets that resulted in $3.3 billion of charges in 2024. Our 2024 gross margin also decreased due to lower revenue, higher unit cost primarily from an increased mix of Intel 4 and Intel 7 products, higher period charges due to $922 million in Gaudi AI accelerator inventory-related charges recognized in 2024, and higher factory start-up costs. These 2024 unfavorable gross margin impacts were partially offset by certain favorable gross margin movements in 2024, including lower period charges driven by the sell-through of previously reserved inventory and lower non-accelerator reserves taken, lower period charges related to excess capacity charges, and a benefit recognized for government incentives received under the CHIPS Act.\n\nWe are making capital investments in furtherance of our strategy. As of December 28, 2024, our capital investments classified as construction in progress totaled $50.4 billion ($43.4 billion as of December 30, 2023). These assets have not yet been placed into service and have not yet begun depreciating. As these construction-in-progress assets are placed into service, we expect to incur depreciation expense that impacts future production costs and, ultimately, cost of sales. To the extent we are unable to grow our revenues to offset these production costs, our gross margin and operating income will be unfavorably affected. Additionally, we could incur asset impairments on property, plant, and equipment assets if our strategy is not successful.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 24 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nOperating Expenses\n\nTotal R&D and MG&A expenses for 2024 were $22.1 billion, up 2% compared to 2023. These expenses represent 41.5% of revenue for 2024 and 40.0% of revenue for 2023. In support of our strategy, we continue to make significant investments to accelerate our process technology roadmap. As a result of our 2024 Restructuring Plan and related cost-reduction measures, we expect a decrease in total R&D and MG&A expenses in future periods as we focus investments in R&D and create capacity for sustained investment in technology and manufacturing.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Research and Development $B | Marketing, General, and Administrative $B |\n| (Percentages indicate expenses as a percentage of total revenue) | (Percentages indicate expenses as a percentage of total revenue) |\n\n---\n\n\n\n![2327](intc-20241228_g20.jpg)![2328](intc-20241228_g21.jpg)\n\n<u>Research and Development</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| R&D increased by $500 million, or 3%, primarily driven by investments in our process technology and products, and higher share-based compensation, partially offset by lower incentive-based compensation and the effects of various cost-reduction measures. |\n\n---\n\n\n\n<u>Marketing, General, and Administrative</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| MG&A decreased by $127 million, or 2%, primarily driven by lower incentive-based compensation, share-based compensation, and the effects of various cost-reduction measures, partially offset by higher corporate spending to drive business transformation.  |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 25 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nRestructuring and Other Charges\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| Employee severance and benefit arrangements | $2481 | $222 | $1038 |\n| Litigation charges and other | 858 | (329) | (1187) |\n| Asset impairment charges | 3631 | 45 | 151 |\n| **Total restructuring and other charges** | $**6970** | $**(62)** | $**2** |\n\n---\n\n\n\nIn Q3 2024, the 2024 Restructuring Plan was announced, subsequently approved and committed to by our management team, and initiated to implement cost-reduction measures, including reductions in employee headcount, other operating expenditures, and capital expenditures (see \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements). We expect that our 2024 Restructuring Plan, in conjunction with other initiatives, will reduce our cost structure while we continue our investments to develop, manufacture, market, sell, and deliver product and process initiatives in furtherance of our strategy. We expect actions pursuant to the 2024 Restructuring Plan to be substantially completed by the fourth quarter of 2025, which is subject to change. Any changes to the estimates or timing will be reflected in our results of operations.\n\n*Employee severance and benefit arrangements* includes net charges relating to the 2024 Restructuring Plan of $2.2 billion in 2024. Charges relating to other actions taken to streamline operations and to reduce costs were $294 million in 2024. The charges in 2023 and 2022 primarily related to the 2022 Restructuring Program, which was approved to rebalance our workforce and operations in alignment with our strategy and was completed in Q1 2024. The 2022 Restructuring Program, in conjunction with other initiatives, reduced our cost structure and allowed us to reinvest certain of these cost savings in resources and capacity to develop, manufacture, market, sell, and deliver our products in furtherance of our strategy.\n\n*Litigation charges and other* includes a charge of $780 million that we recorded in 2024 arising out of the R2 litigation. In 2023, a $1.2 billion benefit was recorded due to the reduction in the previously accrued charge as a result of developments in the VLSI litigation. 2023 charges also included a $401 million charge for an EC-imposed fine and a $353 million termination fee in connection with our inability to timely obtain required regulatory approvals needed to acquire Tower Semiconductor Ltd. Refer to \"Note 19: Commitments and Contingencies\" within Notes to Consolidated Financial Statements for information about litigation related items.\n\n*Asset impairment charges* in 2024 includes non-cash charges associated with the 2024 Restructuring Plan, including $442 million of non-cash impairments of construction-in-progress assets associated with our decision to exit and outsource manufacturing capabilities for certain internal test hardware; and $103 million of non-cash impairments of operating leased assets and related leasehold improvements resulting from real estate consolidations and exits. Real estate consolidations and exits did not significantly change our operating lease liabilities and may result in future cash outlays for facility restoration or the relocation of operations. In addition, we incurred non-cash impairments relating to goodwill and acquired intangible assets of $3.1 billion in 2024. Refer to \"Note 11: Goodwill\" and \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements for further information about these items.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 26 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nGains (Losses) on Equity Investments and Interest and Other, Net\n\n---",
+              "token_count": 1973,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "af56c899-7406-5486-84f1-574a89e78c45",
+              "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 10,
+              "chunk_index": 3,
+              "char_start": 217193,
+              "char_end": 224994,
+              "text": "*[See Note 2 of our Notes to Consolidated Financial Statements for additional details of revenue by geography.](#i74cf9d38730645a2be94739e148c270a_139)*\n\n**Cost of Revenue**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Subscription | $1799 | $1822 | $1646 | (1)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 8% | 9% | 9% |  |\n| Product | 25 | 29 | 35 | (14)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | \\* | \\* | \\* |  |\n| Services and other | 534 | 503 | 484 | 6% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 2% | 3% | 3% |  |\n| Total cost of revenue | $2358 | $2354 | $2165 | \\* |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n*Subscription*\n\nCost of subscription revenue consists of third-party hosting services and data center costs, including expenses related to operating our network infrastructure and AI inferencing costs. Cost of subscription revenue also includes compensation costs associated with network operations, implementation, account management and technical support personnel, royalty fees, software costs and amortization of certain intangible assets.\n\nCost of subscription revenue decreased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Loss contingency | (5)% |\n| Amortization of intangibles | (2) |\n| Hosting services and data center costs | 4 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | (1)% |\n\n---\n\n\n\nCost of subscription revenue during fiscal 2024 included the reversal of a loss contingency incurred in fiscal 2023 associated with an IP litigation matter.\n\n*Product*&nbsp;&nbsp;&nbsp;&nbsp;\n\nCost of product revenue is primarily comprised of third-party royalties, localization costs and costs associated with the manufacturing of our products.\n\n*Services and Other*\n\nCost of services and other revenue is primarily comprised of compensation and contracted costs incurred to provide consulting services, training and product support, and hosting services and data center costs.\n\nCost of services and other revenue increased during fiscal 2024 as compared to fiscal 2023 primarily due to increases in compensation costs and professional fees.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Research and development | $3944 | $3473 | $2987 | 14% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 18% | 18% | 17% |  |\n| Sales and marketing | 5764 | 5351 | 4968 | 8% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 27% | 28% | 28% |  |\n| General and administrative | 1529 | 1413 | 1219 | 8% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 7% | 7% | 7% |  |\n| Acquisition termination fee | 1000 |  |  | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 5% | \\* | \\* |  |\n| Amortization of intangibles | 169 | 168 | 169 | 1% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 1% | 1% | 1% |  |\n| Total operating expenses | $12406 | $10405 | $9343 | 19% |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n<sup>(\\*\\*)</sup>&nbsp;&nbsp;&nbsp;&nbsp;Percentage is not meaningful.\n\n*Research and Development* \n\nResearch and development expenses consist primarily of compensation and contracted costs associated with software development, third-party hosting services and data center costs including AI training costs, related facilities costs and expenses associated with computer equipment and software used in development activities.\n\nResearch and development expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Compensation costs | 7% |\n| Hosting services and data center costs | 5 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 14% |\n\n---\n\n\n\nInvestments in research and development, including the recruiting and hiring of software developers, are critical to remain competitive in the marketplace and are directly related to continued timely development of new and enhanced offerings and solutions. We will continue to focus on long-term opportunities available in our end markets and make significant investments in the development of our subscription and service offerings, apps and tools.\n\n*Sales and Marketing*\n\nSales and marketing expenses consist primarily of compensation costs, amortization of contract acquisition costs, including sales commissions, travel expenses and related facilities costs for our sales, marketing, order management and global supply chain management personnel. Sales and marketing expenses also include the costs of programs aimed at increasing revenue, such as advertising, trade shows and events, public relations and other market development programs.\n\nSales and marketing expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Compensation costs | 4% |\n| Marketing spend related to campaigns, events and overall marketing efforts | 2 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 8% |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n*General and Administrative*\n\nGeneral and administrative expenses consist primarily of compensation and contracted costs, travel expenses and related facilities costs for our finance, facilities, human resources, legal, information services and executive personnel. General and administrative expenses also include outside legal and accounting fees, provision for bad debts, expenses associated with computer equipment and software used in the administration of the business, charitable contributions and various forms of insurance.\n\nGeneral and administrative expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Lease-related asset impairments and other charges | 7% |\n| Compensation costs | 4 |\n| Professional and consulting fees | (5) |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 8% |\n\n---\n\n\n\nGeneral and administrative expenses during fiscal 2024 included costs associated with the optimization of our leased facilities, primarily consisting of impairment charges for certain operating lease right-of-use assets and leasehold improvements.\n\n*Acquisition Termination Fee*\n\nDuring fiscal 2024, we incurred a $1 billion termination fee which resulted from termination of the Figma transaction.\n\n**Non-Operating Income (Expense), Net**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Interest expense | $(169) | $(113) | $(112) | 50% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | (1)% | (1)% | (1)% |  |\n| Investment gains (losses), net | 48 | 16 | (19) | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | \\* | \\* | \\* |  |\n| Other income (expense), net | 311 | 246 | 41 | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 1% | 1% | \\* |  |\n| Total non-operating income (expense), net | $190 | $149 | $(90) | \\*\\* |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n<sup>(\\*\\*)</sup>&nbsp;&nbsp;&nbsp;&nbsp;Percentage is not meaningful.\n\n*Interest Expense*\n\nInterest expense represents interest associated with our debt instruments. Interest on our senior notes is payable semi-annually, in arrears.",
+              "token_count": 1968,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001045810-25-000023",
+              "cik": "0001045810",
+              "company": "NVIDIA CORP",
+              "form_type": "10-K",
+              "filed_date": "20250226",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 59611,
+              "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+              "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2d4cee94-0f7b-599b-aa19-f5ffe2997e11",
+              "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+              "section_index": 10,
+              "chunk_index": 3,
+              "char_start": 228847,
+              "char_end": 237114,
+              "text": "Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location. Revenue from sales to customers outside of the United States accounted for 53% and 56% of total revenue for fiscal years 2025 and 2024, respectively.\n\n**Gross Profit and Gross Margin**\n\nGross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.\n\nGross margins increased to 75.0% in fiscal year 2025 from 72.7% in fiscal year 2024. The year over year increase was primarily driven by a higher mix of Data Center revenue.\n\nProvisions for inventory and excess inventory purchase obligations totaled $3.7 billion and $2.2 billion for fiscal years 2025 and 2024, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $689 million and $540 million for fiscal years 2025 and 2024, respectively. The net effect on our gross margin was an unfavorable impact of 2.3% and 2.7% in fiscal years 2025 and 2024, respectively.\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Research and development expenses | $12914 | $8675 | $4239 | 49% |\n| *% of net revenue* | *9.9 %* | *14.2 %* |  |  |\n| Sales, general and administrative expenses | 3491 | 2654 | 837 | 32% |\n| *% of net revenue* | *2.7 %* | *4.4 %* |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | $16405 | $11329 | $5076 | 45% |\n| &nbsp;&nbsp;&nbsp;&nbsp;*% of net revenue* | *12.6 %* | *18.6 %* |  |  |\n\n---\n\n\n\nThe increases in research and development expenses for fiscal year 2025 were driven by a 32% increase in compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases, a 100% increase in compute and infrastructure, and a 234% increase in engineering development costs for new product introductions.\n\nThe increases in sales, general and administrative expenses for fiscal year 2025 were primarily driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Other Income (Expense), Net**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Interest income | $1786 | $866 | $920 |\n| Interest expense | (247) | (257) | 10 |\n| Other, net | 1034 | 237 | 797 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | $2573 | $846 | $1727 |\n\n---\n\n\n\nThe increase in interest income was primarily due to growth in cash, cash equivalents, and marketable securities.\n\nInterest expense is comprised of coupon interest and debt discount amortization related to our notes.\n\nOther, net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. The change in Other, net, compared to fiscal year 2024, was primarily driven by an increase in fair value of our non-marketable equity securities and publicly-held equity securities. Refer to Note 8 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information regarding our non-marketable equity securities.\n\n**Income Taxes**\n\nIncome tax expense was $11.1 billion and $4.1 billion for fiscal years 2025 and 2024, respectively. Income tax as a percentage of income before income tax was an expense of 13.3% and 12.0% for fiscal years 2025 and 2024, respectively.\n\nThe effective tax rate increased primarily due to higher pre-tax income and a prior year discrete benefit due to an audit resolution.\n\nOur effective tax rates for fiscal years 2025 and 2024 were lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, stock-based compensation, the U.S. federal research tax credit, and income earned in jurisdictions that are subject to taxes at rates lower than the U.S. federal statutory tax rate. Our effective tax rate for fiscal year 2024 was additionally benefited by the audit resolution.\n\nGiven our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could vary based on our assessment of all available information.\n\nRefer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.\n\n**Liquidity and Capital Resources**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Cash and cash equivalents | $8589 | $7280 |\n| Marketable securities | 34621 | 18704 |\n| Cash, cash equivalents, and marketable securities | $43210 | $25984 |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Net cash provided by operating activities | $64089 | $28090 |\n| Net cash used in investing activities | $(20421) | $(10566) |\n| Net cash used in financing activities | $(42359) | $(13633) |\n\n---\n\n\n\nOur investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain maturity limits on our portfolio.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\nCash provided by operating activities increased in fiscal year 2025 compared to fiscal year 2024, due to growth in revenue.\n\nCash used in investing activities increased in fiscal year 2025 compared to fiscal year 2024, primarily driven by net purchases of marketable securities, and purchase of land, property and equipment.\n\nCash used in financing activities increased in fiscal year 2025 compared to fiscal year 2024, mainly due to higher share repurchases and higher tax payments related to RSUs.\n\n**Liquidity**\n\nOur primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of January 26, 2025, we had $43.2 billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.\n\nOur marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly rated financial institutions. These marketable securities are primarily denominated in U.S. dollars. Refer to Note 7 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+              "token_count": 1944,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000796343-25-000004",
+              "cik": "0000796343",
+              "company": "ADOBE INC.",
+              "form_type": "10-K",
+              "filed_date": "20250113",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 48666,
+              "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+              "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "c0047974-6529-5434-b522-d700fa831f71",
+              "section": "Operating Expenses",
+              "section_index": 143,
+              "chunk_index": 0,
+              "char_start": 789540,
+              "char_end": 790332,
+              "text": "# Operating Expenses\n\n(dollars in millions)\n\n|  | 2024 | 2023 | 2022 | % Change 2024-2023 |\n| --- | --- | --- | --- | --- |\n| Research and development | $3,944 | $3,473 | $2,987 | 14% |\n| Percentage of total revenue | 18% | 18% | 17% |  |\n| Sales and marketing | 5,764 | 5,351 | 4,968 | 8% |\n| Percentage of total revenue | 27% | 28% | 28% |  |\n| General and administrative | 1,529 | 1,413 | 1,219 | 8% |\n| Percentage of total revenue | 7% | 7% | 7% |  |\n| Acquisition termination fee | 1,000 | - | - | ** |\n| Percentage of total revenue | 5% | * | * |  |\n| Amortization of intangibles | 169 | 168 | 169 | 1% |\n| Percentage of total revenue | 1% | 1% | 1% |  |\n| Total operating expenses | $12,406 | $10,405 | $9,343 | 19% |\n\n(*) Percentage is less than 1%.\n(**) Percentage is not meaningful.",
+              "token_count": 291,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.03181281599972863
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0001045810-25-000023",
+        "cik": "0001045810",
+        "company": "NVIDIA CORP",
+        "form_type": "10-K",
+        "filed_date": "20250226",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 59611,
+        "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+        "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2d4cee94-0f7b-599b-aa19-f5ffe2997e11",
+        "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "section_index": 10,
+        "chunk_index": 3,
+        "char_start": 228847,
+        "char_end": 237114,
+        "text": "Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location. Revenue from sales to customers outside of the United States accounted for 53% and 56% of total revenue for fiscal years 2025 and 2024, respectively.\n\n**Gross Profit and Gross Margin**\n\nGross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.\n\nGross margins increased to 75.0% in fiscal year 2025 from 72.7% in fiscal year 2024. The year over year increase was primarily driven by a higher mix of Data Center revenue.\n\nProvisions for inventory and excess inventory purchase obligations totaled $3.7 billion and $2.2 billion for fiscal years 2025 and 2024, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $689 million and $540 million for fiscal years 2025 and 2024, respectively. The net effect on our gross margin was an unfavorable impact of 2.3% and 2.7% in fiscal years 2025 and 2024, respectively.\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Research and development expenses | $12914 | $8675 | $4239 | 49% |\n| *% of net revenue* | *9.9 %* | *14.2 %* |  |  |\n| Sales, general and administrative expenses | 3491 | 2654 | 837 | 32% |\n| *% of net revenue* | *2.7 %* | *4.4 %* |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | $16405 | $11329 | $5076 | 45% |\n| &nbsp;&nbsp;&nbsp;&nbsp;*% of net revenue* | *12.6 %* | *18.6 %* |  |  |\n\n---\n\n\n\nThe increases in research and development expenses for fiscal year 2025 were driven by a 32% increase in compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases, a 100% increase in compute and infrastructure, and a 234% increase in engineering development costs for new product introductions.\n\nThe increases in sales, general and administrative expenses for fiscal year 2025 were primarily driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Other Income (Expense), Net**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Interest income | $1786 | $866 | $920 |\n| Interest expense | (247) | (257) | 10 |\n| Other, net | 1034 | 237 | 797 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | $2573 | $846 | $1727 |\n\n---\n\n\n\nThe increase in interest income was primarily due to growth in cash, cash equivalents, and marketable securities.\n\nInterest expense is comprised of coupon interest and debt discount amortization related to our notes.\n\nOther, net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. The change in Other, net, compared to fiscal year 2024, was primarily driven by an increase in fair value of our non-marketable equity securities and publicly-held equity securities. Refer to Note 8 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information regarding our non-marketable equity securities.\n\n**Income Taxes**\n\nIncome tax expense was $11.1 billion and $4.1 billion for fiscal years 2025 and 2024, respectively. Income tax as a percentage of income before income tax was an expense of 13.3% and 12.0% for fiscal years 2025 and 2024, respectively.\n\nThe effective tax rate increased primarily due to higher pre-tax income and a prior year discrete benefit due to an audit resolution.\n\nOur effective tax rates for fiscal years 2025 and 2024 were lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, stock-based compensation, the U.S. federal research tax credit, and income earned in jurisdictions that are subject to taxes at rates lower than the U.S. federal statutory tax rate. Our effective tax rate for fiscal year 2024 was additionally benefited by the audit resolution.\n\nGiven our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could vary based on our assessment of all available information.\n\nRefer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.\n\n**Liquidity and Capital Resources**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Cash and cash equivalents | $8589 | $7280 |\n| Marketable securities | 34621 | 18704 |\n| Cash, cash equivalents, and marketable securities | $43210 | $25984 |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Net cash provided by operating activities | $64089 | $28090 |\n| Net cash used in investing activities | $(20421) | $(10566) |\n| Net cash used in financing activities | $(42359) | $(13633) |\n\n---\n\n\n\nOur investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain maturity limits on our portfolio.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\nCash provided by operating activities increased in fiscal year 2025 compared to fiscal year 2024, due to growth in revenue.\n\nCash used in investing activities increased in fiscal year 2025 compared to fiscal year 2024, primarily driven by net purchases of marketable securities, and purchase of land, property and equipment.\n\nCash used in financing activities increased in fiscal year 2025 compared to fiscal year 2024, mainly due to higher share repurchases and higher tax payments related to RSUs.\n\n**Liquidity**\n\nOur primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of January 26, 2025, we had $43.2 billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.\n\nOur marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly rated financial institutions. These marketable securities are primarily denominated in U.S. dollars. Refer to Note 7 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+        "token_count": 1944,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "f46eed27-3f6e-527f-ade3-1fe70730993d",
+        "section": "Operating expenses",
+        "section_index": 295,
+        "chunk_index": 0,
+        "char_start": 1077472,
+        "char_end": 1079335,
+        "text": "#### Operating expenses\nOur operating expenses include general and administrative expenses, research and development expenses and selling and marketing expenses. The following table sets forth our operating expenses, in absolute amounts and as a percentage of our total revenues for the periods indicated.\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n|  | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** |\n|  | **2024** | **2024** | **2023** | **2023** |\n|  | **US$** | **%** | **US$** | **%** |\n|  **Operating expenses:** |  |  |  |  |\n|  General and administrative expenses | 3863434 | 63.2 | 2926280 | 668.1 |\n|  Research and development expenses | 1698494 | 27.8 | 2297474 | 524.6 |\n|  Selling and marketing expenses | 648301 | 10.6 | 1138183 | 259.9 |\n|  Impairment of long-lived assets | 200841 | 3.3 |  |  |\n|  **Total operating expenses** | **6411070** | **104.9** | **6361937** | **1452.6** |\n\n---\n\n\n\n*General and administrative expense*\n\nOur general and administrative expenses mainly consist of (1) employee compensation, (2) professional service fees, (3) business development expenses, (4) provision for credit losses of financial assets, and (5) other expenses related to general and administrative personnel.\n\n*Research and development expenses*\n\nOur research and development (\"R&D\") expenses mainly consist of (1) employee compensation, (2) materials and supplies expenses related to our R&D functions, and (3) depreciation and rental expenses related to our R&D functions.\n\n*Selling and marketing expenses*\n\nOur selling and marketing expenses mainly consist of (1) employee compensation, (2) marketing and advertising expenses, and (3) depreciation and rental expenses for leased properties related to our marketing functions.",
+        "token_count": 472,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001193125-25-013335",
+        "cik": "0001177648",
+        "company": "ENANTA PHARMACEUTICALS INC",
+        "form_type": "ARS",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 820,
+        "source_md5": "496bc96fc98d636e4c07fd4389766b92",
+        "content_sha256": "a22d3b8ab95be96c936414be5db19c92c2a32cf9c1e280aa701fc694730c3d0e",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "c439c0df-6c0b-57c4-aef5-74650c7bc1bb",
+        "section": "Revenue",
+        "section_index": 112,
+        "chunk_index": 0,
+        "char_start": 324084,
+        "char_end": 326199,
+        "text": "## Revenue\n\nWe recognized revenue of $67.6 million and $79.2 million during the years ended September 30, 2024 and 2023, respectively. The decrease in revenue year-over-year was primarily due to AbbVie\u2019s lower reported HCV sales as compared to the comparable period in 2023.\n\nOur royalty revenues eligible to be earned in the future will depend on AbbVie\u2019s HCV market share, the pricing of the MAVYRET/MAVIRET regimen and the number of patients treated. In addition, at the beginning of each calendar year (the second quarter of our fiscal year), our royalty rate resets to the lowest tier for each of our royalty-bearing products licensed to AbbVie.\n\nBeginning with the quarter ended September 30, 2023, 54.5% of our quarterly royalty payments on net sales of MAVYRET/MAVIRET that are included in our total revenue are paid to OMERS through June 30, 2032, subject to a cap on aggregate payments equal to 1.42 times the purchase price. The $200.0 million received in April 2023 was recognized on our consolidated balance sheets as a liability which will be reduced by the payments made to OMERS over the term of the royalty sale agreement. We will continue to record 100% of HCV royalties earned under the AbbVie Agreement as royalty revenue in our consolidated statements of operations since the AbbVie Agreement has not been amended and is independent of our agreement with OMERS.\n\nResearch and development expenses\n\n|  | Years Ended September 30, |  |\n| --- | --- | --- |\n|  | 2024 | 2023 |\n|  | (in thousands) |  |\n| R&D programs: |  |  |\n| Virology |  |  |\n| RSV | $86,367 | $78,120 |\n| COVID-19 | 4,625 | 66,082 |\n| HBV | 371 | 6,974 |\n| Total Virology | $91,363 | $151,176 |\n| Immunology |  |  |\n| KIT | 19,822 | - |\n| STAT6 | 4,691 | - |\n| Total Immunology | $24,513 | $ - |\n| Other Programs |  |  |\n| NASH | 605 | 4,095 |\n| Early discovery | 14,995 | 8,253 |\n| Total Other Programs | $15,600 | $12,348 |\n| Total research and development expenses | $131,476 | $163,524 |\n\nResearch and development expenses for the year ended September 30, 2024 decreased by $32.0 million compared to the same period in 2023.",
+        "token_count": 575,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001045810-25-000023",
+        "cik": "0001045810",
+        "company": "NVIDIA CORP",
+        "form_type": "10-K",
+        "filed_date": "20250226",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 59611,
+        "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+        "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "93aeffcc-2941-55ff-b45d-98f673c12e6c",
+        "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "section_index": 10,
+        "chunk_index": 2,
+        "char_start": 220817,
+        "char_end": 228845,
+        "text": "We account for customer programs, which involve rebates and marketing development funds, or MDFs, as a reduction in revenue and accrue for such programs based on the amount we expect to be claimed by customers. Certain customer programs include distributor price incentives or other channel programs for specific products and customer classes which require judgement as to whether the applicable incentives will be attained. Estimates for customer program accruals include a combination of historical attainment and claim rates and may be adjusted based on relevant internal and external factors.\n\n**License and Development Arrangements**\n\nRevenue from License and Development Arrangements is recognized over the period in which the development services are performed. Each fiscal reporting period, we measure progress to completion based on actual cost incurred to date as a percentage of the estimated total cost required to complete each project. Estimated total cost for each project includes a forecast of internal engineer personnel time expected to be incurred and other third-party costs as applicable.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Contracts with Multiple Performance Obligations**\n\nOur contracts may contain more than one performance obligation. Judgement is required in determining whether each performance obligation within a customer contract is distinct. Except for License and Development Arrangements, NVIDIA products and services function on a standalone basis and do not require a significant amount of integration or interdependency. Therefore, multiple performance obligations contained within a customer contract are considered distinct and are not combined for revenue recognition purposes.\n\nWe allocate the total transaction price to each distinct performance obligation in an arrangement with multiple performance obligations on a relative standalone selling price basis. In certain cases, we can establish standalone selling price based on directly observable prices of products or services sold separately in comparable circumstances to similar customers. If standalone selling price is not directly observable, such as when we do not sell a product or service separately, we determine standalone selling price based on market data and other observable inputs.\n\n**Results of Operations**\n\nA discussion regarding our financial condition and results of operations for fiscal year 2025 compared to fiscal year 2024 is presented below. A discussion regarding our financial condition and results of operations for fiscal year 2024 compared to fiscal year 2023 can be found under Item 7 in our Annual Report on Form 10-K for the fiscal year ended January 28, 2024, filed with the SEC on February 21, 2024, which is available free of charge on the SEC's website at http://www.sec.gov and at our investor relations website, http://investor.nvidia.com.\n\nThe following table sets forth, for the periods indicated, certain items in our Consolidated Statements of Income expressed as a percentage of revenue.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n| Revenue | 100.0% | 100.0% |\n| &nbsp;&nbsp;&nbsp;&nbsp;Cost of revenue | 25.0 | 27.3 |\n| Gross profit | 75.0 | 72.7 |\n| Operating expenses |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Research and development | 9.9 | 14.2 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Sales, general and administrative | 2.7 | 4.4 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | 12.6 | 18.6 |\n| Operating income | 62.4 | 54.1 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Interest income | 1.4 | 1.4 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Interest expense | (0.2) | (0.4) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other, net | 0.8 | 0.4 |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | 2.0 | 1.4 |\n| Income before income tax | 64.4 | 55.5 |\n| Income tax expense | 8.6 | 6.6 |\n| Net income | 55.8% | 48.9% |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Reportable Segments**\n\n**Revenue by Reportable Segments**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Compute & Networking | $116193 | $47405 | $68788 | 145% |\n| Graphics | 14304 | 13517 | 787 | 6% |\n| Total | $130497 | $60922 | $69575 | 114% |\n\n---\n\n\n\n**Operating Income by Reportable Segments**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Compute & Networking | $82875 | $32016 | $50859 | 159% |\n| Graphics | 5085 | 5846 | (761) | (13)% |\n| All Other | (6507) | (4890) | (1617) | 33% |\n| Total | $81453 | $32972 | $48481 | 147% |\n\n---\n\n\n\n*Compute & Networking revenue* \u2013 The year over year increase was due to strong demand for our accelerated computing and AI solutions. Revenue from Data Center computing grew 162% driven primarily by demand for our Hopper computing platform used for large language models, recommendation engines, and generative AI applications. Revenue from Data Center networking grew 51% driven by Ethernet for AI revenue, which includes Spectrum-X end-to-end ethernet platform.\n\n*Graphics revenue* \u2013 The year over year increase was driven by sales of our GeForce RTX 40 Series GPUs.\n\n*Reportable segment operating income* \u2013 The year over year increase in Compute & Networking segment operating income was driven by growth in revenue. The year over year decrease in Graphics segment operating income was driven by an increase of 44% in segment operating expenses, partially offset by growth in revenue.\n\n*All Other operating loss* \u2013 The year over year increase was due to an increase in stock-based compensation expense reflecting employee growth and compensation increases.\n\n**Concentration of Revenue**\n\nWe refer to customers who purchase products directly from NVIDIA as direct customers, such as AIBs, distributors, ODMs, OEMs, and system integrators. We have certain customers that may purchase products directly from NVIDIA and may use either internal resources or third-party system integrators to complete their build. We also have indirect customers, who purchase products through our direct customers; indirect customers include CSPs, consumer internet companies, enterprises, and public sector entities.\n\n*Direct Customers* \u2013 Sales to direct customers which represented 10% or more of total revenue, all of which were primarily attributable to the Compute & Networking segment, are presented in the following table:\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n| Direct Customer A | 12% | \\* |\n| Direct Customer B | 11% | 13% |\n| Direct Customer C | 11% | \\* |\n\n---\n\n\n\n\\* Less than 10% of total revenue.\n\nNo customer represented 10% or more of total revenue for fiscal year 2023.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n*Indirect Customers* \u2013 Indirect customer revenue is an estimation based upon multiple factors including customer purchase order information, product specifications, internal sales data, and other sources. Actual indirect customer revenue may differ from our estimates. For fiscal year 2025, an indirect customer which primarily purchases our products through system integrators and distributors, including through Direct Customer B, is estimated to represent 10% or more of total revenue, attributable to the Compute & Networking segment.\n\nWe have experienced periods where we receive a significant amount of our revenue from a limited number of customers, and this trend may continue.",
+        "token_count": 1946,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "af56c899-7406-5486-84f1-574a89e78c45",
+        "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 10,
+        "chunk_index": 3,
+        "char_start": 217193,
+        "char_end": 224994,
+        "text": "*[See Note 2 of our Notes to Consolidated Financial Statements for additional details of revenue by geography.](#i74cf9d38730645a2be94739e148c270a_139)*\n\n**Cost of Revenue**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Subscription | $1799 | $1822 | $1646 | (1)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 8% | 9% | 9% |  |\n| Product | 25 | 29 | 35 | (14)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | \\* | \\* | \\* |  |\n| Services and other | 534 | 503 | 484 | 6% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 2% | 3% | 3% |  |\n| Total cost of revenue | $2358 | $2354 | $2165 | \\* |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n*Subscription*\n\nCost of subscription revenue consists of third-party hosting services and data center costs, including expenses related to operating our network infrastructure and AI inferencing costs. Cost of subscription revenue also includes compensation costs associated with network operations, implementation, account management and technical support personnel, royalty fees, software costs and amortization of certain intangible assets.\n\nCost of subscription revenue decreased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Loss contingency | (5)% |\n| Amortization of intangibles | (2) |\n| Hosting services and data center costs | 4 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | (1)% |\n\n---\n\n\n\nCost of subscription revenue during fiscal 2024 included the reversal of a loss contingency incurred in fiscal 2023 associated with an IP litigation matter.\n\n*Product*&nbsp;&nbsp;&nbsp;&nbsp;\n\nCost of product revenue is primarily comprised of third-party royalties, localization costs and costs associated with the manufacturing of our products.\n\n*Services and Other*\n\nCost of services and other revenue is primarily comprised of compensation and contracted costs incurred to provide consulting services, training and product support, and hosting services and data center costs.\n\nCost of services and other revenue increased during fiscal 2024 as compared to fiscal 2023 primarily due to increases in compensation costs and professional fees.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Research and development | $3944 | $3473 | $2987 | 14% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 18% | 18% | 17% |  |\n| Sales and marketing | 5764 | 5351 | 4968 | 8% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 27% | 28% | 28% |  |\n| General and administrative | 1529 | 1413 | 1219 | 8% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 7% | 7% | 7% |  |\n| Acquisition termination fee | 1000 |  |  | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 5% | \\* | \\* |  |\n| Amortization of intangibles | 169 | 168 | 169 | 1% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 1% | 1% | 1% |  |\n| Total operating expenses | $12406 | $10405 | $9343 | 19% |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n<sup>(\\*\\*)</sup>&nbsp;&nbsp;&nbsp;&nbsp;Percentage is not meaningful.\n\n*Research and Development* \n\nResearch and development expenses consist primarily of compensation and contracted costs associated with software development, third-party hosting services and data center costs including AI training costs, related facilities costs and expenses associated with computer equipment and software used in development activities.\n\nResearch and development expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Compensation costs | 7% |\n| Hosting services and data center costs | 5 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 14% |\n\n---\n\n\n\nInvestments in research and development, including the recruiting and hiring of software developers, are critical to remain competitive in the marketplace and are directly related to continued timely development of new and enhanced offerings and solutions. We will continue to focus on long-term opportunities available in our end markets and make significant investments in the development of our subscription and service offerings, apps and tools.\n\n*Sales and Marketing*\n\nSales and marketing expenses consist primarily of compensation costs, amortization of contract acquisition costs, including sales commissions, travel expenses and related facilities costs for our sales, marketing, order management and global supply chain management personnel. Sales and marketing expenses also include the costs of programs aimed at increasing revenue, such as advertising, trade shows and events, public relations and other market development programs.\n\nSales and marketing expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Compensation costs | 4% |\n| Marketing spend related to campaigns, events and overall marketing efforts | 2 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 8% |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n*General and Administrative*\n\nGeneral and administrative expenses consist primarily of compensation and contracted costs, travel expenses and related facilities costs for our finance, facilities, human resources, legal, information services and executive personnel. General and administrative expenses also include outside legal and accounting fees, provision for bad debts, expenses associated with computer equipment and software used in the administration of the business, charitable contributions and various forms of insurance.\n\nGeneral and administrative expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Lease-related asset impairments and other charges | 7% |\n| Compensation costs | 4 |\n| Professional and consulting fees | (5) |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 8% |\n\n---\n\n\n\nGeneral and administrative expenses during fiscal 2024 included costs associated with the optimization of our leased facilities, primarily consisting of impairment charges for certain operating lease right-of-use assets and leasehold improvements.\n\n*Acquisition Termination Fee*\n\nDuring fiscal 2024, we incurred a $1 billion termination fee which resulted from termination of the Figma transaction.\n\n**Non-Operating Income (Expense), Net**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Interest expense | $(169) | $(113) | $(112) | 50% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | (1)% | (1)% | (1)% |  |\n| Investment gains (losses), net | 48 | 16 | (19) | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | \\* | \\* | \\* |  |\n| Other income (expense), net | 311 | 246 | 41 | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 1% | 1% | \\* |  |\n| Total non-operating income (expense), net | $190 | $149 | $(90) | \\*\\* |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n<sup>(\\*\\*)</sup>&nbsp;&nbsp;&nbsp;&nbsp;Percentage is not meaningful.\n\n*Interest Expense*\n\nInterest expense represents interest associated with our debt instruments. Interest on our senior notes is payable semi-annually, in arrears.",
+        "token_count": 1968,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000050863-25-000009",
+        "cik": "0000050863",
+        "company": "INTEL CORP",
+        "form_type": "10-K",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 4186,
+        "source_md5": "228c076b20cfc822a46260e874681ea3",
+        "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "e165c6f6-d3cc-50f7-ba46-2514cc990b6e",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 13,
+        "char_start": 118142,
+        "char_end": 124461,
+        "text": "| | | | |\n|:---|:---|:---|:---|\n| **Years Ended ($ In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| **Revenue** | $**3824** | $**5608** | $**5530** |\n| Cost of sales | 1831 | 2475 | 2425 |\n| **Gross margin** | **1993** | **3133** | **3105** |\n| Operating expenses | **2077** | **2054** | **1931** |\n| **Operating income (loss)** | $**(84)** | $**1079** | $**1174** |\n| Gross margin % | 52% | 56% | 56% |\n| Operating margin (loss) % | (2)% | 19% | 21% |\n\n---\n\n\n\n<sup>1</sup> *Operating segment results include intersegment financial activity; refer to \"Note 3: Operating Segments\" for a reconciliation between our operating segment and consolidated financial results for the periods presented.*\n\n<u>Operating Segments Revenue Summary</u>\n\n2024 vs. 2023\n\nAll other revenue was $3.8 billion, down $1.8 billion from 2023. Altera revenue was $1.5 billion, down $1.3 billion from 2023 as customers tempered purchases to reduce existing inventories across all product lines. Mobileye revenue was $1.7 billion, down $425 million from 2023 as customers tempered purchases to reduce existing inventories of EyeQ products.\n\n2023 vs. 2022\n\nAll other revenue was $5.6 billion, up $78 million from 2022. Altera revenue was $2.9 billion, up $314 million from 2022, driven by improved external supply, which enabled the fulfillment of customer backlog. Mobileye revenue was $2.1 billion, up $210 million from 2022, due to higher demand for EyeQ products. These 2023 increases were partially offset by a decrease in revenue from our remaining non-reportable segments and start-up businesses.\n\n<u>Operating Segments Cost of Sales and Operating Expenses Summary</u>\n\n2024 vs. 2023\n\nCost of Sales\n\nTotal all other cost of sales was $1.8 billion, down $644 million from 2023 primarily driven by lower 2024 revenue from Altera and Mobileye.\n\nOperating Expenses\n\nAll other operating expenses were $2.1 billion, roughly flat with 2023.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 21 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\n2023 vs. 2022\n\nCost of Sales\n\nAll other cost of sales was $2.5 billion, up $50 million from 2022 primarily driven by higher 2023 revenue from Altera and Mobileye.\n\nOperating Expenses\n\nAll other operating expenses were $2.1 billion, up $123 million from 2022 primarily driven by higher Mobileye research and development expenditures and operating costs from our remaining non-reportable segments and start-up businesses.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 22 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Results of Operations <br>\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| **Years Ended <br>(In Millions, Except Per Share Amounts)** | **December 28, 2024** | **December 28, 2024** | **December 30, 2023** | **December 30, 2023** | **December 31, 2022** | **December 31, 2022** |\n| **Years Ended <br>(In Millions, Except Per Share Amounts)** | **Amount** | **% of Net<br>Revenue** | **Amount** | **% of Net<br>Revenue** | **Amount** | **% of Net<br>Revenue** |\n| **Net revenue** | $**53101** | **100.0%** | $**54228** | **100.0%** | $**63054** | **100.0%** |\n| Cost of sales | 35756 | 67.3% | 32517 | 60.0% | 36188 | 57.4% |\n| **Gross margin** | **17345** | **32.7%** | **21711** | **40.0%** | **26866** | **42.6%** |\n| Research and development | 16546 | 31.2% | 16046 | 29.6% | 17528 | 27.8% |\n| Marketing, general, and administrative | 5507 | 10.4% | 5634 | 10.4% | 7002 | 11.1% |\n| Restructuring and other charges | 6970 | 13.1% | (62) | (0.1)% | 2 | \u2014% |\n| **Operating income (loss)** | **(11678)** | **(22.0)%** | **93** | **0.2%** | **2334** | **3.7%** |\n| Gains (losses) on equity investments, net | 242 | 0.5% | 40 | 0.1% | 4268 | 6.8% |\n| Interest and other, net | 226 | 0.4% | 629 | 1.2% | 1166 | 1.8% |\n| **Income (loss) before taxes** | **(11210)** | **(21.1)%** | **762** | **1.4%** | **7768** | **12.3%** |\n| Provision for (benefit from) taxes | 8023 | 15.1% | (913) | (1.7)% | (249) | (0.4)% |\n| **Net income (loss)** | **(19233)** | **(36.2)%** | **1675** | **3.1%** | **8017** | **12.7%** |\n| Less: net income (loss) attributable to non-controlling interests | (477) | (0.9)% | (14) | \u2014% | 3 | \u2014% |\n| **Net income (loss) attributable to Intel** | $**(18756)** | **(35.3)%** | $**1689** | **3.1%** | $**8014** | **12.7%** |\n| **Earnings (loss) per share attributable to Intel\u2014diluted** | $**(4.38)** |  | $**0.40** |  | $**1.94** |  |\n\n---\n\n\n\nThe following discussion includes the 2024, 2023, and 2022 consolidated financial results and related discussion of our consolidated results of operations for 2024 relative to 2023. A discussion regarding our consolidated results of operations for 2023 relative to 2022 is included in our 2023 Form 10-K. Our consolidated results exclude all intersegment transactions.\n\nConsolidated Revenue\n\nConsolidated Revenue Walk $B<sup>1</sup><br>\n\n![14](intc-20241228_g18.jpg)\n\n2024 vs. 2023\n\n2024 revenue was $53.1 billion, down $1.1 billion, or 2%, from 2023 due to lower all other revenue and lower Intel Foundry revenue, partially offset by higher Intel Products revenue. All other revenue decreased 32% from 2023, driven by lower Altera revenue due to customers tempering purchases to reduce existing inventories across all product lines and lower Mobileye revenue as customers tempered purchases to reduce existing inventories of EyeQ products. Intel Foundry external revenue decreased 60% from 2023 due to lower traditional packaging services and lower equipment sales. Intel Products revenue increased 3% from 2023 due primarily to higher CCG and DCAI revenue. CCG revenue increased 4% from 2023 primarily due to higher notebook volume compared to 2023 and was partially offset by lower other CCG revenue, which decreased from 2023 due to the exit of legacy businesses, and lower desktop revenue, which decreased on lower demand compared to 2023. DCAI revenue increased 1% from 2023 driven by higher server revenue primarily from high core count products, which increased ASPs and lowered volume compared to 2023.\n\n<sup>1</sup> *Excludes intersegment revenue; totals may not sum due to rounding*\n\n---",
+        "token_count": 1984,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000050863-25-000009",
+        "cik": "0000050863",
+        "company": "INTEL CORP",
+        "form_type": "10-K",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 4186,
+        "source_md5": "228c076b20cfc822a46260e874681ea3",
+        "content_sha256": "fbba31f6fb34da5ac7ad7332d82a64a4d0e0e198b5f89a5a2615a7d082c5efaf",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "f2fda69e-9869-5891-9f60-2bea6d55ec24",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 14,
+        "char_start": 124465,
+        "char_end": 132774,
+        "text": "| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 23 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nConsolidated Gross Margin\n\nWe derived a majority of our consolidated gross margin in 2024, and 2023 from our Intel Products business sales through our CCG, DCAI, and NEX operating segments.\n\n---\n\n\n\n| |\n|:---|\n| Gross Margin $B |\n| (Percentages in chart indicate gross margin as a percentage of total revenue) |\n\n---\n\n\n\n![249](intc-20241228_g19.jpg)\n\n2024 vs. 2023\n\nOur consolidated gross margin in 2024 decreased by $4.4 billion, or 20%, compared to 2023 due primarily to higher 2024 impairment charges and accelerated depreciation. During Q3 2024, we concluded that our manufacturing asset portfolio, primarily for our Intel 7 process node, exceeded manufacturing capacity requirements. Upon completing an asset re-use assessment, we impaired certain construction-in-progress assets and accelerated depreciation for certain in-use manufacturing assets that resulted in $3.3 billion of charges in 2024. Our 2024 gross margin also decreased due to lower revenue, higher unit cost primarily from an increased mix of Intel 4 and Intel 7 products, higher period charges due to $922 million in Gaudi AI accelerator inventory-related charges recognized in 2024, and higher factory start-up costs. These 2024 unfavorable gross margin impacts were partially offset by certain favorable gross margin movements in 2024, including lower period charges driven by the sell-through of previously reserved inventory and lower non-accelerator reserves taken, lower period charges related to excess capacity charges, and a benefit recognized for government incentives received under the CHIPS Act.\n\nWe are making capital investments in furtherance of our strategy. As of December 28, 2024, our capital investments classified as construction in progress totaled $50.4 billion ($43.4 billion as of December 30, 2023). These assets have not yet been placed into service and have not yet begun depreciating. As these construction-in-progress assets are placed into service, we expect to incur depreciation expense that impacts future production costs and, ultimately, cost of sales. To the extent we are unable to grow our revenues to offset these production costs, our gross margin and operating income will be unfavorably affected. Additionally, we could incur asset impairments on property, plant, and equipment assets if our strategy is not successful.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 24 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nOperating Expenses\n\nTotal R&D and MG&A expenses for 2024 were $22.1 billion, up 2% compared to 2023. These expenses represent 41.5% of revenue for 2024 and 40.0% of revenue for 2023. In support of our strategy, we continue to make significant investments to accelerate our process technology roadmap. As a result of our 2024 Restructuring Plan and related cost-reduction measures, we expect a decrease in total R&D and MG&A expenses in future periods as we focus investments in R&D and create capacity for sustained investment in technology and manufacturing.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Research and Development $B | Marketing, General, and Administrative $B |\n| (Percentages indicate expenses as a percentage of total revenue) | (Percentages indicate expenses as a percentage of total revenue) |\n\n---\n\n\n\n![2327](intc-20241228_g20.jpg)![2328](intc-20241228_g21.jpg)\n\n<u>Research and Development</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| R&D increased by $500 million, or 3%, primarily driven by investments in our process technology and products, and higher share-based compensation, partially offset by lower incentive-based compensation and the effects of various cost-reduction measures. |\n\n---\n\n\n\n<u>Marketing, General, and Administrative</u>\n\n---\n\n\n\n| |\n|:---|\n| 2024 vs. 2023 |\n| MG&A decreased by $127 million, or 2%, primarily driven by lower incentive-based compensation, share-based compensation, and the effects of various cost-reduction measures, partially offset by higher corporate spending to drive business transformation.  |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 25 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nRestructuring and Other Charges\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **Years Ended (In Millions)** | **Dec 28, 2024** | **Dec 30, 2023** | **Dec 31, 2022** |\n| Employee severance and benefit arrangements | $2481 | $222 | $1038 |\n| Litigation charges and other | 858 | (329) | (1187) |\n| Asset impairment charges | 3631 | 45 | 151 |\n| **Total restructuring and other charges** | $**6970** | $**(62)** | $**2** |\n\n---\n\n\n\nIn Q3 2024, the 2024 Restructuring Plan was announced, subsequently approved and committed to by our management team, and initiated to implement cost-reduction measures, including reductions in employee headcount, other operating expenditures, and capital expenditures (see \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements). We expect that our 2024 Restructuring Plan, in conjunction with other initiatives, will reduce our cost structure while we continue our investments to develop, manufacture, market, sell, and deliver product and process initiatives in furtherance of our strategy. We expect actions pursuant to the 2024 Restructuring Plan to be substantially completed by the fourth quarter of 2025, which is subject to change. Any changes to the estimates or timing will be reflected in our results of operations.\n\n*Employee severance and benefit arrangements* includes net charges relating to the 2024 Restructuring Plan of $2.2 billion in 2024. Charges relating to other actions taken to streamline operations and to reduce costs were $294 million in 2024. The charges in 2023 and 2022 primarily related to the 2022 Restructuring Program, which was approved to rebalance our workforce and operations in alignment with our strategy and was completed in Q1 2024. The 2022 Restructuring Program, in conjunction with other initiatives, reduced our cost structure and allowed us to reinvest certain of these cost savings in resources and capacity to develop, manufacture, market, sell, and deliver our products in furtherance of our strategy.\n\n*Litigation charges and other* includes a charge of $780 million that we recorded in 2024 arising out of the R2 litigation. In 2023, a $1.2 billion benefit was recorded due to the reduction in the previously accrued charge as a result of developments in the VLSI litigation. 2023 charges also included a $401 million charge for an EC-imposed fine and a $353 million termination fee in connection with our inability to timely obtain required regulatory approvals needed to acquire Tower Semiconductor Ltd. Refer to \"Note 19: Commitments and Contingencies\" within Notes to Consolidated Financial Statements for information about litigation related items.\n\n*Asset impairment charges* in 2024 includes non-cash charges associated with the 2024 Restructuring Plan, including $442 million of non-cash impairments of construction-in-progress assets associated with our decision to exit and outsource manufacturing capabilities for certain internal test hardware; and $103 million of non-cash impairments of operating leased assets and related leasehold improvements resulting from real estate consolidations and exits. Real estate consolidations and exits did not significantly change our operating lease liabilities and may result in future cash outlays for facility restoration or the relocation of operations. In addition, we incurred non-cash impairments relating to goodwill and acquired intangible assets of $3.1 billion in 2024. Refer to \"Note 11: Goodwill\" and \"Note 7: Restructuring and Other Charges\" within Notes to Consolidated Financial Statements for further information about these items.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| ![intel-logo-footer.jpg](intc-20241228_g2.jpg) | MD&A | 26 |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#i52fa34b6ba9248c7a0a794e31846504f_16)</u>**\n\nGains (Losses) on Equity Investments and Interest and Other, Net\n\n---",
+        "token_count": 1973,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "af56c899-7406-5486-84f1-574a89e78c45",
+        "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 10,
+        "chunk_index": 3,
+        "char_start": 217193,
+        "char_end": 224994,
+        "text": "*[See Note 2 of our Notes to Consolidated Financial Statements for additional details of revenue by geography.](#i74cf9d38730645a2be94739e148c270a_139)*\n\n**Cost of Revenue**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Subscription | $1799 | $1822 | $1646 | (1)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 8% | 9% | 9% |  |\n| Product | 25 | 29 | 35 | (14)% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | \\* | \\* | \\* |  |\n| Services and other | 534 | 503 | 484 | 6% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 2% | 3% | 3% |  |\n| Total cost of revenue | $2358 | $2354 | $2165 | \\* |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n*Subscription*\n\nCost of subscription revenue consists of third-party hosting services and data center costs, including expenses related to operating our network infrastructure and AI inferencing costs. Cost of subscription revenue also includes compensation costs associated with network operations, implementation, account management and technical support personnel, royalty fees, software costs and amortization of certain intangible assets.\n\nCost of subscription revenue decreased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Loss contingency | (5)% |\n| Amortization of intangibles | (2) |\n| Hosting services and data center costs | 4 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | (1)% |\n\n---\n\n\n\nCost of subscription revenue during fiscal 2024 included the reversal of a loss contingency incurred in fiscal 2023 associated with an IP litigation matter.\n\n*Product*&nbsp;&nbsp;&nbsp;&nbsp;\n\nCost of product revenue is primarily comprised of third-party royalties, localization costs and costs associated with the manufacturing of our products.\n\n*Services and Other*\n\nCost of services and other revenue is primarily comprised of compensation and contracted costs incurred to provide consulting services, training and product support, and hosting services and data center costs.\n\nCost of services and other revenue increased during fiscal 2024 as compared to fiscal 2023 primarily due to increases in compensation costs and professional fees.\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Research and development | $3944 | $3473 | $2987 | 14% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 18% | 18% | 17% |  |\n| Sales and marketing | 5764 | 5351 | 4968 | 8% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 27% | 28% | 28% |  |\n| General and administrative | 1529 | 1413 | 1219 | 8% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 7% | 7% | 7% |  |\n| Acquisition termination fee | 1000 |  |  | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 5% | \\* | \\* |  |\n| Amortization of intangibles | 169 | 168 | 169 | 1% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 1% | 1% | 1% |  |\n| Total operating expenses | $12406 | $10405 | $9343 | 19% |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n<sup>(\\*\\*)</sup>&nbsp;&nbsp;&nbsp;&nbsp;Percentage is not meaningful.\n\n*Research and Development* \n\nResearch and development expenses consist primarily of compensation and contracted costs associated with software development, third-party hosting services and data center costs including AI training costs, related facilities costs and expenses associated with computer equipment and software used in development activities.\n\nResearch and development expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Compensation costs | 7% |\n| Hosting services and data center costs | 5 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 14% |\n\n---\n\n\n\nInvestments in research and development, including the recruiting and hiring of software developers, are critical to remain competitive in the marketplace and are directly related to continued timely development of new and enhanced offerings and solutions. We will continue to focus on long-term opportunities available in our end markets and make significant investments in the development of our subscription and service offerings, apps and tools.\n\n*Sales and Marketing*\n\nSales and marketing expenses consist primarily of compensation costs, amortization of contract acquisition costs, including sales commissions, travel expenses and related facilities costs for our sales, marketing, order management and global supply chain management personnel. Sales and marketing expenses also include the costs of programs aimed at increasing revenue, such as advertising, trade shows and events, public relations and other market development programs.\n\nSales and marketing expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Compensation costs | 4% |\n| Marketing spend related to campaigns, events and overall marketing efforts | 2 |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 8% |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i74cf9d38730645a2be94739e148c270a_7)</u>\n\n*General and Administrative*\n\nGeneral and administrative expenses consist primarily of compensation and contracted costs, travel expenses and related facilities costs for our finance, facilities, human resources, legal, information services and executive personnel. General and administrative expenses also include outside legal and accounting fees, provision for bad debts, expenses associated with computer equipment and software used in the administration of the business, charitable contributions and various forms of insurance.\n\nGeneral and administrative expenses increased due to the following:\n\n---\n\n\n\n| | |\n|:---|:---|\n| | **Components of% Change<br>2024-2023** |\n| Lease-related asset impairments and other charges | 7% |\n| Compensation costs | 4 |\n| Professional and consulting fees | (5) |\n| Various individually insignificant items | 2 |\n| &nbsp;&nbsp;&nbsp;Total change | 8% |\n\n---\n\n\n\nGeneral and administrative expenses during fiscal 2024 included costs associated with the optimization of our leased facilities, primarily consisting of impairment charges for certain operating lease right-of-use assets and leasehold improvements.\n\n*Acquisition Termination Fee*\n\nDuring fiscal 2024, we incurred a $1 billion termination fee which resulted from termination of the Figma transaction.\n\n**Non-Operating Income (Expense), Net**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| *(dollars in millions)* | **2024** | **2023** | **2022** | **% Change<br>2024-2023** |\n| Interest expense | $(169) | $(113) | $(112) | 50% |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | (1)% | (1)% | (1)% |  |\n| Investment gains (losses), net | 48 | 16 | (19) | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | \\* | \\* | \\* |  |\n| Other income (expense), net | 311 | 246 | 41 | \\*\\* |\n| &nbsp;&nbsp;&nbsp;Percentage of total revenue | 1% | 1% | \\* |  |\n| Total non-operating income (expense), net | $190 | $149 | $(90) | \\*\\* |\n\n---\n\n\n\n<sup>_________________________________________</sup>\n\n<sup>(\\*)&nbsp;&nbsp;&nbsp;&nbsp;</sup>Percentage is less than 1%.\n\n<sup>(\\*\\*)</sup>&nbsp;&nbsp;&nbsp;&nbsp;Percentage is not meaningful.\n\n*Interest Expense*\n\nInterest expense represents interest associated with our debt instruments. Interest on our senior notes is payable semi-annually, in arrears.",
+        "token_count": 1968,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001045810-25-000023",
+        "cik": "0001045810",
+        "company": "NVIDIA CORP",
+        "form_type": "10-K",
+        "filed_date": "20250226",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 59611,
+        "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+        "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2d4cee94-0f7b-599b-aa19-f5ffe2997e11",
+        "section": "Item 7. Management's Discussion and Analysis of Financial Condition and Results of Operations",
+        "section_index": 10,
+        "chunk_index": 3,
+        "char_start": 228847,
+        "char_end": 237114,
+        "text": "Revenue by geographic region is designated based on the billing location even if the revenue may be attributable to indirect customers in a different location. Revenue from sales to customers outside of the United States accounted for 53% and 56% of total revenue for fiscal years 2025 and 2024, respectively.\n\n**Gross Profit and Gross Margin**\n\nGross profit consists of total net revenue less cost of revenue. Cost of revenue consists primarily of the cost of semiconductors, including wafer fabrication, assembly, testing and packaging, board and device costs, manufacturing support costs, including labor and overhead associated with such purchases, final test yield fallout, inventory and warranty provisions, memory and component costs, tariffs, and shipping costs. Cost of revenue also includes acquisition-related intangible amortization expense, costs for license and development and service arrangements, IP-related costs, and stock-based compensation related to personnel associated with manufacturing operations.\n\nGross margins increased to 75.0% in fiscal year 2025 from 72.7% in fiscal year 2024. The year over year increase was primarily driven by a higher mix of Data Center revenue.\n\nProvisions for inventory and excess inventory purchase obligations totaled $3.7 billion and $2.2 billion for fiscal years 2025 and 2024, respectively. Sales of previously reserved inventory and settlements of excess inventory purchase obligations resulted in a provision release of $689 million and $540 million for fiscal years 2025 and 2024, respectively. The net effect on our gross margin was an unfavorable impact of 2.3% and 2.7% in fiscal years 2025 and 2024, respectively.\n\n**Operating Expenses**\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** | **%<br>Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Research and development expenses | $12914 | $8675 | $4239 | 49% |\n| *% of net revenue* | *9.9 %* | *14.2 %* |  |  |\n| Sales, general and administrative expenses | 3491 | 2654 | 837 | 32% |\n| *% of net revenue* | *2.7 %* | *4.4 %* |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Total operating expenses | $16405 | $11329 | $5076 | 45% |\n| &nbsp;&nbsp;&nbsp;&nbsp;*% of net revenue* | *12.6 %* | *18.6 %* |  |  |\n\n---\n\n\n\nThe increases in research and development expenses for fiscal year 2025 were driven by a 32% increase in compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases, a 100% increase in compute and infrastructure, and a 234% increase in engineering development costs for new product introductions.\n\nThe increases in sales, general and administrative expenses for fiscal year 2025 were primarily driven by compensation and benefits, including stock-based compensation, reflecting employee growth and compensation increases.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\n**Other Income (Expense), Net**\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Year Ended** | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** | **$ Change** |\n|  | *($ in millions)* | *($ in millions)* | *($ in millions)* |\n| Interest income | $1786 | $866 | $920 |\n| Interest expense | (247) | (257) | 10 |\n| Other, net | 1034 | 237 | 797 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other income (expense), net | $2573 | $846 | $1727 |\n\n---\n\n\n\nThe increase in interest income was primarily due to growth in cash, cash equivalents, and marketable securities.\n\nInterest expense is comprised of coupon interest and debt discount amortization related to our notes.\n\nOther, net consists of realized or unrealized gains and losses from investments in non-marketable equity securities, publicly-held equity securities, and the impact of changes in foreign currency rates. The change in Other, net, compared to fiscal year 2024, was primarily driven by an increase in fair value of our non-marketable equity securities and publicly-held equity securities. Refer to Note 8 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information regarding our non-marketable equity securities.\n\n**Income Taxes**\n\nIncome tax expense was $11.1 billion and $4.1 billion for fiscal years 2025 and 2024, respectively. Income tax as a percentage of income before income tax was an expense of 13.3% and 12.0% for fiscal years 2025 and 2024, respectively.\n\nThe effective tax rate increased primarily due to higher pre-tax income and a prior year discrete benefit due to an audit resolution.\n\nOur effective tax rates for fiscal years 2025 and 2024 were lower than the U.S. federal statutory rate of 21% due primarily to tax benefits from the FDII deduction, stock-based compensation, the U.S. federal research tax credit, and income earned in jurisdictions that are subject to taxes at rates lower than the U.S. federal statutory tax rate. Our effective tax rate for fiscal year 2024 was additionally benefited by the audit resolution.\n\nGiven our current and possible future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded. The timing and amount of the valuation allowance release could vary based on our assessment of all available information.\n\nRefer to Note 13 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.\n\n**Liquidity and Capital Resources**\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Cash and cash equivalents | $8589 | $7280 |\n| Marketable securities | 34621 | 18704 |\n| Cash, cash equivalents, and marketable securities | $43210 | $25984 |\n\n---\n\n\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| | **Year Ended** | **Year Ended** |\n| | **Jan 26, 2025** | **Jan 28, 2024** |\n|  | *(In millions)* | *(In millions)* |\n| Net cash provided by operating activities | $64089 | $28090 |\n| Net cash used in investing activities | $(20421) | $(10566) |\n| Net cash used in financing activities | $(42359) | $(13633) |\n\n---\n\n\n\nOur investment policy requires the purchase of highly-rated fixed income securities, the diversification of investment types and credit exposures, and certain maturity limits on our portfolio.\n\n------\n\n<u>[**Table of Contents**](#if3830601512b46079053ec0daaf407ac_7)</u>\n\nCash provided by operating activities increased in fiscal year 2025 compared to fiscal year 2024, due to growth in revenue.\n\nCash used in investing activities increased in fiscal year 2025 compared to fiscal year 2024, primarily driven by net purchases of marketable securities, and purchase of land, property and equipment.\n\nCash used in financing activities increased in fiscal year 2025 compared to fiscal year 2024, mainly due to higher share repurchases and higher tax payments related to RSUs.\n\n**Liquidity**\n\nOur primary sources of liquidity include cash, cash equivalents, marketable securities, and cash generated by our operations. As of January 26, 2025, we had $43.2 billion in cash, cash equivalents, and marketable securities. We believe that we have sufficient liquidity to meet our operating requirements for at least the next twelve months and thereafter for the foreseeable future, including our future supply obligations and share purchases. We continuously evaluate our liquidity and capital resources, including our access to external capital, to ensure we can finance future capital requirements.\n\nOur marketable securities consist of publicly-held equity securities, debt securities issued by the U.S. government and its agencies, highly rated corporations and financial institutions, and foreign government entities, as well as certificates of deposit issued by highly rated financial institutions. These marketable securities are primarily denominated in U.S. dollars. Refer to Note 7 of the Notes to the Consolidated Financial Statements in Part IV, Item 15 of this Annual Report on Form 10-K for additional information.",
+        "token_count": 1944,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000796343-25-000004",
+        "cik": "0000796343",
+        "company": "ADOBE INC.",
+        "form_type": "10-K",
+        "filed_date": "20250113",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 48666,
+        "source_md5": "2f1ffd8bc60a7db5dd04afc910bc9696",
+        "content_sha256": "0482e25c88b8eee69973e64426e452137ec05a83ca9cdb149cd1efa15d8d0d5f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "c0047974-6529-5434-b522-d700fa831f71",
+        "section": "Operating Expenses",
+        "section_index": 143,
+        "chunk_index": 0,
+        "char_start": 789540,
+        "char_end": 790332,
+        "text": "# Operating Expenses\n\n(dollars in millions)\n\n|  | 2024 | 2023 | 2022 | % Change 2024-2023 |\n| --- | --- | --- | --- | --- |\n| Research and development | $3,944 | $3,473 | $2,987 | 14% |\n| Percentage of total revenue | 18% | 18% | 17% |  |\n| Sales and marketing | 5,764 | 5,351 | 4,968 | 8% |\n| Percentage of total revenue | 27% | 28% | 28% |  |\n| General and administrative | 1,529 | 1,413 | 1,219 | 8% |\n| Percentage of total revenue | 7% | 7% | 7% |  |\n| Acquisition termination fee | 1,000 | - | - | ** |\n| Percentage of total revenue | 5% | * | * |  |\n| Amortization of intangibles | 169 | 168 | 169 | 1% |\n| Percentage of total revenue | 1% | 1% | 1% |  |\n| Total operating expenses | $12,406 | $10,405 | $9,343 | 19% |\n\n(*) Percentage is less than 1%.\n(**) Percentage is not meaningful.",
+        "token_count": 291,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 82, \"citation_support\": 90, \"rationale\": \"The candidate reaches the same directional conclusion as the reference: Intel had the higher R&D intensity, and NVIDIA was about 9.9%. Its inputs are exact from the filings: Intel R&D of $16,546M on $53,101M net revenue gives 31.16%, which rounds to 31.2%, and NVIDIA's $12,914M on $130,497M gives 9.90%. The candidate's 21.3 pp gap is arithmetically consistent with its rounded figures. The reference instead uses the rounded $16.5B, which gives 31.07% and a 21.17 pp gap. The roughly 0.1 pp difference comes from rounding choices, not an error, so the candidate is mostly correct with a minor discrepancy from the reference. Its cited accessions and chunk IDs appear in the retrieved excerpts, and the Intel chunk contains the 16546 and 31.2% figures and the NVIDIA chunk contains the 12914 and 9.9% figures, so the citations are supported.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 82, \"citation_support\": 90, \"rationale\": \"The candidate reaches the same directional conclusion as the reference: Intel had the higher R&D intensity, and NVIDIA was about 9.9%. Its inputs are exact from the filings: Intel R&D of $16,546M on $53,101M net revenue gives 31.16%, which rounds to 31.2%, and NVIDIA's $12,914M on $130,497M gives 9.90%. The candidate's 21.3 pp gap is arithmetically consistent with its rounded figures. The reference instead uses the rounded $16.5B, which gives 31.07% and a 21.17 pp gap. The roughly 0.1 pp difference comes from rounding choices, not an error, so the candidate is mostly correct with a minor discrepancy from the reference. Its cited accessions and chunk IDs appear in the retrieved excerpts, and the Intel chunk contains the 16546 and 31.2% figures and the NVIDIA chunk contains the 12914 and 9.9% figures, so the citations are supported.\"}",
+      "refusal": null,
+      "reasoning": "Checking Intel's margin calc against the reference: 16546/53101 gives 31.16%, rounding to 31.2%, while NVIDIA's 12914/130497 comes to 9.90%. The reference pegs the gap at 21.17pp using 31.07%, but my more precise figures put it closer to 21.26pp \u2014 a small discrepancy worth noting.\n\nBoth citations check out against the filing excerpts \u2014 the Intel chunk has the 16,546 figure and 31.2% margin, and the NVIDIA chunk has the R&D table supporting 9.9%. The gold evidence quote referencing $16.5B may come from a different chunk than what was retrieved, which could explain the minor rounding gap.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking Intel's margin calc against the reference: 16546/53101 gives 31.16%, rounding to 31.2%, while NVIDIA's 12914/130497 comes to 9.90%. The reference pegs the gap at 21.17pp using 31.07%, but my more precise figures put it closer to 21.26pp \u2014 a small discrepancy worth noting.\n\nBoth citations check out against the filing excerpts \u2014 the Intel chunk has the 16,546 figure and 31.2% margin, and the NVIDIA chunk has the R&D table supporting 9.9%. The gold evidence quote referencing $16.5B may come from a different chunk than what was retrieved, which could explain the minor rounding gap.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSnhAKEAgSGAI4AUIIdGhpbmtpbmcSDLj9BHKyjh5e8C2QkhoM7bvH7HYQDlW9SI4GIjB5N5vggMYEKfdnQwwFtGyd/eRTMgC0ZlNEVkBZ4VA6X46+gSavj6kTUmM73OZDPPUquw+TUT7H8Fu8uuB6Ya/XUDQDeBweiqxIbNq+h61DzbfXUF6uutBrxyuRFeIHUnWlScCCKfq1DNcwP4PRk4EhatufSTkAhk8Iw82LkUEw376eqV/o6+P5M/5LeR+bNn2W0A9A+6hXKsh1whDMCkrgfYN21lDj5xYPGRGOlfiH95YsaAUxnwd5j09zkOg/OHzxPGGOD5VArcpHz7TFsFQgZXhalT+t9nu+ap/3NwswlPbqoENzTjww18roEHFDP+dOn4I82KqttiZvszAkB2/iRI0Sr6S5syov7hgyT7qLGi/fUAz3vtgakJS6kLnIYhQIzlsgFk7TpsnsP0I0utVzACN6JdOPuOdCgy69Y1wUAS4wpKjrhwcZKgA07g6aabLEyF5lfq1STEsDD5jvd7T9qVSdHk+5jXs0KIjAjP1pzuQJLjt9ZMgrVzLI63+yVTWaWxUkBLorPkf/GfKy9uYFxGf12diuGOHMTq5Vys3exS9TiB6HA7Ud3jsHpdImDQ+tyuH6VkRURB5bBM6bvJXlgLUdm0CDSJ7ooV/UTj/I9tGG34r2GPa8H1iIX5VWAG6e0NI/MtujmwjN1zjIgfEgtz8CgZkUyJkkHcqfXZln6SHjip6ZyIUOLQFzqQSyICk/u5TSrzJ31rXynkqmKYoZ6janImmuoJ2pB75gBBz7ExwkjHPiwvCrg8I4DURZaPDtJE9nXy7RwspfqPjPaUV70jTOAl5BvJ565i0+AF/84eCKbnHUr4IR/DynXWtj2MBaEkvo6lpnSyrKWVViDqBj6pbTwA5ou6eYEVxKo+vC/PVZSS8cBnl6uowdOq0jF/ICVwbzNscXQk1Df0oSNZHSJ6XIsTGF9CeDmLBxgBtwKhBoxa8RJSvEAo+ke4WcVsgzMin5VTc3BUA+lD8hjHX8uUio6VvQdqfcwNmMXAYCnsJaXD0UaJu2kPi+ShnBhFmY/HviKMpNXjBTyaIh5YTb2fwilgb/u/vKczJZkwmvcrKgEbBYrsiF3RFqmFlB/6HnxJJjqEKgm9zoHJrEKWhzBmoIZGHerTJDKIxTjknTB5r4qyfp8zWMmCjeCJqg5bbAN7ZpaXmypjRli436KL8KQlq+RkBZn9Qqb3DEx94ogBqPQfYgXdiZI9dACQtB1uSNiNADC7h4zaYFGpEn3OPEEgChtCkOYo9NF3Un7hA8QRvauTjZyB5eNlFGKYHbG7ErOUZcnYLK4V2mOCzhQFdNu7Xxfkjm1miEJulT3cGek0ErN0BU6CxK+TmoZDOvZQgm2jfAO/yQHYa3dKJpfD4DMJZBwW8/TfeBH0oVfMB/qm2i4SoEP7odFMFdfffA7B9Cy1C4xzkbgx4/tzaFry1imbpODvoAAYSAqy4BSzI2X8KpvU2A590nsrrcl8uOnYHTus5fgz0D0HVJ56J7ah33bPH3o++kZcP/7V39ScTAqbT8iKKndhvgOXMoNxyXEioXSdayo+ieoTnw5jeBQgMqSzde9RYmdXfxu9rLB754CD3FahpzF4yap2NWzcG+Xp4n7doeraJBXi8YTHXf2tIxPUrfzeyvD7B7IJaOghJ24a+SRUQpfS65VrdLcEpl1OhA3Tm4p+GT/0x342cIC+weFuXWxo0LQhCgUcuzxh8OFwFnQ41CPrDhaCbu9kh3GKxNhji1OT+yVABI5eJrM8+y04QmRFTH5YjeK8CfIYMuO1GgJdNG/0VbbTlyLjICqtKq6dR+oaOjXWRUmYh7aaVceF2Tnz4Mf4wxSkd9HHuLGFMYb2MpWfSf6F4WaHORbmFpmhYuuTkbzHoqNG2/Of9Vw7g2dR63Ppwp3HKr5KBDkMpAG3lKOT+Bwj5wKFXifo6DtsbnMs3lygGKL7m8s09SZMqDx52XbQ4tpZxL1Nt7hVgAieIlYkGXPZ8szWgfgVbSeIKIAY00z8JQSRtkLUP/pqK8Ca4M9VWMkChP0/MKeqrXQPOB3BZ9ib5WaWsSG5ydMDHbOaD/YB9bZ3Xs1L+FyEzUyVk/bUKjjofVPyeNnRpN4TipyDA/zcccD4mkpemP9TIMRZOZwuvAfZuDMwio69mwOhdlZZJKvwJCrhSEBDkPCadn51O2DUMX70zmw3lPPE2ZguziOpXpRjJVn5CSMIkNhuStx2rL11195RprUxGLrHJVqFqSHlu10HQ7CcX3rsy7S5fegNQj3ARuayJqVZ5Q58fCUriOSnb4GWg+V0mYRw8Y8JPp3hveYJPcmPQ/DZeAGjlaiRG8/LalJiMTg/+2BchegGKRz49BcJpYGW6geBoJ8+K+VVU7IgAC5NPmIntejEttGWBqAcaIjW5GANXMEoNb6HmOS1kSkNS10hjUo6LApqt7fjzssXnJupkpc2xGF4JB00qE1kkXUwPCNZoQdqbCm1pCggctlaI5eJh0RAEBHUB2h1Gu28GJliYP1H8MvcNFOoSVv9fpzBoy4hy6nACitel8KunZzzpmYxCOx4Lyk+pDSfnMkkksrUtc3YUsRs64Ra8vSDVBlRLmZ72/mLUtgLmkn61nG0Znlx6qnK3R+z27eFIKIFsEMgmwe/Onv1j74MbLBNjoRZMpPv6JpZsZiMoO738pqc040wCwFMDBoZ7Q+dsQBvzWQ3iudY2V/f1M6Kq82PWU0hgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:35:31.665043+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "918f519c74e11e7fb8f0676c:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042524-kcTxrJCOuAGtmyDZ0grL",
+    "usage": {
+      "prompt_tokens": 57729,
+      "completion_tokens": 1034,
+      "total_tokens": 58763,
+      "cost": 0.0062899,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0062899,
+        "upstream_inference_prompt_cost": 0.0057729,
+        "upstream_inference_completions_cost": 0.000517
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 673,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 8.436797473999832,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 82,
+    "citation_support": 90,
+    "rationale": "The candidate reaches the same directional conclusion as the reference: Intel had the higher R&D intensity, and NVIDIA was about 9.9%. Its inputs are exact from the filings: Intel R&D of $16,546M on $53,101M net revenue gives 31.16%, which rounds to 31.2%, and NVIDIA's $12,914M on $130,497M gives 9.90%. The candidate's 21.3 pp gap is arithmetically consistent with its rounded figures. The reference instead uses the rounded $16.5B, which gives 31.07% and a 21.17 pp gap. The roughly 0.1 pp difference comes from rounding choices, not an error, so the candidate is mostly correct with a minor discrepancy from the reference. Its cited accessions and chunk IDs appear in the retrieved excerpts, and the Intel chunk contains the 16546 and 31.2% figures and the NVIDIA chunk contains the 12914 and 9.9% figures, so the citations are supported."
+  },
+  "status": "ok"
+}

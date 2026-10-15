@@ -1,0 +1,117 @@
+{
+  "question_id": "Q057",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/bm25",
+  "retrieval": {
+    "seconds": 0.006688851000035356,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Marathon Petroleum\u2019s working capital at December 31, 2024 was **$3,620 million ($3.620 billion)**.\n\nCalculation: **Total current assets $24,447 million \u2212 Total current liabilities $20,827 million = $3,620 million.**\n\nSource: Marathon Petroleum Corporation 2024 Form 10-K, accession **0001510295-25-000012**, **Item 8. Financial Statements and Supplementary Data**, chunk **10a4bbf3-55fe-5b56-af25-846272b45340**.",
+    "message": {
+      "role": "assistant",
+      "content": "Marathon Petroleum\u2019s working capital at December 31, 2024 was **$3,620 million ($3.620 billion)**.\n\nCalculation: **Total current assets $24,447 million \u2212 Total current liabilities $20,827 million = $3,620 million.**\n\nSource: Marathon Petroleum Corporation 2024 Form 10-K, accession **0001510295-25-000012**, **Item 8. Financial Statements and Supplementary Data**, chunk **10a4bbf3-55fe-5b56-af25-846272b45340**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:48.335367+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "81cee37863130bd879a4dbc7:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041946-jkdhdMRhuV9jGMe9bOLp",
+    "usage": {
+      "prompt_tokens": 16751,
+      "completion_tokens": 122,
+      "total_tokens": 16873,
+      "cost": 0.0021548,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 16748,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0021548,
+        "upstream_inference_prompt_cost": 0.0020938,
+        "upstream_inference_completions_cost": 6.1e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.670959009999933,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's working capital figure of $3,620 million matches the reference and the arithmetic is correct: $24,447M minus $20,827M equals $3,620M. The stated accession 0001510295-25-000012 matches the Marathon Petroleum 10-K. The cited chunk 10a4bbf3-55fe-5b56-af25-846272b45340 appears among the retrieved excerpts and contains the balance sheet with Total current assets 24447 and Total current liabilities 20827, matching the gold quote. The citation support score is slightly below perfect only because the candidate cites a chunk ID and section label rather than quoting the line, which is a minor precision point.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's working capital figure of $3,620 million matches the reference and the arithmetic is correct: $24,447M minus $20,827M equals $3,620M. The stated accession 0001510295-25-000012 matches the Marathon Petroleum 10-K. The cited chunk 10a4bbf3-55fe-5b56-af25-846272b45340 appears among the retrieved excerpts and contains the balance sheet with Total current assets 24447 and Total current liabilities 20827, matching the gold quote. The citation support score is slightly below perfect only because the candidate cites a chunk ID and section label rather than quoting the line, which is a minor precision point.\"}",
+      "refusal": null,
+      "reasoning": "Working capital checks out: 24,447 minus 20,827 equals 3,620 million, matching the reference. The citation points to the correct accession number and chunk containing the balance sheet under Item 8, so correctness and citation support both look solid, close to full marks.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Working capital checks out: 24,447 minus 20,827 equals 3,620 million, matching the reference. The citation points to the correct accession number and chunk containing the balance sheet under Item 8, so correctness and citation support both look solid, close to full marks.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSnQkKEAgSGAI4AUIIdGhpbmtpbmcSDLADqjcHCPXQ40KVVBoMn2VbFsH82sDlPqtuIjDip4BTYuD4oo+Y8N1xNMTKBVef2UOGwXlAU8Zpzty05iE/vYXU6GVVdnZvuaMm2dwqughDzGKj+dQ2J+FJkDCHGxq3bK3cEowmJtKcbbehrukWHYiLKQrrVEYWywNdwzdsdzzPuzL3A0yZ9BWP1YITo1APAl6zH18q+MmTFvPiMve1ifUm3coOIM3DhCNWFfNRUQoMci8wOtI80ddjZtmk0DX6ie6qQ/CJdIrfXmsbPlBwfWj5AVBtrzG4WpMlF9u+4E6qIh94kpd+B/fJwqcXVZ5D6Bz+38fXezdprQXk7OmtBF3lqj0xI4wUiwbXfmr3TMsV582lsRbM/kfvciOR2/esXpOuAi397OHk9l8VxAIby/dmrfIQ0cOziunmcxblw4eYk4UWQf3+K9mnajVfMosNIkmk2zPr+d/0oEMx3sutCMJwiGIhAxodYvxZz1p2IwPAUOOsTP+InB2/OrJKjLz7llUWaCw74btyUPEgm0FU2sJTZ//gmw1YgeyMbKRB1eDCPw2YflpRts5TSZAF1WZ9kp8arjpHhIJxsk196vrjN0eDApW+ZPBP4Ls6wT6aOrnf5CjBrG+0hBFWamN9dJHotHiiqBVrwY3wnwSERz40IhJ/IGfPvghghsdalCBjpGijREI2SFw8aTC9+Kv8yuv5OX/4BXfYSk9o0fVjOPhMnSFImUGfA8xSENLdLIiW6lLpqXVty0xmUKTEs0Q0b6jtECriMvYd3teQJ7nKNEMBpx9DGkFrVtcZtC870ki3BqiDRVfofHaCy0ncvLr2iLIyurpq+deXdsGR0XpvxIL32teoanyU/4dYBMa0AA7X0sgtYADf01Xx7rjpSWgZ1dA+2lSAO75/bs7QfprxXiaYJGlFICPX4zL3hqsqYW0E1wZTpKjtE9zPbGb3y4o/jV6JCE7OOdCyPfK2RGTxc9IiZX/zRwa6Oszx7jZVPsm81fZ4O60r2MXlnvxNNRCPG0Po9XWLezOMGNPkvmt0lcQHOeIGCvWSvgeF9uj1XJD9wHFLeYSMI45NwIzq6ENSmxlMANvpGD/vy9eMb2FV5/WLHwQcU0IU+bEg9krUr0eQ4BRiEaEcQXinbjS8jT3vuJzU0TvosmQW8ALpjK6B6QHE7TlklqLiEohThUsej+Bl9H8rZjytV4RoOKYz1YPQdqoaj46sEwvAzv5Ml6AkcqXD8AzFm5MlcdwTbMSlA58MFYGXcZZntJWcFPDkc4ZAmFJk/K5gNrm0QCocgNf+1pHRQg0i0t3Jt4UP6dcX1v7EQ7F94MsECFVuad3irN+ZojzUYX34ObQhDT4amprUPs87lPYikZVoCv1GB6VsSKsNNiJlVsLLqndioqKAh22ZTVbTGOyF9NI2wOJamFyXRe7SIPlGVzxbcbb1FZ8MmQc7ySNabEDdgKGfgGWI9cSgcGWi8cfkH7lY7SWDbRoCle3g8OWES3hVoBVVtNFvIXaUriSwx+Pu8q8wAafmXxMnJgZ/1gcUxw6y8ZaTuRgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:17.860809+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "81cee37863130bd879a4dbc7:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042152-0LDUEeJpkMiCyrfk62JQ",
+    "usage": {
+      "prompt_tokens": 25933,
+      "completion_tokens": 466,
+      "total_tokens": 26399,
+      "cost": 0.0028263,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0028263,
+        "upstream_inference_prompt_cost": 0.0025933,
+        "upstream_inference_completions_cost": 0.000233
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 222,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.004989461999685,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 96,
+    "rationale": "The candidate's working capital figure of $3,620 million matches the reference and the arithmetic is correct: $24,447M minus $20,827M equals $3,620M. The stated accession 0001510295-25-000012 matches the Marathon Petroleum 10-K. The cited chunk 10a4bbf3-55fe-5b56-af25-846272b45340 appears among the retrieved excerpts and contains the balance sheet with Total current assets 24447 and Total current liabilities 20827, matching the gold quote. The citation support score is slightly below perfect only because the candidate cites a chunk ID and section label rather than quoting the line, which is a minor precision point."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,117 @@
+{
+  "question_id": "Q028",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/bm25",
+  "retrieval": {
+    "seconds": 0.016652654999234073,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "For fiscal year 2024, Citigroup reported:\n\n| Measure | Amount |\n|---|---:|\n| Net interest income | **$54,095 million** |\n| Non-interest revenue | **$27,044 million** |\n| Revenues, net of interest expense | **$81,139 million** |\n\nCheck: $54,095 million + $27,044 million = **$81,139 million**.\n\nSource: Citigroup Inc. 2024 Form 10-K, accession **0000831001-25-000067**, \u201cFiling Summary,\u201d chunk **88**.",
+    "message": {
+      "role": "assistant",
+      "content": "For fiscal year 2024, Citigroup reported:\n\n| Measure | Amount |\n|---|---:|\n| Net interest income | **$54,095 million** |\n| Non-interest revenue | **$27,044 million** |\n| Revenues, net of interest expense | **$81,139 million** |\n\nCheck: $54,095 million + $27,044 million = **$81,139 million**.\n\nSource: Citigroup Inc. 2024 Form 10-K, accession **0000831001-25-000067**, \u201cFiling Summary,\u201d chunk **88**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:14.146624+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d5bef2fd582bae856189c6b1:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041911-0tTgIbHYcwL1ez8xGTuc",
+    "usage": {
+      "prompt_tokens": 14062,
+      "completion_tokens": 127,
+      "total_tokens": 14189,
+      "cost": 0.001821175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 14059,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001821175,
+        "upstream_inference_prompt_cost": 0.001757675,
+        "upstream_inference_completions_cost": 6.35e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.03550205800002,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 90, \"rationale\": \"The candidate's three figures match the reference exactly: Net interest income $54,095M, Non-interest revenue $27,044M, and Revenues net of interest expense $81,139M. The addition check (54,095 + 27,044 = 81,139) is also correct. The cited accession 0000831001-25-000067 and chunk 88 match a retrieved excerpt whose table contains these exact values, so the citation is supported. The candidate labels the section 'Filing Summary' rather than the gold evidence's 'Executive Summary Table', but that label matches the retrieval metadata. Small deduction for the section-label mismatch with the gold evidence.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 90, \"rationale\": \"The candidate's three figures match the reference exactly: Net interest income $54,095M, Non-interest revenue $27,044M, and Revenues net of interest expense $81,139M. The addition check (54,095 + 27,044 = 81,139) is also correct. The cited accession 0000831001-25-000067 and chunk 88 match a retrieved excerpt whose table contains these exact values, so the citation is supported. The candidate labels the section 'Filing Summary' rather than the gold evidence's 'Executive Summary Table', but that label matches the retrieval metadata. Small deduction for the section-label mismatch with the gold evidence.\"}",
+      "refusal": null,
+      "reasoning": "The numbers line up: NII of $54,095M, non-interest revenue of $27,044M, and total revenues of $81,139M all match. The citation points to chunk 88, which does contain the income statement table with these figures, though the gold evidence labeled it as the \"Executive Summary Table\" rather than this income statement section.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The numbers line up: NII of $54,095M, non-interest revenue of $27,044M, and total revenues of $81,139M all match. The citation points to chunk 88, which does contain the income statement table with these figures, though the gold evidence labeled it as the \"Executive Summary Table\" rather than this income statement section.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS7wkKEAgSGAI4AUIIdGhpbmtpbmcSDDNOJa88fTmtTpyPLBoMXX6WzflENYpbrvisIjBlWyJ7k8z2ca6YpehJowD57cB4Z6PXP/NzVobRh0w1XTeguOBo+LScHLdMWD721VQqjAnJJ4sfjfFgdD9bcf9ZuYv49eagsWNubsw4ZNkMpIp4Ldu/mtDNSzNj3NN7Nz89whOMD5lyNeWaEJcsNHQo7WMUqmctNotNm/NKiC3296qyUAQNsPtLAejcExJE6N+zzoLTx7l48gIuasB1daWHNQbfe3fnxSbgf7gOxpm7S6w+orKp7sx7wdBWNWkqymSWfpwOnhCueMsvWwbAi3dy6F3geqd7xdjDEzISFKx4VmetXPsgfcH9OMJ5Q0NUE7cwMMAMU+Cfz2wpVrmF5Ke89fY5RD265AS4sDRhIkCKoxxr2Y6lBwkCiU8TRCtdu6wwyhY2UAwpErVafhJYwjByGpf75/Z/4jMvWt1CXud7z95rujGhwhIHhXsla1nvlBfW5wZxIFVbznFt0M4eXlj2STVBhwf28AKUZXHytZPNhVJmmFjJMf1+mC20AzjQygpO6NHNN/TEQFqu6VQYqe7avxeGquriCyHnRC+psudFAQCfrq7Da6Bo8XGlIMfpZde28N1woSYRiqkxt9F+mjfxl2JC2/NOiNT8BVDkzbZ/VMxQfVafeZYYciB1a+mRPmYKQ0vPH1OmCqU1kiSpps/7IkSmKRyXkkydiN7RkBCEK3p2Usp/7Z1D29AZJCAAOtukuMNvAPM6kzzlku+s7tJ4DQ2uwp3dRtybEX/+Sufg2LwHiEWVih54mEYSZcGcjN/5zcKJL19oF2QY8hRBdJehG/slQnKxmyC6nVUmlEqhBM+s5kl7V0JK9EavglNTlaReZyuEyT8xcD96G63YhAtN7LZJmFdFKHjv44iOu1LrzI0JltX6tYA4e8GLT3ccIIEmDd4VkslZ6S9bnzFC9p1ybYCD9c+6QesdhXTcABjHz9peBcYjnBU5K9ZJp3hYE05NlzwaujYSO2J0u7kwIjdrFpCVxIezC68BSf1vDceCwFYZtyL6hzyRSX8f6RrpmxOBAM+qs9HuTdVlu0Jg7vVUKbjeSY/yCDQykMfodfJSM7jkDF+IxEJ3eVegpi8E4+dcCY4v7JPjb/+093OwP8uzCFBq6WmkktumR3EqcrTzbAWKJGABCLwOrpEv6OUkFAss/k/cw7fbwB6qo95+hkezVd3EAUVfpd8pABYSwQ1x+GUOW6t8WgTBgiwzU5f68FUPAGrghbK3SKARDZUZfvK/jAxaA689EP2QQSGUxXuA3apoMwFTU6h6qr2a1NztoF4qAgnkICzX4hhe+GgQVDxiMPkrTXvfoil8RyJLp0stwDIp3fcT/Fiel5bmxZdkaadAVXW5jbjR4i4Y5NJIOAdf9R64EvTQNJxMSv5x/yZuMvImoadJIMNJsvv0nPI6GyRPT/kT3AakpxhnIpBMTOzHqTB2uWn+viPrO3xhJax9N2Osl3IdqQhefuR3ANjZycZQ+ep6PkIQK5DDDplBjbmjfHh6evYmwi+yHsetgFcfn8dhG2QKyfDobPE31dUsGVdSoQgsnUpxqxsBUfNpXxowdZM3ZUosUI9qYXbihQSJAdmQKjAD+Rg+S7bnP+I+/v72iyfOuPpUWaXkkjZHi9AYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:38.597541+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d5bef2fd582bae856189c6b1:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042113-Ak9w9HxB3BGUiyAJXhfG",
+    "usage": {
+      "prompt_tokens": 21390,
+      "completion_tokens": 474,
+      "total_tokens": 21864,
+      "cost": 0.002376,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002376,
+        "upstream_inference_prompt_cost": 0.002139,
+        "upstream_inference_completions_cost": 0.000237
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 238,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.202251068999431,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 90,
+    "rationale": "The candidate's three figures match the reference exactly: Net interest income $54,095M, Non-interest revenue $27,044M, and Revenues net of interest expense $81,139M. The addition check (54,095 + 27,044 = 81,139) is also correct. The cited accession 0000831001-25-000067 and chunk 88 match a retrieved excerpt whose table contains these exact values, so the citation is supported. The candidate labels the section 'Filing Summary' rather than the gold evidence's 'Executive Summary Table', but that label matches the retrieval metadata. Small deduction for the section-label mismatch with the gold evidence."
+  },
+  "status": "ok"
+}

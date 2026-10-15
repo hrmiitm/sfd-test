@@ -1,0 +1,126 @@
+{
+  "question_id": "Q030",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.03011004300060449,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to the **Income Statement Analysis** table in ConocoPhillips's Form 10-K for the fiscal year ended December 31, 2024, the expenses were:\n\n* **Purchased commodities:** **$20,012 million** (or approximately **$20.012 billion**)\n* **Production and operating expenses:** **$8,751 million** (or approximately **$8.751 billion**)\n\n*(Source: Form 10-K filed February 18, 2025, Item 7 \u2013 Management's Discussion and Analysis of Financial Condition and Results of Operations, chunk ID: `60c96100-be72-5594-b30e-5f7ac572a516`)*",
+    "message": {
+      "role": "assistant",
+      "content": "According to the **Income Statement Analysis** table in ConocoPhillips's Form 10-K for the fiscal year ended December 31, 2024, the expenses were:\n\n* **Purchased commodities:** **$20,012 million** (or approximately **$20.012 billion**)\n* **Production and operating expenses:** **$8,751 million** (or approximately **$8.751 billion**)\n\n*(Source: Form 10-K filed February 18, 2025, Item 7 \u2013 Management's Discussion and Analysis of Financial Condition and Results of Operations, chunk ID: `60c96100-be72-5594-b30e-5f7ac572a516`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a19YKrsSVXEQFl3mfHMHcRfyY30Y3GVnOh8JtzbIGyt42WElB41Sy3+eG7PRav4R3pDTHlKzOEIqCa61md5cpz3FTCg3ywu4XCq44ue5F8/BO2er",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:22.950278+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "40f0ee3f61f45b9b91348bac:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041919-p2dfekqkXZ2jtPwHxsAd",
+    "usage": {
+      "prompt_tokens": 21808,
+      "completion_tokens": 180,
+      "total_tokens": 21988,
+      "cost": 0.017031,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.017031,
+        "upstream_inference_prompt_cost": 0.016356,
+        "upstream_inference_completions_cost": 0.000675
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.791487695999422,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's figures match the reference and gold evidence exactly: Purchased commodities $20,012M and Production and operating expenses $8,751M for 2024, with correct units and the correct fiscal year. The cited chunk ID (60c96100-be72-5594-b30e-5f7ac572a516) appears in the retrieved excerpts and contains the Income Statement Analysis table with these values. The accession, Item 7 section, and February 18, 2025 filing date are all consistent with the retrieved metadata. The minor deduction in citation support is that the answer labels the table 'Income Statement Analysis' within Item 7, which is accurate but slightly less precise than the gold 'Item 8' label.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's figures match the reference and gold evidence exactly: Purchased commodities $20,012M and Production and operating expenses $8,751M for 2024, with correct units and the correct fiscal year. The cited chunk ID (60c96100-be72-5594-b30e-5f7ac572a516) appears in the retrieved excerpts and contains the Income Statement Analysis table with these values. The accession, Item 7 section, and February 18, 2025 filing date are all consistent with the retrieved metadata. The minor deduction in citation support is that the answer labels the table 'Income Statement Analysis' within Item 7, which is accurate but slightly less precise than the gold 'Item 8' label.\"}",
+      "refusal": null,
+      "reasoning": "The figures for purchased commodities and production/operating expenses line up with the reference and gold evidence, and the citation checks out too\u2014chunk ID, accession number, section name (Item 7), and filing date all match correctly.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The figures for purchased commodities and production/operating expenses line up with the reference and gold evidence, and the citation checks out too\u2014chunk ID, accession number, section name (Item 7), and filing date all match correctly.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS/wgKEAgSGAI4AUIIdGhpbmtpbmcSDHPnicY9GFyyBzerURoM9tew2xC+2zmdrD4eIjDoszO6h9XOScE+V+C+0JouN8k9OhV7UzoYpxuzuScPd9lhpZgpDqlVBFPq5WS/9xQqnAgXWSeszVVnsg7ccbKjXIBcew6yEp1ukgboemK1I73HkWZGuIuStwoUOwu0FVg4ei0R3tFq/x2Cg0dGo7fP8JJ4gRpLbfSCSDPqG6WXN+Fy9USpOyLqihEUGQehChsjWRdSDjajggOjlH/2NRI1YIKblcMtLcf7Brl0g2h8Me/TAOP6BGpEOKoqlp9GHaUhM5vnsjO4dNdx4x12Kwb5IvGF2jlGJwBbqVeFyVnxN4oV/ewwiRg6PFhsZfKu0a2WXXL2kLGblcEmqSRs29ikzejr8vbSNMKo194Edos4QeWo+jPdWae2VrwlknUxV5Yqc9ctsgSYL8F1c5G6tE2nsb3vX1bbgBYubbj+TmqSUAbch3kLfmvQiE1GyYAvQ2kiqoWfXpWLc6gF7OhxqBO28Ycxq2VEJCZgWGDJ2oXXreFkFmxGjNhQd/TCPGSDG2bKQtNwMxOMQ5qL57dE+/JN/2e9PeRVhLB+06iQeK4rdqJ3N4WGRuIL68ByU/djg272W9XJSeOGyd7tq5Ey2rMILaCCYhOhNSKeXbW7yawAiRBdgV0RPPCNF7AffDasBmgiMvtuIajoCAqtGHivkhQRnuBAi5BNlCQBSVCe21T6u8JN6KfNEZ+M07nbxBVhgeMl2y5AI2YN8ZCsMRfeSupH57KANgGBRlPJ1vrvrEm3Gk5i3aBrgtXTrhvuCLVVORbDYqXdQLaWsHLot+B05EiI/B/O5n+q4T+3SKBoTznRwz/rgEyjjrOtm082D2lRKX/E51gukrQVQKpsCzkXXAv/pCLxMIO20GXf9xK3zBHsE+WckCXqIrRU9RowjNaHc6T8NPHywlh3oByKwdtIu9vQVtO+5Gc0xypFpQRufayBTHF4KRswALHKSpsrAS2iAxoAMzA/3B7diF/AuW4/z6hK2eOxTs4WCJECrUE94Id7ri8IJjQLTu1bJ7knxBpOMuYla8k3hFAXuD4YcECAv/WI56E3RplTFILmZV3xwXKxuPqfTFAo18BCAJBYdFgnWXZUA4gxpoUyM1+qJzESDC7tH2FV6/lhrOX+DHkV0XWaorUjf3ewOhow81Po175xSnR3LnKqLel5R1xiekXCshLMe0KP0XI60QHBk8ctNiN3Uo8il1AA+VSDEEc8XXfwT5mYCTSCu0oR2b8V+Cm/cnrtYOJLbUvtYJBrXRhfCeTDJRVb7z9YRUUvITEWaLk+6H9pFvJ+FTwdilUCv4yDvBQOQtKpLrfJYl3rgbCA6FZSjCHMGTlTbGZ5cSjSvaxxr0hRIiakXPcQA5q1C0rOoIAKVarep4KVuB2wzYaFWZibjSgNgqnb/pv+BW9vBjONo+2pM+GEpdToM0+90SfdwHoQBt//Cw/2wbKyej/yD9zXPahkl/IDwQOV5ySmyfNhYxgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:45.130989+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "40f0ee3f61f45b9b91348bac:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042121-OMmLq3p83wefjpSJH7xe",
+    "usage": {
+      "prompt_tokens": 29795,
+      "completion_tokens": 470,
+      "total_tokens": 30265,
+      "cost": 0.0032145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032145,
+        "upstream_inference_prompt_cost": 0.0029795,
+        "upstream_inference_completions_cost": 0.000235
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 214,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.159582676999889,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 96,
+    "rationale": "The candidate's figures match the reference and gold evidence exactly: Purchased commodities $20,012M and Production and operating expenses $8,751M for 2024, with correct units and the correct fiscal year. The cited chunk ID (60c96100-be72-5594-b30e-5f7ac572a516) appears in the retrieved excerpts and contains the Income Statement Analysis table with these values. The accession, Item 7 section, and February 18, 2025 filing date are all consistent with the retrieved metadata. The minor deduction in citation support is that the answer labels the table 'Income Statement Analysis' within Item 7, which is accurate but slightly less precise than the gold 'Item 8' label."
+  },
+  "status": "ok"
+}

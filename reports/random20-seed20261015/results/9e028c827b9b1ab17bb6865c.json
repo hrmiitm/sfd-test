@@ -1,0 +1,126 @@
+{
+  "question_id": "Q051",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.030866426999637042,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "From Adobe Inc.'s Consolidated Statements of Income for the fiscal year ended November 29, 2024 (accession: `0000796343-25-000004`, section: `CONSOLIDATED STATEMENTS OF INCOME`, chunk ID: `c8e23789-3e5b-5998-a527-7bb13e5d5a92`):\n\n* **Total revenue:** $21,505 million\n* **Gross profit:** $19,147 million\n\n### **Gross Profit Margin Calculation:**\n$$\\text{Gross Profit Margin} = \\frac{\\text{Gross Profit}}{\\text{Total Revenue}} = \\frac{\\$19,147\\text{ million}}{\\$21,505\\text{ million}} \\approx 0.89035 \\text{ or } 89.04\\%$$\n\n*(Note: In Note 2, Revenue, \"Gross profit as a percentage of revenue\" for Total fiscal 2024 is reported as **89%** [chunk ID: `065ae57a-28b6-5fda-a0e3-57c1a980d702`]).*",
+    "message": {
+      "role": "assistant",
+      "content": "From Adobe Inc.'s Consolidated Statements of Income for the fiscal year ended November 29, 2024 (accession: `0000796343-25-000004`, section: `CONSOLIDATED STATEMENTS OF INCOME`, chunk ID: `c8e23789-3e5b-5998-a527-7bb13e5d5a92`):\n\n* **Total revenue:** $21,505 million\n* **Gross profit:** $19,147 million\n\n### **Gross Profit Margin Calculation:**\n$$\\text{Gross Profit Margin} = \\frac{\\text{Gross Profit}}{\\text{Total Revenue}} = \\frac{\\$19,147\\text{ million}}{\\$21,505\\text{ million}} \\approx 0.89035 \\text{ or } 89.04\\%$$\n\n*(Note: In Note 2, Revenue, \"Gross profit as a percentage of revenue\" for Total fiscal 2024 is reported as **89%** [chunk ID: `065ae57a-28b6-5fda-a0e3-57c1a980d702`]).*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a18sgw7ynBY3mjDZTr7K8s5vW0ROOHahOTSLRboesOZerr5tx1Wbc2CrB7WKoriSlKDG8H8+O+L32AjQFlP8qAxBaagYUTll1lZIRbfHc/aG7kGt",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:28.725341+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "9e028c827b9b1ab17bb6865c:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041924-XCc5TptlAVIRF8ibNY5z",
+    "usage": {
+      "prompt_tokens": 12481,
+      "completion_tokens": 287,
+      "total_tokens": 12768,
+      "cost": 0.010437,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010437,
+        "upstream_inference_prompt_cost": 0.00936075,
+        "upstream_inference_completions_cost": 0.00107625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.9599093900005755,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 98, \"citation_support\": 96, \"rationale\": \"The candidate computes 19,147 / 21,505 = 0.89035, which rounds to 89.04%, matching the reference. The inputs (gross profit $19,147M, total revenue $21,505M) and the November 29, 2024 fiscal year end are correct. The cited Consolidated Statements of Income chunk (c8e23789) contains these exact figures, and the accession number and section are correct. The side note citing the 89% segment-level gross margin is supported by chunk 065ae57a. Minor deduction only for the approximate-sign presentation.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 98, \"citation_support\": 96, \"rationale\": \"The candidate computes 19,147 / 21,505 = 0.89035, which rounds to 89.04%, matching the reference. The inputs (gross profit $19,147M, total revenue $21,505M) and the November 29, 2024 fiscal year end are correct. The cited Consolidated Statements of Income chunk (c8e23789) contains these exact figures, and the accession number and section are correct. The side note citing the 89% segment-level gross margin is supported by chunk 065ae57a. Minor deduction only for the approximate-sign presentation.\"}",
+      "refusal": null,
+      "reasoning": "Let me verify the 89.04% figure: 19147/21505 computes to approximately 0.89035, which rounds correctly to 89.04%. The candidate's citation also matches correctly, pointing to the income statement chunk as the gold evidence.\n\nThe second citation to the segment table chunk for the 89% figure checks out too, with accession number, section label, and fiscal year (ended November 29, 2024) all matching. Correctness score lands around 97, citation around 95.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Let me verify the 89.04% figure: 19147/21505 computes to approximately 0.89035, which rounds correctly to 89.04%. The candidate's citation also matches correctly, pointing to the income statement chunk as the gold evidence.\n\nThe second citation to the segment table chunk for the 89% figure checks out too, with accession number, section label, and fiscal year (ended November 29, 2024) all matching. Correctness score lands around 97, citation around 95.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS3AkKEAgSGAI4AUIIdGhpbmtpbmcSDE8Y7ARnMB/3309rihoMWxTEocJzg8ObLRH7IjBpxwwoS2zkC5EszPJclXrLURUYGBoMNnMyyKFJPcz4p3OcA/5pPWo7GT/PZErbToEq+Qj2dO+OS6weONwMBmsOEM+dQW+zX0AbyxDiC+lhYmFndFE8sr3ekMDuCxAG/4SD+akmRTCxoxxP/FkXeRhsEhSpMQeyP8ORG3v6OgEucQRydap2gU4VjGbDflPxLtMAf/gYsRWV21Gxlm4FDa53udABVKJJPqknrsilmVj8bDYYb8H3G/DF/GqXMNc+AZKH4VypbIFtSuFOYxrnA1JEkGzjJmz2m2qbSGNRaJcaHrShWGW0dscDnZfIPmS21jr9YSDVVG6sei3gdL2WbMaU1mNfVSQA9lW/poWQ1ytgEjYVNY0khA47gdYpbgnvUHVGEeD3GS/4F0iEOMGNYlmLXJNkgXJsV1XgKgXNtkWaY0HuGFf9od0EFZ71P2+WWTEPLB+y9/T60hVrCwWoWPKHPST5LQ7gwBSZZk/5ViUyNSYrmLRu6KY1U8ALyZs3dECGNZui4RXwxo/TboUD46LXbWmPE5TnT9Uzz8FE8UbFjfx4QsFQLs4coWxlepo/VWXpUxHJcqC/zmDy1/1gOK7U3ZGT8ailL2Djn9fQcyudSMcrPOJo5K93f/nW2JFs7JT9MuTWhrihN5QS3Sp1LuGJc/SmKFRWTjVkNFqRnzu9iRcGfUm+E1OZY9jmimF/+w+C5faq6mw8w1HcalHl9raIXpxDUCf2aoJLesy4dtYsw2IV5svTcphuP9aA5Bzm8Fg9Vep2DMRRl14YLzJhGFFGMFhF/XPb8ddCCxTE7eo/gjd9VUbuAXrvdSco6iIlOvb57d8za9wwK7bquwGOd2wHq/Jt0kLrHsdeOVNj1JynYhd/GZPcFD/XojeBMbVJ93C+6yaT42E6d1O8xbOdYkLxwWskYbB4SBUmsn/ZJ/dItG2Z6d7dFMzZTOQaC9b/J0rpEQ04ZEEI99JU3rv9HisoX24epbXv4mzUqgZfn9+0qAxIpcMlpRb6EZuuqTkV5Lz4JpaXTZOy5c64OuUBhbBnfIXyeuzEaZLwOzAeJJr60tKPXToBYaRjJd1SPnccfeb3harZITmRWdjWG5cCfypi0KfBzzeepkeEk8KxHla3NuT2yQywZiFZPBBx5MTrJus0JWt7pSwxpvXNSD1SF0qtt25CUSWOZhCXgfejFXVCOGIFRE5nzOzFuY8qv5XmFYKVAvw4NZk3IKfy594aETx7X++c4Mr8ToJnUN4j+e8CgGuDObaSi57Z85bGSV3YZaerlT5MRkYeUNYv/wXP9bLwSFbCtVOxhO+/FChvUAFGBvNwwUKFAM7ulhtkzQrV4wQU4/Azkd5NPS88nQDZNhCN59u4eh6yiJZ3FueSF5+cLiF3hMzBzhKYlz1qe3llCZrAU52laRHIfBiuvAqANcYaY+nJ6bAxfwujQMvoBPyzB1S/TAV5HfWfnFGqsy06VW/c3xMtT54WTYNuQXNzVK8M8bMO4dcEAiVs1Gtd0npQpbD4cuDyWxK11GDSh+5FO9cNXGCn1/cB/mTaegFPjwq9VFCm6WtpbWDv2H4qr0ggHI1/7xaNvClFwDickBgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:54.613083+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "9e028c827b9b1ab17bb6865c:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042130-3xALxgJ5U4hTYusUP4je",
+    "usage": {
+      "prompt_tokens": 16704,
+      "completion_tokens": 491,
+      "total_tokens": 17195,
+      "cost": 0.0019159,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019159,
+        "upstream_inference_prompt_cost": 0.0016704,
+        "upstream_inference_completions_cost": 0.0002455
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 285,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.640778181999849,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 96,
+    "rationale": "The candidate computes 19,147 / 21,505 = 0.89035, which rounds to 89.04%, matching the reference. The inputs (gross profit $19,147M, total revenue $21,505M) and the November 29, 2024 fiscal year end are correct. The cited Consolidated Statements of Income chunk (c8e23789) contains these exact figures, and the accession number and section are correct. The side note citing the 89% segment-level gross margin is supported by chunk 065ae57a. Minor deduction only for the approximate-sign presentation."
+  },
+  "status": "ok"
+}

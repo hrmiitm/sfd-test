@@ -1,0 +1,108 @@
+{
+  "question_id": "Q079",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.08841653600029531,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "The two tranches were:\n\n- **2029 Notes:** 5.875% interest, due **November 7, 2029**, with **$1.25 billion** principal.\n- **2035 Notes:** 6.500% interest, due **February 7, 2035**, with **$1.25 billion** principal.\n\n**Combined principal:** $1.25 billion + $1.25 billion = **$2.50 billion**.\n\nSource: Form 8-K, accession **0001104659-25-001594**, *Filing Summary*, chunk **774b96ac-63fc-5a4d-b3bd-fa2381fe6581**.",
+    "message": {
+      "role": "assistant",
+      "content": "The two tranches were:\n\n- **2029 Notes:** 5.875% interest, due **November 7, 2029**, with **$1.25 billion** principal.\n- **2035 Notes:** 6.500% interest, due **February 7, 2035**, with **$1.25 billion** principal.\n\n**Combined principal:** $1.25 billion + $1.25 billion = **$2.50 billion**.\n\nSource: Form 8-K, accession **0001104659-25-001594**, *Filing Summary*, chunk **774b96ac-63fc-5a4d-b3bd-fa2381fe6581**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:39.750805+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "72aab3b67bdbffd3fa78a4e2:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041995-sNh0Y4QmvncYEiedq0zY",
+    "usage": {
+      "prompt_tokens": 10217,
+      "completion_tokens": 149,
+      "total_tokens": 10366,
+      "cost": 0.00135155,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10214,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00135155,
+        "upstream_inference_prompt_cost": 0.00127705,
+        "upstream_inference_completions_cost": 7.45e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.323952687000201,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies both tranches: $1.25B of 5.875% notes due November 7, 2029 and $1.25B of 6.500% notes due February 7, 2035, with the correct combined total of $2.50B. These match the reference and the 8-K Item 8.01 text in the retrieved excerpts. The cited accession number matches the retrieved Form 8-K, and the chunk ID corresponds to the Filing Summary chunk that contains the filing metadata, though the specific Item 8.01 language sits in the same filing's main body. Minor deduction because the cited chunk is the Filing Summary rather than the Item 8.01 chunk, and the candidate labels the 2035 tranche 'Notes' rather than the defined term, which is harmless.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies both tranches: $1.25B of 5.875% notes due November 7, 2029 and $1.25B of 6.500% notes due February 7, 2035, with the correct combined total of $2.50B. These match the reference and the 8-K Item 8.01 text in the retrieved excerpts. The cited accession number matches the retrieved Form 8-K, and the chunk ID corresponds to the Filing Summary chunk that contains the filing metadata, though the specific Item 8.01 language sits in the same filing's main body. Minor deduction because the cited chunk is the Filing Summary rather than the Item 8.01 chunk, and the candidate labels the 2035 tranche 'Notes' rather than the defined term, which is harmless.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:07.813890+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "72aab3b67bdbffd3fa78a4e2:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042205-NtAUGGZkrwexLRxLVVKS",
+    "usage": {
+      "prompt_tokens": 17098,
+      "completion_tokens": 277,
+      "total_tokens": 17375,
+      "cost": 0.0018483,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0018483,
+        "upstream_inference_prompt_cost": 0.0017098,
+        "upstream_inference_completions_cost": 0.0001385
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.259426726000129,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 95,
+    "rationale": "The candidate correctly identifies both tranches: $1.25B of 5.875% notes due November 7, 2029 and $1.25B of 6.500% notes due February 7, 2035, with the correct combined total of $2.50B. These match the reference and the 8-K Item 8.01 text in the retrieved excerpts. The cited accession number matches the retrieved Form 8-K, and the chunk ID corresponds to the Filing Summary chunk that contains the filing metadata, though the specific Item 8.01 language sits in the same filing's main body. Minor deduction because the cited chunk is the Filing Summary rather than the Item 8.01 chunk, and the candidate labels the 2035 tranche 'Notes' rather than the defined term, which is harmless."
+  },
+  "status": "ok"
+}

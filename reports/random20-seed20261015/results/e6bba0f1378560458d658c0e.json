@@ -1,0 +1,519 @@
+{
+  "question_id": "Q055",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 7.661022357000547,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "From the Comcast Corporation 2024 Form 10-K (Item 8, **Consolidated Statements of Income**, page 61):\n\n### **1. Financial Data for Fiscal Year 2024**\n* **Operating income:** **$23,297 million**\n* **Revenue:** **$123,731 million**\n\n---\n\n### **2. Calculation of Operating Income Margin**\n$$\\text{Operating Income Margin} = \\frac{\\text{Operating Income}}{\\text{Revenue}} = \\frac{23,297}{123,731} \\approx 0.188287478...$$\n\nExpressed as a percentage:\n* **18.83%** (rounded to two decimal places)\n* **18.829%** (rounded to three decimal places)\n\n---\n\n### **Source Citation**\n* **Filing:** Comcast Corporation Form 10-K for the fiscal year ended December 31, 2024 (Accession: `0001166691-25-000011`, Item 8, Page 61, Consolidated Statements of Income; offsets `284144`\u2013`296144` in `/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet`).",
+    "usage": {
+      "prompt_tokens": 18498,
+      "completion_tokens": 584,
+      "total_tokens": 19082,
+      "cost": 0.016063499999999998
+    },
+    "seconds": 10.208150989999922,
+    "tool_seconds": 7.661022357000547,
+    "tool_calls": 3,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_417338",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"form_type\":\"10-K\",\"company\":\"COMCAST\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1/zrfgy8nzs0nGdPIs77Ip9u9WoNJWBcKvd3iEnsJ6vLEVpkg3RHQhPWy9EK792fFkuKtx9wYryTiAEOBuQztY937XmOq/tGm+Znsdd5djDzN06",
+              "format": "google-gemini-v1",
+              "id": "call_417338",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_417338",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"form_type\":\"10-K\",\"company\":\"COMCAST\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:25:32.946140+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "e6bba0f1378560458d658c0e:agent:0",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792041931-LfJmv1cSkbSxvh49qLS6",
+        "usage": {
+          "prompt_tokens": 905,
+          "completion_tokens": 71,
+          "total_tokens": 976,
+          "cost": 0.000945,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000945,
+            "upstream_inference_prompt_cost": 0.00067875,
+            "upstream_inference_completions_cost": 0.00026625
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.079206116000023,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_445196",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"needle\":\"Consolidated Statements of Income\",\"file_stem\":\"0001166691-25-000011\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a1/R6lpzI3Lj40cNyIFkBurzm6pAHaVXNnqeDKtmtiHoZCO3e0OQW8u9c61JiJQWNw5rHStQdVavHVLL3e6XLZKPeJOH8r2JUnHfw2aWcfHqzV7v",
+              "format": "google-gemini-v1",
+              "id": "call_445196",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_445196",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"needle\":\"Consolidated Statements of Income\",\"file_stem\":\"0001166691-25-000011\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:29:06.390415+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "e6bba0f1378560458d658c0e:agent:1",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042143-oszg5f9ZDnTRy9o2kSFW",
+        "usage": {
+          "prompt_tokens": 1137,
+          "completion_tokens": 91,
+          "total_tokens": 1228,
+          "cost": 0.001194,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.001194,
+            "upstream_inference_prompt_cost": 0.00085275,
+            "upstream_inference_completions_cost": 0.00034125
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.6544988249997914,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_427415",
+              "function": {
+                "name": "read_parquet_filing",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0001166691-25-000011\",\"start\":270000,\"needle\":\"Consolidated Statements of Income\"}"
+              }
+            }
+          ],
+          "reasoning_details": [
+            {
+              "type": "reasoning.encrypted",
+              "data": "AY89a19xZXWpt/IyA3oH/Si6rkGTMmMAXtivKjFk2q+YR7hlWKbz7E3CR7VVHL2sYeL/ihR8AX5wHEKKEXEth2ZRkH4pvg7fEKNKowx5Xfhq5lspINEQ",
+              "format": "google-gemini-v1",
+              "id": "call_427415",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_427415",
+            "function": {
+              "name": "read_parquet_filing",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0001166691-25-000011\",\"start\":270000,\"needle\":\"Consolidated Statements of Income\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:31:10.311346+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "e6bba0f1378560458d658c0e:agent:2",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042268-DLSCFu0Oey8AuS1Ws06r",
+        "usage": {
+          "prompt_tokens": 5696,
+          "completion_tokens": 100,
+          "total_tokens": 5796,
+          "cost": 0.004647,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.004647,
+            "upstream_inference_prompt_cost": 0.004272,
+            "upstream_inference_completions_cost": 0.000375
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.0608231450005405,
+        "attempts": 1
+      },
+      {
+        "text": "From the Comcast Corporation 2024 Form 10-K (Item 8, **Consolidated Statements of Income**, page 61):\n\n### **1. Financial Data for Fiscal Year 2024**\n* **Operating income:** **$23,297 million**\n* **Revenue:** **$123,731 million**\n\n---\n\n### **2. Calculation of Operating Income Margin**\n$$\\text{Operating Income Margin} = \\frac{\\text{Operating Income}}{\\text{Revenue}} = \\frac{23,297}{123,731} \\approx 0.188287478...$$\n\nExpressed as a percentage:\n* **18.83%** (rounded to two decimal places)\n* **18.829%** (rounded to three decimal places)\n\n---\n\n### **Source Citation**\n* **Filing:** Comcast Corporation Form 10-K for the fiscal year ended December 31, 2024 (Accession: `0001166691-25-000011`, Item 8, Page 61, Consolidated Statements of Income; offsets `284144`\u2013`296144` in `/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet`).",
+        "message": {
+          "role": "assistant",
+          "content": "From the Comcast Corporation 2024 Form 10-K (Item 8, **Consolidated Statements of Income**, page 61):\n\n### **1. Financial Data for Fiscal Year 2024**\n* **Operating income:** **$23,297 million**\n* **Revenue:** **$123,731 million**\n\n---\n\n### **2. Calculation of Operating Income Margin**\n$$\\text{Operating Income Margin} = \\frac{\\text{Operating Income}}{\\text{Revenue}} = \\frac{23,297}{123,731} \\approx 0.188287478...$$\n\nExpressed as a percentage:\n* **18.83%** (rounded to two decimal places)\n* **18.829%** (rounded to three decimal places)\n\n---\n\n### **Source Citation**\n* **Filing:** Comcast Corporation Form 10-K for the fiscal year ended December 31, 2024 (Accession: `0001166691-25-000011`, Item 8, Page 61, Consolidated Statements of Income; offsets `284144`\u2013`296144` in `/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet`).",
+          "refusal": null,
+          "reasoning": null,
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "signature": "AY89a1+5xWfIqkuGokJ4+ZozUxp6vydKbEh34+G8B7n9v8/+GtcnJaZGUvHMxkQMZqtpFxYnrzMCzW/9V1Dzr6jtPvLV5twCuK72D6aeqyaDDSTmklDU",
+              "format": "google-gemini-v1",
+              "index": 0
+            }
+          ]
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:35:19.958402+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "temperature": 0,
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "e6bba0f1378560458d658c0e:agent:3",
+        "requested_model": "google/gemini-3.8-flash",
+        "actual_model": "google/gemini-3.8-flash",
+        "response_id": "gen-1792042517-gMdZtxtI5X70M2mvAISs",
+        "usage": {
+          "prompt_tokens": 10760,
+          "completion_tokens": 322,
+          "total_tokens": 11082,
+          "cost": 0.0092775,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0092775,
+            "upstream_inference_prompt_cost": 0.00807,
+            "upstream_inference_completions_cost": 0.0012075
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.413622903999567,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_417338",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"form_type\":\"10-K\",\"company\":\"COMCAST\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+          }
+        },
+        "output": {
+          "rows": [
+            {
+              "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+              "file_stem": "0001166691-25-000011",
+              "company": "COMCAST CORP",
+              "form_type": "10-K",
+              "source_row": 27404
+            }
+          ],
+          "scanned": 27405,
+          "next_row": 27405,
+          "complete": false,
+          "resources": {
+            "peak_rss_mib": 1020.3046875,
+            "cpu_seconds": 6.106183,
+            "wall_seconds": 6.142533221999656,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 6.228262917000393
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_445196",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"needle\":\"Consolidated Statements of Income\",\"file_stem\":\"0001166691-25-000011\"}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0001166691-25-000011:257791:269791",
+          "accession": "0001166691-25-000011",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+          "char_start": 257791,
+          "char_end": 269791,
+          "text": " the counterparty's credit ratings. As of December 31, 2024 and 2023, we were not required to post collateral under the terms of these agreements, nor did we hold any collateral under the terms of these agreements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **55** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nItem 8: Comcast Corporation Financial Statements and Supplementary Data\n\n---\n\n\n\n| | |\n|:---|:---|\n| Index | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Page |\n| <u>[Report of Management](#ia8555b4da9c1428ea91f8f8e7517528b_184)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[57](#ia8555b4da9c1428ea91f8f8e7517528b_184)</u> |\n| <u>[Report of Independent Registered Public Accounting Firm](#ia8555b4da9c1428ea91f8f8e7517528b_187)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[58](#ia8555b4da9c1428ea91f8f8e7517528b_187)</u> |\n| <u>[Consolidated Statements of Income](#ia8555b4da9c1428ea91f8f8e7517528b_190)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[61](#ia8555b4da9c1428ea91f8f8e7517528b_190)</u> |\n| <u>[Consolidated Statements of Comprehensive Income](#ia8555b4da9c1428ea91f8f8e7517528b_193)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[62](#ia8555b4da9c1428ea91f8f8e7517528b_193)</u> |\n| <u>[Consolidated Statements of Cash Flows](#ia8555b4da9c1428ea91f8f8e7517528b_196)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[63](#ia8555b4da9c1428ea91f8f8e7517528b_196)</u> |\n| <u>[Consolidated Balance Sheets](#ia8555b4da9c1428ea91f8f8e7517528b_199)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[64](#ia8555b4da9c1428ea91f8f8e7517528b_199)</u> |\n| <u>[Consolidated Statements of Changes in Equity](#ia8555b4da9c1428ea91f8f8e7517528b_202)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[65](#ia8555b4da9c1428ea91f8f8e7517528b_202)</u> |\n| <u>[Notes to Consolidated Financial Statements](#ia8555b4da9c1428ea91f8f8e7517528b_205)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[66](#ia8555b4da9c1428ea91f8f8e7517528b_205)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 1: Summary of Significant Accounting Policies](#ia8555b4da9c1428ea91f8f8e7517528b_208)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[66](#ia8555b4da9c1428ea91f8f8e7517528b_208)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 2: Segment Information](#ia8555b4da9c1428ea91f8f8e7517528b_214)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[67](#ia8555b4da9c1428ea91f8f8e7517528b_214)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 3: Revenue](#ia8555b4da9c1428ea91f8f8e7517528b_220)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[70](#ia8555b4da9c1428ea91f8f8e7517528b_220)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 4: Programming and Production Costs](#ia8555b4da9c1428ea91f8f8e7517528b_226)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[73](#ia8555b4da9c1428ea91f8f8e7517528b_226)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 5: Income Taxes](#ia8555b4da9c1428ea91f8f8e7517528b_229)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[76](#ia8555b4da9c1428ea91f8f8e7517528b_229)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 6: Debt](#ia8555b4da9c1428ea91f8f8e7517528b_232)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[78](#ia8555b4da9c1428ea91f8f8e7517528b_232)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 7: Investments and Variable Interest Entities](#ia8555b4da9c1428ea91f8f8e7517528b_244)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[81](#ia8555b4da9c1428ea91f8f8e7517528b_244)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 8: Property and Equipment](#ia8555b4da9c1428ea91f8f8e7517528b_247)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[84](#ia8555b4da9c1428ea91f8f8e7517528b_247)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 9: Goodwill and Intangible Assets](#ia8555b4da9c1428ea91f8f8e7517528b_250)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[85](#ia8555b4da9c1428ea91f8f8e7517528b_250)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 10: Employee Benefit Plans](#ia8555b4da9c1428ea91f8f8e7517528b_253)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[87](#ia8555b4da9c1428ea91f8f8e7517528b_253)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 11: Equity](#ia8555b4da9c1428ea91f8f8e7517528b_256)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[88](#ia8555b4da9c1428ea91f8f8e7517528b_256)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 12: Share-Based Compensation](#ia8555b4da9c1428ea91f8f8e7517528b_262)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[89](#ia8555b4da9c1428ea91f8f8e7517528b_262)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 13: Supplemental Financial Information](#ia8555b4da9c1428ea91f8f8e7517528b_265)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[90](#ia8555b4da9c1428ea91f8f8e7517528b_265)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 14: Commitments and Contingencies](#ia8555b4da9c1428ea91f8f8e7517528b_268)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[90](#ia8555b4da9c1428ea91f8f8e7517528b_268)</u> |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **56** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nReport of Management\n\n**Management's Report on Financial Statements**\n\nOur management is responsible for the preparation, integrity and fair presentation of information in the consolidated financial statements, including estimates and judgments. The consolidated financial statements presented in this report have been prepared in accordance with accounting principles generally accepted in the United States. Our management believes the consolidated financial statements and other financial information included in this report fairly present, in all material respects, the financial condition, results of operations and cash flows as of and for the periods presented in this report. The consolidated financial statements have been audited by Deloitte & Touche LLP, an independent registered public accounting firm, as stated in their report, which is included herein.\n\n**Management's Report on Internal Control Over Financial Reporting**\n\nOur management is responsible for establishing and maintaining an adequate system of internal control over financial reporting. Our system of internal control over financial reporting is designed to provide reasonable assurance regarding the reliability of financial reporting and the preparation of financial statements for external purposes in accordance with accounting principles generally accepted in the United States.\n\nOur internal control over financial reporting includes those policies and procedures that:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Pertain to the maintenance of records that, in reasonable detail, accurately and fairly reflect our transactions and dispositions of our assets.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Provide reasonable assurance that our transactions are recorded as necessary to permit preparation of our financial statements in accordance with accounting principles generally accepted in the United States, and that our receipts and expenditures are being made only in accordance with authorizations of our management and our directors.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Provide reasonable assurance regarding prevention or timely detection of unauthorized acquisition, use or disposition of our assets that could have a material effect on the financial statements.\n\nBecause of its inherent limitations, a system of internal control over financial reporting can provide only reasonable assurance and may not prevent or detect misstatements. Further, because of changes in conditions, effectiveness of internal control over financial reporting may vary over time. Our system contains self-monitoring mechanisms, and actions are taken to correct deficiencies as they are identified.\n\nOur management conducted an evaluation of the effectiveness of the system of internal control over financial reporting based on the framework in *Internal Control \u2014 Integrated Framework (2013)* issued by the Committee of Sponsoring Organizations of the Treadway Commission. Based on this evaluation, our management concluded that the system of internal control over financial reporting was effective as of December 31, 2024. The effectiveness of internal control over financial reporting has been audited by Deloitte & Touche LLP, an independent registered public accounting firm, as stated in their report, which is included herein.\n\n**Audit Committee Oversight**\n\nThe Audit Committee of the Board of Directors, which is comprised solely of independent directors, has oversight responsibility for our financial reporting process and the audits of the consolidated financial statements and internal control over financial reporting. The Audit Committee meets regularly with management and with our internal auditors and independent registered public accounting firm (collectively, the \"auditors\") to review matters related to the quality and integrity of our financial reporting, internal control over financial reporting (including compliance matters related to our Code of Conduct), and the nature, extent, and results of internal and external audits. Our auditors have full and free access and report directly to the Audit Committee. The Audit Committee recommended, and the Board of Directors approved, that the audited consolidated financial statements be included in this Form 10-K.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| /s/ BRIAN L. ROBERTS | /s/ JASON S. ARMSTRONG | /s/ DANIEL C. MURDOCK |\n| **Brian L. Roberts** | **Jason S. Armstrong** | **Daniel C. Murdock** |\n| Chairman and<br>Chief Executive Officer | Chief Financial Officer | Executive Vice President, Chief <br>Accounting Officer and Controller |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| **57** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nReport of Independent Registered Public Accounting Firm\n\n**To the Shareholders and Board of Directors of**\n\n**Comcast Corporation**\n\n**Opinions on the Financial Statements and Internal Control over Financial Reporting**\n\nWe have audited the accompanying consolidated balance sheets of Comcast Corporation and subsidiaries (the \"Company\") as of December 31, 2024 and 2023, the related consolidated statements of income, comprehensive income, cash flows, and changes in equity for each of the three years in the period ended December 31, 2024, and the related notes (collectively referred to as the \"financial statements\"). We also have audited the Company's internal control over financial reporting as of December 31, 2024, based on criteria established in ",
+          "total_chars": 1480506,
+          "next_start": 269791,
+          "resources": {
+            "peak_rss_mib": 504.01953125,
+            "cpu_seconds": 0.567008,
+            "wall_seconds": 0.5499153210002987,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 0.6211609069996484
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_427415",
+          "function": {
+            "name": "read_parquet_filing",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"file_stem\":\"0001166691-25-000011\",\"start\":270000,\"needle\":\"Consolidated Statements of Income\"}"
+          }
+        },
+        "output": {
+          "found": true,
+          "id": "0001166691-25-000011:284144:296144",
+          "accession": "0001166691-25-000011",
+          "section": "Original filing Markdown",
+          "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+          "char_start": 284144,
+          "char_end": 296144,
+          "text": "agement's position with our interpretation of the relevant laws and regulations.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u25e6 Assessed management's methods and assumptions used in calculating the capital loss and measuring the tax benefit.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u25e6 Recalculated the tax basis of the entities included in the calculation of the capital loss by comparing the amounts to supporting evidence and evaluating the appropriateness of management's assumptions used to determine the tax basis.\n\n**/s/ Deloitte & Touche LLP**\n\nPhiladelphia, Pennsylvania\n\nJanuary 31, 2025\n\nWe have served as the Company's auditor since 1963.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **60** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Comcast Corporation**\n\nConsolidated Statements of Income\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| Year ended December 31 (in millions, except per share data) | **2024** | 2023 | 2022 |\n| **Revenue** | $**123731** | $121572 | $121427 |\n| Costs and Expenses: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Programming and production | **37026** | 36762 | 38213 |\n| &nbsp;&nbsp;&nbsp;Marketing and promotion | **8073** | 7971 | 8506 |\n| &nbsp;&nbsp;&nbsp;Other operating and administrative | **40533** | 39190 | 38263 |\n| &nbsp;&nbsp;&nbsp;Depreciation | **8729** | 8854 | 8724 |\n| &nbsp;&nbsp;&nbsp;Amortization | **6072** | 5482 | 5097 |\n| &nbsp;&nbsp;&nbsp;Goodwill and long-lived asset impairments | **\u2014** |  | 8583 |\n| Total costs and expenses | **100434** | 98258 | 107385 |\n| **Operating income** | **23297** | 23314 | 14041 |\n| Interest expense | **(4134)** | (4087) | (3896) |\n| Investment and other income (loss), net | **(490)** | 1252 | (861) |\n| Income before income taxes | **18673** | 20478 | 9284 |\n| Income tax expense | **(2796)** | (5371) | (4359) |\n| Net income | **15877** | 15107 | 4925 |\n| Less: Net income (loss) attributable to noncontrolling interests | **(315)** | (282) | (445) |\n| **Net income attributable to Comcast Corporation** | $**16192** | $15388 | $5370 |\n| **Basic earnings per common share attributable to Comcast Corporation shareholders** | $**4.17** | $3.73 | $1.22 |\n| **Diluted earnings per common share attributable to Comcast Corporation shareholders** | $**4.14** | $3.71 | $1.21 |\n\n---\n\n\n\nSee accompanying notes to consolidated financial statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **61** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Comcast Corporation**\n\nConsolidated Statements of Comprehensive Income\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| Year ended December 31 (in millions) | **2024** | 2023 | 2022 |\n| Net income | $**15877** | $15107 | $4925 |\n| Other comprehensive income (loss), net of tax (expense) benefit: |  |  |  |\n| &nbsp;&nbsp;Currency translation adjustments, net of deferred taxes of $(137), $(29) and $310 | **(895)** | 1478 | (4242) |\n| &nbsp;&nbsp;Cash flow hedges: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Deferred gains (losses), net of deferred taxes of $(4), $8 and $(18) | **57** | 16 | 281 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Realized (gains) losses reclassified to net income, net of deferred taxes of $(1), $38 and $(3) | **(1)** | (158) | (192) |\n| &nbsp;&nbsp;Employee benefit obligations and other, net of deferred taxes of $(9), $(2) and $(11) | **31** | 3 | 33 |\n| Other comprehensive income (loss) | **(807)** | 1338 | (4120) |\n| Comprehensive income (loss) | **15070** | 16445 | 805 |\n| Less: Net income (loss) attributable to noncontrolling interests | **(315)** | (282) | (445) |\n| Less: Other comprehensive income (loss) attributable to noncontrolling interests | **(17)** | (19) | (29) |\n| **Comprehensive income attributable to Comcast Corporation** | $**15402** | $16746 | $1280 |\n\n---\n\n\n\nSee accompanying notes to consolidated financial statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **62** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Comcast Corporation**\n\nConsolidated Statements of Cash Flows\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| Year ended December 31 (in millions) | **2024** | 2023 | 2022 |\n| **Operating Activities** |  |  |  |\n| Net income | $**15877** | $15107 | $4925 |\n| Adjustments to reconcile net income to net cash provided by operating activities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Depreciation and amortization | **14802** | 14336 | 13821 |\n| &nbsp;&nbsp;&nbsp;Goodwill and long-lived asset impairments | **\u2014** |  | 8583 |\n| &nbsp;&nbsp;&nbsp;Share-based compensation | **1288** | 1241 | 1336 |\n| &nbsp;&nbsp;&nbsp;Noncash interest expense (income), net | **464** | 316 | 309 |\n| &nbsp;&nbsp;&nbsp;Net (gain) loss on investment activity and other | **1088** | (768) | 1177 |\n| &nbsp;&nbsp;&nbsp;Deferred income taxes | **(902)** | (2739) | (834) |\n| Changes in operating assets and liabilities, net of effects of acquisitions and divestitures: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Current and noncurrent receivables, net | **136** | (996) | (1327) |\n| &nbsp;&nbsp;&nbsp;Film and television costs, net | **290** | (260) | (451) |\n| &nbsp;&nbsp;&nbsp;Accounts payable and accrued expenses related to trade creditors | **(758)** | (520) | 497 |\n| &nbsp;&nbsp;&nbsp;Other operating assets and liabilities | **(4611)** | 2784 | (1623) |\n| **Net cash provided by operating activities** | **27673** | 28501 | 26413 |\n| **Investing Activities** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Capital expenditures | **(12181)** | (12242) | (10626) |\n| &nbsp;&nbsp;&nbsp;Cash paid for intangible assets | **(2949)** | (3298) | (3141) |\n| &nbsp;&nbsp;&nbsp;Construction of Universal Beijing Resort | **(116)** | (137) | (330) |\n| &nbsp;&nbsp;&nbsp;Proceeds from sales of businesses and investments | **771** | 661 | 1985 |\n| &nbsp;&nbsp;Advance on sale of investment | **\u2014** | 8610 |  |\n| &nbsp;&nbsp;&nbsp;Purchases of investments | **(1082)** | (1313) | (2274) |\n| &nbsp;&nbsp;&nbsp;Other | **(113)** | 558 | 246 |\n| **Net cash provided by (used in) investing activities** | **(15670)** | (7161) | (14140) |\n| **Financing Activities** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Proceeds from (repayments of) short-term borrowings, net | **\u2014** | (660) | 660 |\n| &nbsp;&nbsp;&nbsp;Proceeds from borrowings | **6268** | 6052 | 2745 |\n| &nbsp;&nbsp;&nbsp;Repurchases and repayments of debt | **(3573)** | (4015) | (2307) |\n| &nbsp;&nbsp;Repayment of collateralized obligation | **\u2014** | (5175) |  |\n| &nbsp;&nbsp;&nbsp;Repurchases of common stock under repurchase program and employee plans | **(9103)** | (11291) | (13328) |\n| &nbsp;&nbsp;&nbsp;Dividends paid | **(4814)** | (4766) | (4741) |\n| &nbsp;&nbsp;&nbsp;Other | **339** | 5 | 786 |\n| **Net cash provided by (used in) financing activities** | **(10883)** | (19850) | (16184) |\n| Impact of foreign currency on cash, cash equivalents and restricted cash | **(26)** | 9 | (86) |\n| Increase (decrease) in cash, cash equivalents and restricted cash | **1095** | 1500 | (3997) |\n| Cash, cash equivalents and restricted cash, beginning of year | **6282** | 4782 | 8778 |\n| **Cash, cash equivalents and restricted cash, end of year** | $**7377** | $6282 | $4782 |\n\n---\n\n\n\nSee accompanying notes to consolidated financial statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **63** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Comcast Corporation**\n\nConsolidated Balance Sheets\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| December 31 (in millions, except share data) | **2024** | 2023 |\n| **Assets** |  |  |\n| Current Assets: |  |  |\n| &nbsp;&nbsp;&nbsp;Cash and cash equivalents | $**7322** | $6215 |\n| &nbsp;&nbsp;&nbsp;Receivables, net | **13661** | 13813 |\n| &nbsp;&nbsp;&nbsp;Other current assets | **5817** | 3959 |\n| Total current assets | **26801** | 23987 |\n| Film and television costs | **12541** | 12920 |\n| Investments | **8647** | 9385 |\n| Property and equipment, net | **62548** | 59686 |\n| Goodwill | **58209** | 59268 |\n| Franchise rights | **59365** | 59365 |\n| Other intangible assets, net | **25599** | 27867 |\n| Other noncurrent assets, net | **12501** | 12333 |\n| **Total assets** | $**266211** | $264811 |\n| **Liabilities and Equity** |  |  |\n| Current Liabilities: |  |  |\n| &nbsp;&nbsp;&nbsp;Accounts payable and accrued expenses related to trade creditors | $**11321** | $12437 |\n| &nbsp;&nbsp;&nbsp;Deferred revenue | **3507** | 3242 |\n| &nbsp;&nbsp;&nbsp;Accrued expenses and other current liabilities | **10679** | 13284 |\n| &nbsp;&nbsp;&nbsp;Current portion of debt | **4907** | 2069 |\n| &nbsp;&nbsp;Advance on sale of investment | **9167** | 9167 |\n| Total current liabilities | **39581** | 40198 |\n| Noncurrent portion of debt | **94186** | 95021 |\n| Deferred income taxes | **25227** | 26003 |\n| Other noncurrent liabilities | **20942** | 20122 |\n| Commitments and contingencies |  |  |\n| Redeemable noncontrolling interests | **237** | 241 |\n| Equity: |  |  |\n| &nbsp;&nbsp;Preferred stock\u2014authorized, 20,000,000 shares; issued, zero | **\u2014** |  |\n| &nbsp;&nbsp;Class A common stock, $0.01 par value\u2014authorized, 7,500,000,000 shares; issued, 4,651,093,045 and 4,842,108,959; outstanding, 3,778,302,017 and 3,969,317,931 | **47** | 48 |\n| &nbsp;&nbsp;Class B common stock, $0.01 par value\u2014authorized, 75,000,000 shares; issued and outstanding, 9,444,375 | **\u2014** |  |\n| &nbsp;&nbsp;&nbsp;Additional paid-in capital | **38102** | 38533 |\n| &nbsp;&nbsp;&nbsp;Retained earnings | **56972** | 52892 |\n| &nbsp;&nbsp;Treasury stock, 872,791,028 Class A common shares | **(7517)** | (7517) |\n| &nbsp;&nbsp;&nbsp;Accumulated other comprehensive income (loss) | **(2043)** | (1253) |\n| Total Comcast Corporation shareholders' equity | **85560** | 82703 |\n| Noncontrolling interests | **477** | 523 |\n| Total equity | **86038** | 83226 |\n| **Total liabilities and equity** | $**266211** | $264811 |\n\n---\n\n\n\nSee accompanying notes to consolidated financial statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **64** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Comcast Corporation**\n\nConsolidated Statements of Changes in Equity\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| (in millions, except per share data) | **2024** | 2023 | 2022 |\n| **Redeemable Noncontrolling Interests** |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Balance, beginning of year | $**241** | $411 | $519 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Contributions from (distributions to) noncontrolling interests, net | **(13)** | (24) | (77) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other | **\u2014** | (171) | (80) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net income (loss) | **9** | 25 | 49 |\n| **Balance, end of year** | $**237** | $241 | $411 |\n| **Class A Common Stock** |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Balance, beginning of year | $**48** | $51 | $54 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Repurchases of common stock under repurchase program and employee plans | **(2)** | (2) | (3) |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Balance, end of year** | $**47** | $48 | $51 |\n| **Class B Common Stock** |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Balance, beginning and end of year** | $**\u2014** | $\u2014 | $\u2014 |\n| **Additional Paid-In Capital** |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Balance, beginning of year | $**38533** | $39412 | $40173 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Share-based compensation | **1169** | 1063 | 1055 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Repurchases of common stock under repurchase program and employee plans | **(1841)** | (2086) | (2431) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Issuances of common stock under employee plans | **240** | 272 | 278 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other | **2** | (127) | 337 |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Balance, end of year** | $**38102** | $38533 | $39412 |\n| **Retained Earnings",
+          "total_chars": 1480506,
+          "next_start": 296144,
+          "resources": {
+            "peak_rss_mib": 505.76953125,
+            "cpu_seconds": 0.716401,
+            "wall_seconds": 0.7135041720002846,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 0.811598533000506
+      }
+    ],
+    "chunks": [
+      {
+        "found": true,
+        "id": "0001166691-25-000011:257791:269791",
+        "accession": "0001166691-25-000011",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+        "char_start": 257791,
+        "char_end": 269791,
+        "text": " the counterparty's credit ratings. As of December 31, 2024 and 2023, we were not required to post collateral under the terms of these agreements, nor did we hold any collateral under the terms of these agreements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **55** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nItem 8: Comcast Corporation Financial Statements and Supplementary Data\n\n---\n\n\n\n| | |\n|:---|:---|\n| Index | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Page |\n| <u>[Report of Management](#ia8555b4da9c1428ea91f8f8e7517528b_184)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[57](#ia8555b4da9c1428ea91f8f8e7517528b_184)</u> |\n| <u>[Report of Independent Registered Public Accounting Firm](#ia8555b4da9c1428ea91f8f8e7517528b_187)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[58](#ia8555b4da9c1428ea91f8f8e7517528b_187)</u> |\n| <u>[Consolidated Statements of Income](#ia8555b4da9c1428ea91f8f8e7517528b_190)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[61](#ia8555b4da9c1428ea91f8f8e7517528b_190)</u> |\n| <u>[Consolidated Statements of Comprehensive Income](#ia8555b4da9c1428ea91f8f8e7517528b_193)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[62](#ia8555b4da9c1428ea91f8f8e7517528b_193)</u> |\n| <u>[Consolidated Statements of Cash Flows](#ia8555b4da9c1428ea91f8f8e7517528b_196)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[63](#ia8555b4da9c1428ea91f8f8e7517528b_196)</u> |\n| <u>[Consolidated Balance Sheets](#ia8555b4da9c1428ea91f8f8e7517528b_199)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[64](#ia8555b4da9c1428ea91f8f8e7517528b_199)</u> |\n| <u>[Consolidated Statements of Changes in Equity](#ia8555b4da9c1428ea91f8f8e7517528b_202)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[65](#ia8555b4da9c1428ea91f8f8e7517528b_202)</u> |\n| <u>[Notes to Consolidated Financial Statements](#ia8555b4da9c1428ea91f8f8e7517528b_205)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[66](#ia8555b4da9c1428ea91f8f8e7517528b_205)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 1: Summary of Significant Accounting Policies](#ia8555b4da9c1428ea91f8f8e7517528b_208)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[66](#ia8555b4da9c1428ea91f8f8e7517528b_208)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 2: Segment Information](#ia8555b4da9c1428ea91f8f8e7517528b_214)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[67](#ia8555b4da9c1428ea91f8f8e7517528b_214)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 3: Revenue](#ia8555b4da9c1428ea91f8f8e7517528b_220)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[70](#ia8555b4da9c1428ea91f8f8e7517528b_220)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 4: Programming and Production Costs](#ia8555b4da9c1428ea91f8f8e7517528b_226)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[73](#ia8555b4da9c1428ea91f8f8e7517528b_226)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 5: Income Taxes](#ia8555b4da9c1428ea91f8f8e7517528b_229)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[76](#ia8555b4da9c1428ea91f8f8e7517528b_229)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 6: Debt](#ia8555b4da9c1428ea91f8f8e7517528b_232)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[78](#ia8555b4da9c1428ea91f8f8e7517528b_232)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 7: Investments and Variable Interest Entities](#ia8555b4da9c1428ea91f8f8e7517528b_244)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[81](#ia8555b4da9c1428ea91f8f8e7517528b_244)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 8: Property and Equipment](#ia8555b4da9c1428ea91f8f8e7517528b_247)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[84](#ia8555b4da9c1428ea91f8f8e7517528b_247)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 9: Goodwill and Intangible Assets](#ia8555b4da9c1428ea91f8f8e7517528b_250)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[85](#ia8555b4da9c1428ea91f8f8e7517528b_250)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 10: Employee Benefit Plans](#ia8555b4da9c1428ea91f8f8e7517528b_253)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[87](#ia8555b4da9c1428ea91f8f8e7517528b_253)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 11: Equity](#ia8555b4da9c1428ea91f8f8e7517528b_256)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[88](#ia8555b4da9c1428ea91f8f8e7517528b_256)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 12: Share-Based Compensation](#ia8555b4da9c1428ea91f8f8e7517528b_262)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[89](#ia8555b4da9c1428ea91f8f8e7517528b_262)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 13: Supplemental Financial Information](#ia8555b4da9c1428ea91f8f8e7517528b_265)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[90](#ia8555b4da9c1428ea91f8f8e7517528b_265)</u> |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[Note 14: Commitments and Contingencies](#ia8555b4da9c1428ea91f8f8e7517528b_268)</u> | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>[90](#ia8555b4da9c1428ea91f8f8e7517528b_268)</u> |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **56** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nReport of Management\n\n**Management's Report on Financial Statements**\n\nOur management is responsible for the preparation, integrity and fair presentation of information in the consolidated financial statements, including estimates and judgments. The consolidated financial statements presented in this report have been prepared in accordance with accounting principles generally accepted in the United States. Our management believes the consolidated financial statements and other financial information included in this report fairly present, in all material respects, the financial condition, results of operations and cash flows as of and for the periods presented in this report. The consolidated financial statements have been audited by Deloitte & Touche LLP, an independent registered public accounting firm, as stated in their report, which is included herein.\n\n**Management's Report on Internal Control Over Financial Reporting**\n\nOur management is responsible for establishing and maintaining an adequate system of internal control over financial reporting. Our system of internal control over financial reporting is designed to provide reasonable assurance regarding the reliability of financial reporting and the preparation of financial statements for external purposes in accordance with accounting principles generally accepted in the United States.\n\nOur internal control over financial reporting includes those policies and procedures that:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Pertain to the maintenance of records that, in reasonable detail, accurately and fairly reflect our transactions and dispositions of our assets.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Provide reasonable assurance that our transactions are recorded as necessary to permit preparation of our financial statements in accordance with accounting principles generally accepted in the United States, and that our receipts and expenditures are being made only in accordance with authorizations of our management and our directors.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Provide reasonable assurance regarding prevention or timely detection of unauthorized acquisition, use or disposition of our assets that could have a material effect on the financial statements.\n\nBecause of its inherent limitations, a system of internal control over financial reporting can provide only reasonable assurance and may not prevent or detect misstatements. Further, because of changes in conditions, effectiveness of internal control over financial reporting may vary over time. Our system contains self-monitoring mechanisms, and actions are taken to correct deficiencies as they are identified.\n\nOur management conducted an evaluation of the effectiveness of the system of internal control over financial reporting based on the framework in *Internal Control \u2014 Integrated Framework (2013)* issued by the Committee of Sponsoring Organizations of the Treadway Commission. Based on this evaluation, our management concluded that the system of internal control over financial reporting was effective as of December 31, 2024. The effectiveness of internal control over financial reporting has been audited by Deloitte & Touche LLP, an independent registered public accounting firm, as stated in their report, which is included herein.\n\n**Audit Committee Oversight**\n\nThe Audit Committee of the Board of Directors, which is comprised solely of independent directors, has oversight responsibility for our financial reporting process and the audits of the consolidated financial statements and internal control over financial reporting. The Audit Committee meets regularly with management and with our internal auditors and independent registered public accounting firm (collectively, the \"auditors\") to review matters related to the quality and integrity of our financial reporting, internal control over financial reporting (including compliance matters related to our Code of Conduct), and the nature, extent, and results of internal and external audits. Our auditors have full and free access and report directly to the Audit Committee. The Audit Committee recommended, and the Board of Directors approved, that the audited consolidated financial statements be included in this Form 10-K.\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| /s/ BRIAN L. ROBERTS | /s/ JASON S. ARMSTRONG | /s/ DANIEL C. MURDOCK |\n| **Brian L. Roberts** | **Jason S. Armstrong** | **Daniel C. Murdock** |\n| Chairman and<br>Chief Executive Officer | Chief Financial Officer | Executive Vice President, Chief <br>Accounting Officer and Controller |\n\n---\n\n\n\n---\n\n\n\n| | |\n|:---|:---|\n| **57** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\nReport of Independent Registered Public Accounting Firm\n\n**To the Shareholders and Board of Directors of**\n\n**Comcast Corporation**\n\n**Opinions on the Financial Statements and Internal Control over Financial Reporting**\n\nWe have audited the accompanying consolidated balance sheets of Comcast Corporation and subsidiaries (the \"Company\") as of December 31, 2024 and 2023, the related consolidated statements of income, comprehensive income, cash flows, and changes in equity for each of the three years in the period ended December 31, 2024, and the related notes (collectively referred to as the \"financial statements\"). We also have audited the Company's internal control over financial reporting as of December 31, 2024, based on criteria established in ",
+        "total_chars": 1480506,
+        "next_start": 269791,
+        "resources": {
+          "peak_rss_mib": 504.01953125,
+          "cpu_seconds": 0.567008,
+          "wall_seconds": 0.5499153210002987,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      },
+      {
+        "found": true,
+        "id": "0001166691-25-000011:284144:296144",
+        "accession": "0001166691-25-000011",
+        "section": "Original filing Markdown",
+        "source_path": "/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet",
+        "char_start": 284144,
+        "char_end": 296144,
+        "text": "agement's position with our interpretation of the relevant laws and regulations.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u25e6 Assessed management's methods and assumptions used in calculating the capital loss and measuring the tax benefit.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u25e6 Recalculated the tax basis of the entities included in the calculation of the capital loss by comparing the amounts to supporting evidence and evaluating the appropriateness of management's assumptions used to determine the tax basis.\n\n**/s/ Deloitte & Touche LLP**\n\nPhiladelphia, Pennsylvania\n\nJanuary 31, 2025\n\nWe have served as the Company's auditor since 1963.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **60** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Comcast Corporation**\n\nConsolidated Statements of Income\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| Year ended December 31 (in millions, except per share data) | **2024** | 2023 | 2022 |\n| **Revenue** | $**123731** | $121572 | $121427 |\n| Costs and Expenses: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Programming and production | **37026** | 36762 | 38213 |\n| &nbsp;&nbsp;&nbsp;Marketing and promotion | **8073** | 7971 | 8506 |\n| &nbsp;&nbsp;&nbsp;Other operating and administrative | **40533** | 39190 | 38263 |\n| &nbsp;&nbsp;&nbsp;Depreciation | **8729** | 8854 | 8724 |\n| &nbsp;&nbsp;&nbsp;Amortization | **6072** | 5482 | 5097 |\n| &nbsp;&nbsp;&nbsp;Goodwill and long-lived asset impairments | **\u2014** |  | 8583 |\n| Total costs and expenses | **100434** | 98258 | 107385 |\n| **Operating income** | **23297** | 23314 | 14041 |\n| Interest expense | **(4134)** | (4087) | (3896) |\n| Investment and other income (loss), net | **(490)** | 1252 | (861) |\n| Income before income taxes | **18673** | 20478 | 9284 |\n| Income tax expense | **(2796)** | (5371) | (4359) |\n| Net income | **15877** | 15107 | 4925 |\n| Less: Net income (loss) attributable to noncontrolling interests | **(315)** | (282) | (445) |\n| **Net income attributable to Comcast Corporation** | $**16192** | $15388 | $5370 |\n| **Basic earnings per common share attributable to Comcast Corporation shareholders** | $**4.17** | $3.73 | $1.22 |\n| **Diluted earnings per common share attributable to Comcast Corporation shareholders** | $**4.14** | $3.71 | $1.21 |\n\n---\n\n\n\nSee accompanying notes to consolidated financial statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **61** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Comcast Corporation**\n\nConsolidated Statements of Comprehensive Income\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| Year ended December 31 (in millions) | **2024** | 2023 | 2022 |\n| Net income | $**15877** | $15107 | $4925 |\n| Other comprehensive income (loss), net of tax (expense) benefit: |  |  |  |\n| &nbsp;&nbsp;Currency translation adjustments, net of deferred taxes of $(137), $(29) and $310 | **(895)** | 1478 | (4242) |\n| &nbsp;&nbsp;Cash flow hedges: |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Deferred gains (losses), net of deferred taxes of $(4), $8 and $(18) | **57** | 16 | 281 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Realized (gains) losses reclassified to net income, net of deferred taxes of $(1), $38 and $(3) | **(1)** | (158) | (192) |\n| &nbsp;&nbsp;Employee benefit obligations and other, net of deferred taxes of $(9), $(2) and $(11) | **31** | 3 | 33 |\n| Other comprehensive income (loss) | **(807)** | 1338 | (4120) |\n| Comprehensive income (loss) | **15070** | 16445 | 805 |\n| Less: Net income (loss) attributable to noncontrolling interests | **(315)** | (282) | (445) |\n| Less: Other comprehensive income (loss) attributable to noncontrolling interests | **(17)** | (19) | (29) |\n| **Comprehensive income attributable to Comcast Corporation** | $**15402** | $16746 | $1280 |\n\n---\n\n\n\nSee accompanying notes to consolidated financial statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **62** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Comcast Corporation**\n\nConsolidated Statements of Cash Flows\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| Year ended December 31 (in millions) | **2024** | 2023 | 2022 |\n| **Operating Activities** |  |  |  |\n| Net income | $**15877** | $15107 | $4925 |\n| Adjustments to reconcile net income to net cash provided by operating activities: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Depreciation and amortization | **14802** | 14336 | 13821 |\n| &nbsp;&nbsp;&nbsp;Goodwill and long-lived asset impairments | **\u2014** |  | 8583 |\n| &nbsp;&nbsp;&nbsp;Share-based compensation | **1288** | 1241 | 1336 |\n| &nbsp;&nbsp;&nbsp;Noncash interest expense (income), net | **464** | 316 | 309 |\n| &nbsp;&nbsp;&nbsp;Net (gain) loss on investment activity and other | **1088** | (768) | 1177 |\n| &nbsp;&nbsp;&nbsp;Deferred income taxes | **(902)** | (2739) | (834) |\n| Changes in operating assets and liabilities, net of effects of acquisitions and divestitures: |  |  |  |\n| &nbsp;&nbsp;&nbsp;Current and noncurrent receivables, net | **136** | (996) | (1327) |\n| &nbsp;&nbsp;&nbsp;Film and television costs, net | **290** | (260) | (451) |\n| &nbsp;&nbsp;&nbsp;Accounts payable and accrued expenses related to trade creditors | **(758)** | (520) | 497 |\n| &nbsp;&nbsp;&nbsp;Other operating assets and liabilities | **(4611)** | 2784 | (1623) |\n| **Net cash provided by operating activities** | **27673** | 28501 | 26413 |\n| **Investing Activities** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Capital expenditures | **(12181)** | (12242) | (10626) |\n| &nbsp;&nbsp;&nbsp;Cash paid for intangible assets | **(2949)** | (3298) | (3141) |\n| &nbsp;&nbsp;&nbsp;Construction of Universal Beijing Resort | **(116)** | (137) | (330) |\n| &nbsp;&nbsp;&nbsp;Proceeds from sales of businesses and investments | **771** | 661 | 1985 |\n| &nbsp;&nbsp;Advance on sale of investment | **\u2014** | 8610 |  |\n| &nbsp;&nbsp;&nbsp;Purchases of investments | **(1082)** | (1313) | (2274) |\n| &nbsp;&nbsp;&nbsp;Other | **(113)** | 558 | 246 |\n| **Net cash provided by (used in) investing activities** | **(15670)** | (7161) | (14140) |\n| **Financing Activities** |  |  |  |\n| &nbsp;&nbsp;&nbsp;Proceeds from (repayments of) short-term borrowings, net | **\u2014** | (660) | 660 |\n| &nbsp;&nbsp;&nbsp;Proceeds from borrowings | **6268** | 6052 | 2745 |\n| &nbsp;&nbsp;&nbsp;Repurchases and repayments of debt | **(3573)** | (4015) | (2307) |\n| &nbsp;&nbsp;Repayment of collateralized obligation | **\u2014** | (5175) |  |\n| &nbsp;&nbsp;&nbsp;Repurchases of common stock under repurchase program and employee plans | **(9103)** | (11291) | (13328) |\n| &nbsp;&nbsp;&nbsp;Dividends paid | **(4814)** | (4766) | (4741) |\n| &nbsp;&nbsp;&nbsp;Other | **339** | 5 | 786 |\n| **Net cash provided by (used in) financing activities** | **(10883)** | (19850) | (16184) |\n| Impact of foreign currency on cash, cash equivalents and restricted cash | **(26)** | 9 | (86) |\n| Increase (decrease) in cash, cash equivalents and restricted cash | **1095** | 1500 | (3997) |\n| Cash, cash equivalents and restricted cash, beginning of year | **6282** | 4782 | 8778 |\n| **Cash, cash equivalents and restricted cash, end of year** | $**7377** | $6282 | $4782 |\n\n---\n\n\n\nSee accompanying notes to consolidated financial statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| **63** | Comcast 2024 Annual Report on Form 10-K |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Comcast Corporation**\n\nConsolidated Balance Sheets\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n| December 31 (in millions, except share data) | **2024** | 2023 |\n| **Assets** |  |  |\n| Current Assets: |  |  |\n| &nbsp;&nbsp;&nbsp;Cash and cash equivalents | $**7322** | $6215 |\n| &nbsp;&nbsp;&nbsp;Receivables, net | **13661** | 13813 |\n| &nbsp;&nbsp;&nbsp;Other current assets | **5817** | 3959 |\n| Total current assets | **26801** | 23987 |\n| Film and television costs | **12541** | 12920 |\n| Investments | **8647** | 9385 |\n| Property and equipment, net | **62548** | 59686 |\n| Goodwill | **58209** | 59268 |\n| Franchise rights | **59365** | 59365 |\n| Other intangible assets, net | **25599** | 27867 |\n| Other noncurrent assets, net | **12501** | 12333 |\n| **Total assets** | $**266211** | $264811 |\n| **Liabilities and Equity** |  |  |\n| Current Liabilities: |  |  |\n| &nbsp;&nbsp;&nbsp;Accounts payable and accrued expenses related to trade creditors | $**11321** | $12437 |\n| &nbsp;&nbsp;&nbsp;Deferred revenue | **3507** | 3242 |\n| &nbsp;&nbsp;&nbsp;Accrued expenses and other current liabilities | **10679** | 13284 |\n| &nbsp;&nbsp;&nbsp;Current portion of debt | **4907** | 2069 |\n| &nbsp;&nbsp;Advance on sale of investment | **9167** | 9167 |\n| Total current liabilities | **39581** | 40198 |\n| Noncurrent portion of debt | **94186** | 95021 |\n| Deferred income taxes | **25227** | 26003 |\n| Other noncurrent liabilities | **20942** | 20122 |\n| Commitments and contingencies |  |  |\n| Redeemable noncontrolling interests | **237** | 241 |\n| Equity: |  |  |\n| &nbsp;&nbsp;Preferred stock\u2014authorized, 20,000,000 shares; issued, zero | **\u2014** |  |\n| &nbsp;&nbsp;Class A common stock, $0.01 par value\u2014authorized, 7,500,000,000 shares; issued, 4,651,093,045 and 4,842,108,959; outstanding, 3,778,302,017 and 3,969,317,931 | **47** | 48 |\n| &nbsp;&nbsp;Class B common stock, $0.01 par value\u2014authorized, 75,000,000 shares; issued and outstanding, 9,444,375 | **\u2014** |  |\n| &nbsp;&nbsp;&nbsp;Additional paid-in capital | **38102** | 38533 |\n| &nbsp;&nbsp;&nbsp;Retained earnings | **56972** | 52892 |\n| &nbsp;&nbsp;Treasury stock, 872,791,028 Class A common shares | **(7517)** | (7517) |\n| &nbsp;&nbsp;&nbsp;Accumulated other comprehensive income (loss) | **(2043)** | (1253) |\n| Total Comcast Corporation shareholders' equity | **85560** | 82703 |\n| Noncontrolling interests | **477** | 523 |\n| Total equity | **86038** | 83226 |\n| **Total liabilities and equity** | $**266211** | $264811 |\n\n---\n\n\n\nSee accompanying notes to consolidated financial statements.\n\n---\n\n\n\n| | |\n|:---|:---|\n| Comcast 2024 Annual Report on Form 10-K | **64** |\n\n---\n\n\n\n------\n\n**<u>[**Table of Contents**](#ia8555b4da9c1428ea91f8f8e7517528b_7)</u>**\n\n**Comcast Corporation**\n\nConsolidated Statements of Changes in Equity\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| (in millions, except per share data) | **2024** | 2023 | 2022 |\n| **Redeemable Noncontrolling Interests** |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Balance, beginning of year | $**241** | $411 | $519 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Contributions from (distributions to) noncontrolling interests, net | **(13)** | (24) | (77) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other | **\u2014** | (171) | (80) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Net income (loss) | **9** | 25 | 49 |\n| **Balance, end of year** | $**237** | $241 | $411 |\n| **Class A Common Stock** |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Balance, beginning of year | $**48** | $51 | $54 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Repurchases of common stock under repurchase program and employee plans | **(2)** | (2) | (3) |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Balance, end of year** | $**47** | $48 | $51 |\n| **Class B Common Stock** |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Balance, beginning and end of year** | $**\u2014** | $\u2014 | $\u2014 |\n| **Additional Paid-In Capital** |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;Balance, beginning of year | $**38533** | $39412 | $40173 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Share-based compensation | **1169** | 1063 | 1055 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Repurchases of common stock under repurchase program and employee plans | **(1841)** | (2086) | (2431) |\n| &nbsp;&nbsp;&nbsp;&nbsp;Issuances of common stock under employee plans | **240** | 272 | 278 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other | **2** | (127) | 337 |\n| &nbsp;&nbsp;&nbsp;&nbsp;**Balance, end of year** | $**38102** | $38533 | $39412 |\n| **Retained Earnings",
+        "total_chars": 1480506,
+        "next_start": 296144,
+        "resources": {
+          "peak_rss_mib": 505.76953125,
+          "cpu_seconds": 0.716401,
+          "wall_seconds": 0.7135041720002846,
+          "address_space_limit_mib": 1536,
+          "cpu_limit_seconds": 20,
+          "cpu_cores": 1
+        }
+      }
+    ],
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash"
+  },
+  "judge": {
+    "text": "{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's 18.83% matches the reference. Operating income of $23,297M and revenue of $123,731M are both confirmed in the retrieved Consolidated Statements of Income excerpt. The unrounded ratio of 0.188287 is correct, and the three-decimal figure 18.829% is a valid rounding. The cited accession, Item 8 section, page 61, and character offsets 284144\u2013296144 all match the retrieved excerpt. The small deduction is for the extra three-decimal rounding and the added page and offset details, which are correct but not required by the question.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 97, \"citation_support\": 95, \"rationale\": \"The candidate's 18.83% matches the reference. Operating income of $23,297M and revenue of $123,731M are both confirmed in the retrieved Consolidated Statements of Income excerpt. The unrounded ratio of 0.188287 is correct, and the three-decimal figure 18.829% is a valid rounding. The cited accession, Item 8 section, page 61, and character offsets 284144\u2013296144 all match the retrieved excerpt. The small deduction is for the extra three-decimal rounding and the added page and offset details, which are correct but not required by the question.\"}",
+      "refusal": null,
+      "reasoning": "I'm double-checking the division 23297/123731 against the candidate value, computing it step by step to verify the decimal is close to 0.188287.\n\nChecking the citation, the excerpt's offsets and page 61 reference line up with the retrieved income statement text, so correctness and citation support both look strong, around 95-97%.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm double-checking the division 23297/123731 against the candidate value, computing it step by step to verify the decimal is close to 0.188287.\n\nChecking the citation, the excerpt's offsets and page 61 reference line up with the retrieved income statement text, so correctness and citation support both look strong, around 95-97%.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS3AsKEAgSGAI4AUIIdGhpbmtpbmcSDJhvIj0EAt5z6qMaiBoMcppoHUGTp4F1DhItIjAv9/4blIFf6jFEU026F6tGeLZMgu07bRFsTGuKXlPjqxNb8oUmjNJ7aicuxA/P5ywq+QpvTrBRD4RiTIrKJX3+7nWnPvR7LrE3Ssn6fLdVnQSc0akbLPv74XwSdcL8Nc3OkMLooEjMcchPB6VDW34jtFhbBVi+2QaMF9ElFsK44wYj0YFTc1eHxwPZxYRtbgWRD5W5RuvHtncxRREie4xw59ce7m/LBhvPO6R2HoezhsTCdYwnIDOXet760yDY4CBWmm9mVw8fACBdQlCJ+TBy0UUR0Y/hdDryOu/kh1wOs4myuL3gVnqzWLk4HbuZKPCSI2YG+FfxXziCEdnhfYo1S3FnxQu3yt/olzYNboQ+HTy3mKRs1iYXQ7M3mPpLjnIr2UXZ8D3IHy/dA1pGaxEcXNMNzdKWaOLqey2vNmyKyvbR74KZXGMzOjWvsSse/ytw88TgdLKm+Y0eLKdkAUzJ2gmpA2+nnFGdUq2sOW4SgnQ5smT58LXgc1iUvBHAWdC8DxtGtVu8GowuEEJqJrL+bp3tTHuJoEPpCe+MpZIdeOhVqKXKEcSLtG/GjGugzKzQOJFI/qkO3fr48rM0zGGEJR0z05kNPvpNyXnQO5MJggE2mVYECrLQHDz8psPD3O1M/pcqvjhla2CCeE0pWwzc/xM5uIJJG1A2jPVqgMyBI7s/3K0HFNs8C5ekC6zrXDMLjzYBlOmNL8rZsZ7fZfHfDnb0G/7N5dIlzZHAwhcxwssyVm8CtmM2FrBSASkfbFqcDO4+pgxuljyfvrAcuDuCufSEqmBVWHWcNSfe2+JefwNel5uympHwCaH1TvmocxTdD/WCOW+k3mF0z8ZWJj0IdF3LkYYvbGVPAxkX6nQtS3bUFRm5RvSdwU751/OdjSn6zXTZsfwhf/092KR3SW0Lfe5PJNvjsMPHhxS7UqOlhw2QJpmvRDBHKIL6e9RMyAlk5aZy2mUwyBFSS9aLsKilWQJH5rX5xu4BSg4owrgS4WLvtbYVIvTOlSsWmbWRxbLv/pv+ZOjptRYYuvlsb5N1Y34/3aYHF65QvaU2gNDkgnklYPkNGrc2iGP6s1tKkJZOL8bdtE6stUfqiquLZh2Bo65b72zeEmkAFg+Y2XrjfqmFhby3gnVAdYI+t5QD1pknolkjzhwzEiJYpkWnx8uCMTCykM1E/mrIVAl1FR+bsyp1phyOX1MlNcv8rRgdiC7/W7EPOVuO8m0sC2kSkzHLRs1rdkSfe1vwoBo/nm5ZqymH1VfJpEsCeWpv6cNLQAUa6wrn+7H0rBeClHC/rTNN853GuP7S5D4cPi+4mqs3U+FsxrVunf2QgnMosgz1HLtTx5vHNljlUY/wScwA058rRmPR+gFbK5W/+aYpIqdXR1ctpmZp5eTuek2P9R3c3uGoAhrRVYiBkI1yJ4lFOl1RwMw+XU88oGCHkOJrEI13AL9nwG9MEbKkv0wfsWfhRgnBQFlTeXyC1qEB8g07sIKaV6hS0rMlnla1DPo4DpqgMPVkRdPYkwfQNwiO7KfKYOZ9+iJZmZKcg4UPJYowsqJHnPJtSONYkFhAIHVnvKnNN7HrJ498qYTvWL8/a5eAPiZR43a7zxqmLA6ky8+z7uXM5PpjBVhYd4ZBLkzldrIzTvA7uFvJi8alB5y4EaCiYOCeNqAxmCI0kxoVaJQFAsInvMYcepsaK8GRF6fYlZAt95MoY2wqerCtjMfkiSsg/dnyj8GSMNtrAvo/2Nvockp9a0v1GkJLBgbPyNAAjGaGniIRoCRueYIHFL8QrxF81r9k4uV5/3EJqyNI3rLh0+iGxuhbO4h6JaOIwHTzdESKAezePKVjPjUcfNbzxV6vvYBMr/TSJc82xueFK0J4D8zyhRn7YjubLUiA4CYycvMroD0WJ0rV2lIkz4BZyI5udVVGEUac4GfOM+VEMH4YAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:35:37.722490+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "e6bba0f1378560458d658c0e:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042533-NnCc3ILL95nZv7peskf0",
+    "usage": {
+      "prompt_tokens": 29410,
+      "completion_tokens": 615,
+      "total_tokens": 30025,
+      "cost": 0.0032485,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0032485,
+        "upstream_inference_prompt_cost": 0.002941,
+        "upstream_inference_completions_cost": 0.0003075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 404,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.999201659999926,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 97,
+    "citation_support": 95,
+    "rationale": "The candidate's 18.83% matches the reference. Operating income of $23,297M and revenue of $123,731M are both confirmed in the retrieved Consolidated Statements of Income excerpt. The unrounded ratio of 0.188287 is correct, and the three-decimal figure 18.829% is a valid rounding. The cited accession, Item 8 section, page 61, and character offsets 284144\u2013296144 all match the retrieved excerpt. The small deduction is for the extra three-decimal rounding and the added page and offset details, which are correct but not required by the question."
+  },
+  "status": "ok"
+}

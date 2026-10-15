@@ -1,0 +1,126 @@
+{
+  "question_id": "Q026",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.030577819000427553,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to Levi Strauss & Co.'s Form 10-K for the fiscal year ended December 1, 2024:\n\n* **Selling, general and administrative (SG&A) expenses:** **$3,246.2 million** (or approximately $3.25 billion)\n* **Percentage of net revenues:** **51.1%**\n\n### Breakdown and Calculation:\nFrom the *Results of Operations* and *Selling, general and administrative expenses* tables:\n* **Total SG&A expenses:** $3,246.2 million\n* **Net revenues:** $6,355.3 million\n* **Percentage of net revenues:** \n  $$\\frac{\\$3,246.2\\text{ million}}{\\$6,355.3\\text{ million}} \\times 100 \\approx 51.078\\% \\rightarrow 51.1\\%$$\n\n*(Source: Accession `0000094845-25-000005`, Section `Filing Summary`, Chunk IDs `da80ad4b-2f94-5f0c-a589-c296c250a006` and `7800a9af-162a-5e50-b146-b4ba64b4b763`)*",
+    "message": {
+      "role": "assistant",
+      "content": "According to Levi Strauss & Co.'s Form 10-K for the fiscal year ended December 1, 2024:\n\n* **Selling, general and administrative (SG&A) expenses:** **$3,246.2 million** (or approximately $3.25 billion)\n* **Percentage of net revenues:** **51.1%**\n\n### Breakdown and Calculation:\nFrom the *Results of Operations* and *Selling, general and administrative expenses* tables:\n* **Total SG&A expenses:** $3,246.2 million\n* **Net revenues:** $6,355.3 million\n* **Percentage of net revenues:** \n  $$\\frac{\\$3,246.2\\text{ million}}{\\$6,355.3\\text{ million}} \\times 100 \\approx 51.078\\% \\rightarrow 51.1\\%$$\n\n*(Source: Accession `0000094845-25-000005`, Section `Filing Summary`, Chunk IDs `da80ad4b-2f94-5f0c-a589-c296c250a006` and `7800a9af-162a-5e50-b146-b4ba64b4b763`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1+XLb9bN3bvvgSG826L53PXzDB81qwA2BECgolGW6aBgg4fZbHZu0BsUBLawi3gS8uvLWu5MBZc1RPPAHKHMlXhT1dW4glrIEbIXxgrl2vav34G",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:04.858131+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "8293d996f88514baa5332d97:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041901-An9mh8LbRDfb74v2J4H1",
+    "usage": {
+      "prompt_tokens": 19837,
+      "completion_tokens": 312,
+      "total_tokens": 20149,
+      "cost": 0.01604775,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01604775,
+        "upstream_inference_prompt_cost": 0.01487775,
+        "upstream_inference_completions_cost": 0.00117
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.652744947999963,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 90, \"citation_support\": 95, \"rationale\": \"The candidate gives the correct fiscal 2024 SG&A figure ($3,246.2 million) and the correct 51.1% of net revenues. Its check against net revenues of $6,355.3 million (3246.2/6355.3 \u2248 51.08%) is arithmetically sound and matches the filing. It omits the prior-year comparison from the reference ($3,051.9 million in 2023, up 6.4%), which is a minor omission. Both cited chunk IDs appear in the retrieved excerpts and contain the SG&A table and the net revenues figure, so the citations are well supported. The section label 'Filing Summary' matches the retrieval metadata, though the gold section is labeled Item 7 MD&A.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 90, \"citation_support\": 95, \"rationale\": \"The candidate gives the correct fiscal 2024 SG&A figure ($3,246.2 million) and the correct 51.1% of net revenues. Its check against net revenues of $6,355.3 million (3246.2/6355.3 \u2248 51.08%) is arithmetically sound and matches the filing. It omits the prior-year comparison from the reference ($3,051.9 million in 2023, up 6.4%), which is a minor omission. Both cited chunk IDs appear in the retrieved excerpts and contain the SG&A table and the net revenues figure, so the citations are well supported. The section label 'Filing Summary' matches the retrieval metadata, though the gold section is labeled Item 7 MD&A.\"}",
+      "refusal": null,
+      "reasoning": "The SG&A figures match the reference exactly, with the percentage correctly computed, though the candidate leaves out the 6.4% year-over-year growth comparison. The citation's accession number checks out, but the section label reads \"Filing Summary\" rather than the expected MD&A section.\n\nSupport looks strong since both cited chunks contain the SG&A table and net revenues figures needed to back the claim, so I'd rate support around 95. Correctness is slightly lower, maybe 88-90, due to the missing YoY comparison that the reference includes.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The SG&A figures match the reference exactly, with the percentage correctly computed, though the candidate leaves out the 6.4% year-over-year growth comparison. The citation's accession number checks out, but the section label reads \"Filing Summary\" rather than the expected MD&A section.\n\nSupport looks strong since both cited chunks contain the SG&A table and net revenues figures needed to back the claim, so I'd rate support around 95. Correctness is slightly lower, maybe 88-90, due to the missing YoY comparison that the reference includes.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:28.018286+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "8293d996f88514baa5332d97:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042102-YKShIR9T1XrzT6BASMzx",
+    "usage": {
+      "prompt_tokens": 28146,
+      "completion_tokens": 651,
+      "total_tokens": 28797,
+      "cost": 0.0031401,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0031401,
+        "upstream_inference_prompt_cost": 0.0028146,
+        "upstream_inference_completions_cost": 0.0003255
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 388,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.681980637000379,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 90,
+    "citation_support": 95,
+    "rationale": "The candidate gives the correct fiscal 2024 SG&A figure ($3,246.2 million) and the correct 51.1% of net revenues. Its check against net revenues of $6,355.3 million (3246.2/6355.3 \u2248 51.08%) is arithmetically sound and matches the filing. It omits the prior-year comparison from the reference ($3,051.9 million in 2023, up 6.4%), which is a minor omission. Both cited chunk IDs appear in the retrieved excerpts and contain the SG&A table and the net revenues figure, so the citations are well supported. The section label 'Filing Summary' matches the retrieval metadata, though the gold section is labeled Item 7 MD&A."
+  },
+  "status": "ok"
+}

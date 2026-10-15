@@ -1,0 +1,1115 @@
+{
+  "question_id": "Q074",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/agentic",
+  "retrieval": {
+    "seconds": 52.085604926001,
+    "accession_recall": 0.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "I can\u2019t verify the relevant figures from the filings in this response, so I can\u2019t reliably say which company had the higher gross profit margin or calculate the percentage-point difference.",
+    "usage": {
+      "prompt_tokens": 51575,
+      "completion_tokens": 428,
+      "total_tokens": 52003,
+      "cost": 0.00225585
+    },
+    "seconds": 16.056498217000808,
+    "tool_seconds": 52.085604926001,
+    "tool_calls": 6,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_mWHMWpIKIsTni19r1Tzfilz5",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Adobe Inc fiscal year 2024 annual report gross profit revenue cost of revenue gross margin; NVIDIA Corporation fiscal year 2025 annual report revenue cost of revenue gross profit margin\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_mWHMWpIKIsTni19r1Tzfilz5",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Adobe Inc fiscal year 2024 annual report gross profit revenue cost of revenue gross margin; NVIDIA Corporation fiscal year 2025 annual report revenue cost of revenue gross profit margin\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:26:27.038923+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "93132e787aea0fccaa62702f:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041984-3GP0uHmji942DjsRZvkD",
+        "usage": {
+          "prompt_tokens": 808,
+          "completion_tokens": 51,
+          "total_tokens": 859,
+          "cost": 0.0001063,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0001063,
+            "upstream_inference_prompt_cost": 8.08e-05,
+            "upstream_inference_completions_cost": 2.55e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.393136040999707,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_qmI02aWzF8n3Z11JuKWWzfUv",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"company\":\"Adobe Inc.\",\"form_type\":\"10-K\",\"start_row\":0}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "call_k8T58dluRVQbHnQnhs3Ek3nt",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"company\":\"NVIDIA Corporation\",\"form_type\":\"10-K\",\"start_row\":0}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_qmI02aWzF8n3Z11JuKWWzfUv",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"company\":\"Adobe Inc.\",\"form_type\":\"10-K\",\"start_row\":0}"
+            }
+          },
+          {
+            "type": "function",
+            "index": 1,
+            "id": "call_k8T58dluRVQbHnQnhs3Ek3nt",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"company\":\"NVIDIA Corporation\",\"form_type\":\"10-K\",\"start_row\":0}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:29:53.032990+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "93132e787aea0fccaa62702f:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042190-oofHQNI4sZ1b4anqxDNx",
+        "usage": {
+          "prompt_tokens": 6611,
+          "completion_tokens": 133,
+          "total_tokens": 6744,
+          "cost": 0.0008928,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 6608,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0008928,
+            "upstream_inference_prompt_cost": 0.0008263,
+            "upstream_inference_completions_cost": 6.65e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.1207873820003442,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_bpCZcKNuyHf1UsmCt1XYbUcD",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"Adobe 2024 10-K total revenue gross profit fiscal year ended November 29 2024 gross margin 2024 2023 gross profit\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_bpCZcKNuyHf1UsmCt1XYbUcD",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"Adobe 2024 10-K total revenue gross profit fiscal year ended November 29 2024 gross margin 2024 2023 gross profit\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:34:28.865254+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "93132e787aea0fccaa62702f:agent:2",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042467-Nx6JWYHS4z8hcl0FLdJj",
+        "usage": {
+          "prompt_tokens": 6948,
+          "completion_tokens": 47,
+          "total_tokens": 6995,
+          "cost": 0.000132005,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 6608,
+            "cache_write_tokens": 337,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000132005,
+            "upstream_inference_prompt_cost": 0.000108505,
+            "upstream_inference_completions_cost": 2.35e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.0393039900000076,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_yWShATgiuGIEbhbtWtoBwjHd",
+              "function": {
+                "name": "duckdb_query",
+                "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month FROM filings WHERE accession IN ('796343','1045810') AND year=2024 LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_yWShATgiuGIEbhbtWtoBwjHd",
+            "function": {
+              "name": "duckdb_query",
+              "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month FROM filings WHERE accession IN ('796343','1045810') AND year=2024 LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:35:29.077072+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "93132e787aea0fccaa62702f:agent:3",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042526-P0yT3wLLdTX8iFTNYlWM",
+        "usage": {
+          "prompt_tokens": 12231,
+          "completion_tokens": 79,
+          "total_tokens": 12310,
+          "cost": 0.000769625,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 6945,
+            "cache_write_tokens": 5283,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000769625,
+            "upstream_inference_prompt_cost": 0.000730125,
+            "upstream_inference_completions_cost": 3.95e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.9969715020006333,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_WBbJt3esxUQNjlI63uaxziGs",
+              "function": {
+                "name": "duckdb_query",
+                "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month, accession FROM filings WHERE year=2024 AND month IN (12, 11) LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_WBbJt3esxUQNjlI63uaxziGs",
+            "function": {
+              "name": "duckdb_query",
+              "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month, accession FROM filings WHERE year=2024 AND month IN (12, 11) LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:35:45.861017+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "93132e787aea0fccaa62702f:agent:4",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042543-z8FJzcXugNTv19gj1Mf8",
+        "usage": {
+          "prompt_tokens": 12404,
+          "completion_tokens": 79,
+          "total_tokens": 12483,
+          "cost": 0.000183705,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 12228,
+            "cache_write_tokens": 173,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000183705,
+            "upstream_inference_prompt_cost": 0.000144205,
+            "upstream_inference_completions_cost": 3.95e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.7786947630002032,
+        "attempts": 1
+      },
+      {
+        "text": "I can\u2019t verify the relevant figures from the filings in this response, so I can\u2019t reliably say which company had the higher gross profit margin or calculate the percentage-point difference.",
+        "message": {
+          "role": "assistant",
+          "content": "I can\u2019t verify the relevant figures from the filings in this response, so I can\u2019t reliably say which company had the higher gross profit margin or calculate the percentage-point difference.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:36:04.294139+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "none"
+        },
+        "tag": "93132e787aea0fccaa62702f:agent:5",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042562-gtALmOSGCSo7kIqOYslI",
+        "usage": {
+          "prompt_tokens": 12573,
+          "completion_tokens": 39,
+          "total_tokens": 12612,
+          "cost": 0.000171415,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 12329,
+            "cache_write_tokens": 169,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000171415,
+            "upstream_inference_prompt_cost": 0.000151915,
+            "upstream_inference_completions_cost": 1.95e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.7276045389999126,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_mWHMWpIKIsTni19r1Tzfilz5",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Adobe Inc fiscal year 2024 annual report gross profit revenue cost of revenue gross margin; NVIDIA Corporation fiscal year 2025 annual report revenue cost of revenue gross profit margin\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0001410578-25-000056",
+              "cik": "0001779578",
+              "company": "BGM Group Ltd.",
+              "form_type": "20-F",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 440,
+              "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+              "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "d8f4a8e4-9596-54bd-af07-cd6f6ae3b040",
+              "section": "Fertilizer",
+              "section_index": 67,
+              "chunk_index": 0,
+              "char_start": 477761,
+              "char_end": 479638,
+              "text": "#### Fertilizer\n**Sales from fertilizer increased by $0.9 million, or 84%, from $1.1 million for the year ended September 30, 2022 to $2.0 million for the year ended September 30, 2023. For the fiscal year ended September 30, 2023, the sales are mainly made to governmental purchase program with higher price and large volume.**\n\n[**Table of Contents**](#TOC)\n\n**Cost of Revenue and Gross Profit**\n\nThe following tables set forth the calculation of gross profit and gross margin for the each of our segments:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n|  | **For the years ended** | **For the years ended** |  |  |\n|  | **September 30,** | **September 30,** | **Changes** | **Changes** |\n|  | **2023** | **2022** | **Amount** | **%** |\n| ***Oxytetracycline & licorice products and TCMD*** |  |  |  |  |\n| Net revenue | $29152228 | $40305988 | $(11153760) | (28)% |\n| Cost of revenue | 27392225 | 36210950 | (8818725) | (24)% |\n| Gross profit | $1760003 | $4095038 | $(2335035) | (57)% |\n| Gross Margin | 6.0% | 10.2% | (4.2)% |  |\n| ***Heparin products and sausage casing*** |  |  |  |  |\n| Net revenue | $15318798 | $23460467 | $(8141669) | (35)% |\n| Cost of revenue | 16267458 | 21656748 | (5389290) | (25)% |\n| Gross profit | $(948660) | $1803719 | $(2752379) | (153)% |\n| Gross Margin | (6.2)% | 7.7% | (13.9)% |  |\n| ***Fertilizer*** |  |  |  |  |\n| Net revenue | $2000453 | $1088570 | $911883 | 84% |\n| Cost of revenue | 1060302 | 760030 | 300272 | 40% |\n| Gross profit | $940151 | $328540 | $611611 | 186% |\n| Gross Margin | 47.0% | 30.2% | 16.8% |  |\n| ***Total*** |  |  |  |  |\n| Net revenue | $46471478 | $64855025 | $(18383547) | (28)% |\n| Cost of revenue | 44719984 | 58627728 | (13907743) | (24)% |\n| Gross profit | $1751494 | $6227297 | $(4475803) | (72)% |\n| Gross Margin | 3.8% | 9.6% | (5.8)% |  |\n\n---\n\n\n\n***Oxytetracycline & Licorice Products and TCMD***",
+              "token_count": 684,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "95234a34-90b8-541a-b88b-0fdcca80a311",
+              "section": "Gross profit/(loss) and gross profit/(loss) margin",
+              "section_index": 306,
+              "chunk_index": 0,
+              "char_start": 1088351,
+              "char_end": 1089170,
+              "text": "#### Gross profit/(loss) and gross profit/(loss) margin\nAs a result of the foregoing, we recorded gross profit of US$0.5 million and gross loss of US$0.4 million for the fiscal years ended June 30, 2024 and 2023, respectively, representing gross profit margin of 8.8% and gross loss margin of 81.6% for the same years, respectively.\n\nAs mentioned in the analysis of cost of revenues, we achieved gross profit for the fiscal year ended June 30, 2024, mainly due to: (i) increase of sales and (ii) better cost control on the production of *Q*-trucks, partially offset by the increase in the provision for inventory reserves. We expect that our gross margin will improve as the scale of economy of our business increases in accordance with the increase in our vehicle and component sales.\n\n[**Table of Contents**](#TOC001)",
+              "token_count": 195,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001437749-25-002182",
+              "cik": "0001084869",
+              "company": "1 800 FLOWERS COM INC",
+              "form_type": "8-K",
+              "filed_date": "20250130",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 776,
+              "source_md5": "7cd36f25382c9156c479a20ca3d1b88e",
+              "content_sha256": "eb93a36c8dd188301f2d18848efe9032acbe9fd2a509870129f7639656785c4b",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "bcb64636-3e11-5a48-80a6-436d8a2a0392",
+              "section": "Exhibit 99.1",
+              "section_index": 5,
+              "chunk_index": 1,
+              "char_start": 540824,
+              "char_end": 543760,
+              "text": "\u25cf Net income for the quarter was $64.3 million, or $1.00 per diluted share, as compared with net income of $62.9 million, or $0.97 per diluted share in the prior year period.\n\n\u25cf Adjusted Net Income<sup>1</sup> was $69.2 million, or $1.08 per diluted share, compared with an Adjusted Net Income<sup>1</sup> of $82.7 million, or $1.27 per diluted share, in the prior year period.\n\n\u25cf Adjusted EBITDA<sup>1</sup> for the quarter was $116.3 million, as compared with Adjusted EBITDA<sup>1</sup> of $130.1 million in the prior year period.\n\n**<u>Segment Results</u>**\n\nThe Company provides Fiscal 2025 second quarter financial results for its Gourmet Foods and Gift Baskets, Consumer Floral and Gifts, and BloomNet\u00ae segments in the tables attached to this release and as follows:\n\n\u25cf **Gourmet Foods and Gift Baskets**: Revenues for the quarter declined 4.0% to $518.5 million as compared with the prior year period. The Company estimates that the issues associated with the implementation of its new order management system resulted in lost revenue of approximately $20 million. Gross profit margin increased 30 basis points to 43.5%, benefiting from the Company's inventory and labor optimization efforts that offset the incremental costs associated with the order management system issues. Excluding the impact of the systems implementation costs, adjusted segment contribution margin<sup>1</sup> was $111.4 million, as compared with segment contribution margin<sup>1</sup> of $118.2 million in the prior year period.\n\n\u25cf **Consumer Floral & Gifts**: Revenues for the quarter declined 8.0% to $234.3 million as compared with the prior year period. Gross profit margin decreased 90 basis points to 41.9%, primarily due to deleveraging on the sales decline and a promotional consumer environment. Segment contribution margin<sup>1</sup> was $21.6 million, compared with adjusted segment contribution margin<sup>1</sup> of $30.4 million in the prior year period, excluding the intangible impairment.\n\n\u25cf **BloomNet**: Revenues for the quarter declined 16.2% to $22.8 million as compared with the prior year period. Revenue and gross margin were impacted by the lower volume of lower margin orders processed by BloomNet. Gross profit margin increased 330 basis points to 50.9% due to lower florist rebates. Segment contribution margin<sup>1</sup> was $7.5 million, compared with $9.1 million in the prior year period.\n\n1-800-FLOWERS.COM, Inc. \\| Fiscal 2024 Second Quarter Results \\| Page 2\n\n------\n\n**<u>Company Guidance</u>**\n\nBased on the Company's performance during its fiscal second quarter, the Company is updating its Fiscal 2025 guidance as outlined below. The Company expects its revenue trends to improve as the fiscal year progresses, benefiting from its Relationship Innovation initiatives that have expanded the Company's offerings, broadened price points and enhanced the user experience.\n\nFor Fiscal 2025, the company now expects:",
+              "token_count": 686,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000320187-25-000004",
+              "cik": "0000320187",
+              "company": "NIKE, Inc.",
+              "form_type": "10-Q",
+              "filed_date": "20250103",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 43713,
+              "source_md5": "2444bf04829ac85518721ff551dba986",
+              "content_sha256": "deda8fe46f6410d030410dafa7e2efac0601d30401671f36761f7a8c5bf308a9",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "d5fe7cd1-0a6b-5c98-88a0-3e069a38aafb",
+              "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 2,
+              "chunk_index": 2,
+              "char_start": 106955,
+              "char_end": 114435,
+              "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand footwear revenues decreased 12% on a currency-neutral basis. Unit sales of footwear decreased 7%, while lower average selling price (\"ASP\") per pair reduced footwear revenues by approximately 5 percentage points. Lower ASP per pair was primarily due to higher discounts and changes in channel mix.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand apparel revenues decreased 2% on a currency-neutral basis. Unit sales of apparel were flat, while lower ASP per unit reduced apparel revenues by approximately 2 percentage points. Lower ASP per unit was primarily due to changes in channel mix and higher discounts, partially offset by strategic pricing actions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand wholesale revenues decreased 3% on a reported basis and 4% on a currency-neutral basis. The decrease on a currency-neutral basis was driven by lower revenues in Greater China, EMEA, North America and Asia Pacific & Latin America (\"APLA\").\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Direct revenues were $5.0 billion in the second quarter of fiscal 2025, compared to $5.7 billion for the second quarter of fiscal 2024. NIKE Brand Digital sales were $2.8 billion for the second quarter of fiscal 2025 compared to $3.5 billion for the second quarter of fiscal 2024. On a currency-neutral basis, NIKE Direct revenues decreased 14%, primarily due to NIKE Brand Digital sales declines of 21% and comparable store sales declines of 2% compared to the second quarter of fiscal 2024. For additional information regarding comparable store sales, including the definition, see \"Comparable Store Sales\".\n\n**FIRST SIX MONTHS OF FISCAL 2025 COMPARED TO FIRST SIX MONTHS OF FISCAL 2024**\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE, Inc. Revenues were $23.9 billion for the first six months of fiscal 2025 compared to $26.3 billion for the first six months of fiscal 2024. On a currency-neutral basis, NIKE, Inc. Revenues decreased 9%, primarily due to lower revenues in North America, EMEA, Greater China and Converse which each reduced NIKE, Inc. Revenues by 4, 3, 1 and 1 percentage points, respectively.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand revenues, which represented over 90% of NIKE, Inc. Revenues, decreased 9% on a reported basis and 9% on a currency-neutral basis. The decrease on a currency-neutral basis was due to lower revenues in Men's, the Jordan Brand, Women's and Kids'.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand footwear revenues decreased 11% on a currency-neutral basis. Unit sales of footwear decreased 9%, while lower ASP per pair reduced footwear revenues by approximately 2 percentage points. Lower ASP per pair was primarily due to higher discounts and changes in channel mix, partially offset by strategic pricing actions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand apparel revenues decreased 6% on a currency-neutral basis. Unit sales of apparel decreased 6%,while ASP per unit was flat, as strategic pricing actions and lower discounts were offset by changes in channel mix.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand wholesale revenues decreased 5% on a reported and currency-neutral basis. The decrease on a currency-neutral basis was driven by lower revenues in EMEA, North America, Greater China and APLA.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Direct revenues were $9.7 billion for the first six months of fiscal 2025, compared to $11.1 billion for the first six months of fiscal 2024. NIKE Brand Digital sales were $5.1 billion for the first six months of fiscal 2025 compared to $6.4 billion for the first six months of fiscal 2024. On a currency-neutral basis, NIKE Direct revenues decreased 13%, primarily due to NIKE Brand Digital sales declines of 20% and comparable store sales declines of 1% compared to the first six months of fiscal 2024.\n\n**GROSS MARGIN**\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** |\n|<br>*(Dollars in millions)* | **2024** | **2023** | **% CHANGE** | **2024** | **2023** | **% CHANGE** |\n| Gross profit | $5389 | $5971 | -10% | $10646 | $11691 | -9% |\n| Gross margin | 43.6% | 44.6% | (100) bps | 44.5% | 44.4% | 10 bps |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i5758c2e154794461aaebb231a4c2a401_7)</u>\n\n**SECOND QUARTER OF FISCAL 2025 COMPARED TO SECOND QUARTER OF FISCAL 2024**\n\nFor the second quarter of fiscal 2025, our consolidated gross margin was 100 basis points lower than the prior year due to:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand ASP (decreasing gross margin approximately 330 basis points), primarily due to higher discounts, product mix and changes in channel mix, partially offset by benefits from strategic pricing actions;\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Higher other costs (decreasing gross margin approximately 70 basis points), in part due to higher inventory obsolescence reserves; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower gross margin from Converse (decreasing gross margin approximately 20 basis points).\n\nThis was partially offset by:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand product costs (increasing gross margin approximately 260 basis points), primarily due to product mix and lower product input costs;\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower warehousing and logistics costs (increasing gross margin approximately 50 basis points); and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Favorable changes in foreign currency exchange rates, net of hedges (increasing gross margin approximately 20 basis points).\n\n**FIRST SIX MONTHS OF FISCAL 2025 COMPARED TO FIRST SIX MONTHS OF FISCAL 2024**\n\nFor the first six months of fiscal 2025, our consolidated gross margin was 10 basis points higher than the prior year due to:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand product costs (increasing gross margin approximately 190 basis points), primarily due to product mix; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower warehousing and logistics costs (increasing gross margin approximately 50 basis points).\n\nThis was partially offset by:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand ASP (decreasing gross margin approximately 150 basis points), primarily due to changes in channel mix, higher discounts and product mix, partially offset by benefits from strategic pricing actions; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Higher other costs (decreasing gross margin approximately 60 basis points), in part due to higher inventory obsolescence reserves.\n\n**TOTAL SELLING AND ADMINISTRATIVE EXPENSE**\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** |\n|<br>*(Dollars in millions)* | **2024** | **2023** | **% CHANGE** | **2024** | **2023** | **% CHANGE** |\n| Demand creation expense<sup>(1)</sup> | $1122 | $1114 | 1% | $2348 | $2183 | 8% |\n| Operating overhead expense<sup>(2)</sup> | 2883 | 3032 | -5% | 5705 | 6079 | -6% |\n| Total selling and administrative expense | $4005 | $4146 | -3% | $8053 | $8262 | -3% |\n| &nbsp;&nbsp;&nbsp;% of revenues | 32.4% | 31.0% | 140 bps | 33.6% | 31.4% | 220 bps |\n\n---",
+              "token_count": 1995,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001410578-25-000056",
+              "cik": "0001779578",
+              "company": "BGM Group Ltd.",
+              "form_type": "20-F",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 440,
+              "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+              "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "e584e080-5592-590b-a262-8341d4f3a290",
+              "section": "Non-GAAP Financial Measures - EBITDA",
+              "section_index": 63,
+              "chunk_index": 5,
+              "char_start": 465057,
+              "char_end": 466416,
+              "text": "| | | | | |\n|:---|:---|:---|:---|:---|\n|  | **For the years ended** | **For the years ended** |  |  |\n|  | **September 30,** | **September 30,** | **Changes** | **Changes** |\n|  | **2024** | **2023** | **Amount** | **%** |\n| ***Oxytetracycline & licorice products and TCMD*** |  |  |  |  |\n| Net revenue | $21961282 | $29152228 | $(7190946) | (25)% |\n| Cost of revenue | 18324619 | 27392225 | (9067606) | (33)% |\n| Gross profit | $3636663 | $1760003 | $1876660 | 107% |\n| Gross Margin | 16.6% | 6.0% | 10.6% |  |\n| ***Heparin products and sausage casing*** |  |  |  |  |\n| Net revenue | $2230759 | $15318798 | $(13088039) | (85)% |\n| Cost of revenue | 2105248 | 16267458 | (14162210) | (87)% |\n| Gross profit | $125511 | $(948660) | $1074171 | (113)% |\n| Gross Margin | 5.6% | (6.2)% | 11.8% |  |\n| ***Fertilizer*** |  |  |  |  |\n| Net revenue | $905910 | $2000453 | $(1094543) | (55)% |\n| Cost of revenue | 553329 | 1060302 | (506973) | (48)% |\n| Gross profit | $352581 | $940151 | $(587570) | (62)% |\n| Gross Margin | 38.9% | 47.0% | (8.1)% |  |\n| ***Total*** |  |  |  |  |\n| Net revenue | $25097951 | $46471478 | $(21373527) | (46)% |\n| Cost of revenue | 20983196 | 44719984 | (23736788) | (53)% |\n| Gross profit | $4114755 | $1751494 | $2363261 | 135% |\n| Gross Margin | 16.4% | 3.8% | 12.6% |  |\n\n---\n\n\n\n***Oxytetracycline & Licorice Products and TCMD***",
+              "token_count": 556,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.0189623180003764
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_qmI02aWzF8n3Z11JuKWWzfUv",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\",\"company\":\"Adobe Inc.\",\"form_type\":\"10-K\",\"start_row\":0}"
+          }
+        },
+        "output": {
+          "error": "malloc of size 646993472 failed",
+          "error_type": "ArrowMemoryError",
+          "resources": {
+            "peak_rss_mib": 1020.265625,
+            "cpu_seconds": 9.098003,
+            "wall_seconds": 9.178769051999552,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 9.259074391000468
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 1,
+          "id": "call_k8T58dluRVQbHnQnhs3Ek3nt",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\",\"company\":\"NVIDIA Corporation\",\"form_type\":\"10-K\",\"start_row\":0}"
+          }
+        },
+        "output": {
+          "error": "malloc of size 1182595840 failed",
+          "error_type": "ArrowMemoryError",
+          "resources": {
+            "peak_rss_mib": 981.5859375,
+            "cpu_seconds": 6.649168,
+            "wall_seconds": 6.6967028609997215,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 6.7649175110000215
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_bpCZcKNuyHf1UsmCt1XYbUcD",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"Adobe 2024 10-K total revenue gross profit fiscal year ended November 29 2024 gross margin 2024 2023 gross profit\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "622fc496-e096-569c-9066-ce5bf9eb19c3",
+              "section": "Gross profit/(loss) and gross profit/(loss) margin",
+              "section_index": 294,
+              "chunk_index": 0,
+              "char_start": 1076691,
+              "char_end": 1077470,
+              "text": "#### Gross profit/(loss) and gross profit/(loss) margin\nThe following table sets forth the breakdown of our gross loss and gross loss margin by revenue streams for the periods indicated.\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n|  | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** |\n|  | **2024** | **2024** | **2023** | **2023** |\n|  | **US$** | **%** | **US$** | **%** |\n|  **Gross (loss)/profit:** |  |  |  |  |\n|  Sales of NEVs and components | 536456 | 8.8 | (339194) | (77.4) |\n|  Leasing of NEVs |  |  | (18122) | (4.2) |\n|  **Total gross (loss)/profit** | **536456** | **8.8** | **(357316)** | **(81.6)** |\n\n---\n\n\n\n[**Table of Contents**](#TOC001)",
+              "token_count": 272,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "95234a34-90b8-541a-b88b-0fdcca80a311",
+              "section": "Gross profit/(loss) and gross profit/(loss) margin",
+              "section_index": 306,
+              "chunk_index": 0,
+              "char_start": 1088351,
+              "char_end": 1089170,
+              "text": "#### Gross profit/(loss) and gross profit/(loss) margin\nAs a result of the foregoing, we recorded gross profit of US$0.5 million and gross loss of US$0.4 million for the fiscal years ended June 30, 2024 and 2023, respectively, representing gross profit margin of 8.8% and gross loss margin of 81.6% for the same years, respectively.\n\nAs mentioned in the analysis of cost of revenues, we achieved gross profit for the fiscal year ended June 30, 2024, mainly due to: (i) increase of sales and (ii) better cost control on the production of *Q*-trucks, partially offset by the increase in the provision for inventory reserves. We expect that our gross margin will improve as the scale of economy of our business increases in accordance with the increase in our vehicle and component sales.\n\n[**Table of Contents**](#TOC001)",
+              "token_count": 195,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001043277-25-000012",
+              "cik": "0001043277",
+              "company": "C. H. ROBINSON WORLDWIDE, INC.",
+              "form_type": "10-K",
+              "filed_date": "20250214",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 54979,
+              "source_md5": "bd3ce75d63bb2ab78c2ea72a91cc2109",
+              "content_sha256": "62b8bfd6b09a986f878757f6470017b78f37c171fa33f4cdfb8dbbe621a3471f",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "51078d1a-e98a-5e43-adcd-ee3b7a99daa4",
+              "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 10,
+              "chunk_index": 0,
+              "char_start": 123009,
+              "char_end": 131279,
+              "text": "**ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS** \n\n**OVERVIEW**\n\nC.H. Robinson Worldwide, Inc. (\"C.H. Robinson,\" \"the company,\" \"we,\" \"us,\" or \"our\") is one of the largest global logistics providers in the world, with consolidated total revenues of $17.7 billion in 2024. We deliver logistics like no one else. Companies around the world look to us to reimagine supply chains, advance freight technology, and solve logistics\n\nchallenges\u2014from the simple to the complex. We are grounded in our promise to deliver exceptional customer success, using our expertise, scale, and tailored solutions to help customers navigate increasingly complex global supply chains.\n\nOur adjusted gross profits and adjusted gross profit margin are non-GAAP financial measures. Adjusted gross profits is calculated as gross profits excluding amortization of internally developed software utilized to directly serve our customers and contracted carriers. Adjusted gross profit margin is calculated as adjusted gross profits divided by total revenues. We believe adjusted gross profits and adjusted gross profit margin are useful measures of our ability to source, add value, and sell services and products that are provided by third parties, and we consider adjusted gross profits to be a primary performance measurement. Accordingly, the discussion of our results of operations often focuses on the changes in our adjusted gross profits and adjusted gross profit margin. The reconciliation of gross profits to adjusted gross profits and gross profit margin to adjusted gross profit margin is presented below (dollars in thousands):\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** |\n| | **2024** | **2024** | **2023** | **2023** | **2022** | **2022** |\n| **Revenues:** |  |  |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transportation | $16353745 |  | $16372660 |  | $23516384 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sourcing | 1371211 |  | 1223783 |  | 1180241 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total revenues | 17724956 |  | 17596443 |  | 24696625 |  |\n| **Costs and expenses:** |  |  |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchased transportation and related services | 13719935 |  | 13886024 |  | 20035715 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchased products sourced for resale | 1240007 |  | 1105811 |  | 1067733 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Direct internally developed software amortization | 44308 |  | 33620 |  | 25487 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Total direct costs** | 15004250 |  | 15025455 |  | 21128935 |  |\n| **Gross profits/Gross profit margin** | 2720706 | 15.3% | 2570988 | 14.6% | 3567690 | 14.4% |\n| Plus: Direct internally developed software amortization | 44308 |  | 33620 |  | 25487 |  |\n| **Adjusted gross profits/Adjusted gross profit margin** | $2765014 | 15.6% | $2604608 | 14.8% | $3593177 | 14.5% |\n\n---\n\n\n\nOur adjusted operating margin is a non-GAAP financial measure calculated as operating income divided by adjusted gross profit. We believe adjusted operating margin is a useful measure of our profitability in comparison to our adjusted gross profit, which we consider a primary performance metric as discussed above. The reconciliation of operating margin to adjusted operating margin is presented below (dollars in thousands):\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** |\n| | **2024** | **2023** | **2022** |\n| Total revenues | $17724956 | $17596443 | $24696625 |\n| Operating income | 669141 | 514607 | 1266782 |\n| Operating margin | 3.8% | 2.9% | 5.1% |\n| Adjusted gross profit | $2765014 | $2604608 | $3593177 |\n| Operating income | 669141 | 514607 | 1266782 |\n| Adjusted operating margin | 24.2% | 19.8% | 35.3% |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i67881dcefe0c4c379cc7e0dc20deaafb_7)</u>\n\n**MARKET TRENDS**\n\nThe North America surface transportation market continued to experience excess carrier capacity relative to shipper demand throughout 2024, which resulted in an oversupplied and very competitive market. These conditions are typically referred to as a soft market and resulted in transportation rates at, or near, the estimated cost to operate a truck for much of 2024. Although carrier capacity has begun exiting the market, it has been at rates much slower than is typically seen at this stage of the market cycle. One of the key metrics we use to measure market conditions is the truckload routing guide depth from our Managed Solutions business. Routing guide depth represents the average number of carriers contacted prior to acceptance when procuring a transportation provider. Average routing guide depth has remained low throughout 2024 and finished the year at 1.3, representing that on average, the first carrier in a shipper's routing guide was executing the shipment in most cases. Average routing guide depth at the end of 2023 was 1.2 and held at that level before increasing slightly at the end of 2024.\n\nThe global forwarding market experienced significant volatility in 2024, impacted by re-routing, extended transit times, and improving demand. Most carriers avoided the Suez Canal for the majority of 2024 due to the Red Sea conflict, which increased transit times, straining global carrier capacity. Consequently, ocean freight rates have remained elevated compared to the prior year. Uncertainty remains on how the Red Sea conflict, along with geopolitical factors and new capacity entering the market, will impact the global forwarding market in 2025. The global air freight market has largely stabilized, although air freight costs remain elevated compared to the prior year. The elevated ecommerce export demand from Asia during much of 2024 resulted in the repositioning of air freight capacity to that trade lane, causing freighter capacity shortages in other trade lanes and driving up pricing in the market in certain trade lanes.\n\n**BUSINESS TRENDS**\n\nOur 2024 surface transportation results were largely consistent with the trends discussed in the market trends section and similar to trends experienced in the prior year. The weak freight demand and excess carrier capacity in the market resulted in most shipments moving under committed pricing agreements and suppressed freight rates on the limited number of shipments reaching the spot market for most of 2024. Despite these challenging market conditions, we were able to improve our adjusted gross profit per transaction in 2024 compared to 2023 as a result of disciplined pricing and capacity procurement efforts leading to better adjusted gross profits per transaction within our transactional portfolio. Our average truckload linehaul cost per mile, excluding fuel surcharges, decreased approximately 5.5 percent during 2024. Our average truckload linehaul rate charged to our customers, excluding fuel surcharges, decreased approximately 5.0 percent during 2024.\n\nOur 2024 Global Forwarding results were largely consistent with the trends discussed above in the market trends section. We experienced elevated purchased transportation costs in 2024 compared to the prior year, resulting in increased total revenues and cost of purchased transportation in ocean services. In 2024, the global forwarding market faced disruptions that led to a significant rise in freight rates. This contrasts with 2023, which saw weak demand and elevated levels of capacity. These market dynamics resulted in a notable increase in both total revenues and cost of purchased transportation compared to the previous year. Our total ocean freight volumes increased 5.5 percent while our air freight tonnage increased 17.0 percent in 2024 compared to the prior year.\n\n**SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS**\n\nThe following summarizes select 2024 year-over-year operating comparisons to 2023:",
+              "token_count": 1945,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001410578-25-000056",
+              "cik": "0001779578",
+              "company": "BGM Group Ltd.",
+              "form_type": "20-F",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 440,
+              "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+              "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "e584e080-5592-590b-a262-8341d4f3a290",
+              "section": "Non-GAAP Financial Measures - EBITDA",
+              "section_index": 63,
+              "chunk_index": 5,
+              "char_start": 465057,
+              "char_end": 466416,
+              "text": "| | | | | |\n|:---|:---|:---|:---|:---|\n|  | **For the years ended** | **For the years ended** |  |  |\n|  | **September 30,** | **September 30,** | **Changes** | **Changes** |\n|  | **2024** | **2023** | **Amount** | **%** |\n| ***Oxytetracycline & licorice products and TCMD*** |  |  |  |  |\n| Net revenue | $21961282 | $29152228 | $(7190946) | (25)% |\n| Cost of revenue | 18324619 | 27392225 | (9067606) | (33)% |\n| Gross profit | $3636663 | $1760003 | $1876660 | 107% |\n| Gross Margin | 16.6% | 6.0% | 10.6% |  |\n| ***Heparin products and sausage casing*** |  |  |  |  |\n| Net revenue | $2230759 | $15318798 | $(13088039) | (85)% |\n| Cost of revenue | 2105248 | 16267458 | (14162210) | (87)% |\n| Gross profit | $125511 | $(948660) | $1074171 | (113)% |\n| Gross Margin | 5.6% | (6.2)% | 11.8% |  |\n| ***Fertilizer*** |  |  |  |  |\n| Net revenue | $905910 | $2000453 | $(1094543) | (55)% |\n| Cost of revenue | 553329 | 1060302 | (506973) | (48)% |\n| Gross profit | $352581 | $940151 | $(587570) | (62)% |\n| Gross Margin | 38.9% | 47.0% | (8.1)% |  |\n| ***Total*** |  |  |  |  |\n| Net revenue | $25097951 | $46471478 | $(21373527) | (46)% |\n| Cost of revenue | 20983196 | 44719984 | (23736788) | (53)% |\n| Gross profit | $4114755 | $1751494 | $2363261 | 135% |\n| Gross Margin | 16.4% | 3.8% | 12.6% |  |\n\n---\n\n\n\n***Oxytetracycline & Licorice Products and TCMD***",
+              "token_count": 556,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001437749-25-002365",
+              "cik": "0001084869",
+              "company": "1 800 FLOWERS COM INC",
+              "form_type": "10-Q",
+              "filed_date": "20250131",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 778,
+              "source_md5": "984a9d846e8a798493f26af7aab2cd8b",
+              "content_sha256": "82f88b7adce8ad752aa4bfb48556843a6245f9b1088b593ed8b3bef3e8e6b713",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "b6d5e326-7a7e-5ccf-9375-3e4697449f96",
+              "section": "ITEM 2. MANAGEMENT**'**S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+              "section_index": 2,
+              "chunk_index": 17,
+              "char_start": 103775,
+              "char_end": 106459,
+              "text": "| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n|  | **Three Months Ended** | **Three Months Ended** | **Three Months Ended** | **Six Months Ended** | **Six Months Ended** | **Six Months Ended** |\n|  | **December 29,** | **December 31,** | **%** | **December 29,** | **December 31,** | **%** |\n|  | **2024** | **2023** | **Change** | **2024** | **2023** | **Change** |\n|  | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* |\n| Gross profit | $335593 | $355697 | -5.7% | $427912 | $457625 | -6.5% |\n| Gross profit % | 43.3% | 43.3% |  | 42.1% | 41.9% |  |\n\n---\n\n\n\nGross profit consists of net revenues less cost of revenues, which is comprised primarily of florist fulfillment costs (fees paid directly to florists), the cost of floral and non-floral merchandise sold from inventory or through third parties, and associated costs, including inbound and outbound shipping charges. Additionally, cost of revenues includes labor and facility costs related to direct-to-consumer and wholesale production operations, as well as payments made to sending florists related to order volume referred through the Company's BloomNet network.\n\nGross profit decreased 5.7% and 6.5% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, due to lower revenues as noted above.\n\nDuring the three months ended December 29, 2024, the gross profit percentage was in-line with the same period of the prior year. During the six months ended December 29, 2024, the gross profit percentage increased 20 basis points compared to the same period of the prior year, which was driven by increased gross profit percentage in the BloomNet and Gourmet Foods & Gift Baskets segments.\n\nGross profit by segment follows:\n\n**Consumer Floral & Gifts segment** - Gross profit decreased by 10.0% and 8.0% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, due to the impact of the lower revenues noted above, as well as the unfavorable gross profit percentage primarily attributable to higher cost of merchandise.\n\n**BloomNet segment -** Gross profit decreased by 10.4% and 15.7% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, due to the decrease in revenues noted above, partially offset by an increase in the gross profit percentage. Gross profit percentage increased in comparison to the same periods of the prior year due to lower florist rebates, which was driven by lower florist-to-florist volume.",
+              "token_count": 669,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 6.348380989999896
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_yWShATgiuGIEbhbtWtoBwjHd",
+          "function": {
+            "name": "duckdb_query",
+            "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month FROM filings WHERE accession IN ('796343','1045810') AND year=2024 LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-02.parquet\"}"
+          }
+        },
+        "output": {
+          "rows": [],
+          "truncated": false,
+          "resources": {
+            "peak_rss_mib": 506.51953125,
+            "cpu_seconds": 0.5548420000000001,
+            "wall_seconds": 0.501602639000339,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 13.997949473000517
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_WBbJt3esxUQNjlI63uaxziGs",
+          "function": {
+            "name": "duckdb_query",
+            "arguments": "{\"sql\":\"SELECT file_stem, source_path, year, month, accession FROM filings WHERE year=2024 AND month IN (12, 11) LIMIT 20\",\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-01.parquet\"}"
+          }
+        },
+        "output": {
+          "rows": [],
+          "truncated": false,
+          "resources": {
+            "peak_rss_mib": 507.64453125,
+            "cpu_seconds": 0.513084,
+            "wall_seconds": 0.469727270000476,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 15.696320242999718
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0001410578-25-000056",
+        "cik": "0001779578",
+        "company": "BGM Group Ltd.",
+        "form_type": "20-F",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 440,
+        "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+        "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "d8f4a8e4-9596-54bd-af07-cd6f6ae3b040",
+        "section": "Fertilizer",
+        "section_index": 67,
+        "chunk_index": 0,
+        "char_start": 477761,
+        "char_end": 479638,
+        "text": "#### Fertilizer\n**Sales from fertilizer increased by $0.9 million, or 84%, from $1.1 million for the year ended September 30, 2022 to $2.0 million for the year ended September 30, 2023. For the fiscal year ended September 30, 2023, the sales are mainly made to governmental purchase program with higher price and large volume.**\n\n[**Table of Contents**](#TOC)\n\n**Cost of Revenue and Gross Profit**\n\nThe following tables set forth the calculation of gross profit and gross margin for the each of our segments:\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n|  | **For the years ended** | **For the years ended** |  |  |\n|  | **September 30,** | **September 30,** | **Changes** | **Changes** |\n|  | **2023** | **2022** | **Amount** | **%** |\n| ***Oxytetracycline & licorice products and TCMD*** |  |  |  |  |\n| Net revenue | $29152228 | $40305988 | $(11153760) | (28)% |\n| Cost of revenue | 27392225 | 36210950 | (8818725) | (24)% |\n| Gross profit | $1760003 | $4095038 | $(2335035) | (57)% |\n| Gross Margin | 6.0% | 10.2% | (4.2)% |  |\n| ***Heparin products and sausage casing*** |  |  |  |  |\n| Net revenue | $15318798 | $23460467 | $(8141669) | (35)% |\n| Cost of revenue | 16267458 | 21656748 | (5389290) | (25)% |\n| Gross profit | $(948660) | $1803719 | $(2752379) | (153)% |\n| Gross Margin | (6.2)% | 7.7% | (13.9)% |  |\n| ***Fertilizer*** |  |  |  |  |\n| Net revenue | $2000453 | $1088570 | $911883 | 84% |\n| Cost of revenue | 1060302 | 760030 | 300272 | 40% |\n| Gross profit | $940151 | $328540 | $611611 | 186% |\n| Gross Margin | 47.0% | 30.2% | 16.8% |  |\n| ***Total*** |  |  |  |  |\n| Net revenue | $46471478 | $64855025 | $(18383547) | (28)% |\n| Cost of revenue | 44719984 | 58627728 | (13907743) | (24)% |\n| Gross profit | $1751494 | $6227297 | $(4475803) | (72)% |\n| Gross Margin | 3.8% | 9.6% | (5.8)% |  |\n\n---\n\n\n\n***Oxytetracycline & Licorice Products and TCMD***",
+        "token_count": 684,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "95234a34-90b8-541a-b88b-0fdcca80a311",
+        "section": "Gross profit/(loss) and gross profit/(loss) margin",
+        "section_index": 306,
+        "chunk_index": 0,
+        "char_start": 1088351,
+        "char_end": 1089170,
+        "text": "#### Gross profit/(loss) and gross profit/(loss) margin\nAs a result of the foregoing, we recorded gross profit of US$0.5 million and gross loss of US$0.4 million for the fiscal years ended June 30, 2024 and 2023, respectively, representing gross profit margin of 8.8% and gross loss margin of 81.6% for the same years, respectively.\n\nAs mentioned in the analysis of cost of revenues, we achieved gross profit for the fiscal year ended June 30, 2024, mainly due to: (i) increase of sales and (ii) better cost control on the production of *Q*-trucks, partially offset by the increase in the provision for inventory reserves. We expect that our gross margin will improve as the scale of economy of our business increases in accordance with the increase in our vehicle and component sales.\n\n[**Table of Contents**](#TOC001)",
+        "token_count": 195,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001437749-25-002182",
+        "cik": "0001084869",
+        "company": "1 800 FLOWERS COM INC",
+        "form_type": "8-K",
+        "filed_date": "20250130",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 776,
+        "source_md5": "7cd36f25382c9156c479a20ca3d1b88e",
+        "content_sha256": "eb93a36c8dd188301f2d18848efe9032acbe9fd2a509870129f7639656785c4b",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "bcb64636-3e11-5a48-80a6-436d8a2a0392",
+        "section": "Exhibit 99.1",
+        "section_index": 5,
+        "chunk_index": 1,
+        "char_start": 540824,
+        "char_end": 543760,
+        "text": "\u25cf Net income for the quarter was $64.3 million, or $1.00 per diluted share, as compared with net income of $62.9 million, or $0.97 per diluted share in the prior year period.\n\n\u25cf Adjusted Net Income<sup>1</sup> was $69.2 million, or $1.08 per diluted share, compared with an Adjusted Net Income<sup>1</sup> of $82.7 million, or $1.27 per diluted share, in the prior year period.\n\n\u25cf Adjusted EBITDA<sup>1</sup> for the quarter was $116.3 million, as compared with Adjusted EBITDA<sup>1</sup> of $130.1 million in the prior year period.\n\n**<u>Segment Results</u>**\n\nThe Company provides Fiscal 2025 second quarter financial results for its Gourmet Foods and Gift Baskets, Consumer Floral and Gifts, and BloomNet\u00ae segments in the tables attached to this release and as follows:\n\n\u25cf **Gourmet Foods and Gift Baskets**: Revenues for the quarter declined 4.0% to $518.5 million as compared with the prior year period. The Company estimates that the issues associated with the implementation of its new order management system resulted in lost revenue of approximately $20 million. Gross profit margin increased 30 basis points to 43.5%, benefiting from the Company's inventory and labor optimization efforts that offset the incremental costs associated with the order management system issues. Excluding the impact of the systems implementation costs, adjusted segment contribution margin<sup>1</sup> was $111.4 million, as compared with segment contribution margin<sup>1</sup> of $118.2 million in the prior year period.\n\n\u25cf **Consumer Floral & Gifts**: Revenues for the quarter declined 8.0% to $234.3 million as compared with the prior year period. Gross profit margin decreased 90 basis points to 41.9%, primarily due to deleveraging on the sales decline and a promotional consumer environment. Segment contribution margin<sup>1</sup> was $21.6 million, compared with adjusted segment contribution margin<sup>1</sup> of $30.4 million in the prior year period, excluding the intangible impairment.\n\n\u25cf **BloomNet**: Revenues for the quarter declined 16.2% to $22.8 million as compared with the prior year period. Revenue and gross margin were impacted by the lower volume of lower margin orders processed by BloomNet. Gross profit margin increased 330 basis points to 50.9% due to lower florist rebates. Segment contribution margin<sup>1</sup> was $7.5 million, compared with $9.1 million in the prior year period.\n\n1-800-FLOWERS.COM, Inc. \\| Fiscal 2024 Second Quarter Results \\| Page 2\n\n------\n\n**<u>Company Guidance</u>**\n\nBased on the Company's performance during its fiscal second quarter, the Company is updating its Fiscal 2025 guidance as outlined below. The Company expects its revenue trends to improve as the fiscal year progresses, benefiting from its Relationship Innovation initiatives that have expanded the Company's offerings, broadened price points and enhanced the user experience.\n\nFor Fiscal 2025, the company now expects:",
+        "token_count": 686,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000320187-25-000004",
+        "cik": "0000320187",
+        "company": "NIKE, Inc.",
+        "form_type": "10-Q",
+        "filed_date": "20250103",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 43713,
+        "source_md5": "2444bf04829ac85518721ff551dba986",
+        "content_sha256": "deda8fe46f6410d030410dafa7e2efac0601d30401671f36761f7a8c5bf308a9",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "d5fe7cd1-0a6b-5c98-88a0-3e069a38aafb",
+        "section": "ITEM 2. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 2,
+        "chunk_index": 2,
+        "char_start": 106955,
+        "char_end": 114435,
+        "text": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand footwear revenues decreased 12% on a currency-neutral basis. Unit sales of footwear decreased 7%, while lower average selling price (\"ASP\") per pair reduced footwear revenues by approximately 5 percentage points. Lower ASP per pair was primarily due to higher discounts and changes in channel mix.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand apparel revenues decreased 2% on a currency-neutral basis. Unit sales of apparel were flat, while lower ASP per unit reduced apparel revenues by approximately 2 percentage points. Lower ASP per unit was primarily due to changes in channel mix and higher discounts, partially offset by strategic pricing actions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand wholesale revenues decreased 3% on a reported basis and 4% on a currency-neutral basis. The decrease on a currency-neutral basis was driven by lower revenues in Greater China, EMEA, North America and Asia Pacific & Latin America (\"APLA\").\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Direct revenues were $5.0 billion in the second quarter of fiscal 2025, compared to $5.7 billion for the second quarter of fiscal 2024. NIKE Brand Digital sales were $2.8 billion for the second quarter of fiscal 2025 compared to $3.5 billion for the second quarter of fiscal 2024. On a currency-neutral basis, NIKE Direct revenues decreased 14%, primarily due to NIKE Brand Digital sales declines of 21% and comparable store sales declines of 2% compared to the second quarter of fiscal 2024. For additional information regarding comparable store sales, including the definition, see \"Comparable Store Sales\".\n\n**FIRST SIX MONTHS OF FISCAL 2025 COMPARED TO FIRST SIX MONTHS OF FISCAL 2024**\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE, Inc. Revenues were $23.9 billion for the first six months of fiscal 2025 compared to $26.3 billion for the first six months of fiscal 2024. On a currency-neutral basis, NIKE, Inc. Revenues decreased 9%, primarily due to lower revenues in North America, EMEA, Greater China and Converse which each reduced NIKE, Inc. Revenues by 4, 3, 1 and 1 percentage points, respectively.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand revenues, which represented over 90% of NIKE, Inc. Revenues, decreased 9% on a reported basis and 9% on a currency-neutral basis. The decrease on a currency-neutral basis was due to lower revenues in Men's, the Jordan Brand, Women's and Kids'.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand footwear revenues decreased 11% on a currency-neutral basis. Unit sales of footwear decreased 9%, while lower ASP per pair reduced footwear revenues by approximately 2 percentage points. Lower ASP per pair was primarily due to higher discounts and changes in channel mix, partially offset by strategic pricing actions.\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand apparel revenues decreased 6% on a currency-neutral basis. Unit sales of apparel decreased 6%,while ASP per unit was flat, as strategic pricing actions and lower discounts were offset by changes in channel mix.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Brand wholesale revenues decreased 5% on a reported and currency-neutral basis. The decrease on a currency-neutral basis was driven by lower revenues in EMEA, North America, Greater China and APLA.\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 NIKE Direct revenues were $9.7 billion for the first six months of fiscal 2025, compared to $11.1 billion for the first six months of fiscal 2024. NIKE Brand Digital sales were $5.1 billion for the first six months of fiscal 2025 compared to $6.4 billion for the first six months of fiscal 2024. On a currency-neutral basis, NIKE Direct revenues decreased 13%, primarily due to NIKE Brand Digital sales declines of 20% and comparable store sales declines of 1% compared to the first six months of fiscal 2024.\n\n**GROSS MARGIN**\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** |\n|<br>*(Dollars in millions)* | **2024** | **2023** | **% CHANGE** | **2024** | **2023** | **% CHANGE** |\n| Gross profit | $5389 | $5971 | -10% | $10646 | $11691 | -9% |\n| Gross margin | 43.6% | 44.6% | (100) bps | 44.5% | 44.4% | 10 bps |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i5758c2e154794461aaebb231a4c2a401_7)</u>\n\n**SECOND QUARTER OF FISCAL 2025 COMPARED TO SECOND QUARTER OF FISCAL 2024**\n\nFor the second quarter of fiscal 2025, our consolidated gross margin was 100 basis points lower than the prior year due to:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand ASP (decreasing gross margin approximately 330 basis points), primarily due to higher discounts, product mix and changes in channel mix, partially offset by benefits from strategic pricing actions;\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Higher other costs (decreasing gross margin approximately 70 basis points), in part due to higher inventory obsolescence reserves; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower gross margin from Converse (decreasing gross margin approximately 20 basis points).\n\nThis was partially offset by:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand product costs (increasing gross margin approximately 260 basis points), primarily due to product mix and lower product input costs;\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower warehousing and logistics costs (increasing gross margin approximately 50 basis points); and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Favorable changes in foreign currency exchange rates, net of hedges (increasing gross margin approximately 20 basis points).\n\n**FIRST SIX MONTHS OF FISCAL 2025 COMPARED TO FIRST SIX MONTHS OF FISCAL 2024**\n\nFor the first six months of fiscal 2025, our consolidated gross margin was 10 basis points higher than the prior year due to:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand product costs (increasing gross margin approximately 190 basis points), primarily due to product mix; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower warehousing and logistics costs (increasing gross margin approximately 50 basis points).\n\nThis was partially offset by:\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Lower NIKE Brand ASP (decreasing gross margin approximately 150 basis points), primarily due to changes in channel mix, higher discounts and product mix, partially offset by benefits from strategic pricing actions; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;\u2022 Higher other costs (decreasing gross margin approximately 60 basis points), in part due to higher inventory obsolescence reserves.\n\n**TOTAL SELLING AND ADMINISTRATIVE EXPENSE**\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **THREE MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** | **SIX MONTHS ENDED NOVEMBER 30,** |\n|<br>*(Dollars in millions)* | **2024** | **2023** | **% CHANGE** | **2024** | **2023** | **% CHANGE** |\n| Demand creation expense<sup>(1)</sup> | $1122 | $1114 | 1% | $2348 | $2183 | 8% |\n| Operating overhead expense<sup>(2)</sup> | 2883 | 3032 | -5% | 5705 | 6079 | -6% |\n| Total selling and administrative expense | $4005 | $4146 | -3% | $8053 | $8262 | -3% |\n| &nbsp;&nbsp;&nbsp;% of revenues | 32.4% | 31.0% | 140 bps | 33.6% | 31.4% | 220 bps |\n\n---",
+        "token_count": 1995,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001410578-25-000056",
+        "cik": "0001779578",
+        "company": "BGM Group Ltd.",
+        "form_type": "20-F",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 440,
+        "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+        "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "e584e080-5592-590b-a262-8341d4f3a290",
+        "section": "Non-GAAP Financial Measures - EBITDA",
+        "section_index": 63,
+        "chunk_index": 5,
+        "char_start": 465057,
+        "char_end": 466416,
+        "text": "| | | | | |\n|:---|:---|:---|:---|:---|\n|  | **For the years ended** | **For the years ended** |  |  |\n|  | **September 30,** | **September 30,** | **Changes** | **Changes** |\n|  | **2024** | **2023** | **Amount** | **%** |\n| ***Oxytetracycline & licorice products and TCMD*** |  |  |  |  |\n| Net revenue | $21961282 | $29152228 | $(7190946) | (25)% |\n| Cost of revenue | 18324619 | 27392225 | (9067606) | (33)% |\n| Gross profit | $3636663 | $1760003 | $1876660 | 107% |\n| Gross Margin | 16.6% | 6.0% | 10.6% |  |\n| ***Heparin products and sausage casing*** |  |  |  |  |\n| Net revenue | $2230759 | $15318798 | $(13088039) | (85)% |\n| Cost of revenue | 2105248 | 16267458 | (14162210) | (87)% |\n| Gross profit | $125511 | $(948660) | $1074171 | (113)% |\n| Gross Margin | 5.6% | (6.2)% | 11.8% |  |\n| ***Fertilizer*** |  |  |  |  |\n| Net revenue | $905910 | $2000453 | $(1094543) | (55)% |\n| Cost of revenue | 553329 | 1060302 | (506973) | (48)% |\n| Gross profit | $352581 | $940151 | $(587570) | (62)% |\n| Gross Margin | 38.9% | 47.0% | (8.1)% |  |\n| ***Total*** |  |  |  |  |\n| Net revenue | $25097951 | $46471478 | $(21373527) | (46)% |\n| Cost of revenue | 20983196 | 44719984 | (23736788) | (53)% |\n| Gross profit | $4114755 | $1751494 | $2363261 | 135% |\n| Gross Margin | 16.4% | 3.8% | 12.6% |  |\n\n---\n\n\n\n***Oxytetracycline & Licorice Products and TCMD***",
+        "token_count": 556,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "622fc496-e096-569c-9066-ce5bf9eb19c3",
+        "section": "Gross profit/(loss) and gross profit/(loss) margin",
+        "section_index": 294,
+        "chunk_index": 0,
+        "char_start": 1076691,
+        "char_end": 1077470,
+        "text": "#### Gross profit/(loss) and gross profit/(loss) margin\nThe following table sets forth the breakdown of our gross loss and gross loss margin by revenue streams for the periods indicated.\n\n---\n\n\n\n| | | | | |\n|:---|:---|:---|:---|:---|\n|  | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** | **For the fiscal years ended June 30,** |\n|  | **2024** | **2024** | **2023** | **2023** |\n|  | **US$** | **%** | **US$** | **%** |\n|  **Gross (loss)/profit:** |  |  |  |  |\n|  Sales of NEVs and components | 536456 | 8.8 | (339194) | (77.4) |\n|  Leasing of NEVs |  |  | (18122) | (4.2) |\n|  **Total gross (loss)/profit** | **536456** | **8.8** | **(357316)** | **(81.6)** |\n\n---\n\n\n\n[**Table of Contents**](#TOC001)",
+        "token_count": 272,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "95234a34-90b8-541a-b88b-0fdcca80a311",
+        "section": "Gross profit/(loss) and gross profit/(loss) margin",
+        "section_index": 306,
+        "chunk_index": 0,
+        "char_start": 1088351,
+        "char_end": 1089170,
+        "text": "#### Gross profit/(loss) and gross profit/(loss) margin\nAs a result of the foregoing, we recorded gross profit of US$0.5 million and gross loss of US$0.4 million for the fiscal years ended June 30, 2024 and 2023, respectively, representing gross profit margin of 8.8% and gross loss margin of 81.6% for the same years, respectively.\n\nAs mentioned in the analysis of cost of revenues, we achieved gross profit for the fiscal year ended June 30, 2024, mainly due to: (i) increase of sales and (ii) better cost control on the production of *Q*-trucks, partially offset by the increase in the provision for inventory reserves. We expect that our gross margin will improve as the scale of economy of our business increases in accordance with the increase in our vehicle and component sales.\n\n[**Table of Contents**](#TOC001)",
+        "token_count": 195,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001043277-25-000012",
+        "cik": "0001043277",
+        "company": "C. H. ROBINSON WORLDWIDE, INC.",
+        "form_type": "10-K",
+        "filed_date": "20250214",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 54979,
+        "source_md5": "bd3ce75d63bb2ab78c2ea72a91cc2109",
+        "content_sha256": "62b8bfd6b09a986f878757f6470017b78f37c171fa33f4cdfb8dbbe621a3471f",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "51078d1a-e98a-5e43-adcd-ee3b7a99daa4",
+        "section": "ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 10,
+        "chunk_index": 0,
+        "char_start": 123009,
+        "char_end": 131279,
+        "text": "**ITEM 7. MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS** \n\n**OVERVIEW**\n\nC.H. Robinson Worldwide, Inc. (\"C.H. Robinson,\" \"the company,\" \"we,\" \"us,\" or \"our\") is one of the largest global logistics providers in the world, with consolidated total revenues of $17.7 billion in 2024. We deliver logistics like no one else. Companies around the world look to us to reimagine supply chains, advance freight technology, and solve logistics\n\nchallenges\u2014from the simple to the complex. We are grounded in our promise to deliver exceptional customer success, using our expertise, scale, and tailored solutions to help customers navigate increasingly complex global supply chains.\n\nOur adjusted gross profits and adjusted gross profit margin are non-GAAP financial measures. Adjusted gross profits is calculated as gross profits excluding amortization of internally developed software utilized to directly serve our customers and contracted carriers. Adjusted gross profit margin is calculated as adjusted gross profits divided by total revenues. We believe adjusted gross profits and adjusted gross profit margin are useful measures of our ability to source, add value, and sell services and products that are provided by third parties, and we consider adjusted gross profits to be a primary performance measurement. Accordingly, the discussion of our results of operations often focuses on the changes in our adjusted gross profits and adjusted gross profit margin. The reconciliation of gross profits to adjusted gross profits and gross profit margin to adjusted gross profit margin is presented below (dollars in thousands):\n\n---\n\n\n\n| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n| | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** |\n| | **2024** | **2024** | **2023** | **2023** | **2022** | **2022** |\n| **Revenues:** |  |  |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transportation | $16353745 |  | $16372660 |  | $23516384 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sourcing | 1371211 |  | 1223783 |  | 1180241 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total revenues | 17724956 |  | 17596443 |  | 24696625 |  |\n| **Costs and expenses:** |  |  |  |  |  |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchased transportation and related services | 13719935 |  | 13886024 |  | 20035715 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purchased products sourced for resale | 1240007 |  | 1105811 |  | 1067733 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Direct internally developed software amortization | 44308 |  | 33620 |  | 25487 |  |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Total direct costs** | 15004250 |  | 15025455 |  | 21128935 |  |\n| **Gross profits/Gross profit margin** | 2720706 | 15.3% | 2570988 | 14.6% | 3567690 | 14.4% |\n| Plus: Direct internally developed software amortization | 44308 |  | 33620 |  | 25487 |  |\n| **Adjusted gross profits/Adjusted gross profit margin** | $2765014 | 15.6% | $2604608 | 14.8% | $3593177 | 14.5% |\n\n---\n\n\n\nOur adjusted operating margin is a non-GAAP financial measure calculated as operating income divided by adjusted gross profit. We believe adjusted operating margin is a useful measure of our profitability in comparison to our adjusted gross profit, which we consider a primary performance metric as discussed above. The reconciliation of operating margin to adjusted operating margin is presented below (dollars in thousands):\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** | **Twelve Months Ended December 31,** |\n| | **2024** | **2023** | **2022** |\n| Total revenues | $17724956 | $17596443 | $24696625 |\n| Operating income | 669141 | 514607 | 1266782 |\n| Operating margin | 3.8% | 2.9% | 5.1% |\n| Adjusted gross profit | $2765014 | $2604608 | $3593177 |\n| Operating income | 669141 | 514607 | 1266782 |\n| Adjusted operating margin | 24.2% | 19.8% | 35.3% |\n\n---\n\n\n\n------\n\n<u>[**Table of Contents**](#i67881dcefe0c4c379cc7e0dc20deaafb_7)</u>\n\n**MARKET TRENDS**\n\nThe North America surface transportation market continued to experience excess carrier capacity relative to shipper demand throughout 2024, which resulted in an oversupplied and very competitive market. These conditions are typically referred to as a soft market and resulted in transportation rates at, or near, the estimated cost to operate a truck for much of 2024. Although carrier capacity has begun exiting the market, it has been at rates much slower than is typically seen at this stage of the market cycle. One of the key metrics we use to measure market conditions is the truckload routing guide depth from our Managed Solutions business. Routing guide depth represents the average number of carriers contacted prior to acceptance when procuring a transportation provider. Average routing guide depth has remained low throughout 2024 and finished the year at 1.3, representing that on average, the first carrier in a shipper's routing guide was executing the shipment in most cases. Average routing guide depth at the end of 2023 was 1.2 and held at that level before increasing slightly at the end of 2024.\n\nThe global forwarding market experienced significant volatility in 2024, impacted by re-routing, extended transit times, and improving demand. Most carriers avoided the Suez Canal for the majority of 2024 due to the Red Sea conflict, which increased transit times, straining global carrier capacity. Consequently, ocean freight rates have remained elevated compared to the prior year. Uncertainty remains on how the Red Sea conflict, along with geopolitical factors and new capacity entering the market, will impact the global forwarding market in 2025. The global air freight market has largely stabilized, although air freight costs remain elevated compared to the prior year. The elevated ecommerce export demand from Asia during much of 2024 resulted in the repositioning of air freight capacity to that trade lane, causing freighter capacity shortages in other trade lanes and driving up pricing in the market in certain trade lanes.\n\n**BUSINESS TRENDS**\n\nOur 2024 surface transportation results were largely consistent with the trends discussed in the market trends section and similar to trends experienced in the prior year. The weak freight demand and excess carrier capacity in the market resulted in most shipments moving under committed pricing agreements and suppressed freight rates on the limited number of shipments reaching the spot market for most of 2024. Despite these challenging market conditions, we were able to improve our adjusted gross profit per transaction in 2024 compared to 2023 as a result of disciplined pricing and capacity procurement efforts leading to better adjusted gross profits per transaction within our transactional portfolio. Our average truckload linehaul cost per mile, excluding fuel surcharges, decreased approximately 5.5 percent during 2024. Our average truckload linehaul rate charged to our customers, excluding fuel surcharges, decreased approximately 5.0 percent during 2024.\n\nOur 2024 Global Forwarding results were largely consistent with the trends discussed above in the market trends section. We experienced elevated purchased transportation costs in 2024 compared to the prior year, resulting in increased total revenues and cost of purchased transportation in ocean services. In 2024, the global forwarding market faced disruptions that led to a significant rise in freight rates. This contrasts with 2023, which saw weak demand and elevated levels of capacity. These market dynamics resulted in a notable increase in both total revenues and cost of purchased transportation compared to the previous year. Our total ocean freight volumes increased 5.5 percent while our air freight tonnage increased 17.0 percent in 2024 compared to the prior year.\n\n**SELECTED OPERATING PERFORMANCE AND OTHER SIGNIFICANT ITEMS**\n\nThe following summarizes select 2024 year-over-year operating comparisons to 2023:",
+        "token_count": 1945,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001410578-25-000056",
+        "cik": "0001779578",
+        "company": "BGM Group Ltd.",
+        "form_type": "20-F",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 440,
+        "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+        "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "e584e080-5592-590b-a262-8341d4f3a290",
+        "section": "Non-GAAP Financial Measures - EBITDA",
+        "section_index": 63,
+        "chunk_index": 5,
+        "char_start": 465057,
+        "char_end": 466416,
+        "text": "| | | | | |\n|:---|:---|:---|:---|:---|\n|  | **For the years ended** | **For the years ended** |  |  |\n|  | **September 30,** | **September 30,** | **Changes** | **Changes** |\n|  | **2024** | **2023** | **Amount** | **%** |\n| ***Oxytetracycline & licorice products and TCMD*** |  |  |  |  |\n| Net revenue | $21961282 | $29152228 | $(7190946) | (25)% |\n| Cost of revenue | 18324619 | 27392225 | (9067606) | (33)% |\n| Gross profit | $3636663 | $1760003 | $1876660 | 107% |\n| Gross Margin | 16.6% | 6.0% | 10.6% |  |\n| ***Heparin products and sausage casing*** |  |  |  |  |\n| Net revenue | $2230759 | $15318798 | $(13088039) | (85)% |\n| Cost of revenue | 2105248 | 16267458 | (14162210) | (87)% |\n| Gross profit | $125511 | $(948660) | $1074171 | (113)% |\n| Gross Margin | 5.6% | (6.2)% | 11.8% |  |\n| ***Fertilizer*** |  |  |  |  |\n| Net revenue | $905910 | $2000453 | $(1094543) | (55)% |\n| Cost of revenue | 553329 | 1060302 | (506973) | (48)% |\n| Gross profit | $352581 | $940151 | $(587570) | (62)% |\n| Gross Margin | 38.9% | 47.0% | (8.1)% |  |\n| ***Total*** |  |  |  |  |\n| Net revenue | $25097951 | $46471478 | $(21373527) | (46)% |\n| Cost of revenue | 20983196 | 44719984 | (23736788) | (53)% |\n| Gross profit | $4114755 | $1751494 | $2363261 | 135% |\n| Gross Margin | 16.4% | 3.8% | 12.6% |  |\n\n---\n\n\n\n***Oxytetracycline & Licorice Products and TCMD***",
+        "token_count": 556,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001437749-25-002365",
+        "cik": "0001084869",
+        "company": "1 800 FLOWERS COM INC",
+        "form_type": "10-Q",
+        "filed_date": "20250131",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 778,
+        "source_md5": "984a9d846e8a798493f26af7aab2cd8b",
+        "content_sha256": "82f88b7adce8ad752aa4bfb48556843a6245f9b1088b593ed8b3bef3e8e6b713",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "b6d5e326-7a7e-5ccf-9375-3e4697449f96",
+        "section": "ITEM 2. MANAGEMENT**'**S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS",
+        "section_index": 2,
+        "chunk_index": 17,
+        "char_start": 103775,
+        "char_end": 106459,
+        "text": "| | | | | | | |\n|:---|:---|:---|:---|:---|:---|:---|\n|  | **Three Months Ended** | **Three Months Ended** | **Three Months Ended** | **Six Months Ended** | **Six Months Ended** | **Six Months Ended** |\n|  | **December 29,** | **December 31,** | **%** | **December 29,** | **December 31,** | **%** |\n|  | **2024** | **2023** | **Change** | **2024** | **2023** | **Change** |\n|  | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* | *(dollars in thousands)* |\n| Gross profit | $335593 | $355697 | -5.7% | $427912 | $457625 | -6.5% |\n| Gross profit % | 43.3% | 43.3% |  | 42.1% | 41.9% |  |\n\n---\n\n\n\nGross profit consists of net revenues less cost of revenues, which is comprised primarily of florist fulfillment costs (fees paid directly to florists), the cost of floral and non-floral merchandise sold from inventory or through third parties, and associated costs, including inbound and outbound shipping charges. Additionally, cost of revenues includes labor and facility costs related to direct-to-consumer and wholesale production operations, as well as payments made to sending florists related to order volume referred through the Company's BloomNet network.\n\nGross profit decreased 5.7% and 6.5% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, due to lower revenues as noted above.\n\nDuring the three months ended December 29, 2024, the gross profit percentage was in-line with the same period of the prior year. During the six months ended December 29, 2024, the gross profit percentage increased 20 basis points compared to the same period of the prior year, which was driven by increased gross profit percentage in the BloomNet and Gourmet Foods & Gift Baskets segments.\n\nGross profit by segment follows:\n\n**Consumer Floral & Gifts segment** - Gross profit decreased by 10.0% and 8.0% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, due to the impact of the lower revenues noted above, as well as the unfavorable gross profit percentage primarily attributable to higher cost of merchandise.\n\n**BloomNet segment -** Gross profit decreased by 10.4% and 15.7% during the three and six months ended December 29, 2024, respectively, compared to the same periods of the prior year, due to the decrease in revenues noted above, partially offset by an increase in the gross profit percentage. Gross profit percentage increased in comparison to the same periods of the prior year due to lower florist rebates, which was driven by lower florist-to-florist volume.",
+        "token_count": 669,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 0, \"citation_support\": 0, \"rationale\": \"The reference answer is answerable from the gold evidence (Adobe gross profit 19,147 and NVIDIA gross profit 97,858 quoted in the gold evidence, with a 14.05 pp difference), but the candidate abstained with a claim that it could not verify the figures. Abstention is only fully credited when the reference is unanswerable, which it is not, so the candidate receives no correctness credit. The retrieved excerpts contain none of the Adobe or NVIDIA filings' figures, so the candidate's abstention is consistent with what it retrieved, but that does not make the answer correct. No citations were provided, so citation support is zero.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 0, \"citation_support\": 0, \"rationale\": \"The reference answer is answerable from the gold evidence (Adobe gross profit 19,147 and NVIDIA gross profit 97,858 quoted in the gold evidence, with a 14.05 pp difference), but the candidate abstained with a claim that it could not verify the figures. Abstention is only fully credited when the reference is unanswerable, which it is not, so the candidate receives no correctness credit. The retrieved excerpts contain none of the Adobe or NVIDIA filings' figures, so the candidate's abstention is consistent with what it retrieved, but that does not make the answer correct. No citations were provided, so citation support is zero.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:36:11.619315+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "93132e787aea0fccaa62702f:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042569-4Egn1M2ORoSzdXTCUL89",
+    "usage": {
+      "prompt_tokens": 34539,
+      "completion_tokens": 236,
+      "total_tokens": 34775,
+      "cost": 0.0035719,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0035719,
+        "upstream_inference_prompt_cost": 0.0034539,
+        "upstream_inference_completions_cost": 0.000118
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.2370549939996636,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 0,
+    "citation_support": 0,
+    "rationale": "The reference answer is answerable from the gold evidence (Adobe gross profit 19,147 and NVIDIA gross profit 97,858 quoted in the gold evidence, with a 14.05 pp difference), but the candidate abstained with a claim that it could not verify the figures. Abstention is only fully credited when the reference is unanswerable, which it is not, so the candidate receives no correctness credit. The retrieved excerpts contain none of the Adobe or NVIDIA filings' figures, so the candidate's abstention is consistent with what it retrieved, but that does not make the answer correct. No citations were provided, so citation support is zero."
+  },
+  "status": "ok"
+}

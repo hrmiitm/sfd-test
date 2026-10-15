@@ -1,0 +1,117 @@
+{
+  "question_id": "Q057",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/vector",
+  "retrieval": {
+    "seconds": 0.014688354000099935,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to Marathon Petroleum Corporation's Consolidated Balance Sheets in its 2024 Form 10-K, the figures as of December 31, 2024 are:\n\n* **Total current assets:** $24,447 million\n* **Total current liabilities:** $20,827 million\n\n### Calculation:\n$$\\text{Working Capital} = \\text{Total current assets} - \\text{Total current liabilities}$$\n$$\\text{Working Capital} = \\$24,447\\text{ million} - \\$20,827\\text{ million} = \\$3,620\\text{ million}$$\n\nMarathon Petroleum Corporation's working capital as of December 31, 2024 was **$3,620 million** (or **$3.62 billion**).\n\n***\n**Source:** Marathon Petroleum Corp 10-K (filed 2025-02-27), *Item 8. Financial Statements and Supplementary Data* [Accession: 0001510295-25-000012, Chunk ID: `10a4bbf3-55fe-5b56-af25-846272b45340`].",
+    "message": {
+      "role": "assistant",
+      "content": "According to Marathon Petroleum Corporation's Consolidated Balance Sheets in its 2024 Form 10-K, the figures as of December 31, 2024 are:\n\n* **Total current assets:** $24,447 million\n* **Total current liabilities:** $20,827 million\n\n### Calculation:\n$$\\text{Working Capital} = \\text{Total current assets} - \\text{Total current liabilities}$$\n$$\\text{Working Capital} = \\$24,447\\text{ million} - \\$20,827\\text{ million} = \\$3,620\\text{ million}$$\n\nMarathon Petroleum Corporation's working capital as of December 31, 2024 was **$3,620 million** (or **$3.62 billion**).\n\n***\n**Source:** Marathon Petroleum Corp 10-K (filed 2025-02-27), *Item 8. Financial Statements and Supplementary Data* [Accession: 0001510295-25-000012, Chunk ID: `10a4bbf3-55fe-5b56-af25-846272b45340`].",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1+ZELVceBYh35v0BLK9TFtjpyRYs+L+TiEWIy/Uu6ipE/cdUjV4vNJUu/0Vku/eDMEdvirhiFMKUZRKlA5UOsY9lGGKt7dWpK0vi6GuA25LWmnC",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:43.839959+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "f6063976e59d0d0bf4958a50:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041940-2Spt3R9SfdSuIOAvnX6n",
+    "usage": {
+      "prompt_tokens": 20963,
+      "completion_tokens": 288,
+      "total_tokens": 21251,
+      "cost": 0.01680225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01680225,
+        "upstream_inference_prompt_cost": 0.01572225,
+        "upstream_inference_completions_cost": 0.00108
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.318706316000316,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate correctly reports total current assets of $24,447M and total current liabilities of $20,827M as of December 31, 2024, both matching the MPC balance sheet excerpt in the retrieved chunk, and computes working capital as $3,620M ($3.62B), matching the reference. The cited accession 0001510295-25-000012 and Item 8 section match the retrieved MPC excerpt. Minor deduction: the chunk ID cited is the retrieved one for the balance sheet chunk, which is supported, but the candidate's filing date and section label are accurate; citation support is strong with only slight imprecision in labeling the section as Item 8 'Financial Statements' rather than the exact heading.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate correctly reports total current assets of $24,447M and total current liabilities of $20,827M as of December 31, 2024, both matching the MPC balance sheet excerpt in the retrieved chunk, and computes working capital as $3,620M ($3.62B), matching the reference. The cited accession 0001510295-25-000012 and Item 8 section match the retrieved MPC excerpt. Minor deduction: the chunk ID cited is the retrieved one for the balance sheet chunk, which is supported, but the candidate's filing date and section label are accurate; citation support is strong with only slight imprecision in labeling the section as Item 8 'Financial Statements' rather than the exact heading.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:10.281696+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "f6063976e59d0d0bf4958a50:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042148-L0C5oU7vV16eyy1m7t9v",
+    "usage": {
+      "prompt_tokens": 27819,
+      "completion_tokens": 255,
+      "total_tokens": 28074,
+      "cost": 0.0029094,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0029094,
+        "upstream_inference_prompt_cost": 0.0027819,
+        "upstream_inference_completions_cost": 0.0001275
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.493430337999598,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "The candidate correctly reports total current assets of $24,447M and total current liabilities of $20,827M as of December 31, 2024, both matching the MPC balance sheet excerpt in the retrieved chunk, and computes working capital as $3,620M ($3.62B), matching the reference. The cited accession 0001510295-25-000012 and Item 8 section match the retrieved MPC excerpt. Minor deduction: the chunk ID cited is the retrieved one for the balance sheet chunk, which is supported, but the candidate's filing date and section label are accurate; citation support is strong with only slight imprecision in labeling the section as Item 8 'Financial Statements' rather than the exact heading."
+  },
+  "status": "ok"
+}

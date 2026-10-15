@@ -1,0 +1,54 @@
+{
+  "timestamp_utc": "2026-10-15T05:39:25.526544+00:00",
+  "completed_before_resume": 313,
+  "fixes": [
+    "Summary handles ChatClient tool_calls lists as well as agent integer counts.",
+    "At the six-tool budget, finalization omits tool definitions and explicitly requests an evidence-only final answer.",
+    "Summary and HTML costs include every billed audit response, including failed finalization attempts."
+  ],
+  "affected": [
+    {
+      "question_id": "Q006",
+      "model": "google/gemini-3.8-flash",
+      "strategy": "lancedb/agentic",
+      "error": "Model ignored final-answer instruction after tool budget"
+    },
+    {
+      "question_id": "Q055",
+      "model": "google/gemini-3.8-flash",
+      "strategy": "qdrant/agentic",
+      "error": "Model ignored final-answer instruction after tool budget"
+    },
+    {
+      "question_id": "Q068",
+      "model": "google/gemini-3.8-flash",
+      "strategy": "lancedb/agentic",
+      "error": "Model ignored final-answer instruction after tool budget"
+    },
+    {
+      "question_id": "Q057",
+      "model": "google/gemini-3.8-flash",
+      "strategy": "qdrant/agentic",
+      "error": "Model ignored final-answer instruction after tool budget"
+    },
+    {
+      "question_id": "Q088",
+      "model": "google/gemini-3.8-flash",
+      "strategy": "qdrant/agentic",
+      "error": "Model ignored final-answer instruction after tool budget"
+    },
+    {
+      "question_id": "Q057",
+      "model": "google/gemini-3.8-flash",
+      "strategy": "lancedb/agentic",
+      "error": "Model ignored final-answer instruction after tool budget"
+    },
+    {
+      "question_id": "Q068",
+      "model": "google/gemini-3.8-flash",
+      "strategy": "qdrant/agentic",
+      "error": "Model ignored final-answer instruction after tool budget"
+    }
+  ],
+  "unchanged": "Completed results are retained; no extra tool executions are permitted during recovery."
+}

@@ -1,0 +1,126 @@
+{
+  "question_id": "Q008",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.02362772499964194,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Based on Intel Corporation's Form 10-K for the fiscal year ended December 28, 2024:\n\n* **Independent registered public accounting firm:** Ernst & Young LLP\n* **Year they have served as auditor since:** 1968\n\n**Sources:**\n* Accession `0000050863-25-000009`, Section `Filing Summary`, Chunk ID `fe5cd02b-718d-5953-a8d6-004cb72ea177`:\n  > */s/ Ernst & Young LLP*  \n  > *We have served as the Company's auditor since 1968.*\n* Accession `0000050863-25-000009`, Section `Exhibit 23.1`, Chunk ID `a13f6ac3-6919-51dc-a0a1-849811779fbe`:\n  > *CONSENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM*  \n  > *... /s/ Ernst & Young LLP*",
+    "message": {
+      "role": "assistant",
+      "content": "Based on Intel Corporation's Form 10-K for the fiscal year ended December 28, 2024:\n\n* **Independent registered public accounting firm:** Ernst & Young LLP\n* **Year they have served as auditor since:** 1968\n\n**Sources:**\n* Accession `0000050863-25-000009`, Section `Filing Summary`, Chunk ID `fe5cd02b-718d-5953-a8d6-004cb72ea177`:\n  > */s/ Ernst & Young LLP*  \n  > *We have served as the Company's auditor since 1968.*\n* Accession `0000050863-25-000009`, Section `Exhibit 23.1`, Chunk ID `a13f6ac3-6919-51dc-a0a1-849811779fbe`:\n  > *CONSENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM*  \n  > *... /s/ Ernst & Young LLP*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1/Mep/tFkfiRemZpiRPWFeY7N7ijMwoSCL1JIZSYrBYpSSGBBICyjyc0Li2kc9po7jUKTei9qRkFgwnOoe6vX4XVLaB/+6jYqUdIWpjnfYTqZUN",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:48.955626+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "32182ac848f21628b6f37cd0:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041886-x8a6PCHU4JjPplJf13mD",
+    "usage": {
+      "prompt_tokens": 11272,
+      "completion_tokens": 265,
+      "total_tokens": 11537,
+      "cost": 0.00944775,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00944775,
+        "upstream_inference_prompt_cost": 0.008454,
+        "upstream_inference_completions_cost": 0.00099375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.075331480999921,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year they began serving as auditor, matching the reference and the gold quote. The fiscal year end (December 28, 2024) is supported by the retrieved audit report. Both cited chunks appear in the retrieved excerpts with the quoted text, and the Exhibit 23.1 consent is accurately summarized. Citation support is near-full, with a small deduction because the quoted signature line is reproduced with minor formatting differences.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year they began serving as auditor, matching the reference and the gold quote. The fiscal year end (December 28, 2024) is supported by the retrieved audit report. Both cited chunks appear in the retrieved excerpts with the quoted text, and the Exhibit 23.1 consent is accurately summarized. Citation support is near-full, with a small deduction because the quoted signature line is reproduced with minor formatting differences.\"}",
+      "refusal": null,
+      "reasoning": "This matches the auditor info correctly \u2014 Ernst & Young LLP since 1968, confirmed by the Filing Summary chunk and the Exhibit 23.1 consent. The fiscal year ended December 28, 2024 claim is also supported by the source.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "This matches the auditor info correctly \u2014 Ernst & Young LLP since 1968, confirmed by the Filing Summary chunk and the Exhibit 23.1 consent. The fiscal year ended December 28, 2024 claim is also supported by the source.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS2wkKEAgSGAI4AUIIdGhpbmtpbmcSDK+uJ9Bnjux7cpbKChoMUzvHqlIofJq/bL0ZIjAmnvRkzpCssOqK0uYJ6eRiphLl5k3DFCp0pu0ODaZAKYVO8QO6Uc0f0tCx86X0dCoq+AhxxHmbrZNMP152fWY4P7gae5dfqfMDTDCdIHI8V5z2DoRyNbIjoDr4ENLjeubFJRxPBW8v3NrFwn1vIg1c3nZ2uwbMcmbedLSD4/Q31iAoDQJSNwA2XpWKWb2nlaaEAfNAwQ7yGTUDWcJVfgduK2K+VPAdX5JN9BsLhmqb4iHsNUeg8HQdHfBv191zVTsBPbyVrXbH0kCeM3o8lR4kKmy0plYP0/8PgXa2HB+7k7jeziHrmwTcXnmbtQNV3s6BpIOvJWmW+wy/J0gzN5A66ti0WXvHH8KHcTqtUyOWc1Sr6rlipHmpMYIUr1u3QX2hCdjK5/m+TTjzyFS3LZgA2LHgQY5Q1LtXAMrHCG20LDlxEClAjVCsPWb+Q+qzOslObd3BtNqr1El7kdZwzMUpSZ6cnO20ROBOe3B6LZwisrEVzJC40zqjDY8cIGYDEfRfy3SF9rN8YJf8ZFx1C+iF9WSr4qjq31ZGK6HAUxw6B46MWSJsmPZqCqZ1ISVWTP+OuZ3jmtH5RGJ/6z5O9qulbUz6xbO9muvDq1nbyN/Sjqcp8JakKNVup6NTQ6Wbm8Qb0Woz0z291SU40eG+8q/VrNkgt84mzZtN6YYZyQrc9O0RbDGu0BVfl+KzClCx7McfPl1h9QlM1cA/th4eiCvsyioBn2inAhY901Nxr9LeJuWcOPbSlIqAv4Gx2MHDyAtslSA7Hlcw37eRzcbi9WGJ5NintKqLxvAjcm+/p27Y8jE5L7BXxObue5z3LH9RnUuAr6p/12oYVbgL+cWK7ocEmz5h74P/dZp/PcWNVTdyCil9OlKsxig0iRjVMi46lWUnMz+i3g271hKO98BMbFFoHudMarPBcK4xDV7dFvaON5+uMDUazpQPT2CiopUn31nyO9rvanK/6qFpMZDCNYo9KTcJJXT3DIZZ7WG1HL4qtTbZ2fEzS6qC8XdoHzgE77lymkAL7YC3aBTxH2LxdIkC3kfdMbccZLIhxaZ1jEGlq/1uAL0Q/J0bW0buphmrCxZAxp9I1bI5UDnQbndA0V3AkE/MIwVcESLJ4vvZ5NDeCSHcwZLfsMbZ3kJEluxO0F7ou/Fyoqccsa4/o3hlfgtXofofLY/zV3d1QalyUt+dx+6+VUlsHfJJY4+0iRlHx0f9vd0xdbEZszYe3G5BYHNBAYLZiAppOLEuSgNPDCwNecA6eeeQAcSUqe5GpWRpk/4eAcD+nmuU1lc4IT10NCtijyEWv4fwLOyC+VOGCe08oXxoaAGpto+kTsFQro7zPhS97jBTQDPlNgunTiSEdBqbPZptsrreo+IWWmraqHP3iiJa6AEgxldBwNxnI/u2EvhiX3kkwAO0aw66jZAd531R6VEXTy+1nKh+WXbubXS71VdlImiXjrP8LPjz6d43QaGl1ZDiySYtgieZsYaukXreY4iL72XWviWYq3fmOKmX15/ysP/dzAGovMrTpX3LKAbmvB2gqyJlMk73GcaSWsxeM4NvFruRNX28kvkzHBFlheaQqFAWKPEIJeHRGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:08.225418+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "32182ac848f21628b6f37cd0:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042083-DSMCDAt86zADuAW9oPe0",
+    "usage": {
+      "prompt_tokens": 15897,
+      "completion_tokens": 484,
+      "total_tokens": 16381,
+      "cost": 0.0018317,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0018317,
+        "upstream_inference_prompt_cost": 0.0015897,
+        "upstream_inference_completions_cost": 0.000242
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 286,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.9337930419997065,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "The candidate correctly identifies Ernst & Young LLP as Intel's auditor and 1968 as the year they began serving as auditor, matching the reference and the gold quote. The fiscal year end (December 28, 2024) is supported by the retrieved audit report. Both cited chunks appear in the retrieved excerpts with the quoted text, and the Exhibit 23.1 consent is accurately summarized. Citation support is near-full, with a small deduction because the quoted signature line is reproduced with minor formatting differences."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,126 @@
+{
+  "question_id": "Q057",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/bm25",
+  "retrieval": {
+    "seconds": 0.006688851000035356,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to Marathon Petroleum Corporation's Consolidated Balance Sheets in the Form 10-K for the year ended December 31, 2024 (Accession: `0001510295-25-000012`, Section: `Item 8. Financial Statements and Supplementary Data`, Chunk ID: `10a4bbf3-55fe-5b56-af25-846272b45340`):\n\n* **Total current assets** (as of December 31, 2024): **$24,447 million**\n* **Total current liabilities** (as of December 31, 2024): **$20,827 million**\n\n### Working Capital Calculation:\n$$\\text{Working Capital} = \\text{Total current assets} - \\text{Total current liabilities}$$\n$$\\text{Working Capital} = \\$24,447\\text{ million} - \\$20,827\\text{ million} = \\$3,620\\text{ million}$$\n\nMarathon Petroleum Corporation's working capital as of December 31, 2024 was **$3,620 million** (or **$3.62 billion**).",
+    "message": {
+      "role": "assistant",
+      "content": "According to Marathon Petroleum Corporation's Consolidated Balance Sheets in the Form 10-K for the year ended December 31, 2024 (Accession: `0001510295-25-000012`, Section: `Item 8. Financial Statements and Supplementary Data`, Chunk ID: `10a4bbf3-55fe-5b56-af25-846272b45340`):\n\n* **Total current assets** (as of December 31, 2024): **$24,447 million**\n* **Total current liabilities** (as of December 31, 2024): **$20,827 million**\n\n### Working Capital Calculation:\n$$\\text{Working Capital} = \\text{Total current assets} - \\text{Total current liabilities}$$\n$$\\text{Working Capital} = \\$24,447\\text{ million} - \\$20,827\\text{ million} = \\$3,620\\text{ million}$$\n\nMarathon Petroleum Corporation's working capital as of December 31, 2024 was **$3,620 million** (or **$3.62 billion**).",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a19RKOA04JKZRQf7Cgn/uDdeOyRnauRuej3oqnMhxAzZ6VpG0QVqQx9VZCJpqs2XH4n9FihoytjHCulT5iODVGuA+QtEizIkcilj6CGq/qKiaetn",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:44.662292+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "ae75907a80c66ab31c8fae45:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041939-Fn6ovxUFUxmJVS2cSxkg",
+    "usage": {
+      "prompt_tokens": 19843,
+      "completion_tokens": 288,
+      "total_tokens": 20131,
+      "cost": 0.01596225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01596225,
+        "upstream_inference_prompt_cost": 0.01488225,
+        "upstream_inference_completions_cost": 0.00108
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.736540908999814,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate's arithmetic is correct: $24,447M minus $20,827M equals $3,620M, matching the reference. Units and the December 31, 2024 date are right. The cited chunk ID (10a4bbf3-...) and accession 0001510295-25-000012 appear in the retrieved excerpts, and that chunk contains the balance sheet showing Total current assets 24447 and Total current liabilities 20827. The section label cited ('Item 8. Financial Statements and Supplementary Data') matches the retrieved chunk, though the gold evidence labels it 'Consolidated Balance Sheets', a minor difference.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 95, \"rationale\": \"The candidate's arithmetic is correct: $24,447M minus $20,827M equals $3,620M, matching the reference. Units and the December 31, 2024 date are right. The cited chunk ID (10a4bbf3-...) and accession 0001510295-25-000012 appear in the retrieved excerpts, and that chunk contains the balance sheet showing Total current assets 24447 and Total current liabilities 20827. The section label cited ('Item 8. Financial Statements and Supplementary Data') matches the retrieved chunk, though the gold evidence labels it 'Consolidated Balance Sheets', a minor difference.\"}",
+      "refusal": null,
+      "reasoning": "I verify the working capital calculation: 24,447 minus 20,827 equals 3,620, matching the reference figure. I'm now checking that the candidate's citation to the financial statements section actually supports this figure in the retrieved excerpt.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I verify the working capital calculation: 24,447 minus 20,827 equals 3,620, matching the reference figure. I'm now checking that the candidate's citation to the financial statements section actually supports this figure in the retrieved excerpt.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSmAoKEAgSGAI4AUIIdGhpbmtpbmcSDKm6quFB5oQRdAr/FRoM1PmHXWV6SFk/UkB5IjCPL5fxlDKhN8K8WVPGB/TxUl2JsZ7p3rRAGadTlO9+x/N4YxFh+jTppJl60bEOcNAqtQkTd3VASIyIjlE2rEM2ux0hJZysye4ocW6w5ZNgoTFIFQRK5/bMeLNkc3zAIF+yomMb+85mMed4dkRFTHzyztHd5SC2dd2paDCeWdtNUjAqqookXrG6Rn09mhTqplQEgTf1MjKA7fB+2fDb0nN65mw0G/bSuD3Sd7tESPB2iwVVcgvTg5FoQgYRVG0oL7GmkISAlx9IlGJgFs9UDLnx4X95qWuKx1/duqabUN7n+tevJzE1xBAQv7q6upFOFT125AVxDZ7lM9ywycktqF3j9IPLGnscuTiNGrSxzWu4OH+IvVHl5mKWF2ZKBiVUDr739/qxsrMrSbIEi5kRFLuslR4Os4SVhPzOYFc08M8oQLz0eg+o5q3Tmft355oXtjBUdd8yiNpB6gvZNQ9hW0Nx4SGNe4dhX8FtTaZIWlwdk3rEPthmsc5FXVUKymuCd/lETCQ17LrfE1t0VevttspD04dXzLDrU4Zx1Lwot8J3su11UOqzKa9g/hmAHR5+rlwLfF7l0fyh3WfzeR6+bXO/9KuOy0l6S0X5bh9matJJdMZhHK2PSUrwbhM+JAlqB04f2Moh8v4U53gxFemf+foVrV6Qbh2mrKPcL5VAbGJmnd9ukGsYFs52zBlFZosV06LO3kBBUebDijlsyf2Weq6qVpETE04JL3NqQN1wlcNu3eYXWWZ6o0XTTWkOSpQIsUYObQFESUzqKDwxz9lJiUyRlCJuUUTCBUDH2y+LL8++YNbqTq+clbhHUIMujihbRJcegg0F6N8RmcoLn9sza+sOkdsIiFoIT5chZrgBcSpZZqyRvxbckXnCmnWp2M1DlAyiCAL7oWGGYtbfHM/d6rOWIDW0jLy2oXFuuhabZsAEjoaQChHCWcKy9rWigxXxI5py4Q/f+yg/bGTM9xnAfaEPXHTi1Rb3GYuRHoLe1+59KWPm5h05m/BtIWhTCW574VMyL2UbBbwgmvkRZaT5oRNeE+WJAVNCLKHIiDzhhoa4peZE2kZknB7536t37uXmHeYNk08ZLFi2xDqRXuM63oYeLTuvXehCli/BctCkYFl02I2RjVSLDSPctOnfY+YKTavkT+Pxfm1NubrgL6ywXxNaOa6jEY5yAooK84yujQr+MUK5iYGAErytb1NYU9SNletU3iCV7t/3KSHuLUilfPWrZ2/atiNmPGUQvUk5DNxKlw4A8wjG+HcAPSE3Yu9WZ42UEgOB1VJp7bYcprIoe5zgAuYbTFnHpI/iHpY2cIte2u5VdOjePyFGoImEIGGQZoZtcvZhXE7iYqFQudLyxDnv7azKoI5LmKdNrDTmA2puoMhmqk0wjvKDIWPruZ3m7Z56dv/fH6UdvaBxW24qlwtDMhhVrkgrnJo0mYC7VCbd/DpZgE7C9UNQ0A+pjZkQEE1xBnLrQtkJycQjXVnLFvKcyStIkHP68XjJ2eFx3es0pVo2sTVEGf099YQoTZPSdLReetl+X6N83kdTzehuUHgxdrUNLd+MrD/s9P0Vy37R0fAQlYF+Jf0Jx6dtjDz7+lDWSwOgNP1ZYX69BooD3zwRIJeEpJ7q1tM0ojKiLCx/51G8lpU9Tp2MuT54TPHCaCwVg79y9/dC/xgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:11.853607+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "ae75907a80c66ab31c8fae45:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042148-ZJ4TTEvBC4lF8U4j6vcx",
+    "usage": {
+      "prompt_tokens": 26095,
+      "completion_tokens": 521,
+      "total_tokens": 26616,
+      "cost": 0.00287,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00287,
+        "upstream_inference_prompt_cost": 0.0026095,
+        "upstream_inference_completions_cost": 0.0002605
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 287,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.640537023999968,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 95,
+    "rationale": "The candidate's arithmetic is correct: $24,447M minus $20,827M equals $3,620M, matching the reference. Units and the December 31, 2024 date are right. The cited chunk ID (10a4bbf3-...) and accession 0001510295-25-000012 appear in the retrieved excerpts, and that chunk contains the balance sheet showing Total current assets 24447 and Total current liabilities 20827. The section label cited ('Item 8. Financial Statements and Supplementary Data') matches the retrieved chunk, though the gold evidence labels it 'Consolidated Balance Sheets', a minor difference."
+  },
+  "status": "ok"
+}

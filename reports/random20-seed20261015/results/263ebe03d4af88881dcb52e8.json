@@ -1,0 +1,108 @@
+{
+  "question_id": "Q079",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.04831790100070066,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "- **2029 Notes:** 5.875% interest; due **November 7, 2029**; principal **$1.25 billion**.\n- **2035 Notes:** 6.500% interest; due **February 7, 2035**; principal **$1.25 billion**.\n\n**Combined principal:** $1.25 billion + $1.25 billion = **$2.50 billion**.\n\n*Source: accession 0001104659-25-001594, \u201cFiling Summary,\u201d chunk 0.*",
+    "message": {
+      "role": "assistant",
+      "content": "- **2029 Notes:** 5.875% interest; due **November 7, 2029**; principal **$1.25 billion**.\n- **2035 Notes:** 6.500% interest; due **February 7, 2035**; principal **$1.25 billion**.\n\n**Combined principal:** $1.25 billion + $1.25 billion = **$2.50 billion**.\n\n*Source: accession 0001104659-25-001594, \u201cFiling Summary,\u201d chunk 0.*",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:38.112200+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "263ebe03d4af88881dcb52e8:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041994-dYO6qOF5MIkBs0BE32It",
+    "usage": {
+      "prompt_tokens": 11663,
+      "completion_tokens": 118,
+      "total_tokens": 11781,
+      "cost": 0.0015168,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 11660,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015168,
+        "upstream_inference_prompt_cost": 0.0014578,
+        "upstream_inference_completions_cost": 5.9e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.31868811700042,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies both tranches: 5.875% notes due November 7, 2029 at $1.25B and 6.500% notes due February 7, 2035 at $1.25B, with the correct combined principal of $2.50B, all matching the reference and the 8-K Item 8.01 text. Minor deduction: it cites 'Filing Summary, chunk 0' whereas the operative language is in the Item 8.01 section of the main 8-K document, though the accession number is correct and the Filing Summary chunk does contain the accession and filing date. Citation support is high because the accession is verifiable in the retrieved excerpts, but the section label is slightly imprecise.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies both tranches: 5.875% notes due November 7, 2029 at $1.25B and 6.500% notes due February 7, 2035 at $1.25B, with the correct combined principal of $2.50B, all matching the reference and the 8-K Item 8.01 text. Minor deduction: it cites 'Filing Summary, chunk 0' whereas the operative language is in the Item 8.01 section of the main 8-K document, though the accession number is correct and the Filing Summary chunk does contain the accession and filing date. Citation support is high because the accession is verifiable in the retrieved excerpts, but the section label is slightly imprecise.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:05.605929+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "263ebe03d4af88881dcb52e8:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042203-Y3yCxAfhjCKVS0zs2AHR",
+    "usage": {
+      "prompt_tokens": 17900,
+      "completion_tokens": 245,
+      "total_tokens": 18145,
+      "cost": 0.0019125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019125,
+        "upstream_inference_prompt_cost": 0.00179,
+        "upstream_inference_completions_cost": 0.0001225
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.5963798749999114,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 95,
+    "rationale": "The candidate correctly identifies both tranches: 5.875% notes due November 7, 2029 at $1.25B and 6.500% notes due February 7, 2035 at $1.25B, with the correct combined principal of $2.50B, all matching the reference and the 8-K Item 8.01 text. Minor deduction: it cites 'Filing Summary, chunk 0' whereas the operative language is in the Item 8.01 section of the main 8-K document, though the accession number is correct and the Filing Summary chunk does contain the accession and filing date. Citation support is high because the accession is verifiable in the retrieved excerpts, but the section label is slightly imprecise."
+  },
+  "status": "ok"
+}

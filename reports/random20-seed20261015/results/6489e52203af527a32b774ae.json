@@ -1,0 +1,117 @@
+{
+  "question_id": "Q081",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.023304257000745565,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Pfizer disclosed that on February 4, 2025, it issued a press release announcing its financial results for the fourth quarter and full year of 2024. The release was furnished as Exhibit 99. (Accession **0000078003-25-000017**, **Item 2.02 Results of Operations and Financial Condition**, chunk **22cfadc5-7bea-534b-a941-af3f32745495**.)",
+    "message": {
+      "role": "assistant",
+      "content": "Pfizer disclosed that on February 4, 2025, it issued a press release announcing its financial results for the fourth quarter and full year of 2024. The release was furnished as Exhibit 99. (Accession **0000078003-25-000017**, **Item 2.02 Results of Operations and Financial Condition**, chunk **22cfadc5-7bea-534b-a941-af3f32745495**.)",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:45.997429+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "6489e52203af527a32b774ae:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042004-50ToGwG34rQszomgkAcq",
+    "usage": {
+      "prompt_tokens": 7864,
+      "completion_tokens": 96,
+      "total_tokens": 7960,
+      "cost": 0.001030925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 7861,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001030925,
+        "upstream_inference_prompt_cost": 0.000982925,
+        "upstream_inference_completions_cost": 4.8e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.5556573049998406,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 70, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies the Item 2.02 disclosure: a February 4, 2025 press release reporting Q4 and full-year 2024 results, furnished as Exhibit 99. The date, exhibit, and accession match the retrieved Item 2.02 and Exhibit 99 excerpts. The reference also says the release included 2025 financial guidance, but none of the retrieved excerpts mention guidance, so the candidate's omission cannot be confirmed as an error and the reference claim is unsupported by the evidence. Citation support is high because the accession, Item 2.02 section, chunk ID, date, and Exhibit 99 claims all appear in the retrieved excerpts.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 70, \"citation_support\": 95, \"rationale\": \"The candidate correctly identifies the Item 2.02 disclosure: a February 4, 2025 press release reporting Q4 and full-year 2024 results, furnished as Exhibit 99. The date, exhibit, and accession match the retrieved Item 2.02 and Exhibit 99 excerpts. The reference also says the release included 2025 financial guidance, but none of the retrieved excerpts mention guidance, so the candidate's omission cannot be confirmed as an error and the reference claim is unsupported by the evidence. Citation support is high because the accession, Item 2.02 section, chunk ID, date, and Exhibit 99 claims all appear in the retrieved excerpts.\"}",
+      "refusal": null,
+      "reasoning": "The reference mentions guidance for 2024 and 2025, but the actual excerpt only covers Q4 and full-year 2024 results \u2014 the guidance claim doesn't seem supported by the evidence. The candidate correctly identifies the Feb 4, 2025 press release and Exhibit 99 covering fourth quarter and full year 2024, matching the core event even though it omits the guidance detail, which may itself be inaccurate in the reference.\n\nCitation-wise, the candidate's accession number, Item 2.02 reference, and chunk ID align well with the retrieved excerpt, with the Feb 4 date and Exhibit 99 solidly supported.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The reference mentions guidance for 2024 and 2025, but the actual excerpt only covers Q4 and full-year 2024 results \u2014 the guidance claim doesn't seem supported by the evidence. The candidate correctly identifies the Feb 4, 2025 press release and Exhibit 99 covering fourth quarter and full year 2024, matching the core event even though it omits the guidance detail, which may itself be inaccurate in the reference.\n\nCitation-wise, the candidate's accession number, Item 2.02 reference, and chunk ID align well with the retrieved excerpt, with the Feb 4 date and Exhibit 99 solidly supported.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSzgsKEAgSGAI4AUIIdGhpbmtpbmcSDLjK5fp6xBUYgm6IShoMewCV3dlnXXO6SdezIjA0gc6o+Eww5/gli/uXFY3oq/M6gqiL2amfoLTVXAFQSt5bMnFMggU8tr5gPzGggvMq6wrcURWNiC/mBgDv4LOGcXv6EAXFxadBZuJZE0m+zpBwqDkgDgVMMQcujYnGDZKGADuifLRAKHcqzMXkWjsFOWBgE4tOAUAns9Bqn1yRU70XT0CBZK/wh+FokCgKybfVZJHCRRdT3X4HGv45+3XLJXORxI0r5UjhUvZYR3+QtR77FDfeiwVX/QUnHmlSHdBl7QbfYk3y2y3jDoRFD+VT8rEDXN4qs9iLwpbuBCp8ZaRowALHoic4usbPUJZH44laknvGawJVNYTMONj6krDdu3bGODfvV494UYPTTGtj8oEFtGoUqGarkSwWFbrFCAzu2x2WsltVTSR/dAhSTo1UCr7EP3h2z+4OW1Hk6FegyCBaLJvO+zgNIVfHS94QREjvFMOmqSMoUmzIiAgzrFhVykP88/Q78PmyM5L//ZCaEbbfYyr6jAR1+35+xJlv7pE+4V/RYejQvyJue0ZnTlQTZLWgjgFMsBSYljIMReoAOnc06gMOJUcSNA2Cp7LBHG1fqkgFeYXtifV4IkmTJ+IXLuJ+vO5ROk/TZkugnemGBSx1rildupQst0JkgQ9AFzOu7bxxkOWA5oyzPJpgi2kPXgO7lAFyZHv1CLBBiDnz5EkFD1E9so+1m1rcSP0krHwdt9T86+ZxGTe4ns/sHXU7JZqGPrjsVQIRagfLwW/yUk1yj4Ah7c4fRbF/gf/CpzZg3R389m20ZTOI4QEpzotOil5lYCZ1QGVnpW73wIooSY45VJJjdKSAkaH5bf6uNr/Ov/5/oq7ANyeSyLEzF4l1tu1ZRMg521ou1e0kCOAbPz8eqR8/MfQs6S5WZV05xfQUkWwFJWGoGGvCO0V97lFwWdl7QCe4THkaQaF08jgtoz3r35cvRl7Vm67iXFdXm6cQSXHp7aOXXxHjomqaKdLekmLsaPQwuLVr/zUPE3WsrYiQt/rp4N86mN45XSQYGaR7OCqu1hg5cLvHEd1rzSZMoP1uR/MhY/SYomgpaKkMPik/T2t6oE2Lp2BDmIzZMu7HeYMJfHQcj18TTb8OxPx6WRmeb+5dlIRtM9A4jQO0QJo0hjctaR0OIUuZjGApkdgWcgupFGkWWOh06GplPeFefh36CFZZ26qfCv2MyqWj3b8eY/1G/K1/GDdEZJe6FRMXuG8Zk1WmelRzRxtlStufrchsgsKb+Rdn12Kl7ie3LVSL8PGEdQaFhTBckcdppH2fMuKNktbAuNj7m3FUDag1zjyYibS4Bm6wElO9whLQWTXUBiZBdY8iyqAOkljgnwobzerCO6I+EM4IgI7EQ3sz4jmYCZWpNjDgh30jlaaVwfZLWNTG0sQOmgG4075cHcmtPVomtw+Pp5dJxympW2e1NdekzXb3G+bX/vYKqZtzWLEWahUsUZe/2SXzzUvfd0XPLtcbQpqpJ1eVIyiNi8z03UXHGtU6OxR0cbIAORf73FQlsAHtpG/l8dBFZT3CHRTQBo71SLIYdNrsY1ZzYcuX0tIs08nH8oNYRbx6GOzMMRbDQKhTyj5XTCjGd2m3QCLUwEODPgnxUVChm5nDjtoVeFV36MVSaurs1I11+Sd1s3n0G9O0jWZcvUtRix843mWbyBW484SwfUy6ZWaPHJUFypludfiKBivxdyfTecAI9sSkLNv//uvbJ88ArAqOn/ih6Tx9/5bvJZglYFJj+Blitvbf1xI2xNq19RpQwnghReE35uCro7JUXK3zFHRz2osFX31U05+ws16AejKKumv+gt+uDfBBQvLRRm9pDNfIH4SObORDHifTcurYxqBXOWE6um2dJLZh1gMj+WIcblCKixRgxqB02DRx+I0GT9fT0iH1vQGFFMuBYgukcFPIGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:18.290998+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "6489e52203af527a32b774ae:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042213-ve0ERrXGECKxS4BI2z6Q",
+    "usage": {
+      "prompt_tokens": 12357,
+      "completion_tokens": 582,
+      "total_tokens": 12939,
+      "cost": 0.0015267,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015267,
+        "upstream_inference_prompt_cost": 0.0012357,
+        "upstream_inference_completions_cost": 0.000291
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 329,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.911390977999872,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 70,
+    "citation_support": 95,
+    "rationale": "The candidate correctly identifies the Item 2.02 disclosure: a February 4, 2025 press release reporting Q4 and full-year 2024 results, furnished as Exhibit 99. The date, exhibit, and accession match the retrieved Item 2.02 and Exhibit 99 excerpts. The reference also says the release included 2025 financial guidance, but none of the retrieved excerpts mention guidance, so the candidate's omission cannot be confirmed as an error and the reference claim is unsupported by the evidence. Citation support is high because the accession, Item 2.02 section, chunk ID, date, and Exhibit 99 claims all appear in the retrieved excerpts."
+  },
+  "status": "ok"
+}

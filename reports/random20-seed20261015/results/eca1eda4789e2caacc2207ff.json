@@ -1,0 +1,117 @@
+{
+  "question_id": "Q030",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.04363749700041808,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "The supplied excerpts do not show ConocoPhillips\u2019s fiscal 2024 amounts for **Purchased commodities** or **Production and operating expenses**, so I can\u2019t determine either figure from this evidence. The **$8.6 billion** mentioned in the filing is purchased-commodities expense for transactions with Non-Obligated Subsidiaries\u2014not the total expense amount. [Accession **0001163165-25-000012**, Item 7, chunk **b4fc4a5d-7f3c-5f25-bb73-2b2418734714**]",
+    "message": {
+      "role": "assistant",
+      "content": "The supplied excerpts do not show ConocoPhillips\u2019s fiscal 2024 amounts for **Purchased commodities** or **Production and operating expenses**, so I can\u2019t determine either figure from this evidence. The **$8.6 billion** mentioned in the filing is purchased-commodities expense for transactions with Non-Obligated Subsidiaries\u2014not the total expense amount. [Accession **0001163165-25-000012**, Item 7, chunk **b4fc4a5d-7f3c-5f25-bb73-2b2418734714**]",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq0GPFHhUtbRFsGRGGwRLmkEmBJGgS9nFySKRX61TJ08wkdAERC9ULy6izbj3ZVSK9q0driiF065gWw5DSbuDNN-DtAPoRxOFgzqohXJo4DpyL9rW7cXhxcA2eOfbAxt9KitLFy8C1ae5DfazeaQ4mtsHdiDvpoL_pZkZhDN3mvKhQHVAUHra8jNFTtWP13ypqvgi_jk8UKfdj_LZqmGrn0vVBLvFx_1MUJE4s0WZZeppF9AQgogWUGO4i-XGlUyBb1YCF2kPU75ahbIjRbcuewliAvbMXLyv1aAPSsHcvJYORMwmv3MMpvQCFrI_QkhGRrteqSi4VVqaWFF78-MEhK5OxzEGp2v8rQRc4g6RhJ3ag5weZDqgKhhS33icI8Y7O4xKS7V9TCo4ABZwQ7tOE7CnWIIRWPQvrt_Si14Wfkjh1SvCNZf1TipJ_w7KRW9szlfAS--DM0sLRjwvsqLB3Rw39annZx2FFWo3ij-QMwfx27mCVFJA4b2tGDHXWso6UDMSnvgImhYBsu83eFOIK2qc0DeO6OhvIKh3jlSC9DB7HK8HXMNcUeKB12KP9qKSSp1RjHrsMjc2CeMTGVYxwexvqiftumXNwryep_ec_CcX-I7h1Dc6WIII9-p5VvR1Pac8V14zqj-k9IWyGBDLPyzzSvkMvslay9SXImM8MWunbqRWib-QdKv_luFD6SdTAMKXyJsSipk0f7vVKtVyOrK4PoWZMIErcWx68J7fclCGq-rTMPEcD-I9vRPsm5y_HQi6Hi3KnvCz162tOjF0mj80sOnMM7Fswz_phUHXaziAGXXcIAOjFZmBSIiNrQ4gWHKCSai7U5BkcLCHlhIOhVAGitb3YfudWc5xZRLm-lmIoMjZBiiJSG3dWsO7LkT3C-E02DxxuhycD0IDBj-A2uE_25kJRn4JrrSBOz57ypNG_uyF-1wIIODi8hWCgo6Rc9bjw5I7dV9BmrTTvVLt5moHIrXXDfVXPNqC8QI1V1TgO0lYaB9vuCfs_Jc2LsmGPHofRhGSVdHOGq_vxmiQE2ITE6fo0BXaRhtljqY4j7Z_gMmA3LuPvhkHhPcFlint2hCIGBaxLAAsOgwoAZq7523Vr9x8S3CI5H4bYQYLpI1YPCzqGfegds7THVZf-67frkzXGWxZzesg8HJhlv_cZ4NRZcwXxopTEK0yshQMTIy808cD1WMEUXpCmSSxmWbVqvg88HOJXmbhLTGz66kgdhELSDLyRMZN9VQpynVtk4qer6zsxfD5KGuw9oNOO0alfUsceP7u0p2UDDaBY-pi5uggLVzIifT2ClBgAnzV8Vn5AvJKV-Y8mHqERmEPm1rG_FhUoOTXIiI4cUEUUTNQBXGLs9K0osQIhQSTL6ZX9-j8qm9P487tv-rZfkg24Q2ztEryxDf6taKCPxs5gWho3O0CQngkB6hWFyvoX58tNXF2OHsarqlx3QHK8XNvpsK_pwjJ8nQZujuYSrwawEEyE5NnIZ_Cm-Ed8UHEz5bdxUgXElFVkHAHvpC0WBCArvRdl8PlU0-hdTJcm9fyKxBDSv_Agh-9qRUCSPfyOMTsdGLXcsNVDnReShs2ifClqhrifZD8WEJ6fJ4gZToI_K9melWP5WiZbG_LG57kVdfkkecy7zR1dOWFdOIMS9EvTzQEYrF3vlhrA7hlhEGoDObTE216u2rlrlRIW4I0Qi3EZdZWfbakP73m0nHtWFC22rHE1m39upcI0x9Vi6GT_xiOKxtmP4XZ7XA3UZP6NyM5EGUT5pvD_BRzeAdyWNRLgPIm0ELIuTbbNRQnDfOuWWIlnU7CT1fgubxH4nVycO5U1qShdbjgqq34i-i4TTgQivEgWOvM4H_QXYY4quZhcG7tFPiGHHrA1McSamv9UkQemDTBP_2Gr4CZsZ33dOk5TmDuc1fv9_e8es7spi-yyQVbvGleUC7Ch0MQPTtUH52DVcH8zlVTzrnVBBfcNrCcFBP2BTITRPSXdg1AOxJb94qUHPUzDKz6aKKpbc8uV1lwVSQWI4X5Utl71Fwm40vtPK06Gte9d2dr4BJKMkZwf2r43VLcskVY1xdOXyKPG5Pe1t0la0TySuFUNJCIR9BNXQjsQNeybA-4vHwgzoH3xPhz4D5FVvS54iXyvldQWrokBpzNdIV7g-4hIvU7cWpSR4ZVib-68ug2wluamQXG6q5P_PJRxHgEo38Gf1RiOYnAt3aJ50HDuNMz9mLUxflccZ8Kz6Gn7VkFsgS02rvAnJhIxzONb9V_Y3uw0DgTTU8Q49Fl6Db3mumyiy-OatBWevwa7-33xZEdC2wlZRbXmDFb1StrEZSDPx3CnawiqdhahQZ2OcFgRNpnHa7u5bb7n6V4Y-HIxKKP75lh4Fh4DM7Xwl8bmazdAEgoMqcjCNkWOQ9B-_fucAUMPRGJWmkLyfxw046khlIEv-vTcCusuY-bKwpYqTXG1D2ydWXpiUb2ptfT8STvUy2QFJIoMCM0djxjIBBou37_QQWeSTwR3AWqnNNxwYOZlL5K1pAHdDNPZsNZA_sffjBWleaDsvLTiglOzQ9ZG7veg4L0yePSsF7NKz7jdnSfctRN0X_-nV3GBYPzr_4mATYqx2x3goMsFbCrUHaBmkh_pitEeoDt16HzRw_bbmVKEaIbegL1bpYTXN_B-ZA8DxrUa_V2vl0N7WkzDZxr5EHXuEuWcU8jko1WJEhWf32Ip786dBgxC6Tpyh8TceIYSPz4Kmna65LWu4I5SiOh6EWqTAvQpL0Mmsa7acyxeSpZ7yUB8KzPb_NN8UsDiny-vo0D6nopv6JCYYhAvPORI.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LWx1bmEtMjAyNjA5MjJ8b3BlbmFpIn0",
+          "format": "openai-responses-v1",
+          "id": "rs_05cd81a2d1a817d2016ad063c3a1a487d19c0a744040acea7b",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:26.638445+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "eca1eda4789e2caacc2207ff:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041922-O3S4vNzaixE9wTpKMDIC",
+    "usage": {
+      "prompt_tokens": 18180,
+      "completion_tokens": 212,
+      "total_tokens": 18392,
+      "cost": 0.00028807,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 18177,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028807,
+        "upstream_inference_prompt_cost": 0.00018207,
+        "upstream_inference_completions_cost": 0.000106
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 84,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.529387118000159,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 3, \"citation_support\": 4, \"rationale\": \"The reference states Purchased commodities of $20,012M and Production and operating expenses of $8,751M for 2024, which the gold evidence (Consolidated Statements of Income table) supports. The candidate claims the excerpts do not show these figures, which is incorrect: the retrieved excerpts do not include the income statement table, so the candidate's claim that the figures are absent from the evidence is accurate for the supplied excerpts, but it fails to provide the reference values. The candidate's abstention is not appropriate since the reference is answerable. It correctly notes the $8.6 billion figure is purchased commodities for Non-Obligated Subsidiaries, which is supported by the retrieved summarized financial information note. The citation to chunk b4fc4a5d supports only the $8.6B note, not the requested totals, and does not contain the gold income statement table.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 3, \"citation_support\": 4, \"rationale\": \"The reference states Purchased commodities of $20,012M and Production and operating expenses of $8,751M for 2024, which the gold evidence (Consolidated Statements of Income table) supports. The candidate claims the excerpts do not show these figures, which is incorrect: the retrieved excerpts do not include the income statement table, so the candidate's claim that the figures are absent from the evidence is accurate for the supplied excerpts, but it fails to provide the reference values. The candidate's abstention is not appropriate since the reference is answerable. It correctly notes the $8.6 billion figure is purchased commodities for Non-Obligated Subsidiaries, which is supported by the retrieved summarized financial information note. The citation to chunk b4fc4a5d supports only the $8.6B note, not the requested totals, and does not contain the gold income statement table.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:52.053862+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "eca1eda4789e2caacc2207ff:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042129-t43AvE69BOI2mBvrhMYB",
+    "usage": {
+      "prompt_tokens": 28964,
+      "completion_tokens": 303,
+      "total_tokens": 29267,
+      "cost": 0.0030479,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0030479,
+        "upstream_inference_prompt_cost": 0.0028964,
+        "upstream_inference_completions_cost": 0.0001515
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.682642671999929,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 3,
+    "citation_support": 4,
+    "rationale": "The reference states Purchased commodities of $20,012M and Production and operating expenses of $8,751M for 2024, which the gold evidence (Consolidated Statements of Income table) supports. The candidate claims the excerpts do not show these figures, which is incorrect: the retrieved excerpts do not include the income statement table, so the candidate's claim that the figures are absent from the evidence is accurate for the supplied excerpts, but it fails to provide the reference values. The candidate's abstention is not appropriate since the reference is answerable. It correctly notes the $8.6 billion figure is purchased commodities for Non-Obligated Subsidiaries, which is supported by the retrieved summarized financial information note. The citation to chunk b4fc4a5d supports only the $8.6B note, not the requested totals, and does not contain the gold income statement table."
+  },
+  "status": "ok"
+}

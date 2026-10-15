@@ -1,0 +1,108 @@
+{
+  "question_id": "Q004",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/bm25",
+  "retrieval": {
+    "seconds": 0.00873326500004623,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "The supplied excerpts do not include the cover-page share count, so I can\u2019t verify how many shares were outstanding as of January 29, 2025. The Amazon 10-K excerpt identifies the filing but does not state that figure (accession **0001018724-25-000004**, \u201cFiling Summary,\u201d chunk **38**).",
+    "message": {
+      "role": "assistant",
+      "content": "The supplied excerpts do not include the cover-page share count, so I can\u2019t verify how many shares were outstanding as of January 29, 2025. The Amazon 10-K excerpt identifies the filing but does not state that figure (accession **0001018724-25-000004**, \u201cFiling Summary,\u201d chunk **38**).",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:06.561243+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "927c85dbd41494bbc04cf851:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041844-aBZ9Dgm72FO3m0I2Q7Gz",
+    "usage": {
+      "prompt_tokens": 9491,
+      "completion_tokens": 75,
+      "total_tokens": 9566,
+      "cost": 0.0012238,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 9488,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012238,
+        "upstream_inference_prompt_cost": 0.0011863,
+        "upstream_inference_completions_cost": 3.75e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.8411288269999204,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 0, \"citation_support\": 0, \"rationale\": \"The reference answer is 10,597,729,352 shares, which the gold evidence places in the cover-page table of accession 0001018724-25-000004. The candidate abstained, saying the figure was not in the excerpts. That abstention is not correct here because the reference is answerable, and the candidate gives no value. The retrieved Amazon excerpts (exhibit list and Exhibit 23.1 consent) do not contain the cover-page share count, so the candidate's statement that the excerpts lack the figure is accurate as to what was retrieved. However, the candidate's citation to 'Filing Summary, chunk 38' does point to a real retrieved chunk (exhibit index and signatures) and does not support the cover-page claim, and the candidate did not invent a number. Correctness is 0 because no correct answer was given for an answerable question. Citation support is 0 because the cited chunk is not evidence for the answer, and the candidate's own statement about it is only a non-answer.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 0, \"citation_support\": 0, \"rationale\": \"The reference answer is 10,597,729,352 shares, which the gold evidence places in the cover-page table of accession 0001018724-25-000004. The candidate abstained, saying the figure was not in the excerpts. That abstention is not correct here because the reference is answerable, and the candidate gives no value. The retrieved Amazon excerpts (exhibit list and Exhibit 23.1 consent) do not contain the cover-page share count, so the candidate's statement that the excerpts lack the figure is accurate as to what was retrieved. However, the candidate's citation to 'Filing Summary, chunk 38' does point to a real retrieved chunk (exhibit index and signatures) and does not support the cover-page claim, and the candidate did not invent a number. Correctness is 0 because no correct answer was given for an answerable question. Citation support is 0 because the cited chunk is not evidence for the answer, and the candidate's own statement about it is only a non-answer.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:51.118181+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "927c85dbd41494bbc04cf851:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042068-NjK5z3pkJyORp4bPooCy",
+    "usage": {
+      "prompt_tokens": 14927,
+      "completion_tokens": 340,
+      "total_tokens": 15267,
+      "cost": 0.0016627,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0016627,
+        "upstream_inference_prompt_cost": 0.0014927,
+        "upstream_inference_completions_cost": 0.00017
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.2062965539998913,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 0,
+    "citation_support": 0,
+    "rationale": "The reference answer is 10,597,729,352 shares, which the gold evidence places in the cover-page table of accession 0001018724-25-000004. The candidate abstained, saying the figure was not in the excerpts. That abstention is not correct here because the reference is answerable, and the candidate gives no value. The retrieved Amazon excerpts (exhibit list and Exhibit 23.1 consent) do not contain the cover-page share count, so the candidate's statement that the excerpts lack the figure is accurate as to what was retrieved. However, the candidate's citation to 'Filing Summary, chunk 38' does point to a real retrieved chunk (exhibit index and signatures) and does not support the cover-page claim, and the candidate did not invent a number. Correctness is 0 because no correct answer was given for an answerable question. Citation support is 0 because the cited chunk is not evidence for the answer, and the candidate's own statement about it is only a non-answer."
+  },
+  "status": "ok"
+}

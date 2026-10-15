@@ -1,0 +1,126 @@
+{
+  "question_id": "Q028",
+  "model": "google/gemini-3.8-flash",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.05949313100063591,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "According to Citigroup Inc.'s 2024 Form 10-K, the figures for fiscal year 2024 depend on whether consolidated Citigroup results or Parent Company Only results are considered:\n\n---\n\n### **1. Citigroup Inc. (Consolidated)**\n\n* **Revenues net of interest expense (Total Citigroup net revenues):** **$81,139 million** (or approximately **$81.1 billion**)\n  * *Source:* Chunk ID `b649eeb5-1b87-5936-99e0-2e0278d6835c`, Chunk ID `f5439905-700b-5f39-9af6-973b47170259`, and Chunk ID `f5014461-55d2-564c-a953-797c742d26a0`.\n* **Net interest income:**\n  * **Reported basis:** **$54,095 million** (calculated as Total interest income of $143,713 million less Total interest expense of $89,618 million; also described as $54.1 billion).\n    * *Source:* Chunk ID `d441cb7b-2128-5e5b-89cc-9543fbbc619d` and Chunk ID `3955f59d-f333-5845-bbab-47febf2b638a`.\n  * **Taxable equivalent basis:** **$54,189 million** (or $54.2 billion).\n    * *Source:* Chunk ID `3955f59d-f333-5845-bbab-47febf2b638a`.\n* **Non-interest revenue:**\n  * Calculated as Total revenues net of interest expense less Net interest income:\n    * **Using reported Net interest income:** \n      $$\\$81,139\\text{ million} - \\$54,095\\text{ million} = \\$27,044\\text{ million}$$\n    * *(Note: The excerpts state that the 2024 increase in revenues reflected a 15% increase in non-interest revenue, but the specific consolidated dollar line item table is not included in the excerpts.)*\n\n---\n\n### **2. Citigroup Inc. (Parent Company Only)**\n*(From Note 32. Condensed Parent Company Financial Statements, Chunk ID `32b983ac-1834-54c2-860a-48db30f3a514`)*\n\n* **Net interest income:** **$(675) million**\n* **Total non-interest revenues:** **$(1,984) million**\n* **Total revenues, net of interest expense:** **$2,890 million**",
+    "message": {
+      "role": "assistant",
+      "content": "According to Citigroup Inc.'s 2024 Form 10-K, the figures for fiscal year 2024 depend on whether consolidated Citigroup results or Parent Company Only results are considered:\n\n---\n\n### **1. Citigroup Inc. (Consolidated)**\n\n* **Revenues net of interest expense (Total Citigroup net revenues):** **$81,139 million** (or approximately **$81.1 billion**)\n  * *Source:* Chunk ID `b649eeb5-1b87-5936-99e0-2e0278d6835c`, Chunk ID `f5439905-700b-5f39-9af6-973b47170259`, and Chunk ID `f5014461-55d2-564c-a953-797c742d26a0`.\n* **Net interest income:**\n  * **Reported basis:** **$54,095 million** (calculated as Total interest income of $143,713 million less Total interest expense of $89,618 million; also described as $54.1 billion).\n    * *Source:* Chunk ID `d441cb7b-2128-5e5b-89cc-9543fbbc619d` and Chunk ID `3955f59d-f333-5845-bbab-47febf2b638a`.\n  * **Taxable equivalent basis:** **$54,189 million** (or $54.2 billion).\n    * *Source:* Chunk ID `3955f59d-f333-5845-bbab-47febf2b638a`.\n* **Non-interest revenue:**\n  * Calculated as Total revenues net of interest expense less Net interest income:\n    * **Using reported Net interest income:** \n      $$\\$81,139\\text{ million} - \\$54,095\\text{ million} = \\$27,044\\text{ million}$$\n    * *(Note: The excerpts state that the 2024 increase in revenues reflected a 15% increase in non-interest revenue, but the specific consolidated dollar line item table is not included in the excerpts.)*\n\n---\n\n### **2. Citigroup Inc. (Parent Company Only)**\n*(From Note 32. Condensed Parent Company Financial Statements, Chunk ID `32b983ac-1834-54c2-860a-48db30f3a514`)*\n\n* **Net interest income:** **$(675) million**\n* **Total non-interest revenues:** **$(1,984) million**\n* **Total revenues, net of interest expense:** **$2,890 million**",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a19x3PChTb0gP5H+t27hLvDbnLBoICuyyA7hoXWhmdwsghPrEKPqY1WNICLezqx8TYXQRRR07yWTmL5VjfqfkSN//SuP3oVfWnojoRuDmEIF7Reo",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:16.426169+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "e73d566842cdc144561c1909:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041909-6ropkE6tpmbiMOkmTKDr",
+    "usage": {
+      "prompt_tokens": 19931,
+      "completion_tokens": 683,
+      "total_tokens": 20614,
+      "cost": 0.0175095,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0175095,
+        "upstream_inference_prompt_cost": 0.01494825,
+        "upstream_inference_completions_cost": 0.00256125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 8.007213003000288,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 88, \"citation_support\": 85, \"rationale\": \"The candidate matches the reference on all three requested consolidated figures: Net interest income of $54,095M, Non-interest revenue of $27,044M (derived as $81,139M minus $54,095M, which the excerpts do not state directly), and Revenues net of interest expense of $81,139M. Its supporting figures check out against the excerpts: taxable-equivalent NII of $54,189M, interest income of $143,713M and interest expense of $89,618M, and the parent-company-only values of $(675)M, $(1,984)M and $2,890M. It is transparent that the non-interest revenue line is derived and that no consolidated line-item table was retrieved. The main deductions are the extra parent-company section, which the question did not ask for, and a hedged framing. The cited chunk IDs all appear in the retrieved excerpts and support the figures they are attached to, though the gold executive-summary table was not one of the cited chunks.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 88, \"citation_support\": 85, \"rationale\": \"The candidate matches the reference on all three requested consolidated figures: Net interest income of $54,095M, Non-interest revenue of $27,044M (derived as $81,139M minus $54,095M, which the excerpts do not state directly), and Revenues net of interest expense of $81,139M. Its supporting figures check out against the excerpts: taxable-equivalent NII of $54,189M, interest income of $143,713M and interest expense of $89,618M, and the parent-company-only values of $(675)M, $(1,984)M and $2,890M. It is transparent that the non-interest revenue line is derived and that no consolidated line-item table was retrieved. The main deductions are the extra parent-company section, which the question did not ask for, and a hedged framing. The cited chunk IDs all appear in the retrieved excerpts and support the figures they are attached to, though the gold executive-summary table was not one of the cited chunks.\"}",
+      "refusal": null,
+      "reasoning": "I'm checking that the candidate's figures match the reference: NII 54,095, non-interest revenue 27,044, and total revenues 81,139 all line up, plus the taxable equivalent and parent company numbers also check out correctly against the excerpt.\n\nThe cited chunk IDs are genuine retrieved excerpts that support the key figures, even if not the exact gold table, and the candidate is transparent about deriving some numbers. Overall this looks solid \u2014 correctness around 88 and citation support around 85.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm checking that the candidate's figures match the reference: NII 54,095, non-interest revenue 27,044, and total revenues 81,139 all line up, plus the taxable equivalent and parent company numbers also check out correctly against the excerpt.\n\nThe cited chunk IDs are genuine retrieved excerpts that support the key figures, even if not the exact gold table, and the candidate is transparent about deriving some numbers. Overall this looks solid \u2014 correctness around 88 and citation support around 85.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:40.566231+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "e73d566842cdc144561c1909:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042114-FsEnWm7gBH7sBXrND96x",
+    "usage": {
+      "prompt_tokens": 26698,
+      "completion_tokens": 915,
+      "total_tokens": 27613,
+      "cost": 0.0031273,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0031273,
+        "upstream_inference_prompt_cost": 0.0026698,
+        "upstream_inference_completions_cost": 0.0004575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 589,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 7.554893857000025,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 88,
+    "citation_support": 85,
+    "rationale": "The candidate matches the reference on all three requested consolidated figures: Net interest income of $54,095M, Non-interest revenue of $27,044M (derived as $81,139M minus $54,095M, which the excerpts do not state directly), and Revenues net of interest expense of $81,139M. Its supporting figures check out against the excerpts: taxable-equivalent NII of $54,189M, interest income of $143,713M and interest expense of $89,618M, and the parent-company-only values of $(675)M, $(1,984)M and $2,890M. It is transparent that the non-interest revenue line is derived and that no consolidated line-item table was retrieved. The main deductions are the extra parent-company section, which the question did not ask for, and a hedged framing. The cited chunk IDs all appear in the retrieved excerpts and support the figures they are attached to, though the gold executive-summary table was not one of the cited chunks."
+  },
+  "status": "ok"
+}

@@ -1,0 +1,117 @@
+{
+  "question_id": "Q084",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/vector",
+  "retrieval": {
+    "seconds": 0.02945048499987024,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Intel Foundry external revenue fell **about 59.6%** in 2024 versus 2023:\n\n\\[\n\\frac{\\$953\\text{ million} - \\$385\\text{ million}}{\\$953\\text{ million}} \\times 100\n= 59.6\\%\n\\]\n\nThat is a **$568 million** decrease, reported as **60%**. Intel attributed it primarily to **lower traditional packaging services revenue and lower equipment sales**.\n\n**Source:** Intel 2024 Form 10-K, accession **0000050863-25-000009**, *Filing Summary*, chunk **12** (Intel Foundry external revenue amounts and causes); chunk **0** (reported percentage and causes).",
+    "message": {
+      "role": "assistant",
+      "content": "Intel Foundry external revenue fell **about 59.6%** in 2024 versus 2023:\n\n\\[\n\\frac{\\$953\\text{ million} - \\$385\\text{ million}}{\\$953\\text{ million}} \\times 100\n= 59.6\\%\n\\]\n\nThat is a **$568 million** decrease, reported as **60%**. Intel attributed it primarily to **lower traditional packaging services revenue and lower equipment sales**.\n\n**Source:** Intel 2024 Form 10-K, accession **0000050863-25-000009**, *Filing Summary*, chunk **12** (Intel Foundry external revenue amounts and causes); chunk **0** (reported percentage and causes).",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:06.375071+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "5d118ca8f30152b29ebca95d:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042013-NpfwlRmBBmvfYolVmYQ6",
+    "usage": {
+      "prompt_tokens": 18258,
+      "completion_tokens": 156,
+      "total_tokens": 18414,
+      "cost": 0.002360175,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 18255,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002360175,
+        "upstream_inference_prompt_cost": 0.002282175,
+        "upstream_inference_completions_cost": 7.8e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 11.052337709999847,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 85, \"citation_support\": 60, \"rationale\": \"The candidate's causes match the reference and the filing: lower traditional packaging services and lower equipment sales. Its arithmetic is correct: (953 - 385) / 953 = 59.6%, a $568M decline. It also notes that the filing reports this as 60%, which matches the reference. The headline figure of 59.6% rather than the reported 60% is a minor presentation difference. Citation support is partial: the accession number is correct, and the cited chunk 12 contains the 2023 and 2024 external revenue figures and causes. However, the reported 60% statement appears in chunks 7 and 13 of the retrieved excerpts, and the candidate cites chunk 0, which does not match any retrieved excerpt.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 85, \"citation_support\": 60, \"rationale\": \"The candidate's causes match the reference and the filing: lower traditional packaging services and lower equipment sales. Its arithmetic is correct: (953 - 385) / 953 = 59.6%, a $568M decline. It also notes that the filing reports this as 60%, which matches the reference. The headline figure of 59.6% rather than the reported 60% is a minor presentation difference. Citation support is partial: the accession number is correct, and the cited chunk 12 contains the 2023 and 2024 external revenue figures and causes. However, the reported 60% statement appears in chunks 7 and 13 of the retrieved excerpts, and the candidate cites chunk 0, which does not match any retrieved excerpt.\"}",
+      "refusal": null,
+      "reasoning": "I'm checking the math: 953 to 385 is a 59.6% decrease, which matches the filing's reported 60% figure, so the candidate's computation and rounding line up correctly. I'm also verifying the citations point to the right chunks covering Intel Foundry's financial performance.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm checking the math: 953 to 385 is a 59.6% decrease, which matches the filing's reported 60% figure, so the candidate's computation and rounding line up correctly. I'm also verifying the citations point to the right chunks covering Intel Foundry's financial performance.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:27.882681+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "5d118ca8f30152b29ebca95d:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042224-OAPJesRy9f0p11RdF4l5",
+    "usage": {
+      "prompt_tokens": 28554,
+      "completion_tokens": 653,
+      "total_tokens": 29207,
+      "cost": 0.0031819,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0031819,
+        "upstream_inference_prompt_cost": 0.0028554,
+        "upstream_inference_completions_cost": 0.0003265
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 394,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.949781710000025,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 85,
+    "citation_support": 60,
+    "rationale": "The candidate's causes match the reference and the filing: lower traditional packaging services and lower equipment sales. Its arithmetic is correct: (953 - 385) / 953 = 59.6%, a $568M decline. It also notes that the filing reports this as 60%, which matches the reference. The headline figure of 59.6% rather than the reported 60% is a minor presentation difference. Citation support is partial: the accession number is correct, and the cited chunk 12 contains the 2023 and 2024 external revenue figures and causes. However, the reported 60% statement appears in chunks 7 and 13 of the retrieved excerpts, and the candidate cites chunk 0, which does not match any retrieved excerpt."
+  },
+  "status": "ok"
+}

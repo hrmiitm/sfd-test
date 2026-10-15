@@ -1,0 +1,117 @@
+{
+  "question_id": "Q051",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.030866426999637042,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Adobe\u2019s fiscal 2024 gross profit margin was **89.04%**:\n\n\\[\n\\frac{\\text{Gross profit } \\$19{,}147\\text{ million}}{\\text{Total revenue } \\$21{,}505\\text{ million}}\\times 100\n= 89.04\\%\n\\]\n\nRounded to the nearest whole percent, that is **89%**. [Accession 0000796343-25-000004, \u201cCONSOLIDATED STATEMENTS OF INCOME,\u201d chunk `c8e23789-3e5b-5998-a527-7bb13e5d5a92`]",
+    "message": {
+      "role": "assistant",
+      "content": "Adobe\u2019s fiscal 2024 gross profit margin was **89.04%**:\n\n\\[\n\\frac{\\text{Gross profit } \\$19{,}147\\text{ million}}{\\text{Total revenue } \\$21{,}505\\text{ million}}\\times 100\n= 89.04\\%\n\\]\n\nRounded to the nearest whole percent, that is **89%**. [Accession 0000796343-25-000004, \u201cCONSOLIDATED STATEMENTS OF INCOME,\u201d chunk `c8e23789-3e5b-5998-a527-7bb13e5d5a92`]",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:30.868274+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "4df3b51f2eab2c811848354c:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041928-bTZ7jDgEWbjC5P06gh6v",
+    "usage": {
+      "prompt_tokens": 10569,
+      "completion_tokens": 139,
+      "total_tokens": 10708,
+      "cost": 0.00139055,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 10566,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00139055,
+        "upstream_inference_prompt_cost": 0.00132105,
+        "upstream_inference_completions_cost": 6.95e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.9885115850001966,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 98, \"citation_support\": 96, \"rationale\": \"The candidate's 89.04% matches the reference. Recomputing 19,147 / 21,505 gives 0.89035, which rounds to 89.04%, and the inputs match the Consolidated Statements of Income. The added whole-percent rounding to 89% is consistent with the segment table's total. The cited accession number and section title match the retrieved income statement chunk (c8e23789...), which contains the gross profit and total revenue figures. Small deduction only because the answer is slightly more verbose than needed.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 98, \"citation_support\": 96, \"rationale\": \"The candidate's 89.04% matches the reference. Recomputing 19,147 / 21,505 gives 0.89035, which rounds to 89.04%, and the inputs match the Consolidated Statements of Income. The added whole-percent rounding to 89% is consistent with the segment table's total. The cited accession number and section title match the retrieved income statement chunk (c8e23789...), which contains the gross profit and total revenue figures. Small deduction only because the answer is slightly more verbose than needed.\"}",
+      "refusal": null,
+      "reasoning": "Computing 19147/21505 gives roughly 0.8904, so 89.04% rounds to 89%, matching the candidate value and confirming the citation in the consolidated income statement section.\n\nThis is fully supported by the retrieved excerpt, so citation support is high, around 95, and correctness is nearly 100 given the answer is fully accurate.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Computing 19147/21505 gives roughly 0.8904, so 89.04% rounds to 89%, matching the candidate value and confirming the citation in the consolidated income statement section.\n\nThis is fully supported by the retrieved excerpt, so citation support is high, around 95, and correctness is nearly 100 given the answer is fully accurate.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQShQgKEAgSGAI4AUIIdGhpbmtpbmcSDDs+jMUvKVGZlJ2yPxoMYLCIIP1fMPkTylelIjAfWT835TikqYXaKNL25xx1T+Zp/d9IIJtCUCSvQtsPi47JWu5ZvtgJ9yXN8WP4EoMqogdxNAf0AyBpIeBEvHZE57X+R30DFSUwXvSNKsnwpeIeoh3fBE6Va992/Pn2NbmCDbx0ax3vp953ZF1L3AxWivOdi07NPmtyRRhnSVVwaG7/5nJuiMnr8S3vtrYJBjzx9te7ntAw7jRb0ig6Gfyn0875E/3+3lX29KQ4T0B77rZVzMhMh8ARzgQPgFO6tZ3hlUhFI5FVB6dcF1f7EMo/VFODoI6vFI6HiPodo6g/g4VZ9OQxbn5MVBfkW47JGEJP8b/Arm5/f0DuEpV2bugM5A9m/6C1lwvmNNzdR2wxNOimaHQZZDog+b/PIm/kPknISX8tvmt/qjlSWEJxj6tKBRUVGYl791oiN6++d89EHvr/E3Ae7BC857BCHj2h+HA6VJ9p67E/0CrBDfNN8MROeZg93W0MtSeFE9RN10gzheNizcIJkcjSGGsttddPjXCLTwOtgheQG+7qF0/TbhaydumCnCEd8IC8sMC8DdwL68CvPz/czUUdJoEBxw6+4ZsZQ3bPq8kCg0+1gnQKLonuzY+d0EeM1VQx21pAIUklQBsSzcb8bjlo+qBYIu8buFSnUqnZwD0MTq9L8OHxQHBtgyIEPKT8aX2xPGA9A+5u92uh/lXuVOakPg+15DlVTpxnwGlQ4tQamUTm6tni0NnaIHsggRJlgOEDGRFFCZs3ptnBwJa3AMGNd/nbGSnIiDk6TPO1dWpar4ViqfRI/qriSLZji0qpzwLV9FxVzs3ySzbRSds4IOMCmxBhJhhYbd/04YUC/IE+X/4sqSipmWiqzCi6heEhZHXbPstf6CxO4Z265RL7KDiZcgF4Q0GRkcL/+VkAujWbKtcnaZK47DS7PfGI5R4fGe8qisqLtFRToDRiXj5++HlewOJtyWGgLqnNdDg2u8+U8R7B2DsrC69f3DY8PICDATzahC/mTc9IGx86VMxsAQ3HFzARt1xQEfPGKRSJzjawLtZYxoUjyfPZFI46Ni0KyGLj0cN/qkpFrkC/3xKijfkWNOTd9glWQtDxpFb70pXo0dxo2O4u70TQvCSOPF74Yc7vS5GjyRHwOmrXHFwHGcyNHUKxlYjzxVX8koc7jxuJBn6NTRScXT3oKD2XtASqprQrnWOimc29XeckC1Mrv1SDjrjMYWvuyaoy353uN1e7VkfZfdn2LLlsOavYQ9rRlAaFcTCx2RvantOpKHAbhfPGnNdmLqe1EtTSDM9d2/BK6QbA69wkpGAex0YKCtUYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:00.455665+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "4df3b51f2eab2c811848354c:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042135-0Y8LnM1GVCsyDtmqWjQS",
+    "usage": {
+      "prompt_tokens": 16545,
+      "completion_tokens": 397,
+      "total_tokens": 16942,
+      "cost": 0.001853,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001853,
+        "upstream_inference_prompt_cost": 0.0016545,
+        "upstream_inference_completions_cost": 0.0001985
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 207,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.521030560000327,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 96,
+    "rationale": "The candidate's 89.04% matches the reference. Recomputing 19,147 / 21,505 gives 0.89035, which rounds to 89.04%, and the inputs match the Consolidated Statements of Income. The added whole-percent rounding to 89% is consistent with the segment table's total. The cited accession number and section title match the retrieved income statement chunk (c8e23789...), which contains the gross profit and total revenue figures. Small deduction only because the answer is slightly more verbose than needed."
+  },
+  "status": "ok"
+}

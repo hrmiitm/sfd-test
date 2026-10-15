@@ -1,0 +1,117 @@
+{
+  "question_id": "Q084",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.025700459999825398,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Intel Foundry external revenue **declined about 60%** in 2024 versus 2023.\n\nCalculation: \\((\\$953\\text{ million} - \\$385\\text{ million}) / \\$953\\text{ million} \\times 100 \\approx 59.6\\%\\), rounded to 60%. The filing attributes the decline primarily to **lower traditional packaging services revenue and lower equipment sales**.\n\nSource: Intel 2024 Form 10-K, accession **0000050863-25-000009**, \u201cIntel Foundry Financial Performance\u201d and \u201cConsolidated Revenue,\u201d Filing Summary, chunk IDs **00cec489-cca7-51ce-a50a-2814f0bd9f87** and **e165c6f6-d3cc-50f7-ba46-2514cc990b6e**.",
+    "message": {
+      "role": "assistant",
+      "content": "Intel Foundry external revenue **declined about 60%** in 2024 versus 2023.\n\nCalculation: \\((\\$953\\text{ million} - \\$385\\text{ million}) / \\$953\\text{ million} \\times 100 \\approx 59.6\\%\\), rounded to 60%. The filing attributes the decline primarily to **lower traditional packaging services revenue and lower equipment sales**.\n\nSource: Intel 2024 Form 10-K, accession **0000050863-25-000009**, \u201cIntel Foundry Financial Performance\u201d and \u201cConsolidated Revenue,\u201d Filing Summary, chunk IDs **00cec489-cca7-51ce-a50a-2814f0bd9f87** and **e165c6f6-d3cc-50f7-ba46-2514cc990b6e**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:57.977936+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "08470c68c87d6d0bfaf1782c:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792042014-ZNY37pPs0rIClrlCeQGk",
+    "usage": {
+      "prompt_tokens": 18278,
+      "completion_tokens": 182,
+      "total_tokens": 18460,
+      "cost": 0.002375675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 18275,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002375675,
+        "upstream_inference_prompt_cost": 0.002284675,
+        "upstream_inference_completions_cost": 9.1e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.133317701999658,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate gives a 60% decline, matching the reference and the gold quote. Its computation is correct: (953 - 385) / 953 \u2248 59.6%, rounded to 60%. It names the same two drivers, lower traditional packaging services and lower equipment sales. The cited accession 0000050863-25-000009 matches the gold evidence. Both chunk IDs cited appear in the retrieved excerpts: 00cec489 contains the $385M vs $953M external revenue figures and the drivers, and e165c6f6 contains the 60% statement. The section labels also match retrieved content. Minor deduction only for hedging with 'about' and rounding the computed figure.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 95, \"rationale\": \"The candidate gives a 60% decline, matching the reference and the gold quote. Its computation is correct: (953 - 385) / 953 \u2248 59.6%, rounded to 60%. It names the same two drivers, lower traditional packaging services and lower equipment sales. The cited accession 0000050863-25-000009 matches the gold evidence. Both chunk IDs cited appear in the retrieved excerpts: 00cec489 contains the $385M vs $953M external revenue figures and the drivers, and e165c6f6 contains the 60% statement. The section labels also match retrieved content. Minor deduction only for hedging with 'about' and rounding the computed figure.\"}",
+      "refusal": null,
+      "reasoning": "Checking the math: (953-385)/953 = 59.6%, rounds to 60%, matching the reference answer. The factors cited\u2014lower traditional packaging services and lower equipment sales\u2014also match, and the citation points to the correct filing segment table showing external revenue dropping from $953 to $385.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "Checking the math: (953-385)/953 = 59.6%, rounds to 60%, matching the reference answer. The factors cited\u2014lower traditional packaging services and lower equipment sales\u2014also match, and the citation points to the correct filing segment table showing external revenue dropping from $953 to $385.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQShAsKEAgSGAI4AUIIdGhpbmtpbmcSDBWbSCXjetL5rRcOxhoM76ze3Rvf2zk/SgurIjAmx2CEqeNbKh9IhET1NFUorcM1ifNnr5HQcXZArcMG+QgUo4iz1DJIG8dgVZtMRFcqoQp9qM4NVeCTxs044hzS1PVs4JqwgSyEC25hmmDi0l08zbzeybCwo3P78tRk4EF+gaZWEGFaiLOF5pLNbH3Eq9/LLUM1syf5/bHalur0qugPMo++08w8zIvUqlhL6hExT7x3d0cY6vZGu0KrwWMVG/69qm/iARffz5bDF8cw85td47xcCYZ6oXcDx9IK8JoBWNuXWhBu7XO0EZKOTPhkZB7zlMeTGgZxSY3y0jEKu23hhoKQiaD9a440r7yCNAFB0IvwifD8qn8WjGtdbWVIUzJ5Zq3rZICTczPfbAIA5IhBWTp01yR1uW9A6B/Dg6yEVdr3blRJMnFsWUiis84NpaE3n8smoATq6yMfZl9D8banu2N/kuI57mKt2rXSR+EEWcicHWNblrLtuYGb1S+Wdh3TBGRVEuvM2vzFjWRoDH8EZZzN9D+aVyfdso/zmPcTt1fc4skoAUaB7W/99/ryO6MWJrQ+hD/wqBDdSo+5ZJ8Ba/1HoSW3RvEvM33DE4N5oXpJdqis8x1sqrqY4EnZuQSTtG/xc4czw74oIaDJsH863Gvc2FlSm1m4/RpRbVdYBOs3lAPIsVaLaddLtsdBHdKPREGTAICNdWiNU+Y25BnlWD3hNpeiURftmCluOpfWnKw81CE6u0/VbAQDqKdrBhJrxJE7MOnSVskqEVV2ps4cVx0eqn7J9c0QvNFAW7uRbc7zYeVzESjA2EALksJoLcyraAZKRssOnM+XcuphGyWeBz5ubCT9lAa5Zcvipwc8B8/HTqdgBdu6OUtnjRJ4/GMTulXaCljORe7bT9U8A9JeZubf8NgmHAIuGIPl1MIlPColYkURoPfvrrAUTdZTzGxefQQCPf8C812B/hyZlmJUxJeooGkrYnhnePHovH0nZ7CpCl98DKPjyOQUseNamCDImZv1yDQJ1vA3paKAHOlGFBjBWTlT95EklzhV42Iwl/wN19XvUuEqqCpYGY9UmOzn72KFRneEPntbJOo+etos+oIdnYAZh/tIiQVMSsdTvcXmXOuyBD4bU7sVBwEoTKnsGXfWAYa4zv/yiH8FK1HghC3JEgvFv1B7GqWxv/i9Luwol1+j1nlL9ioixH3sqZYVNVJLO7T7yXbuVIkGTmlnKj77YrHrLiUfQMrB3+aS9xu6kStCM/NYcD8hhDUTwtW4bHOnYqGmadXqz/cLsRMVxX67n0hq1D63dQeLsxhtTpwfzGgNkQoGqHM6yjWMeDjbFjo48CUoahEA9sRO2MaymNUEV29i3U7dXFgneNl80BevwRI52oEO+lr14t+AYBD6A0zRGCgUJJCnP3sGogimKpyldz9Ntqn5EikwYS9o8LDuSj3PLFuBLm1/yzKH21QLoJqJrd61MAA6zkyi3rai8UugntHH5RV5pFoZtjs741vcfqmrl8cusctzVZsEQQzA0nizFaj5bzK4d8a7KY3YTskJs9qPq5Bpe6cxzDSj0W/3fZ+apQbDxbL0HEm0kFrhiFSnGL+HrfOrnBCeQjEtr7AfpD6DHdS7b0NqtoTkEuqjmtv9A4rcH0AaVRXYyaYdvFoShk3+bJUAMLXY/AP5StdfaAxu0OOsRqHp7fSRMWMr2zN10Z94IbR0kcaEuJjjtn2F5IJnHDk2Nnr0+Jd5gdBbZHmzJ7yqt5nmHxlqTOz9Ne5MKdvwAAxMSyY4cjokrOsob69oRn9VvzpJUw4yz5COsA5Tsop83t1kHj+wjO5zy6dmuIKpyn+kSy5WiH3ILhgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:25.658895+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "08470c68c87d6d0bfaf1782c:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042221-4mQwyqNbnHw7Dj3k8j37",
+    "usage": {
+      "prompt_tokens": 29084,
+      "completion_tokens": 556,
+      "total_tokens": 29640,
+      "cost": 0.0031864,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0031864,
+        "upstream_inference_prompt_cost": 0.0029084,
+        "upstream_inference_completions_cost": 0.000278
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 308,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.2933142400006545,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 95,
+    "rationale": "The candidate gives a 60% decline, matching the reference and the gold quote. Its computation is correct: (953 - 385) / 953 \u2248 59.6%, rounded to 60%. It names the same two drivers, lower traditional packaging services and lower equipment sales. The cited accession 0000050863-25-000009 matches the gold evidence. Both chunk IDs cited appear in the retrieved excerpts: 00cec489 contains the $385M vs $953M external revenue figures and the drivers, and e165c6f6 contains the 60% statement. The section labels also match retrieved content. Minor deduction only for hedging with 'about' and rounding the computed figure."
+  },
+  "status": "ok"
+}

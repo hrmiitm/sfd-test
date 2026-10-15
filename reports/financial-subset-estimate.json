@@ -1,0 +1,177 @@
+{
+  "selection": [
+    "10-K",
+    "10-Q"
+  ],
+  "exact_counts": [
+    {
+      "form_type": "10-Q",
+      "filings": 6365,
+      "characters": 1401014233
+    },
+    {
+      "form_type": "10-K",
+      "filings": 5870,
+      "characters": 3853186041
+    }
+  ],
+  "amendments_excluded": [
+    {
+      "form_type": "10-K/A",
+      "filings": 566,
+      "characters": 93816062
+    },
+    {
+      "form_type": "10-Q/A",
+      "filings": 115,
+      "characters": 15064791
+    }
+  ],
+  "sample_filings": 48,
+  "strata": [
+    {
+      "source_file": "sfd-v1-2025-01.parquet",
+      "form_type": "10-K",
+      "filings": 100,
+      "characters": 40663703,
+      "sample_filings": 4,
+      "estimated_tokens": 8724886,
+      "estimated_chunks": 15894,
+      "estimated_chunking_seconds": 34.31600528571876
+    },
+    {
+      "source_file": "sfd-v1-2025-01.parquet",
+      "form_type": "10-Q",
+      "filings": 238,
+      "characters": 42439414,
+      "sample_filings": 4,
+      "estimated_tokens": 10402222,
+      "estimated_chunks": 19260,
+      "estimated_chunking_seconds": 47.058493694777155
+    },
+    {
+      "source_file": "sfd-v1-2025-02.parquet",
+      "form_type": "10-K",
+      "filings": 2073,
+      "characters": 1507770730,
+      "sample_filings": 4,
+      "estimated_tokens": 350000126,
+      "estimated_chunks": 604267,
+      "estimated_chunking_seconds": 1671.2893005305878
+    },
+    {
+      "source_file": "sfd-v1-2025-02.parquet",
+      "form_type": "10-Q",
+      "filings": 597,
+      "characters": 112244099,
+      "sample_filings": 4,
+      "estimated_tokens": 37528080,
+      "estimated_chunks": 60307,
+      "estimated_chunking_seconds": 247.15485984928455
+    },
+    {
+      "source_file": "sfd-v1-2025-03.parquet",
+      "form_type": "10-K",
+      "filings": 3088,
+      "characters": 2036176844,
+      "sample_filings": 4,
+      "estimated_tokens": 642667169,
+      "estimated_chunks": 1017068,
+      "estimated_chunking_seconds": 5157.126844786783
+    },
+    {
+      "source_file": "sfd-v1-2025-03.parquet",
+      "form_type": "10-Q",
+      "filings": 198,
+      "characters": 38658992,
+      "sample_filings": 4,
+      "estimated_tokens": 9369360,
+      "estimated_chunks": 20262,
+      "estimated_chunking_seconds": 44.883730642163215
+    },
+    {
+      "source_file": "sfd-v1-2025-04.parquet",
+      "form_type": "10-K",
+      "filings": 386,
+      "characters": 169282848,
+      "sample_filings": 4,
+      "estimated_tokens": 37253253,
+      "estimated_chunks": 65423,
+      "estimated_chunking_seconds": 144.67572537948774
+    },
+    {
+      "source_file": "sfd-v1-2025-04.parquet",
+      "form_type": "10-Q",
+      "filings": 727,
+      "characters": 167202266,
+      "sample_filings": 4,
+      "estimated_tokens": 39951744,
+      "estimated_chunks": 75547,
+      "estimated_chunking_seconds": 185.0360941257503
+    },
+    {
+      "source_file": "sfd-v1-2025-05.parquet",
+      "form_type": "10-K",
+      "filings": 158,
+      "characters": 74304450,
+      "sample_filings": 4,
+      "estimated_tokens": 16250309,
+      "estimated_chunks": 29523,
+      "estimated_chunking_seconds": 56.41664639317906
+    },
+    {
+      "source_file": "sfd-v1-2025-05.parquet",
+      "form_type": "10-Q",
+      "filings": 4371,
+      "characters": 998592489,
+      "sample_filings": 4,
+      "estimated_tokens": 255253655,
+      "estimated_chunks": 440078,
+      "estimated_chunking_seconds": 1256.7916934155278
+    },
+    {
+      "source_file": "sfd-v1-2025-06.parquet",
+      "form_type": "10-K",
+      "filings": 65,
+      "characters": 24987466,
+      "sample_filings": 4,
+      "estimated_tokens": 5646450,
+      "estimated_chunks": 10634,
+      "estimated_chunking_seconds": 24.241250013695236
+    },
+    {
+      "source_file": "sfd-v1-2025-06.parquet",
+      "form_type": "10-Q",
+      "filings": 234,
+      "characters": 41876973,
+      "sample_filings": 4,
+      "estimated_tokens": 9673492,
+      "estimated_chunks": 18205,
+      "estimated_chunking_seconds": 41.722206271852286
+    }
+  ],
+  "totals": {
+    "filings": 12235,
+    "characters": 5254200274,
+    "tokens": 1422720746,
+    "chunks": 2376468
+  },
+  "estimated_embedding_cost_usd": 28.45441492,
+  "estimated_stage_seconds": {
+    "prepare": 9155.712850388807,
+    "embed": 76141.78406509555,
+    "ingest": 7123.040162389372
+  },
+  "estimated_total_hours": 25.67237141052048,
+  "estimated_storage_gb": 68.05137524337613,
+  "current_model": "openai/text-embedding-3-small",
+  "dimensions": 1536,
+  "caveats": [
+    "Counts and source characters are exact local-label measurements, not SEC-validated classifications.",
+    "Tokens, chunks, cost, time and storage are estimates from four randomly sampled filings per form per month.",
+    "Runtime scales from the earlier live 1,000-filing run, including recovery time; allow rate-limit and indexing variability.",
+    "Cost assumes the previously observed $0.02 per million input tokens; any separate Foundry markup is unknown.",
+    "Storage includes shared chunks/embeddings and both indexed databases; temporary files need additional headroom.",
+    "No additional embedding requests are made by this profiler."
+  ]
+}

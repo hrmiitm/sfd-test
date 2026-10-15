@@ -1,0 +1,108 @@
+{
+  "question_id": "Q026",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/bm25",
+  "retrieval": {
+    "seconds": 0.014400400999875274,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "Levi Strauss & Co.\u2019s SG&A expenses in fiscal 2024 were **$3,246.2 million**, equal to **51.1% of net revenues**.\n\nCalculation: $3,246.2 million \u00f7 $6,355.3 million net revenues \u00d7 100 = **51.1%** (rounded).  \nSource: 10-K, accession **0000094845-25-000005**, Filing Summary, chunk **7800a9af-162a-5e50-b146-b4ba64b4b763**.",
+    "message": {
+      "role": "assistant",
+      "content": "Levi Strauss & Co.\u2019s SG&A expenses in fiscal 2024 were **$3,246.2 million**, equal to **51.1% of net revenues**.\n\nCalculation: $3,246.2 million \u00f7 $6,355.3 million net revenues \u00d7 100 = **51.1%** (rounded).  \nSource: 10-K, accession **0000094845-25-000005**, Filing Summary, chunk **7800a9af-162a-5e50-b146-b4ba64b4b763**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:05.750522+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "0747192ef0c58d7d01386210:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041903-qucSLs0sTrzPLKp2Hw6h",
+    "usage": {
+      "prompt_tokens": 15701,
+      "completion_tokens": 122,
+      "total_tokens": 15823,
+      "cost": 0.00202355,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 15698,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00202355,
+        "upstream_inference_prompt_cost": 0.00196255,
+        "upstream_inference_completions_cost": 6.1e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.4740634499994485,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 96, \"citation_support\": 88, \"rationale\": \"The candidate correctly reports SG&A of $3,246.2 million for fiscal 2024 and 51.1% of net revenues, matching the reference and gold evidence table. Net revenues of $6,355.3 million are confirmed in the retrieved income statement and gross profit table, and the arithmetic (3246.2/6355.3 = 51.07%, rounds to 51.1%) is correct. The candidate omits the year-over-year comparison (6.4% increase from $3,051.9 million), a minor omission relative to the reference. The cited accession matches the gold evidence. The cited chunk ID 7800a9af-... is indeed one of the retrieved excerpts containing the SG&A table, so the citation is supported, though the section label 'Filing Summary' is a generic field rather than the MD&A heading named in the gold evidence.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 96, \"citation_support\": 88, \"rationale\": \"The candidate correctly reports SG&A of $3,246.2 million for fiscal 2024 and 51.1% of net revenues, matching the reference and gold evidence table. Net revenues of $6,355.3 million are confirmed in the retrieved income statement and gross profit table, and the arithmetic (3246.2/6355.3 = 51.07%, rounds to 51.1%) is correct. The candidate omits the year-over-year comparison (6.4% increase from $3,051.9 million), a minor omission relative to the reference. The cited accession matches the gold evidence. The cited chunk ID 7800a9af-... is indeed one of the retrieved excerpts containing the SG&A table, so the citation is supported, though the section label 'Filing Summary' is a generic field rather than the MD&A heading named in the gold evidence.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:25.833666+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "0747192ef0c58d7d01386210:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042103-8CRBqUKVO8mc0N2pbDvH",
+    "usage": {
+      "prompt_tokens": 24261,
+      "completion_tokens": 300,
+      "total_tokens": 24561,
+      "cost": 0.0025761,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0025761,
+        "upstream_inference_prompt_cost": 0.0024261,
+        "upstream_inference_completions_cost": 0.00015
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.4761051160003262,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 96,
+    "citation_support": 88,
+    "rationale": "The candidate correctly reports SG&A of $3,246.2 million for fiscal 2024 and 51.1% of net revenues, matching the reference and gold evidence table. Net revenues of $6,355.3 million are confirmed in the retrieved income statement and gross profit table, and the arithmetic (3246.2/6355.3 = 51.07%, rounds to 51.1%) is correct. The candidate omits the year-over-year comparison (6.4% increase from $3,051.9 million), a minor omission relative to the reference. The cited accession matches the gold evidence. The cited chunk ID 7800a9af-... is indeed one of the retrieved excerpts containing the SG&A table, so the citation is supported, though the section label 'Filing Summary' is a generic field rather than the MD&A heading named in the gold evidence."
+  },
+  "status": "ok"
+}

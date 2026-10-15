@@ -1,0 +1,117 @@
+{
+  "question_id": "Q057",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/bm25",
+  "retrieval": {
+    "seconds": 0.01702670800023043,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Marathon Petroleum\u2019s working capital at December 31, 2024 was **$3,620 million**.\n\n**Calculation:** Total current assets ($24,447 million) \u2212 total current liabilities ($20,827 million) = **$3,620 million**.\n\n**Source:** Accession **0001510295-25-000012**, *Item 8. Financial Statements and Supplementary Data*, chunk **4**.",
+    "message": {
+      "role": "assistant",
+      "content": "Marathon Petroleum\u2019s working capital at December 31, 2024 was **$3,620 million**.\n\n**Calculation:** Total current assets ($24,447 million) \u2212 total current liabilities ($20,827 million) = **$3,620 million**.\n\n**Source:** Accession **0001510295-25-000012**, *Item 8. Financial Statements and Supplementary Data*, chunk **4**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:46.469886+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "f95043a6f6a597769f304cc6:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041944-4YL2utAfje2gOPZU6QKX",
+    "usage": {
+      "prompt_tokens": 12845,
+      "completion_tokens": 91,
+      "total_tokens": 12936,
+      "cost": 0.00165105,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 12842,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00165105,
+        "upstream_inference_prompt_cost": 0.00160555,
+        "upstream_inference_completions_cost": 4.55e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.8340036960007637,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's answer matches the reference: $24,447M minus $20,827M equals $3,620M, which is correctly stated in millions and as the working capital figure at December 31, 2024. The cited accession 0001510295-25-000012 and the Item 8 section match the retrieved Marathon Petroleum 10-K balance sheet excerpt, which contains both the total current assets (24447) and total current liabilities (20827) figures. The chunk number (4) also matches the retrieved excerpt. Minor deduction only because the candidate's quoted section title is slightly abbreviated relative to the excerpt's wording, though it is substantively the same heading.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's answer matches the reference: $24,447M minus $20,827M equals $3,620M, which is correctly stated in millions and as the working capital figure at December 31, 2024. The cited accession 0001510295-25-000012 and the Item 8 section match the retrieved Marathon Petroleum 10-K balance sheet excerpt, which contains both the total current assets (24447) and total current liabilities (20827) figures. The chunk number (4) also matches the retrieved excerpt. Minor deduction only because the candidate's quoted section title is slightly abbreviated relative to the excerpt's wording, though it is substantively the same heading.\"}",
+      "refusal": null,
+      "reasoning": "I verify the working capital calculation: 24,447 minus 20,827 equals 3,620 million, matching the candidate's figure. Checking the source, the cited accession and chunk do contain the matching balance sheet data, though the section name differs slightly in wording from the candidate's citation.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I verify the working capital calculation: 24,447 minus 20,827 equals 3,620 million, matching the candidate's figure. Checking the source, the cited accession and chunk do contain the matching balance sheet data, though the section name differs slightly in wording from the candidate's citation.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS/gkKEAgSGAI4AUIIdGhpbmtpbmcSDF6N5QVabD0JgC5ZChoMJ1mJEWErc0VKgcR5IjCq1sqy0dRWHkTW9dMTGjm6Ak4/ijAeMgJVpDX8Q8dgqremh6WPp/oafFYfsDPm8k0qmwmyxuTBvYfQ9+HrZBECkSyQwfu5DwMJJ/rd87U73/tce4mCusyT4yk5hZPbuzKZC+kyI779be1waDpVZflUPSa6g2bMIxsJ4dvZWsgxd6ENFxybSEhaaLio3RGgqPZjfDmeT2c/fuHardEFWEc3sIwf7gKoXc7LE8utiMZPiylfYu8nm1ee07Q7ERRTagB9j3493A/0+hgckXNsR1QvAYVl/40/HVjpaYYFfpHTp89TNvf9bfrUFm/jQpcq9oaTYy4hmFKv1wV94u5R8xK9OffgkXIP88xeFMgBqmh0fFp/fo9WDHG3u5teVPho822oHTqgkGIHGXesGBeSc75GbVEF8fBxdzvdNl0HlHHMgQf78LgJ4VjqnFzJtcsdhPTfTYhy2/0YSUCMD19uFaAZvsNsxSXL8f7d5cDvlnPCOURWUN0iz8FvJTbkBAi78U5K8tXsnj1LsYPHJ4gqVNjtUFvNLN170hjAsjwVgdMTAZkEJYTWb9h2iZwgWf6sxzjifmX70D09azIXsj3SkX93NB57ej4HjVwqoGXKLHpp5R7LkZKKvRKGrdZiZmCI5TJ2evRUhACRM2jtESpD9BrhCQ1iaItxx6Xc6Ik+V3ZEUy3xLb+YW27PNAMsKIXQUDEUoQD978q0xtNpJLQ2TjbM7GkaZbdb/mmXzNZxrDqasmGULUjSAItk5PR5mYvlnZQOUhHexEZ/bYrH0AkkF28Wej1+vgoShnLJrOSwX8Xsc0Y2Y6ICLCuUneMkL73ehGH7Xj5SPF4BTMSDwTxuDHMJft8i0hlvM119VORkBi3YgS849hvimDKa+z2/OjNvxrDyJ0uLUixuvu9E42gRTHVjuE1zWpIzXtHZbFRQ7sqUBwkoLVea+Un5h0NOdmONvXKI+Ss9+YvwLT8zg6WIPo1ss9dOuKB6bX78QKqzMP05pITgKs72d6S1JQUCv6gNwRbud/RsiUG3swKIasHf7ER+sRKMrpqDCk2mZe+co7tc7vt0GZBQh+WA+LW54af3o28wRMhyp8CT33wzGJCOMJsdCR2nTowKLz5DDEnyunFEX5MGPhEa8Vsuwap2aH/7a9HIDY/ARN9Vy7MdKjr2UcC+F2rfe8g/ZwuipT+aoLHsIzoeS7Y/n/5rTW0cnwA0ZA9lwgD0j4CKKNpHLq0EfzS4XEfow4vkxCATXnQBbaJ8/FjFpeT70vi6KNIbkvonMMmSOI6st9HKRHS12zzYXcWTv4BVGEAMDyXS0oFkzvCjBodsPPpbPWZgzmv2uCk5kKABp2CEfIVdMOPGJGkyZuJIRwbZHUTfrADme1P8diOdpq1jNz2rJmC6Lkkaiya5V8hO5nd/elqf4uq0ZvjM48PQ2aqstGXaRjsGFhpK3hhEmEoiOvrQukFtrSzWudCoCkGR73x3NzqXeWEHVnFoPfica1xuJ8RqXSHBka0qdMUn1717c9OXvMdFKJiuDXRKWr+7IRPAbG0732C5vW0u/Uoh/sDE3TkuJmbdfP0qgosYe5n/zI18PbMLWvOGyX2682zIsJoJUgAKT7qgq5aXAJgIu6pn3ANjfBDHyVJxaqkYAQ==.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:29:15.811241+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "f95043a6f6a597769f304cc6:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042152-b0vw9pdFZOepdvE3zah4",
+    "usage": {
+      "prompt_tokens": 19712,
+      "completion_tokens": 501,
+      "total_tokens": 20213,
+      "cost": 0.0022217,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0022217,
+        "upstream_inference_prompt_cost": 0.0019712,
+        "upstream_inference_completions_cost": 0.0002505
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 263,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.673489124999833,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 96,
+    "rationale": "The candidate's answer matches the reference: $24,447M minus $20,827M equals $3,620M, which is correctly stated in millions and as the working capital figure at December 31, 2024. The cited accession 0001510295-25-000012 and the Item 8 section match the retrieved Marathon Petroleum 10-K balance sheet excerpt, which contains both the total current assets (24447) and total current liabilities (20827) figures. The chunk number (4) also matches the retrieved excerpt. Minor deduction only because the candidate's quoted section title is slightly abbreviated relative to the excerpt's wording, though it is substantively the same heading."
+  },
+  "status": "ok"
+}

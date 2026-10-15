@@ -1,0 +1,108 @@
+{
+  "question_id": "Q004",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.023051738000503974,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Amazon.com, Inc. had **10,597,729,352 shares of common stock outstanding** as of January 29, 2025. *(Form 10-K cover page; accession 0001018724-25-000004; Filing Summary, chunk 0.)*",
+    "message": {
+      "role": "assistant",
+      "content": "Amazon.com, Inc. had **10,597,729,352 shares of common stock outstanding** as of January 29, 2025. *(Form 10-K cover page; accession 0001018724-25-000004; Filing Summary, chunk 0.)*",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:07.996679+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d2c7cca0cca06c35e8bc2098:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041846-VbND5UbBBu2VaVY8JgUZ",
+    "usage": {
+      "prompt_tokens": 12598,
+      "completion_tokens": 62,
+      "total_tokens": 12660,
+      "cost": 0.001605675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 12595,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001605675,
+        "upstream_inference_prompt_cost": 0.001574675,
+        "upstream_inference_completions_cost": 3.1e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.8514023039997483,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's value 10,597,729,352 matches the reference and the gold evidence exactly (the cover page table row in the retrieved Filing Summary chunk 0 shows 10597729352 as of January 29, 2025). The accession number 0001018724-25-000004 is correct and the cited section (Filing Summary, chunk 0, which contains the cover page) is supported by the retrieved excerpts. The label 'Cover Page - Shares Outstanding' from gold evidence is not named exactly in the candidate, but the cited chunk does contain the cover page data, so support is high. Minor deduction: the candidate's citation says 'Filing Summary, chunk 0' which is accurate, but the number is presented with comma formatting rather than the raw figure, which is equivalent.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 96, \"rationale\": \"The candidate's value 10,597,729,352 matches the reference and the gold evidence exactly (the cover page table row in the retrieved Filing Summary chunk 0 shows 10597729352 as of January 29, 2025). The accession number 0001018724-25-000004 is correct and the cited section (Filing Summary, chunk 0, which contains the cover page) is supported by the retrieved excerpts. The label 'Cover Page - Shares Outstanding' from gold evidence is not named exactly in the candidate, but the cited chunk does contain the cover page data, so support is high. Minor deduction: the candidate's citation says 'Filing Summary, chunk 0' which is accurate, but the number is presented with comma formatting rather than the raw figure, which is equivalent.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:53.479317+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "d2c7cca0cca06c35e8bc2098:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042071-sFgd3o8SZ6Pb7VJdSItC",
+    "usage": {
+      "prompt_tokens": 20051,
+      "completion_tokens": 281,
+      "total_tokens": 20332,
+      "cost": 0.0021456,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0021456,
+        "upstream_inference_prompt_cost": 0.0020051,
+        "upstream_inference_completions_cost": 0.0001405
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.6928052410003147,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 96,
+    "rationale": "The candidate's value 10,597,729,352 matches the reference and the gold evidence exactly (the cover page table row in the retrieved Filing Summary chunk 0 shows 10597729352 as of January 29, 2025). The accession number 0001018724-25-000004 is correct and the cited section (Filing Summary, chunk 0, which contains the cover page) is supported by the retrieved excerpts. The label 'Cover Page - Shares Outstanding' from gold evidence is not named exactly in the candidate, but the cited chunk does contain the cover page data, so support is high. Minor deduction: the candidate's citation says 'Filing Summary, chunk 0' which is accurate, but the number is presented with comma formatting rather than the raw figure, which is equivalent."
+  },
+  "status": "ok"
+}

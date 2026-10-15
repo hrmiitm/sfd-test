@@ -1,0 +1,1182 @@
+{
+  "question_id": "Q006",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/agentic",
+  "retrieval": {
+    "seconds": 63.28768400100034,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "NVIDIA Corporation\u2019s independent registered public accounting firm is **PricewaterhouseCoopers LLP (PwC)**, as identified in its 2025 Form 10-K (accession **0001045810-25-000023**, Exhibit 23.1; chunk **cb0a4777-10f6-5e37-8910-081e2a3f8a56**).\n\nThe evidence retrieved confirms the firm, but does **not** establish the year it began serving NVIDIA. So I can\u2019t verify the \u201csince what year\u201d part from the filings read here.",
+    "usage": {
+      "prompt_tokens": 34989,
+      "completion_tokens": 300,
+      "total_tokens": 35289,
+      "cost": 0.002570795
+    },
+    "seconds": 9.247981083000923,
+    "tool_seconds": 63.28768400100034,
+    "tool_calls": 4,
+    "calls": [
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_iGUF9SMqzVf3hCCkcN3DoHQg",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"NVIDIA Corporation independent registered public accounting firm auditor served since year auditor tenure audit report\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_iGUF9SMqzVf3hCCkcN3DoHQg",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"NVIDIA Corporation independent registered public accounting firm auditor served since year auditor tenure audit report\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:24:11.990452+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "fe2f0462f47bf5f8b0073250:agent:0",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792041849-Zbd4LDiLxV0Pj28ZZX7T",
+        "usage": {
+          "prompt_tokens": 792,
+          "completion_tokens": 33,
+          "total_tokens": 825,
+          "cost": 9.57e-05,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 9.57e-05,
+            "upstream_inference_prompt_cost": 7.92e-05,
+            "upstream_inference_completions_cost": 1.65e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 0.7162240730003759,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_x3kMTdIgUu4vZHgRpYBGxFTb",
+              "function": {
+                "name": "search_parquet_company",
+                "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-04.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"DEF 14A\",\"start_row\":0}"
+              }
+            },
+            {
+              "type": "function",
+              "index": 1,
+              "id": "call_FFl15wFW3t1thucXtB8LRMqE",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"NVIDIA Corporation proxy statement independent auditor PricewaterhouseCoopers LLP since 1993 auditor\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_x3kMTdIgUu4vZHgRpYBGxFTb",
+            "function": {
+              "name": "search_parquet_company",
+              "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-04.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"DEF 14A\",\"start_row\":0}"
+            }
+          },
+          {
+            "type": "function",
+            "index": 1,
+            "id": "call_FFl15wFW3t1thucXtB8LRMqE",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"NVIDIA Corporation proxy statement independent auditor PricewaterhouseCoopers LLP since 1993 auditor\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:27:57.754690+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "fe2f0462f47bf5f8b0073250:agent:1",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042075-bPi7lUTtg4aGqSQWW5bg",
+        "usage": {
+          "prompt_tokens": 5423,
+          "completion_tokens": 109,
+          "total_tokens": 5532,
+          "cost": 0.0007323,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 5420,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.0007323,
+            "upstream_inference_prompt_cost": 0.0006778,
+            "upstream_inference_completions_cost": 5.45e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.0295591740004966,
+        "attempts": 1
+      },
+      {
+        "text": "",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": null,
+          "tool_calls": [
+            {
+              "type": "function",
+              "index": 0,
+              "id": "call_hSckQQGfEr4w2HLY6R7wuX9j",
+              "function": {
+                "name": "search_index",
+                "arguments": "{\"query\":\"NVIDIA auditor since 1993 PricewaterhouseCoopers served as auditor since\"}"
+              }
+            }
+          ]
+        },
+        "tool_calls": [
+          {
+            "type": "function",
+            "index": 0,
+            "id": "call_hSckQQGfEr4w2HLY6R7wuX9j",
+            "function": {
+              "name": "search_index",
+              "arguments": "{\"query\":\"NVIDIA auditor since 1993 PricewaterhouseCoopers served as auditor since\"}"
+            }
+          }
+        ],
+        "timestamp_utc": "2026-10-15T05:31:07.859872+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "fe2f0462f47bf5f8b0073250:agent:2",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042266-Qd7lAiIP4fQDYcG3q8c5",
+        "usage": {
+          "prompt_tokens": 11390,
+          "completion_tokens": 33,
+          "total_tokens": 11423,
+          "cost": 0.000816875,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 5420,
+            "cache_write_tokens": 5967,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000816875,
+            "upstream_inference_prompt_cost": 0.000800375,
+            "upstream_inference_completions_cost": 1.65e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 2.2403226300002643,
+        "attempts": 1
+      },
+      {
+        "text": "NVIDIA Corporation\u2019s independent registered public accounting firm is **PricewaterhouseCoopers LLP (PwC)**, as identified in its 2025 Form 10-K (accession **0001045810-25-000023**, Exhibit 23.1; chunk **cb0a4777-10f6-5e37-8910-081e2a3f8a56**).\n\nThe evidence retrieved confirms the firm, but does **not** establish the year it began serving NVIDIA. So I can\u2019t verify the \u201csince what year\u201d part from the filings read here.",
+        "message": {
+          "role": "assistant",
+          "content": "NVIDIA Corporation\u2019s independent registered public accounting firm is **PricewaterhouseCoopers LLP (PwC)**, as identified in its 2025 Form 10-K (accession **0001045810-25-000023**, Exhibit 23.1; chunk **cb0a4777-10f6-5e37-8910-081e2a3f8a56**).\n\nThe evidence retrieved confirms the firm, but does **not** establish the year it began serving NVIDIA. So I can\u2019t verify the \u201csince what year\u201d part from the filings read here.",
+          "refusal": null,
+          "reasoning": null
+        },
+        "tool_calls": [],
+        "timestamp_utc": "2026-10-15T05:35:19.200214+00:00",
+        "parameters": {
+          "reasoning": {
+            "effort": "low"
+          },
+          "max_tokens": 6000,
+          "tool_choice": "auto"
+        },
+        "tag": "fe2f0462f47bf5f8b0073250:agent:3",
+        "requested_model": "openai/gpt-6-luna",
+        "actual_model": "openai/gpt-6-luna",
+        "response_id": "gen-1792042516-ow6SjO6AxgrOioiVnmAi",
+        "usage": {
+          "prompt_tokens": 17384,
+          "completion_tokens": 125,
+          "total_tokens": 17509,
+          "cost": 0.00092592,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 11387,
+            "cache_write_tokens": 5994,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00092592,
+            "upstream_inference_prompt_cost": 0.00086342,
+            "upstream_inference_completions_cost": 6.25e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        },
+        "seconds": 3.261875205999786,
+        "attempts": 1
+      }
+    ],
+    "trace": [
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_iGUF9SMqzVf3hCCkcN3DoHQg",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"NVIDIA Corporation independent registered public accounting firm auditor served since year auditor tenure audit report\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000950170-25-009168",
+              "cik": "0001177648",
+              "company": "ENANTA PHARMACEUTICALS INC",
+              "form_type": "DEF 14A",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 818,
+              "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+              "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2aeed529-f68c-5fcc-a395-712a3793656b",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 37,
+              "char_start": 94043,
+              "char_end": 97506,
+              "text": "The firm of PricewaterhouseCoopers LLP, an independent registered public accounting firm, has audited our financial statements for each of the years ended September 30, 2024, 2023 and 2022. Our Audit Committee has appointed them to serve as our auditors for the fiscal year ending September 30, 2025. Detailed disclosure of the audit and tax fees we paid to PricewaterhouseCoopers LLP in 2024 and 2023 may be found in the \"Audit Fees\" section of this proxy statement. Based on these disclosures and information in the Audit Committee Report provided elsewhere in this proxy statement, our Audit Committee is satisfied that PricewaterhouseCoopers LLP is sufficiently independent of management to perform its duties properly. Although not legally required to do so, our Board considers it desirable to seek, and recommends, stockholder ratification of our selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2025. If the stockholders fail to ratify our selection, the Audit Committee will reconsider whether or not to retain that firm. Even if the selection is ratified, the Audit Committee in its discretion may direct the appointment of a different independent registered public accounting firm at any time during the year if the Audit Committee determines that such a change would be in the best interest of Enanta and its stockholders.\n\n**Recommendation** \n\n**We recommend a vote \"FOR\" ratification of the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm.** \n\n------\n\n**CORPORATE GOVERNANCE** \n\n**Board and Committee Matters** \n\n*Board Leadership and Independence.* Our Board of Directors has determined that each of Mark G. Foletta and Lesley Russell, MBChB, MRCP, as well as four of the other directors continuing their terms after the 2025 Annual Meeting, are independent directors as defined by applicable Nasdaq Stock Market standards governing the independence of directors. Jay R. Luly, Ph.D., our President and Chief Executive Officer, is not considered independent.\n\nThe Board of Directors sets company strategy and provides oversight and accountability for our Chief Executive Officer and management. Among the general responsibilities for the direction and management of the business, the Board is expressly designated to have responsibility for reviewing matters related to environmental, social and governance (ESG) issues, as well as adopting appropriate standards and other required metrics used to measure and track ESG performance and progress.\n\nDr. Carter has served as our non-executive Chairman of the Board since December 2015. Dr. Carter presides over meetings of the Board of Directors and provides guidance to our Chief Executive Officer. Dr. Luly is responsible for setting the strategic direction for our Company and the day-to-day leadership and performance of the Company. We believe that separation of our Board of Directors and executive leadership preserves the independence of these roles and maximizes performance.\n\n*Board Meetings and Committees.* Our Board of Directors held eleven meetings during 2024, and the independent directors held executive sessions at four of the meetings of the Board. During 2024, each of the directors then in office attended at least 75% of the aggregate of all meetings of the Board of Directors and all meetings of the committees of the Board of Directors on which such director then served.",
+              "token_count": 673,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-004491",
+              "cik": "0001885461",
+              "company": "ShoulderUP Technology Acquisition Corp.",
+              "form_type": "DEFM14A",
+              "filed_date": "20250117",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 400,
+              "source_md5": "85ff236b3b7c9b6ccd3657857a037585",
+              "content_sha256": "c1b88d3808ea99a01c8e472bf4c859bd2fdc74d2f9daeca128131d2f3339b5b7",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "015c8920-cd7a-5224-8842-b945208484a8",
+              "section": "Audit Committee",
+              "section_index": 272,
+              "chunk_index": 0,
+              "char_start": 822607,
+              "char_end": 826094,
+              "text": "#### Audit Committee\nWe have established an audit committee of the board of directors. Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd serve as members of our audit committee, and Lauren C. Anderson chairs the audit committee. Each of Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd meet the independent director standard under Rule 10A-3(b)(l) under the Exchange Act.\n\nEach member of the audit committee is financially literate and our board of directors has determined that Shawn Henry qualifies as an \"audit committee financial expert\" as defined in applicable SEC rules and has accounting or related financial management expertise.\n\nWe have adopted an audit committee charter, which details the principal functions of the audit committee, including:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 assisting board oversight of (1) the integrity of our financial statements, (2) our compliance with legal and regulatory requirements, (3) our independent registered public accounting firm's qualifications and independence, and (4) the performance of our internal audit function and independent auditors; the appointment, compensation, retention, replacement, and oversight of the work of the independent auditors and any other independent registered public accounting firm engaged by us;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 pre-approving all audit and non-audit services to be provided by the independent auditors or any other registered public accounting firm engaged by us, and establishing pre-approval policies and procedures; reviewing and discussing with the independent auditors all relationships the auditors have with us in order to evaluate their continued independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear policies for audit partner rotation in compliance with applicable laws and regulations; obtaining and reviewing a report, at least annually, from the independent registered public accounting firm describing (1) the independent auditor's internal quality-control procedures and (2) any material issues raised by the most recent internal quality-control review, or peer review, of the audit firm, or by any inquiry or investigation by governmental or professional authorities, within the preceding five years respecting one or more independent audits carried out by the firm and any steps taken to deal with such issues;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 meeting to review and discuss our annual audited financial statements and quarterly financial statements with management and the independent auditor, including reviewing our specific disclosures under \"*Management's Discussion and Analysis of Financial Condition and Results of Operations*\"; reviewing and approving any related party transaction required to be disclosed pursuant to Item 404 of Regulation S-K promulgated by the SEC prior to us entering into such transaction; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing with management, the independent auditors, and our legal advisors, as appropriate, any legal, regulatory or compliance matters, including any correspondence with regulators or government agencies and any employee complaints or published reports that raise material issues regarding our financial statements or accounting policies and any significant changes in accounting standards or rules promulgated by the Financial Accounting Standards Board, the SEC or other regulatory authorities.",
+              "token_count": 647,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "a6205dc2-ab89-51c2-905b-ce0c5b66df96",
+              "section": "Audit Committee",
+              "section_index": 385,
+              "chunk_index": 0,
+              "char_start": 1278488,
+              "char_end": 1281588,
+              "text": "#### Audit Committee\nWe have established an audit committee of the Board of Directors. Chunyi (Charlie) Hao, Tiemei (Sarah) Li and Sanjay Prasad serve as members of our audit committee and Ms. Li serves as its chair. Under the Nasdaq listing standards and applicable SEC rules, we are required to have at least three members of the audit committee, all of whom must be independent, subject to certain phase-in provisions. Each such member of our audit committee meets the independent director standard under Nasdaq listing standards and under Rule 10A-3(b)(1) of the Exchange Act.\n\nEach member of the audit committee is financially literate and the Finnovate Board has determined that Ms. Li qualifies as an \"audit committee financial expert\" as defined in applicable SEC rules and has accounting or related financial management expertise.\n\nWe have adopted an audit committee charter, which details the purpose and principal functions of the audit committee, including:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 the appointment, compensation, retention, replacement, and oversight of the work of the independent auditors and any other independent registered public accounting firm engaged by us;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 pre-approving all audit and non-audit services to be provided by the independent auditors or any other registered public accounting firm engaged by us, and establishing pre-approval policies and procedures;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing and discussing with the independent auditors all relationships the auditors have with us in order to evaluate their continued independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear hiring policies for employees or former employees of the independent auditors;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear policies for audit partner rotation in compliance with applicable laws and regulations;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 obtaining and reviewing a report, at least annually, from the independent auditors describing (i) the independent auditor's internal quality-control procedures and (ii) any material issues raised by the most recent internal quality-control review, or peer review, of the audit firm, or by any inquiry or investigation by governmental or professional authorities, within, the preceding five years respecting one or more independent audits carried out by the firm and any steps taken to deal with such issues;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 meeting to review and discuss our annual audited financial statements and quarterly financial statements with management and the independent auditor, including reviewing our specific disclosures under \"Management's Discussion and Analysis of Financial Condition and Results of Operations\";\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing and approving any related party transaction required to be disclosed pursuant to Item 404 of Regulation S-K promulgated by the SEC prior to us entering into such transaction; and",
+              "token_count": 621,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001104659-25-006724",
+              "cik": "0001653384",
+              "company": "Runway Growth Finance Corp.",
+              "form_type": "8-K",
+              "filed_date": "20250128",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 154,
+              "source_md5": "6f37fec10e6bd3c618eb908e69a00be4",
+              "content_sha256": "88083d4a9f8f5b856da6e4c8beca9c1e5eb3e1e235a6fa6578878685f27dad6b",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "5471b942-5fcd-57d8-9057-faafb01ce153",
+              "section": "Item 4.01. Changes in Registrant's Certifying Accountant",
+              "section_index": 1,
+              "chunk_index": 0,
+              "char_start": 3555,
+              "char_end": 6279,
+              "text": "**Item 4.01. Changes in Registrant's Certifying Accountant** \n\n**(a) Dismissal of independent registered public accounting firm**\n\nOn January 23, 2025, the Board of Directors (the \"Board\") of Runway Growth Finance Corp. (the \"Company\") dismissed RSM US LLP (\"RSM\") as the Company's independent registered public accounting firm.\n\nRSM served as the Company's independent registered public accounting firm since the Company's inception. The audit reports of RSM on the Company's financial statements as of and for the fiscal years ended December 31, 2022 and 2023 did not contain an adverse opinion or disclaimer of opinion and were not qualified or modified as to uncertainty, audit scope or accounting principles.\n\nDuring the two most recent fiscal years and through January 23, 2025, there were no disagreements with RSM on any matter of accounting principles or practices, financial statement disclosure or auditing scope or procedure, which disagreements, if not resolved to the satisfaction of RSM, would have caused it to make reference to the subject matter of such disagreements in connection with its reports, nor were there any \"reportable events\", as such term is described in Item 304(a)(1)(v) of Regulation S-K promulgated under the Securities Exchange Act of 1934, as amended (the \"Exchange Act\").\n\nThe Company provided RSM with a copy of this Form 8-K prior to its filing with the Securities and Exchange Commission (the \"SEC\") and requested that RSM provide the Company with a letter addressed to the SEC stating whether it agrees with the above statements. A copy of RSM's letter, dated January 28, 2025, is attached as Exhibit 16.1 to this Current Report on Form 8-K.\n\n**(b) Appointment of new independent registered public accounting firm**\n\nOn January 23, 2025, upon the recommendation of the Audit Committee of the Board, the Board approved the appointment of Deloitte & Touche LLP (\"Deloitte\") to serve as the Company's independent registered accounting firm to audit the Company's consolidated financial statements for the fiscal year ended December 31, 2024.\n\nDuring the two most recent fiscal years and through January 23, 2025, the date of the appointment of Deloitte, neither the Company nor any person on its behalf has consulted with Deloitte with respect to either (i) the application of accounting principles to a specified transaction, either completed or proposed, or the type of audit opinion that might be rendered on the Company's consolidated financial statements or (ii) any matter that was either the subject of a \"disagreement\" or a \"reportable event\" as such terms are defined in Items 304(a)(1)(iv) or 304(a)(1)(v), respectively, of Regulation S-K promulgated under the Exchange Act.",
+              "token_count": 592,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000950170-25-009168",
+              "cik": "0001177648",
+              "company": "ENANTA PHARMACEUTICALS INC",
+              "form_type": "DEF 14A",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 818,
+              "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+              "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "463efec6-0018-526d-9860-d2b5b68e32c4",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 95,
+              "char_start": 241676,
+              "char_end": 244497,
+              "text": "PricewaterhouseCoopers LLP, an independent registered public accounting firm, audited our financial statements for the year ended September 30, 2024. The Audit Committee, under delegated authority of the Board of Directors, has appointed PricewaterhouseCoopers LLP to serve as our independent registered public accounting firm for the fiscal year ending September 30, 2025. Representatives of PricewaterhouseCoopers LLP are expected to attend the annual meeting to respond to appropriate questions, and they will have the opportunity to make a statement if they desire.\n\nThe aggregate fees for audit and other services provided by PricewaterhouseCoopers LLP for fiscal years 2024 and 2023 are as follows:\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n|  | **2024** | **2023** |\n| Audit Fees<sup>(1)</sup> | $762000 | $944600 |\n| Tax Fees<sup>(2)</sup> | 89312 | 273294 |\n| All Other Fees<sup>(3)</sup> | 2125 | 3081 |\n| Total | $853437 | $1239938 |\n\n---\n\n\n\n(1)Audit fees in 2024 represent fees for professional services provided in connection with the audit of our financial statements and review of our quarterly financial statements. Audit fees in 2023 represent fees for professional services provided in connection with the audit of our financial statements, review of our quarterly financial statements and audit of our internal control over financial reporting.\n\n(2)Tax fees were for services related to (a) tax compliance including sales and use taxes and (b) tax planning. The 2024 tax fees consisted of $45,500 of tax compliance fees and $43,812 for tax planning. The 2023 tax fees consisted of $90,144 of tax compliance fees and $183,150 for tax planning.\n\n(3)All other fees for 2024 and 2023 relate to technical research material fees.\n\nOur Audit Committee has adopted procedures requiring the pre-approval of all non-audit (including tax) services performed by our independent registered public accounting firm in order to assure that these services do not impair the auditor's independence. These procedures generally approve the performance of specific services subject to a cost limit for all such services. This general approval is to be reviewed, and if necessary modified, at least annually. Management must obtain the specific prior approval of the Audit Committee for each engagement of the independent registered public accounting firm to perform other audit-related or other non-audit services. For engagements for audit-related or tax-related services within a specified dollar limit, the Chair of the Audit Committee has authority to provide such prior approval, and he reports to the full committee whenever he has exercised that authority. The Audit Committee does not delegate its responsibility to approve services performed by the independent registered public accounting firm to any member of management.",
+              "token_count": 593,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.010650615000486141
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_x3kMTdIgUu4vZHgRpYBGxFTb",
+          "function": {
+            "name": "search_parquet_company",
+            "arguments": "{\"source_path\":\"/home/kit/Documents/sfd-2025/data/parsed/sfd-v1-2025-04.parquet\",\"company\":\"NVIDIA\",\"form_type\":\"DEF 14A\",\"start_row\":0}"
+          }
+        },
+        "output": {
+          "error": "malloc of size 486903808 failed",
+          "error_type": "ArrowMemoryError",
+          "resources": {
+            "peak_rss_mib": 665.0625,
+            "cpu_seconds": 8.632239,
+            "wall_seconds": 8.818057236999266,
+            "address_space_limit_mib": 1536,
+            "cpu_limit_seconds": 20,
+            "cpu_cores": 1
+          }
+        },
+        "seconds": 36.569653422000556
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 1,
+          "id": "call_FFl15wFW3t1thucXtB8LRMqE",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"NVIDIA Corporation proxy statement independent auditor PricewaterhouseCoopers LLP since 1993 auditor\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0000950170-25-009168",
+              "cik": "0001177648",
+              "company": "ENANTA PHARMACEUTICALS INC",
+              "form_type": "DEF 14A",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 818,
+              "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+              "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2aeed529-f68c-5fcc-a395-712a3793656b",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 37,
+              "char_start": 94043,
+              "char_end": 97506,
+              "text": "The firm of PricewaterhouseCoopers LLP, an independent registered public accounting firm, has audited our financial statements for each of the years ended September 30, 2024, 2023 and 2022. Our Audit Committee has appointed them to serve as our auditors for the fiscal year ending September 30, 2025. Detailed disclosure of the audit and tax fees we paid to PricewaterhouseCoopers LLP in 2024 and 2023 may be found in the \"Audit Fees\" section of this proxy statement. Based on these disclosures and information in the Audit Committee Report provided elsewhere in this proxy statement, our Audit Committee is satisfied that PricewaterhouseCoopers LLP is sufficiently independent of management to perform its duties properly. Although not legally required to do so, our Board considers it desirable to seek, and recommends, stockholder ratification of our selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2025. If the stockholders fail to ratify our selection, the Audit Committee will reconsider whether or not to retain that firm. Even if the selection is ratified, the Audit Committee in its discretion may direct the appointment of a different independent registered public accounting firm at any time during the year if the Audit Committee determines that such a change would be in the best interest of Enanta and its stockholders.\n\n**Recommendation** \n\n**We recommend a vote \"FOR\" ratification of the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm.** \n\n------\n\n**CORPORATE GOVERNANCE** \n\n**Board and Committee Matters** \n\n*Board Leadership and Independence.* Our Board of Directors has determined that each of Mark G. Foletta and Lesley Russell, MBChB, MRCP, as well as four of the other directors continuing their terms after the 2025 Annual Meeting, are independent directors as defined by applicable Nasdaq Stock Market standards governing the independence of directors. Jay R. Luly, Ph.D., our President and Chief Executive Officer, is not considered independent.\n\nThe Board of Directors sets company strategy and provides oversight and accountability for our Chief Executive Officer and management. Among the general responsibilities for the direction and management of the business, the Board is expressly designated to have responsibility for reviewing matters related to environmental, social and governance (ESG) issues, as well as adopting appropriate standards and other required metrics used to measure and track ESG performance and progress.\n\nDr. Carter has served as our non-executive Chairman of the Board since December 2015. Dr. Carter presides over meetings of the Board of Directors and provides guidance to our Chief Executive Officer. Dr. Luly is responsible for setting the strategic direction for our Company and the day-to-day leadership and performance of the Company. We believe that separation of our Board of Directors and executive leadership preserves the independence of these roles and maximizes performance.\n\n*Board Meetings and Committees.* Our Board of Directors held eleven meetings during 2024, and the independent directors held executive sessions at four of the meetings of the Board. During 2024, each of the directors then in office attended at least 75% of the aggregate of all meetings of the Board of Directors and all meetings of the committees of the Board of Directors on which such director then served.",
+              "token_count": 673,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001045810-25-000023",
+              "cik": "0001045810",
+              "company": "NVIDIA CORP",
+              "form_type": "10-K",
+              "filed_date": "20250226",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 59611,
+              "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+              "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "cb0a4777-10f6-5e37-8910-081e2a3f8a56",
+              "section": "Exhibit 23.1",
+              "section_index": 31,
+              "chunk_index": 0,
+              "char_start": 569782,
+              "char_end": 570539,
+              "text": "## Exhibit 23.1\n\n\n**EXHIBIT 23.1**\n\n\n\n**<u>CONSENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM</u>**\n\nWe hereby consent to the incorporation by reference in the Registration Statements on Form S-3 (No. 333-270119) and Form S-8 (Nos. 333-74905, 333-51520, 333-74868, 333-100010, 333-106191, 333-114375, 333-123933, 333-132493, 333-140021, 333-143953, 333-181625, 333-185036, 333-188775, 333-196259, 333-211615, 333-229774, 333-249570, and 333-267207) of NVIDIA Corporation of our report dated February 26, 2025 relating to the financial statements, financial statement schedule and the effectiveness of internal control over financial reporting, which appears in this Form 10-K.\n\n\n\n/s/ PricewaterhouseCoopers LLP\n\nSan Jose, California\n\nFebruary 26, 2025",
+              "token_count": 246,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000950170-25-009168",
+              "cik": "0001177648",
+              "company": "ENANTA PHARMACEUTICALS INC",
+              "form_type": "DEF 14A",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 818,
+              "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+              "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "463efec6-0018-526d-9860-d2b5b68e32c4",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 95,
+              "char_start": 241676,
+              "char_end": 244497,
+              "text": "PricewaterhouseCoopers LLP, an independent registered public accounting firm, audited our financial statements for the year ended September 30, 2024. The Audit Committee, under delegated authority of the Board of Directors, has appointed PricewaterhouseCoopers LLP to serve as our independent registered public accounting firm for the fiscal year ending September 30, 2025. Representatives of PricewaterhouseCoopers LLP are expected to attend the annual meeting to respond to appropriate questions, and they will have the opportunity to make a statement if they desire.\n\nThe aggregate fees for audit and other services provided by PricewaterhouseCoopers LLP for fiscal years 2024 and 2023 are as follows:\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n|  | **2024** | **2023** |\n| Audit Fees<sup>(1)</sup> | $762000 | $944600 |\n| Tax Fees<sup>(2)</sup> | 89312 | 273294 |\n| All Other Fees<sup>(3)</sup> | 2125 | 3081 |\n| Total | $853437 | $1239938 |\n\n---\n\n\n\n(1)Audit fees in 2024 represent fees for professional services provided in connection with the audit of our financial statements and review of our quarterly financial statements. Audit fees in 2023 represent fees for professional services provided in connection with the audit of our financial statements, review of our quarterly financial statements and audit of our internal control over financial reporting.\n\n(2)Tax fees were for services related to (a) tax compliance including sales and use taxes and (b) tax planning. The 2024 tax fees consisted of $45,500 of tax compliance fees and $43,812 for tax planning. The 2023 tax fees consisted of $90,144 of tax compliance fees and $183,150 for tax planning.\n\n(3)All other fees for 2024 and 2023 relate to technical research material fees.\n\nOur Audit Committee has adopted procedures requiring the pre-approval of all non-audit (including tax) services performed by our independent registered public accounting firm in order to assure that these services do not impair the auditor's independence. These procedures generally approve the performance of specific services subject to a cost limit for all such services. This general approval is to be reviewed, and if necessary modified, at least annually. Management must obtain the specific prior approval of the Audit Committee for each engagement of the independent registered public accounting firm to perform other audit-related or other non-audit services. For engagements for audit-related or tax-related services within a specified dollar limit, the Chair of the Audit Committee has authority to provide such prior approval, and he reports to the full committee whenever he has exercised that authority. The Audit Committee does not delegate its responsibility to approve services performed by the independent registered public accounting firm to any member of management.",
+              "token_count": 593,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000950170-25-009168",
+              "cik": "0001177648",
+              "company": "ENANTA PHARMACEUTICALS INC",
+              "form_type": "DEF 14A",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 818,
+              "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+              "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "8123a20e-d77c-5af8-8ea1-b6a00ec0af47",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 94,
+              "char_start": 238383,
+              "char_end": 241674,
+              "text": "The following is the report of the Audit Committee with respect to Enanta's audited financial statements for the year ended September 30, 2024.\n\nThe purpose of the Audit Committee is to assist the Board in fulfilling its responsibility to oversee Enanta's accounting and financial reporting, internal controls and audit functions. The Audit Committee Charter describes in greater detail the full responsibilities of the Committee and is available in the \"Investors \u2013 Corporate Governance\" section of our website at *www.enanta.com*. The Audit Committee is comprised entirely of independent directors as defined by applicable Nasdaq Stock Market standards.\n\nManagement is responsible for our internal controls and the financial reporting process. PricewaterhouseCoopers LLP, our independent registered public accounting firm, is responsible for performing an independent audit of our consolidated financial statements in accordance with the standards established by the Public Company Accounting Oversight Board (United States) and issuing a report thereon. The Committee's responsibility is to monitor these processes. The Audit Committee has reviewed and discussed the consolidated financial statements with management and PricewaterhouseCoopers LLP.\n\nIn the course of its oversight of Enanta's financial reporting process, the Audit Committee:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022reviewed and discussed with management and PricewaterhouseCoopers LLP Enanta's audited financial statements for the fiscal year ended September 30, 2024;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022discussed with PricewaterhouseCoopers LLP the matters required to be discussed by Public Company Accounting Oversight Board Auditing Standard No. 16, *Communications with Audit Committees*;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022received written disclosures and the letter from PricewaterhouseCoopers LLP required by applicable requirements of the Public Company Accounting Oversight Board regarding the independent accountant's communications with the Audit Committee concerning independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022reviewed with management and PricewaterhouseCoopers LLP Enanta's critical accounting policies;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022discussed with management the quality and adequacy of Enanta's internal controls;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022discussed with PricewaterhouseCoopers LLP any relationships that may impact their objectivity and independence; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022considered whether the provision of non-audit services by PricewaterhouseCoopers LLP is compatible with maintaining its independence.\n\nBased on the foregoing review and discussions, the Audit Committee recommended to the Board of Directors that the audited financial statements be included in Enanta's Annual Report on Form 10-K for the year ended September 30, 2024 for filing with the Securities and Exchange Commission.\n\n---\n\n\n\n| |\n|:---|\n| &nbsp;&nbsp;&nbsp;&nbsp;By the Audit Committee, |\n| &nbsp;&nbsp;&nbsp;&nbsp;Mark G. Foletta, Chair |\n| &nbsp;&nbsp;&nbsp;&nbsp;Lesley Russell, MBChB, MRCP |\n| &nbsp;&nbsp;&nbsp;&nbsp;Terry C. Vance |\n\n---\n\n\n\nJanuary 27, 2025\n\n------\n\n**Audit Fees** ",
+              "token_count": 696,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001109357-25-000043",
+              "cik": "0001109357",
+              "company": "EXELON CORP",
+              "form_type": "10-K",
+              "filed_date": "20250212",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 5076,
+              "source_md5": "4e755683e69b86bda31bdb6575045220",
+              "content_sha256": "4f9db51c129a6833da5903053cb8c7a8f89e84f8760d018349e6b131cf446d31",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "39f0dd98-11f4-5879-8dc1-3d498ddbd600",
+              "section": "ITEM 1.",
+              "section_index": 1,
+              "chunk_index": 41,
+              "char_start": 407454,
+              "char_end": 418252,
+              "text": "The critical audit matter communicated below is a matter arising from the current period audit of the financial statements that was communicated or required to be communicated to the audit committee and that (i) relates to accounts or disclosures that are material to the financial statements and (ii) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a whole, and we are not, by communicating the critical audit matter below, providing a separate opinion on the critical audit matter or on the accounts or disclosures to which it relates.\n\n*Accounting for the Effects of Rate Regulation*\n\nAs described in Notes 1 and 3 to the financial statements, the Company applies the authoritative guidance for accounting for certain types of regulation, which requires management to record in the financial statements the effects of cost-based rate regulation for entities with regulated operations that meet the following criteria, (i) rates are established or approved by a third-party regulator; (ii) rates are designed to recover the entity's cost of providing services or products; and (iii) there is a reasonable expectation that rates designed to recover costs can be charged to and collected from customers. The Company accounts for its regulated operations in accordance with regulatory and legislative guidance from the regulatory authorities having jurisdiction under state public utility laws and the FERC under various Federal laws. Upon updates in material regulatory and legislative proceedings, where applicable, management will record new regulatory assets or liabilities and will assess whether it is probable that its currently recorded regulatory assets and liabilities will be recovered and settled,\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\nrespectively, in future rates. As of December 31, 2024, there were $603 million of regulatory assets and $327 million of regulatory liabilities.\n\nThe principal considerations for our determination that performing procedures relating to the Company's accounting for the effects of rate regulation is a critical audit matter are the high degree of audit effort to assess the impact of regulation on accounting for regulatory assets and liabilities and to evaluate the complex audit evidence related to whether the regulatory assets and liabilities will be recovered and settled.\n\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the financial statements. These procedures included testing the effectiveness of controls relating to accounting for regulatory matters and evaluation of new and existing regulatory assets and liabilities. These procedures also included, among others, obtaining the Company's correspondence with regulators, evaluating the reasonableness of management's interpretation of regulatory guidance and proceedings and the related accounting implications, and recalculating regulatory assets and liabilities based on provisions outlined in rate orders and other correspondence with regulators.\n\n/s/ PricewaterhouseCoopers LLP\n\nPhiladelphia, Pennsylvania\n\nFebruary 12, 2025\n\nWe have served as the Company's auditor since at least 1993. We have not been able to determine the specific year we began serving as auditor of the Company.\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\n**Report of Independent Registered Public Accounting Firm** \n\nTo the Board of Directors and Shareholder of Delmarva Power & Light Company\n\n***Opinion on the Financial Statements***\n\nWe have audited the financial statements, including the related notes, of Delmarva Power & Light Company (the \"Company\") as listed in the index appearing under Item 15(a)(7)(i), and the financial statement schedule listed in the index appearing under Item 15(a)(7)(ii) (collectively referred to as the \"financial statements\"). In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company as of December 31, 2024 and 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2024 in conformity with accounting principles generally accepted in the United States of America.\n\n***Basis for Opinion***\n\nThese financial statements are the responsibility of the Company's management. Our responsibility is to express an opinion on the Company's financial statements based on our audits. We are a public accounting firm registered with the Public Company Accounting Oversight Board (United States) (PCAOB) and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audits of these financial statements in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. The Company is not required to have, nor were we engaged to perform, an audit of its internal control over financial reporting. As part of our audits we are required to obtain an understanding of internal control over financial reporting but not for the purpose of expressing an opinion on the effectiveness of the Company's internal control over financial reporting. Accordingly, we express no such opinion.\n\nOur audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. We believe that our audits provide a reasonable basis for our opinion.\n\n***Critical Audit Matters***\n\nThe critical audit matter communicated below is a matter arising from the current period audit of the financial statements that was communicated or required to be communicated to the audit committee and that (i) relates to accounts or disclosures that are material to the financial statements and (ii) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a whole, and we are not, by communicating the critical audit matter below, providing a separate opinion on the critical audit matter or on the accounts or disclosures to which it relates.\n\n*Accounting for the Effects of Rate Regulation*\n\nAs described in Notes 1 and 3 to the financial statements, the Company applies the authoritative guidance for accounting for certain types of regulation, which requires management to record in the financial statements the effects of cost-based rate regulation for entities with regulated operations that meet the following criteria, (i) rates are established or approved by a third-party regulator; (ii) rates are designed to recover the entity's cost of providing services or products; and (iii) there is a reasonable expectation that rates designed to recover costs can be charged to and collected from customers. The Company accounts for its regulated operations in accordance with regulatory and legislative guidance from the regulatory authorities having jurisdiction under state public utility laws and the FERC under various Federal laws. Upon updates in material regulatory and legislative proceedings, where applicable, management will record new regulatory assets or liabilities and will assess whether it is probable that its currently recorded regulatory assets and liabilities will be recovered and settled,\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\nrespectively, in future rates. As of December 31, 2024, there were $275 million of regulatory assets and $367 million of regulatory liabilities.\n\nThe principal considerations for our determination that performing procedures relating to the Company's accounting for the effects of rate regulation is a critical audit matter are the high degree of audit effort to assess the impact of regulation on accounting for regulatory assets and liabilities and to evaluate the complex audit evidence related to whether the regulatory assets and liabilities will be recovered and settled.\n\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the financial statements. These procedures included testing the effectiveness of controls relating to accounting for regulatory matters and evaluation of new and existing regulatory assets and liabilities. These procedures also included, among others, obtaining the Company's correspondence with regulators, evaluating the reasonableness of management's interpretation of regulatory guidance and proceedings and the related accounting implications, and recalculating regulatory assets and liabilities based on provisions outlined in rate orders and other correspondence with regulators.\n\n/s/ PricewaterhouseCoopers LLP\n\nPhiladelphia, Pennsylvania\n\nFebruary 12, 2025\n\nWe have served as the Company's auditor since at least 1993. We have not been able to determine the specific year we began serving as auditor of the Company.\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\n**Report of Independent Registered Public Accounting Firm** \n\nTo the Board of Directors and Shareholder of Atlantic City Electric Company\n\n***Opinion on the Financial Statements***\n\nWe have audited the consolidated financial statements, including the related notes, of Atlantic City Electric Company and its subsidiary (the \"Company\") as listed in the index appearing under Item 15(a)(8)(i), and the financial statement schedule listed in the index appearing under Item 15(a)(8)(ii) (collectively referred to as the \"consolidated financial statements\"). In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company as of December 31, 2024 and 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2024 in conformity with accounting principles generally accepted in the United States of America.\n\n***Basis for Opinion***",
+              "token_count": 1984,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 26.086437017999742
+      },
+      {
+        "tool_call": {
+          "type": "function",
+          "index": 0,
+          "id": "call_hSckQQGfEr4w2HLY6R7wuX9j",
+          "function": {
+            "name": "search_index",
+            "arguments": "{\"query\":\"NVIDIA auditor since 1993 PricewaterhouseCoopers served as auditor since\"}"
+          }
+        },
+        "output": {
+          "chunks": [
+            {
+              "accession": "0001213900-25-001215",
+              "cik": "0002000366",
+              "company": "Scage Future",
+              "form_type": "424B3",
+              "filed_date": "20250106",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 345,
+              "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+              "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "990718c6-b89e-57bd-89a3-6370d9517978",
+              "section": "Executive Officers and Directors",
+              "section_index": 393,
+              "chunk_index": 0,
+              "char_start": 1291180,
+              "char_end": 1293313,
+              "text": "#### Executive Officers and Directors\n*Mr. Chao Gao* is the founder of Scage International and has served as the chairman of Nanjing Scage since November 2021. He served as the executive vice president at Nanjing Yueboo Power System Co., Ltd. (\"Nanjing Yueboo\") (SHE: 300742), from April 2012 to September 2019. Mr. Gao received a bachelor's degree in aircraft power engineering in 2005 and received a master's degree in vehicle engineering in 2018 from Nanjing University of Science and Technology.\n\n*Mr. Yuanchi Guo* has served as a director of Nanjing Scage since March 2021. Mr. Guo is experienced at capital raising and financing, and he served as an investment director at Nextview Capital from 2018 to 2021, where he focused on angel investments and merger and acquisition businesses. Mr. Guo received his bachelor's degree in finance in 2014 from University of Toronto and a master's degree in finance in 2018 from Harvard University.\n\n*Mr. Ziqian Guan* has served as the executive vice president of Nanjing Scage since November 2021. He served as the procurement director at Nanjing Yueboo from April 2012 to September 2019. Mr. Guan received an associate degree in e-commerce in 2015 from Jiangsu United Institute of Technology.\n\n*Ms. Yu Xiang* has served as the chief financial officer of Scage International since November 2023. She has been the founding partner of Guangzhou Tuoyuan Enterprise Consulting Co., Ltd. since March 2023, where she focused on providing commercial and financial consulting service for PRC companies. Ms. Xiang has been the partner of Guangzhou Jingtian Enterprise Management Consulting Service Co., Ltd. since January 2021. Prior to that, Ms. Xiang was managing director at Marcum Bernstein & Pinchuk LLP from April 2008 to October 2020 and senior auditor at PricewaterhouseCoopers ZhongTian LLP from October 2005 to April 2008. Ms. Xiang received a bachelor's degree in management studies from Nanjing Audit University in 2005 and is currently a member of the American Institute of Certified Public Accountants as well as a fellow member of the Association of Chartered Certified Accountants.",
+              "token_count": 494,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000950170-25-009168",
+              "cik": "0001177648",
+              "company": "ENANTA PHARMACEUTICALS INC",
+              "form_type": "DEF 14A",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 818,
+              "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+              "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "2aeed529-f68c-5fcc-a395-712a3793656b",
+              "section": "Filing Summary",
+              "section_index": 0,
+              "chunk_index": 37,
+              "char_start": 94043,
+              "char_end": 97506,
+              "text": "The firm of PricewaterhouseCoopers LLP, an independent registered public accounting firm, has audited our financial statements for each of the years ended September 30, 2024, 2023 and 2022. Our Audit Committee has appointed them to serve as our auditors for the fiscal year ending September 30, 2025. Detailed disclosure of the audit and tax fees we paid to PricewaterhouseCoopers LLP in 2024 and 2023 may be found in the \"Audit Fees\" section of this proxy statement. Based on these disclosures and information in the Audit Committee Report provided elsewhere in this proxy statement, our Audit Committee is satisfied that PricewaterhouseCoopers LLP is sufficiently independent of management to perform its duties properly. Although not legally required to do so, our Board considers it desirable to seek, and recommends, stockholder ratification of our selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2025. If the stockholders fail to ratify our selection, the Audit Committee will reconsider whether or not to retain that firm. Even if the selection is ratified, the Audit Committee in its discretion may direct the appointment of a different independent registered public accounting firm at any time during the year if the Audit Committee determines that such a change would be in the best interest of Enanta and its stockholders.\n\n**Recommendation** \n\n**We recommend a vote \"FOR\" ratification of the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm.** \n\n------\n\n**CORPORATE GOVERNANCE** \n\n**Board and Committee Matters** \n\n*Board Leadership and Independence.* Our Board of Directors has determined that each of Mark G. Foletta and Lesley Russell, MBChB, MRCP, as well as four of the other directors continuing their terms after the 2025 Annual Meeting, are independent directors as defined by applicable Nasdaq Stock Market standards governing the independence of directors. Jay R. Luly, Ph.D., our President and Chief Executive Officer, is not considered independent.\n\nThe Board of Directors sets company strategy and provides oversight and accountability for our Chief Executive Officer and management. Among the general responsibilities for the direction and management of the business, the Board is expressly designated to have responsibility for reviewing matters related to environmental, social and governance (ESG) issues, as well as adopting appropriate standards and other required metrics used to measure and track ESG performance and progress.\n\nDr. Carter has served as our non-executive Chairman of the Board since December 2015. Dr. Carter presides over meetings of the Board of Directors and provides guidance to our Chief Executive Officer. Dr. Luly is responsible for setting the strategic direction for our Company and the day-to-day leadership and performance of the Company. We believe that separation of our Board of Directors and executive leadership preserves the independence of these roles and maximizes performance.\n\n*Board Meetings and Committees.* Our Board of Directors held eleven meetings during 2024, and the independent directors held executive sessions at four of the meetings of the Board. During 2024, each of the directors then in office attended at least 75% of the aggregate of all meetings of the Board of Directors and all meetings of the committees of the Board of Directors on which such director then served.",
+              "token_count": 673,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001410578-25-000056",
+              "cik": "0001779578",
+              "company": "BGM Group Ltd.",
+              "form_type": "20-F",
+              "filed_date": "20250127",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 440,
+              "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+              "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "019ba0ac-37e0-5c37-abaf-599b175456f2",
+              "section": "ITEM 6. DIRECTORS, SENIOR MANAGEMENT AND EMPLOYEES",
+              "section_index": 68,
+              "chunk_index": 1,
+              "char_start": 507705,
+              "char_end": 510568,
+              "text": "*Mr. Maofan Tang* has served as our independent director since June 2023. He has been working as an auditing professional and serving in a middle management position at Beijing Topson LLP since January 2019. Mr. Tang served as an investment manager at Chengdu Shangtou Jinsheng Equity Investment Fund Management Co., Ltd. from March 2018 to December 2018, where he conducted investment analysis, managed investment portfolios, allocated assets, mitigated risks, made investment decisions, oversaw compliance, provided performance reporting, etc. From April 2017 to March 2018, Mr. Tang served as a researcher at Tianfeng Securities Co. Mr. Tang received his postgraduate degree in Finance and Big Data from the University of Sydney in 2019. He received his Bachelor's Degree in Banking and Finance from Monash University in 2017.\n\n[**Table of Contents**](#TOC)\n\n*Ms. Furong Cao* has served as our director since May 2024. Ms. Cao is an experienced professional in business management. She has acquired a wealth of business management experience across a diverse range of industries, such as medical technology, pharmaceuticals, finance, and management consulting. Since July 2021, Ms. Cao has served as the director of operations of Shenzhen Financial Investment Service Co., Ltd., responsible for overseeing the investment strategies. From July 2017 to June 2021, Ms. Cao served as the business director of Shenzhen Beida Sequoia Business Management Co., Ltd., where she was responsible for financial project planning and investment risk assessment. Ms. Cao obtained her bachelor's degree in Medical Profession from Shanghai Second Medical College in 1993.\n\n*Mr. Chen Xin* has served as our chief executive officer since May 2024. Mr. Xin worked as an algorithm engineer at Geely Auti Holdings Limited from August 2022 to February 2024, where he led a team in developing perception algorithms for autonomous driving systems. From June 2021 to August 2022, he was an algorithm engineer at Shenzhen DJ Innovatives, where he engineered on image processing algorithms for autonomous driving vehicles. Mr. Xin obtained his bachelor's degree in Physics from Sichuan University in 2016 and his master's degree in Physics from National University of Singapore in 2019.\n\n*Ms. Yaxuan Zhai* has served as our chief financial officer since May 2024 and had served as the finance manager at the Company from October 2023 to May 2024. She worked as an auditor at Baker Tilly China Certified Public Accountants from November 2022 to October 2023. Ms. Zhai obtained her bachelor's degree in Investment from Fujian Jiangxia University in 2018 and her master's degree in Finance from The University of Sheffield in 2021.\n\n**Board Diversity**\n\nThe table below provides certain information regarding the diversity of our board of directors as of the date of this annual report.\n\n---",
+              "token_count": 619,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0001109357-25-000043",
+              "cik": "0001109357",
+              "company": "EXELON CORP",
+              "form_type": "10-K",
+              "filed_date": "20250212",
+              "year": 2025,
+              "month": 2,
+              "source_file": "sfd-v1-2025-02.parquet",
+              "source_row": 5076,
+              "source_md5": "4e755683e69b86bda31bdb6575045220",
+              "content_sha256": "4f9db51c129a6833da5903053cb8c7a8f89e84f8760d018349e6b131cf446d31",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "39f0dd98-11f4-5879-8dc1-3d498ddbd600",
+              "section": "ITEM 1.",
+              "section_index": 1,
+              "chunk_index": 41,
+              "char_start": 407454,
+              "char_end": 418252,
+              "text": "The critical audit matter communicated below is a matter arising from the current period audit of the financial statements that was communicated or required to be communicated to the audit committee and that (i) relates to accounts or disclosures that are material to the financial statements and (ii) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a whole, and we are not, by communicating the critical audit matter below, providing a separate opinion on the critical audit matter or on the accounts or disclosures to which it relates.\n\n*Accounting for the Effects of Rate Regulation*\n\nAs described in Notes 1 and 3 to the financial statements, the Company applies the authoritative guidance for accounting for certain types of regulation, which requires management to record in the financial statements the effects of cost-based rate regulation for entities with regulated operations that meet the following criteria, (i) rates are established or approved by a third-party regulator; (ii) rates are designed to recover the entity's cost of providing services or products; and (iii) there is a reasonable expectation that rates designed to recover costs can be charged to and collected from customers. The Company accounts for its regulated operations in accordance with regulatory and legislative guidance from the regulatory authorities having jurisdiction under state public utility laws and the FERC under various Federal laws. Upon updates in material regulatory and legislative proceedings, where applicable, management will record new regulatory assets or liabilities and will assess whether it is probable that its currently recorded regulatory assets and liabilities will be recovered and settled,\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\nrespectively, in future rates. As of December 31, 2024, there were $603 million of regulatory assets and $327 million of regulatory liabilities.\n\nThe principal considerations for our determination that performing procedures relating to the Company's accounting for the effects of rate regulation is a critical audit matter are the high degree of audit effort to assess the impact of regulation on accounting for regulatory assets and liabilities and to evaluate the complex audit evidence related to whether the regulatory assets and liabilities will be recovered and settled.\n\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the financial statements. These procedures included testing the effectiveness of controls relating to accounting for regulatory matters and evaluation of new and existing regulatory assets and liabilities. These procedures also included, among others, obtaining the Company's correspondence with regulators, evaluating the reasonableness of management's interpretation of regulatory guidance and proceedings and the related accounting implications, and recalculating regulatory assets and liabilities based on provisions outlined in rate orders and other correspondence with regulators.\n\n/s/ PricewaterhouseCoopers LLP\n\nPhiladelphia, Pennsylvania\n\nFebruary 12, 2025\n\nWe have served as the Company's auditor since at least 1993. We have not been able to determine the specific year we began serving as auditor of the Company.\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\n**Report of Independent Registered Public Accounting Firm** \n\nTo the Board of Directors and Shareholder of Delmarva Power & Light Company\n\n***Opinion on the Financial Statements***\n\nWe have audited the financial statements, including the related notes, of Delmarva Power & Light Company (the \"Company\") as listed in the index appearing under Item 15(a)(7)(i), and the financial statement schedule listed in the index appearing under Item 15(a)(7)(ii) (collectively referred to as the \"financial statements\"). In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company as of December 31, 2024 and 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2024 in conformity with accounting principles generally accepted in the United States of America.\n\n***Basis for Opinion***\n\nThese financial statements are the responsibility of the Company's management. Our responsibility is to express an opinion on the Company's financial statements based on our audits. We are a public accounting firm registered with the Public Company Accounting Oversight Board (United States) (PCAOB) and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audits of these financial statements in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. The Company is not required to have, nor were we engaged to perform, an audit of its internal control over financial reporting. As part of our audits we are required to obtain an understanding of internal control over financial reporting but not for the purpose of expressing an opinion on the effectiveness of the Company's internal control over financial reporting. Accordingly, we express no such opinion.\n\nOur audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. We believe that our audits provide a reasonable basis for our opinion.\n\n***Critical Audit Matters***\n\nThe critical audit matter communicated below is a matter arising from the current period audit of the financial statements that was communicated or required to be communicated to the audit committee and that (i) relates to accounts or disclosures that are material to the financial statements and (ii) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a whole, and we are not, by communicating the critical audit matter below, providing a separate opinion on the critical audit matter or on the accounts or disclosures to which it relates.\n\n*Accounting for the Effects of Rate Regulation*\n\nAs described in Notes 1 and 3 to the financial statements, the Company applies the authoritative guidance for accounting for certain types of regulation, which requires management to record in the financial statements the effects of cost-based rate regulation for entities with regulated operations that meet the following criteria, (i) rates are established or approved by a third-party regulator; (ii) rates are designed to recover the entity's cost of providing services or products; and (iii) there is a reasonable expectation that rates designed to recover costs can be charged to and collected from customers. The Company accounts for its regulated operations in accordance with regulatory and legislative guidance from the regulatory authorities having jurisdiction under state public utility laws and the FERC under various Federal laws. Upon updates in material regulatory and legislative proceedings, where applicable, management will record new regulatory assets or liabilities and will assess whether it is probable that its currently recorded regulatory assets and liabilities will be recovered and settled,\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\nrespectively, in future rates. As of December 31, 2024, there were $275 million of regulatory assets and $367 million of regulatory liabilities.\n\nThe principal considerations for our determination that performing procedures relating to the Company's accounting for the effects of rate regulation is a critical audit matter are the high degree of audit effort to assess the impact of regulation on accounting for regulatory assets and liabilities and to evaluate the complex audit evidence related to whether the regulatory assets and liabilities will be recovered and settled.\n\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the financial statements. These procedures included testing the effectiveness of controls relating to accounting for regulatory matters and evaluation of new and existing regulatory assets and liabilities. These procedures also included, among others, obtaining the Company's correspondence with regulators, evaluating the reasonableness of management's interpretation of regulatory guidance and proceedings and the related accounting implications, and recalculating regulatory assets and liabilities based on provisions outlined in rate orders and other correspondence with regulators.\n\n/s/ PricewaterhouseCoopers LLP\n\nPhiladelphia, Pennsylvania\n\nFebruary 12, 2025\n\nWe have served as the Company's auditor since at least 1993. We have not been able to determine the specific year we began serving as auditor of the Company.\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\n**Report of Independent Registered Public Accounting Firm** \n\nTo the Board of Directors and Shareholder of Atlantic City Electric Company\n\n***Opinion on the Financial Statements***\n\nWe have audited the consolidated financial statements, including the related notes, of Atlantic City Electric Company and its subsidiary (the \"Company\") as listed in the index appearing under Item 15(a)(8)(i), and the financial statement schedule listed in the index appearing under Item 15(a)(8)(ii) (collectively referred to as the \"consolidated financial statements\"). In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company as of December 31, 2024 and 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2024 in conformity with accounting principles generally accepted in the United States of America.\n\n***Basis for Opinion***",
+              "token_count": 1984,
+              "contains_table": false,
+              "embedding_model": "openai/text-embedding-3-small"
+            },
+            {
+              "accession": "0000928816-25-000157",
+              "cik": "0000719712",
+              "company": "PUTNAM NEW YORK TAX EXEMPT INCOME FUND",
+              "form_type": "N-CSR",
+              "filed_date": "20250128",
+              "year": 2025,
+              "month": 1,
+              "source_file": "sfd-v1-2025-01.parquet",
+              "source_row": 688,
+              "source_md5": "5acc3cc669fb27c3ea58f6bee74e71bf",
+              "content_sha256": "9060756cb47bc00eed9de70e1a5fb707da83ad6aa84dba7c15c3f3d437955e2c",
+              "has_ocr": false,
+              "source_format": "",
+              "id": "f1e65541-7a22-5674-b4e7-541682f288ce",
+              "section": "PUTNAM NEW YORK TAX EXEMPT INCOME FUND (Series ID: S000006345)",
+              "section_index": 2,
+              "chunk_index": 18,
+              "char_start": 49574,
+              "char_end": 52208,
+              "text": "Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. Our procedures included confirmation of securities owned as of November 30, 2024 by correspondence with the custodian and transfer agent. We believe that our audits provide a reasonable basis for our opinion.\n\nPricewaterhouseCoopers LLP\n\nBoston, Massachusetts\n\nJanuary 15, 2025\n\nWe have served as the auditor of one or more investment companies in the Putnam Funds family of funds since at least 1957. We have not been able to determine the specific year we began serving as auditor.\n\nNew York Tax Exempt Income Fund 1\n\n**The fund's portfolio** 11/30/24 <br>\n\n**Key to holding's abbreviations**\n\n**AGC** Assured Guaranty Corporation\n\n**AGM** Assured Guaranty Municipal Corporation\n\n**AMBAC** AMBAC Indemnity Corporation\n\n**BAM** Build America Mutual\n\n**FHA Insd.** Federal Housing Administration Insured\n\n**FNMA Coll.** Federal National Mortgage Association Collateralized\n\n**G.O. Bonds** General Obligation Bonds\n\n**U.S. Govt. Coll.** U.S. Government Collateralized\n\n**VRDN** Variable Rate Demand Notes, which are floating-rate securities with long-term maturities that carry coupons that reset and are payable upon demand either daily, weekly or monthly. The rate shown is the current interest rate at the close of the reporting period. Rates are set by remarketing agents and may take into consideration market supply and demand, credit quality and the current SIFMA Municipal Swap Index rate, which was 2.86% as of the close of the reporting period.\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **MUNICIPAL BONDS AND NOTES (98.9%)\\*** | **Rating\\*\\*** | **Principal amount** | **Value** |\n| **Alaska (1.2%)** |  |  |  |\n| AK State Indl. Dev. & Export Auth. Rev. Bonds, (Tanana Chiefs Conference), Ser. A |  |  |  |\n| &nbsp;&nbsp;&nbsp;4.00%, 10/1/37 | A+/F | $4635000 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$4645540 |\n| &nbsp;&nbsp;&nbsp;4.00%, 10/1/35 | A+/F | 4280000 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4305162 |\n|  |  |  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**8950702** |\n| **Guam (0.2%)** |  |  |  |\n| Territory of GU, Intl. Arpt. Auth. Rev. Bonds, (Antonio B Won Pat Intl. Arpt. Auth.), Ser. A |  |  |  |\n",
+              "token_count": 693,
+              "contains_table": true,
+              "embedding_model": "openai/text-embedding-3-small"
+            }
+          ]
+        },
+        "seconds": 0.620942945999559
+      }
+    ],
+    "chunks": [
+      {
+        "accession": "0000950170-25-009168",
+        "cik": "0001177648",
+        "company": "ENANTA PHARMACEUTICALS INC",
+        "form_type": "DEF 14A",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 818,
+        "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+        "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2aeed529-f68c-5fcc-a395-712a3793656b",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 37,
+        "char_start": 94043,
+        "char_end": 97506,
+        "text": "The firm of PricewaterhouseCoopers LLP, an independent registered public accounting firm, has audited our financial statements for each of the years ended September 30, 2024, 2023 and 2022. Our Audit Committee has appointed them to serve as our auditors for the fiscal year ending September 30, 2025. Detailed disclosure of the audit and tax fees we paid to PricewaterhouseCoopers LLP in 2024 and 2023 may be found in the \"Audit Fees\" section of this proxy statement. Based on these disclosures and information in the Audit Committee Report provided elsewhere in this proxy statement, our Audit Committee is satisfied that PricewaterhouseCoopers LLP is sufficiently independent of management to perform its duties properly. Although not legally required to do so, our Board considers it desirable to seek, and recommends, stockholder ratification of our selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2025. If the stockholders fail to ratify our selection, the Audit Committee will reconsider whether or not to retain that firm. Even if the selection is ratified, the Audit Committee in its discretion may direct the appointment of a different independent registered public accounting firm at any time during the year if the Audit Committee determines that such a change would be in the best interest of Enanta and its stockholders.\n\n**Recommendation** \n\n**We recommend a vote \"FOR\" ratification of the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm.** \n\n------\n\n**CORPORATE GOVERNANCE** \n\n**Board and Committee Matters** \n\n*Board Leadership and Independence.* Our Board of Directors has determined that each of Mark G. Foletta and Lesley Russell, MBChB, MRCP, as well as four of the other directors continuing their terms after the 2025 Annual Meeting, are independent directors as defined by applicable Nasdaq Stock Market standards governing the independence of directors. Jay R. Luly, Ph.D., our President and Chief Executive Officer, is not considered independent.\n\nThe Board of Directors sets company strategy and provides oversight and accountability for our Chief Executive Officer and management. Among the general responsibilities for the direction and management of the business, the Board is expressly designated to have responsibility for reviewing matters related to environmental, social and governance (ESG) issues, as well as adopting appropriate standards and other required metrics used to measure and track ESG performance and progress.\n\nDr. Carter has served as our non-executive Chairman of the Board since December 2015. Dr. Carter presides over meetings of the Board of Directors and provides guidance to our Chief Executive Officer. Dr. Luly is responsible for setting the strategic direction for our Company and the day-to-day leadership and performance of the Company. We believe that separation of our Board of Directors and executive leadership preserves the independence of these roles and maximizes performance.\n\n*Board Meetings and Committees.* Our Board of Directors held eleven meetings during 2024, and the independent directors held executive sessions at four of the meetings of the Board. During 2024, each of the directors then in office attended at least 75% of the aggregate of all meetings of the Board of Directors and all meetings of the committees of the Board of Directors on which such director then served.",
+        "token_count": 673,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-004491",
+        "cik": "0001885461",
+        "company": "ShoulderUP Technology Acquisition Corp.",
+        "form_type": "DEFM14A",
+        "filed_date": "20250117",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 400,
+        "source_md5": "85ff236b3b7c9b6ccd3657857a037585",
+        "content_sha256": "c1b88d3808ea99a01c8e472bf4c859bd2fdc74d2f9daeca128131d2f3339b5b7",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "015c8920-cd7a-5224-8842-b945208484a8",
+        "section": "Audit Committee",
+        "section_index": 272,
+        "chunk_index": 0,
+        "char_start": 822607,
+        "char_end": 826094,
+        "text": "#### Audit Committee\nWe have established an audit committee of the board of directors. Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd serve as members of our audit committee, and Lauren C. Anderson chairs the audit committee. Each of Lauren C. Anderson, Shawn Henry and Janice Bryant Howroyd meet the independent director standard under Rule 10A-3(b)(l) under the Exchange Act.\n\nEach member of the audit committee is financially literate and our board of directors has determined that Shawn Henry qualifies as an \"audit committee financial expert\" as defined in applicable SEC rules and has accounting or related financial management expertise.\n\nWe have adopted an audit committee charter, which details the principal functions of the audit committee, including:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 assisting board oversight of (1) the integrity of our financial statements, (2) our compliance with legal and regulatory requirements, (3) our independent registered public accounting firm's qualifications and independence, and (4) the performance of our internal audit function and independent auditors; the appointment, compensation, retention, replacement, and oversight of the work of the independent auditors and any other independent registered public accounting firm engaged by us;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 pre-approving all audit and non-audit services to be provided by the independent auditors or any other registered public accounting firm engaged by us, and establishing pre-approval policies and procedures; reviewing and discussing with the independent auditors all relationships the auditors have with us in order to evaluate their continued independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear policies for audit partner rotation in compliance with applicable laws and regulations; obtaining and reviewing a report, at least annually, from the independent registered public accounting firm describing (1) the independent auditor's internal quality-control procedures and (2) any material issues raised by the most recent internal quality-control review, or peer review, of the audit firm, or by any inquiry or investigation by governmental or professional authorities, within the preceding five years respecting one or more independent audits carried out by the firm and any steps taken to deal with such issues;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 meeting to review and discuss our annual audited financial statements and quarterly financial statements with management and the independent auditor, including reviewing our specific disclosures under \"*Management's Discussion and Analysis of Financial Condition and Results of Operations*\"; reviewing and approving any related party transaction required to be disclosed pursuant to Item 404 of Regulation S-K promulgated by the SEC prior to us entering into such transaction; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing with management, the independent auditors, and our legal advisors, as appropriate, any legal, regulatory or compliance matters, including any correspondence with regulators or government agencies and any employee complaints or published reports that raise material issues regarding our financial statements or accounting policies and any significant changes in accounting standards or rules promulgated by the Financial Accounting Standards Board, the SEC or other regulatory authorities.",
+        "token_count": 647,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "a6205dc2-ab89-51c2-905b-ce0c5b66df96",
+        "section": "Audit Committee",
+        "section_index": 385,
+        "chunk_index": 0,
+        "char_start": 1278488,
+        "char_end": 1281588,
+        "text": "#### Audit Committee\nWe have established an audit committee of the Board of Directors. Chunyi (Charlie) Hao, Tiemei (Sarah) Li and Sanjay Prasad serve as members of our audit committee and Ms. Li serves as its chair. Under the Nasdaq listing standards and applicable SEC rules, we are required to have at least three members of the audit committee, all of whom must be independent, subject to certain phase-in provisions. Each such member of our audit committee meets the independent director standard under Nasdaq listing standards and under Rule 10A-3(b)(1) of the Exchange Act.\n\nEach member of the audit committee is financially literate and the Finnovate Board has determined that Ms. Li qualifies as an \"audit committee financial expert\" as defined in applicable SEC rules and has accounting or related financial management expertise.\n\nWe have adopted an audit committee charter, which details the purpose and principal functions of the audit committee, including:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 the appointment, compensation, retention, replacement, and oversight of the work of the independent auditors and any other independent registered public accounting firm engaged by us;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 pre-approving all audit and non-audit services to be provided by the independent auditors or any other registered public accounting firm engaged by us, and establishing pre-approval policies and procedures;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing and discussing with the independent auditors all relationships the auditors have with us in order to evaluate their continued independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear hiring policies for employees or former employees of the independent auditors;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 setting clear policies for audit partner rotation in compliance with applicable laws and regulations;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 obtaining and reviewing a report, at least annually, from the independent auditors describing (i) the independent auditor's internal quality-control procedures and (ii) any material issues raised by the most recent internal quality-control review, or peer review, of the audit firm, or by any inquiry or investigation by governmental or professional authorities, within, the preceding five years respecting one or more independent audits carried out by the firm and any steps taken to deal with such issues;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 meeting to review and discuss our annual audited financial statements and quarterly financial statements with management and the independent auditor, including reviewing our specific disclosures under \"Management's Discussion and Analysis of Financial Condition and Results of Operations\";\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 reviewing and approving any related party transaction required to be disclosed pursuant to Item 404 of Regulation S-K promulgated by the SEC prior to us entering into such transaction; and",
+        "token_count": 621,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001104659-25-006724",
+        "cik": "0001653384",
+        "company": "Runway Growth Finance Corp.",
+        "form_type": "8-K",
+        "filed_date": "20250128",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 154,
+        "source_md5": "6f37fec10e6bd3c618eb908e69a00be4",
+        "content_sha256": "88083d4a9f8f5b856da6e4c8beca9c1e5eb3e1e235a6fa6578878685f27dad6b",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "5471b942-5fcd-57d8-9057-faafb01ce153",
+        "section": "Item 4.01. Changes in Registrant's Certifying Accountant",
+        "section_index": 1,
+        "chunk_index": 0,
+        "char_start": 3555,
+        "char_end": 6279,
+        "text": "**Item 4.01. Changes in Registrant's Certifying Accountant** \n\n**(a) Dismissal of independent registered public accounting firm**\n\nOn January 23, 2025, the Board of Directors (the \"Board\") of Runway Growth Finance Corp. (the \"Company\") dismissed RSM US LLP (\"RSM\") as the Company's independent registered public accounting firm.\n\nRSM served as the Company's independent registered public accounting firm since the Company's inception. The audit reports of RSM on the Company's financial statements as of and for the fiscal years ended December 31, 2022 and 2023 did not contain an adverse opinion or disclaimer of opinion and were not qualified or modified as to uncertainty, audit scope or accounting principles.\n\nDuring the two most recent fiscal years and through January 23, 2025, there were no disagreements with RSM on any matter of accounting principles or practices, financial statement disclosure or auditing scope or procedure, which disagreements, if not resolved to the satisfaction of RSM, would have caused it to make reference to the subject matter of such disagreements in connection with its reports, nor were there any \"reportable events\", as such term is described in Item 304(a)(1)(v) of Regulation S-K promulgated under the Securities Exchange Act of 1934, as amended (the \"Exchange Act\").\n\nThe Company provided RSM with a copy of this Form 8-K prior to its filing with the Securities and Exchange Commission (the \"SEC\") and requested that RSM provide the Company with a letter addressed to the SEC stating whether it agrees with the above statements. A copy of RSM's letter, dated January 28, 2025, is attached as Exhibit 16.1 to this Current Report on Form 8-K.\n\n**(b) Appointment of new independent registered public accounting firm**\n\nOn January 23, 2025, upon the recommendation of the Audit Committee of the Board, the Board approved the appointment of Deloitte & Touche LLP (\"Deloitte\") to serve as the Company's independent registered accounting firm to audit the Company's consolidated financial statements for the fiscal year ended December 31, 2024.\n\nDuring the two most recent fiscal years and through January 23, 2025, the date of the appointment of Deloitte, neither the Company nor any person on its behalf has consulted with Deloitte with respect to either (i) the application of accounting principles to a specified transaction, either completed or proposed, or the type of audit opinion that might be rendered on the Company's consolidated financial statements or (ii) any matter that was either the subject of a \"disagreement\" or a \"reportable event\" as such terms are defined in Items 304(a)(1)(iv) or 304(a)(1)(v), respectively, of Regulation S-K promulgated under the Exchange Act.",
+        "token_count": 592,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-009168",
+        "cik": "0001177648",
+        "company": "ENANTA PHARMACEUTICALS INC",
+        "form_type": "DEF 14A",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 818,
+        "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+        "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "463efec6-0018-526d-9860-d2b5b68e32c4",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 95,
+        "char_start": 241676,
+        "char_end": 244497,
+        "text": "PricewaterhouseCoopers LLP, an independent registered public accounting firm, audited our financial statements for the year ended September 30, 2024. The Audit Committee, under delegated authority of the Board of Directors, has appointed PricewaterhouseCoopers LLP to serve as our independent registered public accounting firm for the fiscal year ending September 30, 2025. Representatives of PricewaterhouseCoopers LLP are expected to attend the annual meeting to respond to appropriate questions, and they will have the opportunity to make a statement if they desire.\n\nThe aggregate fees for audit and other services provided by PricewaterhouseCoopers LLP for fiscal years 2024 and 2023 are as follows:\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n|  | **2024** | **2023** |\n| Audit Fees<sup>(1)</sup> | $762000 | $944600 |\n| Tax Fees<sup>(2)</sup> | 89312 | 273294 |\n| All Other Fees<sup>(3)</sup> | 2125 | 3081 |\n| Total | $853437 | $1239938 |\n\n---\n\n\n\n(1)Audit fees in 2024 represent fees for professional services provided in connection with the audit of our financial statements and review of our quarterly financial statements. Audit fees in 2023 represent fees for professional services provided in connection with the audit of our financial statements, review of our quarterly financial statements and audit of our internal control over financial reporting.\n\n(2)Tax fees were for services related to (a) tax compliance including sales and use taxes and (b) tax planning. The 2024 tax fees consisted of $45,500 of tax compliance fees and $43,812 for tax planning. The 2023 tax fees consisted of $90,144 of tax compliance fees and $183,150 for tax planning.\n\n(3)All other fees for 2024 and 2023 relate to technical research material fees.\n\nOur Audit Committee has adopted procedures requiring the pre-approval of all non-audit (including tax) services performed by our independent registered public accounting firm in order to assure that these services do not impair the auditor's independence. These procedures generally approve the performance of specific services subject to a cost limit for all such services. This general approval is to be reviewed, and if necessary modified, at least annually. Management must obtain the specific prior approval of the Audit Committee for each engagement of the independent registered public accounting firm to perform other audit-related or other non-audit services. For engagements for audit-related or tax-related services within a specified dollar limit, the Chair of the Audit Committee has authority to provide such prior approval, and he reports to the full committee whenever he has exercised that authority. The Audit Committee does not delegate its responsibility to approve services performed by the independent registered public accounting firm to any member of management.",
+        "token_count": 593,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-009168",
+        "cik": "0001177648",
+        "company": "ENANTA PHARMACEUTICALS INC",
+        "form_type": "DEF 14A",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 818,
+        "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+        "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2aeed529-f68c-5fcc-a395-712a3793656b",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 37,
+        "char_start": 94043,
+        "char_end": 97506,
+        "text": "The firm of PricewaterhouseCoopers LLP, an independent registered public accounting firm, has audited our financial statements for each of the years ended September 30, 2024, 2023 and 2022. Our Audit Committee has appointed them to serve as our auditors for the fiscal year ending September 30, 2025. Detailed disclosure of the audit and tax fees we paid to PricewaterhouseCoopers LLP in 2024 and 2023 may be found in the \"Audit Fees\" section of this proxy statement. Based on these disclosures and information in the Audit Committee Report provided elsewhere in this proxy statement, our Audit Committee is satisfied that PricewaterhouseCoopers LLP is sufficiently independent of management to perform its duties properly. Although not legally required to do so, our Board considers it desirable to seek, and recommends, stockholder ratification of our selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2025. If the stockholders fail to ratify our selection, the Audit Committee will reconsider whether or not to retain that firm. Even if the selection is ratified, the Audit Committee in its discretion may direct the appointment of a different independent registered public accounting firm at any time during the year if the Audit Committee determines that such a change would be in the best interest of Enanta and its stockholders.\n\n**Recommendation** \n\n**We recommend a vote \"FOR\" ratification of the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm.** \n\n------\n\n**CORPORATE GOVERNANCE** \n\n**Board and Committee Matters** \n\n*Board Leadership and Independence.* Our Board of Directors has determined that each of Mark G. Foletta and Lesley Russell, MBChB, MRCP, as well as four of the other directors continuing their terms after the 2025 Annual Meeting, are independent directors as defined by applicable Nasdaq Stock Market standards governing the independence of directors. Jay R. Luly, Ph.D., our President and Chief Executive Officer, is not considered independent.\n\nThe Board of Directors sets company strategy and provides oversight and accountability for our Chief Executive Officer and management. Among the general responsibilities for the direction and management of the business, the Board is expressly designated to have responsibility for reviewing matters related to environmental, social and governance (ESG) issues, as well as adopting appropriate standards and other required metrics used to measure and track ESG performance and progress.\n\nDr. Carter has served as our non-executive Chairman of the Board since December 2015. Dr. Carter presides over meetings of the Board of Directors and provides guidance to our Chief Executive Officer. Dr. Luly is responsible for setting the strategic direction for our Company and the day-to-day leadership and performance of the Company. We believe that separation of our Board of Directors and executive leadership preserves the independence of these roles and maximizes performance.\n\n*Board Meetings and Committees.* Our Board of Directors held eleven meetings during 2024, and the independent directors held executive sessions at four of the meetings of the Board. During 2024, each of the directors then in office attended at least 75% of the aggregate of all meetings of the Board of Directors and all meetings of the committees of the Board of Directors on which such director then served.",
+        "token_count": 673,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001045810-25-000023",
+        "cik": "0001045810",
+        "company": "NVIDIA CORP",
+        "form_type": "10-K",
+        "filed_date": "20250226",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 59611,
+        "source_md5": "0f9e71be98a1d5392c51350ebc058cc5",
+        "content_sha256": "795b29ab707da32a02b3f6b3b34fab9e73ead9ffefc1f9e10a7280257253e147",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "cb0a4777-10f6-5e37-8910-081e2a3f8a56",
+        "section": "Exhibit 23.1",
+        "section_index": 31,
+        "chunk_index": 0,
+        "char_start": 569782,
+        "char_end": 570539,
+        "text": "## Exhibit 23.1\n\n\n**EXHIBIT 23.1**\n\n\n\n**<u>CONSENT OF INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM</u>**\n\nWe hereby consent to the incorporation by reference in the Registration Statements on Form S-3 (No. 333-270119) and Form S-8 (Nos. 333-74905, 333-51520, 333-74868, 333-100010, 333-106191, 333-114375, 333-123933, 333-132493, 333-140021, 333-143953, 333-181625, 333-185036, 333-188775, 333-196259, 333-211615, 333-229774, 333-249570, and 333-267207) of NVIDIA Corporation of our report dated February 26, 2025 relating to the financial statements, financial statement schedule and the effectiveness of internal control over financial reporting, which appears in this Form 10-K.\n\n\n\n/s/ PricewaterhouseCoopers LLP\n\nSan Jose, California\n\nFebruary 26, 2025",
+        "token_count": 246,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-009168",
+        "cik": "0001177648",
+        "company": "ENANTA PHARMACEUTICALS INC",
+        "form_type": "DEF 14A",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 818,
+        "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+        "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "463efec6-0018-526d-9860-d2b5b68e32c4",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 95,
+        "char_start": 241676,
+        "char_end": 244497,
+        "text": "PricewaterhouseCoopers LLP, an independent registered public accounting firm, audited our financial statements for the year ended September 30, 2024. The Audit Committee, under delegated authority of the Board of Directors, has appointed PricewaterhouseCoopers LLP to serve as our independent registered public accounting firm for the fiscal year ending September 30, 2025. Representatives of PricewaterhouseCoopers LLP are expected to attend the annual meeting to respond to appropriate questions, and they will have the opportunity to make a statement if they desire.\n\nThe aggregate fees for audit and other services provided by PricewaterhouseCoopers LLP for fiscal years 2024 and 2023 are as follows:\n\n---\n\n\n\n| | | |\n|:---|:---|:---|\n|  | **2024** | **2023** |\n| Audit Fees<sup>(1)</sup> | $762000 | $944600 |\n| Tax Fees<sup>(2)</sup> | 89312 | 273294 |\n| All Other Fees<sup>(3)</sup> | 2125 | 3081 |\n| Total | $853437 | $1239938 |\n\n---\n\n\n\n(1)Audit fees in 2024 represent fees for professional services provided in connection with the audit of our financial statements and review of our quarterly financial statements. Audit fees in 2023 represent fees for professional services provided in connection with the audit of our financial statements, review of our quarterly financial statements and audit of our internal control over financial reporting.\n\n(2)Tax fees were for services related to (a) tax compliance including sales and use taxes and (b) tax planning. The 2024 tax fees consisted of $45,500 of tax compliance fees and $43,812 for tax planning. The 2023 tax fees consisted of $90,144 of tax compliance fees and $183,150 for tax planning.\n\n(3)All other fees for 2024 and 2023 relate to technical research material fees.\n\nOur Audit Committee has adopted procedures requiring the pre-approval of all non-audit (including tax) services performed by our independent registered public accounting firm in order to assure that these services do not impair the auditor's independence. These procedures generally approve the performance of specific services subject to a cost limit for all such services. This general approval is to be reviewed, and if necessary modified, at least annually. Management must obtain the specific prior approval of the Audit Committee for each engagement of the independent registered public accounting firm to perform other audit-related or other non-audit services. For engagements for audit-related or tax-related services within a specified dollar limit, the Chair of the Audit Committee has authority to provide such prior approval, and he reports to the full committee whenever he has exercised that authority. The Audit Committee does not delegate its responsibility to approve services performed by the independent registered public accounting firm to any member of management.",
+        "token_count": 593,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-009168",
+        "cik": "0001177648",
+        "company": "ENANTA PHARMACEUTICALS INC",
+        "form_type": "DEF 14A",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 818,
+        "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+        "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "8123a20e-d77c-5af8-8ea1-b6a00ec0af47",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 94,
+        "char_start": 238383,
+        "char_end": 241674,
+        "text": "The following is the report of the Audit Committee with respect to Enanta's audited financial statements for the year ended September 30, 2024.\n\nThe purpose of the Audit Committee is to assist the Board in fulfilling its responsibility to oversee Enanta's accounting and financial reporting, internal controls and audit functions. The Audit Committee Charter describes in greater detail the full responsibilities of the Committee and is available in the \"Investors \u2013 Corporate Governance\" section of our website at *www.enanta.com*. The Audit Committee is comprised entirely of independent directors as defined by applicable Nasdaq Stock Market standards.\n\nManagement is responsible for our internal controls and the financial reporting process. PricewaterhouseCoopers LLP, our independent registered public accounting firm, is responsible for performing an independent audit of our consolidated financial statements in accordance with the standards established by the Public Company Accounting Oversight Board (United States) and issuing a report thereon. The Committee's responsibility is to monitor these processes. The Audit Committee has reviewed and discussed the consolidated financial statements with management and PricewaterhouseCoopers LLP.\n\nIn the course of its oversight of Enanta's financial reporting process, the Audit Committee:\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022reviewed and discussed with management and PricewaterhouseCoopers LLP Enanta's audited financial statements for the fiscal year ended September 30, 2024;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022discussed with PricewaterhouseCoopers LLP the matters required to be discussed by Public Company Accounting Oversight Board Auditing Standard No. 16, *Communications with Audit Committees*;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022received written disclosures and the letter from PricewaterhouseCoopers LLP required by applicable requirements of the Public Company Accounting Oversight Board regarding the independent accountant's communications with the Audit Committee concerning independence;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022reviewed with management and PricewaterhouseCoopers LLP Enanta's critical accounting policies;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022discussed with management the quality and adequacy of Enanta's internal controls;\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022discussed with PricewaterhouseCoopers LLP any relationships that may impact their objectivity and independence; and\n\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022considered whether the provision of non-audit services by PricewaterhouseCoopers LLP is compatible with maintaining its independence.\n\nBased on the foregoing review and discussions, the Audit Committee recommended to the Board of Directors that the audited financial statements be included in Enanta's Annual Report on Form 10-K for the year ended September 30, 2024 for filing with the Securities and Exchange Commission.\n\n---\n\n\n\n| |\n|:---|\n| &nbsp;&nbsp;&nbsp;&nbsp;By the Audit Committee, |\n| &nbsp;&nbsp;&nbsp;&nbsp;Mark G. Foletta, Chair |\n| &nbsp;&nbsp;&nbsp;&nbsp;Lesley Russell, MBChB, MRCP |\n| &nbsp;&nbsp;&nbsp;&nbsp;Terry C. Vance |\n\n---\n\n\n\nJanuary 27, 2025\n\n------\n\n**Audit Fees** ",
+        "token_count": 696,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001109357-25-000043",
+        "cik": "0001109357",
+        "company": "EXELON CORP",
+        "form_type": "10-K",
+        "filed_date": "20250212",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 5076,
+        "source_md5": "4e755683e69b86bda31bdb6575045220",
+        "content_sha256": "4f9db51c129a6833da5903053cb8c7a8f89e84f8760d018349e6b131cf446d31",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "39f0dd98-11f4-5879-8dc1-3d498ddbd600",
+        "section": "ITEM 1.",
+        "section_index": 1,
+        "chunk_index": 41,
+        "char_start": 407454,
+        "char_end": 418252,
+        "text": "The critical audit matter communicated below is a matter arising from the current period audit of the financial statements that was communicated or required to be communicated to the audit committee and that (i) relates to accounts or disclosures that are material to the financial statements and (ii) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a whole, and we are not, by communicating the critical audit matter below, providing a separate opinion on the critical audit matter or on the accounts or disclosures to which it relates.\n\n*Accounting for the Effects of Rate Regulation*\n\nAs described in Notes 1 and 3 to the financial statements, the Company applies the authoritative guidance for accounting for certain types of regulation, which requires management to record in the financial statements the effects of cost-based rate regulation for entities with regulated operations that meet the following criteria, (i) rates are established or approved by a third-party regulator; (ii) rates are designed to recover the entity's cost of providing services or products; and (iii) there is a reasonable expectation that rates designed to recover costs can be charged to and collected from customers. The Company accounts for its regulated operations in accordance with regulatory and legislative guidance from the regulatory authorities having jurisdiction under state public utility laws and the FERC under various Federal laws. Upon updates in material regulatory and legislative proceedings, where applicable, management will record new regulatory assets or liabilities and will assess whether it is probable that its currently recorded regulatory assets and liabilities will be recovered and settled,\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\nrespectively, in future rates. As of December 31, 2024, there were $603 million of regulatory assets and $327 million of regulatory liabilities.\n\nThe principal considerations for our determination that performing procedures relating to the Company's accounting for the effects of rate regulation is a critical audit matter are the high degree of audit effort to assess the impact of regulation on accounting for regulatory assets and liabilities and to evaluate the complex audit evidence related to whether the regulatory assets and liabilities will be recovered and settled.\n\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the financial statements. These procedures included testing the effectiveness of controls relating to accounting for regulatory matters and evaluation of new and existing regulatory assets and liabilities. These procedures also included, among others, obtaining the Company's correspondence with regulators, evaluating the reasonableness of management's interpretation of regulatory guidance and proceedings and the related accounting implications, and recalculating regulatory assets and liabilities based on provisions outlined in rate orders and other correspondence with regulators.\n\n/s/ PricewaterhouseCoopers LLP\n\nPhiladelphia, Pennsylvania\n\nFebruary 12, 2025\n\nWe have served as the Company's auditor since at least 1993. We have not been able to determine the specific year we began serving as auditor of the Company.\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\n**Report of Independent Registered Public Accounting Firm** \n\nTo the Board of Directors and Shareholder of Delmarva Power & Light Company\n\n***Opinion on the Financial Statements***\n\nWe have audited the financial statements, including the related notes, of Delmarva Power & Light Company (the \"Company\") as listed in the index appearing under Item 15(a)(7)(i), and the financial statement schedule listed in the index appearing under Item 15(a)(7)(ii) (collectively referred to as the \"financial statements\"). In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company as of December 31, 2024 and 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2024 in conformity with accounting principles generally accepted in the United States of America.\n\n***Basis for Opinion***\n\nThese financial statements are the responsibility of the Company's management. Our responsibility is to express an opinion on the Company's financial statements based on our audits. We are a public accounting firm registered with the Public Company Accounting Oversight Board (United States) (PCAOB) and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audits of these financial statements in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. The Company is not required to have, nor were we engaged to perform, an audit of its internal control over financial reporting. As part of our audits we are required to obtain an understanding of internal control over financial reporting but not for the purpose of expressing an opinion on the effectiveness of the Company's internal control over financial reporting. Accordingly, we express no such opinion.\n\nOur audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. We believe that our audits provide a reasonable basis for our opinion.\n\n***Critical Audit Matters***\n\nThe critical audit matter communicated below is a matter arising from the current period audit of the financial statements that was communicated or required to be communicated to the audit committee and that (i) relates to accounts or disclosures that are material to the financial statements and (ii) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a whole, and we are not, by communicating the critical audit matter below, providing a separate opinion on the critical audit matter or on the accounts or disclosures to which it relates.\n\n*Accounting for the Effects of Rate Regulation*\n\nAs described in Notes 1 and 3 to the financial statements, the Company applies the authoritative guidance for accounting for certain types of regulation, which requires management to record in the financial statements the effects of cost-based rate regulation for entities with regulated operations that meet the following criteria, (i) rates are established or approved by a third-party regulator; (ii) rates are designed to recover the entity's cost of providing services or products; and (iii) there is a reasonable expectation that rates designed to recover costs can be charged to and collected from customers. The Company accounts for its regulated operations in accordance with regulatory and legislative guidance from the regulatory authorities having jurisdiction under state public utility laws and the FERC under various Federal laws. Upon updates in material regulatory and legislative proceedings, where applicable, management will record new regulatory assets or liabilities and will assess whether it is probable that its currently recorded regulatory assets and liabilities will be recovered and settled,\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\nrespectively, in future rates. As of December 31, 2024, there were $275 million of regulatory assets and $367 million of regulatory liabilities.\n\nThe principal considerations for our determination that performing procedures relating to the Company's accounting for the effects of rate regulation is a critical audit matter are the high degree of audit effort to assess the impact of regulation on accounting for regulatory assets and liabilities and to evaluate the complex audit evidence related to whether the regulatory assets and liabilities will be recovered and settled.\n\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the financial statements. These procedures included testing the effectiveness of controls relating to accounting for regulatory matters and evaluation of new and existing regulatory assets and liabilities. These procedures also included, among others, obtaining the Company's correspondence with regulators, evaluating the reasonableness of management's interpretation of regulatory guidance and proceedings and the related accounting implications, and recalculating regulatory assets and liabilities based on provisions outlined in rate orders and other correspondence with regulators.\n\n/s/ PricewaterhouseCoopers LLP\n\nPhiladelphia, Pennsylvania\n\nFebruary 12, 2025\n\nWe have served as the Company's auditor since at least 1993. We have not been able to determine the specific year we began serving as auditor of the Company.\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\n**Report of Independent Registered Public Accounting Firm** \n\nTo the Board of Directors and Shareholder of Atlantic City Electric Company\n\n***Opinion on the Financial Statements***\n\nWe have audited the consolidated financial statements, including the related notes, of Atlantic City Electric Company and its subsidiary (the \"Company\") as listed in the index appearing under Item 15(a)(8)(i), and the financial statement schedule listed in the index appearing under Item 15(a)(8)(ii) (collectively referred to as the \"consolidated financial statements\"). In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company as of December 31, 2024 and 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2024 in conformity with accounting principles generally accepted in the United States of America.\n\n***Basis for Opinion***",
+        "token_count": 1984,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001213900-25-001215",
+        "cik": "0002000366",
+        "company": "Scage Future",
+        "form_type": "424B3",
+        "filed_date": "20250106",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 345,
+        "source_md5": "3312708e25aebd1dc7b4eaf2b3636897",
+        "content_sha256": "ea73db61181e9c616dca58ab298649c7d101f73c9396e59f9dfda57605923a21",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "990718c6-b89e-57bd-89a3-6370d9517978",
+        "section": "Executive Officers and Directors",
+        "section_index": 393,
+        "chunk_index": 0,
+        "char_start": 1291180,
+        "char_end": 1293313,
+        "text": "#### Executive Officers and Directors\n*Mr. Chao Gao* is the founder of Scage International and has served as the chairman of Nanjing Scage since November 2021. He served as the executive vice president at Nanjing Yueboo Power System Co., Ltd. (\"Nanjing Yueboo\") (SHE: 300742), from April 2012 to September 2019. Mr. Gao received a bachelor's degree in aircraft power engineering in 2005 and received a master's degree in vehicle engineering in 2018 from Nanjing University of Science and Technology.\n\n*Mr. Yuanchi Guo* has served as a director of Nanjing Scage since March 2021. Mr. Guo is experienced at capital raising and financing, and he served as an investment director at Nextview Capital from 2018 to 2021, where he focused on angel investments and merger and acquisition businesses. Mr. Guo received his bachelor's degree in finance in 2014 from University of Toronto and a master's degree in finance in 2018 from Harvard University.\n\n*Mr. Ziqian Guan* has served as the executive vice president of Nanjing Scage since November 2021. He served as the procurement director at Nanjing Yueboo from April 2012 to September 2019. Mr. Guan received an associate degree in e-commerce in 2015 from Jiangsu United Institute of Technology.\n\n*Ms. Yu Xiang* has served as the chief financial officer of Scage International since November 2023. She has been the founding partner of Guangzhou Tuoyuan Enterprise Consulting Co., Ltd. since March 2023, where she focused on providing commercial and financial consulting service for PRC companies. Ms. Xiang has been the partner of Guangzhou Jingtian Enterprise Management Consulting Service Co., Ltd. since January 2021. Prior to that, Ms. Xiang was managing director at Marcum Bernstein & Pinchuk LLP from April 2008 to October 2020 and senior auditor at PricewaterhouseCoopers ZhongTian LLP from October 2005 to April 2008. Ms. Xiang received a bachelor's degree in management studies from Nanjing Audit University in 2005 and is currently a member of the American Institute of Certified Public Accountants as well as a fellow member of the Association of Chartered Certified Accountants.",
+        "token_count": 494,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000950170-25-009168",
+        "cik": "0001177648",
+        "company": "ENANTA PHARMACEUTICALS INC",
+        "form_type": "DEF 14A",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 818,
+        "source_md5": "a3a0b1a589ab646d5a7f41dfc4e95238",
+        "content_sha256": "b80d1f49c06cb34277b643f40dddb58a521385f5b214d8a993b714ae9c3c0cf8",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "2aeed529-f68c-5fcc-a395-712a3793656b",
+        "section": "Filing Summary",
+        "section_index": 0,
+        "chunk_index": 37,
+        "char_start": 94043,
+        "char_end": 97506,
+        "text": "The firm of PricewaterhouseCoopers LLP, an independent registered public accounting firm, has audited our financial statements for each of the years ended September 30, 2024, 2023 and 2022. Our Audit Committee has appointed them to serve as our auditors for the fiscal year ending September 30, 2025. Detailed disclosure of the audit and tax fees we paid to PricewaterhouseCoopers LLP in 2024 and 2023 may be found in the \"Audit Fees\" section of this proxy statement. Based on these disclosures and information in the Audit Committee Report provided elsewhere in this proxy statement, our Audit Committee is satisfied that PricewaterhouseCoopers LLP is sufficiently independent of management to perform its duties properly. Although not legally required to do so, our Board considers it desirable to seek, and recommends, stockholder ratification of our selection of PricewaterhouseCoopers LLP as our independent registered public accounting firm for fiscal year 2025. If the stockholders fail to ratify our selection, the Audit Committee will reconsider whether or not to retain that firm. Even if the selection is ratified, the Audit Committee in its discretion may direct the appointment of a different independent registered public accounting firm at any time during the year if the Audit Committee determines that such a change would be in the best interest of Enanta and its stockholders.\n\n**Recommendation** \n\n**We recommend a vote \"FOR\" ratification of the appointment of PricewaterhouseCoopers LLP as our independent registered public accounting firm.** \n\n------\n\n**CORPORATE GOVERNANCE** \n\n**Board and Committee Matters** \n\n*Board Leadership and Independence.* Our Board of Directors has determined that each of Mark G. Foletta and Lesley Russell, MBChB, MRCP, as well as four of the other directors continuing their terms after the 2025 Annual Meeting, are independent directors as defined by applicable Nasdaq Stock Market standards governing the independence of directors. Jay R. Luly, Ph.D., our President and Chief Executive Officer, is not considered independent.\n\nThe Board of Directors sets company strategy and provides oversight and accountability for our Chief Executive Officer and management. Among the general responsibilities for the direction and management of the business, the Board is expressly designated to have responsibility for reviewing matters related to environmental, social and governance (ESG) issues, as well as adopting appropriate standards and other required metrics used to measure and track ESG performance and progress.\n\nDr. Carter has served as our non-executive Chairman of the Board since December 2015. Dr. Carter presides over meetings of the Board of Directors and provides guidance to our Chief Executive Officer. Dr. Luly is responsible for setting the strategic direction for our Company and the day-to-day leadership and performance of the Company. We believe that separation of our Board of Directors and executive leadership preserves the independence of these roles and maximizes performance.\n\n*Board Meetings and Committees.* Our Board of Directors held eleven meetings during 2024, and the independent directors held executive sessions at four of the meetings of the Board. During 2024, each of the directors then in office attended at least 75% of the aggregate of all meetings of the Board of Directors and all meetings of the committees of the Board of Directors on which such director then served.",
+        "token_count": 673,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001410578-25-000056",
+        "cik": "0001779578",
+        "company": "BGM Group Ltd.",
+        "form_type": "20-F",
+        "filed_date": "20250127",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 440,
+        "source_md5": "26a9a6fa1e87a832ea28234593c84320",
+        "content_sha256": "317ac0b8579b174de20a5f98ec1a003b5f4a9202bd18e9d61ef71c678e972912",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "019ba0ac-37e0-5c37-abaf-599b175456f2",
+        "section": "ITEM 6. DIRECTORS, SENIOR MANAGEMENT AND EMPLOYEES",
+        "section_index": 68,
+        "chunk_index": 1,
+        "char_start": 507705,
+        "char_end": 510568,
+        "text": "*Mr. Maofan Tang* has served as our independent director since June 2023. He has been working as an auditing professional and serving in a middle management position at Beijing Topson LLP since January 2019. Mr. Tang served as an investment manager at Chengdu Shangtou Jinsheng Equity Investment Fund Management Co., Ltd. from March 2018 to December 2018, where he conducted investment analysis, managed investment portfolios, allocated assets, mitigated risks, made investment decisions, oversaw compliance, provided performance reporting, etc. From April 2017 to March 2018, Mr. Tang served as a researcher at Tianfeng Securities Co. Mr. Tang received his postgraduate degree in Finance and Big Data from the University of Sydney in 2019. He received his Bachelor's Degree in Banking and Finance from Monash University in 2017.\n\n[**Table of Contents**](#TOC)\n\n*Ms. Furong Cao* has served as our director since May 2024. Ms. Cao is an experienced professional in business management. She has acquired a wealth of business management experience across a diverse range of industries, such as medical technology, pharmaceuticals, finance, and management consulting. Since July 2021, Ms. Cao has served as the director of operations of Shenzhen Financial Investment Service Co., Ltd., responsible for overseeing the investment strategies. From July 2017 to June 2021, Ms. Cao served as the business director of Shenzhen Beida Sequoia Business Management Co., Ltd., where she was responsible for financial project planning and investment risk assessment. Ms. Cao obtained her bachelor's degree in Medical Profession from Shanghai Second Medical College in 1993.\n\n*Mr. Chen Xin* has served as our chief executive officer since May 2024. Mr. Xin worked as an algorithm engineer at Geely Auti Holdings Limited from August 2022 to February 2024, where he led a team in developing perception algorithms for autonomous driving systems. From June 2021 to August 2022, he was an algorithm engineer at Shenzhen DJ Innovatives, where he engineered on image processing algorithms for autonomous driving vehicles. Mr. Xin obtained his bachelor's degree in Physics from Sichuan University in 2016 and his master's degree in Physics from National University of Singapore in 2019.\n\n*Ms. Yaxuan Zhai* has served as our chief financial officer since May 2024 and had served as the finance manager at the Company from October 2023 to May 2024. She worked as an auditor at Baker Tilly China Certified Public Accountants from November 2022 to October 2023. Ms. Zhai obtained her bachelor's degree in Investment from Fujian Jiangxia University in 2018 and her master's degree in Finance from The University of Sheffield in 2021.\n\n**Board Diversity**\n\nThe table below provides certain information regarding the diversity of our board of directors as of the date of this annual report.\n\n---",
+        "token_count": 619,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0001109357-25-000043",
+        "cik": "0001109357",
+        "company": "EXELON CORP",
+        "form_type": "10-K",
+        "filed_date": "20250212",
+        "year": 2025,
+        "month": 2,
+        "source_file": "sfd-v1-2025-02.parquet",
+        "source_row": 5076,
+        "source_md5": "4e755683e69b86bda31bdb6575045220",
+        "content_sha256": "4f9db51c129a6833da5903053cb8c7a8f89e84f8760d018349e6b131cf446d31",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "39f0dd98-11f4-5879-8dc1-3d498ddbd600",
+        "section": "ITEM 1.",
+        "section_index": 1,
+        "chunk_index": 41,
+        "char_start": 407454,
+        "char_end": 418252,
+        "text": "The critical audit matter communicated below is a matter arising from the current period audit of the financial statements that was communicated or required to be communicated to the audit committee and that (i) relates to accounts or disclosures that are material to the financial statements and (ii) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a whole, and we are not, by communicating the critical audit matter below, providing a separate opinion on the critical audit matter or on the accounts or disclosures to which it relates.\n\n*Accounting for the Effects of Rate Regulation*\n\nAs described in Notes 1 and 3 to the financial statements, the Company applies the authoritative guidance for accounting for certain types of regulation, which requires management to record in the financial statements the effects of cost-based rate regulation for entities with regulated operations that meet the following criteria, (i) rates are established or approved by a third-party regulator; (ii) rates are designed to recover the entity's cost of providing services or products; and (iii) there is a reasonable expectation that rates designed to recover costs can be charged to and collected from customers. The Company accounts for its regulated operations in accordance with regulatory and legislative guidance from the regulatory authorities having jurisdiction under state public utility laws and the FERC under various Federal laws. Upon updates in material regulatory and legislative proceedings, where applicable, management will record new regulatory assets or liabilities and will assess whether it is probable that its currently recorded regulatory assets and liabilities will be recovered and settled,\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\nrespectively, in future rates. As of December 31, 2024, there were $603 million of regulatory assets and $327 million of regulatory liabilities.\n\nThe principal considerations for our determination that performing procedures relating to the Company's accounting for the effects of rate regulation is a critical audit matter are the high degree of audit effort to assess the impact of regulation on accounting for regulatory assets and liabilities and to evaluate the complex audit evidence related to whether the regulatory assets and liabilities will be recovered and settled.\n\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the financial statements. These procedures included testing the effectiveness of controls relating to accounting for regulatory matters and evaluation of new and existing regulatory assets and liabilities. These procedures also included, among others, obtaining the Company's correspondence with regulators, evaluating the reasonableness of management's interpretation of regulatory guidance and proceedings and the related accounting implications, and recalculating regulatory assets and liabilities based on provisions outlined in rate orders and other correspondence with regulators.\n\n/s/ PricewaterhouseCoopers LLP\n\nPhiladelphia, Pennsylvania\n\nFebruary 12, 2025\n\nWe have served as the Company's auditor since at least 1993. We have not been able to determine the specific year we began serving as auditor of the Company.\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\n**Report of Independent Registered Public Accounting Firm** \n\nTo the Board of Directors and Shareholder of Delmarva Power & Light Company\n\n***Opinion on the Financial Statements***\n\nWe have audited the financial statements, including the related notes, of Delmarva Power & Light Company (the \"Company\") as listed in the index appearing under Item 15(a)(7)(i), and the financial statement schedule listed in the index appearing under Item 15(a)(7)(ii) (collectively referred to as the \"financial statements\"). In our opinion, the financial statements present fairly, in all material respects, the financial position of the Company as of December 31, 2024 and 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2024 in conformity with accounting principles generally accepted in the United States of America.\n\n***Basis for Opinion***\n\nThese financial statements are the responsibility of the Company's management. Our responsibility is to express an opinion on the Company's financial statements based on our audits. We are a public accounting firm registered with the Public Company Accounting Oversight Board (United States) (PCAOB) and are required to be independent with respect to the Company in accordance with the U.S. federal securities laws and the applicable rules and regulations of the Securities and Exchange Commission and the PCAOB.\n\nWe conducted our audits of these financial statements in accordance with the standards of the PCAOB. Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud. The Company is not required to have, nor were we engaged to perform, an audit of its internal control over financial reporting. As part of our audits we are required to obtain an understanding of internal control over financial reporting but not for the purpose of expressing an opinion on the effectiveness of the Company's internal control over financial reporting. Accordingly, we express no such opinion.\n\nOur audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. We believe that our audits provide a reasonable basis for our opinion.\n\n***Critical Audit Matters***\n\nThe critical audit matter communicated below is a matter arising from the current period audit of the financial statements that was communicated or required to be communicated to the audit committee and that (i) relates to accounts or disclosures that are material to the financial statements and (ii) involved our especially challenging, subjective, or complex judgments. The communication of critical audit matters does not alter in any way our opinion on the financial statements, taken as a whole, and we are not, by communicating the critical audit matter below, providing a separate opinion on the critical audit matter or on the accounts or disclosures to which it relates.\n\n*Accounting for the Effects of Rate Regulation*\n\nAs described in Notes 1 and 3 to the financial statements, the Company applies the authoritative guidance for accounting for certain types of regulation, which requires management to record in the financial statements the effects of cost-based rate regulation for entities with regulated operations that meet the following criteria, (i) rates are established or approved by a third-party regulator; (ii) rates are designed to recover the entity's cost of providing services or products; and (iii) there is a reasonable expectation that rates designed to recover costs can be charged to and collected from customers. The Company accounts for its regulated operations in accordance with regulatory and legislative guidance from the regulatory authorities having jurisdiction under state public utility laws and the FERC under various Federal laws. Upon updates in material regulatory and legislative proceedings, where applicable, management will record new regulatory assets or liabilities and will assess whether it is probable that its currently recorded regulatory assets and liabilities will be recovered and settled,\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\nrespectively, in future rates. As of December 31, 2024, there were $275 million of regulatory assets and $367 million of regulatory liabilities.\n\nThe principal considerations for our determination that performing procedures relating to the Company's accounting for the effects of rate regulation is a critical audit matter are the high degree of audit effort to assess the impact of regulation on accounting for regulatory assets and liabilities and to evaluate the complex audit evidence related to whether the regulatory assets and liabilities will be recovered and settled.\n\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the financial statements. These procedures included testing the effectiveness of controls relating to accounting for regulatory matters and evaluation of new and existing regulatory assets and liabilities. These procedures also included, among others, obtaining the Company's correspondence with regulators, evaluating the reasonableness of management's interpretation of regulatory guidance and proceedings and the related accounting implications, and recalculating regulatory assets and liabilities based on provisions outlined in rate orders and other correspondence with regulators.\n\n/s/ PricewaterhouseCoopers LLP\n\nPhiladelphia, Pennsylvania\n\nFebruary 12, 2025\n\nWe have served as the Company's auditor since at least 1993. We have not been able to determine the specific year we began serving as auditor of the Company.\n\n------\n\n<u>[**Table of Contents**](#id759e101edad4e229ee36c477d1f2b28_10)</u>\n\n**Report of Independent Registered Public Accounting Firm** \n\nTo the Board of Directors and Shareholder of Atlantic City Electric Company\n\n***Opinion on the Financial Statements***\n\nWe have audited the consolidated financial statements, including the related notes, of Atlantic City Electric Company and its subsidiary (the \"Company\") as listed in the index appearing under Item 15(a)(8)(i), and the financial statement schedule listed in the index appearing under Item 15(a)(8)(ii) (collectively referred to as the \"consolidated financial statements\"). In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company as of December 31, 2024 and 2023, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2024 in conformity with accounting principles generally accepted in the United States of America.\n\n***Basis for Opinion***",
+        "token_count": 1984,
+        "contains_table": false,
+        "embedding_model": "openai/text-embedding-3-small"
+      },
+      {
+        "accession": "0000928816-25-000157",
+        "cik": "0000719712",
+        "company": "PUTNAM NEW YORK TAX EXEMPT INCOME FUND",
+        "form_type": "N-CSR",
+        "filed_date": "20250128",
+        "year": 2025,
+        "month": 1,
+        "source_file": "sfd-v1-2025-01.parquet",
+        "source_row": 688,
+        "source_md5": "5acc3cc669fb27c3ea58f6bee74e71bf",
+        "content_sha256": "9060756cb47bc00eed9de70e1a5fb707da83ad6aa84dba7c15c3f3d437955e2c",
+        "has_ocr": false,
+        "source_format": "",
+        "id": "f1e65541-7a22-5674-b4e7-541682f288ce",
+        "section": "PUTNAM NEW YORK TAX EXEMPT INCOME FUND (Series ID: S000006345)",
+        "section_index": 2,
+        "chunk_index": 18,
+        "char_start": 49574,
+        "char_end": 52208,
+        "text": "Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks. Such procedures included examining, on a test basis, evidence regarding the amounts and disclosures in the financial statements. Our audits also included evaluating the accounting principles used and significant estimates made by management, as well as evaluating the overall presentation of the financial statements. Our procedures included confirmation of securities owned as of November 30, 2024 by correspondence with the custodian and transfer agent. We believe that our audits provide a reasonable basis for our opinion.\n\nPricewaterhouseCoopers LLP\n\nBoston, Massachusetts\n\nJanuary 15, 2025\n\nWe have served as the auditor of one or more investment companies in the Putnam Funds family of funds since at least 1957. We have not been able to determine the specific year we began serving as auditor.\n\nNew York Tax Exempt Income Fund 1\n\n**The fund's portfolio** 11/30/24 <br>\n\n**Key to holding's abbreviations**\n\n**AGC** Assured Guaranty Corporation\n\n**AGM** Assured Guaranty Municipal Corporation\n\n**AMBAC** AMBAC Indemnity Corporation\n\n**BAM** Build America Mutual\n\n**FHA Insd.** Federal Housing Administration Insured\n\n**FNMA Coll.** Federal National Mortgage Association Collateralized\n\n**G.O. Bonds** General Obligation Bonds\n\n**U.S. Govt. Coll.** U.S. Government Collateralized\n\n**VRDN** Variable Rate Demand Notes, which are floating-rate securities with long-term maturities that carry coupons that reset and are payable upon demand either daily, weekly or monthly. The rate shown is the current interest rate at the close of the reporting period. Rates are set by remarketing agents and may take into consideration market supply and demand, credit quality and the current SIFMA Municipal Swap Index rate, which was 2.86% as of the close of the reporting period.\n\n---\n\n\n\n| | | | |\n|:---|:---|:---|:---|\n| **MUNICIPAL BONDS AND NOTES (98.9%)\\*** | **Rating\\*\\*** | **Principal amount** | **Value** |\n| **Alaska (1.2%)** |  |  |  |\n| AK State Indl. Dev. & Export Auth. Rev. Bonds, (Tanana Chiefs Conference), Ser. A |  |  |  |\n| &nbsp;&nbsp;&nbsp;4.00%, 10/1/37 | A+/F | $4635000 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$4645540 |\n| &nbsp;&nbsp;&nbsp;4.00%, 10/1/35 | A+/F | 4280000 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4305162 |\n|  |  |  | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**8950702** |\n| **Guam (0.2%)** |  |  |  |\n| Territory of GU, Intl. Arpt. Auth. Rev. Bonds, (Antonio B Won Pat Intl. Arpt. Auth.), Ser. A |  |  |  |\n",
+        "token_count": 693,
+        "contains_table": true,
+        "embedding_model": "openai/text-embedding-3-small"
+      }
+    ],
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna"
+  },
+  "judge": {
+    "text": "{\"correctness\": 50, \"citation_support\": 90, \"rationale\": \"The candidate correctly identifies PricewaterhouseCoopers LLP as NVIDIA's auditor, which matches the reference. It omits the tenure year (2004), and the reference treats that year as answerable, so abstaining on it is incomplete rather than correct. Its citation is supported: accession 0001045810-25-000023 and chunk cb0a4777 are in the retrieved excerpts, and the Exhibit 23.1 consent does name PwC. The 2004 quote from the gold evidence was not among the retrieved excerpts, so the candidate could not have cited it, but that does not make the abstention fully correct.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 50, \"citation_support\": 90, \"rationale\": \"The candidate correctly identifies PricewaterhouseCoopers LLP as NVIDIA's auditor, which matches the reference. It omits the tenure year (2004), and the reference treats that year as answerable, so abstaining on it is incomplete rather than correct. Its citation is supported: accession 0001045810-25-000023 and chunk cb0a4777 are in the retrieved excerpts, and the Exhibit 23.1 consent does name PwC. The 2004 quote from the gold evidence was not among the retrieved excerpts, so the candidate could not have cited it, but that does not make the abstention fully correct.\"}",
+      "refusal": null,
+      "reasoning": "The reference confirms PwC as auditor since 2004, with the exact quote in Item 8 of that accession filing. The candidate correctly identified PwC but abstained on the year, so I'd call this partially correct \u2014 maybe around 50 \u2014 while noting the citation does point to the right accession number and exhibit.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The reference confirms PwC as auditor since 2004, with the exact quote in Item 8 of that accession filing. The candidate correctly identified PwC but abstained on the year, so I'd call this partially correct \u2014 maybe around 50 \u2014 while noting the citation does point to the right accession number and exhibit.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS+gwKEAgSGAI4AUIIdGhpbmtpbmcSDIMWdB1KSQz5U4txGBoM747vQ3qH85srY5JlIjBwEgXMIyfMCe5d/xJ718XH5cL3u5R2HkVfqKr1TKJWL1KmQwH2UZPTTu53+gon+e8qlwzDSP7G3G/y3Obd031wg91KRvasjwUYKC4Nf/9flGmc02PYOZ///kAzk2bmhGCWAh1rf2GWxBRDq1zpMt/fQEop8JLyf/v3cgy49ZlKZT9A38yKiOWeJCDlAPnMtlPUt+Doo1Y6aYGMpuPIqTEPp7W2l+eSNJ746s437tVZh4ugJC8KHCqQyKxLysVbt1Vra7SORRct4bx8YXYGNkX/ERHo0kUygrAXqkCqbCbPDZ2opY5wlsvfVbY3QmBXB58HiXw6pLjBJozG/UOnBJW+FNKruE5eUAphSaPof8+/AdiKRqhW3kL1EvnHKX6IhRM6SCwyihcs3hnGIy39DPUbBZSl+8uRLeYBhN95w38bguFjj1LVpdoD2whZsSF4t6Tvr/IpvE2nIX3vwA8bc7zca6HkV+ssvjnW/1051MMunYMSVIEOLqZ80uJ6yXIaH74RufFARq3xjkglMzCHjhG//1aywFOdDbSSoI56L3ApnHFBGrzapO/2QZZh7PzIv0pahg3Xmv1d9Lk7Q/JqHo6rrzE1UW6Lhry6gY8r6667D4xOWUqznvun8y6Hyt50L8pWlsGO+Xl4Yp66RU0bmGxx3MHhh6hnICFiFrb4pcifOGt2hxlBIzpCkNaWPyOLvdyy5MwJQ3RkpH9ijL+huX4yYa1/LS5kdvWZ9YURj1/cVBLAk/9tuVYpP8y34j481aAQ9hcRKK6COfcrByhwxMWsxG43cJk6i+5KhfGDnBqphp+4NtTCFidb7ByK/OzGLLFzWsAL+QA7fCV15HUsoz8dH0iedNd5m1i5vYynzzBth3y+1bjmeUoDOFtPp4DnvHZriqiNTuXZmcogrml08P5TSu2ehpkuptFID+kHBTj7A0oRbnvTp0Eg/NjjatzoMACgVHhM6ZVYozXEZHh+SshfN7MQDq05iRx6+Y/y7xTcK7YePA/4C3eRHPnMSCcXFuzZjL//zHXYyoJIGoY4C33791lGkDW0pvNxDstRty8HpdyS2lkUOMvkHm3jiStbY6bI/eP1I1yjDZtk82yL0OhSZGywjj4P3oZ0UDd3qnjFhgUixN5kvLyN9mwHjcaopZYxFpfRWcTPWnYgC1hAzx9bxj8YU0ZbFzK9DEo318V5QCrymTrLvq4mwclvGPswES2OrkJ2SJ+lWhJb7Wi3KOZi1kxElxIQ1w1G3Sni+TcbcSSyIOsbum433D7La78C6VAzwwUvACbGy/zxXRhwkq+fX9znk6x9fFjUbbJO2+Gl1SxSc92CRDoIEsXHNuFnA+6Tvf5uIqKcL5pSYiiBAYy3S7iZs593ROQ8Wa1p3JUi5G8ogyJZ9qKDbZ1utFItIhYVq7quu/+Ksd8IhGjkrpvUmmieBkfWBWAjj8FNlk0DCYgpNWaE3l3DGb5MtP3OKr0viPeLl8MM68OQ1Yz4PsoeRXYM91MG5YF2RDucBEYMAoXbc6nsuLpdYQef6HIfWZB1mqSBz5B+S0su1lW6hJH5/9+kXDxZOods6LjWldpEii+A8g7Z1kWcW6MycomJeEGv+m1zLr/TD1ItAHkE39UTndnlokKlyWLXfDTR0RDa5mIud++sV+mR3yqk8Wa/xvvB5yMwQba0+dvWTvGpW2k1FCcT7byR9n8uxPj4Q4RQ/uR7Flwf+2BKXEb3jdk09l1549Kx5U8YfJ5p/wMTGXHlH1XruLaR4OEY0RNCR/TJ0umUFfAdR3i0Y5yqfZZ8BS873Dh4YbdCg9TruANnXEEsOt8Bs2oOXU/O29LB9aMEo6kP1WyLCl8oLfZkJdY22vkqxEsPoCT/A97yh2K/3I+SDOiJ7zJCfypAPGljCNKkm2GzpKQRK1mIyi7srSm/L3jm60iE51ia5Mcw87mzszK08gHQLwjns+RuN+fepbZ9YmVuUN5JVwRApLCoM6pNeGlFDAsjjaf30m/bgxverezivK7dmBMRIXLvGEe6iBOJU+79Yoaq89vh0IvezyehGyPvEYaGwbYCKIYGhOkbNkiOWQecMRB9wSaf/+QGZJ+9eA6hyrbIT8XbT1Uo4ZDUOFeR74dwkuB5r6twoVy4Kf/6q+zoOciTXVnrqRgB.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:35:37.704789+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "fe2f0462f47bf5f8b0073250:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042532-qbLeaUWCYO9fttpErRQP",
+    "usage": {
+      "prompt_tokens": 52124,
+      "completion_tokens": 611,
+      "total_tokens": 52735,
+      "cost": 0.0055179,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0055179,
+        "upstream_inference_prompt_cost": 0.0052124,
+        "upstream_inference_completions_cost": 0.0003055
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 380,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.2296545250001145,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 50,
+    "citation_support": 90,
+    "rationale": "The candidate correctly identifies PricewaterhouseCoopers LLP as NVIDIA's auditor, which matches the reference. It omits the tenure year (2004), and the reference treats that year as answerable, so abstaining on it is incomplete rather than correct. Its citation is supported: accession 0001045810-25-000023 and chunk cb0a4777 are in the retrieved excerpts, and the Exhibit 23.1 consent does name PwC. The 2004 quote from the gold evidence was not among the retrieved excerpts, so the candidate could not have cited it, but that does not make the abstention fully correct."
+  },
+  "status": "ok"
+}

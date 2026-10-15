@@ -1,0 +1,108 @@
+{
+  "question_id": "Q004",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.04127643199990416,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Amazon had **10,597,729,352 shares of common stock outstanding** as of January 29, 2025. No calculation is needed; this is the figure disclosed on the Form 10-K cover page.\n\n**Source:** Accession **0001018724-25-000004**, *Filing Summary* (cover page), chunk **f05c5750-f394-518a-9e8a-8b41aa7ac89e**.",
+    "message": {
+      "role": "assistant",
+      "content": "Amazon had **10,597,729,352 shares of common stock outstanding** as of January 29, 2025. No calculation is needed; this is the figure disclosed on the Form 10-K cover page.\n\n**Source:** Accession **0001018724-25-000004**, *Filing Summary* (cover page), chunk **f05c5750-f394-518a-9e8a-8b41aa7ac89e**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:05.850418+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "16b6be734e815f45cf5b14d8:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041843-MEUzCGcj9zpLN9My4Ebi",
+    "usage": {
+      "prompt_tokens": 11435,
+      "completion_tokens": 102,
+      "total_tokens": 11537,
+      "cost": 0.0014803,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 11432,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0014803,
+        "upstream_inference_prompt_cost": 0.0014293,
+        "upstream_inference_completions_cost": 5.1e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.9455060990003403,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 100, \"rationale\": \"The candidate reports 10,597,729,352 shares outstanding as of January 29, 2025, matching the reference and the gold evidence exactly (the cover-page table value 10597729352). The cited accession 0001018724-25-000004 and the Filing Summary cover-page chunk (f05c5750-...) are present in the retrieved excerpts and contain the cover-page figure, so the citation is directly supported. No arithmetic or unit issues apply.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 100, \"rationale\": \"The candidate reports 10,597,729,352 shares outstanding as of January 29, 2025, matching the reference and the gold evidence exactly (the cover-page table value 10597729352). The cited accession 0001018724-25-000004 and the Filing Summary cover-page chunk (f05c5750-...) are present in the retrieved excerpts and contain the cover-page figure, so the citation is directly supported. No arithmetic or unit issues apply.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:49.787705+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "16b6be734e815f45cf5b14d8:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042067-AQYP8qOjnZs7SfFuv2Cm",
+    "usage": {
+      "prompt_tokens": 18569,
+      "completion_tokens": 174,
+      "total_tokens": 18743,
+      "cost": 0.0019439,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019439,
+        "upstream_inference_prompt_cost": 0.0018569,
+        "upstream_inference_completions_cost": 8.7e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 2.5915829690002283,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 100,
+    "rationale": "The candidate reports 10,597,729,352 shares outstanding as of January 29, 2025, matching the reference and the gold evidence exactly (the cover-page table value 10597729352). The cited accession 0001018724-25-000004 and the Filing Summary cover-page chunk (f05c5750-...) are present in the retrieved excerpts and contain the cover-page figure, so the citation is directly supported. No arithmetic or unit issues apply."
+  },
+  "status": "ok"
+}

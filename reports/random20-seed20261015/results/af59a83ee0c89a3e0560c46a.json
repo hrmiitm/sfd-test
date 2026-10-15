@@ -1,0 +1,117 @@
+{
+  "question_id": "Q030",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/bm25",
+  "retrieval": {
+    "seconds": 0.014769391999834625,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to ConocoPhillips' Consolidated Income Statement and Income Statement Analysis in its 2024 Form 10-K, the expenses for the fiscal year ended December 31, 2024, were:\n\n* **Purchased commodities:** $20,012 million (or approximately $20.012 billion)\n* **Production and operating expenses:** $8,751 million (or approximately $8.751 billion)\n\n*(Source: Accession `0001163165-25-000012`, Item 7, Chunk `60c96100-be72-5594-b30e-5f7ac572a516` and Item 8, Chunk `81c28230-2c41-5216-8fbd-1cb48dbb71dc`)*",
+    "message": {
+      "role": "assistant",
+      "content": "According to ConocoPhillips' Consolidated Income Statement and Income Statement Analysis in its 2024 Form 10-K, the expenses for the fiscal year ended December 31, 2024, were:\n\n* **Purchased commodities:** $20,012 million (or approximately $20.012 billion)\n* **Production and operating expenses:** $8,751 million (or approximately $8.751 billion)\n\n*(Source: Accession `0001163165-25-000012`, Item 7, Chunk `60c96100-be72-5594-b30e-5f7ac572a516` and Item 8, Chunk `81c28230-2c41-5216-8fbd-1cb48dbb71dc`)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1+798a8QMdHpl1XQIsqcSUGzTm6bn6D5qtbZU2U6xcj82VxDom/73yTLCdyRApRyalqjwumbMVaBblO0S5LMHvT4TkcRIQmAnnxIOckxMB/YVxn",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:19.468568+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "af59a83ee0c89a3e0560c46a:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041916-ymSgOtCWf4unmOIvPtCr",
+    "usage": {
+      "prompt_tokens": 18156,
+      "completion_tokens": 210,
+      "total_tokens": 18366,
+      "cost": 0.0144045,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0144045,
+        "upstream_inference_prompt_cost": 0.013617,
+        "upstream_inference_completions_cost": 0.0007875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.113453313999344,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 100, \"citation_support\": 85, \"rationale\": \"The candidate's figures match the reference and gold evidence exactly: Purchased commodities $20,012 million and Production and operating expenses $8,751 million for 2024, both confirmed in the Consolidated Income Statement table and the Income Statement Analysis excerpt. The units (millions) and fiscal year are correct. The cited accession 0001163165-25-000012 is supported by retrieved excerpts. The chunk IDs cited (60c96100... and 81c28230...) do appear in the retrieved excerpts, and the Item 7 and Item 8 section labels match. Minor deduction because the candidate's source attribution is a bit loose in describing the 'Income Statement Analysis' as separate from the consolidated statement, though both do contain the figures.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 100, \"citation_support\": 85, \"rationale\": \"The candidate's figures match the reference and gold evidence exactly: Purchased commodities $20,012 million and Production and operating expenses $8,751 million for 2024, both confirmed in the Consolidated Income Statement table and the Income Statement Analysis excerpt. The units (millions) and fiscal year are correct. The cited accession 0001163165-25-000012 is supported by retrieved excerpts. The chunk IDs cited (60c96100... and 81c28230...) do appear in the retrieved excerpts, and the Item 7 and Item 8 section labels match. Minor deduction because the candidate's source attribution is a bit loose in describing the 'Income Statement Analysis' as separate from the consolidated statement, though both do contain the figures.\"}",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:41.835425+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "af59a83ee0c89a3e0560c46a:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042119-uDRDzFaJv9fbF7gTWT5u",
+    "usage": {
+      "prompt_tokens": 24272,
+      "completion_tokens": 274,
+      "total_tokens": 24546,
+      "cost": 0.0025642,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0025642,
+        "upstream_inference_prompt_cost": 0.0024272,
+        "upstream_inference_completions_cost": 0.000137
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 3.236315930999808,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 100,
+    "citation_support": 85,
+    "rationale": "The candidate's figures match the reference and gold evidence exactly: Purchased commodities $20,012 million and Production and operating expenses $8,751 million for 2024, both confirmed in the Consolidated Income Statement table and the Income Statement Analysis excerpt. The units (millions) and fiscal year are correct. The cited accession 0001163165-25-000012 is supported by retrieved excerpts. The chunk IDs cited (60c96100... and 81c28230...) do appear in the retrieved excerpts, and the Item 7 and Item 8 section labels match. Minor deduction because the candidate's source attribution is a bit loose in describing the 'Income Statement Analysis' as separate from the consolidated statement, though both do contain the figures."
+  },
+  "status": "ok"
+}

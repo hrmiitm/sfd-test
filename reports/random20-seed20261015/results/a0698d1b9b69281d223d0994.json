@@ -1,0 +1,117 @@
+{
+  "question_id": "Q026",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.03001198200036015,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Levi Strauss & Co.\u2019s fiscal 2024 SG&A expenses were **$3,246.2 million**, or **51.1% of net revenues**.\n\nCalculation: $3,246.2 million \u00f7 $6,355.3 million net revenues \u00d7 100 = **51.1%** (rounded).\n\nSource: Form 10-K, accession **0000094845-25-000005**, \u201cSelling, general and administrative expenses\u201d table, **Filing Summary, chunk 29**; net revenues also reported in **chunk 28**.",
+    "message": {
+      "role": "assistant",
+      "content": "Levi Strauss & Co.\u2019s fiscal 2024 SG&A expenses were **$3,246.2 million**, or **51.1% of net revenues**.\n\nCalculation: $3,246.2 million \u00f7 $6,355.3 million net revenues \u00d7 100 = **51.1%** (rounded).\n\nSource: Form 10-K, accession **0000094845-25-000005**, \u201cSelling, general and administrative expenses\u201d table, **Filing Summary, chunk 29**; net revenues also reported in **chunk 28**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:08.416496+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "a0698d1b9b69281d223d0994:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041905-cBCozSYXBKtoh9R2YWi9",
+    "usage": {
+      "prompt_tokens": 17837,
+      "completion_tokens": 122,
+      "total_tokens": 17959,
+      "cost": 0.00229055,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 17834,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00229055,
+        "upstream_inference_prompt_cost": 0.00222955,
+        "upstream_inference_completions_cost": 6.1e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.964372186000219,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 92, \"citation_support\": 90, \"rationale\": \"The candidate correctly reports FY2024 SG&A of $3,246.2 million and 51.1% of net revenues. Its check (3,246.2 / 6,355.3 \u2248 51.1%) is arithmetically right. It omits the prior-year comparison ($3,051.9 million in 2023, up 6.4%), which the reference includes, so it is a minor incompleteness. The citation to accession 0000094845-25-000005 and the SG&A table in chunk 29 is supported by the retrieved excerpts. The $6,355.3 million net revenues figure appears in chunk 28 and in the chunk 29 gross profit table, so the chunk 28 reference is also supported.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 92, \"citation_support\": 90, \"rationale\": \"The candidate correctly reports FY2024 SG&A of $3,246.2 million and 51.1% of net revenues. Its check (3,246.2 / 6,355.3 \u2248 51.1%) is arithmetically right. It omits the prior-year comparison ($3,051.9 million in 2023, up 6.4%), which the reference includes, so it is a minor incompleteness. The citation to accession 0000094845-25-000005 and the SG&A table in chunk 29 is supported by the retrieved excerpts. The $6,355.3 million net revenues figure appears in chunk 28 and in the chunk 29 gross profit table, so the chunk 28 reference is also supported.\"}",
+      "refusal": null,
+      "reasoning": "I'm verifying the SG&A figure of $3,246.2M against net revenues of $6,355.3M, confirming the 51.1% ratio checks out, and noting the source citations point to the filing summary chunks.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm verifying the SG&A figure of $3,246.2M against net revenues of $6,355.3M, confirming the 51.1% ratio checks out, and noting the source citations point to the filing summary chunks.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:32.393735+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "a0698d1b9b69281d223d0994:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042107-PwCx9lxkZVY5U5A44OlN",
+    "usage": {
+      "prompt_tokens": 27950,
+      "completion_tokens": 665,
+      "total_tokens": 28615,
+      "cost": 0.0031275,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0031275,
+        "upstream_inference_prompt_cost": 0.002795,
+        "upstream_inference_completions_cost": 0.0003325
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 413,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.5586440269999,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 92,
+    "citation_support": 90,
+    "rationale": "The candidate correctly reports FY2024 SG&A of $3,246.2 million and 51.1% of net revenues. Its check (3,246.2 / 6,355.3 \u2248 51.1%) is arithmetically right. It omits the prior-year comparison ($3,051.9 million in 2023, up 6.4%), which the reference includes, so it is a minor incompleteness. The citation to accession 0000094845-25-000005 and the SG&A table in chunk 29 is supported by the retrieved excerpts. The $6,355.3 million net revenues figure appears in chunk 28 and in the chunk 29 gross profit table, so the chunk 28 reference is also supported."
+  },
+  "status": "ok"
+}

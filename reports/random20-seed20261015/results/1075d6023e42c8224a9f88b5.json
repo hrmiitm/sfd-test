@@ -1,0 +1,126 @@
+{
+  "question_id": "Q002",
+  "model": "google/gemini-3.8-flash",
+  "column": "lancedb/hybrid",
+  "retrieval": {
+    "seconds": 0.040173311999751604,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "According to the cover page of Alphabet Inc.'s 2024 Form 10-K, the number of shares outstanding as of January 28, 2025, was:\n\n* **Class A stock:** 5,833 million shares\n* **Class B stock:** 860 million shares\n* **Class C stock:** 5,497 million shares\n\n*(Source: Accession 0001652044-25-000014, Section: \"Filing Summary\", Chunk ID: efeb3fc9-e011-5db2-acff-afb499f7d4d4)*",
+    "message": {
+      "role": "assistant",
+      "content": "According to the cover page of Alphabet Inc.'s 2024 Form 10-K, the number of shares outstanding as of January 28, 2025, was:\n\n* **Class A stock:** 5,833 million shares\n* **Class B stock:** 860 million shares\n* **Class C stock:** 5,497 million shares\n\n*(Source: Accession 0001652044-25-000014, Section: \"Filing Summary\", Chunk ID: efeb3fc9-e011-5db2-acff-afb499f7d4d4)*",
+      "refusal": null,
+      "reasoning": null,
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "signature": "AY89a1/a2X3EecUPaSys8qzKX0aqm+ZSRwNvIcJy0Ikeb1+x8Sxg/OK1y2FL/5H6T4oeX9RYZawEQQFAkb2grVTrSFh49B7/PMInlXTcaUmlorV1aDqX",
+          "format": "google-gemini-v1",
+          "index": 0
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:23:57.988466+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "temperature": 0,
+      "max_tokens": 3000
+    },
+    "tag": "1075d6023e42c8224a9f88b5:answer",
+    "requested_model": "google/gemini-3.8-flash",
+    "actual_model": "google/gemini-3.8-flash",
+    "response_id": "gen-1792041835-J47Giwc8jWop9ooIEVBu",
+    "usage": {
+      "prompt_tokens": 12408,
+      "completion_tokens": 153,
+      "total_tokens": 12561,
+      "cost": 0.00987975,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00987975,
+        "upstream_inference_prompt_cost": 0.009306,
+        "upstream_inference_completions_cost": 0.00057375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.700487256999622,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 98, \"citation_support\": 94, \"rationale\": \"The candidate gives the same figures as the reference: 5,833 million Class A, 860 million Class B, and 5,497 million Class C shares as of January 28, 2025, with correct units and date. The cited accession (0001652044-25-000014) and chunk ID (efeb3fc9-e011-5db2-acff-afb499f7d4d4) match a retrieved excerpt whose text contains the cover-page sentence. The section label 'Filing Summary' matches that excerpt's metadata, though the gold evidence labels the section 'Cover Page - Outstanding Shares'. The citation support is therefore strong but not perfect because of that label mismatch.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 98, \"citation_support\": 94, \"rationale\": \"The candidate gives the same figures as the reference: 5,833 million Class A, 860 million Class B, and 5,497 million Class C shares as of January 28, 2025, with correct units and date. The cited accession (0001652044-25-000014) and chunk ID (efeb3fc9-e011-5db2-acff-afb499f7d4d4) match a retrieved excerpt whose text contains the cover-page sentence. The section label 'Filing Summary' matches that excerpt's metadata, though the gold evidence labels the section 'Cover Page - Outstanding Shares'. The citation support is therefore strong but not perfect because of that label mismatch.\"}",
+      "refusal": null,
+      "reasoning": "The candidate's numbers all check out against the reference, and the citation points to chunk efeb3fc9... in the \"Filing Summary\" section, which matches the retrieved excerpt exactly and contains the quoted text verbatim. This looks well-supported, so I'd score correctness and citation support both very high, around 97-100.\n\nI notice the gold evidence labels the section as \"Cover Page - Outstanding Shares\" while the retrieved chunk is tagged \"Filing Summary,\" but the actual content is the cover page data, so that discrepancy doesn't matter much. Settling on 98 for correctness and 95 for citation support.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The candidate's numbers all check out against the reference, and the citation points to chunk efeb3fc9... in the \"Filing Summary\" section, which matches the retrieved excerpt exactly and contains the quoted text verbatim. This looks well-supported, so I'd score correctness and citation support both very high, around 97-100.\n\nI notice the gold evidence labels the section as \"Cover Page - Outstanding Shares\" while the retrieved chunk is tagged \"Filing Summary,\" but the actual content is the cover page data, so that discrepancy doesn't matter much. Settling on 98 for correctness and 95 for citation support.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS8AkKEAgSGAI4AUIIdGhpbmtpbmcSDAeTLAzLCsWE4QJ6kRoMC4mDqE6l5ds291NVIjD7a5pdkaAUpeJeOwCem3MHT9txS4uR+twPk7n64bbCzv1Hsj6JoIglti6ceDsT4xcqjQlvoc21UWXBAi0KNLxsrdq25bRlJOky3XAhXri2bRka3WYDTv+JmEpH7IDiHABEpN7O4TRm1Iwin84WRYXeYFE7LgMm/QrYVdP9ORFaD4H7yQ+pHRE24ybrJmiJfHy/Y32vMbIxqhCBZ0NvWr3iELO+xkpVd7VSmAHiM8hbZiDxPT/G9K1GeBJRdoMyLUMwNZCJ0eR6qoou5i4e26fsqC0T/wpmnzGpNDu+0sd1lH2ZkprK/UaCluVh23x/wLVPcPA66U98XEKnYKTuLG/0mgwL7rDCN6W3qj0n5XG/t9EiIAgVIwWDZplyMQHbztjMZbeghH+TElNBC0knkIvq4j1JG1ec1AuoQ+/aq+s96Sh6iBMisZWCCpcdtOFartWjUNggbddOYOtlhgfQRr7z7n/hSx6igofyMr2Mo+EKGKfsO2Nj8Q4EqTmGiEbb4SrYhauFM9poL29r7SmSfZDcVbfZouwd+sa/AyWOEfWXVgcw9nyHAC1pj+DWsJnjgbfb/GDF+YvmfiDZAbO4nUygeo0jMpKFOkVSoCAZo7SguK1PzyDnn7/Cbh8W2W1uUXQm29OlJuw5r9qBtSYkWYMdmnxXYuNzsPlop/ceUNiJB0llCMQzPQzwUMQ0sAwzss2nv3GeGU/TwBtY/nEmy0eX+3PYjyk68boDY9eLtUJr96QbezDDyn/VXSISv6wTaLcKcobay+FqlNLERUVGjbZh0vH2luS0yFxHO95Mhf3Pav8m8cMXLgjxnRHxp3R2qL31P8LiJM+NipKSXIokCdS1lQf2bcPny7lY9ImYbQ5s2py87b/SVglnZKW+HwpXVYxgKIZlHydcVoWPWixAzjQ478fjR4bWvhHIrcFMFjo/D9KYs+JNXZqHQ4OMcQqvk3EXfO1tJL3G33IHW3kt2hb2AMgEcCvFvP5xzh5lTAvNGb2dR3yjIRrgVNZ2dZmVaHPX9gXbd6I5vePg/5QPq2L4D348K5a1/J9bbiRL7XLgA6A9rGPIeoi4kOePTNUgTcUs9Vowj0E0J17llcciJu+ee8OEVFdXgxX3TmuDjXAI9/vGIu01gKA7V0JTsKBtk7AF0lLjBcmI/bB/zNBbkZRTat7BUHeIuRWxhjGK1WN/1D9ukgxSjSRiaf8qH/C5UxH1W6vdVjjIXeYO6aqtjKqIrL/XxQVxNtvr51Zonh5ngjr6stHKDCfFrjlyE0hpzdnWyjtbyKE2uJgGfhl9JQ8ODujj2qIw43HrAcAiNQToy8wgV8t35JV0gh9pT/wgUstTFkmXc9D4sbXZ3hHRwRaCzlHd4NjQ7GEUcCcSsr2XY4Urcku9w0QhVfNt9hRE6oRJ4RAyDYE+/+r+8EPbpoVtV9riLLX7fE0H02kf7+DYjkHSyyE5osWCOSwOtogdNJ2hkLa89r5d/9v+ZUPlvljQ/w95KowFmvlxCNZRnEtJcXVM+p67aSJWVyU3gWa6JzsLafqoeBP342s+yGe4vva33cDphzg11cA2eN2kHRe/uuLeSmR8XXgHwrG29y1VpA8VpPRAXj5Z7vHhPaC/J60cGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:27:39.758284+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "1075d6023e42c8224a9f88b5:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042054-zxUKrJTANkeFCwrYM0tj",
+    "usage": {
+      "prompt_tokens": 17185,
+      "completion_tokens": 498,
+      "total_tokens": 17683,
+      "cost": 0.0019675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019675,
+        "upstream_inference_prompt_cost": 0.0017185,
+        "upstream_inference_completions_cost": 0.000249
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 257,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.52946730199983,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 94,
+    "rationale": "The candidate gives the same figures as the reference: 5,833 million Class A, 860 million Class B, and 5,497 million Class C shares as of January 28, 2025, with correct units and date. The cited accession (0001652044-25-000014) and chunk ID (efeb3fc9-e011-5db2-acff-afb499f7d4d4) match a retrieved excerpt whose text contains the cover-page sentence. The section label 'Filing Summary' matches that excerpt's metadata, though the gold evidence labels the section 'Cover Page - Outstanding Shares'. The citation support is therefore strong but not perfect because of that label mismatch."
+  },
+  "status": "ok"
+}

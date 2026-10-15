@@ -1,0 +1,117 @@
+{
+  "question_id": "Q079",
+  "model": "openai/gpt-6-luna",
+  "column": "lancedb/vector",
+  "retrieval": {
+    "seconds": 0.02614986000025965,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "- **2029 Notes:** 5.875% interest; mature **November 7, 2029**; principal **$1.25 billion**.\n- **2035 Notes:** 6.500% interest; mature **February 7, 2035**; principal **$1.25 billion**.\n\n**Combined principal:** $1.25 billion + $1.25 billion = **$2.50 billion**.\n\nSource: Form 8-K, accession **0001104659-25-001594**, **Item 8.01, Other Events**, Filing Summary, chunk **774b96ac-63fc-5a4d-b3bd-fa2381fe6581**.",
+    "message": {
+      "role": "assistant",
+      "content": "- **2029 Notes:** 5.875% interest; mature **November 7, 2029**; principal **$1.25 billion**.\n- **2035 Notes:** 6.500% interest; mature **February 7, 2035**; principal **$1.25 billion**.\n\n**Combined principal:** $1.25 billion + $1.25 billion = **$2.50 billion**.\n\nSource: Form 8-K, accession **0001104659-25-001594**, **Item 8.01, Other Events**, Filing Summary, chunk **774b96ac-63fc-5a4d-b3bd-fa2381fe6581**.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:26:37.088320+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "0077e03fe63827f7fde89e3c:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041994-a6K5wT6veMTNbzzWPwHA",
+    "usage": {
+      "prompt_tokens": 11752,
+      "completion_tokens": 151,
+      "total_tokens": 11903,
+      "cost": 0.001544425,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 11749,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001544425,
+        "upstream_inference_prompt_cost": 0.001468925,
+        "upstream_inference_completions_cost": 7.55e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 4.296278435999739,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 98, \"citation_support\": 95, \"rationale\": \"The candidate matches the reference on every element: the 5.875% notes due November 7, 2029 ($1.25B), the 6.500% notes due February 7, 2035 ($1.25B), and the combined $2.50B. The arithmetic is correct. The cited accession number 0001104659-25-001594 and the Item 8.01 section are correct. The cited chunk 774b96ac (Filing Summary, chunk 0) contains the full Item 8.01 text with these tranche details, so the citation is supported by the retrieved excerpts. The minor deduction is that the candidate's chunk ID is to the Filing Summary chunk rather than an explicitly labeled Item 8.01 chunk, though the text is present in that chunk.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 98, \"citation_support\": 95, \"rationale\": \"The candidate matches the reference on every element: the 5.875% notes due November 7, 2029 ($1.25B), the 6.500% notes due February 7, 2035 ($1.25B), and the combined $2.50B. The arithmetic is correct. The cited accession number 0001104659-25-001594 and the Item 8.01 section are correct. The cited chunk 774b96ac (Filing Summary, chunk 0) contains the full Item 8.01 text with these tranche details, so the citation is supported by the retrieved excerpts. The minor deduction is that the candidate's chunk ID is to the Filing Summary chunk rather than an explicitly labeled Item 8.01 chunk, though the text is present in that chunk.\"}",
+      "refusal": null,
+      "reasoning": "This checks out: 2029 Notes at 5.875% and 2035 Notes at 6.500%, each $1.25B, totaling $2.50B, matching the reference figures. The citation also verifies correctly, since the Filing Summary chunk includes the Item 8.01 text confirming the details.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "This checks out: 2029 Notes at 5.875% and 2035 Notes at 6.500%, each $1.25B, totaling $2.50B, matching the reference figures. The citation also verifies correctly, since the Filing Summary chunk includes the Item 8.01 text confirming the details.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQSwggKEAgSGAI4AUIIdGhpbmtpbmcSDFRWmU4hyaMlCo4sABoMGelRuhjfb8S0LyiFIjDBpiszbZWzpZ344Q5FVO7QVI2982dWkBLA3pPT3eJLiwF/60pgyWBNRnh1w1AExh4q3weBY+SL+CgJOh2dKjmKO40FGmlHaGcx14kzk7Zph8yE7rY0Fe7Onc7yya0ydx+09wSge8IJw3qEWN4cgieDSoPg6FlUMAxfzOdqEWtNUFlExIT63MlvLEONM089ycuqJmyzkFJWadfEbNjRT2lDgWb2uDDVmQWs5tSLjACW5pFLXbOBScmOi4rAIQfgfyj9jRp56q5t33KoCgzQl3B72SAwS9Xq7XvqBtucT1aPM2XcIsA8EX6yUytp9NxJKdOrLVDOs3za6erTHvfdjCmB51Oml0BL4IR6q9liIJGfRu5I3VcBPo8xx9ss+RIZPF0CBriU7FO2FZ4OE8g/1UOfFYtwiva4wcEC1onkak4CgLOZs1y+joopApekNploYuMkMte+p3jpyq5bIoYq6dF/c+8FaL+oEvpSD39KegP5tFRWIemeV66Mi1eYo4M7BDawO4YGU9Mg0X7F/cSfgcox2s4o0nsZVVZDSsxSpVc+Q+PF5d8FkUMSiwVZoR34CDIPxjNMI2Y9mypvjwOpRkCByPcTEulBsG7z5G6FVzq1XKtTRnuB6A0Y83bcBruFdDdfxYF/arltWk/cgNk7g9VXmH35ubcdhYtwZhw6DYWTFuaAS7Buekt8SmYsmI/RayI6DP0W9OA2eBofGEuHaUUOjPYab48hJWrjy864IujjNxIPZ6TGJgWLi6Vutz/enkkjFC6N0Piah9DewqR+TXvx3UStYU3qWHqLHwRvSFy+bG4iHfj2JpZmUlEQNxRSqO1/a0XPSaNxHQH5U6S9oe+MUbsMrJmmVl0YrBhRimGIpVSecEgA8A2hEMtZpqsO3nTPSlW/GS7vQ/meZsEr8oK0KW06uIvhDc410ZRrCOLqNIP70sZ2YIPtlCxkxADFIG+OVq2kRsaHTSZGXNnnvyr17uyZBMenVWqwNxMDrF/PRWFuGAPShRBaweAp1LY40q1LrLQnsAZMJhE1NxsxhfmVOUB7wValpV9KqGdHnIUoZcCYKQfGP56kvPOOlegYYMIXTJiz4Q5qa5Atgf3JjCg6cBlR8WhpKNMN5tlbguVfAzDbZt5to7vz2gnOGGfHJpcpzoke3o74WfcKzdVgfOYyN7ADBVsnqRUvfUJqdEYt9JAHaa8tA3MJiRpx20OSUdt3oqipCYOsbGJ2lQYvPXo/U2wBs2Otger85GPr4WJhXzkwyCYA60uP5COlu7umVtQavFEQ2AXGbqK4vfgW4tPdMNEdnasJFPoilDLmWey/CBQ1H5qharaf6HEyfLTWu8BuABz6rSxdjEOTs0kGfFQch68s0NU5q0s4Epiv8eCswNk7GAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:30:07.010736+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "0077e03fe63827f7fde89e3c:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042203-lGhoVjgriir52oukCfCE",
+    "usage": {
+      "prompt_tokens": 20063,
+      "completion_tokens": 478,
+      "total_tokens": 20541,
+      "cost": 0.0022453,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0022453,
+        "upstream_inference_prompt_cost": 0.0020063,
+        "upstream_inference_completions_cost": 0.000239
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 213,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.172682946999885,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 98,
+    "citation_support": 95,
+    "rationale": "The candidate matches the reference on every element: the 5.875% notes due November 7, 2029 ($1.25B), the 6.500% notes due February 7, 2035 ($1.25B), and the combined $2.50B. The arithmetic is correct. The cited accession number 0001104659-25-001594 and the Item 8.01 section are correct. The cited chunk 774b96ac (Filing Summary, chunk 0) contains the full Item 8.01 text with these tranche details, so the citation is supported by the retrieved excerpts. The minor deduction is that the candidate's chunk ID is to the Filing Summary chunk rather than an explicitly labeled Item 8.01 chunk, though the text is present in that chunk."
+  },
+  "status": "ok"
+}

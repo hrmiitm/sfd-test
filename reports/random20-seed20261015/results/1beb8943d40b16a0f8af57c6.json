@@ -1,0 +1,117 @@
+{
+  "question_id": "Q006",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.02097931700063782,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 0.0
+  },
+  "answer": {
+    "text": "NVIDIA\u2019s independent registered public accounting firm is **PricewaterhouseCoopers LLP (PwC)**. The supplied excerpts do not state since what year PwC has served as NVIDIA\u2019s auditor, so that year cannot be determined from this evidence.\n\n**Citation:** NVIDIA Corporation, accession **0001045810-25-000023**, \u201cExhibit 23.1,\u201d chunk **cb0a4777-10f6-5e37-8910-081e2a3f8a56** (identifies PwC in its auditor\u2019s report consent; does not give a start year).",
+    "message": {
+      "role": "assistant",
+      "content": "NVIDIA\u2019s independent registered public accounting firm is **PricewaterhouseCoopers LLP (PwC)**. The supplied excerpts do not state since what year PwC has served as NVIDIA\u2019s auditor, so that year cannot be determined from this evidence.\n\n**Citation:** NVIDIA Corporation, accession **0001045810-25-000023**, \u201cExhibit 23.1,\u201d chunk **cb0a4777-10f6-5e37-8910-081e2a3f8a56** (identifies PwC in its auditor\u2019s report consent; does not give a start year).",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:24:44.859320+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "1beb8943d40b16a0f8af57c6:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041852-82SMpd3lG0sxaDQZgJQE",
+    "usage": {
+      "prompt_tokens": 7385,
+      "completion_tokens": 127,
+      "total_tokens": 7512,
+      "cost": 0.00098655,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 7382,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00098655,
+        "upstream_inference_prompt_cost": 0.00092305,
+        "upstream_inference_completions_cost": 6.35e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 34.4028249869998,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 50, \"citation_support\": 85, \"rationale\": \"The candidate correctly identifies PricewaterhouseCoopers LLP as NVIDIA's auditor, which matches the reference. However, it fails the second part of the question: the reference answers 'since 2004,' and the gold evidence confirms this, but the candidate abstains on the year. Because the reference is answerable, this abstention does not earn full credit. The candidate's abstention is honest about what its excerpts contain, and its cited chunk (Exhibit 23.1, accession 0001045810-25-000023) is in the retrieved set and does show the PwC signature and the NVIDIA report, so it supports the firm identification. It does not support the start year, which the candidate correctly does not claim. The year-of-service claim is missing from the retrieved excerpts, and the gold quote was not retrieved, so the candidate could not have cited it.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 50, \"citation_support\": 85, \"rationale\": \"The candidate correctly identifies PricewaterhouseCoopers LLP as NVIDIA's auditor, which matches the reference. However, it fails the second part of the question: the reference answers 'since 2004,' and the gold evidence confirms this, but the candidate abstains on the year. Because the reference is answerable, this abstention does not earn full credit. The candidate's abstention is honest about what its excerpts contain, and its cited chunk (Exhibit 23.1, accession 0001045810-25-000023) is in the retrieved set and does show the PwC signature and the NVIDIA report, so it supports the firm identification. It does not support the start year, which the candidate correctly does not claim. The year-of-service claim is missing from the retrieved excerpts, and the gold quote was not retrieved, so the candidate could not have cited it.\"}",
+      "refusal": null,
+      "reasoning": "The gold evidence states PwC has served since 2004, but the candidate correctly identifies PwC while abstaining on the year since the excerpts don't confirm it\u2014since the question is actually answerable per the reference, this partial abstention makes the correctness score around 50.\n\nThe citation to Exhibit 23.1 accurately supports the firm name, showing the signed consent from PricewaterhouseCoopers LLP, so citation support deserves a high score around 85, with the irrelevant Enanta excerpt not affecting this.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "The gold evidence states PwC has served since 2004, but the candidate correctly identifies PwC while abstaining on the year since the excerpts don't confirm it\u2014since the question is actually answerable per the reference, this partial abstention makes the correctness score around 50.\n\nThe citation to Exhibit 23.1 accurately supports the firm name, showing the signed consent from PricewaterhouseCoopers LLP, so citation support deserves a high score around 85, with the irrelevant Enanta excerpt not affecting this.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:00.663260+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "1beb8943d40b16a0f8af57c6:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042076-ZmnXTNepU7Oz5sNjvC0f",
+    "usage": {
+      "prompt_tokens": 11939,
+      "completion_tokens": 671,
+      "total_tokens": 12610,
+      "cost": 0.0015294,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015294,
+        "upstream_inference_prompt_cost": 0.0011939,
+        "upstream_inference_completions_cost": 0.0003355
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 372,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.33829507199971,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 50,
+    "citation_support": 85,
+    "rationale": "The candidate correctly identifies PricewaterhouseCoopers LLP as NVIDIA's auditor, which matches the reference. However, it fails the second part of the question: the reference answers 'since 2004,' and the gold evidence confirms this, but the candidate abstains on the year. Because the reference is answerable, this abstention does not earn full credit. The candidate's abstention is honest about what its excerpts contain, and its cited chunk (Exhibit 23.1, accession 0001045810-25-000023) is in the retrieved set and does show the PwC signature and the NVIDIA report, so it supports the firm identification. It does not support the start year, which the candidate correctly does not claim. The year-of-service claim is missing from the retrieved excerpts, and the gold quote was not retrieved, so the candidate could not have cited it."
+  },
+  "status": "ok"
+}

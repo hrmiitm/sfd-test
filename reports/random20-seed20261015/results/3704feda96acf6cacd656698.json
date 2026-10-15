@@ -1,0 +1,117 @@
+{
+  "question_id": "Q026",
+  "model": "openai/gpt-6-luna",
+  "column": "qdrant/hybrid",
+  "retrieval": {
+    "seconds": 0.030577819000427553,
+    "accession_recall": 1.0,
+    "exact_quote_recall": 1.0
+  },
+  "answer": {
+    "text": "Levi Strauss & Co.\u2019s fiscal 2024 SG&A expenses were **$3,246.2 million**, equal to **51.1% of net revenues**. The filing reports net revenues of $6,355.3 million; calculation: $3,246.2 million \u00f7 $6,355.3 million \u00d7 100 \u2248 **51.1%**.\n\n**Source:** Accession 0000094845-25-000005, *Filing Summary*, chunk 29.",
+    "message": {
+      "role": "assistant",
+      "content": "Levi Strauss & Co.\u2019s fiscal 2024 SG&A expenses were **$3,246.2 million**, equal to **51.1% of net revenues**. The filing reports net revenues of $6,355.3 million; calculation: $3,246.2 million \u00f7 $6,355.3 million \u00d7 100 \u2248 **51.1%**.\n\n**Source:** Accession 0000094845-25-000005, *Filing Summary*, chunk 29.",
+      "refusal": null,
+      "reasoning": null
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:25:10.630598+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "3704feda96acf6cacd656698:answer",
+    "requested_model": "openai/gpt-6-luna",
+    "actual_model": "openai/gpt-6-luna",
+    "response_id": "gen-1792041908-TAmfVPgErlDNltouX9DJ",
+    "usage": {
+      "prompt_tokens": 17837,
+      "completion_tokens": 109,
+      "total_tokens": 17946,
+      "cost": 0.00023314,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 17834,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00023314,
+        "upstream_inference_prompt_cost": 0.00017864,
+        "upstream_inference_completions_cost": 5.45e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 5.965156031000333,
+    "attempts": 1
+  },
+  "judge": {
+    "text": "{\"correctness\": 92, \"citation_support\": 90, \"rationale\": \"The candidate gives the correct SG&A figure ($3,246.2M) and the correct 51.1% of net revenues. Its net revenue figure of $6,355.3M appears in the retrieved excerpts, and the division checks out (3,246.2 / 6,355.3 \u2248 51.1%). It omits the prior-year comparison ($3,051.9M in 2023) and the 6.4% year-over-year increase, which are minor omissions relative to the reference. The cited accession 0000094845-25-000005 and chunk 29 match the retrieved excerpt containing the SG&A table. The section label 'Filing Summary' matches the retrieved metadata, though the gold evidence labels it Item 7 MD&A.\"}",
+    "message": {
+      "role": "assistant",
+      "content": "{\"correctness\": 92, \"citation_support\": 90, \"rationale\": \"The candidate gives the correct SG&A figure ($3,246.2M) and the correct 51.1% of net revenues. Its net revenue figure of $6,355.3M appears in the retrieved excerpts, and the division checks out (3,246.2 / 6,355.3 \u2248 51.1%). It omits the prior-year comparison ($3,051.9M in 2023) and the 6.4% year-over-year increase, which are minor omissions relative to the reference. The cited accession 0000094845-25-000005 and chunk 29 match the retrieved excerpt containing the SG&A table. The section label 'Filing Summary' matches the retrieved metadata, though the gold evidence labels it Item 7 MD&A.\"}",
+      "refusal": null,
+      "reasoning": "I'm checking the SG&A figure of $3,246.2M against the 51.1% of net revenues calculation using $6,355.3M, confirming the math checks out, and verifying the citation points to the correct source chunk for this table.\n\n",
+      "reasoning_details": [
+        {
+          "type": "reasoning.text",
+          "text": "I'm checking the SG&A figure of $3,246.2M against the 51.1% of net revenues calculation using $6,355.3M, confirming the math checks out, and verifying the citation points to the correct source chunk for this table.\n\n",
+          "format": "anthropic-claude-v1",
+          "index": 0,
+          "signature": "CAQS9AoKEAgSGAI4AUIIdGhpbmtpbmcSDOK3jqh+uRnOwc57WhoMyJyUmIQSEjm8vIrbIjCkUe/uZXFAKJu5MjfcNZfiwm7l3s8fIV+qzkNh8OlF+6lpVXr84jt+Xyg7EPnL84AqkQocHlKBVVVf7PtwTzxcdOFnW2bmr04acydimjlX8fPBcjRle3ldIUGsE2+JRHpYgeTEXvmgKvzCXLp2v/HHkCiChm4SZuYl8P5B8p+uIVIme4n/T3h6bSLD90b73gQIcuF/yvOxVFEfuhRQBsHT0UoPHmvQ3WJeBqo63Rr1OUJwPAKRwXI236iSGUSiKuIDh712bOLutwfdGm4U5aQZjhKYClSmen9dQYlH2AZR6PhZhN/erknmJPSJ8biEF2AwEzh7+2OEwDbp6OpaoWF7Y08u8Qth7g8EBydV4ImNsfxM4BIT707ifydj/RycnTrQPDygV6h9ru/HmDo+4cJqwm9KO+HJf2tN8TI4cxKBXWDe7FnG3c9VsvcNtBxHnKbDx5hTuYwG430RIP4CZG0NMQPddCDx6L5bbfRIJy7pQ3oOapTDbHw3+n0/1N24sOf9c3e+w6jumZZNENiVKYE75/5XQByXpqjx332Be0lBoDZJOMdNUY6XzrMyS6tVKqCCrSh8xNCAQgkZ9FbMplthaq7VUVSsI+n/31O3/QB9TjnzQh1ZdnQLtN0lt7O+Sh4d1mG1kVIZ68nMCCcMIQSThX6wswYRv6kUTiIVx+Ew79u6t92CHCrpFPsKqhEw5/e054gYNcMQtNManhmQxQAVhenLCnEbq+Qfnuv90ImsQ6f+M10VOMJK4EU+IDADnbepnNVFMMlzKK0V9Cdko4EGZ4VH8Q6lwXwDjnuFVaQrtq6dOYjzQLGmayQdLg55RH/S2IbNrUHgdrtk7Z23tWw4CL+m3ooWrnuk5dSWEEYH+wMRuOd+rqvQRrAH+oQb052dQ1WA8j6CDxlIfBHLZuijo+OQ/CK3ePeQ/5vYiIPo4TQhHEzrV+TcjW6K8laWcPsGYeouNW5F1487hsUUNO/aefsQzFx71G8m16pY3mIdCl0DLb86WSJEbDh/9eq5vKCoUEegJE+uR6LMpXDq4MIAArPRYDaEirEfwmIJfOlFQFwZO4rhsSLhiK+aXKcGOuE/QiLGcHvxneio5WxcHloHxBVUG2GyV7ySpK/0mleEplBeV8iS2LAMy9Qeeb93DzY6oVtnvluvMUZc4Mw11ud6D6cFNCB5TskKz9//Q29t3fj6tI01jMfLlWYgneYYen77CHctXa0J7GEcUcZf1Szs8L9HUHAiXFll++2Ok/L7JPs6kyG+1sSCSk/oVUc7L6UceE3k38l+tW9sGmx7gorjcLJrXlvmg4cDA8FomsdHU6TFr2fQtIp36pwQkVi1TsW/sLJPadmaS8qQPyxfNpHJ1v9JX+hhqgpeVhMccBUwU+yhzE8YTid2WtB/IYXopo1sPXLXilj1junpVr3qQNYXZGwUS7Ekx9SxtBQwY+en/ZrjU2YeGhwkhFMomopNHT43GPwMbbD2MZCzXFstjrumXgb4C6A5Dqxk0RDqNidbkHpOZB5GJbiRW0sXABnZ1SBHROWyAHEUiqWXsUg8hCYjew1+83mL3trV3gpVfekLtN1kynrFh6vPbgSX/IfdY/+5GwUU40VwSuWQZmgE19Ul4DE4rJtQYGFM8xsWC+1sc2on6fyRNMTuXoQd/zkrbH3KMrBz9Qi6yFfJ6dSXyE9e1pOp6UP3WKsE3n4NuMQA8yXuT8rV3b4t8kblNPLeaaipPHFwow55AmJq9ueEyRG6qRZAb4VhoogEQvp7hAi0G55W6NbSbPz51WU4oiF97YgsIiqdGAE=.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1oYWlrdS01LjUtMjAyNjEwMDd8Y2xhdWRlLW9uLWF3cyJ9"
+        }
+      ]
+    },
+    "tool_calls": [],
+    "timestamp_utc": "2026-10-15T05:28:31.982110+00:00",
+    "parameters": {
+      "reasoning": {
+        "effort": "low"
+      },
+      "max_tokens": 3000
+    },
+    "tag": "3704feda96acf6cacd656698:judge",
+    "requested_model": "anthropic/claude-haiku-5.5",
+    "actual_model": "anthropic/claude-haiku-5.5",
+    "response_id": "gen-1792042107-2DszmsMZGvshXNAc8YZS",
+    "usage": {
+      "prompt_tokens": 27919,
+      "completion_tokens": 611,
+      "total_tokens": 28530,
+      "cost": 0.0030974,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0030974,
+        "upstream_inference_prompt_cost": 0.0027919,
+        "upstream_inference_completions_cost": 0.0003055
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 347,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "seconds": 6.026351846999205,
+    "attempts": 1
+  },
+  "judgment": {
+    "correctness": 92,
+    "citation_support": 90,
+    "rationale": "The candidate gives the correct SG&A figure ($3,246.2M) and the correct 51.1% of net revenues. Its net revenue figure of $6,355.3M appears in the retrieved excerpts, and the division checks out (3,246.2 / 6,355.3 \u2248 51.1%). It omits the prior-year comparison ($3,051.9M in 2023) and the 6.4% year-over-year increase, which are minor omissions relative to the reference. The cited accession 0000094845-25-000005 and chunk 29 match the retrieved excerpt containing the SG&A table. The section label 'Filing Summary' matches the retrieved metadata, though the gold evidence labels it Item 7 MD&A."
+  },
+  "status": "ok"
+}

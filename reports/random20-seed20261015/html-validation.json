@@ -1,0 +1,24 @@
+{
+  "desktop": {
+    "rows": 16,
+    "matrixRows": 2,
+    "points": 16,
+    "questions": 20,
+    "series": 16,
+    "overflow": false,
+    "axis": "Mean answer + planning + judge cost / question (USD · log scale)"
+  },
+  "mobile": {
+    "width": 390,
+    "bodyWidth": 375,
+    "points": 16
+  },
+  "interaction": {
+    "selected": "Luna · LanceDB / hybrid — 88.05% correctness · $0.004099 per question · 20/20 complete · 40 model calls · 0 calls with unknown cost.",
+    "question": "What was Utz Brands, Inc.'s operating income margin percentage for the fiscal year ended December 29, 2024, calculated as Income from operations divided by Net sales?",
+    "answer": 276
+  },
+  "cost_toggle_passed": true,
+  "javascript_errors": [],
+  "checked_utc": "2026-10-15T05:42:05.239Z"
+}

@@ -1,0 +1,6 @@
+{
+  "memory.max": "2147483648",
+  "memory.peak": "1149030400",
+  "memory.swap.max": "0",
+  "cpu.max": "100000 100000"
+}
